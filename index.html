@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Calculadora de cesiones LALIGA Fantasy DAZN | Recupera tu jugador</title>
+<meta name="description" content="Calcula cuánto debes pagar para recuperar un jugador que cediste en LALIGA Fantasy: compensación, precio final y desembolso total, con fórmulas paso a paso.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://TU-DOMINIO.com/">
+<link rel="alternate" hreflang="es" href="https://TU-DOMINIO.com/">
+<link rel="alternate" hreflang="x-default" href="https://TU-DOMINIO.com/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0C3B28">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Calculadora de cesiones">
+<meta property="og:title" content="Calculadora de cesiones LALIGA Fantasy DAZN | Recupera tu jugador">
+<meta property="og:description" content="Calcula cuánto debes pagar para recuperar un jugador que cediste en LALIGA Fantasy: compensación, precio final y desembolso total, con fórmulas paso a paso.">
+<meta property="og:url" content="https://TU-DOMINIO.com/">
+<meta property="og:image" content="https://TU-DOMINIO.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Calculadora de cesiones para LALIGA Fantasy: desembolso total de 25.000.000 euros">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Calculadora de cesiones LALIGA Fantasy DAZN | Recupera tu jugador">
+<meta name="twitter:description" content="Calcula cuánto debes pagar para recuperar un jugador que cediste en LALIGA Fantasy: compensación, precio final y desembolso total, con fórmulas paso a paso.">
+<meta name="twitter:image" content="https://TU-DOMINIO.com/og-image.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Calculadora de cesiones", "url": "https://TU-DOMINIO.com/", "description": "Calcula cuánto debes pagar para recuperar un jugador que cediste en LALIGA Fantasy: compensación, precio final y desembolso total, con fórmulas paso a paso.", "inLanguage": "es", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Cualquiera con navegador web", "browserRequirements": "Requiere JavaScript", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Concepto: libro de operaciones de un mercado de fichajes.
+     Verde césped = lo que vale el jugador. Ámbar = lo que se le debe al socio.
+     Un solo número manda: el desembolso total. */
+  --bg: #F1F4F2;
+  --surface: #FFFFFF;
+  --campo: #F6F8F7;
+  --ink: #14211B;
+  --muted: #55655D;
+  --line: #D6DFDA;
+  --pitch: #0B7448;
+  --pitch-soft: #DFF0E6;
+  --amber: #A34E08;
+  --amber-soft: #F9E8D3;
+  --alert: #B3261E;
+  --alert-soft: #FCE4E1;
+  --info-soft: #E8EEEB;
+  --hero-bg: #0C3B28;
+  --hero-ink: #F2FBF6;
+  --hero-muted: #A9CDBB;
+  --hero-pf: #5BE0A0;
+  --hero-c: #F5B058;
+  --hero-track: #14543A;
+  --font-display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --radius: 14px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0C1310;
+    --surface: #131C17;
+    --campo: #0E1612;
+    --ink: #E8F1EC;
+    --muted: #96A99F;
+    --line: #26352D;
+    --pitch: #4ADE9A;
+    --pitch-soft: #12301F;
+    --amber: #F4A64E;
+    --amber-soft: #35250F;
+    --alert: #FF9087;
+    --alert-soft: #3A1A17;
+    --info-soft: #1B2721;
+    --hero-bg: #0F3F2B;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0C1310;
+  --surface: #131C17;
+  --campo: #0E1612;
+  --ink: #E8F1EC;
+  --muted: #96A99F;
+  --line: #26352D;
+  --pitch: #4ADE9A;
+  --pitch-soft: #12301F;
+  --amber: #F4A64E;
+  --amber-soft: #35250F;
+  --alert: #FF9087;
+  --alert-soft: #3A1A17;
+  --info-soft: #1B2721;
+  --hero-bg: #0F3F2B;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  padding-block: 28px 48px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 1040px; margin: 0 auto; }
+p { margin: 0; }
+h1, h2, h3 { font-family: var(--font-display); margin: 0; text-wrap: balance; }
+
+/* Cabecera */
+.cab { display: grid; gap: 8px; margin-bottom: 24px; }
+.eyebrow { font-size: 12px; letter-spacing: 0.09em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+h1 { font-weight: 700; font-size: clamp(28px, 5.5vw, 42px); line-height: 1.06; letter-spacing: -0.02em; }
+.sub { color: var(--muted); max-width: 60ch; }
+
+/* Rejilla */
+.rejilla { display: grid; gap: 20px; grid-template-columns: minmax(0, 1fr); }
+.derecha { display: grid; gap: 20px; min-width: 0; align-content: start; }
+@media (min-width: 880px) {
+  .rejilla { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); align-items: start; }
+  .entradas { grid-column: 1; grid-row: 1; }
+  .derecha { grid-column: 2; grid-row: 1 / span 2; }
+  .explica { grid-column: 1; grid-row: 2; }
+}
+
+.tarjeta { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; min-width: 0; }
+h2 { font-size: 18px; font-weight: 600; letter-spacing: -0.005em; margin-bottom: 14px; }
+
+/* Campos */
+.campos { display: grid; gap: 16px; }
+.campo { display: grid; gap: 6px; }
+.campo label { font-weight: 600; font-size: 15px; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.opcional { font-weight: 500; font-size: 12px; color: var(--muted); letter-spacing: 0.04em; text-transform: uppercase; }
+.entrada { display: flex; align-items: center; border: 1.5px solid var(--line); border-radius: 10px; background: var(--campo); transition: border-color 0.15s, box-shadow 0.15s; }
+.entrada:focus-within { border-color: var(--pitch); box-shadow: 0 0 0 3px var(--pitch-soft); }
+.entrada.invalido { border-color: var(--alert); }
+.entrada input { flex: 1; min-width: 0; border: 0; background: transparent; color: var(--ink); font: inherit; font-size: 18px; font-variant-numeric: tabular-nums; padding: 12px 8px 12px 14px; outline: none; text-align: right; }
+.sufijo { padding-right: 14px; color: var(--muted); font-weight: 500; }
+.ayuda { font-size: 13px; color: var(--muted); }
+.error { font-size: 13px; color: var(--alert); font-weight: 500; }
+.btn { font: inherit; font-weight: 600; font-size: 15px; border-radius: 10px; padding: 11px 16px; cursor: pointer; border: 1.5px solid transparent; min-height: 44px; }
+.btn:focus-visible, summary:focus-visible, .enlace:focus-visible { outline: 2px solid var(--pitch); outline-offset: 2px; }
+.btn-primario { background: var(--ink); color: var(--bg); }
+.btn-primario:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-sec { background: transparent; color: var(--ink); border-color: var(--line); }
+.btn-sec:hover { border-color: var(--muted); }
+.enlace { font: inherit; font-size: 13px; font-weight: 600; background: none; border: 0; padding: 4px 0; color: var(--pitch); cursor: pointer; text-align: left; justify-self: start; text-decoration: underline; text-underline-offset: 3px; }
+.acciones-entrada { margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* Resultado */
+.hero { background: var(--hero-bg); color: var(--hero-ink); border-radius: var(--radius); padding: 22px 20px 20px; display: grid; gap: 14px; }
+.hero-top { display: flex; gap: 10px; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; }
+.hero-et { font-size: 14px; font-weight: 600; color: var(--hero-muted); max-width: 26ch; }
+.chip { font-size: 12px; font-weight: 600; letter-spacing: 0.04em; padding: 4px 10px; border-radius: 999px; background: var(--hero-track); color: var(--hero-ink); white-space: nowrap; }
+.hero-valor { font-family: var(--font-display); font-weight: 700; font-size: clamp(40px, 11vw, 64px); line-height: 1; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.barra { display: flex; height: 12px; border-radius: 999px; overflow: hidden; background: var(--hero-track); gap: 2px; }
+.seg-pf { background: var(--hero-pf); transition: width 0.25s ease; }
+.seg-c { background: var(--hero-c); transition: width 0.25s ease; }
+.leyenda { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; font-size: 14px; }
+.leyenda li { display: flex; align-items: center; gap: 8px; }
+.leyenda b { margin-left: auto; font-variant-numeric: tabular-nums; font-weight: 600; }
+.punto { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+.punto.pf { background: var(--hero-pf); }
+.punto.c { background: var(--hero-c); }
+
+.tiles { display: grid; gap: 10px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.tile { border: 1px solid var(--line); border-radius: 12px; padding: 14px; display: grid; gap: 4px; align-content: start; background: var(--surface); }
+.tile.pf { background: var(--pitch-soft); border-color: transparent; }
+.tile.c { background: var(--amber-soft); border-color: transparent; }
+.t-et { font-size: 12px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); }
+.t-val { font-family: var(--font-display); font-weight: 600; font-size: clamp(19px, 5vw, 24px); font-variant-numeric: tabular-nums; letter-spacing: -0.01em; overflow-wrap: anywhere; }
+.tile.pf .t-val, .tile.pf .t-et { color: var(--pitch); }
+.tile.c .t-val, .tile.c .t-et { color: var(--amber); }
+.t-sub { font-size: 12.5px; color: var(--muted); }
+.tile.pf .t-sub, .tile.c .t-sub { color: var(--ink); opacity: 0.8; }
+
+.lectura { font-size: 16px; }
+.avisos { display: grid; gap: 8px; }
+.aviso { font-size: 14px; padding: 10px 12px; border-radius: 10px; background: var(--info-soft); }
+.aviso.alerta { background: var(--amber-soft); color: var(--ink); }
+.aviso.error-g { background: var(--alert-soft); color: var(--ink); }
+.nota { font-size: 13px; color: var(--muted); }
+.acciones { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.estado-copia { font-size: 13px; color: var(--pitch); font-weight: 600; }
+#copia-manual { width: 100%; min-height: 150px; font-family: var(--font-mono); font-size: 13px; background: var(--campo); color: var(--ink); border: 1.5px solid var(--line); border-radius: 10px; padding: 10px; }
+.card-res { display: grid; gap: 16px; }
+
+/* Desglose */
+details { min-width: 0; }
+summary { display: flex; justify-content: space-between; align-items: center; gap: 12px; cursor: pointer; list-style: none; font-family: var(--font-display); font-weight: 600; font-size: 18px; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "+"; font-family: var(--font-mono); font-size: 20px; color: var(--muted); flex: none; }
+details[open] > summary::after { content: "−"; }
+details[open] > summary { margin-bottom: 14px; }
+.pasos { display: grid; gap: 16px; }
+.paso { display: grid; gap: 4px; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+.paso:last-child { border-bottom: 0; padding-bottom: 0; }
+.paso h3 { font-size: 15px; font-weight: 600; }
+.formula { font-family: var(--font-mono); font-size: 13px; color: var(--muted); overflow-wrap: anywhere; }
+.sustituida { font-family: var(--font-mono); font-size: 15px; display: flex; flex-wrap: wrap; column-gap: 8px; font-variant-numeric: tabular-nums; }
+.sustituida b { font-weight: 500; color: var(--pitch); }
+.sustituida b.ambar { color: var(--amber); }
+.vacio { color: var(--muted); font-size: 14px; }
+
+/* Tablas */
+.tabla-scroll { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th { text-align: left; font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); font-weight: 600; padding: 6px 10px 6px 0; border-bottom: 1px solid var(--line); }
+td { padding: 9px 10px 9px 0; border-bottom: 1px solid var(--line); vertical-align: top; font-variant-numeric: tabular-nums; }
+td.num, th.num { text-align: right; padding-right: 0; padding-left: 10px; white-space: nowrap; }
+tr.fuerte td { font-weight: 600; }
+.sub-caso { display: block; font-size: 12.5px; color: var(--muted); font-weight: 400; }
+.pill { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 9px; border-radius: 999px; }
+.pill.ok { background: var(--pitch-soft); color: var(--pitch); }
+.pill.mal { background: var(--alert-soft); color: var(--alert); }
+.resumen-casos { font-size: 14px; color: var(--muted); margin-bottom: 10px; }
+
+/* Explicación y pie */
+.explica ul { margin: 0; padding-left: 20px; display: grid; gap: 8px; max-width: 62ch; }
+.explica li::marker { color: var(--pitch); }
+.pie { margin-top: 24px; display: grid; gap: 6px; font-size: 13px; color: var(--muted); max-width: 80ch; }
+.pie b { color: var(--ink); font-weight: 600; }
+
+.faq { margin-top: 20px; }
+.faq-lista { display: grid; gap: 0; max-width: 72ch; }
+.faq-lista details { border-top: 1px solid var(--line); padding-block: 14px; }
+.faq-lista details:first-child { border-top: 0; padding-top: 0; }
+.faq-lista summary { font-size: 16px; }
+.faq-lista details[open] > summary { margin-bottom: 8px; }
+.faq-lista p { color: var(--muted); }
+
+@media (prefers-reduced-motion: reduce) {
+  .seg-pf, .seg-c, .entrada { transition: none; }
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="cab">
+    <p class="eyebrow">LALIGA Fantasy DAZN · Cesiones</p>
+    <h1>Calculadora de cesiones</h1>
+    <p class="sub">Calcula cuánto debes desembolsar para recuperar un jugador que le cediste a un socio por más de lo que costaba.</p>
+  </header>
+
+  <div class="rejilla">
+    <section class="tarjeta entradas" aria-labelledby="t-datos">
+      <h2 id="t-datos">Datos de la operación</h2>
+      <div class="campos">
+        <div class="campo">
+          <label for="f-pi">Precio inicial del jugador</label>
+          <div class="entrada" id="w-pi"><input id="f-pi" type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-describedby="a-pi e-pi"><span class="sufijo">€</span></div>
+          <p class="ayuda" id="a-pi">Su valor en la plataforma antes de la cesión.</p>
+          <p class="error" id="e-pi" role="alert" hidden></p>
+        </div>
+        <div class="campo">
+          <label for="f-pv">Precio acordado en la transferencia</label>
+          <div class="entrada" id="w-pv"><input id="f-pv" type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-describedby="a-pv e-pv"><span class="sufijo">€</span></div>
+          <p class="ayuda" id="a-pv">Lo que te pagó tu socio por el jugador.</p>
+          <p class="error" id="e-pv" role="alert" hidden></p>
+        </div>
+        <div class="campo">
+          <label for="f-g">Incremento diario estimado</label>
+          <div class="entrada" id="w-g"><input id="f-g" type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-describedby="a-g e-g"><span class="sufijo">€ por día</span></div>
+          <p class="ayuda" id="a-g">Cuánto calculas que sube por día. Es una estimación, no una garantía.</p>
+          <p class="error" id="e-g" role="alert" hidden></p>
+        </div>
+        <div class="campo">
+          <label for="f-d">Duración de la cesión</label>
+          <div class="entrada" id="w-d"><input id="f-d" type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-describedby="a-d e-d"><span class="sufijo">días</span></div>
+          <p class="ayuda" id="a-d">Días que pasarán hasta que lo recuperes.</p>
+          <p class="error" id="e-d" role="alert" hidden></p>
+        </div>
+        <div class="campo">
+          <label for="f-pf">Precio final real <span class="opcional">Opcional</span></label>
+          <div class="entrada" id="w-pf"><input id="f-pf" type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-describedby="a-pf e-pf"><span class="sufijo">€</span></div>
+          <p class="ayuda" id="a-pf">Si ya sabes cuánto cuesta hoy, escríbelo. Reemplaza la estimación diaria.</p>
+          <p class="error" id="e-pf" role="alert" hidden></p>
+          <button type="button" class="enlace" id="b-quitar-pf" hidden>Volver a la estimación</button>
+        </div>
+      </div>
+      <div class="acciones-entrada">
+        <button type="button" class="btn btn-sec" id="b-ejemplo">Restaurar ejemplo</button>
+      </div>
+    </section>
+
+    <div class="derecha">
+      <section class="tarjeta card-res" aria-labelledby="t-res">
+        <h2 id="t-res">Resultado</h2>
+        <div class="hero">
+          <div class="hero-top">
+            <p class="hero-et">Desembolso total para recuperar al jugador</p>
+            <span class="chip" id="chip-modo">Con estimación</span>
+          </div>
+          <p class="hero-valor" id="r-T" aria-live="polite">—</p>
+          <div class="barra" id="barra" role="img" aria-label="Reparto del desembolso entre precio del jugador y compensación">
+            <span class="seg-pf" id="seg-pf" style="width:100%"></span><span class="seg-c" id="seg-c" style="width:0%"></span>
+          </div>
+          <ul class="leyenda">
+            <li><i class="punto pf"></i>Precio del jugador <b id="l-pf">—</b></li>
+            <li><i class="punto c"></i>Compensación adicional <b id="l-c">—</b></li>
+          </ul>
+        </div>
+
+        <div class="tiles">
+          <div class="tile">
+            <p class="t-et">Dinero adicional recibido</p>
+            <p class="t-val" id="r-E">—</p>
+            <p class="t-sub">Precio acordado menos precio inicial</p>
+          </div>
+          <div class="tile">
+            <p class="t-et">Incremento acumulado</p>
+            <p class="t-val" id="r-dP">—</p>
+            <p class="t-sub" id="s-dP"></p>
+          </div>
+          <div class="tile pf">
+            <p class="t-et" id="et-pf">Precio final estimado</p>
+            <p class="t-val" id="r-Pf">—</p>
+            <p class="t-sub">Lo que vale el jugador al recuperarlo</p>
+          </div>
+          <div class="tile c">
+            <p class="t-et">Compensación adicional</p>
+            <p class="t-val" id="r-C">—</p>
+            <p class="t-sub">Lo que aportas aparte del precio</p>
+          </div>
+        </div>
+
+        <p class="lectura" id="lectura"></p>
+        <div class="avisos" id="avisos"></div>
+
+        <div class="acciones">
+          <button type="button" class="btn btn-primario" id="b-copiar">Copiar resultados y fórmulas</button>
+          <span class="estado-copia" id="estado-copia" role="status" aria-live="polite"></span>
+        </div>
+        <textarea id="copia-manual" readonly hidden aria-label="Texto para copiar manualmente"></textarea>
+        <p class="nota">Este resultado sale del modelo de compensación acordado. No confirma que la operación esté permitida por la plataforma: cualquier pago adicional debe poder hacerse con un mecanismo que tu liga permita.</p>
+      </section>
+
+      <section class="tarjeta" aria-label="Desglose de los cálculos">
+        <details open>
+          <summary>Desglose de los cálculos</summary>
+          <div class="pasos" id="pasos"></div>
+        </details>
+      </section>
+
+      <section class="tarjeta" aria-label="Tabla resumen">
+        <details>
+          <summary>Tabla resumen</summary>
+          <div class="tabla-scroll">
+            <table>
+              <thead><tr><th>Concepto</th><th class="num">Resultado</th></tr></thead>
+              <tbody id="tabla-resumen"></tbody>
+            </table>
+          </div>
+        </details>
+      </section>
+
+      <section class="tarjeta" aria-label="Casos de comprobación">
+        <details>
+          <summary>Casos de comprobación</summary>
+          <p class="resumen-casos" id="resumen-casos"></p>
+          <div class="tabla-scroll">
+            <table>
+              <thead><tr><th>Caso</th><th class="num">Esperado</th><th class="num">Obtenido</th><th class="num">Estado</th></tr></thead>
+              <tbody id="tabla-casos"></tbody>
+            </table>
+          </div>
+        </details>
+      </section>
+    </div>
+
+    <section class="tarjeta explica" aria-labelledby="t-expl">
+      <h2 id="t-expl">Cómo se lee esto</h2>
+      <ul>
+        <li>Mientras tu jugador está cedido, su precio puede subir.</li>
+        <li>Esa subida cuenta como parte de lo que le debes a tu socio, así que baja la compensación que tienes que poner.</li>
+        <li>Si la subida no alcanza a cubrir el dinero adicional que cobraste, pagas la diferencia.</li>
+        <li>Si la subida cubre todo ese dinero adicional, o más, la compensación es cero.</li>
+        <li>Recuperar al jugador cuesta siempre su precio de mercado del momento. La plataforma no deja comprarlo por menos, y la compensación no sirve para pagar menos que eso.</li>
+        <li>Lo que desembolsas en total es el precio del jugador más la compensación.</li>
+      </ul>
+    </section>
+  </div>
+
+  <section class="tarjeta faq" aria-labelledby="t-faq">
+    <h2 id="t-faq">Preguntas frecuentes sobre las cesiones</h2>
+    <div class="faq-lista">
+      <details>
+        <summary>¿Para qué sirve esta calculadora?</summary>
+        <p>Para saber cuánto dinero necesitas para recuperar un jugador que le transferiste a un socio de tu liga por más de lo que costaba, con la idea de devolverlo después de unos días.</p>
+      </details>
+      <details>
+        <summary>¿Cómo se calcula la compensación adicional?</summary>
+        <p>Se resta del dinero adicional que cobraste la subida de precio del jugador durante la cesión. Si cobraste 5.000.000 € de más y el jugador subió 2.000.000 €, la compensación es de 3.000.000 €. Nunca es negativa.</p>
+      </details>
+      <details>
+        <summary>¿Cuánto cuesta recuperar al jugador en total?</summary>
+        <p>El precio de mercado del jugador el día que lo recuperas, más la compensación adicional. Con los datos del ejemplo son 22.000.000 € del jugador y 3.000.000 € de compensación, 25.000.000 € en total.</p>
+      </details>
+      <details>
+        <summary>¿Qué pasa si el jugador baja de precio?</summary>
+        <p>No se reconoce ninguna subida, así que la compensación es igual a todo el dinero adicional que cobraste. El precio del jugador es el que marque la plataforma ese día.</p>
+      </details>
+      <details>
+        <summary>¿Puedo recuperar al jugador por menos de su precio actual?</summary>
+        <p>No. El acuerdo que modela esta calculadora parte de que la plataforma no permite comprar por debajo del precio vigente. La compensación se suma al precio del jugador y nunca lo reemplaza.</p>
+      </details>
+      <details>
+        <summary>¿Es una herramienta oficial?</summary>
+        <p>No. Es una calculadora independiente. No está afiliada, patrocinada ni respaldada por LALIGA ni por DAZN. Comprueba siempre que el pago adicional se pueda hacer con un mecanismo que permita el reglamento de tu liga.</p>
+      </details>
+    </div>
+  </section>
+
+  <footer class="pie">
+    <p><b>Qué es estimación.</b> El incremento diario y, por tanto, el precio final estimado son supuestos tuyos. Cuando conozcas el precio real, escríbelo y el cálculo lo usará en su lugar.</p>
+    <p><b>Límites del modelo.</b> Aplica la regla de compensación acordada entre socios y no verifica el reglamento de la plataforma. Si el jugador baja de precio, solo se reconoce una subida de cero.</p>
+    <p><b>Sin afiliación.</b> LALIGA, LALIGA Fantasy y DAZN son marcas de sus respectivos titulares. Esta calculadora es independiente y no tiene relación con ellos.</p>
+    <p><b>Privacidad.</b> Todo se calcula en tu navegador. No hay registro, publicidad ni datos enviados a ningún servidor.</p>
+  </footer>
+</main>
+
+<script id="logica">
+/* ===== Lógica pura: formato, lectura, validación y cálculo (sin DOM) ===== */
+const Formato = {
+  numero(n) {
+    const neg = n < 0;
+    const c = Math.round(Math.abs(n) * 100);
+    const ent = Math.floor(c / 100);
+    const dec = c % 100;
+    let s = String(ent).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+    if (dec) s += ',' + String(dec).padStart(2, '0');
+    return (neg ? '−' : '') + s;
+  },
+  euros(n) { return Formato.numero(n) + ' €'; },
+  dias(d) { return String(d).replace('.', ',') + (d === 1 ? ' día' : ' días'); }
+};
+
+const Entrada = {
+  /* Devuelve null si está vacío, NaN si no se entiende, o el número. */
+  parse(texto) {
+    if (texto === null || texto === undefined) return null;
+    let t = String(texto).replace(/[€\s ]/g, '').replace(/d[ií]as?/i, '');
+    if (t === '') return null;
+    if (!/^[-+]?[\d.,]+$/.test(t)) return NaN;
+    let neg = false;
+    if (t[0] === '-' || t[0] === '+') { neg = t[0] === '-'; t = t.slice(1); }
+    if (t === '') return NaN;
+    if (t.indexOf(',') !== -1) {
+      const partes = t.split(',');
+      if (partes.length > 2) return NaN;
+      const ent = partes[0], dec = partes[1];
+      if (!/^(\d*|[1-9]\d{0,2}(\.\d{3})+)$/.test(ent) || !/^\d*$/.test(dec)) return NaN;
+      t = ent.replace(/\./g, '') + '.' + dec;
+    } else if (/^[1-9]\d{0,2}(\.\d{3})+$/.test(t)) {
+      t = t.replace(/\./g, '');
+    } else if ((t.match(/\./g) || []).length > 1) {
+      return NaN;
+    }
+    const n = Number(t);
+    return Number.isFinite(n) ? (neg ? -n : n) : NaN;
+  }
+};
+
+const MAX_EUROS = 1e12;
+
+const Validacion = {
+  /* e = { pi, pv, g, d, pfReal }, cada uno null | NaN | número */
+  validar(e) {
+    const errores = {};
+    const dinero = (clave, valor, nombre, { permiteCero }) => {
+      if (valor === null) { errores[clave] = 'Escribe ' + nombre + '.'; return; }
+      if (Number.isNaN(valor)) { errores[clave] = 'Escribe solo números, por ejemplo 20.000.000.'; return; }
+      if (valor < 0) { errores[clave] = 'No puede ser negativo.'; return; }
+      if (valor === 0 && !permiteCero) { errores[clave] = 'Debe ser mayor que cero.'; return; }
+      if (valor > MAX_EUROS) { errores[clave] = 'Revisa este importe: es demasiado grande.'; }
+    };
+    dinero('pi', e.pi, 'el precio inicial del jugador', { permiteCero: false });
+    dinero('pv', e.pv, 'el precio acordado en la transferencia', { permiteCero: false });
+    dinero('g', e.g, 'el incremento diario estimado (puede ser 0)', { permiteCero: true });
+
+    if (e.d === null) errores.d = 'Escribe la duración de la cesión en días (puede ser 0).';
+    else if (Number.isNaN(e.d)) errores.d = 'Escribe solo números, por ejemplo 5.';
+    else if (e.d < 0) errores.d = 'Los días no pueden ser negativos.';
+    else if (e.d > 100000) errores.d = 'Revisa los días: el número es demasiado grande.';
+
+    if (e.pfReal !== null) {
+      if (Number.isNaN(e.pfReal)) errores.pfReal = 'Escribe solo números, por ejemplo 23.000.000.';
+      else if (e.pfReal < 0) errores.pfReal = 'No puede ser negativo. Déjalo vacío para usar la estimación.';
+      else if (e.pfReal === 0) errores.pfReal = 'Debe ser mayor que cero. Déjalo vacío para usar la estimación.';
+      else if (e.pfReal > MAX_EUROS) errores.pfReal = 'Revisa este importe: es demasiado grande.';
+    }
+
+    if (!errores.pi && !errores.pv && e.pv < e.pi) {
+      errores.pv = 'El precio acordado no puede ser menor que el precio inicial: no habría dinero adicional que compensar.';
+    }
+    return { errores, valido: Object.keys(errores).length === 0 };
+  }
+};
+
+const Calculo = {
+  /* Todo se opera en céntimos para evitar errores de coma flotante. */
+  calcular(e) {
+    const aCent = (x) => Math.round(x * 100);
+    const PI = aCent(e.pi), PV = aCent(e.pv), G = aCent(e.g);
+    const usaReal = e.pfReal !== null && e.pfReal !== undefined;
+    const E = PV - PI;
+    let dP, Pf;
+    if (usaReal) {
+      Pf = aCent(e.pfReal);
+      dP = Math.max(0, Pf - PI);
+    } else {
+      dP = Math.round(G * e.d);
+      Pf = PI + dP;
+    }
+    const C = Math.max(0, E - dP);
+    const T = Pf + C;
+    return {
+      usaReal,
+      E: E / 100, dP: dP / 100, Pf: Pf / 100, C: C / 100, T: T / 100,
+      bajoDePrecio: usaReal && Pf < PI,
+      cubierto: dP >= E
+    };
+  }
+};
+
+const EJEMPLO = { pi: 20e6, pv: 25e6, g: 400000, d: 5, pfReal: null };
+
+const CASOS = [
+  { n: 1, nombre: 'Subida menor que el dinero adicional', entrada: { pi: 20e6, pv: 25e6, g: 400000, d: 5, pfReal: null }, esperado: { dP: 2e6, Pf: 22e6, C: 3e6, T: 25e6 } },
+  { n: 2, nombre: 'Subida igual al dinero adicional', entrada: { pi: 20e6, pv: 25e6, g: 1e6, d: 5, pfReal: null }, esperado: { dP: 5e6, Pf: 25e6, C: 0, T: 25e6 } },
+  { n: 3, nombre: 'Subida mayor que el dinero adicional', entrada: { pi: 20e6, pv: 25e6, g: 1.2e6, d: 5, pfReal: null }, esperado: { dP: 6e6, Pf: 26e6, C: 0, T: 26e6 } },
+  { n: 4, nombre: 'Precio real distinto de la estimación', entrada: { pi: 20e6, pv: 25e6, g: 400000, d: 5, pfReal: 23e6 }, esperado: { dP: 3e6, Pf: 23e6, C: 2e6, T: 25e6 } },
+  { n: 5, nombre: 'El jugador baja de precio', entrada: { pi: 20e6, pv: 25e6, g: 400000, d: 5, pfReal: 19e6 }, esperado: { dP: 0, Pf: 19e6, C: 5e6, T: 24e6 }, bajada: true }
+];
+
+const CASOS_INVALIDOS = [
+  { nombre: 'Valor negativo', entrada: { pi: -1, pv: 25e6, g: 400000, d: 5, pfReal: null }, campo: 'pi' },
+  { nombre: 'Campo obligatorio vacío', entrada: { pi: 20e6, pv: null, g: 400000, d: 5, pfReal: null }, campo: 'pv' },
+  { nombre: 'Precio acordado menor que el inicial', entrada: { pi: 20e6, pv: 18e6, g: 400000, d: 5, pfReal: null }, campo: 'pv' },
+  { nombre: 'Días negativos', entrada: { pi: 20e6, pv: 25e6, g: 400000, d: -2, pfReal: null }, campo: 'd' }
+];
+
+function evaluarCaso(c) {
+  const r = Calculo.calcular(c.entrada);
+  const cerca = (a, b) => Math.abs(a - b) < 0.005;
+  const ok = cerca(r.dP, c.esperado.dP) && cerca(r.Pf, c.esperado.Pf) && cerca(r.C, c.esperado.C) && cerca(r.T, c.esperado.T) &&
+    cerca(r.T, r.Pf + r.C) && r.C >= 0 && (!c.bajada || r.bajoDePrecio === true);
+  return { r, ok };
+}
+
+function evaluarInvalidos() {
+  return CASOS_INVALIDOS.map((c) => {
+    const v = Validacion.validar(c.entrada);
+    return { nombre: c.nombre, ok: !v.valido && Boolean(v.errores[c.campo]) };
+  });
+}
+</script>
+
+<script>
+/* ===== Presentación ===== */
+(function () {
+  'use strict';
+  const $ = (id) => document.getElementById(id);
+  const CAMPOS = { pi: 'f-pi', pv: 'f-pv', g: 'f-g', d: 'f-d', pfReal: 'f-pf' };
+  const ERR = { pi: 'e-pi', pv: 'e-pv', g: 'e-g', d: 'e-d', pfReal: 'e-pf' };
+  const WRAP = { pi: 'w-pi', pv: 'w-pv', g: 'w-g', d: 'w-d', pfReal: 'w-pf' };
+  const f = Formato.euros;
+  let textoCopia = '';
+  let temporizador = null;
+
+  function leer() {
+    const e = {};
+    Object.keys(CAMPOS).forEach((k) => { e[k] = Entrada.parse($(CAMPOS[k]).value); });
+    return e;
+  }
+
+  function escribir(e) {
+    $(CAMPOS.pi).value = Formato.numero(e.pi);
+    $(CAMPOS.pv).value = Formato.numero(e.pv);
+    $(CAMPOS.g).value = Formato.numero(e.g);
+    $(CAMPOS.d).value = String(e.d).replace('.', ',');
+    $(CAMPOS.pfReal).value = e.pfReal === null ? '' : Formato.numero(e.pfReal);
+  }
+
+  function marcarErrores(errores) {
+    Object.keys(CAMPOS).forEach((k) => {
+      const msg = errores[k];
+      const el = $(ERR[k]);
+      el.hidden = !msg;
+      el.textContent = msg || '';
+      $(WRAP[k]).classList.toggle('invalido', Boolean(msg));
+      $(CAMPOS[k]).setAttribute('aria-invalid', msg ? 'true' : 'false');
+    });
+  }
+
+  function frase(e, r) {
+    if (r.E === 0) return 'No hay dinero adicional que compensar, porque el precio acordado es igual al inicial. Solo pagas el precio del jugador.';
+    let s;
+    if (r.bajoDePrecio) {
+      s = 'El jugador bajó de ' + f(e.pi) + ' a ' + f(r.Pf) + '. No se reconoce ninguna subida, así que debes aportar los ' + f(r.E) + ' adicionales completos.';
+    } else if (!r.cubierto) {
+      s = 'La subida de ' + f(r.dP) + ' cubre una parte de los ' + f(r.E) + ' adicionales. Te faltan ' + f(r.C) + ' por aportar.';
+    } else {
+      s = 'La subida de ' + f(r.dP) + ' cubre los ' + f(r.E) + ' adicionales completos, así que no debes aportar compensación.';
+      if (r.T > e.pv) s += ' El total supera los ' + f(e.pv) + ' que cobraste porque el jugador ya vale más.';
+    }
+    return s;
+  }
+
+  function avisos(e, r) {
+    const lista = [];
+    if (r.bajoDePrecio) {
+      lista.push({ tipo: 'alerta', texto: 'El jugador bajó de precio (' + f(e.pi) + ' a ' + f(r.Pf) + '). Para la compensación solo cuenta una subida de ' + f(0) + '. Recuperarlo cuesta lo que marque la plataforma ese día.' });
+    }
+    if (r.usaReal && e.g * e.d > 0) {
+      lista.push({ tipo: 'info', texto: 'Con el precio real escrito, la estimación diaria (' + f(e.g) + ' × ' + Formato.dias(e.d) + ') ya no se usa para calcular la compensación.' });
+    }
+    if (!r.usaReal) {
+      lista.push({ tipo: 'info', texto: 'Este resultado usa una estimación. El precio real puede ser distinto: cuando lo sepas, escríbelo en «Precio final real».' });
+    }
+    return lista;
+  }
+
+  function pasos(e, r) {
+    const p = [];
+    const fila = (titulo, formula, expr, res, ambar) => {
+      return '<div class="paso"><h3>' + titulo + '</h3><p class="formula">' + formula + '</p>' +
+        '<p class="sustituida"><span>' + expr + '</span><b' + (ambar ? ' class="ambar"' : '') + '>= ' + res + '</b></p></div>';
+    };
+    p.push(fila('Dinero adicional recibido', 'E = Pv − Pi', f(e.pv) + ' − ' + f(e.pi), f(r.E)));
+    if (r.usaReal) {
+      p.push(fila('Incremento real del valor', 'ΔP = máx(0, Pf − Pi)', 'máx(0, ' + f(r.Pf) + ' − ' + f(e.pi) + ')', f(r.dP)));
+      p.push('<div class="paso"><h3>Precio final</h3><p class="formula">Pf = precio real introducido</p><p class="sustituida"><span>Pf</span><b>= ' + f(r.Pf) + '</b></p></div>');
+    } else {
+      p.push(fila('Incremento estimado del valor', 'ΔP = g × d', f(e.g) + ' × ' + String(e.d).replace('.', ','), f(r.dP)));
+      p.push(fila('Precio final estimado', 'Pf = Pi + ΔP', f(e.pi) + ' + ' + f(r.dP), f(r.Pf)));
+    }
+    p.push(fila('Compensación adicional', 'C = máx(0, E − ΔP)', 'máx(0, ' + f(r.E) + ' − ' + f(r.dP) + ')', f(r.C), true));
+    p.push(fila('Desembolso total', 'T = Pf + C', f(r.Pf) + ' + ' + f(r.C), f(r.T)));
+    return p.join('');
+  }
+
+  function textoParaCopiar(e, r) {
+    const l = [];
+    l.push('Calculadora de cesiones · LALIGA Fantasy DAZN');
+    l.push('');
+    l.push('DATOS');
+    l.push('Precio inicial (Pi): ' + f(e.pi));
+    l.push('Precio acordado en la transferencia (Pv): ' + f(e.pv));
+    l.push('Incremento diario estimado (g): ' + f(e.g));
+    l.push('Duración (d): ' + Formato.dias(e.d));
+    l.push('Precio final real: ' + (r.usaReal ? f(e.pfReal) : 'no indicado (se usa la estimación)'));
+    l.push('');
+    l.push('RESULTADO (' + (r.usaReal ? 'con precio real' : 'con estimación') + ')');
+    l.push('Dinero adicional recibido: ' + f(r.E));
+    l.push('Incremento acumulado: ' + f(r.dP));
+    l.push('Precio final ' + (r.usaReal ? 'real' : 'estimado') + ': ' + f(r.Pf));
+    l.push('Compensación adicional: ' + f(r.C));
+    l.push('Desembolso total para recuperar al jugador: ' + f(r.T));
+    l.push('');
+    l.push('FÓRMULAS');
+    l.push('E = Pv − Pi = ' + f(e.pv) + ' − ' + f(e.pi) + ' = ' + f(r.E));
+    if (r.usaReal) {
+      l.push('ΔP = máx(0, Pf − Pi) = máx(0, ' + f(r.Pf) + ' − ' + f(e.pi) + ') = ' + f(r.dP));
+    } else {
+      l.push('ΔP = g × d = ' + f(e.g) + ' × ' + String(e.d).replace('.', ',') + ' = ' + f(r.dP));
+      l.push('Pf = Pi + ΔP = ' + f(e.pi) + ' + ' + f(r.dP) + ' = ' + f(r.Pf));
+    }
+    l.push('C = máx(0, E − ΔP) = máx(0, ' + f(r.E) + ' − ' + f(r.dP) + ') = ' + f(r.C));
+    l.push('T = Pf + C = ' + f(r.Pf) + ' + ' + f(r.C) + ' = ' + f(r.T));
+    l.push('');
+    if (r.bajoDePrecio) l.push('Aviso: el jugador bajó de precio; la subida reconocida es 0.');
+    l.push('Nota: es un cálculo del modelo acordado entre socios. No confirma que la operación esté permitida por la plataforma.');
+    return l.join('\n');
+  }
+
+  function tablaResumen(e, r) {
+    const filas = [
+      ['Precio inicial', f(e.pi)],
+      ['Precio de transferencia inicial', f(e.pv)],
+      ['Dinero adicional recibido', f(r.E)],
+      ['Incremento diario', f(e.g)],
+      ['Duración', Formato.dias(e.d)],
+      ['Incremento acumulado', f(r.dP)],
+      ['Precio final ' + (r.usaReal ? 'real' : 'estimado'), f(r.Pf)],
+      ['Compensación adicional', f(r.C)],
+      ['Desembolso total para recuperar al jugador', f(r.T), true]
+    ];
+    return filas.map((x) => '<tr' + (x[2] ? ' class="fuerte"' : '') + '><td>' + x[0] + '</td><td class="num">' + x[1] + '</td></tr>').join('');
+  }
+
+  function pintarInvalido() {
+    ['r-T', 'r-E', 'r-dP', 'r-Pf', 'r-C', 'l-pf', 'l-c'].forEach((id) => { $(id).textContent = '—'; });
+    $('s-dP').textContent = '';
+    $('seg-pf').style.width = '0%';
+    $('seg-c').style.width = '0%';
+    $('lectura').textContent = 'Corrige los campos marcados en rojo para ver el resultado.';
+    $('avisos').innerHTML = '';
+    $('pasos').innerHTML = '<p class="vacio">El desglose aparecerá aquí cuando los datos sean válidos.</p>';
+    $('tabla-resumen').innerHTML = '<tr><td colspan="2" class="vacio">Sin datos válidos todavía.</td></tr>';
+    $('b-copiar').disabled = true;
+    textoCopia = '';
+  }
+
+  function pintar(e, r) {
+    $('r-T').textContent = f(r.T);
+    $('r-E').textContent = f(r.E);
+    $('r-dP').textContent = f(r.dP);
+    $('r-Pf').textContent = f(r.Pf);
+    $('r-C').textContent = f(r.C);
+    $('l-pf').textContent = f(r.Pf);
+    $('l-c').textContent = f(r.C);
+    $('et-pf').textContent = r.usaReal ? 'Precio final real' : 'Precio final estimado';
+    $('chip-modo').textContent = r.usaReal ? 'Con precio real' : 'Con estimación';
+    $('s-dP').textContent = r.usaReal ? 'Calculado con el precio real' : 'Calculado con el incremento diario';
+    const pctC = r.T > 0 ? (r.C / r.T) * 100 : 0;
+    const pctCv = r.C > 0 ? Math.max(pctC, 3) : 0;
+    $('seg-c').style.width = pctCv + '%';
+    $('seg-pf').style.width = (100 - pctCv) + '%';
+    $('barra').setAttribute('aria-label', 'Del total de ' + f(r.T) + ', ' + f(r.Pf) + ' son el precio del jugador y ' + f(r.C) + ' son compensación');
+    $('lectura').textContent = frase(e, r);
+    $('avisos').innerHTML = avisos(e, r).map((a) => '<div class="aviso ' + (a.tipo === 'alerta' ? 'alerta' : '') + '">' + a.texto + '</div>').join('');
+    $('pasos').innerHTML = pasos(e, r);
+    $('tabla-resumen').innerHTML = tablaResumen(e, r);
+    $('b-copiar').disabled = false;
+    textoCopia = textoParaCopiar(e, r);
+  }
+
+  function render() {
+    const e = leer();
+    const v = Validacion.validar(e);
+    marcarErrores(v.errores);
+    $('b-quitar-pf').hidden = $(CAMPOS.pfReal).value.trim() === '';
+    if (!v.valido) { pintarInvalido(); return; }
+    pintar(e, Calculo.calcular(e));
+  }
+
+  function pintarCasos() {
+    const filas = [];
+    let buenos = 0;
+    CASOS.forEach((c) => {
+      const { r, ok } = evaluarCaso(c);
+      if (ok) buenos += 1;
+      const entradaTxt = Formato.euros(c.entrada.pi) + ' → ' + Formato.euros(c.entrada.pv) + (c.entrada.pfReal !== null ? ', real ' + Formato.euros(c.entrada.pfReal) : ', subida estimada ' + Formato.euros(c.entrada.g * c.entrada.d));
+      filas.push('<tr><td>Caso ' + c.n + '. ' + c.nombre + '<span class="sub-caso">' + entradaTxt + '</span></td>' +
+        '<td class="num">C ' + f(c.esperado.C) + '<span class="sub-caso">T ' + f(c.esperado.T) + '</span></td>' +
+        '<td class="num">C ' + f(r.C) + '<span class="sub-caso">T ' + f(r.T) + '</span></td>' +
+        '<td class="num"><span class="pill ' + (ok ? 'ok' : 'mal') + '">' + (ok ? 'Correcto' : 'Falla') + '</span></td></tr>');
+    });
+    const inv = evaluarInvalidos();
+    const invOk = inv.every((x) => x.ok);
+    if (invOk) buenos += 1;
+    filas.push('<tr><td>Caso 6. Datos inválidos<span class="sub-caso">' + inv.map((x) => x.nombre).join(', ') + '</span></td>' +
+      '<td class="num">Se rechazan</td><td class="num">' + (invOk ? 'Se rechazan' : 'Alguno pasa') + '</td>' +
+      '<td class="num"><span class="pill ' + (invOk ? 'ok' : 'mal') + '">' + (invOk ? 'Correcto' : 'Falla') + '</span></td></tr>');
+    $('tabla-casos').innerHTML = filas.join('');
+    $('resumen-casos').textContent = buenos + ' de ' + (CASOS.length + 1) + ' casos dan el resultado esperado. Se calculan con la misma lógica de esta página.';
+  }
+
+  async function copiar() {
+    if (!textoCopia) return;
+    const estado = $('estado-copia');
+    const manual = $('copia-manual');
+    manual.hidden = true;
+    let hecho = false;
+    try {
+      await navigator.clipboard.writeText(textoCopia);
+      hecho = true;
+    } catch (err) {
+      try {
+        manual.value = textoCopia;
+        manual.hidden = false;
+        manual.focus();
+        manual.select();
+        hecho = document.execCommand('copy');
+        if (hecho) manual.hidden = true;
+      } catch (err2) { hecho = false; }
+    }
+    estado.textContent = hecho ? 'Copiado' : 'Tu navegador no dejó copiar solo. El texto quedó seleccionado: cópialo a mano.';
+    clearTimeout(temporizador);
+    if (hecho) temporizador = setTimeout(() => { estado.textContent = ''; }, 2500);
+  }
+
+  function alSalir(id) {
+    const campo = $(id);
+    const n = Entrada.parse(campo.value);
+    if (n !== null && !Number.isNaN(n) && n >= 0) campo.value = id === 'f-d' ? String(n).replace('.', ',') : Formato.numero(n);
+    render();
+  }
+
+  Object.keys(CAMPOS).forEach((k) => {
+    const campo = $(CAMPOS[k]);
+    campo.addEventListener('input', render);
+    campo.addEventListener('blur', () => alSalir(CAMPOS[k]));
+  });
+  $('b-ejemplo').addEventListener('click', () => { escribir(EJEMPLO); $('copia-manual').hidden = true; $('estado-copia').textContent = ''; render(); });
+  $('b-quitar-pf').addEventListener('click', () => { $(CAMPOS.pfReal).value = ''; render(); $(CAMPOS.pfReal).focus(); });
+  $('b-copiar').addEventListener('click', copiar);
+
+  escribir(EJEMPLO);
+  render();
+  pintarCasos();
+})();
+</script>
+</body>
+</html>

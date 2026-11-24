@@ -479,7 +479,7 @@ button, input { font: inherit; }
 @media (max-width: 560px) {
   .campos-grid { grid-template-columns: 1fr; }
 }
-.campo { display: grid; gap: 4px; align-content: start; }
+.campo { display: grid; gap: 4px; align-content: start; min-width: 0; }
 .campo.span-2 { grid-column: 1 / -1; }
 .campo label {
   font-weight: 600;
@@ -931,6 +931,7 @@ tr.fuerte td { font-weight: 600; }
       <button type="button" class="btn btn-sec" id="b-ejemplo">Cargar ejemplo</button>
       <button type="button" class="btn btn-sec" id="b-limpiar">Limpiar</button>
       <button type="button" class="btn btn-ghost" id="b-guia">Guía rápida</button>
+      <a href="https://ko-fi.com/R5A62B8J2Y" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;"><img height="36" style="border:0px;height:36px;display:block;" src="https://storage.ko-fi.com/cdn/kofi6.png?v=6" alt="Buy Me a Coffee at ko-fi.com"></a>
     </div>
   </header>
 
@@ -1051,7 +1052,7 @@ tr.fuerte td { font-weight: 600; }
             <button type="button" class="enlace" id="b-quitar-pf" hidden>Volver a la estimación</button>
           </label>
           <div class="entrada" id="w-pf">
-            <input id="f-pf" type="text" inputmode="decimal" autocomplete="off" placeholder="Déjalo vacío para usar la estimación" aria-describedby="e-pf">
+            <input id="f-pf" type="text" inputmode="decimal" autocomplete="off" placeholder="Opcional (reemplaza estimación)" aria-describedby="e-pf">
             <span class="sufijo">€</span>
           </div>
           <p class="ayuda">Si ya sabes cuánto cuesta hoy, reemplaza la subida diaria estimada.</p>

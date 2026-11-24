@@ -237,6 +237,44 @@ tr.fuerte td { font-weight: 600; }
 @media (prefers-reduced-motion: reduce) {
   .seg-pf, .seg-c, .entrada { transition: none; }
 }
+
+/* Player Selector */
+.selector-jugador { border: 1.5px solid var(--line); border-radius: 10px; padding: 16px; margin-bottom: 20px; }
+.selector-jugador legend { font-weight: 600; font-size: 15px; padding: 0 8px; color: var(--ink); }
+.estado-selector { font-size: 13px; color: var(--muted); margin-bottom: 10px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.estado-selector[hidden] { display: none; }
+.estado-selector .cargando { color: var(--muted); }
+.estado-selector .error { color: var(--alert); }
+.btn-mini { padding: 4px 10px; font: inherit; font-size: 12px; font-weight: 600; background: transparent; border: 1.5px solid var(--line); border-radius: 6px; cursor: pointer; color: var(--ink); }
+.btn-mini:hover { border-color: var(--pitch); color: var(--pitch); }
+.filtros-jugador { display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
+.filtros-jugador select { flex: 1; min-width: 120px; padding: 8px 10px; font: inherit; font-size: 14px; border: 1.5px solid var(--line); border-radius: 8px; background: var(--campo); color: var(--ink); cursor: pointer; }
+.filtros-jugador select:focus { outline: none; border-color: var(--pitch); box-shadow: 0 0 0 3px var(--pitch-soft); }
+.buscador-jugador { position: relative; }
+.buscador-jugador input { width: 100%; padding: 10px 12px; font: inherit; font-size: 15px; border: 1.5px solid var(--line); border-radius: 8px; background: var(--campo); color: var(--ink); }
+.buscador-jugador input:focus { outline: none; border-color: var(--pitch); box-shadow: 0 0 0 3px var(--pitch-soft); }
+.buscador-jugador input::placeholder { color: var(--muted); }
+.lista-jugadores { position: absolute; top: 100%; left: 0; right: 0; max-height: 280px; overflow-y: auto; background: var(--surface); border: 1.5px solid var(--line); border-top: 0; border-radius: 0 0 8px 8px; list-style: none; margin: 0; padding: 0; z-index: 10; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); }
+.lista-jugadores li { padding: 10px 12px; cursor: pointer; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--line); font-size: 14px; }
+.lista-jugadores li:last-child { border-bottom: 0; }
+.lista-jugadores li:hover, .lista-jugadores li.seleccionado { background: var(--pitch-soft); }
+.lista-jugadores li .texto-jugador { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.lista-jugadores li .precio-jugador { font-family: var(--font-mono); font-size: 12px; color: var(--muted); white-space: nowrap; }
+.jugador-seleccionado { display: flex; align-items: center; gap: 10px; padding: 10px 12px; background: var(--pitch-soft); border-radius: 8px; margin-top: 10px; }
+.jugador-seleccionado[hidden] { display: none; }
+.jugador-seleccionado .foto-jugador { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; background: var(--surface); flex: none; }
+.jugador-seleccionado .info-jugador { flex: 1; min-width: 0; display: grid; gap: 2px; }
+.jugador-seleccionado .nombre-seleccionado { font-weight: 600; font-size: 14px; }
+.jugador-seleccionado .meta-seleccionado { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; font-size: 12.5px; color: var(--muted); }
+.jugador-seleccionado .escudo-equipo { width: 16px; height: 16px; object-fit: contain; flex: none; }
+.jugador-seleccionado .incremento-seleccionado { font-family: var(--font-mono); font-size: 12px; color: var(--pitch); font-weight: 500; }
+.jugador-seleccionado .incremento-seleccionado.negativo { color: var(--alert); }
+.jugador-seleccionado button { padding: 6px 10px; font: inherit; font-size: 12px; font-weight: 600; background: transparent; border: 1.5px solid var(--line); border-radius: 6px; cursor: pointer; color: var(--muted); flex: none; }
+.jugador-seleccionado button:hover { border-color: var(--alert); color: var(--alert); }
+.aviso-precio { font-size: 13px; color: var(--amber); background: var(--amber-soft); padding: 8px 10px; border-radius: 8px; margin-top: 8px; }
+.pie-selector { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+.pie-selector[hidden] { display: none; }
+.ultima-actualizada { font-size: 12px; color: var(--muted); font-style: italic; }
 </style>
 </head>
 <body>
@@ -250,6 +288,53 @@ tr.fuerte td { font-weight: 600; }
   <div class="rejilla">
     <section class="tarjeta entradas" aria-labelledby="t-datos">
       <h2 id="t-datos">Datos de la operación</h2>
+      
+      <fieldset class="selector-jugador">
+        <legend>Seleccionar jugador</legend>
+
+        <div class="estado-selector" id="estado-selector" aria-live="polite">
+          <span class="cargando" id="cargando-selector">Cargando jugadores...</span>
+          <span class="error" id="error-selector" hidden>No se pudieron cargar los jugadores. Inténtalo de nuevo.</span>
+          <button type="button" class="btn-mini" id="btn-reintentar-selector" hidden>Reintentar</button>
+        </div>
+
+        <div class="filtros-jugador">
+          <select id="filtro-equipo" aria-label="Filtrar por equipo"><option value="">Todos los equipos</option></select>
+          <select id="filtro-posicion" aria-label="Filtrar por posición">
+            <option value="">Todas</option>
+            <option value="DEL">DEL</option>
+            <option value="MED">MED</option>
+            <option value="DEF">DEF</option>
+            <option value="POR">POR</option>
+          </select>
+        </div>
+
+        <div class="buscador-jugador">
+          <input type="text" id="input-buscar-jugador" placeholder="Buscar jugador..." autocomplete="off" aria-label="Buscar jugador por nombre">
+          <ul class="lista-jugadores" id="lista-jugadores" role="listbox" hidden></ul>
+        </div>
+
+        <div class="jugador-seleccionado" id="jugador-seleccionado" hidden>
+          <img class="foto-jugador" id="foto-seleccionado" alt="" hidden>
+          <div class="info-jugador">
+            <span class="nombre-seleccionado" id="nombre-seleccionado"></span>
+            <span class="meta-seleccionado">
+              <img class="escudo-equipo" id="escudo-seleccionado" alt="" hidden>
+              <span class="equipo-seleccionado" id="equipo-seleccionado"></span>
+              <span class="incremento-seleccionado" id="incremento-seleccionado" hidden></span>
+            </span>
+          </div>
+          <button type="button" id="btn-quitar-seleccion">Quitar</button>
+        </div>
+
+        <p class="aviso-precio" id="aviso-precio-jugador" role="status" hidden></p>
+
+        <div class="pie-selector" id="pie-selector" hidden>
+          <p class="ultima-actualizada" id="ultima-actualizada"></p>
+          <button type="button" class="btn-mini" id="btn-actualizar-datos">Actualizar</button>
+        </div>
+      </fieldset>
+      
       <div class="campos">
         <div class="campo">
           <label for="f-pi">Precio inicial del jugador</label>
@@ -425,6 +510,173 @@ tr.fuerte td { font-weight: 600; }
 </main>
 
 <script id="logica">
+/* ===== Constantes y configuración (Requirements 5.4, 6.1) ===== */
+const MSGS = {
+  // Placeholders y resultados
+  placeholder: '—',
+  modoEstimacion: 'Con estimación',
+  modoPrecioReal: 'Con precio real',
+  modoSinDatos: 'Sin datos válidos todavía',
+  
+  // Etiquetas de campos
+  labelPi: 'Precio inicial del jugador',
+  labelPv: 'Precio acordado en la transferencia',
+  labelG: 'Incremento diario estimado',
+  labelD: 'Duración de la cesión',
+  labelPf: 'Precio final real',
+  
+  // Ayudas de campos
+  ayudaPi: 'Su valor en la plataforma antes de la cesión.',
+  ayudaPv: 'Lo que te pagó tu socio por el jugador.',
+  ayudaG: 'Cuánto calculas que sube por día. Es una estimación, no una garantía.',
+  ayudaD: 'Días que pasarán hasta que lo recuperes.',
+  ayudaPf: 'Si ya sabes cuánto cuesta hoy, escríbelo. Reemplaza la estimación diaria.',
+  
+  // Sufijos
+  sufijoEuros: '€',
+  sufijoDias: 'días',
+  sufijoPorDia: '€ por día',
+  labelOpcional: 'Opcional',
+  
+  // Errores
+  errRequerido: (nombre) => `Escribe ${nombre}.`,
+  errSoloNumeros: 'Escribe solo números, por ejemplo 20.000.000.',
+  errNoNegativo: 'No puede ser negativo.',
+  errMayorQueCero: 'Debe ser mayor que cero.',
+  errMayorQueCeroOpcional: 'Debe ser mayor que cero. Déjalo vacío para usar la estimación.',
+  errMuyGrande: 'Revisa este importe: es demasiado grande.',
+  errDiasRequerido: 'Escribe la duración de la cesión en días (puede ser 0).',
+  errDiasNegativos: 'Los días no pueden ser negativos.',
+  errDiasMuyGrandes: 'Revisa los días: el número es demasiado grande.',
+  errMenorInicial: 'El precio acordado no puede ser menor que el precio inicial: no habría dinero adicional que compensar.',
+  errCampoInvalido: 'Déjalo vacío para usar la estimación.',
+  
+  // Resultados
+  dineroAdicional: 'Dinero adicional recibido',
+  incrementoAcumulado: 'Incremento acumulado',
+  precioFinalEstimado: 'Precio final estimado',
+  precioFinalReal: 'Precio final real',
+  compensacionAdicional: 'Compensación adicional',
+  desembolsoTotal: 'Desembolso total para recuperar al jugador',
+  dineroAdicionalSub: 'Precio acordado menos precio inicial',
+  incrementoSub: 'Calculado con el incremento diario',
+  precioRealSub: 'Calculado con el precio real',
+  pfSub: 'Lo que vale el jugador al recuperarlo',
+  cSub: 'Lo que aportas aparte del precio',
+  
+  // Etiquetas de tabla y otros
+  concepto: 'Concepto',
+  resultado: 'Resultado',
+  caso: 'Caso',
+  esperado: 'Esperado',
+  obtenido: 'Obtenido',
+  estado: 'Estado',
+  correcto: 'Correcto',
+  falla: 'Falla',
+  seRechazan: 'Se rechazan',
+  algunoPasa: 'Alguno pasa',
+  
+  // Labels dinámicos
+  labelPfDynamic: (usaReal) => usaReal ? 'Precio final real' : 'Precio final estimado',
+  pfSubDynamic: (usaReal) => usaReal ? 'Calculado con el precio real' : 'Calculado con el incremento diario',
+  
+  // Leyenda de la barra
+  leyendaPrecio: 'Precio del jugador',
+  leyendaCompensacion: 'Compensación adicional',
+  
+  // Botones
+  btnRestaurarEjemplo: 'Restaurar ejemplo',
+  btnCopiar: 'Copiar resultados y fórmulas',
+  btnQuitarPf: 'Volver a la estimación',
+  
+  // Estados de copia
+  copiaExito: 'Copiado',
+  copiaFallback: 'Tu navegador no dejó copiar solo. El texto quedó seleccionado: cópialo a mano.',
+  
+  // Lectura
+  lecturaSinDatos: 'Corrige los campos marcados en rojo para ver el resultado.',
+  lecturaSincompensacion: 'No hay dinero adicional que compensar, porque el precio acordado es igual al inicial. Solo pagas el precio del jugador.',
+  lecturaBajó: (pi, pf, E) => `El jugador bajó de ${pi} a ${pf}. No se reconoce ninguna subida, así que debes aportar los ${E} adicionales completos.`,
+  lecturaParcial: (dP, E, C) => `La subida de ${dP} cubre una parte de los ${E} adicionales. Te faltan ${C} por aportar.`,
+  lecturaCompleto: (dP, E) => `La subida de ${dP} cubre los ${E} adicionales completos, así que no debes aportar compensación.`,
+  lecturaSupera: (T, pv) => ` El total supera los ${pv} que cobraste porque el jugador ya vale más.`,
+  
+  // Avisos
+  avisoBajó: (pi, pf) => `El jugador bajó de precio (${pi} a ${pf}). Para la compensación solo cuenta una subida de 0. Recuperarlo cuesta lo que marque la plataforma ese día.`,
+  avisoPrecioReal: (g, d) => `Con el precio real escrito, la estimación diaria (${g} × ${d}) ya no se usa para calcular la compensación.`,
+  avisoEstimacion: 'Este resultado usa una estimación. El precio real puede ser distinto: cuando lo sepas, escríbelo en «Precio final real».',
+  
+  // Desglose
+  pasoDineroAdicional: 'Dinero adicional recibido',
+  pasoFormulaE: 'E = Pv − Pi',
+  pasoIncrementoReal: 'Incremento real del valor',
+  pasoFormulaDeltaPReal: 'ΔP = máx(0, Pf − Pi)',
+  pasoPrecioFinal: 'Precio final',
+  pasoPfReal: 'Pf = precio real introducido',
+  pasoIncrementoEstimado: 'Incremento estimado del valor',
+  pasoFormulaDeltaPEst: 'ΔP = g × d',
+  pasoPrecioEstimado: 'Precio final estimado',
+  pasoFormulaPf: 'Pf = Pi + ΔP',
+  pasoCompensacion: 'Compensación adicional',
+  pasoFormulaC: 'C = máx(0, E − ΔP)',
+  pasoDesembolso: 'Desembolso total',
+  pasoFormulaT: 'T = Pf + C',
+  
+  // Tabla resumen
+  resPrecioInicial: 'Precio inicial',
+  resPrecioTransferencia: 'Precio de transferencia inicial',
+  resIncrementoDiario: 'Incremento diario',
+  resDuracion: 'Duración',
+  resPrecioFinal: (usaReal) => 'Precio final ' + (usaReal ? 'real' : 'estimado'),
+  
+  // Varios
+  vacio: 'El desglose aparecerá aquí cuando los datos sean válidos.',
+  notaCopia: 'Nota: es un cálculo del modelo acordado entre socios. No confirma que la operación esté permitida por la plataforma.',
+  notaPrecioReal: 'Este resultado sale del modelo de compensación acordado. No confirma que la operación esté permitida por la plataforma: cualquier pago adicional debe poder hacerse con un mecanismo que tu liga permita.',
+  
+  // Casos de prueba
+  casoSubidaMenor: 'Subida menor que el dinero adicional',
+  casoSubidaIgual: 'Subida igual al dinero adicional',
+  casoSubidaMayor: 'Subida mayor que el dinero adicional',
+  casoPrecioRealDistinto: 'Precio real distinto de la estimación',
+  casoBajaPrecio: 'El jugador baja de precio',
+  
+  // Player Selector
+  selectorLeyenda: 'Seleccionar jugador',
+  selectorCargando: 'Cargando jugadores...',
+  selectorError: 'No se pudieron cargar los jugadores. Inténtalo de nuevo.',
+  selectorSinResultados: 'No se encontraron jugadores.',
+  selectorPlaceholder: 'Buscar jugador...',
+  filtroTodosEquipos: 'Todos los equipos',
+  filtroTodasPosiciones: 'Todas',
+  filtroPosicionDEL: 'DEL',
+  filtroPosicionMED: 'MED',
+  filtroPosicionDEF: 'DEF',
+  filtroPosicionPOR: 'POR',
+  btnQuitar: 'Quitar',
+  btnReintentar: 'Reintentar',
+  btnActualizar: 'Actualizar',
+  precioNoDisponible: 'Precio de mercado no disponible para este jugador. Escríbelo manualmente.',
+  incrementoNegativoNota: 'El jugador bajó hoy; se dejó 0 € en incremento diario estimado.',
+  ultimaActualizada: 'Última actualización:'
+};
+
+const DATA_URL = './data/players.json';
+const IMAGE_BASE_URL = 'https://fantasybrain-production.up.railway.app';
+const CACHE_KEY = 'playerMarketCache';
+const TIMESTAMP_KEY = 'playerMarketTimestamp';
+const CACHE_TTL = 5 * 60 * 1000; // 5 minutos en milisegundos
+const API_TIMEOUT = 10000; // 10 segundos de timeout
+const SEARCH_DEBOUNCE_MS = 150;
+
+// Posiciones de jugadores
+const POSICIONES = {
+  DEL: 'DEL', // Delantero
+  MED: 'MED', // Centrocampista
+  DEF: 'DEF', // Defensa
+  POR: 'POR'  // Portero
+};
+
 /* ===== Lógica pura: formato, lectura, validación y cálculo (sin DOM) ===== */
 const Formato = {
   numero(n) {
@@ -559,6 +811,653 @@ function evaluarInvalidos() {
     return { nombre: c.nombre, ok: !v.valido && Boolean(v.errores[c.campo]) };
   });
 }
+
+/* ===== Player Market Service ===== */
+/**
+ * Servicio de datos del mercado de jugadores con caché en localStorage.
+ * Lee el archivo estático `./data/players.json` actualizado automáticamente por GitHub Actions.
+ * No utiliza datos de respaldo: si la carga falla, devuelve estado de error.
+ * @module PlayerMarketService
+ */
+const PlayerMarketService = (function() {
+  /** @type {string|null} */
+  let lastUpdate = null;
+
+  /**
+   * Construye la URL del JSON estático (con cache-busting opcional al refrescar).
+   * @param {boolean} [bypassCache=false] - Si es true, añade parámetro temporal.
+   * @returns {string} URL para la petición.
+   */
+  function buildDataUrl(bypassCache) {
+    if (!bypassCache) return DATA_URL;
+    const sep = DATA_URL.indexOf('?') === -1 ? '?' : '&';
+    return DATA_URL + sep + 't=' + Date.now();
+  }
+
+  /**
+   * Resuelve una URL relativa de imagen frente al host base de la API.
+   * @param {string} relativePath - Ruta relativa o URL absoluta.
+   * @returns {string} URL resuelta o cadena vacía.
+   */
+  function resolveUrl(relativePath) {
+    if (!relativePath || typeof relativePath !== 'string') return '';
+    if (/^https?:\/\//i.test(relativePath)) return relativePath;
+    const path = relativePath.charAt(0) === '/' ? relativePath : '/' + relativePath;
+    return IMAGE_BASE_URL + path;
+  }
+
+  /**
+   * Extrae el arreglo de jugadores de la respuesta JSON.
+   * Soporta `{ players: [...] }`, `{ results: [...] }`, `{ data: [...] }` o arreglo directo.
+   * @param {unknown} payload - JSON recibido.
+   * @returns {Array<Object>|null} Arreglo de jugadores o null si el formato es inesperado.
+   */
+  function extractPlayers(payload) {
+    if (Array.isArray(payload)) return payload;
+    if (payload && typeof payload === 'object') {
+      if (Array.isArray(payload.players)) return payload.players;
+      if (Array.isArray(payload.results)) return payload.results;
+      if (Array.isArray(payload.data)) return payload.data;
+    }
+    return null;
+  }
+
+  /**
+   * Lee los jugadores almacenados en caché local si no han caducado.
+   * @returns {Array<Object>|null} Lista de jugadores o null.
+   */
+  function getFromCache() {
+    try {
+      const cached = localStorage.getItem(CACHE_KEY);
+      if (!cached) return null;
+
+      const parsed = JSON.parse(cached);
+      if (!parsed || !Array.isArray(parsed.data) || typeof parsed.timestamp !== 'number') {
+        localStorage.removeItem(CACHE_KEY);
+        return null;
+      }
+
+      const age = Date.now() - parsed.timestamp;
+      if (age > CACHE_TTL) {
+        localStorage.removeItem(CACHE_KEY);
+        return null;
+      }
+
+      lastUpdate = typeof parsed.updatedAt === 'string' && parsed.updatedAt
+        ? parsed.updatedAt
+        : new Date(parsed.timestamp).toISOString();
+      return parsed.data;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  /**
+   * Guarda los jugadores y la marca temporal en localStorage.
+   * @param {Array<Object>} players - Lista de jugadores a almacenar.
+   * @param {string|null} [updatedAt] - Marca temporal del archivo de datos.
+   */
+  function saveToCache(players, updatedAt) {
+    try {
+      const timestamp = Date.now();
+      const iso = typeof updatedAt === 'string' && updatedAt
+        ? updatedAt
+        : new Date(timestamp).toISOString();
+      localStorage.setItem(CACHE_KEY, JSON.stringify({ data: players, timestamp: timestamp, updatedAt: iso }));
+      lastUpdate = iso;
+      localStorage.setItem(TIMESTAMP_KEY, lastUpdate);
+    } catch (e) {
+      // Almacenamiento lleno o no disponible: continuar sin caché
+    }
+  }
+
+  /**
+   * Obtiene los jugadores desde `./data/players.json` con control de timeout.
+   * @param {boolean} [bypassCache=false] - Si es true, evita la caché HTTP del navegador.
+   * @returns {Promise<{players: Array<Object>, status: 'ready'|'error', lastUpdate: string|null}>}
+   */
+  async function fetchPlayersData(bypassCache) {
+    const url = buildDataUrl(bypassCache);
+    let timeoutId = null;
+
+    try {
+      const controller = new AbortController();
+      timeoutId = setTimeout(function() { controller.abort(); }, API_TIMEOUT);
+
+      const response = await fetch(url, { signal: controller.signal });
+      clearTimeout(timeoutId);
+
+      if (!response.ok) {
+        throw new Error('HTTP ' + response.status);
+      }
+
+      const payload = await response.json();
+      const playerArray = extractPlayers(payload);
+      if (!playerArray || playerArray.length === 0) {
+        throw new Error('Unexpected data format');
+      }
+
+      const sourceUpdatedAt = payload && typeof payload.updated_at === 'string'
+        ? payload.updated_at
+        : null;
+      saveToCache(playerArray, sourceUpdatedAt);
+
+      return { players: playerArray, status: 'ready', lastUpdate: lastUpdate };
+    } catch (e) {
+      if (timeoutId !== null) clearTimeout(timeoutId);
+      return { players: [], status: 'error', lastUpdate: lastUpdate };
+    }
+  }
+
+  /**
+   * Obtiene los jugadores desde caché local o desde `./data/players.json`.
+   * @returns {Promise<{players: Array<Object>, status: 'ready'|'error', lastUpdate: string|null}>}
+   */
+  async function getPlayers() {
+    const cached = getFromCache();
+    if (cached) {
+      return { players: cached, status: 'ready', lastUpdate: lastUpdate };
+    }
+    return fetchPlayersData(false);
+  }
+
+  /**
+   * Filtra jugadores por nombre sobre el catálogo completo cargado.
+   * @param {string} searchQuery - Texto de búsqueda.
+   * @returns {Promise<{players: Array<Object>, status: 'ready'|'error', lastUpdate: string|null}>}
+   */
+  async function searchPlayers(searchQuery) {
+    const result = await getPlayers();
+    if (result.status === 'error') return result;
+
+    const trimmed = searchQuery ? String(searchQuery).toLowerCase().trim() : '';
+    const filtered = trimmed
+      ? result.players.filter(function(p) { return p.name && p.name.toLowerCase().includes(trimmed); })
+      : result.players;
+
+    return { players: filtered, status: 'ready', lastUpdate: result.lastUpdate };
+  }
+
+  /**
+   * Fuerza una recarga limpia de `./data/players.json` y actualiza la caché.
+   * @returns {Promise<{players: Array<Object>, status: 'ready'|'error', lastUpdate: string|null}>}
+   */
+  async function refreshData() {
+    try {
+      localStorage.removeItem(CACHE_KEY);
+      localStorage.removeItem(TIMESTAMP_KEY);
+    } catch (e) {
+      // Ignorar si localStorage no está disponible
+    }
+    lastUpdate = null;
+    return fetchPlayersData(true);
+  }
+
+  /**
+   * Devuelve la marca temporal ISO de la última actualización de datos.
+   * @returns {string|null}
+   */
+  function getLastUpdate() {
+    return lastUpdate;
+  }
+
+  return {
+    getPlayers: getPlayers,
+    searchPlayers: searchPlayers,
+    refreshData: refreshData,
+    getLastUpdate: getLastUpdate,
+    resolveUrl: resolveUrl
+  };
+})();
+
+/* ===== Player Selector Component ===== */
+/**
+ * Componente selector de jugadores con búsqueda debounced, filtros por equipo/posición,
+ * navegación por teclado y autorrelleno de Precio inicial (Pi) e Incremento diario (g).
+ * @module PlayerSelector
+ */
+const PlayerSelector = (function() {
+  /** @type {Array<Object>} */
+  let allPlayers = [];
+  /** @type {Array<Object>} */
+  let activePlayers = [];
+  /** @type {Array<Object>} */
+  let filteredPlayers = [];
+  /** @type {Object|null} */
+  let selectedPlayer = null;
+  /** @type {number|null} */
+  let debounceTimer = null;
+  /** @type {number} */
+  let activeSearchToken = 0;
+  /** @type {boolean} */
+  let listenersBound = false;
+
+  const $ = function(id) { return document.getElementById(id); };
+
+  /**
+   * Escapa caracteres especiales HTML para prevenir XSS.
+   * @param {unknown} str - Valor a escapar.
+   * @returns {string} Cadena segura para insertar en HTML.
+   */
+  function escapeHTML(str) {
+    const div = document.createElement('div');
+    div.textContent = str === null || str === undefined ? '' : String(str);
+    return div.innerHTML;
+  }
+
+  /**
+   * Formatea una marca temporal ISO para mostrarla de forma legible.
+   * @param {string|null} iso - Fecha en formato ISO.
+   * @returns {string}
+   */
+  function formatTimestamp(iso) {
+    if (!iso) return '';
+    try {
+      const date = new Date(iso);
+      if (Number.isNaN(date.getTime())) return iso;
+      return date.toLocaleString('es-ES', { dateStyle: 'short', timeStyle: 'short' });
+    } catch (e) {
+      return iso;
+    }
+  }
+
+  /**
+   * Obtiene el incremento diario del jugador (price_increment o price - price_history["1"]).
+   * @param {Object} player - Objeto jugador.
+   * @returns {number|null}
+   */
+  function getDailyIncrement(player) {
+    if (!player) return null;
+    if (typeof player.price_increment === 'number' && Number.isFinite(player.price_increment)) {
+      return player.price_increment;
+    }
+    if (
+      typeof player.price === 'number' &&
+      player.price_history &&
+      typeof player.price_history['1'] === 'number'
+    ) {
+      return player.price - player.price_history['1'];
+    }
+    return null;
+  }
+
+  function showLoading() {
+    const estado = $('estado-selector');
+    const cargando = $('cargando-selector');
+    const error = $('error-selector');
+    const reintentar = $('btn-reintentar-selector');
+    if (estado) estado.hidden = false;
+    if (cargando) cargando.hidden = false;
+    if (error) error.hidden = true;
+    if (reintentar) reintentar.hidden = true;
+  }
+
+  function showError() {
+    const estado = $('estado-selector');
+    const cargando = $('cargando-selector');
+    const error = $('error-selector');
+    const reintentar = $('btn-reintentar-selector');
+    if (estado) estado.hidden = false;
+    if (cargando) cargando.hidden = true;
+    if (error) error.hidden = false;
+    if (reintentar) reintentar.hidden = false;
+  }
+
+  function showReady() {
+    const estado = $('estado-selector');
+    const cargando = $('cargando-selector');
+    const error = $('error-selector');
+    const reintentar = $('btn-reintentar-selector');
+    if (cargando) cargando.hidden = true;
+    if (error) error.hidden = true;
+    if (reintentar) reintentar.hidden = true;
+    if (estado) estado.hidden = true;
+  }
+
+  function updateLastUpdate(timestamp) {
+    const pie = $('pie-selector');
+    const el = $('ultima-actualizada');
+    if (timestamp && el) {
+      el.textContent = MSGS.ultimaActualizada + ' ' + formatTimestamp(timestamp);
+      if (pie) pie.hidden = false;
+    }
+  }
+
+  function showPriceNotice(message) {
+    const notice = $('aviso-precio-jugador');
+    if (!notice) return;
+    if (message) {
+      notice.textContent = message;
+      notice.hidden = false;
+    } else {
+      notice.textContent = '';
+      notice.hidden = true;
+    }
+  }
+
+  function populateTeamFilter(players) {
+    const select = $('filtro-equipo');
+    if (!select) return;
+    const currentValue = select.value;
+    const teams = [];
+    players.forEach(function(p) {
+      if (p.team && teams.indexOf(p.team) === -1) {
+        teams.push(p.team);
+      }
+    });
+    teams.sort();
+    select.innerHTML = '<option value="">' + escapeHTML(MSGS.filtroTodosEquipos) + '</option>';
+    teams.forEach(function(team) {
+      const opt = document.createElement('option');
+      opt.value = team;
+      opt.textContent = team;
+      select.appendChild(opt);
+    });
+    if (currentValue && teams.indexOf(currentValue) !== -1) {
+      select.value = currentValue;
+    }
+  }
+
+  /**
+   * Aplica los filtros de equipo, posición y texto sobre la lista activa (lógica AND).
+   * @param {boolean} [openList=false] - Si es true, abre el desplegable tras filtrar.
+   */
+  function applyFilters(openList) {
+    const teamFilter = $('filtro-equipo').value;
+    const positionFilter = $('filtro-posicion').value;
+    const searchQuery = $('input-buscar-jugador').value.toLowerCase().trim();
+
+    filteredPlayers = activePlayers.filter(function(p) {
+      const matchTeam = !teamFilter || p.team === teamFilter;
+      const matchPosition = !positionFilter || p.position === positionFilter;
+      const matchSearch = !searchQuery || (p.name && p.name.toLowerCase().includes(searchQuery));
+      return matchTeam && matchPosition && matchSearch;
+    });
+
+    renderList(Boolean(openList));
+  }
+
+  /**
+   * Renderiza el listado filtrado en el desplegable usando formato "[Nombre] - [Equipo] ([Posición])".
+   * @param {boolean} showDropdown - Controla la visibilidad del desplegable.
+   */
+  function renderList(showDropdown) {
+    const lista = $('lista-jugadores');
+    if (!lista) return;
+    lista.innerHTML = '';
+
+    filteredPlayers.slice(0, 50).forEach(function(player) {
+      const li = document.createElement('li');
+      li.setAttribute('role', 'option');
+      li.dataset.playerId = String(player.id);
+
+      const label = escapeHTML(player.name) +
+        ' - ' + escapeHTML(player.team || '') +
+        ' (' + escapeHTML(player.position || '') + ')';
+
+      const priceHtml = typeof player.price === 'number' && Number.isFinite(player.price)
+        ? '<span class="precio-jugador">' + escapeHTML(Formato.euros(player.price)) + '</span>'
+        : '';
+
+      li.innerHTML = '<span class="texto-jugador">' + label + '</span>' + priceHtml;
+      lista.appendChild(li);
+    });
+
+    lista.hidden = !showDropdown || filteredPlayers.length === 0;
+  }
+
+  /**
+   * Maneja los clics sobre la lista mediante delegación de eventos.
+   * @param {MouseEvent} e - Evento de clic.
+   */
+  function handleListClick(e) {
+    const lista = $('lista-jugadores');
+    const target = e.target.closest('li');
+    if (target && lista.contains(target)) {
+      const playerId = target.dataset.playerId;
+      const player = activePlayers.find(function(p) { return String(p.id) === String(playerId); }) ||
+        allPlayers.find(function(p) { return String(p.id) === String(playerId); });
+      if (player) {
+        selectPlayer(player);
+      }
+    }
+  }
+
+  /**
+   * Selecciona un jugador, muestra su ficha y autorrellena Precio inicial (Pi) e Incremento diario (g).
+   * @param {Object} player - Jugador seleccionado.
+   */
+  function selectPlayer(player) {
+    selectedPlayer = player;
+
+    const container = $('jugador-seleccionado');
+    const nameEl = $('nombre-seleccionado');
+    const teamEl = $('equipo-seleccionado');
+    const photoEl = $('foto-seleccionado');
+    const crestEl = $('escudo-seleccionado');
+    const incEl = $('incremento-seleccionado');
+
+    nameEl.textContent = player.name || '';
+    teamEl.textContent = (player.team || '') + (player.position ? ' (' + player.position + ')' : '');
+
+    const photoUrl = PlayerMarketService.resolveUrl(player.photo_url);
+    if (photoEl && photoUrl) {
+      photoEl.src = photoUrl;
+      photoEl.alt = player.name || '';
+      photoEl.hidden = false;
+      photoEl.onerror = function() { photoEl.hidden = true; };
+    } else if (photoEl) {
+      photoEl.hidden = true;
+    }
+
+    const crestUrl = PlayerMarketService.resolveUrl(player.team_crest_url);
+    if (crestEl && crestUrl) {
+      crestEl.src = crestUrl;
+      crestEl.alt = player.team || '';
+      crestEl.hidden = false;
+      crestEl.onerror = function() { crestEl.hidden = true; };
+    } else if (crestEl) {
+      crestEl.hidden = true;
+    }
+
+    const dailyInc = getDailyIncrement(player);
+    if (incEl && dailyInc !== null) {
+      const sign = dailyInc > 0 ? '+' : '';
+      incEl.textContent = sign + Formato.euros(dailyInc) + '/día';
+      incEl.classList.toggle('negativo', dailyInc < 0);
+      incEl.hidden = false;
+    } else if (incEl) {
+      incEl.hidden = true;
+    }
+
+    container.hidden = false;
+    $('lista-jugadores').hidden = true;
+    $('input-buscar-jugador').value = '';
+
+    // Autorrellenar Precio inicial (Pi)
+    const piInput = $('f-pi');
+    let notice = '';
+    if (typeof player.price === 'number' && Number.isFinite(player.price)) {
+      piInput.value = Formato.numero(player.price);
+    } else {
+      piInput.value = '';
+      notice = MSGS.precioNoDisponible;
+    }
+    piInput.dispatchEvent(new Event('input', { bubbles: true }));
+
+    // Autorrellenar Incremento diario estimado (g)
+    const gInput = $('f-g');
+    if (dailyInc !== null) {
+      if (dailyInc >= 0) {
+        gInput.value = Formato.numero(dailyInc);
+      } else {
+        gInput.value = '0';
+        if (!notice) notice = MSGS.incrementoNegativoNota;
+      }
+      gInput.dispatchEvent(new Event('input', { bubbles: true }));
+    }
+
+    showPriceNotice(notice);
+  }
+
+  /**
+   * Limpia el jugador seleccionado y restablece los campos autorrellenados.
+   */
+  function clearSelection() {
+    selectedPlayer = null;
+    $('jugador-seleccionado').hidden = true;
+    showPriceNotice('');
+
+    const piInput = $('f-pi');
+    const gInput = $('f-g');
+    if (piInput) {
+      piInput.value = '';
+      piInput.dispatchEvent(new Event('input', { bubbles: true }));
+    }
+    if (gInput) {
+      gInput.value = '';
+      gInput.dispatchEvent(new Event('input', { bubbles: true }));
+    }
+  }
+
+  function handleSearchInput() {
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(function() {
+      if (allPlayers.length > 0) {
+        activePlayers = allPlayers;
+        applyFilters(true);
+        return;
+      }
+
+      const query = $('input-buscar-jugador').value.trim();
+      const token = ++activeSearchToken;
+
+      showLoading();
+      PlayerMarketService.searchPlayers(query).then(function(result) {
+        if (token !== activeSearchToken) return;
+        if (result.status === 'error') {
+          showError();
+          $('lista-jugadores').hidden = true;
+          return;
+        }
+        showReady();
+        activePlayers = result.players;
+        applyFilters(true);
+      });
+    }, SEARCH_DEBOUNCE_MS);
+  }
+
+  function handleSearchFocus() {
+    applyFilters(true);
+  }
+
+  function handleSearchBlur() {
+    setTimeout(function() {
+      $('lista-jugadores').hidden = true;
+    }, 200);
+  }
+
+  function handleFilterChange() {
+    const shouldShow = document.activeElement === $('input-buscar-jugador') || !$('lista-jugadores').hidden;
+    applyFilters(shouldShow);
+  }
+
+  function handleKeyDown(e) {
+    const lista = $('lista-jugadores');
+    const items = lista.querySelectorAll('li');
+    const selectedIndex = Array.from(items).findIndex(function(item) {
+      return item.classList.contains('seleccionado');
+    });
+
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      if (items.length > 0) {
+        lista.hidden = false;
+        const newIndex = selectedIndex < 0 ? 0 : Math.min(selectedIndex + 1, items.length - 1);
+        items.forEach(function(item) { item.classList.remove('seleccionado'); });
+        items[newIndex].classList.add('seleccionado');
+        items[newIndex].scrollIntoView({ block: 'nearest' });
+      }
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      if (items.length > 0) {
+        lista.hidden = false;
+        const newIndex = selectedIndex <= 0 ? items.length - 1 : selectedIndex - 1;
+        items.forEach(function(item) { item.classList.remove('seleccionado'); });
+        items[newIndex].classList.add('seleccionado');
+        items[newIndex].scrollIntoView({ block: 'nearest' });
+      }
+    } else if (e.key === 'Enter' && selectedIndex >= 0) {
+      e.preventDefault();
+      const playerId = items[selectedIndex].dataset.playerId;
+      const player = activePlayers.find(function(p) { return String(p.id) === String(playerId); }) ||
+        allPlayers.find(function(p) { return String(p.id) === String(playerId); });
+      if (player) selectPlayer(player);
+    } else if (e.key === 'Escape') {
+      lista.hidden = true;
+    }
+  }
+
+  function bindEvents() {
+    if (listenersBound) return;
+    listenersBound = true;
+
+    $('input-buscar-jugador').addEventListener('input', handleSearchInput);
+    $('input-buscar-jugador').addEventListener('focus', handleSearchFocus);
+    $('input-buscar-jugador').addEventListener('blur', handleSearchBlur);
+    $('input-buscar-jugador').addEventListener('keydown', handleKeyDown);
+    $('filtro-equipo').addEventListener('change', handleFilterChange);
+    $('filtro-posicion').addEventListener('change', handleFilterChange);
+    $('btn-quitar-seleccion').addEventListener('click', clearSelection);
+    $('lista-jugadores').addEventListener('click', handleListClick);
+    $('btn-reintentar-selector').addEventListener('click', function() { loadInitial(true); });
+    $('btn-actualizar-datos').addEventListener('click', function() { loadInitial(true); });
+  }
+
+  /**
+   * Carga los jugadores iniciales (desde caché o forzando refresco de la API).
+   * @param {boolean} [forceRefresh=false] - Si es true, omite la caché local.
+   */
+  function loadInitial(forceRefresh) {
+    showLoading();
+    const request = forceRefresh ? PlayerMarketService.refreshData() : PlayerMarketService.getPlayers();
+
+    request.then(function(result) {
+      if (result.status === 'error') {
+        showError();
+        return;
+      }
+
+      allPlayers = result.players;
+      activePlayers = allPlayers;
+      filteredPlayers = allPlayers;
+
+      showReady();
+      populateTeamFilter(allPlayers);
+      updateLastUpdate(result.lastUpdate);
+    });
+  }
+
+  /**
+   * Inicializa el componente selector de jugadores.
+   */
+  function init() {
+    bindEvents();
+    loadInitial(false);
+  }
+
+  return {
+    init: init,
+    selectPlayer: selectPlayer,
+    clearSelection: clearSelection,
+    escapeHTML: escapeHTML
+  };
+})();
+
+// Inicializar el selector de jugadores cuando el DOM esté listo
+document.addEventListener('DOMContentLoaded', function() {
+  PlayerSelector.init();
+});
 </script>
 
 <script>

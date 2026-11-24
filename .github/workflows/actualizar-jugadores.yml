@@ -1,0 +1,43 @@
+name: Actualizar precios de jugadores
+
+on:
+  schedule:
+    # 01:00 UTC (02:00/03:00 España · 21:00 UTC-4) tras la actualización diaria del mercado
+    - cron: '0 1 * * *'
+    # 12:00 UTC (13:00/14:00 España · 08:00 UTC-4) como respaldo diario
+    - cron: '0 12 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualizar-jugadores
+  cancel-in-progress: true
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Descargar precios actuales de LALIGA Fantasy
+        run: node scripts/actualizar_jugadores.mjs
+
+      - name: Guardar cambios en data/players.json si hubo actualizaciones
+        run: |
+          if git diff --quiet -- data/players.json && [ -z "$(git ls-files --others --exclude-standard -- data/players.json)" ]; then
+            echo "Sin cambios en data/players.json"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/players.json
+          git commit -m "chore: actualizar precios de jugadores"
+          git push

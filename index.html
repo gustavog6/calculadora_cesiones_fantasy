@@ -828,31 +828,39 @@ tr.fuerte td { font-weight: 600; }
 }
 .pie b { color: var(--ink); font-weight: 600; }
 
-/* Wizard de 3 pasos (siempre por encima de todo) */
-.wizard-backdrop {
+/* Wizard Spotlight (recorte transparente sobre el elemento + popover posicionado al lado) */
+.wizard-shield {
   position: fixed;
   inset: 0;
-  background: rgba(8, 20, 14, 0.58);
-  backdrop-filter: blur(3px);
-  display: grid;
-  place-items: center;
-  padding: 16px;
-  z-index: 2000;
+  z-index: 1890;
+  background: transparent;
 }
-.wizard-backdrop[hidden] { display: none; }
+.wizard-shield[hidden] { display: none; }
+
+.wizard-spotlight {
+  position: fixed;
+  z-index: 1900;
+  pointer-events: none;
+  border-radius: 14px;
+  box-shadow: 0 0 0 9999px rgba(8, 20, 14, 0.56), 0 0 0 3px var(--hero-pf);
+  transition: top 0.25s ease, left 0.25s ease, width 0.25s ease, height 0.25s ease;
+}
+.wizard-spotlight[hidden] { display: none; }
+
 .wizard-card {
-  position: relative;
-  z-index: 2010;
-  width: 100%;
-  max-width: 480px;
+  position: fixed;
+  z-index: 2000;
+  width: min(390px, calc(100vw - 24px));
   background: var(--surface);
-  border: 1px solid var(--line);
+  border: 1.5px solid var(--line);
   border-radius: 16px;
-  padding: 22px;
+  padding: 18px 20px;
   box-shadow: var(--shadow-lg);
   display: grid;
-  gap: 15px;
+  gap: 13px;
+  transition: top 0.25s ease, left 0.25s ease;
 }
+.wizard-card[hidden] { display: none; }
 .wizard-head {
   display: flex;
   align-items: center;
@@ -875,22 +883,22 @@ tr.fuerte td { font-weight: 600; }
   align-items: center;
 }
 .wizard-dot {
-  width: 26px;
+  width: 24px;
   height: 4px;
   border-radius: 999px;
   background: var(--line);
   transition: background 0.2s;
 }
 .wizard-dot.activo { background: var(--pitch); }
-.wizard-body { display: grid; gap: 9px; }
-.wizard-body h2 { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; }
-.wizard-body p { font-size: 15px; color: var(--muted); line-height: 1.5; }
+.wizard-body { display: grid; gap: 8px; }
+.wizard-body h2 { font-size: 19px; font-weight: 700; letter-spacing: -0.02em; }
+.wizard-body p { font-size: 14.5px; color: var(--muted); line-height: 1.48; }
 .wizard-tip {
-  font-size: 13.5px;
+  font-size: 13px;
   color: var(--ink);
   background: var(--campo);
   border-left: 3px solid var(--pitch);
-  padding: 9px 11px;
+  padding: 8px 10px;
   border-radius: 0 8px 8px 0;
 }
 .wizard-footer {
@@ -903,14 +911,8 @@ tr.fuerte td { font-weight: 600; }
 }
 .wizard-nav { display: flex; gap: 8px; }
 
-.wizard-highlight {
-  outline: 3px solid var(--hero-pf);
-  outline-offset: 2px;
-  border-radius: 12px;
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .seg-pf, .seg-c, .entrada, .btn, .wizard-dot { transition: none; }
+  .seg-pf, .seg-c, .entrada, .btn, .wizard-dot, .wizard-spotlight, .wizard-card { transition: none; }
 }
 </style>
 </head>
@@ -1197,28 +1199,28 @@ tr.fuerte td { font-weight: 600; }
   </footer>
 </div>
 
-<!-- Wizard de 3 pasos (se puede saltar en cualquier momento) -->
-<div class="wizard-backdrop" id="wizard-backdrop" role="dialog" aria-modal="true" aria-labelledby="wizard-titulo" hidden>
-  <div class="wizard-card">
-    <div class="wizard-head">
-      <span class="wizard-step-pill" id="wizard-paso-label">Paso 1 de 3</span>
-      <div class="wizard-dots" aria-hidden="true">
-        <span class="wizard-dot activo" data-dot="0"></span>
-        <span class="wizard-dot" data-dot="1"></span>
-        <span class="wizard-dot" data-dot="2"></span>
-      </div>
+<!-- Wizard Spotlight de 3 pasos (ilumina el bloque real y coloca el popover a un lado) -->
+<div class="wizard-shield" id="wizard-shield" hidden></div>
+<div class="wizard-spotlight" id="wizard-spotlight" aria-hidden="true" hidden></div>
+<div class="wizard-card" id="wizard-card" role="dialog" aria-modal="true" aria-labelledby="wizard-titulo" hidden>
+  <div class="wizard-head">
+    <span class="wizard-step-pill" id="wizard-paso-label">Paso 1 de 3</span>
+    <div class="wizard-dots" aria-hidden="true">
+      <span class="wizard-dot activo" data-dot="0"></span>
+      <span class="wizard-dot" data-dot="1"></span>
+      <span class="wizard-dot" data-dot="2"></span>
     </div>
-    <div class="wizard-body">
-      <h2 id="wizard-titulo"></h2>
-      <p id="wizard-texto"></p>
-      <p class="wizard-tip" id="wizard-tip"></p>
-    </div>
-    <div class="wizard-footer">
-      <button type="button" class="btn btn-ghost" id="wizard-saltar">Saltar guía</button>
-      <div class="wizard-nav">
-        <button type="button" class="btn btn-sec" id="wizard-anterior" hidden>Anterior</button>
-        <button type="button" class="btn btn-primario" id="wizard-siguiente">Siguiente</button>
-      </div>
+  </div>
+  <div class="wizard-body">
+    <h2 id="wizard-titulo"></h2>
+    <p id="wizard-texto"></p>
+    <p class="wizard-tip" id="wizard-tip"></p>
+  </div>
+  <div class="wizard-footer">
+    <button type="button" class="btn btn-ghost" id="wizard-saltar">Saltar guía</button>
+    <div class="wizard-nav">
+      <button type="button" class="btn btn-sec" id="wizard-anterior" hidden>Anterior</button>
+      <button type="button" class="btn btn-primario" id="wizard-siguiente">Siguiente</button>
     </div>
   </div>
 </div>
@@ -1262,19 +1264,22 @@ const WIZARD_STEPS = [
     titulo: '1. Busca tu jugador (o escribe a mano)',
     texto: 'Filtra por equipo, posición o nombre con autocompletado. Al elegir un jugador, rellenaremos su precio inicial y su subida diaria automáticamente.',
     tip: 'Si prefieres, puedes ignorar el selector y escribir los importes directamente.',
-    target: 'bloque-selector'
+    target: 'bloque-selector',
+    side: 'right'
   },
   {
     titulo: '2. Completa los datos de la cesión',
     texto: 'Introduce cuánto te pagó tu socio (Pv) y cuántos días durará la cesión. Si ya conoces el precio final de hoy, escríbelo en el campo opcional.',
     tip: 'También tienes el botón «Cargar ejemplo» arriba si quieres ver un caso completo.',
-    target: 'bloque-campos'
+    target: 'bloque-campos',
+    side: 'right'
   },
   {
     titulo: '3. Consulta y copia el resultado',
-    texto: 'A la derecha verás al instante el desembolso total, la compensación y las fórmulas paso a paso listas para copiar y enviar a tu socio.',
+    texto: 'Aquí verás al instante el desembolso total, la compensación y las fórmulas paso a paso listas para copiar y enviar a tu socio.',
     tip: 'Puedes reabrir esta guía cuando quieras desde el botón «Guía rápida».',
-    target: 'bloque-resultado'
+    target: 'bloque-resultado',
+    side: 'left'
   }
 ];
 
@@ -2367,16 +2372,75 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Wizard de 3 pasos
+  // Wizard Spotlight de 3 pasos (recorte transparente + posicionamiento inteligente)
   const Wizard = (function() {
     let stepIndex = 0;
-    let highlightedEl = null;
+    let isOpen = false;
 
-    function clearHighlight() {
-      if (highlightedEl) {
-        highlightedEl.classList.remove('wizard-highlight');
-        highlightedEl = null;
+    function positionElements() {
+      if (!isOpen) return;
+      const step = WIZARD_STEPS[stepIndex];
+      const target = $(step.target);
+      const spotlight = $('wizard-spotlight');
+      const card = $('wizard-card');
+      if (!target || !spotlight || !card) return;
+
+      const pad = 6;
+      const gap = 16;
+      const margin = 12;
+      const rect = target.getBoundingClientRect();
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+
+      // Posicionar el recorte transparente exactamente sobre el bloque objetivo
+      const spotTop = Math.max(margin / 2, rect.top - pad);
+      const spotLeft = Math.max(margin / 2, rect.left - pad);
+      const spotWidth = Math.min(vw - spotLeft - margin / 2, rect.width + pad * 2);
+      const spotHeight = Math.min(vh - spotTop - margin / 2, rect.height + pad * 2);
+
+      spotlight.style.top = spotTop + 'px';
+      spotlight.style.left = spotLeft + 'px';
+      spotlight.style.width = Math.max(0, spotWidth) + 'px';
+      spotlight.style.height = Math.max(0, spotHeight) + 'px';
+
+      // Medir la tarjeta y colocarla junto al elemento sin taparlo
+      const cardRect = card.getBoundingClientRect();
+      const cw = cardRect.width || Math.min(390, vw - margin * 2);
+      const ch = cardRect.height || 240;
+
+      let left;
+      let top;
+
+      const canPlaceRight = spotLeft + spotWidth + gap + cw + margin <= vw;
+      const canPlaceLeft = spotLeft - gap - cw >= margin;
+      const canPlaceBelow = spotTop + spotHeight + gap + ch + margin <= vh;
+      const canPlaceAbove = spotTop - gap - ch >= margin;
+
+      if (step.side === 'right' && canPlaceRight) {
+        left = spotLeft + spotWidth + gap;
+        top = Math.min(Math.max(margin, spotTop), vh - ch - margin);
+      } else if (step.side === 'left' && canPlaceLeft) {
+        left = spotLeft - gap - cw;
+        top = Math.min(Math.max(margin, spotTop), vh - ch - margin);
+      } else if (canPlaceRight) {
+        left = spotLeft + spotWidth + gap;
+        top = Math.min(Math.max(margin, spotTop), vh - ch - margin);
+      } else if (canPlaceLeft) {
+        left = spotLeft - gap - cw;
+        top = Math.min(Math.max(margin, spotTop), vh - ch - margin);
+      } else if (canPlaceBelow) {
+        left = Math.min(Math.max(margin, spotLeft + (spotWidth - cw) / 2), vw - cw - margin);
+        top = spotTop + spotHeight + gap;
+      } else if (canPlaceAbove) {
+        left = Math.min(Math.max(margin, spotLeft + (spotWidth - cw) / 2), vw - cw - margin);
+        top = spotTop - gap - ch;
+      } else {
+        left = Math.max(margin, (vw - cw) / 2);
+        top = Math.max(margin, vh - ch - margin);
       }
+
+      card.style.left = Math.round(left) + 'px';
+      card.style.top = Math.round(top) + 'px';
     }
 
     function renderStep() {
@@ -2390,28 +2454,34 @@ document.addEventListener('DOMContentLoaded', function() {
       document.querySelectorAll('.wizard-dot').forEach((dot, idx) => {
         dot.classList.toggle('activo', idx <= stepIndex);
       });
-      clearHighlight();
+
       const target = $(step.target);
-      if (target) {
-        target.classList.add('wizard-highlight');
-        highlightedEl = target;
+      if (target && typeof target.scrollIntoView === 'function') {
+        target.scrollIntoView({ behavior: 'auto', block: 'nearest' });
       }
+      positionElements();
     }
 
     function open() {
       stepIndex = 0;
-      $('wizard-backdrop').hidden = false;
+      isOpen = true;
+      $('wizard-shield').hidden = false;
+      $('wizard-spotlight').hidden = false;
+      $('wizard-card').hidden = false;
       renderStep();
       $('wizard-siguiente').focus();
     }
 
     function close() {
-      clearHighlight();
-      $('wizard-backdrop').hidden = true;
+      isOpen = false;
+      $('wizard-shield').hidden = true;
+      $('wizard-spotlight').hidden = true;
+      $('wizard-card').hidden = true;
       try { localStorage.setItem(WIZARD_KEY, '1'); } catch (e) { /* ignorar */ }
     }
 
     $('wizard-saltar').addEventListener('click', close);
+    $('wizard-shield').addEventListener('click', close);
     $('wizard-anterior').addEventListener('click', () => {
       if (stepIndex > 0) { stepIndex -= 1; renderStep(); }
     });
@@ -2419,12 +2489,11 @@ document.addEventListener('DOMContentLoaded', function() {
       if (stepIndex < WIZARD_STEPS.length - 1) { stepIndex += 1; renderStep(); }
       else close();
     });
-    $('wizard-backdrop').addEventListener('click', (e) => {
-      if (e.target === $('wizard-backdrop')) close();
-    });
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && !$('wizard-backdrop').hidden) close();
+      if (e.key === 'Escape' && isOpen) close();
     });
+    window.addEventListener('resize', positionElements);
+    window.addEventListener('scroll', positionElements, true);
     $('b-guia').addEventListener('click', open);
 
     function autoStart() {

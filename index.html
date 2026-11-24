@@ -786,6 +786,15 @@ tr.fuerte td { font-weight: 600; }
 .pill.mal { background: var(--alert-soft); color: var(--alert); }
 .resumen-casos { font-size: 13.5px; color: var(--muted); margin-bottom: 8px; }
 
+@media (max-width: 520px) {
+  table { font-size: 11.5px; }
+  th { font-size: 10px; padding: 5px 4px 5px 0; }
+  td { padding: 6px 4px 6px 0; }
+  td.num, th.num { padding-left: 4px; }
+  .sub-caso { font-size: 10.5px; }
+  .pill { font-size: 10.5px; padding: 2px 6px; }
+}
+
 /* Explicación y FAQ */
 .explica-lista { margin: 0; padding-left: 20px; display: grid; gap: 7px; font-size: 14px; }
 .explica-lista li::marker { color: var(--pitch); }
@@ -2144,6 +2153,10 @@ document.addEventListener('DOMContentLoaded', function() {
     tocados.clear();
     Object.keys(CAMPOS).forEach((k) => { $(CAMPOS[k]).value = ''; });
     PlayerSelector.clearSelection(true);
+    PlayerSelector.setTeamFilter('');
+    PlayerSelector.setPositionFilter('');
+    $('input-buscar-jugador').value = '';
+    $('clear-jugador').hidden = true;
     $('copia-manual').hidden = true;
     $('estado-copia').textContent = '';
     render();

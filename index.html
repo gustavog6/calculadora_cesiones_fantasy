@@ -7,9 +7,9 @@
 <title>Calculadora de cesiones LALIGA Fantasy DAZN | Recupera tu jugador</title>
 <meta name="description" content="Calcula cuánto debes pagar para recuperar un jugador que cediste en LALIGA Fantasy: compensación, precio final y desembolso total, con fórmulas paso a paso.">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<link rel="canonical" href="https://TU-DOMINIO.com/">
-<link rel="alternate" hreflang="es" href="https://TU-DOMINIO.com/">
-<link rel="alternate" hreflang="x-default" href="https://TU-DOMINIO.com/">
+<link rel="canonical" href="https://gustavog6.github.io/calculadora_cesiones_fantasy/">
+<link rel="alternate" hreflang="es" href="https://gustavog6.github.io/calculadora_cesiones_fantasy/">
+<link rel="alternate" hreflang="x-default" href="https://gustavog6.github.io/calculadora_cesiones_fantasy/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#0C3B28">
 <meta property="og:type" content="website">
@@ -17,25 +17,24 @@
 <meta property="og:site_name" content="Calculadora de cesiones">
 <meta property="og:title" content="Calculadora de cesiones LALIGA Fantasy DAZN | Recupera tu jugador">
 <meta property="og:description" content="Calcula cuánto debes pagar para recuperar un jugador que cediste en LALIGA Fantasy: compensación, precio final y desembolso total, con fórmulas paso a paso.">
-<meta property="og:url" content="https://TU-DOMINIO.com/">
-<meta property="og:image" content="https://TU-DOMINIO.com/og-image.png">
+<meta property="og:url" content="https://gustavog6.github.io/calculadora_cesiones_fantasy/">
+<meta property="og:image" content="https://gustavog6.github.io/calculadora_cesiones_fantasy/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Calculadora de cesiones para LALIGA Fantasy: desembolso total de 25.000.000 euros">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Calculadora de cesiones LALIGA Fantasy DAZN | Recupera tu jugador">
 <meta name="twitter:description" content="Calcula cuánto debes pagar para recuperar un jugador que cediste en LALIGA Fantasy: compensación, precio final y desembolso total, con fórmulas paso a paso.">
-<meta name="twitter:image" content="https://TU-DOMINIO.com/og-image.png">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Calculadora de cesiones", "url": "https://TU-DOMINIO.com/", "description": "Calcula cuánto debes pagar para recuperar un jugador que cediste en LALIGA Fantasy: compensación, precio final y desembolso total, con fórmulas paso a paso.", "inLanguage": "es", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Cualquiera con navegador web", "browserRequirements": "Requiere JavaScript", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}}</script>
+<meta name="twitter:image" content="https://gustavog6.github.io/calculadora_cesiones_fantasy/og-image.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Calculadora de cesiones", "url": "https://gustavog6.github.io/calculadora_cesiones_fantasy/", "description": "Calcula cuánto debes pagar para recuperar un jugador que cediste en LALIGA Fantasy: compensación, precio final y desembolso total, con fórmulas paso a paso.", "inLanguage": "es", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Cualquiera con navegador web", "browserRequirements": "Requiere JavaScript", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root {
-  /* Concepto: libro de operaciones de un mercado de fichajes.
-     Verde césped = lo que vale el jugador. Ámbar = lo que se le debe al socio.
-     Un solo número manda: el desembolso total. */
-  --bg: #F1F4F2;
+  /* Concepto: mesa de operaciones de un mercado de fichajes.
+     Verde césped = valor del jugador. Ámbar = compensación al socio. */
+  --bg: #EEF2F0;
   --surface: #FFFFFF;
   --campo: #F6F8F7;
   --ink: #14211B;
@@ -54,19 +53,23 @@
   --hero-pf: #5BE0A0;
   --hero-c: #F5B058;
   --hero-track: #14543A;
+  --shadow-sm: 0 1px 2px rgba(12, 33, 24, 0.05);
+  --shadow-md: 0 10px 28px rgba(12, 33, 24, 0.12);
+  --shadow-lg: 0 20px 50px rgba(8, 22, 16, 0.24);
   --font-display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
   --font-body: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   --radius: 14px;
 }
+
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0C1310;
-    --surface: #131C17;
-    --campo: #0E1612;
+    --bg: #0B120F;
+    --surface: #121B17;
+    --campo: #0D1511;
     --ink: #E8F1EC;
     --muted: #96A99F;
-    --line: #26352D;
+    --line: #24332B;
     --pitch: #4ADE9A;
     --pitch-soft: #12301F;
     --amber: #F4A64E;
@@ -74,223 +77,865 @@
     --alert: #FF9087;
     --alert-soft: #3A1A17;
     --info-soft: #1B2721;
-    --hero-bg: #0F3F2B;
+    --hero-bg: #0E3A28;
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.25);
+    --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.45);
+    --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.65);
     color-scheme: dark;
   }
 }
-:root[data-theme="dark"] {
-  --bg: #0C1310;
-  --surface: #131C17;
-  --campo: #0E1612;
-  --ink: #E8F1EC;
-  --muted: #96A99F;
-  --line: #26352D;
-  --pitch: #4ADE9A;
-  --pitch-soft: #12301F;
-  --amber: #F4A64E;
-  --amber-soft: #35250F;
-  --alert: #FF9087;
-  --alert-soft: #3A1A17;
-  --info-soft: #1B2721;
-  --hero-bg: #0F3F2B;
-  color-scheme: dark;
-}
 
 *, *::before, *::after { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
 body {
-  margin: 0;
   background: var(--bg);
   color: var(--ink);
   font-family: var(--font-body);
-  font-size: 16px;
-  line-height: 1.5;
-  padding-block: 28px 48px;
-  padding-left: max(16px, env(safe-area-inset-left, 0px));
-  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  font-size: 14px;
+  line-height: 1.45;
+  overflow-x: hidden;
 }
-.wrap { max-width: 1040px; margin: 0 auto; }
 p { margin: 0; }
 h1, h2, h3 { font-family: var(--font-display); margin: 0; text-wrap: balance; }
+button, input { font: inherit; }
 
-/* Cabecera */
-.cab { display: grid; gap: 8px; margin-bottom: 24px; }
-.eyebrow { font-size: 12px; letter-spacing: 0.09em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
-h1 { font-weight: 700; font-size: clamp(28px, 5.5vw, 42px); line-height: 1.06; letter-spacing: -0.02em; }
-.sub { color: var(--muted); max-width: 60ch; }
-
-/* Rejilla */
-.rejilla { display: grid; gap: 20px; grid-template-columns: minmax(0, 1fr); }
-.derecha { display: grid; gap: 20px; min-width: 0; align-content: start; }
-@media (min-width: 880px) {
-  .rejilla { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); align-items: start; }
-  .entradas { grid-column: 1; grid-row: 1; }
-  .derecha { grid-column: 2; grid-row: 1 / span 2; }
-  .explica { grid-column: 1; grid-row: 2; }
+/* Shell 100vw x 100vh */
+.app-shell {
+  width: 100vw;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 12px max(16px, env(safe-area-inset-right, 0px)) 10px max(16px, env(safe-area-inset-left, 0px));
+  gap: 10px;
 }
 
-.tarjeta { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; min-width: 0; }
-h2 { font-size: 18px; font-weight: 600; letter-spacing: -0.005em; margin-bottom: 14px; }
+@media (min-width: 980px) {
+  body { overflow: hidden; }
+  .app-shell {
+    height: 100dvh;
+    overflow: hidden;
+    padding: 14px 20px 10px;
+  }
+}
 
-/* Campos */
-.campos { display: grid; gap: 16px; }
-.campo { display: grid; gap: 6px; }
-.campo label { font-weight: 600; font-size: 15px; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
-.opcional { font-weight: 500; font-size: 12px; color: var(--muted); letter-spacing: 0.04em; text-transform: uppercase; }
-.entrada { display: flex; align-items: center; border: 1.5px solid var(--line); border-radius: 10px; background: var(--campo); transition: border-color 0.15s, box-shadow 0.15s; }
-.entrada:focus-within { border-color: var(--pitch); box-shadow: 0 0 0 3px var(--pitch-soft); }
+/* Top bar */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 8px 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+.brand-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  background: var(--hero-bg);
+  color: var(--hero-pf);
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.04em;
+  flex: none;
+  box-shadow: inset 0 0 0 1px rgba(91, 224, 160, 0.25);
+}
+.brand-text { display: grid; gap: 1px; min-width: 0; }
+.eyebrow {
+  font-size: 10.5px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--pitch);
+  font-weight: 600;
+}
+.brand h1 {
+  font-size: clamp(17px, 2.2vw, 21px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Botones */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-weight: 600;
+  font-size: 13px;
+  border-radius: 9px;
+  padding: 7px 12px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background 0.15s, border-color 0.15s, color 0.15s, transform 0.1s;
+  white-space: nowrap;
+}
+.btn:active:not(:disabled) { transform: translateY(1px); }
+.btn:focus-visible, summary:focus-visible, .tab-btn:focus-visible {
+  outline: 2px solid var(--pitch);
+  outline-offset: 2px;
+}
+.btn-primario {
+  background: var(--hero-pf);
+  color: #08271A;
+  border-color: transparent;
+}
+.btn-primario:hover:not(:disabled) { filter: brightness(1.06); }
+.btn-primario:disabled { opacity: 0.42; cursor: not-allowed; }
+.btn-sec {
+  background: var(--campo);
+  color: var(--ink);
+  border-color: var(--line);
+}
+.btn-sec:hover:not(:disabled) { border-color: var(--pitch); color: var(--pitch); }
+.btn-ghost {
+  background: transparent;
+  color: var(--muted);
+  border-color: transparent;
+  padding: 6px 10px;
+}
+.btn-ghost:hover { color: var(--ink); background: var(--campo); }
+.btn-mini {
+  padding: 4px 9px;
+  font-size: 11.5px;
+  font-weight: 600;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  cursor: pointer;
+  color: var(--ink);
+}
+.btn-mini:hover { border-color: var(--pitch); color: var(--pitch); }
+.enlace {
+  font-size: 12px;
+  font-weight: 600;
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--pitch);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Workspace principal */
+.workspace {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: minmax(0, 1fr);
+  min-height: 0;
+}
+
+@media (min-width: 980px) {
+  .workspace {
+    grid-template-columns: minmax(380px, 46fr) minmax(0, 54fr);
+    align-items: stretch;
+  }
+}
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  min-width: 0;
+  min-height: 0;
+}
+
+/* Columna izquierda: Entradas */
+.panel-entradas {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 14px 16px;
+  overflow-y: auto;
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.section-head h2 {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.section-badge {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  background: var(--campo);
+  border: 1px solid var(--line);
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+/* Selector de jugador + Autocompletados */
+.selector-jugador {
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  padding: 11px 12px;
+  background: var(--campo);
+  display: grid;
+  gap: 8px;
+  margin: 0;
+}
+.selector-jugador legend {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 13px;
+  padding: 0 6px;
+  color: var(--ink);
+}
+.estado-selector {
+  font-size: 12px;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.estado-selector[hidden] { display: none; }
+.estado-selector .error { color: var(--alert); font-weight: 500; }
+
+.filtros-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.85fr);
+  gap: 8px;
+}
+@media (max-width: 520px) {
+  .filtros-grid { grid-template-columns: 1fr; }
+}
+
+/* Componente Combobox (Autocompletado unificado) */
+.combo { position: relative; }
+.combo-control {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid var(--line);
+  border-radius: 9px;
+  background: var(--surface);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.combo-control:focus-within {
+  border-color: var(--pitch);
+  box-shadow: 0 0 0 3px var(--pitch-soft);
+}
+.combo-control input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font-size: 13.5px;
+  padding: 8px 6px 8px 10px;
+  outline: none;
+}
+.combo-control input::placeholder { color: var(--muted); }
+.combo-clear {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 4px 7px;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 6px;
+}
+.combo-clear:hover { color: var(--alert); }
+.combo-clear[hidden] { display: none; }
+.combo-caret {
+  color: var(--muted);
+  font-size: 11px;
+  padding-right: 9px;
+  pointer-events: none;
+  user-select: none;
+}
+.combo-list {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  max-height: 210px;
+  overflow-y: auto;
+  background: var(--surface);
+  border: 1.5px solid var(--line);
+  border-radius: 9px;
+  list-style: none;
+  margin: 0;
+  padding: 4px;
+  z-index: 30;
+  box-shadow: var(--shadow-md);
+}
+.combo-list[hidden] { display: none; }
+.combo-list li {
+  padding: 7px 9px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 13px;
+}
+.combo-list li:hover, .combo-list li.seleccionado {
+  background: var(--pitch-soft);
+  color: var(--ink);
+}
+.combo-list li.vacio-item {
+  color: var(--muted);
+  cursor: default;
+  font-style: italic;
+}
+.combo-list li.vacio-item:hover { background: transparent; }
+.texto-jugador { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.precio-jugador {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.jugador-seleccionado {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 10px;
+  background: var(--pitch-soft);
+  border: 1px solid rgba(11, 116, 72, 0.2);
+  border-radius: 9px;
+}
+.jugador-seleccionado[hidden] { display: none; }
+.jugador-seleccionado .foto-jugador {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--surface);
+  flex: none;
+}
+.jugador-seleccionado .info-jugador { flex: 1; min-width: 0; display: grid; gap: 1px; }
+.jugador-seleccionado .nombre-seleccionado { font-weight: 600; font-size: 13.5px; }
+.jugador-seleccionado .meta-seleccionado {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: var(--muted);
+}
+.jugador-seleccionado .escudo-equipo { width: 15px; height: 15px; object-fit: contain; flex: none; }
+.jugador-seleccionado .incremento-seleccionado {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--pitch);
+  font-weight: 500;
+}
+.jugador-seleccionado .incremento-seleccionado.negativo { color: var(--alert); }
+.aviso-precio {
+  font-size: 12px;
+  color: var(--amber);
+  background: var(--amber-soft);
+  padding: 6px 9px;
+  border-radius: 7px;
+}
+.aviso-precio[hidden] { display: none; }
+.pie-selector {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.pie-selector[hidden] { display: none; }
+.ultima-actualizada { font-size: 11.5px; color: var(--muted); }
+
+/* Campos numéricos en rejilla compacta */
+.campos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+@media (max-width: 560px) {
+  .campos-grid { grid-template-columns: 1fr; }
+}
+.campo { display: grid; gap: 4px; align-content: start; }
+.campo.span-2 { grid-column: 1 / -1; }
+.campo label {
+  font-weight: 600;
+  font-size: 12.5px;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+.opcional {
+  font-weight: 500;
+  font-size: 10.5px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.entrada {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid var(--line);
+  border-radius: 9px;
+  background: var(--campo);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.entrada:focus-within {
+  border-color: var(--pitch);
+  box-shadow: 0 0 0 3px var(--pitch-soft);
+  background: var(--surface);
+}
 .entrada.invalido { border-color: var(--alert); }
-.entrada input { flex: 1; min-width: 0; border: 0; background: transparent; color: var(--ink); font: inherit; font-size: 18px; font-variant-numeric: tabular-nums; padding: 12px 8px 12px 14px; outline: none; text-align: right; }
-.sufijo { padding-right: 14px; color: var(--muted); font-weight: 500; }
-.ayuda { font-size: 13px; color: var(--muted); }
-.error { font-size: 13px; color: var(--alert); font-weight: 500; }
-.btn { font: inherit; font-weight: 600; font-size: 15px; border-radius: 10px; padding: 11px 16px; cursor: pointer; border: 1.5px solid transparent; min-height: 44px; }
-.btn:focus-visible, summary:focus-visible, .enlace:focus-visible { outline: 2px solid var(--pitch); outline-offset: 2px; }
-.btn-primario { background: var(--ink); color: var(--bg); }
-.btn-primario:disabled { opacity: 0.45; cursor: not-allowed; }
-.btn-sec { background: transparent; color: var(--ink); border-color: var(--line); }
-.btn-sec:hover { border-color: var(--muted); }
-.enlace { font: inherit; font-size: 13px; font-weight: 600; background: none; border: 0; padding: 4px 0; color: var(--pitch); cursor: pointer; text-align: left; justify-self: start; text-decoration: underline; text-underline-offset: 3px; }
-.acciones-entrada { margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap; }
+.entrada input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font-size: 15.5px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  padding: 9px 6px 9px 10px;
+  outline: none;
+  text-align: right;
+}
+.entrada input::placeholder { color: var(--muted); opacity: 0.65; font-weight: 400; }
+.sufijo { padding-right: 10px; color: var(--muted); font-size: 12.5px; font-weight: 500; white-space: nowrap; }
+.ayuda { font-size: 11.5px; color: var(--muted); line-height: 1.3; }
+.error-campo { font-size: 11.5px; color: var(--alert); font-weight: 500; line-height: 1.3; }
+.error-campo[hidden] { display: none; }
 
-/* Resultado */
-.hero { background: var(--hero-bg); color: var(--hero-ink); border-radius: var(--radius); padding: 22px 20px 20px; display: grid; gap: 14px; }
-.hero-top { display: flex; gap: 10px; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; }
-.hero-et { font-size: 14px; font-weight: 600; color: var(--hero-muted); max-width: 26ch; }
-.chip { font-size: 12px; font-weight: 600; letter-spacing: 0.04em; padding: 4px 10px; border-radius: 999px; background: var(--hero-track); color: var(--hero-ink); white-space: nowrap; }
-.hero-valor { font-family: var(--font-display); font-weight: 700; font-size: clamp(40px, 11vw, 64px); line-height: 1; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
-.barra { display: flex; height: 12px; border-radius: 999px; overflow: hidden; background: var(--hero-track); gap: 2px; }
+.acciones-entrada {
+  margin-top: auto;
+  padding-top: 6px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Columna derecha: Resultado + Panel con pestañas */
+.panel-derecha {
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr);
+  gap: 10px;
+  min-height: 0;
+}
+
+.hero {
+  background: var(--hero-bg);
+  color: var(--hero-ink);
+  border-radius: var(--radius);
+  padding: 15px 18px;
+  display: grid;
+  gap: 10px;
+  box-shadow: var(--shadow-sm);
+}
+.hero-top {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hero-et { font-size: 12.5px; font-weight: 600; color: var(--hero-muted); }
+.chip {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--hero-track);
+  color: var(--hero-ink);
+  white-space: nowrap;
+}
+.hero-main {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.hero-valor {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(32px, 4.4vw, 48px);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+}
+.hero-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.estado-copia { font-size: 12px; color: var(--hero-pf); font-weight: 600; }
+
+.barra {
+  display: flex;
+  height: 9px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--hero-track);
+  gap: 2px;
+}
 .seg-pf { background: var(--hero-pf); transition: width 0.25s ease; }
 .seg-c { background: var(--hero-c); transition: width 0.25s ease; }
-.leyenda { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; font-size: 14px; }
-.leyenda li { display: flex; align-items: center; gap: 8px; }
-.leyenda b { margin-left: auto; font-variant-numeric: tabular-nums; font-weight: 600; }
-.punto { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+.leyenda {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 12.5px;
+}
+.leyenda li { display: flex; align-items: center; gap: 6px; }
+.leyenda b { font-variant-numeric: tabular-nums; font-weight: 600; }
+.punto { width: 8px; height: 8px; border-radius: 50%; flex: none; }
 .punto.pf { background: var(--hero-pf); }
 .punto.c { background: var(--hero-c); }
 
-.tiles { display: grid; gap: 10px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.tile { border: 1px solid var(--line); border-radius: 12px; padding: 14px; display: grid; gap: 4px; align-content: start; background: var(--surface); }
+/* Tiles KPI */
+.tiles {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+@media (max-width: 720px) {
+  .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+.tile {
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  padding: 10px 12px;
+  display: grid;
+  gap: 2px;
+  align-content: start;
+  background: var(--surface);
+}
 .tile.pf { background: var(--pitch-soft); border-color: transparent; }
 .tile.c { background: var(--amber-soft); border-color: transparent; }
-.t-et { font-size: 12px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); }
-.t-val { font-family: var(--font-display); font-weight: 600; font-size: clamp(19px, 5vw, 24px); font-variant-numeric: tabular-nums; letter-spacing: -0.01em; overflow-wrap: anywhere; }
+.t-et {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.t-val {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(16px, 2vw, 20px);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.015em;
+  overflow-wrap: anywhere;
+}
 .tile.pf .t-val, .tile.pf .t-et { color: var(--pitch); }
 .tile.c .t-val, .tile.c .t-et { color: var(--amber); }
-.t-sub { font-size: 12.5px; color: var(--muted); }
-.tile.pf .t-sub, .tile.c .t-sub { color: var(--ink); opacity: 0.8; }
+.t-sub { font-size: 11px; color: var(--muted); line-height: 1.25; }
+.tile.pf .t-sub, .tile.c .t-sub { color: var(--ink); opacity: 0.78; }
 
-.lectura { font-size: 16px; }
-.avisos { display: grid; gap: 8px; }
-.aviso { font-size: 14px; padding: 10px 12px; border-radius: 10px; background: var(--info-soft); }
+/* Panel con pestañas */
+.panel-tabs {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  overflow: hidden;
+}
+.tablist {
+  display: flex;
+  gap: 4px;
+  padding: 8px 10px 0;
+  border-bottom: 1px solid var(--line);
+  overflow-x: auto;
+}
+.tab-btn {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 12.5px;
+  padding: 7px 11px 9px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  white-space: nowrap;
+  transition: color 0.15s, border-color 0.15s;
+}
+.tab-btn:hover { color: var(--ink); }
+.tab-btn[aria-selected="true"] {
+  color: var(--pitch);
+  border-bottom-color: var(--pitch);
+}
+.tab-body {
+  padding: 12px 16px;
+  overflow-y: auto;
+  min-height: 0;
+}
+.tab-panel[hidden] { display: none; }
+
+/* Estado vacío y lectura */
+.empty-state {
+  display: grid;
+  gap: 8px;
+  padding: 14px;
+  border-radius: 10px;
+  background: var(--campo);
+  border: 1px dashed var(--line);
+  text-align: center;
+  justify-items: center;
+}
+.empty-state h3 { font-size: 15px; font-weight: 600; }
+.empty-state p { font-size: 13px; color: var(--muted); max-width: 44ch; }
+
+.lectura { font-size: 14px; font-weight: 500; margin-bottom: 8px; }
+.avisos { display: grid; gap: 6px; margin-bottom: 10px; }
+.aviso { font-size: 12.5px; padding: 8px 10px; border-radius: 8px; background: var(--info-soft); }
 .aviso.alerta { background: var(--amber-soft); color: var(--ink); }
-.aviso.error-g { background: var(--alert-soft); color: var(--ink); }
-.nota { font-size: 13px; color: var(--muted); }
-.acciones { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
-.estado-copia { font-size: 13px; color: var(--pitch); font-weight: 600; }
-#copia-manual { width: 100%; min-height: 150px; font-family: var(--font-mono); font-size: 13px; background: var(--campo); color: var(--ink); border: 1.5px solid var(--line); border-radius: 10px; padding: 10px; }
-.card-res { display: grid; gap: 16px; }
+
+#copia-manual {
+  width: 100%;
+  min-height: 110px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  background: var(--campo);
+  color: var(--ink);
+  border: 1.5px solid var(--line);
+  border-radius: 9px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
 
 /* Desglose */
-details { min-width: 0; }
-summary { display: flex; justify-content: space-between; align-items: center; gap: 12px; cursor: pointer; list-style: none; font-family: var(--font-display); font-weight: 600; font-size: 18px; }
-summary::-webkit-details-marker { display: none; }
-summary::after { content: "+"; font-family: var(--font-mono); font-size: 20px; color: var(--muted); flex: none; }
-details[open] > summary::after { content: "−"; }
-details[open] > summary { margin-bottom: 14px; }
-.pasos { display: grid; gap: 16px; }
-.paso { display: grid; gap: 4px; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
-.paso:last-child { border-bottom: 0; padding-bottom: 0; }
-.paso h3 { font-size: 15px; font-weight: 600; }
-.formula { font-family: var(--font-mono); font-size: 13px; color: var(--muted); overflow-wrap: anywhere; }
-.sustituida { font-family: var(--font-mono); font-size: 15px; display: flex; flex-wrap: wrap; column-gap: 8px; font-variant-numeric: tabular-nums; }
-.sustituida b { font-weight: 500; color: var(--pitch); }
+.pasos { display: grid; gap: 8px; }
+.paso {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 7px 10px;
+  border-radius: 8px;
+  background: var(--campo);
+}
+.paso-izq { display: grid; gap: 1px; }
+.paso h3 { font-size: 13px; font-weight: 600; }
+.formula { font-family: var(--font-mono); font-size: 11.5px; color: var(--muted); }
+.sustituida {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 6px;
+  font-variant-numeric: tabular-nums;
+}
+.sustituida b { font-weight: 600; color: var(--pitch); }
 .sustituida b.ambar { color: var(--amber); }
-.vacio { color: var(--muted); font-size: 14px; }
 
 /* Tablas */
 .tabla-scroll { overflow-x: auto; }
-table { width: 100%; border-collapse: collapse; font-size: 14px; }
-th { text-align: left; font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); font-weight: 600; padding: 6px 10px 6px 0; border-bottom: 1px solid var(--line); }
-td { padding: 9px 10px 9px 0; border-bottom: 1px solid var(--line); vertical-align: top; font-variant-numeric: tabular-nums; }
-td.num, th.num { text-align: right; padding-right: 0; padding-left: 10px; white-space: nowrap; }
+table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+th {
+  text-align: left;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
+  padding: 6px 8px 6px 0;
+  border-bottom: 1px solid var(--line);
+}
+td {
+  padding: 7px 8px 7px 0;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+  font-variant-numeric: tabular-nums;
+}
+td.num, th.num { text-align: right; padding-right: 0; padding-left: 8px; white-space: nowrap; }
 tr.fuerte td { font-weight: 600; }
-.sub-caso { display: block; font-size: 12.5px; color: var(--muted); font-weight: 400; }
-.pill { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 9px; border-radius: 999px; }
+.sub-caso { display: block; font-size: 11.5px; color: var(--muted); font-weight: 400; }
+.pill { display: inline-block; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; }
 .pill.ok { background: var(--pitch-soft); color: var(--pitch); }
 .pill.mal { background: var(--alert-soft); color: var(--alert); }
-.resumen-casos { font-size: 14px; color: var(--muted); margin-bottom: 10px; }
+.resumen-casos { font-size: 12.5px; color: var(--muted); margin-bottom: 8px; }
 
-/* Explicación y pie */
-.explica ul { margin: 0; padding-left: 20px; display: grid; gap: 8px; max-width: 62ch; }
-.explica li::marker { color: var(--pitch); }
-.pie { margin-top: 24px; display: grid; gap: 6px; font-size: 13px; color: var(--muted); max-width: 80ch; }
+/* Explicación y FAQ */
+.explica-lista { margin: 0; padding-left: 18px; display: grid; gap: 6px; font-size: 13px; }
+.explica-lista li::marker { color: var(--pitch); }
+.nota-modelo {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--muted);
+  padding: 8px 10px;
+  background: var(--campo);
+  border-radius: 8px;
+}
+.faq-lista { display: grid; }
+.faq-lista details { border-top: 1px solid var(--line); padding-block: 8px; }
+.faq-lista details:first-child { border-top: 0; padding-top: 0; }
+.faq-lista summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 13.5px;
+}
+.faq-lista summary::-webkit-details-marker { display: none; }
+.faq-lista summary::after { content: "+"; font-family: var(--font-mono); color: var(--muted); }
+.faq-lista details[open] > summary::after { content: "−"; }
+.faq-lista p { color: var(--muted); font-size: 12.5px; margin-top: 5px; }
+
+/* Pie compacto */
+.pie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 11.5px;
+  color: var(--muted);
+  padding: 0 4px;
+}
 .pie b { color: var(--ink); font-weight: 600; }
 
-.faq { margin-top: 20px; }
-.faq-lista { display: grid; gap: 0; max-width: 72ch; }
-.faq-lista details { border-top: 1px solid var(--line); padding-block: 14px; }
-.faq-lista details:first-child { border-top: 0; padding-top: 0; }
-.faq-lista summary { font-size: 16px; }
-.faq-lista details[open] > summary { margin-bottom: 8px; }
-.faq-lista p { color: var(--muted); }
+/* Wizard de 3 pasos */
+.wizard-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 20, 14, 0.56);
+  backdrop-filter: blur(3px);
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  z-index: 100;
+}
+.wizard-backdrop[hidden] { display: none; }
+.wizard-card {
+  width: 100%;
+  max-width: 440px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: var(--shadow-lg);
+  display: grid;
+  gap: 14px;
+}
+.wizard-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.wizard-step-pill {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--pitch);
+  background: var(--pitch-soft);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+.wizard-dots {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.wizard-dot {
+  width: 24px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--line);
+  transition: background 0.2s;
+}
+.wizard-dot.activo { background: var(--pitch); }
+.wizard-body { display: grid; gap: 8px; }
+.wizard-body h2 { font-size: 20px; font-weight: 700; letter-spacing: -0.02em; }
+.wizard-body p { font-size: 14px; color: var(--muted); line-height: 1.5; }
+.wizard-tip {
+  font-size: 12.5px;
+  color: var(--ink);
+  background: var(--campo);
+  border-left: 3px solid var(--pitch);
+  padding: 8px 10px;
+  border-radius: 0 8px 8px 0;
+}
+.wizard-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 6px;
+  border-top: 1px solid var(--line);
+}
+.wizard-nav { display: flex; gap: 8px; }
 
-@media (prefers-reduced-motion: reduce) {
-  .seg-pf, .seg-c, .entrada { transition: none; }
+.wizard-highlight {
+  position: relative;
+  z-index: 101;
+  box-shadow: 0 0 0 3px var(--hero-pf), 0 0 0 8px rgba(91, 224, 160, 0.22) !important;
+  border-radius: 12px;
 }
 
-/* Player Selector */
-.selector-jugador { border: 1.5px solid var(--line); border-radius: 10px; padding: 16px; margin-bottom: 20px; }
-.selector-jugador legend { font-weight: 600; font-size: 15px; padding: 0 8px; color: var(--ink); }
-.estado-selector { font-size: 13px; color: var(--muted); margin-bottom: 10px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-.estado-selector[hidden] { display: none; }
-.estado-selector .cargando { color: var(--muted); }
-.estado-selector .error { color: var(--alert); }
-.btn-mini { padding: 4px 10px; font: inherit; font-size: 12px; font-weight: 600; background: transparent; border: 1.5px solid var(--line); border-radius: 6px; cursor: pointer; color: var(--ink); }
-.btn-mini:hover { border-color: var(--pitch); color: var(--pitch); }
-.filtros-jugador { display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
-.filtros-jugador select { flex: 1; min-width: 120px; padding: 8px 10px; font: inherit; font-size: 14px; border: 1.5px solid var(--line); border-radius: 8px; background: var(--campo); color: var(--ink); cursor: pointer; }
-.filtros-jugador select:focus { outline: none; border-color: var(--pitch); box-shadow: 0 0 0 3px var(--pitch-soft); }
-.buscador-jugador { position: relative; }
-.buscador-jugador input { width: 100%; padding: 10px 12px; font: inherit; font-size: 15px; border: 1.5px solid var(--line); border-radius: 8px; background: var(--campo); color: var(--ink); }
-.buscador-jugador input:focus { outline: none; border-color: var(--pitch); box-shadow: 0 0 0 3px var(--pitch-soft); }
-.buscador-jugador input::placeholder { color: var(--muted); }
-.lista-jugadores { position: absolute; top: 100%; left: 0; right: 0; max-height: 280px; overflow-y: auto; background: var(--surface); border: 1.5px solid var(--line); border-top: 0; border-radius: 0 0 8px 8px; list-style: none; margin: 0; padding: 0; z-index: 10; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); }
-.lista-jugadores li { padding: 10px 12px; cursor: pointer; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--line); font-size: 14px; }
-.lista-jugadores li:last-child { border-bottom: 0; }
-.lista-jugadores li:hover, .lista-jugadores li.seleccionado { background: var(--pitch-soft); }
-.lista-jugadores li .texto-jugador { flex: 1; min-width: 0; overflow-wrap: anywhere; }
-.lista-jugadores li .precio-jugador { font-family: var(--font-mono); font-size: 12px; color: var(--muted); white-space: nowrap; }
-.jugador-seleccionado { display: flex; align-items: center; gap: 10px; padding: 10px 12px; background: var(--pitch-soft); border-radius: 8px; margin-top: 10px; }
-.jugador-seleccionado[hidden] { display: none; }
-.jugador-seleccionado .foto-jugador { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; background: var(--surface); flex: none; }
-.jugador-seleccionado .info-jugador { flex: 1; min-width: 0; display: grid; gap: 2px; }
-.jugador-seleccionado .nombre-seleccionado { font-weight: 600; font-size: 14px; }
-.jugador-seleccionado .meta-seleccionado { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; font-size: 12.5px; color: var(--muted); }
-.jugador-seleccionado .escudo-equipo { width: 16px; height: 16px; object-fit: contain; flex: none; }
-.jugador-seleccionado .incremento-seleccionado { font-family: var(--font-mono); font-size: 12px; color: var(--pitch); font-weight: 500; }
-.jugador-seleccionado .incremento-seleccionado.negativo { color: var(--alert); }
-.jugador-seleccionado button { padding: 6px 10px; font: inherit; font-size: 12px; font-weight: 600; background: transparent; border: 1.5px solid var(--line); border-radius: 6px; cursor: pointer; color: var(--muted); flex: none; }
-.jugador-seleccionado button:hover { border-color: var(--alert); color: var(--alert); }
-.aviso-precio { font-size: 13px; color: var(--amber); background: var(--amber-soft); padding: 8px 10px; border-radius: 8px; margin-top: 8px; }
-.pie-selector { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
-.pie-selector[hidden] { display: none; }
-.ultima-actualizada { font-size: 12px; color: var(--muted); font-style: italic; }
+@media (prefers-reduced-motion: reduce) {
+  .seg-pf, .seg-c, .entrada, .btn, .wizard-dot { transition: none; }
+}
 </style>
 </head>
 <body>
-<main class="wrap">
-  <header class="cab">
-    <p class="eyebrow">LALIGA Fantasy DAZN · Cesiones</p>
-    <h1>Calculadora de cesiones</h1>
-    <p class="sub">Calcula cuánto debes desembolsar para recuperar un jugador que le cediste a un socio por más de lo que costaba.</p>
+<div class="app-shell">
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">LF</div>
+      <div class="brand-text">
+        <p class="eyebrow">LALIGA Fantasy DAZN · Cesiones</p>
+        <h1>Calculadora de cesiones</h1>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <button type="button" class="btn btn-sec" id="b-ejemplo">Cargar ejemplo</button>
+      <button type="button" class="btn btn-sec" id="b-limpiar">Limpiar</button>
+      <button type="button" class="btn btn-ghost" id="b-guia">Guía rápida</button>
+    </div>
   </header>
 
-  <div class="rejilla">
-    <section class="tarjeta entradas" aria-labelledby="t-datos">
-      <h2 id="t-datos">Datos de la operación</h2>
-      
-      <fieldset class="selector-jugador">
-        <legend>Seleccionar jugador</legend>
+  <main class="workspace">
+    <!-- Columna izquierda: Selector + Datos -->
+    <section class="panel panel-entradas" aria-labelledby="t-datos">
+      <div class="section-head">
+        <h2 id="t-datos">Datos de la cesión</h2>
+        <span class="section-badge">Cálculo instantáneo</span>
+      </div>
+
+      <fieldset class="selector-jugador" id="bloque-selector">
+        <legend>Selector de jugador (opcional)</legend>
 
         <div class="estado-selector" id="estado-selector" aria-live="polite">
           <span class="cargando" id="cargando-selector">Cargando jugadores...</span>
@@ -298,20 +943,36 @@ tr.fuerte td { font-weight: 600; }
           <button type="button" class="btn-mini" id="btn-reintentar-selector" hidden>Reintentar</button>
         </div>
 
-        <div class="filtros-jugador">
-          <select id="filtro-equipo" aria-label="Filtrar por equipo"><option value="">Todos los equipos</option></select>
-          <select id="filtro-posicion" aria-label="Filtrar por posición">
-            <option value="">Todas</option>
-            <option value="DEL">DEL</option>
-            <option value="MED">MED</option>
-            <option value="DEF">DEF</option>
-            <option value="POR">POR</option>
-          </select>
+        <div class="filtros-grid">
+          <!-- Autocompletado Equipo -->
+          <div class="combo" id="combo-equipo">
+            <div class="combo-control">
+              <input type="text" id="filtro-equipo" placeholder="Equipo (todos)..." autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="lista-equipos" aria-label="Filtrar por equipo">
+              <button type="button" class="combo-clear" id="clear-equipo" aria-label="Quitar filtro de equipo" hidden>×</button>
+              <span class="combo-caret" aria-hidden="true">▾</span>
+            </div>
+            <ul class="combo-list" id="lista-equipos" role="listbox" hidden></ul>
+          </div>
+
+          <!-- Autocompletado Posición -->
+          <div class="combo" id="combo-posicion">
+            <div class="combo-control">
+              <input type="text" id="filtro-posicion" placeholder="Posición (todas)..." autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="lista-posiciones" aria-label="Filtrar por posición">
+              <button type="button" class="combo-clear" id="clear-posicion" aria-label="Quitar filtro de posición" hidden>×</button>
+              <span class="combo-caret" aria-hidden="true">▾</span>
+            </div>
+            <ul class="combo-list" id="lista-posiciones" role="listbox" hidden></ul>
+          </div>
         </div>
 
-        <div class="buscador-jugador">
-          <input type="text" id="input-buscar-jugador" placeholder="Buscar jugador..." autocomplete="off" aria-label="Buscar jugador por nombre">
-          <ul class="lista-jugadores" id="lista-jugadores" role="listbox" hidden></ul>
+        <!-- Autocompletado Jugador -->
+        <div class="combo" id="combo-jugador">
+          <div class="combo-control">
+            <input type="text" id="input-buscar-jugador" placeholder="Buscar jugador por nombre..." autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="lista-jugadores" aria-label="Buscar jugador por nombre">
+            <button type="button" class="combo-clear" id="clear-jugador" aria-label="Limpiar búsqueda" hidden>×</button>
+            <span class="combo-caret" aria-hidden="true">▾</span>
+          </div>
+          <ul class="combo-list" id="lista-jugadores" role="listbox" hidden></ul>
         </div>
 
         <div class="jugador-seleccionado" id="jugador-seleccionado" hidden>
@@ -324,7 +985,7 @@ tr.fuerte td { font-weight: 600; }
               <span class="incremento-seleccionado" id="incremento-seleccionado" hidden></span>
             </span>
           </div>
-          <button type="button" id="btn-quitar-seleccion">Quitar</button>
+          <button type="button" class="btn-mini" id="btn-quitar-seleccion">Quitar</button>
         </div>
 
         <p class="aviso-precio" id="aviso-precio-jugador" role="status" hidden></p>
@@ -334,351 +995,291 @@ tr.fuerte td { font-weight: 600; }
           <button type="button" class="btn-mini" id="btn-actualizar-datos">Actualizar</button>
         </div>
       </fieldset>
-      
-      <div class="campos">
+
+      <div class="campos-grid" id="bloque-campos">
         <div class="campo">
-          <label for="f-pi">Precio inicial del jugador</label>
-          <div class="entrada" id="w-pi"><input id="f-pi" type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-describedby="a-pi e-pi"><span class="sufijo">€</span></div>
-          <p class="ayuda" id="a-pi">Su valor en la plataforma antes de la cesión.</p>
-          <p class="error" id="e-pi" role="alert" hidden></p>
+          <label for="f-pi">Precio inicial (Pi)</label>
+          <div class="entrada" id="w-pi">
+            <input id="f-pi" type="text" inputmode="decimal" autocomplete="off" placeholder="Ej. 20.000.000" aria-describedby="e-pi">
+            <span class="sufijo">€</span>
+          </div>
+          <p class="ayuda">Valor antes de la cesión.</p>
+          <p class="error-campo" id="e-pi" role="alert" hidden></p>
         </div>
+
         <div class="campo">
-          <label for="f-pv">Precio acordado en la transferencia</label>
-          <div class="entrada" id="w-pv"><input id="f-pv" type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-describedby="a-pv e-pv"><span class="sufijo">€</span></div>
-          <p class="ayuda" id="a-pv">Lo que te pagó tu socio por el jugador.</p>
-          <p class="error" id="e-pv" role="alert" hidden></p>
+          <label for="f-pv">Precio acordado (Pv)</label>
+          <div class="entrada" id="w-pv">
+            <input id="f-pv" type="text" inputmode="decimal" autocomplete="off" placeholder="Ej. 25.000.000" aria-describedby="e-pv">
+            <span class="sufijo">€</span>
+          </div>
+          <p class="ayuda">Lo que te pagó tu socio.</p>
+          <p class="error-campo" id="e-pv" role="alert" hidden></p>
         </div>
+
         <div class="campo">
-          <label for="f-g">Incremento diario estimado</label>
-          <div class="entrada" id="w-g"><input id="f-g" type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-describedby="a-g e-g"><span class="sufijo">€ por día</span></div>
-          <p class="ayuda" id="a-g">Cuánto calculas que sube por día. Es una estimación, no una garantía.</p>
-          <p class="error" id="e-g" role="alert" hidden></p>
+          <label for="f-g">Subida diaria (g)</label>
+          <div class="entrada" id="w-g">
+            <input id="f-g" type="text" inputmode="decimal" autocomplete="off" placeholder="Ej. 400.000" aria-describedby="e-g">
+            <span class="sufijo">€/día</span>
+          </div>
+          <p class="ayuda">Estimación diaria (puede ser 0).</p>
+          <p class="error-campo" id="e-g" role="alert" hidden></p>
         </div>
+
         <div class="campo">
-          <label for="f-d">Duración de la cesión</label>
-          <div class="entrada" id="w-d"><input id="f-d" type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-describedby="a-d e-d"><span class="sufijo">días</span></div>
-          <p class="ayuda" id="a-d">Días que pasarán hasta que lo recuperes.</p>
-          <p class="error" id="e-d" role="alert" hidden></p>
+          <label for="f-d">Duración (d)</label>
+          <div class="entrada" id="w-d">
+            <input id="f-d" type="text" inputmode="decimal" autocomplete="off" placeholder="Ej. 5" aria-describedby="e-d">
+            <span class="sufijo">días</span>
+          </div>
+          <p class="ayuda">Días hasta recuperarlo.</p>
+          <p class="error-campo" id="e-d" role="alert" hidden></p>
         </div>
-        <div class="campo">
-          <label for="f-pf">Precio final real <span class="opcional">Opcional</span></label>
-          <div class="entrada" id="w-pf"><input id="f-pf" type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-describedby="a-pf e-pf"><span class="sufijo">€</span></div>
-          <p class="ayuda" id="a-pf">Si ya sabes cuánto cuesta hoy, escríbelo. Reemplaza la estimación diaria.</p>
-          <p class="error" id="e-pf" role="alert" hidden></p>
-          <button type="button" class="enlace" id="b-quitar-pf" hidden>Volver a la estimación</button>
+
+        <div class="campo span-2">
+          <label for="f-pf">
+            <span>Precio final real (Pf) <span class="opcional">Opcional</span></span>
+            <button type="button" class="enlace" id="b-quitar-pf" hidden>Volver a la estimación</button>
+          </label>
+          <div class="entrada" id="w-pf">
+            <input id="f-pf" type="text" inputmode="decimal" autocomplete="off" placeholder="Déjalo vacío para usar la estimación" aria-describedby="e-pf">
+            <span class="sufijo">€</span>
+          </div>
+          <p class="ayuda">Si ya sabes cuánto cuesta hoy, reemplaza la subida diaria estimada.</p>
+          <p class="error-campo" id="e-pf" role="alert" hidden></p>
         </div>
       </div>
+
       <div class="acciones-entrada">
-        <button type="button" class="btn btn-sec" id="b-ejemplo">Restaurar ejemplo</button>
+        <span class="ayuda">Puedes usar puntos o comas (ej. 20.000.000).</span>
+        <button type="button" class="enlace" id="b-ejemplo-inline">Probar con ejemplo</button>
       </div>
     </section>
 
-    <div class="derecha">
-      <section class="tarjeta card-res" aria-labelledby="t-res">
-        <h2 id="t-res">Resultado</h2>
-        <div class="hero">
-          <div class="hero-top">
-            <p class="hero-et">Desembolso total para recuperar al jugador</p>
-            <span class="chip" id="chip-modo">Con estimación</span>
-          </div>
+    <!-- Columna derecha: Hero + Tiles + Pestañas -->
+    <section class="panel-derecha" id="bloque-resultado" aria-labelledby="t-res">
+      <div class="hero">
+        <div class="hero-top">
+          <p class="hero-et" id="t-res">Desembolso total para recuperar al jugador</p>
+          <span class="chip" id="chip-modo">Esperando datos</span>
+        </div>
+        <div class="hero-main">
           <p class="hero-valor" id="r-T" aria-live="polite">—</p>
-          <div class="barra" id="barra" role="img" aria-label="Reparto del desembolso entre precio del jugador y compensación">
-            <span class="seg-pf" id="seg-pf" style="width:100%"></span><span class="seg-c" id="seg-c" style="width:0%"></span>
-          </div>
-          <ul class="leyenda">
-            <li><i class="punto pf"></i>Precio del jugador <b id="l-pf">—</b></li>
-            <li><i class="punto c"></i>Compensación adicional <b id="l-c">—</b></li>
-          </ul>
-        </div>
-
-        <div class="tiles">
-          <div class="tile">
-            <p class="t-et">Dinero adicional recibido</p>
-            <p class="t-val" id="r-E">—</p>
-            <p class="t-sub">Precio acordado menos precio inicial</p>
-          </div>
-          <div class="tile">
-            <p class="t-et">Incremento acumulado</p>
-            <p class="t-val" id="r-dP">—</p>
-            <p class="t-sub" id="s-dP"></p>
-          </div>
-          <div class="tile pf">
-            <p class="t-et" id="et-pf">Precio final estimado</p>
-            <p class="t-val" id="r-Pf">—</p>
-            <p class="t-sub">Lo que vale el jugador al recuperarlo</p>
-          </div>
-          <div class="tile c">
-            <p class="t-et">Compensación adicional</p>
-            <p class="t-val" id="r-C">—</p>
-            <p class="t-sub">Lo que aportas aparte del precio</p>
+          <div class="hero-actions">
+            <span class="estado-copia" id="estado-copia" role="status" aria-live="polite"></span>
+            <button type="button" class="btn btn-primario" id="b-copiar" disabled>Copiar resultados</button>
           </div>
         </div>
-
-        <p class="lectura" id="lectura"></p>
-        <div class="avisos" id="avisos"></div>
-
-        <div class="acciones">
-          <button type="button" class="btn btn-primario" id="b-copiar">Copiar resultados y fórmulas</button>
-          <span class="estado-copia" id="estado-copia" role="status" aria-live="polite"></span>
+        <div class="barra" id="barra" role="img" aria-label="Reparto del desembolso entre precio del jugador y compensación">
+          <span class="seg-pf" id="seg-pf" style="width:0%"></span><span class="seg-c" id="seg-c" style="width:0%"></span>
         </div>
-        <textarea id="copia-manual" readonly hidden aria-label="Texto para copiar manualmente"></textarea>
-        <p class="nota">Este resultado sale del modelo de compensación acordado. No confirma que la operación esté permitida por la plataforma: cualquier pago adicional debe poder hacerse con un mecanismo que tu liga permita.</p>
-      </section>
+        <ul class="leyenda">
+          <li><i class="punto pf"></i>Precio del jugador <b id="l-pf">—</b></li>
+          <li><i class="punto c"></i>Compensación adicional <b id="l-c">—</b></li>
+        </ul>
+      </div>
 
-      <section class="tarjeta" aria-label="Desglose de los cálculos">
-        <details open>
-          <summary>Desglose de los cálculos</summary>
-          <div class="pasos" id="pasos"></div>
-        </details>
-      </section>
+      <div class="tiles">
+        <div class="tile">
+          <p class="t-et">Extra recibido</p>
+          <p class="t-val" id="r-E">—</p>
+          <p class="t-sub">Pv menos Pi</p>
+        </div>
+        <div class="tile">
+          <p class="t-et">Subida acumulada</p>
+          <p class="t-val" id="r-dP">—</p>
+          <p class="t-sub" id="s-dP">Incremento ΔP</p>
+        </div>
+        <div class="tile pf">
+          <p class="t-et" id="et-pf">Precio final</p>
+          <p class="t-val" id="r-Pf">—</p>
+          <p class="t-sub">Valor al recuperar</p>
+        </div>
+        <div class="tile c">
+          <p class="t-et">Compensación</p>
+          <p class="t-val" id="r-C">—</p>
+          <p class="t-sub">Pago adicional</p>
+        </div>
+      </div>
 
-      <section class="tarjeta" aria-label="Tabla resumen">
-        <details>
-          <summary>Tabla resumen</summary>
-          <div class="tabla-scroll">
-            <table>
-              <thead><tr><th>Concepto</th><th class="num">Resultado</th></tr></thead>
-              <tbody id="tabla-resumen"></tbody>
-            </table>
+      <div class="panel panel-tabs">
+        <div class="tablist" role="tablist" aria-label="Detalles de la operación">
+          <button type="button" class="tab-btn" role="tab" id="tab-desglose" aria-selected="true" aria-controls="panel-desglose">Fórmulas y resumen</button>
+          <button type="button" class="tab-btn" role="tab" id="tab-explica" aria-selected="false" aria-controls="panel-explica">Cómo se lee</button>
+          <button type="button" class="tab-btn" role="tab" id="tab-faq" aria-selected="false" aria-controls="panel-faq">Preguntas frecuentes</button>
+          <button type="button" class="tab-btn" role="tab" id="tab-casos" aria-selected="false" aria-controls="panel-casos">Comprobación (6/6)</button>
+        </div>
+
+        <div class="tab-body">
+          <!-- Tab 1: Desglose -->
+          <div class="tab-panel" id="panel-desglose" role="tabpanel" aria-labelledby="tab-desglose">
+            <textarea id="copia-manual" readonly hidden aria-label="Texto para copiar manualmente"></textarea>
+
+            <div class="empty-state" id="estado-vacio">
+              <h3>Empieza eligiendo un jugador o escribiendo los importes</h3>
+              <p>Rellena el precio inicial, el precio acordado con tu socio, la subida diaria y los días. El cálculo se actualiza al instante.</p>
+            </div>
+
+            <div id="contenido-resultado" hidden>
+              <p class="lectura" id="lectura"></p>
+              <div class="avisos" id="avisos"></div>
+              <div class="pasos" id="pasos"></div>
+            </div>
           </div>
-        </details>
-      </section>
 
-      <section class="tarjeta" aria-label="Casos de comprobación">
-        <details>
-          <summary>Casos de comprobación</summary>
-          <p class="resumen-casos" id="resumen-casos"></p>
-          <div class="tabla-scroll">
-            <table>
-              <thead><tr><th>Caso</th><th class="num">Esperado</th><th class="num">Obtenido</th><th class="num">Estado</th></tr></thead>
-              <tbody id="tabla-casos"></tbody>
-            </table>
+          <!-- Tab 2: Cómo se lee -->
+          <div class="tab-panel" id="panel-explica" role="tabpanel" aria-labelledby="tab-explica" hidden>
+            <ul class="explica-lista">
+              <li>Mientras tu jugador está cedido, su precio puede subir.</li>
+              <li>Esa subida cuenta como parte de lo que le debes a tu socio, así que baja la compensación que tienes que poner.</li>
+              <li>Si la subida no alcanza a cubrir el dinero adicional que cobraste, pagas la diferencia.</li>
+              <li>Si la subida cubre todo ese dinero adicional, o más, la compensación es cero.</li>
+              <li>Recuperar al jugador cuesta siempre su precio de mercado del momento. La compensación se suma al precio y nunca lo reduce.</li>
+              <li>Lo que desembolsas en total es el precio del jugador más la compensación.</li>
+            </ul>
+            <p class="nota-modelo"><b>Límites del modelo:</b> aplica la regla de compensación acordada entre socios y no confirma que la operación esté permitida por la plataforma. Si el jugador baja de precio, la subida reconocida es cero.</p>
           </div>
-        </details>
-      </section>
-    </div>
 
-    <section class="tarjeta explica" aria-labelledby="t-expl">
-      <h2 id="t-expl">Cómo se lee esto</h2>
-      <ul>
-        <li>Mientras tu jugador está cedido, su precio puede subir.</li>
-        <li>Esa subida cuenta como parte de lo que le debes a tu socio, así que baja la compensación que tienes que poner.</li>
-        <li>Si la subida no alcanza a cubrir el dinero adicional que cobraste, pagas la diferencia.</li>
-        <li>Si la subida cubre todo ese dinero adicional, o más, la compensación es cero.</li>
-        <li>Recuperar al jugador cuesta siempre su precio de mercado del momento. La plataforma no deja comprarlo por menos, y la compensación no sirve para pagar menos que eso.</li>
-        <li>Lo que desembolsas en total es el precio del jugador más la compensación.</li>
-      </ul>
+          <!-- Tab 3: FAQ -->
+          <div class="tab-panel" id="panel-faq" role="tabpanel" aria-labelledby="tab-faq" hidden>
+            <div class="faq-lista">
+              <details>
+                <summary>¿Para qué sirve esta calculadora?</summary>
+                <p>Para saber cuánto dinero necesitas para recuperar un jugador que le transferiste a un socio de tu liga por más de lo que costaba, con la idea de devolverlo después de unos días.</p>
+              </details>
+              <details>
+                <summary>¿Cómo se calcula la compensación adicional?</summary>
+                <p>Se resta del dinero adicional que cobraste la subida de precio del jugador durante la cesión. Si cobraste 5.000.000 € de más y el jugador subió 2.000.000 €, la compensación es de 3.000.000 €. Nunca es negativa.</p>
+              </details>
+              <details>
+                <summary>¿Cuánto cuesta recuperar al jugador en total?</summary>
+                <p>El precio de mercado del jugador el día que lo recuperas, más la compensación adicional. Con los datos del ejemplo son 22.000.000 € del jugador y 3.000.000 € de compensación, 25.000.000 € en total.</p>
+              </details>
+              <details>
+                <summary>¿Qué pasa si el jugador baja de precio?</summary>
+                <p>No se reconoce ninguna subida, así que la compensación es igual a todo el dinero adicional que cobraste. El precio del jugador es el que marque la plataforma ese día.</p>
+              </details>
+              <details>
+                <summary>¿Puedo recuperar al jugador por menos de su precio actual?</summary>
+                <p>No. La plataforma no permite comprar por debajo del precio vigente. La compensación se suma al precio del jugador y nunca lo reemplaza.</p>
+              </details>
+              <details>
+                <summary>¿Es una herramienta oficial?</summary>
+                <p>No. Es una calculadora independiente sin afiliación con LALIGA ni con DAZN. Comprueba siempre las reglas de tu liga.</p>
+              </details>
+            </div>
+          </div>
+
+          <!-- Tab 4: Casos de comprobación -->
+          <div class="tab-panel" id="panel-casos" role="tabpanel" aria-labelledby="tab-casos" hidden>
+            <p class="resumen-casos" id="resumen-casos"></p>
+            <div class="tabla-scroll">
+              <table>
+                <thead><tr><th>Caso</th><th class="num">Esperado</th><th class="num">Obtenido</th><th class="num">Estado</th></tr></thead>
+                <tbody id="tabla-casos"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-  </div>
-
-  <section class="tarjeta faq" aria-labelledby="t-faq">
-    <h2 id="t-faq">Preguntas frecuentes sobre las cesiones</h2>
-    <div class="faq-lista">
-      <details>
-        <summary>¿Para qué sirve esta calculadora?</summary>
-        <p>Para saber cuánto dinero necesitas para recuperar un jugador que le transferiste a un socio de tu liga por más de lo que costaba, con la idea de devolverlo después de unos días.</p>
-      </details>
-      <details>
-        <summary>¿Cómo se calcula la compensación adicional?</summary>
-        <p>Se resta del dinero adicional que cobraste la subida de precio del jugador durante la cesión. Si cobraste 5.000.000 € de más y el jugador subió 2.000.000 €, la compensación es de 3.000.000 €. Nunca es negativa.</p>
-      </details>
-      <details>
-        <summary>¿Cuánto cuesta recuperar al jugador en total?</summary>
-        <p>El precio de mercado del jugador el día que lo recuperas, más la compensación adicional. Con los datos del ejemplo son 22.000.000 € del jugador y 3.000.000 € de compensación, 25.000.000 € en total.</p>
-      </details>
-      <details>
-        <summary>¿Qué pasa si el jugador baja de precio?</summary>
-        <p>No se reconoce ninguna subida, así que la compensación es igual a todo el dinero adicional que cobraste. El precio del jugador es el que marque la plataforma ese día.</p>
-      </details>
-      <details>
-        <summary>¿Puedo recuperar al jugador por menos de su precio actual?</summary>
-        <p>No. El acuerdo que modela esta calculadora parte de que la plataforma no permite comprar por debajo del precio vigente. La compensación se suma al precio del jugador y nunca lo reemplaza.</p>
-      </details>
-      <details>
-        <summary>¿Es una herramienta oficial?</summary>
-        <p>No. Es una calculadora independiente. No está afiliada, patrocinada ni respaldada por LALIGA ni por DAZN. Comprueba siempre que el pago adicional se pueda hacer con un mecanismo que permita el reglamento de tu liga.</p>
-      </details>
-    </div>
-  </section>
+  </main>
 
   <footer class="pie">
-    <p><b>Qué es estimación.</b> El incremento diario y, por tanto, el precio final estimado son supuestos tuyos. Cuando conozcas el precio real, escríbelo y el cálculo lo usará en su lugar.</p>
-    <p><b>Límites del modelo.</b> Aplica la regla de compensación acordada entre socios y no verifica el reglamento de la plataforma. Si el jugador baja de precio, solo se reconoce una subida de cero.</p>
-    <p><b>Sin afiliación.</b> LALIGA, LALIGA Fantasy y DAZN son marcas de sus respectivos titulares. Esta calculadora es independiente y no tiene relación con ellos.</p>
-    <p><b>Privacidad.</b> Todo se calcula en tu navegador. No hay registro, publicidad ni datos enviados a ningún servidor.</p>
+    <span><b>Sin afiliación:</b> herramienta independiente, no vinculada a LALIGA ni a DAZN.</span>
+    <span><b>Privacidad:</b> cálculo 100% en tu navegador, sin registro ni envío de datos.</span>
   </footer>
-</main>
+</div>
+
+<!-- Wizard de 3 pasos (se puede saltar en cualquier momento) -->
+<div class="wizard-backdrop" id="wizard-backdrop" role="dialog" aria-modal="true" aria-labelledby="wizard-titulo" hidden>
+  <div class="wizard-card">
+    <div class="wizard-head">
+      <span class="wizard-step-pill" id="wizard-paso-label">Paso 1 de 3</span>
+      <div class="wizard-dots" aria-hidden="true">
+        <span class="wizard-dot activo" data-dot="0"></span>
+        <span class="wizard-dot" data-dot="1"></span>
+        <span class="wizard-dot" data-dot="2"></span>
+      </div>
+    </div>
+    <div class="wizard-body">
+      <h2 id="wizard-titulo"></h2>
+      <p id="wizard-texto"></p>
+      <p class="wizard-tip" id="wizard-tip"></p>
+    </div>
+    <div class="wizard-footer">
+      <button type="button" class="btn btn-ghost" id="wizard-saltar">Saltar guía</button>
+      <div class="wizard-nav">
+        <button type="button" class="btn btn-sec" id="wizard-anterior" hidden>Anterior</button>
+        <button type="button" class="btn btn-primario" id="wizard-siguiente">Siguiente</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script id="logica">
-/* ===== Constantes y configuración (Requirements 5.4, 6.1) ===== */
+/* ===== Constantes y configuración ===== */
 const MSGS = {
-  // Placeholders y resultados
   placeholder: '—',
   modoEstimacion: 'Con estimación',
   modoPrecioReal: 'Con precio real',
-  modoSinDatos: 'Sin datos válidos todavía',
-  
-  // Etiquetas de campos
-  labelPi: 'Precio inicial del jugador',
-  labelPv: 'Precio acordado en la transferencia',
-  labelG: 'Incremento diario estimado',
-  labelD: 'Duración de la cesión',
-  labelPf: 'Precio final real',
-  
-  // Ayudas de campos
-  ayudaPi: 'Su valor en la plataforma antes de la cesión.',
-  ayudaPv: 'Lo que te pagó tu socio por el jugador.',
-  ayudaG: 'Cuánto calculas que sube por día. Es una estimación, no una garantía.',
-  ayudaD: 'Días que pasarán hasta que lo recuperes.',
-  ayudaPf: 'Si ya sabes cuánto cuesta hoy, escríbelo. Reemplaza la estimación diaria.',
-  
-  // Sufijos
-  sufijoEuros: '€',
-  sufijoDias: 'días',
-  sufijoPorDia: '€ por día',
-  labelOpcional: 'Opcional',
-  
-  // Errores
-  errRequerido: (nombre) => `Escribe ${nombre}.`,
-  errSoloNumeros: 'Escribe solo números, por ejemplo 20.000.000.',
-  errNoNegativo: 'No puede ser negativo.',
-  errMayorQueCero: 'Debe ser mayor que cero.',
-  errMayorQueCeroOpcional: 'Debe ser mayor que cero. Déjalo vacío para usar la estimación.',
-  errMuyGrande: 'Revisa este importe: es demasiado grande.',
-  errDiasRequerido: 'Escribe la duración de la cesión en días (puede ser 0).',
-  errDiasNegativos: 'Los días no pueden ser negativos.',
-  errDiasMuyGrandes: 'Revisa los días: el número es demasiado grande.',
-  errMenorInicial: 'El precio acordado no puede ser menor que el precio inicial: no habría dinero adicional que compensar.',
-  errCampoInvalido: 'Déjalo vacío para usar la estimación.',
-  
-  // Resultados
-  dineroAdicional: 'Dinero adicional recibido',
-  incrementoAcumulado: 'Incremento acumulado',
-  precioFinalEstimado: 'Precio final estimado',
-  precioFinalReal: 'Precio final real',
-  compensacionAdicional: 'Compensación adicional',
-  desembolsoTotal: 'Desembolso total para recuperar al jugador',
-  dineroAdicionalSub: 'Precio acordado menos precio inicial',
-  incrementoSub: 'Calculado con el incremento diario',
-  precioRealSub: 'Calculado con el precio real',
-  pfSub: 'Lo que vale el jugador al recuperarlo',
-  cSub: 'Lo que aportas aparte del precio',
-  
-  // Etiquetas de tabla y otros
-  concepto: 'Concepto',
-  resultado: 'Resultado',
-  caso: 'Caso',
-  esperado: 'Esperado',
-  obtenido: 'Obtenido',
-  estado: 'Estado',
-  correcto: 'Correcto',
-  falla: 'Falla',
-  seRechazan: 'Se rechazan',
-  algunoPasa: 'Alguno pasa',
-  
-  // Labels dinámicos
-  labelPfDynamic: (usaReal) => usaReal ? 'Precio final real' : 'Precio final estimado',
-  pfSubDynamic: (usaReal) => usaReal ? 'Calculado con el precio real' : 'Calculado con el incremento diario',
-  
-  // Leyenda de la barra
-  leyendaPrecio: 'Precio del jugador',
-  leyendaCompensacion: 'Compensación adicional',
-  
-  // Botones
-  btnRestaurarEjemplo: 'Restaurar ejemplo',
-  btnCopiar: 'Copiar resultados y fórmulas',
-  btnQuitarPf: 'Volver a la estimación',
-  
-  // Estados de copia
+  modoEsperando: 'Esperando datos',
+  modoInvalido: 'Revisa los datos',
   copiaExito: 'Copiado',
-  copiaFallback: 'Tu navegador no dejó copiar solo. El texto quedó seleccionado: cópialo a mano.',
-  
-  // Lectura
-  lecturaSinDatos: 'Corrige los campos marcados en rojo para ver el resultado.',
-  lecturaSincompensacion: 'No hay dinero adicional que compensar, porque el precio acordado es igual al inicial. Solo pagas el precio del jugador.',
-  lecturaBajó: (pi, pf, E) => `El jugador bajó de ${pi} a ${pf}. No se reconoce ninguna subida, así que debes aportar los ${E} adicionales completos.`,
-  lecturaParcial: (dP, E, C) => `La subida de ${dP} cubre una parte de los ${E} adicionales. Te faltan ${C} por aportar.`,
-  lecturaCompleto: (dP, E) => `La subida de ${dP} cubre los ${E} adicionales completos, así que no debes aportar compensación.`,
-  lecturaSupera: (T, pv) => ` El total supera los ${pv} que cobraste porque el jugador ya vale más.`,
-  
-  // Avisos
-  avisoBajó: (pi, pf) => `El jugador bajó de precio (${pi} a ${pf}). Para la compensación solo cuenta una subida de 0. Recuperarlo cuesta lo que marque la plataforma ese día.`,
-  avisoPrecioReal: (g, d) => `Con el precio real escrito, la estimación diaria (${g} × ${d}) ya no se usa para calcular la compensación.`,
-  avisoEstimacion: 'Este resultado usa una estimación. El precio real puede ser distinto: cuando lo sepas, escríbelo en «Precio final real».',
-  
-  // Desglose
-  pasoDineroAdicional: 'Dinero adicional recibido',
-  pasoFormulaE: 'E = Pv − Pi',
-  pasoIncrementoReal: 'Incremento real del valor',
-  pasoFormulaDeltaPReal: 'ΔP = máx(0, Pf − Pi)',
-  pasoPrecioFinal: 'Precio final',
-  pasoPfReal: 'Pf = precio real introducido',
-  pasoIncrementoEstimado: 'Incremento estimado del valor',
-  pasoFormulaDeltaPEst: 'ΔP = g × d',
-  pasoPrecioEstimado: 'Precio final estimado',
-  pasoFormulaPf: 'Pf = Pi + ΔP',
-  pasoCompensacion: 'Compensación adicional',
-  pasoFormulaC: 'C = máx(0, E − ΔP)',
-  pasoDesembolso: 'Desembolso total',
-  pasoFormulaT: 'T = Pf + C',
-  
-  // Tabla resumen
-  resPrecioInicial: 'Precio inicial',
-  resPrecioTransferencia: 'Precio de transferencia inicial',
-  resIncrementoDiario: 'Incremento diario',
-  resDuracion: 'Duración',
-  resPrecioFinal: (usaReal) => 'Precio final ' + (usaReal ? 'real' : 'estimado'),
-  
-  // Varios
-  vacio: 'El desglose aparecerá aquí cuando los datos sean válidos.',
-  notaCopia: 'Nota: es un cálculo del modelo acordado entre socios. No confirma que la operación esté permitida por la plataforma.',
-  notaPrecioReal: 'Este resultado sale del modelo de compensación acordado. No confirma que la operación esté permitida por la plataforma: cualquier pago adicional debe poder hacerse con un mecanismo que tu liga permita.',
-  
-  // Casos de prueba
-  casoSubidaMenor: 'Subida menor que el dinero adicional',
-  casoSubidaIgual: 'Subida igual al dinero adicional',
-  casoSubidaMayor: 'Subida mayor que el dinero adicional',
-  casoPrecioRealDistinto: 'Precio real distinto de la estimación',
-  casoBajaPrecio: 'El jugador baja de precio',
-  
-  // Player Selector
-  selectorLeyenda: 'Seleccionar jugador',
+  copiaFallback: 'Tu navegador no dejó copiar solo. El texto quedó seleccionado.',
   selectorCargando: 'Cargando jugadores...',
   selectorError: 'No se pudieron cargar los jugadores. Inténtalo de nuevo.',
-  selectorSinResultados: 'No se encontraron jugadores.',
-  selectorPlaceholder: 'Buscar jugador...',
-  filtroTodosEquipos: 'Todos los equipos',
-  filtroTodasPosiciones: 'Todas',
-  filtroPosicionDEL: 'DEL',
-  filtroPosicionMED: 'MED',
-  filtroPosicionDEF: 'DEF',
-  filtroPosicionPOR: 'POR',
-  btnQuitar: 'Quitar',
-  btnReintentar: 'Reintentar',
-  btnActualizar: 'Actualizar',
+  selectorSinResultados: 'Sin coincidencias',
   precioNoDisponible: 'Precio de mercado no disponible para este jugador. Escríbelo manualmente.',
-  incrementoNegativoNota: 'El jugador bajó hoy; se dejó 0 € en incremento diario estimado.',
-  ultimaActualizada: 'Última actualización:'
+  incrementoNegativoNota: 'El jugador bajó hoy; se dejó 0 € en subida diaria estimada.',
+  ultimaActualizada: 'Actualizado:'
 };
 
 const DATA_URL = './data/players.json';
 const IMAGE_BASE_URL = 'https://fantasybrain-production.up.railway.app';
 const CACHE_KEY = 'playerMarketCache';
 const TIMESTAMP_KEY = 'playerMarketTimestamp';
-const CACHE_TTL = 5 * 60 * 1000; // 5 minutos en milisegundos
-const API_TIMEOUT = 10000; // 10 segundos de timeout
-const SEARCH_DEBOUNCE_MS = 150;
+const WIZARD_KEY = 'cesionesWizardSeen';
+const CACHE_TTL = 5 * 60 * 1000;
+const API_TIMEOUT = 10000;
+const SEARCH_DEBOUNCE_MS = 120;
 
-// Posiciones de jugadores
-const POSICIONES = {
-  DEL: 'DEL', // Delantero
-  MED: 'MED', // Centrocampista
-  DEF: 'DEF', // Defensa
-  POR: 'POR'  // Portero
-};
+const POSICIONES_LISTA = [
+  { code: 'DEL', label: 'DEL · Delantero' },
+  { code: 'MED', label: 'MED · Centrocampista' },
+  { code: 'DEF', label: 'DEF · Defensa' },
+  { code: 'POR', label: 'POR · Portero' }
+];
+
+const WIZARD_STEPS = [
+  {
+    titulo: '1. Busca tu jugador (o escribe a mano)',
+    texto: 'Filtra por equipo, posición o nombre con autocompletado. Al elegir un jugador, rellenaremos su precio inicial y su subida diaria automáticamente.',
+    tip: 'Si prefieres, puedes ignorar el selector y escribir los importes directamente.',
+    target: 'bloque-selector'
+  },
+  {
+    titulo: '2. Completa los datos de la cesión',
+    texto: 'Introduce cuánto te pagó tu socio (Pv) y cuántos días durará la cesión. Si ya conoces el precio final de hoy, escríbelo en el campo opcional.',
+    tip: 'También tienes el botón «Cargar ejemplo» arriba si quieres ver un caso completo.',
+    target: 'bloque-campos'
+  },
+  {
+    titulo: '3. Consulta y copia el resultado',
+    texto: 'A la derecha verás al instante el desembolso total, la compensación y las fórmulas paso a paso listas para copiar y enviar a tu socio.',
+    tip: 'Puedes reabrir esta guía cuando quieras desde el botón «Guía rápida».',
+    target: 'bloque-resultado'
+  }
+];
 
 /* ===== Lógica pura: formato, lectura, validación y cálculo (sin DOM) ===== */
 const Formato = {
+  /**
+   * Formatea un número en estilo español con separador de miles.
+   * @param {number} n
+   * @returns {string}
+   */
   numero(n) {
     const neg = n < 0;
     const c = Math.round(Math.abs(n) * 100);
@@ -688,15 +1289,29 @@ const Formato = {
     if (dec) s += ',' + String(dec).padStart(2, '0');
     return (neg ? '−' : '') + s;
   },
-  euros(n) { return Formato.numero(n) + ' €'; },
+  /**
+   * Formatea un importe en euros.
+   * @param {number} n
+   * @returns {string}
+   */
+  euros(n) { return Formato.numero(n) + '\u00A0€'; },
+  /**
+   * Formatea una duración en días.
+   * @param {number} d
+   * @returns {string}
+   */
   dias(d) { return String(d).replace('.', ',') + (d === 1 ? ' día' : ' días'); }
 };
 
 const Entrada = {
-  /* Devuelve null si está vacío, NaN si no se entiende, o el número. */
+  /**
+   * Parsea un texto numérico español devolviendo null si está vacío, NaN si es inválido o el número.
+   * @param {unknown} texto
+   * @returns {number|null}
+   */
   parse(texto) {
     if (texto === null || texto === undefined) return null;
-    let t = String(texto).replace(/[€\s ]/g, '').replace(/d[ií]as?/i, '');
+    let t = String(texto).replace(/[€\s\u00A0]/g, '').replace(/d[ií]as?/i, '');
     if (t === '') return null;
     if (!/^[-+]?[\d.,]+$/.test(t)) return NaN;
     let neg = false;
@@ -705,7 +1320,8 @@ const Entrada = {
     if (t.indexOf(',') !== -1) {
       const partes = t.split(',');
       if (partes.length > 2) return NaN;
-      const ent = partes[0], dec = partes[1];
+      const ent = partes[0];
+      const dec = partes[1];
       if (!/^(\d*|[1-9]\d{0,2}(\.\d{3})+)$/.test(ent) || !/^\d*$/.test(dec)) return NaN;
       t = ent.replace(/\./g, '') + '.' + dec;
     } else if (/^[1-9]\d{0,2}(\.\d{3})+$/.test(t)) {
@@ -721,47 +1337,58 @@ const Entrada = {
 const MAX_EUROS = 1e12;
 
 const Validacion = {
-  /* e = { pi, pv, g, d, pfReal }, cada uno null | NaN | número */
+  /**
+   * Valida las entradas de la calculadora.
+   * @param {{pi: number|null, pv: number|null, g: number|null, d: number|null, pfReal: number|null}} e
+   * @returns {{errores: Record<string, string>, valido: boolean}}
+   */
   validar(e) {
     const errores = {};
     const dinero = (clave, valor, nombre, { permiteCero }) => {
       if (valor === null) { errores[clave] = 'Escribe ' + nombre + '.'; return; }
-      if (Number.isNaN(valor)) { errores[clave] = 'Escribe solo números, por ejemplo 20.000.000.'; return; }
+      if (Number.isNaN(valor)) { errores[clave] = 'Escribe solo números, ej. 20.000.000.'; return; }
       if (valor < 0) { errores[clave] = 'No puede ser negativo.'; return; }
       if (valor === 0 && !permiteCero) { errores[clave] = 'Debe ser mayor que cero.'; return; }
-      if (valor > MAX_EUROS) { errores[clave] = 'Revisa este importe: es demasiado grande.'; }
+      if (valor > MAX_EUROS) { errores[clave] = 'Importe demasiado grande.'; }
     };
-    dinero('pi', e.pi, 'el precio inicial del jugador', { permiteCero: false });
-    dinero('pv', e.pv, 'el precio acordado en la transferencia', { permiteCero: false });
-    dinero('g', e.g, 'el incremento diario estimado (puede ser 0)', { permiteCero: true });
+    dinero('pi', e.pi, 'el precio inicial', { permiteCero: false });
+    dinero('pv', e.pv, 'el precio acordado', { permiteCero: false });
+    dinero('g', e.g, 'la subida diaria (puede ser 0)', { permiteCero: true });
 
-    if (e.d === null) errores.d = 'Escribe la duración de la cesión en días (puede ser 0).';
-    else if (Number.isNaN(e.d)) errores.d = 'Escribe solo números, por ejemplo 5.';
+    if (e.d === null) errores.d = 'Escribe los días (puede ser 0).';
+    else if (Number.isNaN(e.d)) errores.d = 'Escribe solo números, ej. 5.';
     else if (e.d < 0) errores.d = 'Los días no pueden ser negativos.';
-    else if (e.d > 100000) errores.d = 'Revisa los días: el número es demasiado grande.';
+    else if (e.d > 100000) errores.d = 'Número de días demasiado grande.';
 
     if (e.pfReal !== null) {
-      if (Number.isNaN(e.pfReal)) errores.pfReal = 'Escribe solo números, por ejemplo 23.000.000.';
-      else if (e.pfReal < 0) errores.pfReal = 'No puede ser negativo. Déjalo vacío para usar la estimación.';
-      else if (e.pfReal === 0) errores.pfReal = 'Debe ser mayor que cero. Déjalo vacío para usar la estimación.';
-      else if (e.pfReal > MAX_EUROS) errores.pfReal = 'Revisa este importe: es demasiado grande.';
+      if (Number.isNaN(e.pfReal)) errores.pfReal = 'Escribe solo números, ej. 23.000.000.';
+      else if (e.pfReal < 0) errores.pfReal = 'No puede ser negativo. Déjalo vacío para estimar.';
+      else if (e.pfReal === 0) errores.pfReal = 'Debe ser mayor que cero o vacío.';
+      else if (e.pfReal > MAX_EUROS) errores.pfReal = 'Importe demasiado grande.';
     }
 
     if (!errores.pi && !errores.pv && e.pv < e.pi) {
-      errores.pv = 'El precio acordado no puede ser menor que el precio inicial: no habría dinero adicional que compensar.';
+      errores.pv = 'Debe ser igual o mayor que el precio inicial.';
     }
     return { errores, valido: Object.keys(errores).length === 0 };
   }
 };
 
 const Calculo = {
-  /* Todo se opera en céntimos para evitar errores de coma flotante. */
+  /**
+   * Calcula E, ΔP, Pf, C y T operando en céntimos para evitar errores de coma flotante.
+   * @param {{pi: number, pv: number, g: number, d: number, pfReal: number|null}} e
+   * @returns {{usaReal: boolean, E: number, dP: number, Pf: number, C: number, T: number, bajoDePrecio: boolean, cubierto: boolean}}
+   */
   calcular(e) {
     const aCent = (x) => Math.round(x * 100);
-    const PI = aCent(e.pi), PV = aCent(e.pv), G = aCent(e.g);
+    const PI = aCent(e.pi);
+    const PV = aCent(e.pv);
+    const G = aCent(e.g);
     const usaReal = e.pfReal !== null && e.pfReal !== undefined;
     const E = PV - PI;
-    let dP, Pf;
+    let dP;
+    let Pf;
     if (usaReal) {
       Pf = aCent(e.pfReal);
       dP = Math.max(0, Pf - PI);
@@ -773,7 +1400,11 @@ const Calculo = {
     const T = Pf + C;
     return {
       usaReal,
-      E: E / 100, dP: dP / 100, Pf: Pf / 100, C: C / 100, T: T / 100,
+      E: E / 100,
+      dP: dP / 100,
+      Pf: Pf / 100,
+      C: C / 100,
+      T: T / 100,
       bajoDePrecio: usaReal && Pf < PI,
       cubierto: dP >= E
     };
@@ -815,19 +1446,13 @@ function evaluarInvalidos() {
 /* ===== Player Market Service ===== */
 /**
  * Servicio de datos del mercado de jugadores con caché en localStorage.
- * Lee el archivo estático `./data/players.json` actualizado automáticamente por GitHub Actions.
- * No utiliza datos de respaldo: si la carga falla, devuelve estado de error.
+ * Lee `./data/players.json` generado diariamente por GitHub Actions.
  * @module PlayerMarketService
  */
 const PlayerMarketService = (function() {
   /** @type {string|null} */
   let lastUpdate = null;
 
-  /**
-   * Construye la URL del JSON estático (con cache-busting opcional al refrescar).
-   * @param {boolean} [bypassCache=false] - Si es true, añade parámetro temporal.
-   * @returns {string} URL para la petición.
-   */
   function buildDataUrl(bypassCache) {
     if (!bypassCache) return DATA_URL;
     const sep = DATA_URL.indexOf('?') === -1 ? '?' : '&';
@@ -835,9 +1460,9 @@ const PlayerMarketService = (function() {
   }
 
   /**
-   * Resuelve una URL relativa de imagen frente al host base de la API.
-   * @param {string} relativePath - Ruta relativa o URL absoluta.
-   * @returns {string} URL resuelta o cadena vacía.
+   * Resuelve una URL relativa de imagen frente al host base.
+   * @param {string} relativePath
+   * @returns {string}
    */
   function resolveUrl(relativePath) {
     if (!relativePath || typeof relativePath !== 'string') return '';
@@ -846,12 +1471,6 @@ const PlayerMarketService = (function() {
     return IMAGE_BASE_URL + path;
   }
 
-  /**
-   * Extrae el arreglo de jugadores de la respuesta JSON.
-   * Soporta `{ players: [...] }`, `{ results: [...] }`, `{ data: [...] }` o arreglo directo.
-   * @param {unknown} payload - JSON recibido.
-   * @returns {Array<Object>|null} Arreglo de jugadores o null si el formato es inesperado.
-   */
   function extractPlayers(payload) {
     if (Array.isArray(payload)) return payload;
     if (payload && typeof payload === 'object') {
@@ -862,27 +1481,19 @@ const PlayerMarketService = (function() {
     return null;
   }
 
-  /**
-   * Lee los jugadores almacenados en caché local si no han caducado.
-   * @returns {Array<Object>|null} Lista de jugadores o null.
-   */
   function getFromCache() {
     try {
       const cached = localStorage.getItem(CACHE_KEY);
       if (!cached) return null;
-
       const parsed = JSON.parse(cached);
       if (!parsed || !Array.isArray(parsed.data) || typeof parsed.timestamp !== 'number') {
         localStorage.removeItem(CACHE_KEY);
         return null;
       }
-
-      const age = Date.now() - parsed.timestamp;
-      if (age > CACHE_TTL) {
+      if (Date.now() - parsed.timestamp > CACHE_TTL) {
         localStorage.removeItem(CACHE_KEY);
         return null;
       }
-
       lastUpdate = typeof parsed.updatedAt === 'string' && parsed.updatedAt
         ? parsed.updatedAt
         : new Date(parsed.timestamp).toISOString();
@@ -892,11 +1503,6 @@ const PlayerMarketService = (function() {
     }
   }
 
-  /**
-   * Guarda los jugadores y la marca temporal en localStorage.
-   * @param {Array<Object>} players - Lista de jugadores a almacenar.
-   * @param {string|null} [updatedAt] - Marca temporal del archivo de datos.
-   */
   function saveToCache(players, updatedAt) {
     try {
       const timestamp = Date.now();
@@ -907,41 +1513,24 @@ const PlayerMarketService = (function() {
       lastUpdate = iso;
       localStorage.setItem(TIMESTAMP_KEY, lastUpdate);
     } catch (e) {
-      // Almacenamiento lleno o no disponible: continuar sin caché
+      // Continuar sin caché si localStorage no está disponible
     }
   }
 
-  /**
-   * Obtiene los jugadores desde `./data/players.json` con control de timeout.
-   * @param {boolean} [bypassCache=false] - Si es true, evita la caché HTTP del navegador.
-   * @returns {Promise<{players: Array<Object>, status: 'ready'|'error', lastUpdate: string|null}>}
-   */
   async function fetchPlayersData(bypassCache) {
     const url = buildDataUrl(bypassCache);
     let timeoutId = null;
-
     try {
       const controller = new AbortController();
       timeoutId = setTimeout(function() { controller.abort(); }, API_TIMEOUT);
-
       const response = await fetch(url, { signal: controller.signal });
       clearTimeout(timeoutId);
-
-      if (!response.ok) {
-        throw new Error('HTTP ' + response.status);
-      }
-
+      if (!response.ok) throw new Error('HTTP ' + response.status);
       const payload = await response.json();
       const playerArray = extractPlayers(payload);
-      if (!playerArray || playerArray.length === 0) {
-        throw new Error('Unexpected data format');
-      }
-
-      const sourceUpdatedAt = payload && typeof payload.updated_at === 'string'
-        ? payload.updated_at
-        : null;
+      if (!playerArray || playerArray.length === 0) throw new Error('Unexpected data format');
+      const sourceUpdatedAt = payload && typeof payload.updated_at === 'string' ? payload.updated_at : null;
       saveToCache(playerArray, sourceUpdatedAt);
-
       return { players: playerArray, status: 'ready', lastUpdate: lastUpdate };
     } catch (e) {
       if (timeoutId !== null) clearTimeout(timeoutId);
@@ -950,36 +1539,32 @@ const PlayerMarketService = (function() {
   }
 
   /**
-   * Obtiene los jugadores desde caché local o desde `./data/players.json`.
+   * Obtiene el catálogo completo de jugadores desde caché o JSON estático.
    * @returns {Promise<{players: Array<Object>, status: 'ready'|'error', lastUpdate: string|null}>}
    */
   async function getPlayers() {
     const cached = getFromCache();
-    if (cached) {
-      return { players: cached, status: 'ready', lastUpdate: lastUpdate };
-    }
+    if (cached) return { players: cached, status: 'ready', lastUpdate: lastUpdate };
     return fetchPlayersData(false);
   }
 
   /**
-   * Filtra jugadores por nombre sobre el catálogo completo cargado.
-   * @param {string} searchQuery - Texto de búsqueda.
+   * Filtra jugadores por nombre sobre el catálogo cargado.
+   * @param {string} searchQuery
    * @returns {Promise<{players: Array<Object>, status: 'ready'|'error', lastUpdate: string|null}>}
    */
   async function searchPlayers(searchQuery) {
     const result = await getPlayers();
     if (result.status === 'error') return result;
-
     const trimmed = searchQuery ? String(searchQuery).toLowerCase().trim() : '';
     const filtered = trimmed
       ? result.players.filter(function(p) { return p.name && p.name.toLowerCase().includes(trimmed); })
       : result.players;
-
     return { players: filtered, status: 'ready', lastUpdate: result.lastUpdate };
   }
 
   /**
-   * Fuerza una recarga limpia de `./data/players.json` y actualiza la caché.
+   * Fuerza la recarga del archivo JSON y actualiza la caché.
    * @returns {Promise<{players: Array<Object>, status: 'ready'|'error', lastUpdate: string|null}>}
    */
   async function refreshData() {
@@ -987,19 +1572,13 @@ const PlayerMarketService = (function() {
       localStorage.removeItem(CACHE_KEY);
       localStorage.removeItem(TIMESTAMP_KEY);
     } catch (e) {
-      // Ignorar si localStorage no está disponible
+      // Ignorar
     }
     lastUpdate = null;
     return fetchPlayersData(true);
   }
 
-  /**
-   * Devuelve la marca temporal ISO de la última actualización de datos.
-   * @returns {string|null}
-   */
-  function getLastUpdate() {
-    return lastUpdate;
-  }
+  function getLastUpdate() { return lastUpdate; }
 
   return {
     getPlayers: getPlayers,
@@ -1010,34 +1589,27 @@ const PlayerMarketService = (function() {
   };
 })();
 
-/* ===== Player Selector Component ===== */
+/* ===== Player Selector con Autocompletado para Equipo, Posición y Jugador ===== */
 /**
- * Componente selector de jugadores con búsqueda debounced, filtros por equipo/posición,
- * navegación por teclado y autorrelleno de Precio inicial (Pi) e Incremento diario (g).
+ * Selector de jugadores con comboboxes de autocompletado para Equipo, Posición y Jugador.
  * @module PlayerSelector
  */
 const PlayerSelector = (function() {
-  /** @type {Array<Object>} */
   let allPlayers = [];
-  /** @type {Array<Object>} */
-  let activePlayers = [];
-  /** @type {Array<Object>} */
+  let teamsList = [];
+  let selectedTeam = '';
+  let selectedPosition = '';
   let filteredPlayers = [];
-  /** @type {Object|null} */
   let selectedPlayer = null;
-  /** @type {number|null} */
   let debounceTimer = null;
-  /** @type {number} */
-  let activeSearchToken = 0;
-  /** @type {boolean} */
   let listenersBound = false;
 
   const $ = function(id) { return document.getElementById(id); };
 
   /**
-   * Escapa caracteres especiales HTML para prevenir XSS.
-   * @param {unknown} str - Valor a escapar.
-   * @returns {string} Cadena segura para insertar en HTML.
+   * Escapa caracteres HTML para evitar XSS.
+   * @param {unknown} str
+   * @returns {string}
    */
   function escapeHTML(str) {
     const div = document.createElement('div');
@@ -1046,10 +1618,18 @@ const PlayerSelector = (function() {
   }
 
   /**
-   * Formatea una marca temporal ISO para mostrarla de forma legible.
-   * @param {string|null} iso - Fecha en formato ISO.
+   * Normaliza texto quitando tildes para búsquedas más cómodas.
+   * @param {string} str
    * @returns {string}
    */
+  function normalizeText(str) {
+    return String(str || '')
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .trim();
+  }
+
   function formatTimestamp(iso) {
     if (!iso) return '';
     try {
@@ -1061,21 +1641,12 @@ const PlayerSelector = (function() {
     }
   }
 
-  /**
-   * Obtiene el incremento diario del jugador (price_increment o price - price_history["1"]).
-   * @param {Object} player - Objeto jugador.
-   * @returns {number|null}
-   */
   function getDailyIncrement(player) {
     if (!player) return null;
     if (typeof player.price_increment === 'number' && Number.isFinite(player.price_increment)) {
       return player.price_increment;
     }
-    if (
-      typeof player.price === 'number' &&
-      player.price_history &&
-      typeof player.price_history['1'] === 'number'
-    ) {
+    if (typeof player.price === 'number' && player.price_history && typeof player.price_history['1'] === 'number') {
       return player.price - player.price_history['1'];
     }
     return null;
@@ -1083,35 +1654,25 @@ const PlayerSelector = (function() {
 
   function showLoading() {
     const estado = $('estado-selector');
-    const cargando = $('cargando-selector');
-    const error = $('error-selector');
-    const reintentar = $('btn-reintentar-selector');
     if (estado) estado.hidden = false;
-    if (cargando) cargando.hidden = false;
-    if (error) error.hidden = true;
-    if (reintentar) reintentar.hidden = true;
+    if ($('cargando-selector')) $('cargando-selector').hidden = false;
+    if ($('error-selector')) $('error-selector').hidden = true;
+    if ($('btn-reintentar-selector')) $('btn-reintentar-selector').hidden = true;
   }
 
   function showError() {
     const estado = $('estado-selector');
-    const cargando = $('cargando-selector');
-    const error = $('error-selector');
-    const reintentar = $('btn-reintentar-selector');
     if (estado) estado.hidden = false;
-    if (cargando) cargando.hidden = true;
-    if (error) error.hidden = false;
-    if (reintentar) reintentar.hidden = false;
+    if ($('cargando-selector')) $('cargando-selector').hidden = true;
+    if ($('error-selector')) $('error-selector').hidden = false;
+    if ($('btn-reintentar-selector')) $('btn-reintentar-selector').hidden = false;
   }
 
   function showReady() {
-    const estado = $('estado-selector');
-    const cargando = $('cargando-selector');
-    const error = $('error-selector');
-    const reintentar = $('btn-reintentar-selector');
-    if (cargando) cargando.hidden = true;
-    if (error) error.hidden = true;
-    if (reintentar) reintentar.hidden = true;
-    if (estado) estado.hidden = true;
+    if ($('cargando-selector')) $('cargando-selector').hidden = true;
+    if ($('error-selector')) $('error-selector').hidden = true;
+    if ($('btn-reintentar-selector')) $('btn-reintentar-selector').hidden = true;
+    if ($('estado-selector')) $('estado-selector').hidden = true;
   }
 
   function updateLastUpdate(timestamp) {
@@ -1126,110 +1687,144 @@ const PlayerSelector = (function() {
   function showPriceNotice(message) {
     const notice = $('aviso-precio-jugador');
     if (!notice) return;
-    if (message) {
-      notice.textContent = message;
-      notice.hidden = false;
+    notice.textContent = message || '';
+    notice.hidden = !message;
+  }
+
+  /* --- Combobox Equipo --- */
+  function renderTeamList(query, open) {
+    const list = $('lista-equipos');
+    const input = $('filtro-equipo');
+    if (!list) return;
+    const q = normalizeText(query);
+    const matches = q
+      ? teamsList.filter(function(t) { return normalizeText(t).includes(q); })
+      : teamsList;
+
+    list.innerHTML = '';
+    if (matches.length === 0) {
+      list.innerHTML = '<li class="vacio-item">' + escapeHTML(MSGS.selectorSinResultados) + '</li>';
     } else {
-      notice.textContent = '';
-      notice.hidden = true;
+      matches.forEach(function(team) {
+        const li = document.createElement('li');
+        li.setAttribute('role', 'option');
+        li.dataset.value = team;
+        li.textContent = team;
+        if (team === selectedTeam) li.classList.add('seleccionado');
+        list.appendChild(li);
+      });
     }
+    const isOpen = Boolean(open);
+    list.hidden = !isOpen;
+    if (input) input.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   }
 
-  function populateTeamFilter(players) {
-    const select = $('filtro-equipo');
-    if (!select) return;
-    const currentValue = select.value;
-    const teams = [];
-    players.forEach(function(p) {
-      if (p.team && teams.indexOf(p.team) === -1) {
-        teams.push(p.team);
-      }
-    });
-    teams.sort();
-    select.innerHTML = '<option value="">' + escapeHTML(MSGS.filtroTodosEquipos) + '</option>';
-    teams.forEach(function(team) {
-      const opt = document.createElement('option');
-      opt.value = team;
-      opt.textContent = team;
-      select.appendChild(opt);
-    });
-    if (currentValue && teams.indexOf(currentValue) !== -1) {
-      select.value = currentValue;
-    }
+  function setTeamFilter(team) {
+    selectedTeam = team || '';
+    const input = $('filtro-equipo');
+    const clearBtn = $('clear-equipo');
+    if (input) input.value = selectedTeam;
+    if (clearBtn) clearBtn.hidden = !selectedTeam;
+    if ($('lista-equipos')) $('lista-equipos').hidden = true;
+    if (input) input.setAttribute('aria-expanded', 'false');
+    applyFilters(false);
   }
 
-  /**
-   * Aplica los filtros de equipo, posición y texto sobre la lista activa (lógica AND).
-   * @param {boolean} [openList=false] - Si es true, abre el desplegable tras filtrar.
-   */
+  /* --- Combobox Posición --- */
+  function renderPositionList(query, open) {
+    const list = $('lista-posiciones');
+    const input = $('filtro-posicion');
+    if (!list) return;
+    const q = normalizeText(query);
+    const matches = q
+      ? POSICIONES_LISTA.filter(function(p) {
+        return normalizeText(p.code).includes(q) || normalizeText(p.label).includes(q);
+      })
+      : POSICIONES_LISTA;
+
+    list.innerHTML = '';
+    if (matches.length === 0) {
+      list.innerHTML = '<li class="vacio-item">' + escapeHTML(MSGS.selectorSinResultados) + '</li>';
+    } else {
+      matches.forEach(function(pos) {
+        const li = document.createElement('li');
+        li.setAttribute('role', 'option');
+        li.dataset.value = pos.code;
+        li.textContent = pos.label;
+        if (pos.code === selectedPosition) li.classList.add('seleccionado');
+        list.appendChild(li);
+      });
+    }
+    const isOpen = Boolean(open);
+    list.hidden = !isOpen;
+    if (input) input.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  }
+
+  function setPositionFilter(code) {
+    selectedPosition = code || '';
+    const input = $('filtro-posicion');
+    const clearBtn = $('clear-posicion');
+    const found = POSICIONES_LISTA.find(function(p) { return p.code === selectedPosition; });
+    if (input) input.value = found ? found.label : '';
+    if (clearBtn) clearBtn.hidden = !selectedPosition;
+    if ($('lista-posiciones')) $('lista-posiciones').hidden = true;
+    if (input) input.setAttribute('aria-expanded', 'false');
+    applyFilters(false);
+  }
+
+  /* --- Combobox Jugador --- */
   function applyFilters(openList) {
-    const teamFilter = $('filtro-equipo').value;
-    const positionFilter = $('filtro-posicion').value;
-    const searchQuery = $('input-buscar-jugador').value.toLowerCase().trim();
-
-    filteredPlayers = activePlayers.filter(function(p) {
-      const matchTeam = !teamFilter || p.team === teamFilter;
-      const matchPosition = !positionFilter || p.position === positionFilter;
-      const matchSearch = !searchQuery || (p.name && p.name.toLowerCase().includes(searchQuery));
+    const searchQuery = normalizeText($('input-buscar-jugador') ? $('input-buscar-jugador').value : '');
+    filteredPlayers = allPlayers.filter(function(p) {
+      const matchTeam = !selectedTeam || p.team === selectedTeam;
+      const matchPosition = !selectedPosition || p.position === selectedPosition;
+      const matchSearch = !searchQuery || normalizeText(p.name).includes(searchQuery);
       return matchTeam && matchPosition && matchSearch;
     });
-
-    renderList(Boolean(openList));
+    renderPlayerList(Boolean(openList));
   }
 
-  /**
-   * Renderiza el listado filtrado en el desplegable usando formato "[Nombre] - [Equipo] ([Posición])".
-   * @param {boolean} showDropdown - Controla la visibilidad del desplegable.
-   */
-  function renderList(showDropdown) {
+  function renderPlayerList(showDropdown) {
     const lista = $('lista-jugadores');
+    const input = $('input-buscar-jugador');
     if (!lista) return;
     lista.innerHTML = '';
+
+    if (filteredPlayers.length === 0) {
+      if (showDropdown && allPlayers.length > 0) {
+        lista.innerHTML = '<li class="vacio-item">' + escapeHTML(MSGS.selectorSinResultados) + '</li>';
+        lista.hidden = false;
+        if (input) input.setAttribute('aria-expanded', 'true');
+      } else {
+        lista.hidden = true;
+        if (input) input.setAttribute('aria-expanded', 'false');
+      }
+      return;
+    }
 
     filteredPlayers.slice(0, 50).forEach(function(player) {
       const li = document.createElement('li');
       li.setAttribute('role', 'option');
       li.dataset.playerId = String(player.id);
-
-      const label = escapeHTML(player.name) +
-        ' - ' + escapeHTML(player.team || '') +
-        ' (' + escapeHTML(player.position || '') + ')';
-
+      const label = escapeHTML(player.name) + ' - ' + escapeHTML(player.team || '') + ' (' + escapeHTML(player.position || '') + ')';
       const priceHtml = typeof player.price === 'number' && Number.isFinite(player.price)
         ? '<span class="precio-jugador">' + escapeHTML(Formato.euros(player.price)) + '</span>'
         : '';
-
       li.innerHTML = '<span class="texto-jugador">' + label + '</span>' + priceHtml;
       lista.appendChild(li);
     });
 
-    lista.hidden = !showDropdown || filteredPlayers.length === 0;
+    const isOpen = Boolean(showDropdown);
+    lista.hidden = !isOpen;
+    if (input) input.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   }
 
   /**
-   * Maneja los clics sobre la lista mediante delegación de eventos.
-   * @param {MouseEvent} e - Evento de clic.
-   */
-  function handleListClick(e) {
-    const lista = $('lista-jugadores');
-    const target = e.target.closest('li');
-    if (target && lista.contains(target)) {
-      const playerId = target.dataset.playerId;
-      const player = activePlayers.find(function(p) { return String(p.id) === String(playerId); }) ||
-        allPlayers.find(function(p) { return String(p.id) === String(playerId); });
-      if (player) {
-        selectPlayer(player);
-      }
-    }
-  }
-
-  /**
-   * Selecciona un jugador, muestra su ficha y autorrellena Precio inicial (Pi) e Incremento diario (g).
-   * @param {Object} player - Jugador seleccionado.
+   * Selecciona un jugador y autorrellena Precio inicial (Pi) y Subida diaria (g).
+   * @param {Object} player
    */
   function selectPlayer(player) {
     selectedPlayer = player;
-
     const container = $('jugador-seleccionado');
     const nameEl = $('nombre-seleccionado');
     const teamEl = $('equipo-seleccionado');
@@ -1273,8 +1868,9 @@ const PlayerSelector = (function() {
     container.hidden = false;
     $('lista-jugadores').hidden = true;
     $('input-buscar-jugador').value = '';
+    $('clear-jugador').hidden = true;
+    $('input-buscar-jugador').setAttribute('aria-expanded', 'false');
 
-    // Autorrellenar Precio inicial (Pi)
     const piInput = $('f-pi');
     let notice = '';
     if (typeof player.price === 'number' && Number.isFinite(player.price)) {
@@ -1285,7 +1881,6 @@ const PlayerSelector = (function() {
     }
     piInput.dispatchEvent(new Event('input', { bubbles: true }));
 
-    // Autorrellenar Incremento diario estimado (g)
     const gInput = $('f-g');
     if (dailyInc !== null) {
       if (dailyInc >= 0) {
@@ -1301,13 +1896,14 @@ const PlayerSelector = (function() {
   }
 
   /**
-   * Limpia el jugador seleccionado y restablece los campos autorrellenados.
+   * Limpia la selección actual y los campos autorrellenados.
+   * @param {boolean} [keepFields=false] - Si es true, solo oculta la ficha del jugador.
    */
-  function clearSelection() {
+  function clearSelection(keepFields) {
     selectedPlayer = null;
-    $('jugador-seleccionado').hidden = true;
+    if ($('jugador-seleccionado')) $('jugador-seleccionado').hidden = true;
     showPriceNotice('');
-
+    if (keepFields) return;
     const piInput = $('f-pi');
     const gInput = $('f-g');
     if (piInput) {
@@ -1320,126 +1916,165 @@ const PlayerSelector = (function() {
     }
   }
 
-  function handleSearchInput() {
-    clearTimeout(debounceTimer);
-    debounceTimer = setTimeout(function() {
-      if (allPlayers.length > 0) {
-        activePlayers = allPlayers;
-        applyFilters(true);
-        return;
-      }
+  /* --- Navegación por teclado genérica para cualquier combobox --- */
+  function wireComboKeyboard(inputId, listId, onSelectEl) {
+    const input = $(inputId);
+    if (!input) return;
+    input.addEventListener('keydown', function(e) {
+      const list = $(listId);
+      const items = Array.from(list.querySelectorAll('li:not(.vacio-item)'));
+      const idx = items.findIndex(function(item) { return item.classList.contains('seleccionado'); });
 
-      const query = $('input-buscar-jugador').value.trim();
-      const token = ++activeSearchToken;
-
-      showLoading();
-      PlayerMarketService.searchPlayers(query).then(function(result) {
-        if (token !== activeSearchToken) return;
-        if (result.status === 'error') {
-          showError();
-          $('lista-jugadores').hidden = true;
-          return;
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        if (items.length === 0) return;
+        list.hidden = false;
+        input.setAttribute('aria-expanded', 'true');
+        const next = idx < 0 ? 0 : Math.min(idx + 1, items.length - 1);
+        items.forEach(function(item) { item.classList.remove('seleccionado'); });
+        items[next].classList.add('seleccionado');
+        items[next].scrollIntoView({ block: 'nearest' });
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        if (items.length === 0) return;
+        list.hidden = false;
+        input.setAttribute('aria-expanded', 'true');
+        const prev = idx <= 0 ? items.length - 1 : idx - 1;
+        items.forEach(function(item) { item.classList.remove('seleccionado'); });
+        items[prev].classList.add('seleccionado');
+        items[prev].scrollIntoView({ block: 'nearest' });
+      } else if (e.key === 'Enter' && !list.hidden) {
+        const chosen = idx >= 0 ? items[idx] : items[0];
+        if (chosen) {
+          e.preventDefault();
+          onSelectEl(chosen);
         }
-        showReady();
-        activePlayers = result.players;
-        applyFilters(true);
-      });
-    }, SEARCH_DEBOUNCE_MS);
-  }
-
-  function handleSearchFocus() {
-    applyFilters(true);
-  }
-
-  function handleSearchBlur() {
-    setTimeout(function() {
-      $('lista-jugadores').hidden = true;
-    }, 200);
-  }
-
-  function handleFilterChange() {
-    const shouldShow = document.activeElement === $('input-buscar-jugador') || !$('lista-jugadores').hidden;
-    applyFilters(shouldShow);
-  }
-
-  function handleKeyDown(e) {
-    const lista = $('lista-jugadores');
-    const items = lista.querySelectorAll('li');
-    const selectedIndex = Array.from(items).findIndex(function(item) {
-      return item.classList.contains('seleccionado');
+      } else if (e.key === 'Escape') {
+        list.hidden = true;
+        input.setAttribute('aria-expanded', 'false');
+      }
     });
-
-    if (e.key === 'ArrowDown') {
-      e.preventDefault();
-      if (items.length > 0) {
-        lista.hidden = false;
-        const newIndex = selectedIndex < 0 ? 0 : Math.min(selectedIndex + 1, items.length - 1);
-        items.forEach(function(item) { item.classList.remove('seleccionado'); });
-        items[newIndex].classList.add('seleccionado');
-        items[newIndex].scrollIntoView({ block: 'nearest' });
-      }
-    } else if (e.key === 'ArrowUp') {
-      e.preventDefault();
-      if (items.length > 0) {
-        lista.hidden = false;
-        const newIndex = selectedIndex <= 0 ? items.length - 1 : selectedIndex - 1;
-        items.forEach(function(item) { item.classList.remove('seleccionado'); });
-        items[newIndex].classList.add('seleccionado');
-        items[newIndex].scrollIntoView({ block: 'nearest' });
-      }
-    } else if (e.key === 'Enter' && selectedIndex >= 0) {
-      e.preventDefault();
-      const playerId = items[selectedIndex].dataset.playerId;
-      const player = activePlayers.find(function(p) { return String(p.id) === String(playerId); }) ||
-        allPlayers.find(function(p) { return String(p.id) === String(playerId); });
-      if (player) selectPlayer(player);
-    } else if (e.key === 'Escape') {
-      lista.hidden = true;
-    }
   }
 
   function bindEvents() {
     if (listenersBound) return;
     listenersBound = true;
 
-    $('input-buscar-jugador').addEventListener('input', handleSearchInput);
-    $('input-buscar-jugador').addEventListener('focus', handleSearchFocus);
-    $('input-buscar-jugador').addEventListener('blur', handleSearchBlur);
-    $('input-buscar-jugador').addEventListener('keydown', handleKeyDown);
-    $('filtro-equipo').addEventListener('change', handleFilterChange);
-    $('filtro-posicion').addEventListener('change', handleFilterChange);
-    $('btn-quitar-seleccion').addEventListener('click', clearSelection);
-    $('lista-jugadores').addEventListener('click', handleListClick);
+    // Equipo combobox
+    const teamInput = $('filtro-equipo');
+    teamInput.addEventListener('focus', function() { renderTeamList(teamInput.value, true); });
+    teamInput.addEventListener('input', function() {
+      const val = teamInput.value.trim();
+      $('clear-equipo').hidden = !val;
+      if (!val) selectedTeam = '';
+      renderTeamList(val, true);
+      applyFilters(false);
+    });
+    teamInput.addEventListener('blur', function() {
+      setTimeout(function() {
+        $('lista-equipos').hidden = true;
+        teamInput.setAttribute('aria-expanded', 'false');
+        if (teamInput.value.trim() && teamInput.value.trim() !== selectedTeam) {
+          const exact = teamsList.find(function(t) { return normalizeText(t) === normalizeText(teamInput.value); });
+          setTeamFilter(exact || '');
+        }
+      }, 180);
+    });
+    $('lista-equipos').addEventListener('click', function(e) {
+      const li = e.target.closest('li[data-value]');
+      if (li) setTeamFilter(li.dataset.value);
+    });
+    $('clear-equipo').addEventListener('click', function() { setTeamFilter(''); teamInput.focus(); });
+    wireComboKeyboard('filtro-equipo', 'lista-equipos', function(li) { setTeamFilter(li.dataset.value); });
+
+    // Posición combobox
+    const posInput = $('filtro-posicion');
+    posInput.addEventListener('focus', function() { renderPositionList(posInput.value, true); });
+    posInput.addEventListener('input', function() {
+      const val = posInput.value.trim();
+      $('clear-posicion').hidden = !val;
+      if (!val) selectedPosition = '';
+      renderPositionList(val, true);
+      applyFilters(false);
+    });
+    posInput.addEventListener('blur', function() {
+      setTimeout(function() {
+        $('lista-posiciones').hidden = true;
+        posInput.setAttribute('aria-expanded', 'false');
+        const found = POSICIONES_LISTA.find(function(p) { return p.code === selectedPosition; });
+        if (posInput.value.trim() && (!found || posInput.value.trim() !== found.label)) {
+          const match = POSICIONES_LISTA.find(function(p) {
+            return normalizeText(p.code) === normalizeText(posInput.value) || normalizeText(p.label) === normalizeText(posInput.value);
+          });
+          setPositionFilter(match ? match.code : '');
+        }
+      }, 180);
+    });
+    $('lista-posiciones').addEventListener('click', function(e) {
+      const li = e.target.closest('li[data-value]');
+      if (li) setPositionFilter(li.dataset.value);
+    });
+    $('clear-posicion').addEventListener('click', function() { setPositionFilter(''); posInput.focus(); });
+    wireComboKeyboard('filtro-posicion', 'lista-posiciones', function(li) { setPositionFilter(li.dataset.value); });
+
+    // Jugador combobox
+    const playerInput = $('input-buscar-jugador');
+    playerInput.addEventListener('focus', function() { applyFilters(true); });
+    playerInput.addEventListener('input', function() {
+      $('clear-jugador').hidden = !playerInput.value;
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(function() { applyFilters(true); }, SEARCH_DEBOUNCE_MS);
+    });
+    playerInput.addEventListener('blur', function() {
+      setTimeout(function() {
+        $('lista-jugadores').hidden = true;
+        playerInput.setAttribute('aria-expanded', 'false');
+      }, 180);
+    });
+    $('lista-jugadores').addEventListener('click', function(e) {
+      const li = e.target.closest('li[data-player-id]');
+      if (!li) return;
+      const player = allPlayers.find(function(p) { return String(p.id) === String(li.dataset.playerId); });
+      if (player) selectPlayer(player);
+    });
+    $('clear-jugador').addEventListener('click', function() {
+      playerInput.value = '';
+      $('clear-jugador').hidden = true;
+      applyFilters(true);
+      playerInput.focus();
+    });
+    wireComboKeyboard('input-buscar-jugador', 'lista-jugadores', function(li) {
+      const player = allPlayers.find(function(p) { return String(p.id) === String(li.dataset.playerId); });
+      if (player) selectPlayer(player);
+    });
+
+    $('btn-quitar-seleccion').addEventListener('click', function() { clearSelection(false); });
     $('btn-reintentar-selector').addEventListener('click', function() { loadInitial(true); });
     $('btn-actualizar-datos').addEventListener('click', function() { loadInitial(true); });
   }
 
-  /**
-   * Carga los jugadores iniciales (desde caché o forzando refresco de la API).
-   * @param {boolean} [forceRefresh=false] - Si es true, omite la caché local.
-   */
   function loadInitial(forceRefresh) {
     showLoading();
     const request = forceRefresh ? PlayerMarketService.refreshData() : PlayerMarketService.getPlayers();
-
     request.then(function(result) {
       if (result.status === 'error') {
         showError();
         return;
       }
-
       allPlayers = result.players;
-      activePlayers = allPlayers;
       filteredPlayers = allPlayers;
-
+      const uniqueTeams = [];
+      allPlayers.forEach(function(p) {
+        if (p.team && uniqueTeams.indexOf(p.team) === -1) uniqueTeams.push(p.team);
+      });
+      teamsList = uniqueTeams.sort();
       showReady();
-      populateTeamFilter(allPlayers);
       updateLastUpdate(result.lastUpdate);
     });
   }
 
   /**
-   * Inicializa el componente selector de jugadores.
+   * Inicializa el selector y carga los jugadores.
    */
   function init() {
     bindEvents();
@@ -1450,18 +2085,19 @@ const PlayerSelector = (function() {
     init: init,
     selectPlayer: selectPlayer,
     clearSelection: clearSelection,
+    setTeamFilter: setTeamFilter,
+    setPositionFilter: setPositionFilter,
     escapeHTML: escapeHTML
   };
 })();
 
-// Inicializar el selector de jugadores cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', function() {
   PlayerSelector.init();
 });
 </script>
 
 <script>
-/* ===== Presentación ===== */
+/* ===== Presentación, Pestañas y Wizard ===== */
 (function () {
   'use strict';
   const $ = (id) => document.getElementById(id);
@@ -1469,8 +2105,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const ERR = { pi: 'e-pi', pv: 'e-pv', g: 'e-g', d: 'e-d', pfReal: 'e-pf' };
   const WRAP = { pi: 'w-pi', pv: 'w-pv', g: 'w-g', d: 'w-d', pfReal: 'w-pf' };
   const f = Formato.euros;
+
   let textoCopia = '';
   let temporizador = null;
+  const tocados = new Set();
 
   function leer() {
     const e = {};
@@ -1478,34 +2116,57 @@ document.addEventListener('DOMContentLoaded', function() {
     return e;
   }
 
+  function todosVacios(e) {
+    return e.pi === null && e.pv === null && e.g === null && e.d === null && e.pfReal === null;
+  }
+
   function escribir(e) {
-    $(CAMPOS.pi).value = Formato.numero(e.pi);
-    $(CAMPOS.pv).value = Formato.numero(e.pv);
-    $(CAMPOS.g).value = Formato.numero(e.g);
-    $(CAMPOS.d).value = String(e.d).replace('.', ',');
+    $(CAMPOS.pi).value = e.pi === null ? '' : Formato.numero(e.pi);
+    $(CAMPOS.pv).value = e.pv === null ? '' : Formato.numero(e.pv);
+    $(CAMPOS.g).value = e.g === null ? '' : Formato.numero(e.g);
+    $(CAMPOS.d).value = e.d === null ? '' : String(e.d).replace('.', ',');
     $(CAMPOS.pfReal).value = e.pfReal === null ? '' : Formato.numero(e.pfReal);
   }
 
-  function marcarErrores(errores) {
+  function limpiarTodo() {
+    tocados.clear();
+    Object.keys(CAMPOS).forEach((k) => { $(CAMPOS[k]).value = ''; });
+    PlayerSelector.clearSelection(true);
+    $('copia-manual').hidden = true;
+    $('estado-copia').textContent = '';
+    render();
+  }
+
+  function cargarEjemplo() {
+    PlayerSelector.clearSelection(true);
+    escribir(EJEMPLO);
+    Object.keys(CAMPOS).forEach((k) => tocados.add(k));
+    $('copia-manual').hidden = true;
+    $('estado-copia').textContent = '';
+    render();
+  }
+
+  function marcarErrores(errores, mostrarTodos) {
     Object.keys(CAMPOS).forEach((k) => {
       const msg = errores[k];
+      const mostrar = Boolean(msg) && (mostrarTodos || tocados.has(k));
       const el = $(ERR[k]);
-      el.hidden = !msg;
-      el.textContent = msg || '';
-      $(WRAP[k]).classList.toggle('invalido', Boolean(msg));
-      $(CAMPOS[k]).setAttribute('aria-invalid', msg ? 'true' : 'false');
+      el.hidden = !mostrar;
+      el.textContent = mostrar ? msg : '';
+      $(WRAP[k]).classList.toggle('invalido', mostrar);
+      $(CAMPOS[k]).setAttribute('aria-invalid', mostrar ? 'true' : 'false');
     });
   }
 
   function frase(e, r) {
-    if (r.E === 0) return 'No hay dinero adicional que compensar, porque el precio acordado es igual al inicial. Solo pagas el precio del jugador.';
+    if (r.E === 0) return 'No hay dinero adicional que compensar porque el precio acordado es igual al inicial. Solo pagas el precio del jugador.';
     let s;
     if (r.bajoDePrecio) {
-      s = 'El jugador bajó de ' + f(e.pi) + ' a ' + f(r.Pf) + '. No se reconoce ninguna subida, así que debes aportar los ' + f(r.E) + ' adicionales completos.';
+      s = 'El jugador bajó de ' + f(e.pi) + ' a ' + f(r.Pf) + '. No se reconoce ninguna subida, así que aportas los ' + f(r.E) + ' adicionales completos.';
     } else if (!r.cubierto) {
-      s = 'La subida de ' + f(r.dP) + ' cubre una parte de los ' + f(r.E) + ' adicionales. Te faltan ' + f(r.C) + ' por aportar.';
+      s = 'La subida de ' + f(r.dP) + ' cubre parte de los ' + f(r.E) + ' adicionales. Te faltan ' + f(r.C) + ' por aportar.';
     } else {
-      s = 'La subida de ' + f(r.dP) + ' cubre los ' + f(r.E) + ' adicionales completos, así que no debes aportar compensación.';
+      s = 'La subida de ' + f(r.dP) + ' cubre los ' + f(r.E) + ' adicionales completos, así que la compensación es 0 €.';
       if (r.T > e.pv) s += ' El total supera los ' + f(e.pv) + ' que cobraste porque el jugador ya vale más.';
     }
     return s;
@@ -1514,13 +2175,13 @@ document.addEventListener('DOMContentLoaded', function() {
   function avisos(e, r) {
     const lista = [];
     if (r.bajoDePrecio) {
-      lista.push({ tipo: 'alerta', texto: 'El jugador bajó de precio (' + f(e.pi) + ' a ' + f(r.Pf) + '). Para la compensación solo cuenta una subida de ' + f(0) + '. Recuperarlo cuesta lo que marque la plataforma ese día.' });
+      lista.push({ tipo: 'alerta', texto: 'El jugador bajó de precio (' + f(e.pi) + ' a ' + f(r.Pf) + '). La subida reconocida es 0 €.' });
     }
     if (r.usaReal && e.g * e.d > 0) {
-      lista.push({ tipo: 'info', texto: 'Con el precio real escrito, la estimación diaria (' + f(e.g) + ' × ' + Formato.dias(e.d) + ') ya no se usa para calcular la compensación.' });
+      lista.push({ tipo: 'info', texto: 'Con el precio real escrito, la estimación diaria (' + f(e.g) + ' × ' + Formato.dias(e.d) + ') no se usa.' });
     }
     if (!r.usaReal) {
-      lista.push({ tipo: 'info', texto: 'Este resultado usa una estimación. El precio real puede ser distinto: cuando lo sepas, escríbelo en «Precio final real».' });
+      lista.push({ tipo: 'info', texto: 'Cálculo con estimación. Cuando sepas el precio real de recuperación, escríbelo en «Precio final real».' });
     }
     return lista;
   }
@@ -1528,15 +2189,15 @@ document.addEventListener('DOMContentLoaded', function() {
   function pasos(e, r) {
     const p = [];
     const fila = (titulo, formula, expr, res, ambar) => {
-      return '<div class="paso"><h3>' + titulo + '</h3><p class="formula">' + formula + '</p>' +
+      return '<div class="paso"><div class="paso-izq"><h3>' + titulo + '</h3><p class="formula">' + formula + '</p></div>' +
         '<p class="sustituida"><span>' + expr + '</span><b' + (ambar ? ' class="ambar"' : '') + '>= ' + res + '</b></p></div>';
     };
     p.push(fila('Dinero adicional recibido', 'E = Pv − Pi', f(e.pv) + ' − ' + f(e.pi), f(r.E)));
     if (r.usaReal) {
       p.push(fila('Incremento real del valor', 'ΔP = máx(0, Pf − Pi)', 'máx(0, ' + f(r.Pf) + ' − ' + f(e.pi) + ')', f(r.dP)));
-      p.push('<div class="paso"><h3>Precio final</h3><p class="formula">Pf = precio real introducido</p><p class="sustituida"><span>Pf</span><b>= ' + f(r.Pf) + '</b></p></div>');
+      p.push(fila('Precio final real', 'Pf = precio introducido', 'Pf', f(r.Pf)));
     } else {
-      p.push(fila('Incremento estimado del valor', 'ΔP = g × d', f(e.g) + ' × ' + String(e.d).replace('.', ','), f(r.dP)));
+      p.push(fila('Incremento estimado', 'ΔP = g × d', f(e.g) + ' × ' + String(e.d).replace('.', ','), f(r.dP)));
       p.push(fila('Precio final estimado', 'Pf = Pi + ΔP', f(e.pi) + ' + ' + f(r.dP), f(r.Pf)));
     }
     p.push(fila('Compensación adicional', 'C = máx(0, E − ΔP)', 'máx(0, ' + f(r.E) + ' − ' + f(r.dP) + ')', f(r.C), true));
@@ -1545,25 +2206,26 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function textoParaCopiar(e, r) {
-    const l = [];
-    l.push('Calculadora de cesiones · LALIGA Fantasy DAZN');
-    l.push('');
-    l.push('DATOS');
-    l.push('Precio inicial (Pi): ' + f(e.pi));
-    l.push('Precio acordado en la transferencia (Pv): ' + f(e.pv));
-    l.push('Incremento diario estimado (g): ' + f(e.g));
-    l.push('Duración (d): ' + Formato.dias(e.d));
-    l.push('Precio final real: ' + (r.usaReal ? f(e.pfReal) : 'no indicado (se usa la estimación)'));
-    l.push('');
-    l.push('RESULTADO (' + (r.usaReal ? 'con precio real' : 'con estimación') + ')');
-    l.push('Dinero adicional recibido: ' + f(r.E));
-    l.push('Incremento acumulado: ' + f(r.dP));
-    l.push('Precio final ' + (r.usaReal ? 'real' : 'estimado') + ': ' + f(r.Pf));
-    l.push('Compensación adicional: ' + f(r.C));
-    l.push('Desembolso total para recuperar al jugador: ' + f(r.T));
-    l.push('');
-    l.push('FÓRMULAS');
-    l.push('E = Pv − Pi = ' + f(e.pv) + ' − ' + f(e.pi) + ' = ' + f(r.E));
+    const l = [
+      'Calculadora de cesiones · LALIGA Fantasy DAZN',
+      '',
+      'DATOS',
+      'Precio inicial (Pi): ' + f(e.pi),
+      'Precio acordado (Pv): ' + f(e.pv),
+      'Subida diaria (g): ' + f(e.g),
+      'Duración (d): ' + Formato.dias(e.d),
+      'Precio final real: ' + (r.usaReal ? f(e.pfReal) : 'no indicado (estimación)'),
+      '',
+      'RESULTADO (' + (r.usaReal ? 'con precio real' : 'con estimación') + ')',
+      'Extra recibido (E): ' + f(r.E),
+      'Subida acumulada (ΔP): ' + f(r.dP),
+      'Precio final (Pf): ' + f(r.Pf),
+      'Compensación adicional (C): ' + f(r.C),
+      'Desembolso total (T): ' + f(r.T),
+      '',
+      'FÓRMULAS',
+      'E = Pv − Pi = ' + f(e.pv) + ' − ' + f(e.pi) + ' = ' + f(r.E)
+    ];
     if (r.usaReal) {
       l.push('ΔP = máx(0, Pf − Pi) = máx(0, ' + f(r.Pf) + ' − ' + f(e.pi) + ') = ' + f(r.dP));
     } else {
@@ -1572,36 +2234,18 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     l.push('C = máx(0, E − ΔP) = máx(0, ' + f(r.E) + ' − ' + f(r.dP) + ') = ' + f(r.C));
     l.push('T = Pf + C = ' + f(r.Pf) + ' + ' + f(r.C) + ' = ' + f(r.T));
-    l.push('');
-    if (r.bajoDePrecio) l.push('Aviso: el jugador bajó de precio; la subida reconocida es 0.');
-    l.push('Nota: es un cálculo del modelo acordado entre socios. No confirma que la operación esté permitida por la plataforma.');
     return l.join('\n');
   }
 
-  function tablaResumen(e, r) {
-    const filas = [
-      ['Precio inicial', f(e.pi)],
-      ['Precio de transferencia inicial', f(e.pv)],
-      ['Dinero adicional recibido', f(r.E)],
-      ['Incremento diario', f(e.g)],
-      ['Duración', Formato.dias(e.d)],
-      ['Incremento acumulado', f(r.dP)],
-      ['Precio final ' + (r.usaReal ? 'real' : 'estimado'), f(r.Pf)],
-      ['Compensación adicional', f(r.C)],
-      ['Desembolso total para recuperar al jugador', f(r.T), true]
-    ];
-    return filas.map((x) => '<tr' + (x[2] ? ' class="fuerte"' : '') + '><td>' + x[0] + '</td><td class="num">' + x[1] + '</td></tr>').join('');
-  }
-
-  function pintarInvalido() {
+  function pintarVacio(esInvalido) {
     ['r-T', 'r-E', 'r-dP', 'r-Pf', 'r-C', 'l-pf', 'l-c'].forEach((id) => { $(id).textContent = '—'; });
-    $('s-dP').textContent = '';
+    $('s-dP').textContent = 'Incremento ΔP';
+    $('et-pf').textContent = 'Precio final';
+    $('chip-modo').textContent = esInvalido ? MSGS.modoInvalido : MSGS.modoEsperando;
     $('seg-pf').style.width = '0%';
     $('seg-c').style.width = '0%';
-    $('lectura').textContent = 'Corrige los campos marcados en rojo para ver el resultado.';
-    $('avisos').innerHTML = '';
-    $('pasos').innerHTML = '<p class="vacio">El desglose aparecerá aquí cuando los datos sean válidos.</p>';
-    $('tabla-resumen').innerHTML = '<tr><td colspan="2" class="vacio">Sin datos válidos todavía.</td></tr>';
+    $('estado-vacio').hidden = false;
+    $('contenido-resultado').hidden = true;
     $('b-copiar').disabled = true;
     textoCopia = '';
   }
@@ -1614,28 +2258,38 @@ document.addEventListener('DOMContentLoaded', function() {
     $('r-C').textContent = f(r.C);
     $('l-pf').textContent = f(r.Pf);
     $('l-c').textContent = f(r.C);
-    $('et-pf').textContent = r.usaReal ? 'Precio final real' : 'Precio final estimado';
-    $('chip-modo').textContent = r.usaReal ? 'Con precio real' : 'Con estimación';
-    $('s-dP').textContent = r.usaReal ? 'Calculado con el precio real' : 'Calculado con el incremento diario';
+    $('et-pf').textContent = r.usaReal ? 'Precio real' : 'Precio estimado';
+    $('chip-modo').textContent = r.usaReal ? MSGS.modoPrecioReal : MSGS.modoEstimacion;
+    $('s-dP').textContent = r.usaReal ? 'Con precio real' : 'Con subida diaria';
     const pctC = r.T > 0 ? (r.C / r.T) * 100 : 0;
     const pctCv = r.C > 0 ? Math.max(pctC, 3) : 0;
     $('seg-c').style.width = pctCv + '%';
     $('seg-pf').style.width = (100 - pctCv) + '%';
-    $('barra').setAttribute('aria-label', 'Del total de ' + f(r.T) + ', ' + f(r.Pf) + ' son el precio del jugador y ' + f(r.C) + ' son compensación');
+    $('estado-vacio').hidden = true;
+    $('contenido-resultado').hidden = false;
     $('lectura').textContent = frase(e, r);
     $('avisos').innerHTML = avisos(e, r).map((a) => '<div class="aviso ' + (a.tipo === 'alerta' ? 'alerta' : '') + '">' + a.texto + '</div>').join('');
     $('pasos').innerHTML = pasos(e, r);
-    $('tabla-resumen').innerHTML = tablaResumen(e, r);
     $('b-copiar').disabled = false;
     textoCopia = textoParaCopiar(e, r);
   }
 
   function render() {
     const e = leer();
+    const vacio = todosVacios(e);
     const v = Validacion.validar(e);
-    marcarErrores(v.errores);
     $('b-quitar-pf').hidden = $(CAMPOS.pfReal).value.trim() === '';
-    if (!v.valido) { pintarInvalido(); return; }
+    if (vacio) {
+      marcarErrores({}, false);
+      pintarVacio(false);
+      return;
+    }
+    marcarErrores(v.errores, false);
+    if (!v.valido) {
+      const hayErrorVisible = Object.keys(v.errores).some((k) => tocados.has(k));
+      pintarVacio(hayErrorVisible);
+      return;
+    }
     pintar(e, Calculo.calcular(e));
   }
 
@@ -1645,7 +2299,7 @@ document.addEventListener('DOMContentLoaded', function() {
     CASOS.forEach((c) => {
       const { r, ok } = evaluarCaso(c);
       if (ok) buenos += 1;
-      const entradaTxt = Formato.euros(c.entrada.pi) + ' → ' + Formato.euros(c.entrada.pv) + (c.entrada.pfReal !== null ? ', real ' + Formato.euros(c.entrada.pfReal) : ', subida estimada ' + Formato.euros(c.entrada.g * c.entrada.d));
+      const entradaTxt = Formato.euros(c.entrada.pi) + ' → ' + Formato.euros(c.entrada.pv) + (c.entrada.pfReal !== null ? ', real ' + Formato.euros(c.entrada.pfReal) : ', subida ' + Formato.euros(c.entrada.g * c.entrada.d));
       filas.push('<tr><td>Caso ' + c.n + '. ' + c.nombre + '<span class="sub-caso">' + entradaTxt + '</span></td>' +
         '<td class="num">C ' + f(c.esperado.C) + '<span class="sub-caso">T ' + f(c.esperado.T) + '</span></td>' +
         '<td class="num">C ' + f(r.C) + '<span class="sub-caso">T ' + f(r.T) + '</span></td>' +
@@ -1658,7 +2312,7 @@ document.addEventListener('DOMContentLoaded', function() {
       '<td class="num">Se rechazan</td><td class="num">' + (invOk ? 'Se rechazan' : 'Alguno pasa') + '</td>' +
       '<td class="num"><span class="pill ' + (invOk ? 'ok' : 'mal') + '">' + (invOk ? 'Correcto' : 'Falla') + '</span></td></tr>');
     $('tabla-casos').innerHTML = filas.join('');
-    $('resumen-casos').textContent = buenos + ' de ' + (CASOS.length + 1) + ' casos dan el resultado esperado. Se calculan con la misma lógica de esta página.';
+    $('resumen-casos').textContent = buenos + ' de ' + (CASOS.length + 1) + ' casos verificados con la lógica real de esta página.';
   }
 
   async function copiar() {
@@ -1680,30 +2334,129 @@ document.addEventListener('DOMContentLoaded', function() {
         if (hecho) manual.hidden = true;
       } catch (err2) { hecho = false; }
     }
-    estado.textContent = hecho ? 'Copiado' : 'Tu navegador no dejó copiar solo. El texto quedó seleccionado: cópialo a mano.';
+    estado.textContent = hecho ? MSGS.copiaExito : MSGS.copiaFallback;
     clearTimeout(temporizador);
     if (hecho) temporizador = setTimeout(() => { estado.textContent = ''; }, 2500);
   }
 
-  function alSalir(id) {
+  function alSalir(k) {
+    tocados.add(k);
+    const id = CAMPOS[k];
     const campo = $(id);
     const n = Entrada.parse(campo.value);
-    if (n !== null && !Number.isNaN(n) && n >= 0) campo.value = id === 'f-d' ? String(n).replace('.', ',') : Formato.numero(n);
+    if (n !== null && !Number.isNaN(n) && n >= 0) {
+      campo.value = id === 'f-d' ? String(n).replace('.', ',') : Formato.numero(n);
+    }
     render();
   }
 
+  // Pestañas
+  const tabBtns = Array.from(document.querySelectorAll('.tab-btn'));
+  tabBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      tabBtns.forEach((b) => {
+        const active = b === btn;
+        b.setAttribute('aria-selected', active ? 'true' : 'false');
+        $(b.getAttribute('aria-controls')).hidden = !active;
+      });
+    });
+  });
+
+  // Wizard de 3 pasos
+  const Wizard = (function() {
+    let stepIndex = 0;
+    let highlightedEl = null;
+
+    function clearHighlight() {
+      if (highlightedEl) {
+        highlightedEl.classList.remove('wizard-highlight');
+        highlightedEl = null;
+      }
+    }
+
+    function renderStep() {
+      const step = WIZARD_STEPS[stepIndex];
+      $('wizard-paso-label').textContent = 'Paso ' + (stepIndex + 1) + ' de ' + WIZARD_STEPS.length;
+      $('wizard-titulo').textContent = step.titulo;
+      $('wizard-texto').textContent = step.texto;
+      $('wizard-tip').textContent = step.tip;
+      $('wizard-anterior').hidden = stepIndex === 0;
+      $('wizard-siguiente').textContent = stepIndex === WIZARD_STEPS.length - 1 ? 'Empezar' : 'Siguiente';
+      document.querySelectorAll('.wizard-dot').forEach((dot, idx) => {
+        dot.classList.toggle('activo', idx <= stepIndex);
+      });
+      clearHighlight();
+      const target = $(step.target);
+      if (target) {
+        target.classList.add('wizard-highlight');
+        highlightedEl = target;
+      }
+    }
+
+    function open() {
+      stepIndex = 0;
+      $('wizard-backdrop').hidden = false;
+      renderStep();
+      $('wizard-siguiente').focus();
+    }
+
+    function close() {
+      clearHighlight();
+      $('wizard-backdrop').hidden = true;
+      try { localStorage.setItem(WIZARD_KEY, '1'); } catch (e) { /* ignorar */ }
+    }
+
+    $('wizard-saltar').addEventListener('click', close);
+    $('wizard-anterior').addEventListener('click', () => {
+      if (stepIndex > 0) { stepIndex -= 1; renderStep(); }
+    });
+    $('wizard-siguiente').addEventListener('click', () => {
+      if (stepIndex < WIZARD_STEPS.length - 1) { stepIndex += 1; renderStep(); }
+      else close();
+    });
+    $('wizard-backdrop').addEventListener('click', (e) => {
+      if (e.target === $('wizard-backdrop')) close();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !$('wizard-backdrop').hidden) close();
+    });
+    $('b-guia').addEventListener('click', open);
+
+    function autoStart() {
+      try {
+        if (!localStorage.getItem(WIZARD_KEY)) open();
+      } catch (e) {
+        open();
+      }
+    }
+
+    return { open: open, close: close, autoStart: autoStart };
+  })();
+
+  // Eventos de campos y botones
   Object.keys(CAMPOS).forEach((k) => {
     const campo = $(CAMPOS[k]);
-    campo.addEventListener('input', render);
-    campo.addEventListener('blur', () => alSalir(CAMPOS[k]));
+    campo.addEventListener('input', () => {
+      if (campo.value.trim() !== '') tocados.add(k);
+      render();
+    });
+    campo.addEventListener('blur', () => alSalir(k));
   });
-  $('b-ejemplo').addEventListener('click', () => { escribir(EJEMPLO); $('copia-manual').hidden = true; $('estado-copia').textContent = ''; render(); });
-  $('b-quitar-pf').addEventListener('click', () => { $(CAMPOS.pfReal).value = ''; render(); $(CAMPOS.pfReal).focus(); });
+
+  $('b-ejemplo').addEventListener('click', cargarEjemplo);
+  $('b-ejemplo-inline').addEventListener('click', cargarEjemplo);
+  $('b-limpiar').addEventListener('click', limpiarTodo);
+  $('b-quitar-pf').addEventListener('click', () => {
+    $(CAMPOS.pfReal).value = '';
+    render();
+    $(CAMPOS.pfReal).focus();
+  });
   $('b-copiar').addEventListener('click', copiar);
 
-  escribir(EJEMPLO);
+  // Inicio limpio sin datos iniciales
   render();
   pintarCasos();
+  Wizard.autoStart();
 })();
 </script>
 </body>

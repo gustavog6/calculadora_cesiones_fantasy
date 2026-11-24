@@ -970,55 +970,307 @@ tr.fuerte td { font-weight: 600; }
   color: var(--amber);
 }
 
-/* Vista Explorador y Comparador */
+/* Vista Mercado (Listado paginado) y Comparador */
 .explorer-workspace {
   display: grid;
-  gap: 12px;
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 10px;
   min-height: 0;
 }
-@media (min-width: 980px) {
-  .explorer-workspace {
-    grid-template-columns: minmax(340px, 37fr) minmax(0, 63fr);
-    align-items: stretch;
-  }
+.exp-subbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 6px 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+.exp-subtabs {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.exp-subtab {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 7px 12px;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.exp-subtab:hover { color: var(--ink); background: var(--campo); }
+.exp-subtab[aria-selected="true"] {
+  background: var(--pitch-soft);
+  color: var(--pitch);
+}
+.exp-subbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.exp-count-meta {
+  font-size: 13px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
 }
 
-.panel-ficha, .panel-comparador {
+.panel-listado, .panel-comparador {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 14px 16px;
-  overflow-y: auto;
+  gap: 10px;
+  padding: 12px 14px;
+  overflow: hidden;
   min-height: 0;
 }
 
-.exp-buscador {
+/* Barra de filtros y ordenamiento */
+.filtros-bar {
   display: grid;
+  grid-template-columns: minmax(180px, 1.4fr) minmax(140px, 1fr) minmax(130px, 0.9fr) minmax(135px, 0.9fr) minmax(180px, 1.15fr) auto;
   gap: 8px;
-  padding: 10px 11px;
-  background: var(--campo);
-  border: 1px solid var(--line);
-  border-radius: 11px;
+  align-items: center;
+}
+@media (max-width: 1100px) {
+  .filtros-bar { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 680px) {
+  .filtros-bar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 460px) {
+  .filtros-bar { grid-template-columns: 1fr; }
+}
+.exp-select {
+  width: 100%;
+  padding: 9px 10px;
+  font: inherit;
+  font-size: 14px;
+  border: 1.5px solid var(--line);
+  border-radius: 9px;
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+}
+.exp-select:focus {
+  outline: none;
+  border-color: var(--pitch);
+  box-shadow: 0 0 0 3px var(--pitch-soft);
 }
 
-/* Ficha individual del jugador */
-.ficha-card {
-  display: grid;
-  gap: 12px;
-  padding: 14px;
+/* Tabla paginada de jugadores */
+.listado-table-wrap {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: 11px;
   background: var(--surface);
 }
+.listado-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 14px;
+}
+.listado-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--campo);
+  padding: 9px 12px;
+  font-size: 11.5px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 1px solid var(--line);
+  white-space: nowrap;
+}
+.listado-table tbody tr {
+  cursor: pointer;
+  transition: background 0.12s;
+}
+.listado-table tbody tr:hover { background: var(--campo); }
+.listado-table tbody tr.en-comparador { background: rgba(11, 116, 72, 0.06); }
+.listado-table td {
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: middle;
+}
+.listado-table tbody tr:last-child td { border-bottom: 0; }
+.col-rank {
+  width: 44px;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--muted);
+  text-align: right;
+}
+.row-jugador {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 180px;
+}
+.row-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--campo);
+  border: 1px solid var(--line);
+  flex: none;
+}
+.row-info { display: grid; gap: 2px; min-width: 0; }
+.row-nombre {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14.5px;
+  color: var(--ink);
+  line-height: 1.15;
+}
+.row-equipo {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.row-equipo img { width: 14px; height: 14px; object-fit: contain; flex: none; }
+.row-precio {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.row-delta {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.row-delta.sube { color: var(--pitch); }
+.row-delta.baja { color: var(--alert); }
+.row-delta.neutro { color: var(--muted); font-weight: 400; }
+.row-pct {
+  display: block;
+  font-size: 11.5px;
+  font-weight: 500;
+  opacity: 0.85;
+}
+.btn-cmp-row {
+  padding: 5px 10px;
+  font-size: 12.5px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1.5px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+}
+.btn-cmp-row:hover:not(:disabled) { border-color: var(--pitch); color: var(--pitch); }
+.btn-cmp-row.activo {
+  background: var(--pitch-soft);
+  border-color: transparent;
+  color: var(--pitch);
+}
+.btn-cmp-row:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* Paginación */
+.paginacion-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-top: 2px;
+}
+.paginacion-info {
+  font-size: 13px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.paginacion-controles {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.paginacion-pagina {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0 8px;
+  color: var(--ink);
+}
+
+/* Modal compacto de detalle del jugador */
+.player-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 2100;
+  background: rgba(8, 20, 14, 0.56);
+  backdrop-filter: blur(3px);
+  display: grid;
+  place-items: center;
+  padding: 16px;
+}
+.player-modal-card {
+  width: 100%;
+  max-width: 470px;
+  max-height: calc(100dvh - 32px);
+  overflow-y: auto;
+  background: var(--surface);
+  border: 1.5px solid var(--line);
+  border-radius: 16px;
+  padding: 18px 20px;
+  box-shadow: var(--shadow-lg);
+  display: grid;
+  gap: 14px;
+}
+.player-modal-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+.modal-close {
+  border: 1px solid var(--line);
+  background: var(--campo);
+  color: var(--muted);
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  font-size: 19px;
+  line-height: 1;
+  cursor: pointer;
+  flex: none;
+  display: grid;
+  place-items: center;
+}
+.modal-close:hover { color: var(--ink); border-color: var(--muted); }
+
+/* Ficha individual del jugador (usada dentro del modal) */
 .ficha-top {
   display: flex;
   align-items: center;
   gap: 12px;
+  min-width: 0;
 }
 .ficha-foto {
-  width: 54px;
-  height: 54px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   object-fit: cover;
   background: var(--campo);
@@ -1033,7 +1285,7 @@ tr.fuerte td { font-weight: 600; }
 }
 .ficha-nombre {
   font-family: var(--font-display);
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: -0.015em;
@@ -1043,7 +1295,7 @@ tr.fuerte td { font-weight: 600; }
   align-items: center;
   gap: 7px;
   flex-wrap: wrap;
-  font-size: 13px;
+  font-size: 13.5px;
   color: var(--muted);
 }
 .ficha-escudo { width: 17px; height: 17px; object-fit: contain; flex: none; }
@@ -1061,7 +1313,7 @@ tr.fuerte td { font-weight: 600; }
   background: var(--hero-bg);
   color: var(--hero-ink);
   border-radius: 11px;
-  padding: 12px 14px;
+  padding: 13px 15px;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -1107,7 +1359,7 @@ tr.fuerte td { font-weight: 600; }
   background: var(--campo);
   border: 1px solid var(--line);
   border-radius: 9px;
-  padding: 9px 10px;
+  padding: 9px 11px;
   display: grid;
   gap: 2px;
   min-width: 0;
@@ -1121,7 +1373,7 @@ tr.fuerte td { font-weight: 600; }
 }
 .ficha-kpi-val {
   font-family: var(--font-display);
-  font-size: 15.5px;
+  font-size: 16px;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
   overflow-wrap: anywhere;
@@ -1133,7 +1385,7 @@ tr.fuerte td { font-weight: 600; }
   gap: 8px;
   flex-wrap: wrap;
 }
-.ficha-acciones .btn { flex: 1; min-width: 140px; }
+.ficha-acciones .btn { flex: 1; min-width: 150px; }
 
 /* Comparador (hasta 5 jugadores) */
 .cmp-header {
@@ -1342,7 +1594,7 @@ tr.fuerte td { font-weight: 600; }
     <nav class="mode-switch" aria-label="Cambiar vista">
       <button type="button" class="mode-btn" id="nav-calc" aria-pressed="true">Calculadora</button>
       <button type="button" class="mode-btn" id="nav-explorador" aria-pressed="false">
-        Explorar y comparar
+        Mercado y comparador
         <span class="mode-badge" id="nav-compare-badge">0/5</span>
       </button>
     </nav>
@@ -1614,104 +1866,102 @@ tr.fuerte td { font-weight: 600; }
     </section>
   </main>
 
-  <!-- Vista 2: Explorador Jugador por Jugador + Comparador (máx. 5) -->
-  <section class="explorer-workspace" id="vista-explorador" aria-label="Explorador y comparador de jugadores" hidden>
-    <!-- Panel izquierdo: Ficha individual -->
-    <section class="panel panel-ficha" aria-labelledby="t-ficha">
-      <div class="section-head">
-        <h2 id="t-ficha">Ficha de jugador</h2>
-        <span class="section-badge" id="exp-total-badge">649 jugadores</span>
+  <!-- Vista 2: Listado paginado de jugadores + Comparador (máx. 5) -->
+  <section class="explorer-workspace" id="vista-explorador" aria-label="Mercado de jugadores y comparador" hidden>
+    <div class="exp-subbar">
+      <div class="exp-subtabs" role="tablist" aria-label="Secciones de mercado">
+        <button type="button" class="exp-subtab" role="tab" id="subtab-listado" aria-selected="true" aria-controls="panel-listado">
+          Listado de jugadores
+          <span class="section-badge" id="exp-total-badge">649</span>
+        </button>
+        <button type="button" class="exp-subtab" role="tab" id="subtab-comparador" aria-selected="false" aria-controls="panel-comparador">
+          Comparador
+          <span class="mode-badge" id="subtab-compare-badge">0/5</span>
+        </button>
       </div>
+      <div class="exp-subbar-right">
+        <span class="exp-count-meta" id="exp-filtered-meta">Mostrando 649 jugadores</span>
+        <button type="button" class="btn btn-primario" id="btn-ir-comparador" hidden>Ver comparador →</button>
+      </div>
+    </div>
 
-      <div class="exp-buscador">
-        <div class="filtros-grid">
-          <div class="combo">
-            <div class="combo-control">
-              <input type="text" id="exp-filtro-equipo" placeholder="Equipo (todos)..." autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="exp-lista-equipos" aria-label="Filtrar jugadores por equipo">
-              <button type="button" class="combo-clear" id="exp-clear-equipo" aria-label="Quitar filtro de equipo" hidden>×</button>
-              <span class="combo-caret" aria-hidden="true">▾</span>
-            </div>
-            <ul class="combo-list" id="exp-lista-equipos" role="listbox" hidden></ul>
-          </div>
-
-          <div class="combo">
-            <div class="combo-control">
-              <input type="text" id="exp-filtro-posicion" placeholder="Posición (todas)..." autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="exp-lista-posiciones" aria-label="Filtrar jugadores por posición">
-              <button type="button" class="combo-clear" id="exp-clear-posicion" aria-label="Quitar filtro de posición" hidden>×</button>
-              <span class="combo-caret" aria-hidden="true">▾</span>
-            </div>
-            <ul class="combo-list" id="exp-lista-posiciones" role="listbox" hidden></ul>
+    <!-- Subvista A: Listado paginado -->
+    <section class="panel panel-listado" id="panel-listado" role="tabpanel" aria-labelledby="subtab-listado">
+      <div class="filtros-bar">
+        <div class="combo">
+          <div class="combo-control">
+            <input type="text" id="exp-buscar-jugador" placeholder="Buscar por nombre o equipo..." autocomplete="off" aria-label="Buscar jugador por nombre o equipo">
+            <button type="button" class="combo-clear" id="exp-clear-jugador" aria-label="Limpiar búsqueda" hidden>×</button>
           </div>
         </div>
 
         <div class="combo">
           <div class="combo-control">
-            <input type="text" id="exp-buscar-jugador" placeholder="Buscar jugador para ver ficha..." autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="exp-lista-jugadores" aria-label="Buscar jugador para ver ficha">
-            <button type="button" class="combo-clear" id="exp-clear-jugador" aria-label="Limpiar búsqueda" hidden>×</button>
+            <input type="text" id="exp-filtro-equipo" placeholder="Equipo (todos)..." autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="exp-lista-equipos" aria-label="Filtrar por equipo">
+            <button type="button" class="combo-clear" id="exp-clear-equipo" aria-label="Quitar filtro de equipo" hidden>×</button>
             <span class="combo-caret" aria-hidden="true">▾</span>
           </div>
-          <ul class="combo-list" id="exp-lista-jugadores" role="listbox" hidden></ul>
+          <ul class="combo-list" id="exp-lista-equipos" role="listbox" hidden></ul>
         </div>
+
+        <div class="combo">
+          <div class="combo-control">
+            <input type="text" id="exp-filtro-posicion" placeholder="Posición (todas)..." autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="exp-lista-posiciones" aria-label="Filtrar por posición">
+            <button type="button" class="combo-clear" id="exp-clear-posicion" aria-label="Quitar filtro de posición" hidden>×</button>
+            <span class="combo-caret" aria-hidden="true">▾</span>
+          </div>
+          <ul class="combo-list" id="exp-lista-posiciones" role="listbox" hidden></ul>
+        </div>
+
+        <select class="exp-select" id="exp-filtro-tendencia" aria-label="Filtrar por fluctuación de mercado">
+          <option value="">Fluctuación: todas</option>
+          <option value="up">Subiendo ▲</option>
+          <option value="down">Bajando ▼</option>
+          <option value="flat">Sin cambios</option>
+        </select>
+
+        <select class="exp-select" id="exp-orden" aria-label="Ordenar jugadores">
+          <option value="price_desc">Precio: mayor a menor</option>
+          <option value="price_asc">Precio: menor a mayor</option>
+          <option value="inc_desc">Mayor subida diaria</option>
+          <option value="inc_asc">Mayor bajada diaria</option>
+          <option value="pct_desc">Mayor % de subida</option>
+          <option value="name_asc">Nombre (A–Z)</option>
+        </select>
+
+        <button type="button" class="btn btn-sec" id="btn-exp-reset-filtros" hidden>Restablecer</button>
       </div>
 
-      <div class="empty-state" id="exp-ficha-vacia">
-        <h3>Selecciona un jugador</h3>
-        <p>Busca cualquier jugador de LALIGA Fantasy para ver su precio, variación diaria, ranking y añadirlo al comparador.</p>
+      <p class="cmp-aviso" id="listado-aviso" role="status" aria-live="polite" hidden></p>
+
+      <div class="listado-table-wrap">
+        <table class="listado-table">
+          <thead>
+            <tr>
+              <th class="col-rank">#</th>
+              <th>Jugador</th>
+              <th>Pos.</th>
+              <th class="num">Precio actual</th>
+              <th class="num">Fluctuación diaria</th>
+              <th class="num">Comparar</th>
+            </tr>
+          </thead>
+          <tbody id="exp-listado-tbody"></tbody>
+        </table>
       </div>
 
-      <article class="ficha-card" id="exp-ficha-card" hidden>
-        <div class="ficha-top">
-          <img class="ficha-foto" id="exp-foto" alt="" hidden>
-          <div class="ficha-identidad">
-            <h3 class="ficha-nombre" id="exp-nombre"></h3>
-            <div class="ficha-meta">
-              <img class="ficha-escudo" id="exp-escudo" alt="" hidden>
-              <span id="exp-equipo"></span>
-              <span class="pos-pill" id="exp-posicion"></span>
-            </div>
-          </div>
+      <div class="paginacion-bar">
+        <span class="paginacion-info" id="pag-info">Mostrando 0 de 0</span>
+        <div class="paginacion-controles">
+          <button type="button" class="btn btn-sec" id="pag-prev" disabled>← Anterior</button>
+          <span class="paginacion-pagina" id="pag-numero">Página 1 de 1</span>
+          <button type="button" class="btn btn-sec" id="pag-next" disabled>Siguiente →</button>
         </div>
-
-        <div class="ficha-precio-box">
-          <div>
-            <span class="ficha-precio-label">Precio actual de mercado</span>
-            <span class="ficha-precio-val" id="exp-precio">—</span>
-          </div>
-          <span class="delta-pill neutro" id="exp-delta">—</span>
-        </div>
-
-        <div class="ficha-metricas">
-          <div class="ficha-kpi">
-            <span class="ficha-kpi-et">Precio ayer</span>
-            <span class="ficha-kpi-val" id="exp-precio-ayer">—</span>
-            <span class="ficha-kpi-sub">Valor previo</span>
-          </div>
-          <div class="ficha-kpi">
-            <span class="ficha-kpi-et">% Variación diaria</span>
-            <span class="ficha-kpi-val" id="exp-pct-diario">—</span>
-            <span class="ficha-kpi-sub">Ritmo respecto a ayer</span>
-          </div>
-          <div class="ficha-kpi">
-            <span class="ficha-kpi-et">Ranking mercado</span>
-            <span class="ficha-kpi-val" id="exp-rank-global">—</span>
-            <span class="ficha-kpi-sub" id="exp-rank-pos">—</span>
-          </div>
-          <div class="ficha-kpi">
-            <span class="ficha-kpi-et">Proyección 7 días</span>
-            <span class="ficha-kpi-val" id="exp-proy-7d">—</span>
-            <span class="ficha-kpi-sub">Al ritmo diario actual</span>
-          </div>
-        </div>
-
-        <div class="ficha-acciones">
-          <button type="button" class="btn btn-primario" id="btn-exp-comparar">+ Añadir a comparar</button>
-          <button type="button" class="btn btn-sec" id="btn-exp-calculadora">Usar en calculadora</button>
-        </div>
-      </article>
+      </div>
     </section>
 
-    <!-- Panel derecho: Comparador hasta 5 jugadores -->
-    <section class="panel panel-comparador" aria-labelledby="t-comparador">
+    <!-- Subvista B: Comparador hasta 5 jugadores -->
+    <section class="panel panel-comparador" id="panel-comparador" role="tabpanel" aria-labelledby="subtab-comparador" hidden>
       <div class="cmp-header">
         <div class="cmp-title-wrap">
           <h2 id="t-comparador">Comparador de jugadores</h2>
@@ -1735,7 +1985,8 @@ tr.fuerte td { font-weight: 600; }
 
       <div class="cmp-empty" id="cmp-empty">
         <h3>Compara hasta 5 jugadores en paralelo</h3>
-        <p>Añade jugadores desde la ficha de la izquierda o usando el buscador rápido de arriba para comparar precios, variación diaria, ranking y tendencia de un vistazo.</p>
+        <p>Añade jugadores desde el listado paginado o usando el buscador rápido de arriba para comparar precios, fluctuación diaria, ranking y proyección de un vistazo.</p>
+        <button type="button" class="btn btn-sec" id="btn-volver-listado">Ir al listado de jugadores</button>
       </div>
 
       <div class="cmp-table-wrap" id="cmp-table-wrap" hidden>
@@ -1746,6 +1997,62 @@ tr.fuerte td { font-weight: 600; }
       </div>
     </section>
   </section>
+
+  <!-- Modal compacto de detalle del jugador -->
+  <div class="player-modal-backdrop" id="player-modal" role="dialog" aria-modal="true" aria-labelledby="exp-nombre" hidden>
+    <article class="player-modal-card">
+      <div class="player-modal-head">
+        <div class="ficha-top">
+          <img class="ficha-foto" id="exp-foto" alt="" hidden>
+          <div class="ficha-identidad">
+            <h3 class="ficha-nombre" id="exp-nombre"></h3>
+            <div class="ficha-meta">
+              <img class="ficha-escudo" id="exp-escudo" alt="" hidden>
+              <span id="exp-equipo"></span>
+              <span class="pos-pill" id="exp-posicion"></span>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="modal-close" id="btn-cerrar-modal" aria-label="Cerrar detalle">×</button>
+      </div>
+
+      <div class="ficha-precio-box">
+        <div>
+          <span class="ficha-precio-label">Precio actual de mercado</span>
+          <span class="ficha-precio-val" id="exp-precio">—</span>
+        </div>
+        <span class="delta-pill neutro" id="exp-delta">—</span>
+      </div>
+
+      <div class="ficha-metricas">
+        <div class="ficha-kpi">
+          <span class="ficha-kpi-et">Precio ayer</span>
+          <span class="ficha-kpi-val" id="exp-precio-ayer">—</span>
+          <span class="ficha-kpi-sub">Valor previo</span>
+        </div>
+        <div class="ficha-kpi">
+          <span class="ficha-kpi-et">% Variación diaria</span>
+          <span class="ficha-kpi-val" id="exp-pct-diario">—</span>
+          <span class="ficha-kpi-sub">Ritmo respecto a ayer</span>
+        </div>
+        <div class="ficha-kpi">
+          <span class="ficha-kpi-et">Ranking mercado</span>
+          <span class="ficha-kpi-val" id="exp-rank-global">—</span>
+          <span class="ficha-kpi-sub" id="exp-rank-pos">—</span>
+        </div>
+        <div class="ficha-kpi">
+          <span class="ficha-kpi-et">Proyección 7 días</span>
+          <span class="ficha-kpi-val" id="exp-proy-7d">—</span>
+          <span class="ficha-kpi-sub">Al ritmo diario actual</span>
+        </div>
+      </div>
+
+      <div class="ficha-acciones">
+        <button type="button" class="btn btn-primario" id="btn-exp-comparar">+ Añadir a comparar</button>
+        <button type="button" class="btn btn-sec" id="btn-exp-calculadora">Usar en calculadora</button>
+      </div>
+    </article>
+  </div>
 
   <footer class="pie">
     <span><b>Sin afiliación:</b> herramienta independiente, no vinculada a LALIGA ni a DAZN.</span>
@@ -2670,16 +2977,18 @@ const PlayerSelector = (function() {
   };
 })();
 
-/* ===== Explorador Jugador por Jugador y Comparador (máx. 5) ===== */
+/* ===== Mercado (Listado Paginado), Modal de Detalle y Comparador (máx. 5) ===== */
 /**
- * Módulo de vista individual y comparador de hasta 5 jugadores en paralelo.
- * Reutiliza el dataset de `PlayerMarketService` sin peticiones adicionales.
+ * Módulo de listado paginado con filtros/ordenamiento fantasy, modal compacto de detalle
+ * y comparador de hasta 5 jugadores en paralelo. Reutiliza `PlayerMarketService` sin peticiones extra.
  * @module PlayerExplorer
  */
 const PlayerExplorer = (function() {
   const MAX_COMPARE = 5;
+  const PAGE_SIZE = 20;
 
   let allPlayers = [];
+  let filteredList = [];
   let teamsList = [];
   let globalRankMap = new Map();
   let positionRankMap = new Map();
@@ -2687,9 +2996,14 @@ const PlayerExplorer = (function() {
 
   let selectedTeam = '';
   let selectedPosition = '';
-  let currentPlayer = null;
+  let selectedTrend = '';
+  let currentSort = 'price_desc';
+  let currentPage = 1;
+  let activeSubTab = 'listado';
+  let currentModalPlayer = null;
   let comparedPlayers = [];
   let noticeTimer = null;
+  let searchDebounce = null;
   let listenersBound = false;
 
   const $ = function(id) { return document.getElementById(id); };
@@ -2707,9 +3021,8 @@ const PlayerExplorer = (function() {
   }
 
   /**
-   * Calcula métricas derivadas de un jugador usando solo los campos del dataset.
+   * Calcula métricas derivadas usando exclusivamente los campos del dataset actual.
    * @param {Object} p
-   * @returns {{price: number|null, inc: number|null, prevPrice: number|null, pctDay: number|null, proj7d: number|null, globalRank: number|null, posRank: number|null, posTotal: number}}
    */
   function computeMetrics(p) {
     const price = typeof p.price === 'number' && Number.isFinite(p.price) ? p.price : null;
@@ -2732,8 +3045,7 @@ const PlayerExplorer = (function() {
 
   function formatSignedEuros(n) {
     if (n === null || n === undefined) return '—';
-    const prefix = n > 0 ? '+' : '';
-    return prefix + Formato.euros(n);
+    return (n > 0 ? '+' : '') + Formato.euros(n);
   }
 
   function formatSignedPct(n) {
@@ -2762,15 +3074,20 @@ const PlayerExplorer = (function() {
     positionTotals = posCounters;
   }
 
-  function showCompareNotice(msg) {
-    const el = $('cmp-aviso');
-    if (!el) return;
-    el.textContent = msg || '';
-    el.hidden = !msg;
+  function showNotice(msg) {
+    ['cmp-aviso', 'listado-aviso'].forEach(function(id) {
+      const el = $(id);
+      if (!el) return;
+      el.textContent = msg || '';
+      el.hidden = !msg;
+    });
     clearTimeout(noticeTimer);
     if (msg) {
       noticeTimer = setTimeout(function() {
-        el.hidden = true;
+        ['cmp-aviso', 'listado-aviso'].forEach(function(id) {
+          const el = $(id);
+          if (el) el.hidden = true;
+        });
       }, 4000);
     }
   }
@@ -2782,28 +3099,37 @@ const PlayerExplorer = (function() {
   function updateBadges() {
     const count = comparedPlayers.length;
     const full = count >= MAX_COMPARE;
-    const navBadge = $('nav-compare-badge');
-    const cmpCounter = $('cmp-counter');
-    const clearBtn = $('btn-cmp-limpiar');
 
-    if (navBadge) {
-      navBadge.textContent = count + '/' + MAX_COMPARE;
-      navBadge.classList.toggle('lleno', full);
-    }
+    ['nav-compare-badge', 'subtab-compare-badge'].forEach(function(id) {
+      const el = $(id);
+      if (el) {
+        el.textContent = count + '/' + MAX_COMPARE;
+        el.classList.toggle('lleno', full);
+      }
+    });
+
+    const cmpCounter = $('cmp-counter');
     if (cmpCounter) {
       cmpCounter.textContent = count + ' / ' + MAX_COMPARE;
       cmpCounter.classList.toggle('lleno', full);
     }
-    if (clearBtn) {
-      clearBtn.disabled = count === 0;
+
+    const clearBtn = $('btn-cmp-limpiar');
+    if (clearBtn) clearBtn.disabled = count === 0;
+
+    const goCmpBtn = $('btn-ir-comparador');
+    if (goCmpBtn) {
+      goCmpBtn.hidden = count === 0 || activeSubTab === 'comparador';
+      goCmpBtn.textContent = 'Ver comparador (' + count + '/' + MAX_COMPARE + ') →';
     }
-    updateCurrentPlayerAction();
+
+    updateModalAction();
   }
 
-  function updateCurrentPlayerAction() {
+  function updateModalAction() {
     const btn = $('btn-exp-comparar');
-    if (!btn || !currentPlayer) return;
-    const alreadyIn = isCompared(currentPlayer.id);
+    if (!btn || !currentModalPlayer) return;
+    const alreadyIn = isCompared(currentModalPlayer.id);
     const full = comparedPlayers.length >= MAX_COMPARE;
 
     if (alreadyIn) {
@@ -2818,17 +3144,140 @@ const PlayerExplorer = (function() {
     }
   }
 
+  /* --- Filtrado, ordenamiento y paginación --- */
+  function hasActiveFilters() {
+    const q = $('exp-buscar-jugador') ? $('exp-buscar-jugador').value.trim() : '';
+    return Boolean(q || selectedTeam || selectedPosition || selectedTrend || currentSort !== 'price_desc');
+  }
+
   /**
-   * Muestra la ficha individual detallada de un jugador.
+   * Aplica todos los filtros y el ordenamiento activo.
+   * @param {boolean} [resetPage=true] - Reinicia a página 1 cuando cambian filtros u orden.
+   */
+  function applyListFilters(resetPage) {
+    if (resetPage !== false) currentPage = 1;
+    const query = normalizeText($('exp-buscar-jugador') ? $('exp-buscar-jugador').value : '');
+
+    filteredList = allPlayers.filter(function(p) {
+      if (selectedTeam && p.team !== selectedTeam) return false;
+      if (selectedPosition && p.position !== selectedPosition) return false;
+      if (query && !normalizeText(p.name).includes(query) && !normalizeText(p.team).includes(query)) return false;
+
+      const inc = typeof p.price_increment === 'number' ? p.price_increment : 0;
+      if (selectedTrend === 'up' && !(inc > 0)) return false;
+      if (selectedTrend === 'down' && !(inc < 0)) return false;
+      if (selectedTrend === 'flat' && inc !== 0) return false;
+
+      return true;
+    });
+
+    filteredList.sort(function(a, b) {
+      const pa = typeof a.price === 'number' ? a.price : -Infinity;
+      const pb = typeof b.price === 'number' ? b.price : -Infinity;
+      const ia = typeof a.price_increment === 'number' ? a.price_increment : 0;
+      const ib = typeof b.price_increment === 'number' ? b.price_increment : 0;
+
+      if (currentSort === 'price_desc') return pb - pa;
+      if (currentSort === 'price_asc') return pa - pb;
+      if (currentSort === 'inc_desc') return ib - ia || pb - pa;
+      if (currentSort === 'inc_asc') return ia - ib || pb - pa;
+      if (currentSort === 'pct_desc') {
+        const ma = computeMetrics(a).pctDay;
+        const mb = computeMetrics(b).pctDay;
+        return (mb !== null ? mb : -Infinity) - (ma !== null ? ma : -Infinity);
+      }
+      if (currentSort === 'name_asc') {
+        return String(a.name || '').localeCompare(String(b.name || ''), 'es');
+      }
+      return pb - pa;
+    });
+
+    const resetBtn = $('btn-exp-reset-filtros');
+    if (resetBtn) resetBtn.hidden = !hasActiveFilters();
+
+    renderListPage();
+  }
+
+  function renderListPage() {
+    const tbody = $('exp-listado-tbody');
+    if (!tbody) return;
+
+    const total = filteredList.length;
+    const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+    if (currentPage > totalPages) currentPage = totalPages;
+    if (currentPage < 1) currentPage = 1;
+
+    const startIdx = (currentPage - 1) * PAGE_SIZE;
+    const pageItems = filteredList.slice(startIdx, startIdx + PAGE_SIZE);
+    const full = comparedPlayers.length >= MAX_COMPARE;
+
+    if (pageItems.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;padding:24px;color:var(--muted);">No se encontraron jugadores con los filtros aplicados.</td></tr>';
+    } else {
+      tbody.innerHTML = pageItems.map(function(p, idx) {
+        const m = computeMetrics(p);
+        const inCmp = isCompared(p.id);
+        const photoUrl = PlayerMarketService.resolveUrl(p.photo_url);
+        const crestUrl = PlayerMarketService.resolveUrl(p.team_crest_url);
+        const deltaCls = m.inc > 0 ? 'sube' : (m.inc < 0 ? 'baja' : 'neutro');
+        const avatarHtml = photoUrl
+          ? '<img class="row-avatar" src="' + escapeHTML(photoUrl) + '" alt="" loading="lazy" onerror="this.hidden=true">'
+          : '';
+        const crestHtml = crestUrl
+          ? '<img src="' + escapeHTML(crestUrl) + '" alt="" loading="lazy" onerror="this.hidden=true">'
+          : '';
+        const btnDisabled = !inCmp && full ? ' disabled' : '';
+        const btnLabel = inCmp ? '✓ En lista' : '+ Comparar';
+
+        return '<tr data-open-id="' + escapeHTML(p.id) + '"' + (inCmp ? ' class="en-comparador"' : '') + '>' +
+          '<td class="col-rank">' + (startIdx + idx + 1) + '</td>' +
+          '<td><div class="row-jugador">' + avatarHtml +
+            '<div class="row-info"><span class="row-nombre">' + escapeHTML(p.name) + '</span>' +
+            '<span class="row-equipo">' + crestHtml + '<span>' + escapeHTML(p.team || '') + '</span></span></div>' +
+          '</div></td>' +
+          '<td><span class="pos-pill">' + escapeHTML(p.position || '—') + '</span></td>' +
+          '<td class="num"><span class="row-precio">' + escapeHTML(m.price !== null ? Formato.euros(m.price) : '—') + '</span></td>' +
+          '<td class="num"><span class="row-delta ' + deltaCls + '">' + escapeHTML(formatSignedEuros(m.inc)) +
+            '<span class="row-pct">' + escapeHTML(formatSignedPct(m.pctDay)) + '</span></span></td>' +
+          '<td class="num"><button type="button" class="btn-cmp-row' + (inCmp ? ' activo' : '') + '" data-toggle-cmp="' + escapeHTML(p.id) + '"' + btnDisabled + '>' + btnLabel + '</button></td>' +
+          '</tr>';
+      }).join('');
+    }
+
+    const from = total === 0 ? 0 : startIdx + 1;
+    const to = Math.min(startIdx + PAGE_SIZE, total);
+    if ($('pag-info')) $('pag-info').textContent = 'Mostrando ' + from + '–' + to + ' de ' + total + ' jugadores';
+    if ($('pag-numero')) $('pag-numero').textContent = 'Página ' + currentPage + ' de ' + totalPages;
+    if ($('pag-prev')) $('pag-prev').disabled = currentPage <= 1;
+    if ($('pag-next')) $('pag-next').disabled = currentPage >= totalPages;
+    if ($('exp-filtered-meta')) $('exp-filtered-meta').textContent = total + ' resultados';
+  }
+
+  function resetFilters() {
+    selectedTeam = '';
+    selectedPosition = '';
+    selectedTrend = '';
+    currentSort = 'price_desc';
+    if ($('exp-buscar-jugador')) $('exp-buscar-jugador').value = '';
+    if ($('exp-clear-jugador')) $('exp-clear-jugador').hidden = true;
+    if ($('exp-filtro-equipo')) $('exp-filtro-equipo').value = '';
+    if ($('exp-clear-equipo')) $('exp-clear-equipo').hidden = true;
+    if ($('exp-filtro-posicion')) $('exp-filtro-posicion').value = '';
+    if ($('exp-clear-posicion')) $('exp-clear-posicion').hidden = true;
+    if ($('exp-filtro-tendencia')) $('exp-filtro-tendencia').value = '';
+    if ($('exp-orden')) $('exp-orden').value = 'price_desc';
+    applyListFilters(true);
+  }
+
+  /* --- Modal compacto de detalle del jugador --- */
+  /**
+   * Abre el modal con el detalle del jugador seleccionado.
    * @param {Object} player
    */
-  function viewPlayer(player) {
+  function openPlayerModal(player) {
     if (!player) return;
-    currentPlayer = player;
+    currentModalPlayer = player;
     const m = computeMetrics(player);
-
-    $('exp-ficha-vacia').hidden = true;
-    $('exp-ficha-card').hidden = false;
 
     $('exp-nombre').textContent = player.name || '';
     $('exp-equipo').textContent = player.team || '';
@@ -2876,49 +3325,63 @@ const PlayerExplorer = (function() {
       : 'Posición en mercado';
     $('exp-proy-7d').textContent = m.proj7d !== null ? Formato.euros(m.proj7d) : '—';
 
-    updateCurrentPlayerAction();
+    updateModalAction();
+    $('player-modal').hidden = false;
+    $('btn-cerrar-modal').focus();
   }
 
   /**
+   * Cierra el modal de detalle del jugador.
+   */
+  function closePlayerModal() {
+    $('player-modal').hidden = true;
+    currentModalPlayer = null;
+  }
+
+  /* --- Comparador (límite estricto de 5) --- */
+  /**
    * Añade un jugador al comparador respetando el límite estricto de 5 jugadores.
    * @param {Object} player
-   * @returns {boolean} true si se añadió, false si ya estaba o se alcanzó el límite.
+   * @returns {boolean}
    */
   function addToCompare(player) {
     if (!player) return false;
     if (isCompared(player.id)) {
-      showCompareNotice(player.name + ' ya está en la comparación.');
+      showNotice(player.name + ' ya está en la comparación.');
       return false;
     }
     if (comparedPlayers.length >= MAX_COMPARE) {
-      showCompareNotice('Límite de ' + MAX_COMPARE + ' jugadores alcanzado. Quita uno para añadir otro.');
+      showNotice('Límite de ' + MAX_COMPARE + ' jugadores alcanzado. Quita uno para añadir otro.');
       return false;
     }
     comparedPlayers.push(player);
-    showCompareNotice('');
+    showNotice('');
     renderCompare();
+    renderListPage();
     updateBadges();
     return true;
   }
 
   /**
-   * Quita un jugador específico del comparador.
+   * Quita un jugador del comparador por ID.
    * @param {string|number} playerId
    */
   function removeFromCompare(playerId) {
     comparedPlayers = comparedPlayers.filter(function(p) { return String(p.id) !== String(playerId); });
-    showCompareNotice('');
+    showNotice('');
     renderCompare();
+    renderListPage();
     updateBadges();
   }
 
   /**
-   * Limpia por completo la lista de jugadores en comparación.
+   * Limpia toda la selección del comparador.
    */
   function clearCompare() {
     comparedPlayers = [];
-    showCompareNotice('');
+    showNotice('');
     renderCompare();
+    renderListPage();
     updateBadges();
   }
 
@@ -2945,7 +3408,6 @@ const PlayerExplorer = (function() {
     const minPrice = comparedPlayers.length >= 2 && validPrices.length > 0 ? Math.min.apply(null, validPrices) : null;
     const maxInc = comparedPlayers.length >= 2 && validIncs.length > 0 ? Math.max.apply(null, validIncs) : null;
 
-    // Cabecera de jugadores
     let headHtml = '<tr><th class="cmp-metric-col">Métrica</th>';
     comparedPlayers.forEach(function(p) {
       const photoUrl = PlayerMarketService.resolveUrl(p.photo_url);
@@ -2970,26 +3432,21 @@ const PlayerExplorer = (function() {
     headHtml += '</tr>';
     thead.innerHTML = headHtml;
 
-    // Filas alineadas de métricas clave
     const rows = [
       {
         label: 'Precio actual',
         render: function(p, m) {
           if (m.price === null) return '<span class="cmp-val">—</span>';
-          const ecoTag = minPrice !== null && m.price === minPrice
-            ? '<span class="cmp-tag eco">Más bajo</span>'
-            : '';
+          const ecoTag = minPrice !== null && m.price === minPrice ? '<span class="cmp-tag eco">Más bajo</span>' : '';
           return '<span class="cmp-val precio-destacado">' + escapeHTML(Formato.euros(m.price)) + '</span>' + ecoTag;
         }
       },
       {
-        label: 'Variación diaria',
+        label: 'Fluctuación diaria',
         render: function(p, m) {
           if (m.inc === null) return '<span class="cmp-val">—</span>';
           const cls = m.inc > 0 ? 'sube' : (m.inc < 0 ? 'baja' : '');
-          const bestTag = maxInc !== null && maxInc > 0 && m.inc === maxInc
-            ? '<span class="cmp-tag mejor">Mejor</span>'
-            : '';
+          const bestTag = maxInc !== null && maxInc > 0 && m.inc === maxInc ? '<span class="cmp-tag mejor">Mejor</span>' : '';
           return '<span class="cmp-val ' + cls + '">' + escapeHTML(formatSignedEuros(m.inc)) + '</span>' + bestTag;
         }
       },
@@ -3044,7 +3501,7 @@ const PlayerExplorer = (function() {
     }).join('');
   }
 
-  /* --- Cambio de vista Calculadora <-> Explorador --- */
+  /* --- Navegación de vistas y subtabs --- */
   function setView(view) {
     const isExplorer = view === 'explorador';
     $('vista-calculadora').hidden = isExplorer;
@@ -3054,13 +3511,24 @@ const PlayerExplorer = (function() {
     document.querySelectorAll('.calc-only').forEach(function(el) { el.hidden = isExplorer; });
   }
 
+  function setSubTab(tab) {
+    activeSubTab = tab === 'comparador' ? 'comparador' : 'listado';
+    const isCmp = activeSubTab === 'comparador';
+    $('panel-listado').hidden = isCmp;
+    $('panel-comparador').hidden = !isCmp;
+    $('subtab-listado').setAttribute('aria-selected', isCmp ? 'false' : 'true');
+    $('subtab-comparador').setAttribute('aria-selected', isCmp ? 'true' : 'false');
+    updateBadges();
+  }
+
   function useInCalculator(player) {
     if (!player) return;
+    closePlayerModal();
     PlayerSelector.selectPlayer(player);
     setView('calculadora');
   }
 
-  /* --- Autocompletados del explorador y del comparador --- */
+  /* --- Autocompletados de filtros y comparador rápido --- */
   function renderTeamList(query, open) {
     const list = $('exp-lista-equipos');
     const input = $('exp-filtro-equipo');
@@ -3081,6 +3549,7 @@ const PlayerExplorer = (function() {
     $('exp-clear-equipo').hidden = !selectedTeam;
     $('exp-lista-equipos').hidden = true;
     $('exp-filtro-equipo').setAttribute('aria-expanded', 'false');
+    applyListFilters(true);
   }
 
   function renderPosList(query, open) {
@@ -3106,30 +3575,26 @@ const PlayerExplorer = (function() {
     $('exp-clear-posicion').hidden = !selectedPosition;
     $('exp-lista-posiciones').hidden = true;
     $('exp-filtro-posicion').setAttribute('aria-expanded', 'false');
+    applyListFilters(true);
   }
 
-  function renderPlayerDropdown(inputId, listId, useFilters, open) {
-    const input = $(inputId);
-    const list = $(listId);
+  function renderQuickCompareDropdown(open) {
+    const input = $('cmp-buscar-rapido');
+    const list = $('cmp-lista-rapida');
     const q = normalizeText(input.value);
     const matches = allPlayers.filter(function(p) {
-      const okTeam = !useFilters || !selectedTeam || p.team === selectedTeam;
-      const okPos = !useFilters || !selectedPosition || p.position === selectedPosition;
-      const okName = !q || normalizeText(p.name).includes(q) || normalizeText(p.team).includes(q);
-      return okTeam && okPos && okName;
+      return !q || normalizeText(p.name).includes(q) || normalizeText(p.team).includes(q);
     }).slice(0, 40);
 
-    if (matches.length === 0) {
-      list.innerHTML = '<li class="vacio-item">' + escapeHTML(MSGS.selectorSinResultados) + '</li>';
-    } else {
-      list.innerHTML = matches.map(function(p) {
+    list.innerHTML = matches.length === 0
+      ? '<li class="vacio-item">' + escapeHTML(MSGS.selectorSinResultados) + '</li>'
+      : matches.map(function(p) {
         const label = escapeHTML(p.name) + ' - ' + escapeHTML(p.team || '') + ' (' + escapeHTML(p.position || '') + ')';
         const priceHtml = typeof p.price === 'number'
           ? '<span class="precio-jugador">' + escapeHTML(Formato.euros(p.price)) + '</span>'
           : '';
         return '<li role="option" data-player-id="' + escapeHTML(p.id) + '"><span class="texto-jugador">' + label + '</span>' + priceHtml + '</li>';
       }).join('');
-    }
     list.hidden = !open;
     input.setAttribute('aria-expanded', open ? 'true' : 'false');
   }
@@ -3171,13 +3636,31 @@ const PlayerExplorer = (function() {
 
     $('nav-calc').addEventListener('click', function() { setView('calculadora'); });
     $('nav-explorador').addEventListener('click', function() { setView('explorador'); });
+    $('subtab-listado').addEventListener('click', function() { setSubTab('listado'); });
+    $('subtab-comparador').addEventListener('click', function() { setSubTab('comparador'); });
+    $('btn-ir-comparador').addEventListener('click', function() { setSubTab('comparador'); });
+    $('btn-volver-listado').addEventListener('click', function() { setSubTab('listado'); });
 
-    // Combobox Equipo (Explorador)
+    // Búsqueda de texto del listado (reinicia a página 1)
+    const expSearch = $('exp-buscar-jugador');
+    expSearch.addEventListener('input', function() {
+      $('exp-clear-jugador').hidden = !expSearch.value;
+      clearTimeout(searchDebounce);
+      searchDebounce = setTimeout(function() { applyListFilters(true); }, SEARCH_DEBOUNCE_MS);
+    });
+    $('exp-clear-jugador').addEventListener('click', function() {
+      expSearch.value = '';
+      $('exp-clear-jugador').hidden = true;
+      applyListFilters(true);
+      expSearch.focus();
+    });
+
+    // Combobox Equipo
     const expTeam = $('exp-filtro-equipo');
     expTeam.addEventListener('focus', function() { renderTeamList(expTeam.value, true); });
     expTeam.addEventListener('input', function() {
       $('exp-clear-equipo').hidden = !expTeam.value.trim();
-      if (!expTeam.value.trim()) selectedTeam = '';
+      if (!expTeam.value.trim()) { selectedTeam = ''; applyListFilters(true); }
       renderTeamList(expTeam.value, true);
     });
     expTeam.addEventListener('blur', function() {
@@ -3190,12 +3673,12 @@ const PlayerExplorer = (function() {
     $('exp-clear-equipo').addEventListener('click', function() { setTeamFilter(''); expTeam.focus(); });
     wireComboKeyNav('exp-filtro-equipo', 'exp-lista-equipos', function(li) { setTeamFilter(li.dataset.value); });
 
-    // Combobox Posición (Explorador)
+    // Combobox Posición
     const expPos = $('exp-filtro-posicion');
     expPos.addEventListener('focus', function() { renderPosList(expPos.value, true); });
     expPos.addEventListener('input', function() {
       $('exp-clear-posicion').hidden = !expPos.value.trim();
-      if (!expPos.value.trim()) selectedPosition = '';
+      if (!expPos.value.trim()) { selectedPosition = ''; applyListFilters(true); }
       renderPosList(expPos.value, true);
     });
     expPos.addEventListener('blur', function() {
@@ -3208,49 +3691,69 @@ const PlayerExplorer = (function() {
     $('exp-clear-posicion').addEventListener('click', function() { setPosFilter(''); expPos.focus(); });
     wireComboKeyNav('exp-filtro-posicion', 'exp-lista-posiciones', function(li) { setPosFilter(li.dataset.value); });
 
-    // Combobox Jugador (Vista individual)
-    const expSearch = $('exp-buscar-jugador');
-    expSearch.addEventListener('focus', function() { renderPlayerDropdown('exp-buscar-jugador', 'exp-lista-jugadores', true, true); });
-    expSearch.addEventListener('input', function() {
-      $('exp-clear-jugador').hidden = !expSearch.value;
-      renderPlayerDropdown('exp-buscar-jugador', 'exp-lista-jugadores', true, true);
+    // Tendencia y Ordenamiento (reinician a página 1)
+    $('exp-filtro-tendencia').addEventListener('change', function(e) {
+      selectedTrend = e.target.value;
+      applyListFilters(true);
     });
-    expSearch.addEventListener('blur', function() {
-      setTimeout(function() { $('exp-lista-jugadores').hidden = true; }, 180);
+    $('exp-orden').addEventListener('change', function(e) {
+      currentSort = e.target.value;
+      applyListFilters(true);
     });
-    $('exp-lista-jugadores').addEventListener('click', function(e) {
-      const li = e.target.closest('li[data-player-id]');
-      if (!li) return;
-      const p = allPlayers.find(function(x) { return String(x.id) === String(li.dataset.playerId); });
-      if (p) {
-        viewPlayer(p);
-        expSearch.value = '';
-        $('exp-clear-jugador').hidden = true;
-        $('exp-lista-jugadores').hidden = true;
+    $('btn-exp-reset-filtros').addEventListener('click', resetFilters);
+
+    // Paginación
+    $('pag-prev').addEventListener('click', function() {
+      if (currentPage > 1) { currentPage -= 1; renderListPage(); }
+    });
+    $('pag-next').addEventListener('click', function() {
+      const totalPages = Math.max(1, Math.ceil(filteredList.length / PAGE_SIZE));
+      if (currentPage < totalPages) { currentPage += 1; renderListPage(); }
+    });
+
+    // Delegación en la tabla paginada (botón comparar o abrir modal)
+    $('exp-listado-tbody').addEventListener('click', function(e) {
+      const cmpBtn = e.target.closest('button[data-toggle-cmp]');
+      if (cmpBtn) {
+        e.stopPropagation();
+        const id = cmpBtn.dataset.toggleCmp;
+        if (isCompared(id)) {
+          removeFromCompare(id);
+        } else {
+          const p = allPlayers.find(function(x) { return String(x.id) === String(id); });
+          if (p) addToCompare(p);
+        }
+        return;
       }
-    });
-    $('exp-clear-jugador').addEventListener('click', function() {
-      expSearch.value = '';
-      $('exp-clear-jugador').hidden = true;
-      renderPlayerDropdown('exp-buscar-jugador', 'exp-lista-jugadores', true, true);
-      expSearch.focus();
-    });
-    wireComboKeyNav('exp-buscar-jugador', 'exp-lista-jugadores', function(li) {
-      const p = allPlayers.find(function(x) { return String(x.id) === String(li.dataset.playerId); });
-      if (p) {
-        viewPlayer(p);
-        expSearch.value = '';
-        $('exp-clear-jugador').hidden = true;
-        $('exp-lista-jugadores').hidden = true;
+      const tr = e.target.closest('tr[data-open-id]');
+      if (tr) {
+        const p = allPlayers.find(function(x) { return String(x.id) === String(tr.dataset.openId); });
+        if (p) openPlayerModal(p);
       }
     });
 
-    // Combobox rápido del Comparador
+    // Modal de detalle: cerrar por botón, clic fuera o tecla Esc
+    $('btn-cerrar-modal').addEventListener('click', closePlayerModal);
+    $('player-modal').addEventListener('click', function(e) {
+      if (e.target === $('player-modal')) closePlayerModal();
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && !$('player-modal').hidden) closePlayerModal();
+    });
+
+    $('btn-exp-comparar').addEventListener('click', function() {
+      if (!currentModalPlayer) return;
+      if (isCompared(currentModalPlayer.id)) removeFromCompare(currentModalPlayer.id);
+      else addToCompare(currentModalPlayer);
+    });
+    $('btn-exp-calculadora').addEventListener('click', function() { useInCalculator(currentModalPlayer); });
+
+    // Buscador rápido dentro del Comparador
     const cmpSearch = $('cmp-buscar-rapido');
-    cmpSearch.addEventListener('focus', function() { renderPlayerDropdown('cmp-buscar-rapido', 'cmp-lista-rapida', false, true); });
+    cmpSearch.addEventListener('focus', function() { renderQuickCompareDropdown(true); });
     cmpSearch.addEventListener('input', function() {
       $('cmp-clear-rapido').hidden = !cmpSearch.value;
-      renderPlayerDropdown('cmp-buscar-rapido', 'cmp-lista-rapida', false, true);
+      renderQuickCompareDropdown(true);
     });
     cmpSearch.addEventListener('blur', function() {
       setTimeout(function() { $('cmp-lista-rapida').hidden = true; }, 180);
@@ -3261,7 +3764,6 @@ const PlayerExplorer = (function() {
       const p = allPlayers.find(function(x) { return String(x.id) === String(li.dataset.playerId); });
       if (p) {
         addToCompare(p);
-        viewPlayer(p);
         cmpSearch.value = '';
         $('cmp-clear-rapido').hidden = true;
         $('cmp-lista-rapida').hidden = true;
@@ -3270,35 +3772,23 @@ const PlayerExplorer = (function() {
     $('cmp-clear-rapido').addEventListener('click', function() {
       cmpSearch.value = '';
       $('cmp-clear-rapido').hidden = true;
-      renderPlayerDropdown('cmp-buscar-rapido', 'cmp-lista-rapida', false, true);
+      renderQuickCompareDropdown(true);
       cmpSearch.focus();
     });
     wireComboKeyNav('cmp-buscar-rapido', 'cmp-lista-rapida', function(li) {
       const p = allPlayers.find(function(x) { return String(x.id) === String(li.dataset.playerId); });
       if (p) {
         addToCompare(p);
-        viewPlayer(p);
         cmpSearch.value = '';
         $('cmp-clear-rapido').hidden = true;
         $('cmp-lista-rapida').hidden = true;
       }
     });
 
-    // Acciones de la ficha y tabla comparativa (delegación)
-    $('btn-exp-comparar').addEventListener('click', function() {
-      if (!currentPlayer) return;
-      if (isCompared(currentPlayer.id)) removeFromCompare(currentPlayer.id);
-      else addToCompare(currentPlayer);
-    });
-    $('btn-exp-calculadora').addEventListener('click', function() { useInCalculator(currentPlayer); });
     $('btn-cmp-limpiar').addEventListener('click', clearCompare);
-
     $('cmp-thead').addEventListener('click', function(e) {
       const remBtn = e.target.closest('button[data-remove-id]');
-      if (remBtn) {
-        removeFromCompare(remBtn.dataset.removeId);
-        return;
-      }
+      if (remBtn) { removeFromCompare(remBtn.dataset.removeId); return; }
       const useBtn = e.target.closest('button[data-use-id]');
       if (useBtn) {
         const p = comparedPlayers.find(function(x) { return String(x.id) === String(useBtn.dataset.useId); });
@@ -3308,7 +3798,7 @@ const PlayerExplorer = (function() {
   }
 
   /**
-   * Inicializa el explorador reutilizando el catálogo ya obtenido por PlayerMarketService.
+   * Inicializa el listado paginado y el comparador usando el catálogo de PlayerMarketService.
    */
   function init() {
     bindEvents();
@@ -3322,22 +3812,33 @@ const PlayerExplorer = (function() {
         if (p.team && uniqueTeams.indexOf(p.team) === -1) uniqueTeams.push(p.team);
       });
       teamsList = uniqueTeams.sort();
-      const badge = $('exp-total-badge');
-      if (badge) badge.textContent = allPlayers.length + ' jugadores';
-      if (allPlayers.length > 0 && !currentPlayer) {
-        viewPlayer(allPlayers[0]);
-      }
+      if ($('exp-total-badge')) $('exp-total-badge').textContent = String(allPlayers.length);
+      applyListFilters(true);
     });
   }
 
   return {
     init: init,
     setView: setView,
-    viewPlayer: viewPlayer,
+    setSubTab: setSubTab,
+    openPlayerModal: openPlayerModal,
+    closePlayerModal: closePlayerModal,
     addToCompare: addToCompare,
     removeFromCompare: removeFromCompare,
     clearCompare: clearCompare,
-    getComparedCount: function() { return comparedPlayers.length; }
+    setTeamFilter: setTeamFilter,
+    setPosFilter: setPosFilter,
+    setSort: function(sort) { currentSort = sort; applyListFilters(true); },
+    setTrend: function(trend) { selectedTrend = trend; applyListFilters(true); },
+    goToPage: function(page) { currentPage = page; renderListPage(); },
+    getState: function() {
+      return {
+        page: currentPage,
+        totalFiltered: filteredList.length,
+        comparedCount: comparedPlayers.length,
+        modalOpen: !$('player-modal').hidden
+      };
+    }
   };
 })();
 

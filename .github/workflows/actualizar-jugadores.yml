@@ -30,14 +30,17 @@ jobs:
       - name: Descargar precios actuales de LALIGA Fantasy
         run: node scripts/actualizar_jugadores.mjs
 
-      - name: Guardar cambios en data/players.json si hubo actualizaciones
+      - name: Descargar clasificación, calendario y estadísticas de LaLiga
+        run: node scripts/actualizar_laliga.mjs
+
+      - name: Guardar cambios en data/ si hubo actualizaciones
         run: |
-          if git diff --quiet -- data/players.json && [ -z "$(git ls-files --others --exclude-standard -- data/players.json)" ]; then
-            echo "Sin cambios en data/players.json"
+          if git diff --quiet -- data/players.json data/laliga.json && [ -z "$(git ls-files --others --exclude-standard -- data/players.json data/laliga.json)" ]; then
+            echo "Sin cambios en data/"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/players.json
-          git commit -m "chore: actualizar precios de jugadores"
+          git add data/players.json data/laliga.json
+          git commit -m "chore: actualizar precios y estadisticas de LaLiga"
           git push

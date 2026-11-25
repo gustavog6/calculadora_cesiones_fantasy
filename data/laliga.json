@@ -1,0 +1,7015 @@
+{
+  "updated_at": "2026-11-25T01:35:35.165Z",
+  "season": "2026-27 LALIGA",
+  "source": "ESPN Public API (esp.1)",
+  "standings": [
+    {
+      "id": "83",
+      "rank": 1,
+      "team": "Barcelona",
+      "espnName": "Barcelona",
+      "abbr": "BAR",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
+      "general": {
+        "pj": 13,
+        "pts": 36,
+        "v": 12,
+        "e": 0,
+        "d": 1,
+        "gf": 51,
+        "gc": 15,
+        "dg": 36
+      },
+      "home": {
+        "pj": 7,
+        "pts": 18,
+        "v": 6,
+        "e": 0,
+        "d": 1,
+        "gf": 27,
+        "gc": 9,
+        "dg": 18
+      },
+      "away": {
+        "pj": 6,
+        "pts": 18,
+        "v": 6,
+        "e": 0,
+        "d": 0,
+        "gf": 24,
+        "gc": 6,
+        "dg": 18
+      },
+      "form": [
+        {
+          "date": "2026-10-17T16:30Z",
+          "res": "V",
+          "loc": "V",
+          "opp": "Betis",
+          "oppAbbr": "BET",
+          "score": "5-2"
+        },
+        {
+          "date": "2026-10-25T20:00Z",
+          "res": "D",
+          "loc": "L",
+          "opp": "Real Madrid",
+          "oppAbbr": "RMA",
+          "score": "1-2"
+        },
+        {
+          "date": "2026-10-31T20:00Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Alavés",
+          "oppAbbr": "ALA",
+          "score": "6-1"
+        },
+        {
+          "date": "2026-11-08T20:00Z",
+          "res": "V",
+          "loc": "V",
+          "opp": "Atlético",
+          "oppAbbr": "ATM",
+          "score": "2-1"
+        },
+        {
+          "date": "2026-11-22T13:00Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Villarreal",
+          "oppAbbr": "VIL",
+          "score": "3-2"
+        }
+      ],
+      "upcoming": [
+        {
+          "date": "2026-11-29T15:15Z",
+          "loc": "V",
+          "opp": "Deportivo",
+          "oppAbbr": "DEP"
+        },
+        {
+          "date": "2026-12-02T20:30Z",
+          "loc": "L",
+          "opp": "Atlético",
+          "oppAbbr": "ATM"
+        },
+        {
+          "date": "2026-12-05T20:00Z",
+          "loc": "L",
+          "opp": "Celta",
+          "oppAbbr": "CEL"
+        },
+        {
+          "date": "2026-12-12T17:30Z",
+          "loc": "V",
+          "opp": "Málaga",
+          "oppAbbr": "MCF"
+        },
+        {
+          "date": "2026-12-20T20:00Z",
+          "loc": "L",
+          "opp": "Real Sociedad",
+          "oppAbbr": "RSO"
+        }
+      ]
+    },
+    {
+      "id": "86",
+      "rank": 2,
+      "team": "Real Madrid",
+      "espnName": "Real Madrid",
+      "abbr": "RMA",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png",
+      "general": {
+        "pj": 13,
+        "pts": 33,
+        "v": 11,
+        "e": 0,
+        "d": 2,
+        "gf": 33,
+        "gc": 11,
+        "dg": 22
+      },
+      "home": {
+        "pj": 6,
+        "pts": 18,
+        "v": 6,
+        "e": 0,
+        "d": 0,
+        "gf": 19,
+        "gc": 4,
+        "dg": 15
+      },
+      "away": {
+        "pj": 7,
+        "pts": 15,
+        "v": 5,
+        "e": 0,
+        "d": 2,
+        "gf": 14,
+        "gc": 7,
+        "dg": 7
+      },
+      "form": [
+        {
+          "date": "2026-10-18T19:00Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Sevilla",
+          "oppAbbr": "SEV",
+          "score": "4-1"
+        },
+        {
+          "date": "2026-10-25T20:00Z",
+          "res": "V",
+          "loc": "V",
+          "opp": "Barcelona",
+          "oppAbbr": "BAR",
+          "score": "2-1"
+        },
+        {
+          "date": "2026-11-01T15:15Z",
+          "res": "V",
+          "loc": "V",
+          "opp": "Racing",
+          "oppAbbr": "RAC",
+          "score": "3-0"
+        },
+        {
+          "date": "2026-11-07T20:00Z",
+          "res": "V",
+          "loc": "V",
+          "opp": "Valencia",
+          "oppAbbr": "VAL",
+          "score": "3-0"
+        },
+        {
+          "date": "2026-11-21T20:00Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Celta",
+          "oppAbbr": "CEL",
+          "score": "2-1"
+        }
+      ],
+      "upcoming": [
+        {
+          "date": "2026-11-28T20:00Z",
+          "loc": "L",
+          "opp": "Alavés",
+          "oppAbbr": "ALA"
+        },
+        {
+          "date": "2026-12-02T18:00Z",
+          "loc": "V",
+          "opp": "Real Sociedad",
+          "oppAbbr": "RSO"
+        },
+        {
+          "date": "2026-12-06T15:15Z",
+          "loc": "V",
+          "opp": "Athletic",
+          "oppAbbr": "ATH"
+        },
+        {
+          "date": "2026-12-13T20:00Z",
+          "loc": "L",
+          "opp": "Osasuna",
+          "oppAbbr": "OSA"
+        },
+        {
+          "date": "2026-12-20T20:00Z",
+          "loc": "V",
+          "opp": "Deportivo",
+          "oppAbbr": "DEP"
+        }
+      ]
+    },
+    {
+      "id": "1068",
+      "rank": 3,
+      "team": "Atlético",
+      "espnName": "Atlético Madrid",
+      "abbr": "ATM",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
+      "general": {
+        "pj": 13,
+        "pts": 31,
+        "v": 10,
+        "e": 1,
+        "d": 2,
+        "gf": 26,
+        "gc": 10,
+        "dg": 16
+      },
+      "home": {
+        "pj": 6,
+        "pts": 13,
+        "v": 4,
+        "e": 1,
+        "d": 1,
+        "gf": 12,
+        "gc": 5,
+        "dg": 7
+      },
+      "away": {
+        "pj": 7,
+        "pts": 18,
+        "v": 6,
+        "e": 0,
+        "d": 1,
+        "gf": 14,
+        "gc": 5,
+        "dg": 9
+      },
+      "form": [
+        {
+          "date": "2026-10-17T12:00Z",
+          "res": "V",
+          "loc": "V",
+          "opp": "Espanyol",
+          "oppAbbr": "ESP",
+          "score": "1-0"
+        },
+        {
+          "date": "2026-10-24T19:00Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Deportivo",
+          "oppAbbr": "DEP",
+          "score": "1-0"
+        },
+        {
+          "date": "2026-10-31T13:00Z",
+          "res": "V",
+          "loc": "V",
+          "opp": "Levante",
+          "oppAbbr": "LEV",
+          "score": "2-0"
+        },
+        {
+          "date": "2026-11-08T20:00Z",
+          "res": "D",
+          "loc": "L",
+          "opp": "Barcelona",
+          "oppAbbr": "BAR",
+          "score": "1-2"
+        },
+        {
+          "date": "2026-11-22T20:00Z",
+          "res": "V",
+          "loc": "V",
+          "opp": "Getafe",
+          "oppAbbr": "GET",
+          "score": "3-0"
+        }
+      ],
+      "upcoming": [
+        {
+          "date": "2026-11-28T17:30Z",
+          "loc": "V",
+          "opp": "Elche",
+          "oppAbbr": "ELC"
+        },
+        {
+          "date": "2026-12-02T20:30Z",
+          "loc": "V",
+          "opp": "Barcelona",
+          "oppAbbr": "BAR"
+        },
+        {
+          "date": "2026-12-06T20:00Z",
+          "loc": "L",
+          "opp": "Betis",
+          "oppAbbr": "BET"
+        },
+        {
+          "date": "2026-12-13T13:00Z",
+          "loc": "L",
+          "opp": "Valencia",
+          "oppAbbr": "VAL"
+        },
+        {
+          "date": "2026-12-20T20:00Z",
+          "loc": "V",
+          "opp": "Celta",
+          "oppAbbr": "CEL"
+        }
+      ]
+    },
+    {
+      "id": "244",
+      "rank": 4,
+      "team": "Betis",
+      "espnName": "Real Betis",
+      "abbr": "BET",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png",
+      "general": {
+        "pj": 13,
+        "pts": 27,
+        "v": 8,
+        "e": 3,
+        "d": 2,
+        "gf": 21,
+        "gc": 16,
+        "dg": 5
+      },
+      "home": {
+        "pj": 6,
+        "pts": 15,
+        "v": 5,
+        "e": 0,
+        "d": 1,
+        "gf": 12,
+        "gc": 8,
+        "dg": 4
+      },
+      "away": {
+        "pj": 7,
+        "pts": 12,
+        "v": 3,
+        "e": 3,
+        "d": 1,
+        "gf": 9,
+        "gc": 8,
+        "dg": 1
+      },
+      "form": [
+        {
+          "date": "2026-10-17T16:30Z",
+          "res": "D",
+          "loc": "L",
+          "opp": "Barcelona",
+          "oppAbbr": "BAR",
+          "score": "2-5"
+        },
+        {
+          "date": "2026-10-25T15:15Z",
+          "res": "E",
+          "loc": "V",
+          "opp": "Celta",
+          "oppAbbr": "CEL",
+          "score": "0-0"
+        },
+        {
+          "date": "2026-10-31T17:30Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Málaga",
+          "oppAbbr": "MCF",
+          "score": "2-1"
+        },
+        {
+          "date": "2026-11-08T13:00Z",
+          "res": "V",
+          "loc": "V",
+          "opp": "Elche",
+          "oppAbbr": "ELC",
+          "score": "2-0"
+        },
+        {
+          "date": "2026-11-21T17:30Z",
+          "res": "E",
+          "loc": "V",
+          "opp": "Sevilla",
+          "oppAbbr": "SEV",
+          "score": "1-1"
+        }
+      ],
+      "upcoming": [
+        {
+          "date": "2026-11-28T13:00Z",
+          "loc": "L",
+          "opp": "Rayo Vallecano",
+          "oppAbbr": "RAY"
+        },
+        {
+          "date": "2026-12-06T20:00Z",
+          "loc": "V",
+          "opp": "Atlético",
+          "oppAbbr": "ATM"
+        },
+        {
+          "date": "2026-12-12T20:00Z",
+          "loc": "L",
+          "opp": "Racing",
+          "oppAbbr": "RAC"
+        },
+        {
+          "date": "2026-12-20T20:00Z",
+          "loc": "V",
+          "opp": "Athletic",
+          "oppAbbr": "ATH"
+        },
+        {
+          "date": "2027-01-03T20:00Z",
+          "loc": "L",
+          "opp": "Alavés",
+          "oppAbbr": "ALA"
+        }
+      ]
+    },
+    {
+      "id": "89",
+      "rank": 5,
+      "team": "Real Sociedad",
+      "espnName": "Real Sociedad",
+      "abbr": "RSO",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png",
+      "general": {
+        "pj": 13,
+        "pts": 22,
+        "v": 7,
+        "e": 1,
+        "d": 5,
+        "gf": 23,
+        "gc": 23,
+        "dg": 0
+      },
+      "home": {
+        "pj": 6,
+        "pts": 13,
+        "v": 4,
+        "e": 1,
+        "d": 1,
+        "gf": 8,
+        "gc": 7,
+        "dg": 1
+      },
+      "away": {
+        "pj": 7,
+        "pts": 9,
+        "v": 3,
+        "e": 0,
+        "d": 4,
+        "gf": 15,
+        "gc": 16,
+        "dg": -1
+      },
+      "form": [
+        {
+          "date": "2026-10-18T16:30Z",
+          "res": "V",
+          "loc": "V",
+          "opp": "Málaga",
+          "oppAbbr": "MCF",
+          "score": "5-2"
+        },
+        {
+          "date": "2026-10-25T17:30Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Levante",
+          "oppAbbr": "LEV",
+          "score": "2-1"
+        },
+        {
+          "date": "2026-11-01T20:00Z",
+          "res": "D",
+          "loc": "V",
+          "opp": "Athletic",
+          "oppAbbr": "ATH",
+          "score": "1-2"
+        },
+        {
+          "date": "2026-11-08T15:15Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Rayo Vallecano",
+          "oppAbbr": "RAY",
+          "score": "1-0"
+        },
+        {
+          "date": "2026-11-22T15:15Z",
+          "res": "D",
+          "loc": "V",
+          "opp": "Racing",
+          "oppAbbr": "RAC",
+          "score": "2-3"
+        }
+      ],
+      "upcoming": [
+        {
+          "date": "2026-11-29T20:00Z",
+          "loc": "L",
+          "opp": "Sevilla",
+          "oppAbbr": "SEV"
+        },
+        {
+          "date": "2026-12-02T18:00Z",
+          "loc": "L",
+          "opp": "Real Madrid",
+          "oppAbbr": "RMA"
+        },
+        {
+          "date": "2026-12-05T17:30Z",
+          "loc": "V",
+          "opp": "Villarreal",
+          "oppAbbr": "VIL"
+        },
+        {
+          "date": "2026-12-13T17:30Z",
+          "loc": "L",
+          "opp": "Getafe",
+          "oppAbbr": "GET"
+        },
+        {
+          "date": "2026-12-20T20:00Z",
+          "loc": "V",
+          "opp": "Barcelona",
+          "oppAbbr": "BAR"
+        }
+      ]
+    },
+    {
+      "id": "243",
+      "rank": 6,
+      "team": "Sevilla",
+      "espnName": "Sevilla",
+      "abbr": "SEV",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png",
+      "general": {
+        "pj": 13,
+        "pts": 19,
+        "v": 5,
+        "e": 4,
+        "d": 4,
+        "gf": 18,
+        "gc": 20,
+        "dg": -2
+      },
+      "home": {
+        "pj": 7,
+        "pts": 11,
+        "v": 3,
+        "e": 2,
+        "d": 2,
+        "gf": 8,
+        "gc": 8,
+        "dg": 0
+      },
+      "away": {
+        "pj": 6,
+        "pts": 8,
+        "v": 2,
+        "e": 2,
+        "d": 2,
+        "gf": 10,
+        "gc": 12,
+        "dg": -2
+      },
+      "form": [
+        {
+          "date": "2026-10-18T19:00Z",
+          "res": "D",
+          "loc": "V",
+          "opp": "Real Madrid",
+          "oppAbbr": "RMA",
+          "score": "1-4"
+        },
+        {
+          "date": "2026-10-26T20:00Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Osasuna",
+          "oppAbbr": "OSA",
+          "score": "2-0"
+        },
+        {
+          "date": "2026-11-01T13:00Z",
+          "res": "D",
+          "loc": "V",
+          "opp": "Getafe",
+          "oppAbbr": "GET",
+          "score": "1-3"
+        },
+        {
+          "date": "2026-11-06T20:00Z",
+          "res": "E",
+          "loc": "L",
+          "opp": "Alavés",
+          "oppAbbr": "ALA",
+          "score": "0-0"
+        },
+        {
+          "date": "2026-11-21T17:30Z",
+          "res": "E",
+          "loc": "L",
+          "opp": "Betis",
+          "oppAbbr": "BET",
+          "score": "1-1"
+        }
+      ],
+      "upcoming": [
+        {
+          "date": "2026-11-29T20:00Z",
+          "loc": "V",
+          "opp": "Real Sociedad",
+          "oppAbbr": "RSO"
+        },
+        {
+          "date": "2026-12-07T20:00Z",
+          "loc": "L",
+          "opp": "Málaga",
+          "oppAbbr": "MCF"
+        },
+        {
+          "date": "2026-12-11T20:00Z",
+          "loc": "V",
+          "opp": "Elche",
+          "oppAbbr": "ELC"
+        },
+        {
+          "date": "2026-12-20T20:00Z",
+          "loc": "L",
+          "opp": "Racing",
+          "oppAbbr": "RAC"
+        },
+        {
+          "date": "2027-01-03T20:00Z",
+          "loc": "V",
+          "opp": "Villarreal",
+          "oppAbbr": "VIL"
+        }
+      ]
+    },
+    {
+      "id": "87",
+      "rank": 7,
+      "team": "Racing",
+      "espnName": "Racing Santander",
+      "abbr": "RAC",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png",
+      "general": {
+        "pj": 13,
+        "pts": 17,
+        "v": 5,
+        "e": 2,
+        "d": 6,
+        "gf": 20,
+        "gc": 32,
+        "dg": -12
+      },
+      "home": {
+        "pj": 7,
+        "pts": 14,
+        "v": 4,
+        "e": 2,
+        "d": 1,
+        "gf": 14,
+        "gc": 13,
+        "dg": 1
+      },
+      "away": {
+        "pj": 6,
+        "pts": 3,
+        "v": 1,
+        "e": 0,
+        "d": 5,
+        "gf": 6,
+        "gc": 19,
+        "dg": -13
+      },
+      "form": [
+        {
+          "date": "2026-10-18T12:00Z",
+          "res": "D",
+          "loc": "V",
+          "opp": "Osasuna",
+          "oppAbbr": "OSA",
+          "score": "0-2"
+        },
+        {
+          "date": "2026-10-24T14:15Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Espanyol",
+          "oppAbbr": "ESP",
+          "score": "2-1"
+        },
+        {
+          "date": "2026-11-01T15:15Z",
+          "res": "D",
+          "loc": "L",
+          "opp": "Real Madrid",
+          "oppAbbr": "RMA",
+          "score": "0-3"
+        },
+        {
+          "date": "2026-11-07T13:00Z",
+          "res": "V",
+          "loc": "V",
+          "opp": "Málaga",
+          "oppAbbr": "MCF",
+          "score": "2-1"
+        },
+        {
+          "date": "2026-11-22T15:15Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Real Sociedad",
+          "oppAbbr": "RSO",
+          "score": "3-2"
+        }
+      ],
+      "upcoming": [
+        {
+          "date": "2026-11-27T20:00Z",
+          "loc": "V",
+          "opp": "Levante",
+          "oppAbbr": "LEV"
+        },
+        {
+          "date": "2026-12-05T13:00Z",
+          "loc": "L",
+          "opp": "Deportivo",
+          "oppAbbr": "DEP"
+        },
+        {
+          "date": "2026-12-12T20:00Z",
+          "loc": "V",
+          "opp": "Betis",
+          "oppAbbr": "BET"
+        },
+        {
+          "date": "2026-12-20T20:00Z",
+          "loc": "V",
+          "opp": "Sevilla",
+          "oppAbbr": "SEV"
+        },
+        {
+          "date": "2027-01-03T20:00Z",
+          "loc": "L",
+          "opp": "Athletic",
+          "oppAbbr": "ATH"
+        }
+      ]
+    },
+    {
+      "id": "93",
+      "rank": 8,
+      "team": "Athletic",
+      "espnName": "Athletic Club",
+      "abbr": "ATH",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png",
+      "general": {
+        "pj": 12,
+        "pts": 16,
+        "v": 4,
+        "e": 4,
+        "d": 4,
+        "gf": 15,
+        "gc": 12,
+        "dg": 3
+      },
+      "home": {
+        "pj": 7,
+        "pts": 11,
+        "v": 3,
+        "e": 2,
+        "d": 2,
+        "gf": 11,
+        "gc": 6,
+        "dg": 5
+      },
+      "away": {
+        "pj": 5,
+        "pts": 5,
+        "v": 1,
+        "e": 2,
+        "d": 2,
+        "gf": 4,
+        "gc": 6,
+        "dg": -2
+      },
+      "form": [
+        {
+          "date": "2026-10-21T18:00Z",
+          "res": "D",
+          "loc": "V",
+          "opp": "Levante",
+          "oppAbbr": "LEV",
+          "score": "1-3"
+        },
+        {
+          "date": "2026-10-25T13:00Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Getafe",
+          "oppAbbr": "GET",
+          "score": "4-0"
+        },
+        {
+          "date": "2026-11-01T20:00Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Real Sociedad",
+          "oppAbbr": "RSO",
+          "score": "2-1"
+        },
+        {
+          "date": "2026-11-07T17:30Z",
+          "res": "E",
+          "loc": "V",
+          "opp": "Osasuna",
+          "oppAbbr": "OSA",
+          "score": "1-1"
+        },
+        {
+          "date": "2026-11-20T20:00Z",
+          "res": "D",
+          "loc": "L",
+          "opp": "Espanyol",
+          "oppAbbr": "ESP",
+          "score": "0-1"
+        }
+      ],
+      "upcoming": [
+        {
+          "date": "2026-11-28T15:15Z",
+          "loc": "V",
+          "opp": "Málaga",
+          "oppAbbr": "MCF"
+        },
+        {
+          "date": "2026-12-06T15:15Z",
+          "loc": "L",
+          "opp": "Real Madrid",
+          "oppAbbr": "RMA"
+        },
+        {
+          "date": "2026-12-13T15:15Z",
+          "loc": "V",
+          "opp": "Deportivo",
+          "oppAbbr": "DEP"
+        },
+        {
+          "date": "2026-12-20T20:00Z",
+          "loc": "L",
+          "opp": "Betis",
+          "oppAbbr": "BET"
+        },
+        {
+          "date": "2027-01-03T20:00Z",
+          "loc": "V",
+          "opp": "Racing",
+          "oppAbbr": "RAC"
+        }
+      ]
+    },
+    {
+      "id": "96",
+      "rank": 9,
+      "team": "Alavés",
+      "espnName": "Alavés",
+      "abbr": "ALA",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png",
+      "general": {
+        "pj": 13,
+        "pts": 16,
+        "v": 4,
+        "e": 4,
+        "d": 5,
+        "gf": 18,
+        "gc": 18,
+        "dg": 0
+      },
+      "home": {
+        "pj": 7,
+        "pts": 13,
+        "v": 4,
+        "e": 1,
+        "d": 2,
+        "gf": 14,
+        "gc": 7,
+        "dg": 7
+      },
+      "away": {
+        "pj": 6,
+        "pts": 3,
+        "v": 0,
+        "e": 3,
+        "d": 3,
+        "gf": 4,
+        "gc": 11,
+        "dg": -7
+      },
+      "form": [
+        {
+          "date": "2026-10-18T14:15Z",
+          "res": "D",
+          "loc": "V",
+          "opp": "Celta",
+          "oppAbbr": "CEL",
+          "score": "1-2"
+        },
+        {
+          "date": "2026-10-23T19:00Z",
+          "res": "E",
+          "loc": "L",
+          "opp": "Málaga",
+          "oppAbbr": "MCF",
+          "score": "1-1"
+        },
+        {
+          "date": "2026-10-31T20:00Z",
+          "res": "D",
+          "loc": "V",
+          "opp": "Barcelona",
+          "oppAbbr": "BAR",
+          "score": "1-6"
+        },
+        {
+          "date": "2026-11-06T20:00Z",
+          "res": "E",
+          "loc": "V",
+          "opp": "Sevilla",
+          "oppAbbr": "SEV",
+          "score": "0-0"
+        },
+        {
+          "date": "2026-11-21T13:00Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Deportivo",
+          "oppAbbr": "DEP",
+          "score": "3-1"
+        }
+      ],
+      "upcoming": [
+        {
+          "date": "2026-11-28T20:00Z",
+          "loc": "V",
+          "opp": "Real Madrid",
+          "oppAbbr": "RMA"
+        },
+        {
+          "date": "2026-12-04T20:00Z",
+          "loc": "L",
+          "opp": "Espanyol",
+          "oppAbbr": "ESP"
+        },
+        {
+          "date": "2026-12-12T13:00Z",
+          "loc": "V",
+          "opp": "Levante",
+          "oppAbbr": "LEV"
+        },
+        {
+          "date": "2026-12-20T20:00Z",
+          "loc": "L",
+          "opp": "Elche",
+          "oppAbbr": "ELC"
+        },
+        {
+          "date": "2027-01-03T20:00Z",
+          "loc": "V",
+          "opp": "Betis",
+          "oppAbbr": "BET"
+        }
+      ]
+    },
+    {
+      "id": "102",
+      "rank": 10,
+      "team": "Villarreal",
+      "espnName": "Villarreal",
+      "abbr": "VIL",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png",
+      "general": {
+        "pj": 13,
+        "pts": 15,
+        "v": 4,
+        "e": 3,
+        "d": 6,
+        "gf": 19,
+        "gc": 18,
+        "dg": 1
+      },
+      "home": {
+        "pj": 6,
+        "pts": 7,
+        "v": 2,
+        "e": 1,
+        "d": 3,
+        "gf": 8,
+        "gc": 7,
+        "dg": 1
+      },
+      "away": {
+        "pj": 7,
+        "pts": 8,
+        "v": 2,
+        "e": 2,
+        "d": 3,
+        "gf": 11,
+        "gc": 11,
+        "dg": 0
+      },
+      "form": [
+        {
+          "date": "2026-10-17T14:15Z",
+          "res": "E",
+          "loc": "L",
+          "opp": "Elche",
+          "oppAbbr": "ELC",
+          "score": "0-0"
+        },
+        {
+          "date": "2026-10-24T16:30Z",
+          "res": "V",
+          "loc": "V",
+          "opp": "Valencia",
+          "oppAbbr": "VAL",
+          "score": "2-1"
+        },
+        {
+          "date": "2026-10-30T20:00Z",
+          "res": "D",
+          "loc": "L",
+          "opp": "Espanyol",
+          "oppAbbr": "ESP",
+          "score": "0-1"
+        },
+        {
+          "date": "2026-11-08T17:30Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Getafe",
+          "oppAbbr": "GET",
+          "score": "2-0"
+        },
+        {
+          "date": "2026-11-22T13:00Z",
+          "res": "D",
+          "loc": "V",
+          "opp": "Barcelona",
+          "oppAbbr": "BAR",
+          "score": "2-3"
+        }
+      ],
+      "upcoming": [
+        {
+          "date": "2026-11-29T17:30Z",
+          "loc": "V",
+          "opp": "Celta",
+          "oppAbbr": "CEL"
+        },
+        {
+          "date": "2026-12-05T17:30Z",
+          "loc": "L",
+          "opp": "Real Sociedad",
+          "oppAbbr": "RSO"
+        },
+        {
+          "date": "2026-12-12T15:15Z",
+          "loc": "L",
+          "opp": "Rayo Vallecano",
+          "oppAbbr": "RAY"
+        },
+        {
+          "date": "2026-12-20T20:00Z",
+          "loc": "V",
+          "opp": "Osasuna",
+          "oppAbbr": "OSA"
+        },
+        {
+          "date": "2027-01-03T20:00Z",
+          "loc": "L",
+          "opp": "Sevilla",
+          "oppAbbr": "SEV"
+        }
+      ]
+    },
+    {
+      "id": "88",
+      "rank": 11,
+      "team": "Espanyol",
+      "espnName": "Espanyol",
+      "abbr": "ESP",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png",
+      "general": {
+        "pj": 13,
+        "pts": 15,
+        "v": 4,
+        "e": 3,
+        "d": 6,
+        "gf": 14,
+        "gc": 14,
+        "dg": 0
+      },
+      "home": {
+        "pj": 6,
+        "pts": 5,
+        "v": 1,
+        "e": 2,
+        "d": 3,
+        "gf": 6,
+        "gc": 7,
+        "dg": -1
+      },
+      "away": {
+        "pj": 7,
+        "pts": 10,
+        "v": 3,
+        "e": 1,
+        "d": 3,
+        "gf": 8,
+        "gc": 7,
+        "dg": 1
+      },
+      "form": [
+        {
+          "date": "2026-10-17T12:00Z",
+          "res": "D",
+          "loc": "L",
+          "opp": "Atlético",
+          "oppAbbr": "ATM",
+          "score": "0-1"
+        },
+        {
+          "date": "2026-10-24T14:15Z",
+          "res": "D",
+          "loc": "V",
+          "opp": "Racing",
+          "oppAbbr": "RAC",
+          "score": "1-2"
+        },
+        {
+          "date": "2026-10-30T20:00Z",
+          "res": "V",
+          "loc": "V",
+          "opp": "Villarreal",
+          "oppAbbr": "VIL",
+          "score": "1-0"
+        },
+        {
+          "date": "2026-11-07T15:15Z",
+          "res": "E",
+          "loc": "L",
+          "opp": "Deportivo",
+          "oppAbbr": "DEP",
+          "score": "0-0"
+        },
+        {
+          "date": "2026-11-20T20:00Z",
+          "res": "V",
+          "loc": "V",
+          "opp": "Athletic",
+          "oppAbbr": "ATH",
+          "score": "1-0"
+        }
+      ],
+      "upcoming": [
+        {
+          "date": "2026-11-30T20:00Z",
+          "loc": "L",
+          "opp": "Getafe",
+          "oppAbbr": "GET"
+        },
+        {
+          "date": "2026-12-04T20:00Z",
+          "loc": "V",
+          "opp": "Alavés",
+          "oppAbbr": "ALA"
+        },
+        {
+          "date": "2026-12-14T20:00Z",
+          "loc": "L",
+          "opp": "Celta",
+          "oppAbbr": "CEL"
+        },
+        {
+          "date": "2026-12-20T20:00Z",
+          "loc": "V",
+          "opp": "Valencia",
+          "oppAbbr": "VAL"
+        },
+        {
+          "date": "2027-01-03T20:00Z",
+          "loc": "L",
+          "opp": "Barcelona",
+          "oppAbbr": "BAR"
+        }
+      ]
+    },
+    {
+      "id": "90",
+      "rank": 12,
+      "team": "Deportivo",
+      "espnName": "Deportivo",
+      "abbr": "DEP",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png",
+      "general": {
+        "pj": 13,
+        "pts": 15,
+        "v": 3,
+        "e": 6,
+        "d": 4,
+        "gf": 16,
+        "gc": 17,
+        "dg": -1
+      },
+      "home": {
+        "pj": 6,
+        "pts": 9,
+        "v": 2,
+        "e": 3,
+        "d": 1,
+        "gf": 8,
+        "gc": 6,
+        "dg": 2
+      },
+      "away": {
+        "pj": 7,
+        "pts": 6,
+        "v": 1,
+        "e": 3,
+        "d": 3,
+        "gf": 8,
+        "gc": 11,
+        "dg": -3
+      },
+      "form": [
+        {
+          "date": "2026-10-16T19:00Z",
+          "res": "E",
+          "loc": "L",
+          "opp": "Levante",
+          "oppAbbr": "LEV",
+          "score": "1-1"
+        },
+        {
+          "date": "2026-10-24T19:00Z",
+          "res": "D",
+          "loc": "V",
+          "opp": "Atlético",
+          "oppAbbr": "ATM",
+          "score": "0-1"
+        },
+        {
+          "date": "2026-11-02T20:00Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Osasuna",
+          "oppAbbr": "OSA",
+          "score": "2-1"
+        },
+        {
+          "date": "2026-11-07T15:15Z",
+          "res": "E",
+          "loc": "V",
+          "opp": "Espanyol",
+          "oppAbbr": "ESP",
+          "score": "0-0"
+        },
+        {
+          "date": "2026-11-21T13:00Z",
+          "res": "D",
+          "loc": "V",
+          "opp": "Alavés",
+          "oppAbbr": "ALA",
+          "score": "1-3"
+        }
+      ],
+      "upcoming": [
+        {
+          "date": "2026-11-29T15:15Z",
+          "loc": "L",
+          "opp": "Barcelona",
+          "oppAbbr": "BAR"
+        },
+        {
+          "date": "2026-12-05T13:00Z",
+          "loc": "V",
+          "opp": "Racing",
+          "oppAbbr": "RAC"
+        },
+        {
+          "date": "2026-12-13T15:15Z",
+          "loc": "L",
+          "opp": "Athletic",
+          "oppAbbr": "ATH"
+        },
+        {
+          "date": "2026-12-20T20:00Z",
+          "loc": "L",
+          "opp": "Real Madrid",
+          "oppAbbr": "RMA"
+        },
+        {
+          "date": "2027-01-03T20:00Z",
+          "loc": "V",
+          "opp": "Celta",
+          "oppAbbr": "CEL"
+        }
+      ]
+    },
+    {
+      "id": "97",
+      "rank": 13,
+      "team": "Osasuna",
+      "espnName": "Osasuna",
+      "abbr": "OSA",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png",
+      "general": {
+        "pj": 13,
+        "pts": 15,
+        "v": 4,
+        "e": 3,
+        "d": 6,
+        "gf": 13,
+        "gc": 23,
+        "dg": -10
+      },
+      "home": {
+        "pj": 7,
+        "pts": 12,
+        "v": 3,
+        "e": 3,
+        "d": 1,
+        "gf": 6,
+        "gc": 4,
+        "dg": 2
+      },
+      "away": {
+        "pj": 6,
+        "pts": 3,
+        "v": 1,
+        "e": 0,
+        "d": 5,
+        "gf": 7,
+        "gc": 19,
+        "dg": -12
+      },
+      "form": [
+        {
+          "date": "2026-10-18T12:00Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Racing",
+          "oppAbbr": "RAC",
+          "score": "2-0"
+        },
+        {
+          "date": "2026-10-26T20:00Z",
+          "res": "D",
+          "loc": "V",
+          "opp": "Sevilla",
+          "oppAbbr": "SEV",
+          "score": "0-2"
+        },
+        {
+          "date": "2026-11-02T20:00Z",
+          "res": "D",
+          "loc": "V",
+          "opp": "Deportivo",
+          "oppAbbr": "DEP",
+          "score": "1-2"
+        },
+        {
+          "date": "2026-11-07T17:30Z",
+          "res": "E",
+          "loc": "L",
+          "opp": "Athletic",
+          "oppAbbr": "ATH",
+          "score": "1-1"
+        },
+        {
+          "date": "2026-11-22T17:30Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Málaga",
+          "oppAbbr": "MCF",
+          "score": "1-0"
+        }
+      ],
+      "upcoming": [
+        {
+          "date": "2026-11-29T13:00Z",
+          "loc": "V",
+          "opp": "Valencia",
+          "oppAbbr": "VAL"
+        },
+        {
+          "date": "2026-12-06T13:00Z",
+          "loc": "L",
+          "opp": "Elche",
+          "oppAbbr": "ELC"
+        },
+        {
+          "date": "2026-12-13T20:00Z",
+          "loc": "V",
+          "opp": "Real Madrid",
+          "oppAbbr": "RMA"
+        },
+        {
+          "date": "2026-12-20T20:00Z",
+          "loc": "L",
+          "opp": "Villarreal",
+          "oppAbbr": "VIL"
+        },
+        {
+          "date": "2027-01-03T20:00Z",
+          "loc": "V",
+          "opp": "Real Sociedad",
+          "oppAbbr": "RSO"
+        }
+      ]
+    },
+    {
+      "id": "85",
+      "rank": 14,
+      "team": "Celta",
+      "espnName": "Celta Vigo",
+      "abbr": "CEL",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png",
+      "general": {
+        "pj": 13,
+        "pts": 13,
+        "v": 2,
+        "e": 7,
+        "d": 4,
+        "gf": 11,
+        "gc": 12,
+        "dg": -1
+      },
+      "home": {
+        "pj": 7,
+        "pts": 9,
+        "v": 2,
+        "e": 3,
+        "d": 2,
+        "gf": 9,
+        "gc": 6,
+        "dg": 3
+      },
+      "away": {
+        "pj": 6,
+        "pts": 4,
+        "v": 0,
+        "e": 4,
+        "d": 2,
+        "gf": 2,
+        "gc": 6,
+        "dg": -4
+      },
+      "form": [
+        {
+          "date": "2026-10-18T14:15Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Alavés",
+          "oppAbbr": "ALA",
+          "score": "2-1"
+        },
+        {
+          "date": "2026-10-25T15:15Z",
+          "res": "E",
+          "loc": "L",
+          "opp": "Betis",
+          "oppAbbr": "BET",
+          "score": "0-0"
+        },
+        {
+          "date": "2026-10-31T15:15Z",
+          "res": "D",
+          "loc": "V",
+          "opp": "Rayo Vallecano",
+          "oppAbbr": "RAY",
+          "score": "0-3"
+        },
+        {
+          "date": "2026-11-08T17:30Z",
+          "res": "E",
+          "loc": "L",
+          "opp": "Levante",
+          "oppAbbr": "LEV",
+          "score": "0-0"
+        },
+        {
+          "date": "2026-11-21T20:00Z",
+          "res": "D",
+          "loc": "V",
+          "opp": "Real Madrid",
+          "oppAbbr": "RMA",
+          "score": "1-2"
+        }
+      ],
+      "upcoming": [
+        {
+          "date": "2026-11-29T17:30Z",
+          "loc": "L",
+          "opp": "Villarreal",
+          "oppAbbr": "VIL"
+        },
+        {
+          "date": "2026-12-05T20:00Z",
+          "loc": "V",
+          "opp": "Barcelona",
+          "oppAbbr": "BAR"
+        },
+        {
+          "date": "2026-12-14T20:00Z",
+          "loc": "V",
+          "opp": "Espanyol",
+          "oppAbbr": "ESP"
+        },
+        {
+          "date": "2026-12-20T20:00Z",
+          "loc": "L",
+          "opp": "Atlético",
+          "oppAbbr": "ATM"
+        },
+        {
+          "date": "2027-01-03T20:00Z",
+          "loc": "L",
+          "opp": "Deportivo",
+          "oppAbbr": "DEP"
+        }
+      ]
+    },
+    {
+      "id": "1538",
+      "rank": 15,
+      "team": "Levante",
+      "espnName": "Levante",
+      "abbr": "LEV",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png",
+      "general": {
+        "pj": 13,
+        "pts": 12,
+        "v": 2,
+        "e": 6,
+        "d": 5,
+        "gf": 17,
+        "gc": 22,
+        "dg": -5
+      },
+      "home": {
+        "pj": 6,
+        "pts": 8,
+        "v": 2,
+        "e": 2,
+        "d": 2,
+        "gf": 14,
+        "gc": 13,
+        "dg": 1
+      },
+      "away": {
+        "pj": 7,
+        "pts": 4,
+        "v": 0,
+        "e": 4,
+        "d": 3,
+        "gf": 3,
+        "gc": 9,
+        "dg": -6
+      },
+      "form": [
+        {
+          "date": "2026-10-21T18:00Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Athletic",
+          "oppAbbr": "ATH",
+          "score": "3-1"
+        },
+        {
+          "date": "2026-10-25T17:30Z",
+          "res": "D",
+          "loc": "V",
+          "opp": "Real Sociedad",
+          "oppAbbr": "RSO",
+          "score": "1-2"
+        },
+        {
+          "date": "2026-10-31T13:00Z",
+          "res": "D",
+          "loc": "L",
+          "opp": "Atlético",
+          "oppAbbr": "ATM",
+          "score": "0-2"
+        },
+        {
+          "date": "2026-11-08T17:30Z",
+          "res": "E",
+          "loc": "V",
+          "opp": "Celta",
+          "oppAbbr": "CEL",
+          "score": "0-0"
+        },
+        {
+          "date": "2026-11-23T20:00Z",
+          "res": "E",
+          "loc": "L",
+          "opp": "Elche",
+          "oppAbbr": "ELC",
+          "score": "1-1"
+        }
+      ],
+      "upcoming": [
+        {
+          "date": "2026-11-27T20:00Z",
+          "loc": "L",
+          "opp": "Racing",
+          "oppAbbr": "RAC"
+        },
+        {
+          "date": "2026-12-05T15:15Z",
+          "loc": "V",
+          "opp": "Rayo Vallecano",
+          "oppAbbr": "RAY"
+        },
+        {
+          "date": "2026-12-12T13:00Z",
+          "loc": "L",
+          "opp": "Alavés",
+          "oppAbbr": "ALA"
+        },
+        {
+          "date": "2026-12-20T20:00Z",
+          "loc": "V",
+          "opp": "Getafe",
+          "oppAbbr": "GET"
+        },
+        {
+          "date": "2027-01-03T20:00Z",
+          "loc": "L",
+          "opp": "Valencia",
+          "oppAbbr": "VAL"
+        }
+      ]
+    },
+    {
+      "id": "101",
+      "rank": 16,
+      "team": "Rayo Vallecano",
+      "espnName": "Rayo Vallecano",
+      "abbr": "RAY",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png",
+      "general": {
+        "pj": 12,
+        "pts": 12,
+        "v": 3,
+        "e": 3,
+        "d": 6,
+        "gf": 15,
+        "gc": 22,
+        "dg": -7
+      },
+      "home": {
+        "pj": 6,
+        "pts": 10,
+        "v": 3,
+        "e": 1,
+        "d": 2,
+        "gf": 9,
+        "gc": 8,
+        "dg": 1
+      },
+      "away": {
+        "pj": 6,
+        "pts": 2,
+        "v": 0,
+        "e": 2,
+        "d": 4,
+        "gf": 6,
+        "gc": 14,
+        "dg": -8
+      },
+      "form": [
+        {
+          "date": "2026-10-19T19:00Z",
+          "res": "E",
+          "loc": "V",
+          "opp": "Getafe",
+          "oppAbbr": "GET",
+          "score": "1-1"
+        },
+        {
+          "date": "2026-10-24T12:00Z",
+          "res": "D",
+          "loc": "L",
+          "opp": "Elche",
+          "oppAbbr": "ELC",
+          "score": "0-3"
+        },
+        {
+          "date": "2026-10-31T15:15Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Celta",
+          "oppAbbr": "CEL",
+          "score": "3-0"
+        },
+        {
+          "date": "2026-11-08T15:15Z",
+          "res": "D",
+          "loc": "V",
+          "opp": "Real Sociedad",
+          "oppAbbr": "RSO",
+          "score": "0-1"
+        },
+        {
+          "date": "2026-11-21T15:15Z",
+          "res": "D",
+          "loc": "L",
+          "opp": "Valencia",
+          "oppAbbr": "VAL",
+          "score": "0-1"
+        }
+      ],
+      "upcoming": [
+        {
+          "date": "2026-11-28T13:00Z",
+          "loc": "V",
+          "opp": "Betis",
+          "oppAbbr": "BET"
+        },
+        {
+          "date": "2026-12-05T15:15Z",
+          "loc": "L",
+          "opp": "Levante",
+          "oppAbbr": "LEV"
+        },
+        {
+          "date": "2026-12-12T15:15Z",
+          "loc": "V",
+          "opp": "Villarreal",
+          "oppAbbr": "VIL"
+        },
+        {
+          "date": "2026-12-20T20:00Z",
+          "loc": "L",
+          "opp": "Málaga",
+          "oppAbbr": "MCF"
+        },
+        {
+          "date": "2027-01-03T20:00Z",
+          "loc": "L",
+          "opp": "Atlético",
+          "oppAbbr": "ATM"
+        }
+      ]
+    },
+    {
+      "id": "94",
+      "rank": 17,
+      "team": "Valencia",
+      "espnName": "Valencia",
+      "abbr": "VAL",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png",
+      "general": {
+        "pj": 13,
+        "pts": 12,
+        "v": 3,
+        "e": 3,
+        "d": 7,
+        "gf": 9,
+        "gc": 20,
+        "dg": -11
+      },
+      "home": {
+        "pj": 7,
+        "pts": 2,
+        "v": 0,
+        "e": 2,
+        "d": 5,
+        "gf": 3,
+        "gc": 14,
+        "dg": -11
+      },
+      "away": {
+        "pj": 6,
+        "pts": 10,
+        "v": 3,
+        "e": 1,
+        "d": 2,
+        "gf": 6,
+        "gc": 6,
+        "dg": 0
+      },
+      "form": [
+        {
+          "date": "2026-10-17T19:00Z",
+          "res": "E",
+          "loc": "L",
+          "opp": "Athletic",
+          "oppAbbr": "ATH",
+          "score": "0-0"
+        },
+        {
+          "date": "2026-10-24T16:30Z",
+          "res": "D",
+          "loc": "L",
+          "opp": "Villarreal",
+          "oppAbbr": "VIL",
+          "score": "1-2"
+        },
+        {
+          "date": "2026-11-01T17:30Z",
+          "res": "V",
+          "loc": "V",
+          "opp": "Elche",
+          "oppAbbr": "ELC",
+          "score": "1-0"
+        },
+        {
+          "date": "2026-11-07T20:00Z",
+          "res": "D",
+          "loc": "L",
+          "opp": "Real Madrid",
+          "oppAbbr": "RMA",
+          "score": "0-3"
+        },
+        {
+          "date": "2026-11-21T15:15Z",
+          "res": "V",
+          "loc": "V",
+          "opp": "Rayo Vallecano",
+          "oppAbbr": "RAY",
+          "score": "1-0"
+        }
+      ],
+      "upcoming": [
+        {
+          "date": "2026-11-29T13:00Z",
+          "loc": "L",
+          "opp": "Osasuna",
+          "oppAbbr": "OSA"
+        },
+        {
+          "date": "2026-12-06T17:30Z",
+          "loc": "V",
+          "opp": "Getafe",
+          "oppAbbr": "GET"
+        },
+        {
+          "date": "2026-12-13T13:00Z",
+          "loc": "V",
+          "opp": "Atlético",
+          "oppAbbr": "ATM"
+        },
+        {
+          "date": "2026-12-20T20:00Z",
+          "loc": "L",
+          "opp": "Espanyol",
+          "oppAbbr": "ESP"
+        },
+        {
+          "date": "2027-01-03T20:00Z",
+          "loc": "V",
+          "opp": "Levante",
+          "oppAbbr": "LEV"
+        }
+      ]
+    },
+    {
+      "id": "2922",
+      "rank": 18,
+      "team": "Getafe",
+      "espnName": "Getafe",
+      "abbr": "GET",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png",
+      "general": {
+        "pj": 13,
+        "pts": 12,
+        "v": 3,
+        "e": 3,
+        "d": 7,
+        "gf": 8,
+        "gc": 21,
+        "dg": -13
+      },
+      "home": {
+        "pj": 7,
+        "pts": 12,
+        "v": 3,
+        "e": 3,
+        "d": 1,
+        "gf": 8,
+        "gc": 7,
+        "dg": 1
+      },
+      "away": {
+        "pj": 6,
+        "pts": 0,
+        "v": 0,
+        "e": 0,
+        "d": 6,
+        "gf": 0,
+        "gc": 14,
+        "dg": -14
+      },
+      "form": [
+        {
+          "date": "2026-10-19T19:00Z",
+          "res": "E",
+          "loc": "L",
+          "opp": "Rayo Vallecano",
+          "oppAbbr": "RAY",
+          "score": "1-1"
+        },
+        {
+          "date": "2026-10-25T13:00Z",
+          "res": "D",
+          "loc": "V",
+          "opp": "Athletic",
+          "oppAbbr": "ATH",
+          "score": "0-4"
+        },
+        {
+          "date": "2026-11-01T13:00Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Sevilla",
+          "oppAbbr": "SEV",
+          "score": "3-1"
+        },
+        {
+          "date": "2026-11-08T17:30Z",
+          "res": "D",
+          "loc": "V",
+          "opp": "Villarreal",
+          "oppAbbr": "VIL",
+          "score": "0-2"
+        },
+        {
+          "date": "2026-11-22T20:00Z",
+          "res": "D",
+          "loc": "L",
+          "opp": "Atlético",
+          "oppAbbr": "ATM",
+          "score": "0-3"
+        }
+      ],
+      "upcoming": [
+        {
+          "date": "2026-11-30T20:00Z",
+          "loc": "V",
+          "opp": "Espanyol",
+          "oppAbbr": "ESP"
+        },
+        {
+          "date": "2026-12-06T17:30Z",
+          "loc": "L",
+          "opp": "Valencia",
+          "oppAbbr": "VAL"
+        },
+        {
+          "date": "2026-12-13T17:30Z",
+          "loc": "V",
+          "opp": "Real Sociedad",
+          "oppAbbr": "RSO"
+        },
+        {
+          "date": "2026-12-20T20:00Z",
+          "loc": "L",
+          "opp": "Levante",
+          "oppAbbr": "LEV"
+        },
+        {
+          "date": "2027-01-03T20:00Z",
+          "loc": "V",
+          "opp": "Real Madrid",
+          "oppAbbr": "RMA"
+        }
+      ]
+    },
+    {
+      "id": "3751",
+      "rank": 19,
+      "team": "Elche",
+      "espnName": "Elche",
+      "abbr": "ELC",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png",
+      "general": {
+        "pj": 13,
+        "pts": 11,
+        "v": 2,
+        "e": 5,
+        "d": 6,
+        "gf": 15,
+        "gc": 21,
+        "dg": -6
+      },
+      "home": {
+        "pj": 6,
+        "pts": 1,
+        "v": 0,
+        "e": 1,
+        "d": 5,
+        "gf": 4,
+        "gc": 14,
+        "dg": -10
+      },
+      "away": {
+        "pj": 7,
+        "pts": 10,
+        "v": 2,
+        "e": 4,
+        "d": 1,
+        "gf": 11,
+        "gc": 7,
+        "dg": 4
+      },
+      "form": [
+        {
+          "date": "2026-10-17T14:15Z",
+          "res": "E",
+          "loc": "V",
+          "opp": "Villarreal",
+          "oppAbbr": "VIL",
+          "score": "0-0"
+        },
+        {
+          "date": "2026-10-24T12:00Z",
+          "res": "V",
+          "loc": "V",
+          "opp": "Rayo Vallecano",
+          "oppAbbr": "RAY",
+          "score": "3-0"
+        },
+        {
+          "date": "2026-11-01T17:30Z",
+          "res": "D",
+          "loc": "L",
+          "opp": "Valencia",
+          "oppAbbr": "VAL",
+          "score": "0-1"
+        },
+        {
+          "date": "2026-11-08T13:00Z",
+          "res": "D",
+          "loc": "L",
+          "opp": "Betis",
+          "oppAbbr": "BET",
+          "score": "0-2"
+        },
+        {
+          "date": "2026-11-23T20:00Z",
+          "res": "E",
+          "loc": "V",
+          "opp": "Levante",
+          "oppAbbr": "LEV",
+          "score": "1-1"
+        }
+      ],
+      "upcoming": [
+        {
+          "date": "2026-11-28T17:30Z",
+          "loc": "L",
+          "opp": "Atlético",
+          "oppAbbr": "ATM"
+        },
+        {
+          "date": "2026-12-06T13:00Z",
+          "loc": "V",
+          "opp": "Osasuna",
+          "oppAbbr": "OSA"
+        },
+        {
+          "date": "2026-12-11T20:00Z",
+          "loc": "L",
+          "opp": "Sevilla",
+          "oppAbbr": "SEV"
+        },
+        {
+          "date": "2026-12-20T20:00Z",
+          "loc": "V",
+          "opp": "Alavés",
+          "oppAbbr": "ALA"
+        },
+        {
+          "date": "2027-01-03T20:00Z",
+          "loc": "V",
+          "opp": "Málaga",
+          "oppAbbr": "MCF"
+        }
+      ]
+    },
+    {
+      "id": "99",
+      "rank": 20,
+      "team": "Málaga",
+      "espnName": "Málaga",
+      "abbr": "MCF",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png",
+      "general": {
+        "pj": 13,
+        "pts": 5,
+        "v": 0,
+        "e": 5,
+        "d": 8,
+        "gf": 9,
+        "gc": 24,
+        "dg": -15
+      },
+      "home": {
+        "pj": 6,
+        "pts": 3,
+        "v": 0,
+        "e": 3,
+        "d": 3,
+        "gf": 6,
+        "gc": 12,
+        "dg": -6
+      },
+      "away": {
+        "pj": 7,
+        "pts": 2,
+        "v": 0,
+        "e": 2,
+        "d": 5,
+        "gf": 3,
+        "gc": 12,
+        "dg": -9
+      },
+      "form": [
+        {
+          "date": "2026-10-18T16:30Z",
+          "res": "D",
+          "loc": "L",
+          "opp": "Real Sociedad",
+          "oppAbbr": "RSO",
+          "score": "2-5"
+        },
+        {
+          "date": "2026-10-23T19:00Z",
+          "res": "E",
+          "loc": "V",
+          "opp": "Alavés",
+          "oppAbbr": "ALA",
+          "score": "1-1"
+        },
+        {
+          "date": "2026-10-31T17:30Z",
+          "res": "D",
+          "loc": "V",
+          "opp": "Betis",
+          "oppAbbr": "BET",
+          "score": "1-2"
+        },
+        {
+          "date": "2026-11-07T13:00Z",
+          "res": "D",
+          "loc": "L",
+          "opp": "Racing",
+          "oppAbbr": "RAC",
+          "score": "1-2"
+        },
+        {
+          "date": "2026-11-22T17:30Z",
+          "res": "D",
+          "loc": "V",
+          "opp": "Osasuna",
+          "oppAbbr": "OSA",
+          "score": "0-1"
+        }
+      ],
+      "upcoming": [
+        {
+          "date": "2026-11-28T15:15Z",
+          "loc": "L",
+          "opp": "Athletic",
+          "oppAbbr": "ATH"
+        },
+        {
+          "date": "2026-12-07T20:00Z",
+          "loc": "V",
+          "opp": "Sevilla",
+          "oppAbbr": "SEV"
+        },
+        {
+          "date": "2026-12-12T17:30Z",
+          "loc": "L",
+          "opp": "Barcelona",
+          "oppAbbr": "BAR"
+        },
+        {
+          "date": "2026-12-20T20:00Z",
+          "loc": "V",
+          "opp": "Rayo Vallecano",
+          "oppAbbr": "RAY"
+        },
+        {
+          "date": "2027-01-03T20:00Z",
+          "loc": "L",
+          "opp": "Elche",
+          "oppAbbr": "ELC"
+        }
+      ]
+    }
+  ],
+  "leaders": {
+    "scorers": [
+      {
+        "espnId": "231050",
+        "name": "Raphinha",
+        "team": "Barcelona",
+        "teamAbbr": "BAR",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
+        "position": "DEL",
+        "goals": 15,
+        "assists": 3,
+        "saves": 0,
+        "appearances": 12
+      },
+      {
+        "espnId": "231388",
+        "name": "Kylian Mbappé",
+        "team": "Real Madrid",
+        "teamAbbr": "RMA",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png",
+        "position": "DEL",
+        "goals": 13,
+        "assists": 3,
+        "saves": 0,
+        "appearances": 13
+      },
+      {
+        "espnId": "390389",
+        "name": "Yassir Zabiri",
+        "team": "Racing",
+        "teamAbbr": "RAC",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png",
+        "position": "DEL",
+        "goals": 11,
+        "assists": 0,
+        "saves": 0,
+        "appearances": 13
+      },
+      {
+        "espnId": "362150",
+        "name": "Lamine Yamal",
+        "team": "Barcelona",
+        "teamAbbr": "BAR",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
+        "position": "DEL",
+        "goals": 10,
+        "assists": 9,
+        "saves": 0,
+        "appearances": 13
+      },
+      {
+        "espnId": "207288",
+        "name": "Ante Budimir",
+        "team": "Osasuna",
+        "teamAbbr": "OSA",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png",
+        "position": "DEL",
+        "goals": 9,
+        "assists": 0,
+        "saves": 0,
+        "appearances": 13
+      },
+      {
+        "espnId": "354334",
+        "name": "Fermín López",
+        "team": "Barcelona",
+        "teamAbbr": "BAR",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
+        "position": "MED",
+        "goals": 8,
+        "assists": 5,
+        "saves": 0,
+        "appearances": 12
+      },
+      {
+        "espnId": "276652",
+        "name": "Sergio Camello",
+        "team": "Rayo Vallecano",
+        "teamAbbr": "RAY",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png",
+        "position": "DEL",
+        "goals": 7,
+        "assists": 2,
+        "saves": 0,
+        "appearances": 13
+      },
+      {
+        "espnId": "318773",
+        "name": "Roberto Fernández",
+        "team": "Espanyol",
+        "teamAbbr": "ESP",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png",
+        "position": "DEL",
+        "goals": 7,
+        "assists": 0,
+        "saves": 0,
+        "appearances": 13
+      },
+      {
+        "espnId": "297373",
+        "name": "Álex Baena",
+        "team": "Atlético",
+        "teamAbbr": "ATM",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
+        "position": "MED",
+        "goals": 6,
+        "assists": 3,
+        "saves": 0,
+        "appearances": 13
+      },
+      {
+        "espnId": "207236",
+        "name": "Lucas Boyé",
+        "team": "Alavés",
+        "teamAbbr": "ALA",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png",
+        "position": "DEL",
+        "goals": 6,
+        "assists": 1,
+        "saves": 0,
+        "appearances": 12
+      },
+      {
+        "espnId": "301684",
+        "name": "Fer Niño",
+        "team": "Elche",
+        "teamAbbr": "ELC",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png",
+        "position": "DEL",
+        "goals": 6,
+        "assists": 0,
+        "saves": 0,
+        "appearances": 13
+      },
+      {
+        "espnId": "291281",
+        "name": "Jude Bellingham",
+        "team": "Real Madrid",
+        "teamAbbr": "RMA",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png",
+        "position": "MED",
+        "goals": 5,
+        "assists": 3,
+        "saves": 0,
+        "appearances": 13
+      },
+      {
+        "espnId": "122260",
+        "name": "Pierre-Emerick Aubameyang",
+        "team": "Deportivo",
+        "teamAbbr": "DEP",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png",
+        "position": "DEL",
+        "goals": 5,
+        "assists": 2,
+        "saves": 0,
+        "appearances": 10
+      },
+      {
+        "espnId": "166396",
+        "name": "Alejandro Grimaldo",
+        "team": "Atlético",
+        "teamAbbr": "ATM",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
+        "position": "DEF",
+        "goals": 5,
+        "assists": 2,
+        "saves": 0,
+        "appearances": 12
+      },
+      {
+        "espnId": "373542",
+        "name": "Adrián Niño",
+        "team": "Málaga",
+        "teamAbbr": "MCF",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png",
+        "position": "DEL",
+        "goals": 5,
+        "assists": 1,
+        "saves": 0,
+        "appearances": 9
+      },
+      {
+        "espnId": "267591",
+        "name": "Roger Brugué",
+        "team": "Levante",
+        "teamAbbr": "LEV",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png",
+        "position": "MED",
+        "goals": 5,
+        "assists": 1,
+        "saves": 0,
+        "appearances": 12
+      },
+      {
+        "espnId": "209579",
+        "name": "Álex Berenguer",
+        "team": "Athletic",
+        "teamAbbr": "ATH",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png",
+        "position": "DEL",
+        "goals": 4,
+        "assists": 4,
+        "saves": 0,
+        "appearances": 13
+      },
+      {
+        "espnId": "198832",
+        "name": "Mariano Díaz",
+        "team": "Alavés",
+        "teamAbbr": "ALA",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png",
+        "position": "DEL",
+        "goals": 4,
+        "assists": 4,
+        "saves": 0,
+        "appearances": 13
+      },
+      {
+        "espnId": "323838",
+        "name": "Giuliano Simeone",
+        "team": "Atlético",
+        "teamAbbr": "ATM",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
+        "position": "DEL",
+        "goals": 4,
+        "assists": 2,
+        "saves": 0,
+        "appearances": 13
+      },
+      {
+        "espnId": "341367",
+        "name": "Orri Óskarsson",
+        "team": "Real Sociedad",
+        "teamAbbr": "RSO",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png",
+        "position": "DEL",
+        "goals": 4,
+        "assists": 0,
+        "saves": 0,
+        "appearances": 11
+      },
+      {
+        "espnId": "306263",
+        "name": "Luka Sucic",
+        "team": "Real Sociedad",
+        "teamAbbr": "RSO",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png",
+        "position": "MED",
+        "goals": 4,
+        "assists": 0,
+        "saves": 0,
+        "appearances": 12
+      },
+      {
+        "espnId": "310452",
+        "name": "Arda Güler",
+        "team": "Real Madrid",
+        "teamAbbr": "RMA",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png",
+        "position": "MED",
+        "goals": 3,
+        "assists": 4,
+        "saves": 0,
+        "appearances": 13
+      },
+      {
+        "espnId": "273499",
+        "name": "Jonathan David",
+        "team": "Atlético",
+        "teamAbbr": "ATM",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
+        "position": "DEL",
+        "goals": 3,
+        "assists": 2,
+        "saves": 0,
+        "appearances": 7
+      },
+      {
+        "espnId": "365821",
+        "name": "Isaac Romero",
+        "team": "Sevilla",
+        "teamAbbr": "SEV",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png",
+        "position": "DEL",
+        "goals": 3,
+        "assists": 2,
+        "saves": 0,
+        "appearances": 11
+      },
+      {
+        "espnId": "229018",
+        "name": "Mikel Oyarzabal",
+        "team": "Real Sociedad",
+        "teamAbbr": "RSO",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png",
+        "position": "DEL",
+        "goals": 3,
+        "assists": 2,
+        "saves": 0,
+        "appearances": 12
+      }
+    ],
+    "assists": [
+      {
+        "espnId": "362150",
+        "name": "Lamine Yamal",
+        "team": "Barcelona",
+        "teamAbbr": "BAR",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
+        "position": "DEL",
+        "goals": 10,
+        "assists": 9,
+        "saves": 0,
+        "appearances": 13
+      },
+      {
+        "espnId": "367946",
+        "name": "Javi Hernandez",
+        "team": "Espanyol",
+        "teamAbbr": "ESP",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png",
+        "position": "MED",
+        "goals": 0,
+        "assists": 6,
+        "saves": 0,
+        "appearances": 13
+      },
+      {
+        "espnId": "354334",
+        "name": "Fermín López",
+        "team": "Barcelona",
+        "teamAbbr": "BAR",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
+        "position": "MED",
+        "goals": 8,
+        "assists": 5,
+        "saves": 0,
+        "appearances": 12
+      },
+      {
+        "espnId": "307390",
+        "name": "Alberto Moleiro",
+        "team": "Villarreal",
+        "teamAbbr": "VIL",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png",
+        "position": "MED",
+        "goals": 2,
+        "assists": 5,
+        "saves": 0,
+        "appearances": 13
+      },
+      {
+        "espnId": "209579",
+        "name": "Álex Berenguer",
+        "team": "Athletic",
+        "teamAbbr": "ATH",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png",
+        "position": "DEL",
+        "goals": 4,
+        "assists": 4,
+        "saves": 0,
+        "appearances": 13
+      },
+      {
+        "espnId": "198832",
+        "name": "Mariano Díaz",
+        "team": "Alavés",
+        "teamAbbr": "ALA",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png",
+        "position": "DEL",
+        "goals": 4,
+        "assists": 4,
+        "saves": 0,
+        "appearances": 13
+      },
+      {
+        "espnId": "310452",
+        "name": "Arda Güler",
+        "team": "Real Madrid",
+        "teamAbbr": "RMA",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png",
+        "position": "MED",
+        "goals": 3,
+        "assists": 4,
+        "saves": 0,
+        "appearances": 13
+      },
+      {
+        "espnId": "268782",
+        "name": "Anthony Gordon",
+        "team": "Barcelona",
+        "teamAbbr": "BAR",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
+        "position": "DEL",
+        "goals": 2,
+        "assists": 4,
+        "saves": 0,
+        "appearances": 12
+      },
+      {
+        "espnId": "277206",
+        "name": "Julián Álvarez",
+        "team": "Atlético",
+        "teamAbbr": "ATM",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
+        "position": "DEL",
+        "goals": 1,
+        "assists": 4,
+        "saves": 0,
+        "appearances": 9
+      },
+      {
+        "espnId": "374621",
+        "name": "Ángel Pérez",
+        "team": "Alavés",
+        "teamAbbr": "ALA",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png",
+        "position": "DEF",
+        "goals": 1,
+        "assists": 4,
+        "saves": 0,
+        "appearances": 12
+      },
+      {
+        "espnId": "231050",
+        "name": "Raphinha",
+        "team": "Barcelona",
+        "teamAbbr": "BAR",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
+        "position": "DEL",
+        "goals": 15,
+        "assists": 3,
+        "saves": 0,
+        "appearances": 12
+      },
+      {
+        "espnId": "231388",
+        "name": "Kylian Mbappé",
+        "team": "Real Madrid",
+        "teamAbbr": "RMA",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png",
+        "position": "DEL",
+        "goals": 13,
+        "assists": 3,
+        "saves": 0,
+        "appearances": 13
+      },
+      {
+        "espnId": "297373",
+        "name": "Álex Baena",
+        "team": "Atlético",
+        "teamAbbr": "ATM",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
+        "position": "MED",
+        "goals": 6,
+        "assists": 3,
+        "saves": 0,
+        "appearances": 13
+      },
+      {
+        "espnId": "291281",
+        "name": "Jude Bellingham",
+        "team": "Real Madrid",
+        "teamAbbr": "RMA",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png",
+        "position": "MED",
+        "goals": 5,
+        "assists": 3,
+        "saves": 0,
+        "appearances": 13
+      },
+      {
+        "espnId": "252107",
+        "name": "Vinícius Júnior",
+        "team": "Real Madrid",
+        "teamAbbr": "RMA",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png",
+        "position": "DEL",
+        "goals": 1,
+        "assists": 3,
+        "saves": 0,
+        "appearances": 9
+      },
+      {
+        "espnId": "406379",
+        "name": "Job Ochieng",
+        "team": "Real Sociedad",
+        "teamAbbr": "RSO",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png",
+        "position": "DEL",
+        "goals": 1,
+        "assists": 3,
+        "saves": 0,
+        "appearances": 9
+      },
+      {
+        "espnId": "227765",
+        "name": "Dani Olmo",
+        "team": "Barcelona",
+        "teamAbbr": "BAR",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
+        "position": "MED",
+        "goals": 1,
+        "assists": 3,
+        "saves": 0,
+        "appearances": 10
+      },
+      {
+        "espnId": "277307",
+        "name": "Youssouf Fofana",
+        "team": "Sevilla",
+        "teamAbbr": "SEV",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png",
+        "position": "MED",
+        "goals": 1,
+        "assists": 3,
+        "saves": 0,
+        "appearances": 10
+      },
+      {
+        "espnId": "235072",
+        "name": "Carlos Soler",
+        "team": "Real Sociedad",
+        "teamAbbr": "RSO",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png",
+        "position": "MED",
+        "goals": 1,
+        "assists": 3,
+        "saves": 0,
+        "appearances": 12
+      },
+      {
+        "espnId": "250465",
+        "name": "Pedri",
+        "team": "Barcelona",
+        "teamAbbr": "BAR",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
+        "position": "MED",
+        "goals": 1,
+        "assists": 3,
+        "saves": 0,
+        "appearances": 13
+      },
+      {
+        "espnId": "192133",
+        "name": "Ayoze Pérez",
+        "team": "Villarreal",
+        "teamAbbr": "VIL",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png",
+        "position": "DEL",
+        "goals": 1,
+        "assists": 3,
+        "saves": 0,
+        "appearances": 13
+      },
+      {
+        "espnId": "203711",
+        "name": "Unai López",
+        "team": "Rayo Vallecano",
+        "teamAbbr": "RAY",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png",
+        "position": "MED",
+        "goals": 1,
+        "assists": 3,
+        "saves": 0,
+        "appearances": 13
+      },
+      {
+        "espnId": "284699",
+        "name": "Iñigo Vicente",
+        "team": "Racing",
+        "teamAbbr": "RAC",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png",
+        "position": "DEL",
+        "goals": 0,
+        "assists": 3,
+        "saves": 0,
+        "appearances": 13
+      },
+      {
+        "espnId": "16340",
+        "name": "Javier Guerra",
+        "team": "Valencia",
+        "teamAbbr": "VAL",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png",
+        "position": "DEF",
+        "goals": 0,
+        "assists": 3,
+        "saves": 0,
+        "appearances": 13
+      },
+      {
+        "espnId": "259916",
+        "name": "José Antonio Morente",
+        "team": "Elche",
+        "teamAbbr": "ELC",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png",
+        "position": "DEL",
+        "goals": 0,
+        "assists": 3,
+        "saves": 0,
+        "appearances": 13
+      }
+    ],
+    "saves": [
+      {
+        "espnId": "283892",
+        "name": "Álvaro Valles",
+        "team": "Betis",
+        "teamAbbr": "BET",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png",
+        "position": "POR",
+        "goals": 0,
+        "assists": 0,
+        "saves": 52,
+        "appearances": 13
+      },
+      {
+        "espnId": "323970",
+        "name": "Julen Agirrezabala",
+        "team": "Racing",
+        "teamAbbr": "RAC",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png",
+        "position": "POR",
+        "goals": 0,
+        "assists": 0,
+        "saves": 52,
+        "appearances": 13
+      },
+      {
+        "espnId": "165334",
+        "name": "Stole Dimitrievski",
+        "team": "Valencia",
+        "teamAbbr": "VAL",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png",
+        "position": "POR",
+        "goals": 0,
+        "assists": 0,
+        "saves": 49,
+        "appearances": 13
+      },
+      {
+        "espnId": "196339",
+        "name": "David Soria",
+        "team": "Getafe",
+        "teamAbbr": "GET",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png",
+        "position": "POR",
+        "goals": 0,
+        "assists": 0,
+        "saves": 47,
+        "appearances": 13
+      },
+      {
+        "espnId": "240624",
+        "name": "Alfonso Herrero",
+        "team": "Málaga",
+        "teamAbbr": "MCF",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png",
+        "position": "POR",
+        "goals": 0,
+        "assists": 0,
+        "saves": 46,
+        "appearances": 13
+      },
+      {
+        "espnId": "141438",
+        "name": "Mathew Ryan",
+        "team": "Levante",
+        "teamAbbr": "LEV",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png",
+        "position": "POR",
+        "goals": 0,
+        "assists": 0,
+        "saves": 45,
+        "appearances": 13
+      },
+      {
+        "espnId": "144720",
+        "name": "Andrei Radu",
+        "team": "Celta",
+        "teamAbbr": "CEL",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png",
+        "position": "POR",
+        "goals": 0,
+        "assists": 0,
+        "saves": 44,
+        "appearances": 13
+      },
+      {
+        "espnId": "217319",
+        "name": "Álex Remiro",
+        "team": "Real Sociedad",
+        "teamAbbr": "RSO",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png",
+        "position": "POR",
+        "goals": 0,
+        "assists": 0,
+        "saves": 41,
+        "appearances": 12
+      },
+      {
+        "espnId": "300926",
+        "name": "Leo Román",
+        "team": "Deportivo",
+        "teamAbbr": "DEP",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png",
+        "position": "POR",
+        "goals": 0,
+        "assists": 0,
+        "saves": 41,
+        "appearances": 13
+      },
+      {
+        "espnId": "173749",
+        "name": "Matías Dituro",
+        "team": "Elche",
+        "teamAbbr": "ELC",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png",
+        "position": "POR",
+        "goals": 0,
+        "assists": 0,
+        "saves": 38,
+        "appearances": 13
+      },
+      {
+        "espnId": "159135",
+        "name": "Odisseas Vlachodimos",
+        "team": "Sevilla",
+        "teamAbbr": "SEV",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png",
+        "position": "POR",
+        "goals": 0,
+        "assists": 0,
+        "saves": 36,
+        "appearances": 13
+      },
+      {
+        "espnId": "222375",
+        "name": "Unai Simón",
+        "team": "Athletic",
+        "teamAbbr": "ATH",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png",
+        "position": "POR",
+        "goals": 0,
+        "assists": 0,
+        "saves": 36,
+        "appearances": 13
+      },
+      {
+        "espnId": "200910",
+        "name": "Antonio Sivera",
+        "team": "Alavés",
+        "teamAbbr": "ALA",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png",
+        "position": "POR",
+        "goals": 0,
+        "assists": 1,
+        "saves": 36,
+        "appearances": 13
+      },
+      {
+        "espnId": "134283",
+        "name": "Thibaut Courtois",
+        "team": "Real Madrid",
+        "teamAbbr": "RMA",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png",
+        "position": "POR",
+        "goals": 0,
+        "assists": 0,
+        "saves": 35,
+        "appearances": 12
+      },
+      {
+        "espnId": "149622",
+        "name": "Jan Oblak",
+        "team": "Atlético",
+        "teamAbbr": "ATM",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
+        "position": "POR",
+        "goals": 0,
+        "assists": 0,
+        "saves": 33,
+        "appearances": 13
+      },
+      {
+        "espnId": "307419",
+        "name": "Ángel Fortuño",
+        "team": "Espanyol",
+        "teamAbbr": "ESP",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png",
+        "position": "POR",
+        "goals": 0,
+        "assists": 0,
+        "saves": 30,
+        "appearances": 6
+      },
+      {
+        "espnId": "119620",
+        "name": "Péter Gulácsi",
+        "team": "Villarreal",
+        "teamAbbr": "VIL",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png",
+        "position": "POR",
+        "goals": 0,
+        "assists": 0,
+        "saves": 28,
+        "appearances": 9
+      },
+      {
+        "espnId": "207834",
+        "name": "Emil Audero",
+        "team": "Rayo Vallecano",
+        "teamAbbr": "RAY",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png",
+        "position": "POR",
+        "goals": 0,
+        "assists": 0,
+        "saves": 24,
+        "appearances": 9
+      },
+      {
+        "espnId": "297362",
+        "name": "Joan García",
+        "team": "Barcelona",
+        "teamAbbr": "BAR",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
+        "position": "POR",
+        "goals": 0,
+        "assists": 0,
+        "saves": 23,
+        "appearances": 12
+      },
+      {
+        "espnId": "179211",
+        "name": "Marko Dmitrovic",
+        "team": "Espanyol",
+        "teamAbbr": "ESP",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png",
+        "position": "POR",
+        "goals": 0,
+        "assists": 0,
+        "saves": 22,
+        "appearances": 7
+      },
+      {
+        "espnId": "144759",
+        "name": "Aitor Fernández",
+        "team": "Osasuna",
+        "teamAbbr": "OSA",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png",
+        "position": "POR",
+        "goals": 0,
+        "assists": 0,
+        "saves": 20,
+        "appearances": 6
+      },
+      {
+        "espnId": "191360",
+        "name": "Sergio Herrera",
+        "team": "Osasuna",
+        "teamAbbr": "OSA",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png",
+        "position": "POR",
+        "goals": 0,
+        "assists": 0,
+        "saves": 11,
+        "appearances": 7
+      },
+      {
+        "espnId": "312011",
+        "name": "Unai Marrero",
+        "team": "Real Sociedad",
+        "teamAbbr": "RSO",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png",
+        "position": "POR",
+        "goals": 0,
+        "assists": 0,
+        "saves": 8,
+        "appearances": 1
+      },
+      {
+        "espnId": "192893",
+        "name": "Daniel Cárdenas",
+        "team": "Rayo Vallecano",
+        "teamAbbr": "RAY",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png",
+        "position": "POR",
+        "goals": 0,
+        "assists": 0,
+        "saves": 8,
+        "appearances": 3
+      },
+      {
+        "espnId": "307648",
+        "name": "Luiz Júnior",
+        "team": "Villarreal",
+        "teamAbbr": "VIL",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png",
+        "position": "POR",
+        "goals": 0,
+        "assists": 0,
+        "saves": 6,
+        "appearances": 4
+      }
+    ]
+  },
+  "playerStats": {
+    "barcelona::wojciech szczesny": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 1
+    },
+    "barcelona::dominik livakovic": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 2,
+      "appearances": 1
+    },
+    "barcelona::joan garcia": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 23,
+      "appearances": 12
+    },
+    "barcelona::iker rodriguez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "barcelona::eder aller": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "barcelona::alex campos": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "barcelona::eric garcia": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10
+    },
+    "barcelona::joao cancelo": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 10
+    },
+    "barcelona::andreas christensen": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 7
+    },
+    "barcelona::jules kounde": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 7
+    },
+    "barcelona::gerard martin": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12
+    },
+    "barcelona::alejandro balde": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3
+    },
+    "barcelona::pau cubarsi": {
+      "goals": 0,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 9
+    },
+    "barcelona::xavi espart": {
+      "goals": 1,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 8
+    },
+    "barcelona::guillem victor": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "barcelona::jordi pesquer": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "barcelona::frenkie de jong": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 4
+    },
+    "barcelona::dani olmo": {
+      "goals": 1,
+      "assists": 3,
+      "saves": 0,
+      "appearances": 10
+    },
+    "barcelona::rodri": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 10
+    },
+    "barcelona::pedri": {
+      "goals": 1,
+      "assists": 3,
+      "saves": 0,
+      "appearances": 13
+    },
+    "barcelona::gavi": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 6
+    },
+    "barcelona::fermin lopez": {
+      "goals": 8,
+      "assists": 5,
+      "saves": 0,
+      "appearances": 12
+    },
+    "barcelona::marc bernal": {
+      "goals": 0,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 11
+    },
+    "barcelona::brian farinas": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 2
+    },
+    "barcelona::orian goren": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "barcelona::ebrima tunkara": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "barcelona::gabriel jesus": {
+      "goals": 3,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 7
+    },
+    "barcelona::raphinha": {
+      "goals": 15,
+      "assists": 3,
+      "saves": 0,
+      "appearances": 12
+    },
+    "barcelona::anthony gordon": {
+      "goals": 2,
+      "assists": 4,
+      "saves": 0,
+      "appearances": 12
+    },
+    "barcelona::karim adeyemi": {
+      "goals": 2,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 13
+    },
+    "barcelona::roony bardghji": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "barcelona::lamine yamal": {
+      "goals": 10,
+      "assists": 9,
+      "saves": 0,
+      "appearances": 13
+    },
+    "barcelona::jesse bisiwu": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "barcelona::hamza abdelkarim": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 2
+    },
+    "real madrid::javier navarro": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "real madrid::thibaut courtois": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 35,
+      "appearances": 12
+    },
+    "real madrid::andriy lunin": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 5,
+      "appearances": 1
+    },
+    "real madrid::sergio mestre": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "real madrid::illia voloshyn": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "real madrid::antonio rudiger": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 4
+    },
+    "real madrid::denzel dumfries": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 8
+    },
+    "real madrid::ferland mendy": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "real madrid::trent alexander arnold": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 8
+    },
+    "real madrid::eder militao": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 1
+    },
+    "real madrid::ibrahima konate": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12
+    },
+    "real madrid::marc cucurella": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13
+    },
+    "real madrid::alvaro carreras": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 6
+    },
+    "real madrid::mario rivas": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "real madrid::dean huijsen": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "real madrid::raul asencio": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "real madrid::joan martinez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "real madrid::jesus fortea": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "real madrid::bernardo silva": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 11
+    },
+    "real madrid::federico valverde": {
+      "goals": 1,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 12
+    },
+    "real madrid::brahim diaz": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 6
+    },
+    "real madrid::aurelien tchouameni": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 8
+    },
+    "real madrid::eduardo camavinga": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 12
+    },
+    "real madrid::jude bellingham": {
+      "goals": 5,
+      "assists": 3,
+      "saves": 0,
+      "appearances": 13
+    },
+    "real madrid::arda guler": {
+      "goals": 3,
+      "assists": 4,
+      "saves": 0,
+      "appearances": 13
+    },
+    "real madrid::thiago pitarch": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 1
+    },
+    "real madrid::sergio martinez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "real madrid::jorge cestero": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "real madrid::alexis ciria": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "real madrid::kylian mbappe": {
+      "goals": 13,
+      "assists": 3,
+      "saves": 0,
+      "appearances": 13
+    },
+    "real madrid::vinicius junior": {
+      "goals": 1,
+      "assists": 3,
+      "saves": 0,
+      "appearances": 9
+    },
+    "real madrid::rodrygo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "real madrid::endrick": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5
+    },
+    "real madrid::daniel yanez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "real madrid::carlos espi": {
+      "goals": 3,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 8
+    },
+    "real madrid::yan diomande": {
+      "goals": 3,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 13
+    },
+    "atletico::jan oblak": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 33,
+      "appearances": 13
+    },
+    "atletico::juan musso": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "atletico::salvi esquivel": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "atletico::cristian romero": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 6
+    },
+    "atletico::alejandro grimaldo": {
+      "goals": 5,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 12
+    },
+    "atletico::robin le normand": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 8
+    },
+    "atletico::david hancko": {
+      "goals": 0,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 13
+    },
+    "atletico::marc pubill": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10
+    },
+    "atletico::arnau sola": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "atletico::jorge dominguez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 1
+    },
+    "atletico::daniel martinez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 2
+    },
+    "atletico::javier gil": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "atletico::romeo hueso moya": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "atletico::rodrigo mendoza": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 6
+    },
+    "atletico::koke": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10
+    },
+    "atletico::jorge castillo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "atletico::marcos llorente": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 13
+    },
+    "atletico::lee kang in": {
+      "goals": 2,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 13
+    },
+    "atletico::morten hjulmand": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "atletico::johnny cardoso": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 8
+    },
+    "atletico::alex baena": {
+      "goals": 6,
+      "assists": 3,
+      "saves": 0,
+      "appearances": 13
+    },
+    "atletico::obed vargas": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "atletico::pablo barrios": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 10
+    },
+    "atletico::alexander s rloth": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5
+    },
+    "atletico::ademola lookman": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "atletico::jonathan david": {
+      "goals": 3,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 7
+    },
+    "atletico::julian alvarez": {
+      "goals": 1,
+      "assists": 4,
+      "saves": 0,
+      "appearances": 9
+    },
+    "atletico::giuliano simeone": {
+      "goals": 4,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 13
+    },
+    "atletico::arnau ortiz": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5
+    },
+    "atletico::miguel cubo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "betis::diego conde": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "betis::alvaro valles": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 52,
+      "appearances": 13
+    },
+    "betis::manu gonzalez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "betis::alvaro de pablo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "betis::alejandro postigo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "betis::yan zhuravskyi": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "betis::marc bartra": {
+      "goals": 3,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "betis::hector bellerin": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 12
+    },
+    "betis::diego llorente": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5
+    },
+    "betis::fran garcia": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 11
+    },
+    "betis::junior firpo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 2
+    },
+    "betis::natan": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "betis::valentin gomez": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5
+    },
+    "betis::angel ortiz": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5
+    },
+    "betis::rodrigo riquelme": {
+      "goals": 3,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12
+    },
+    "betis::isco": {
+      "goals": 2,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 12
+    },
+    "betis::dani ceballos": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 8
+    },
+    "betis::giovani lo celso": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 3
+    },
+    "betis::pablo fornals": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 12
+    },
+    "betis::marc roca": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 10
+    },
+    "betis::alvaro fidalgo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 4
+    },
+    "betis::nelson deossa": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 13
+    },
+    "betis::facundo bernal": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 8
+    },
+    "betis::ivan corralejo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "betis::ricardo funez gomez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "betis::aitor ruibal": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3
+    },
+    "betis::troy parrott": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 10
+    },
+    "betis::antony": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12
+    },
+    "betis::iker losada": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "betis::abde ezzalzouli": {
+      "goals": 3,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10
+    },
+    "betis::cucho hernandez": {
+      "goals": 2,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 9
+    },
+    "betis::jose morante": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 2
+    },
+    "betis::rodrigo marina": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "betis::borja alonso cabrera": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "real sociedad::alex remiro": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 41,
+      "appearances": 12
+    },
+    "real sociedad::unai marrero": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 8,
+      "appearances": 1
+    },
+    "real sociedad::aitor fraga": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "real sociedad::igor zubeldia": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "real sociedad::alvaro odriozola": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "real sociedad::aihen munoz": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5
+    },
+    "real sociedad::jon pacheco": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 1
+    },
+    "real sociedad::jon aramburu": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "real sociedad::mamadou sarr": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 7
+    },
+    "real sociedad::hector fort": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 7
+    },
+    "real sociedad::jon martin": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 11
+    },
+    "real sociedad::inaki ruperez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "real sociedad::luken beitia": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3
+    },
+    "real sociedad::carlos soler": {
+      "goals": 1,
+      "assists": 3,
+      "saves": 0,
+      "appearances": 12
+    },
+    "real sociedad::yangel herrera": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "real sociedad::benat turrientes": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 8
+    },
+    "real sociedad::luka sucic": {
+      "goals": 4,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12
+    },
+    "real sociedad::arsen zakharyan": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 6
+    },
+    "real sociedad::pablo marin": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 1
+    },
+    "real sociedad::alex lebarbier": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "real sociedad::jon gorrotxategi": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 10
+    },
+    "real sociedad::ibai aguirre": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "real sociedad::goncalo guedes": {
+      "goals": 3,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 12
+    },
+    "real sociedad::mikel oyarzabal": {
+      "goals": 3,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 12
+    },
+    "real sociedad::takefusa kubo": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 9
+    },
+    "real sociedad::sergio gomez": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 13
+    },
+    "real sociedad::ander barrenetxea": {
+      "goals": 2,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 11
+    },
+    "real sociedad::orri oskarsson": {
+      "goals": 4,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "real sociedad::alex marchal": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5
+    },
+    "real sociedad::job ochieng": {
+      "goals": 1,
+      "assists": 3,
+      "saves": 0,
+      "appearances": 9
+    },
+    "real sociedad::gorka carrera": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "sevilla::rafael romero": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "sevilla::odisseas vlachodimos": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 36,
+      "appearances": 13
+    },
+    "sevilla::fran gonzalez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "sevilla::marcao": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "sevilla::fabio cardoso": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "sevilla::gabriel suazo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13
+    },
+    "sevilla::jose angel carmona": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5
+    },
+    "sevilla::juan iglesias": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13
+    },
+    "sevilla::arouna sangante": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5
+    },
+    "sevilla::andres castrin": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12
+    },
+    "sevilla::enrique salas": {
+      "goals": 2,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "sevilla::julio diaz": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 6
+    },
+    "sevilla::iker ortin": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "sevilla::tamiou miguel kpebane": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "sevilla::jon guridi": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "sevilla::giorgi kochorashvili": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 8
+    },
+    "sevilla::ruben vargas": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 6
+    },
+    "sevilla::youssouf fofana": {
+      "goals": 1,
+      "assists": 3,
+      "saves": 0,
+      "appearances": 10
+    },
+    "sevilla::lucien agoume": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13
+    },
+    "sevilla::manu bueno": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5
+    },
+    "sevilla::edu altozano": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "sevilla::nico guillen": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 2
+    },
+    "sevilla::jesus cruz morales": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "sevilla::chidera ejuke": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "sevilla::alfonso gonzalez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5
+    },
+    "sevilla::felix correia": {
+      "goals": 2,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 9
+    },
+    "sevilla::robbie ure": {
+      "goals": 1,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 13
+    },
+    "sevilla::lucas stassin": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 8
+    },
+    "sevilla::peque": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5
+    },
+    "sevilla::isaac romero": {
+      "goals": 3,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 11
+    },
+    "sevilla::ibrahima sow": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "sevilla::miguel sierra": {
+      "goals": 2,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 8
+    },
+    "sevilla::manuel angel castillo rodriguez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "sevilla::marc scuri marti": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "racing::julen agirrezabala": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 52,
+      "appearances": 13
+    },
+    "racing::laro gomez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "racing::simon eriksson": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "racing::hector mejia": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "racing::jorge salinas": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12
+    },
+    "racing::aaron martin": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 7
+    },
+    "racing::manu": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5
+    },
+    "racing::pablo ramon": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 11
+    },
+    "racing::alvaro mantilla": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 10
+    },
+    "racing::jeanuel belocian": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "racing::pedro felipe": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 7
+    },
+    "racing::facundo gonzalez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 6
+    },
+    "racing::alvaro fernandez fernandez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "racing::matteo prati": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10
+    },
+    "racing::sergio canales": {
+      "goals": 2,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 13
+    },
+    "racing::inigo sainz": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 4
+    },
+    "racing::andre almeida": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "racing::ivan martin": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "racing::maguette gueye": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 7
+    },
+    "racing::junior bita": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "racing::mario solorzano": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "racing::andres vallecillo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "racing::jorge castellanos del olmo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "racing::andres martin": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 6
+    },
+    "racing::asier villalibre": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 8
+    },
+    "racing::inigo vicente": {
+      "goals": 0,
+      "assists": 3,
+      "saves": 0,
+      "appearances": 13
+    },
+    "racing::giorgi guliashvili": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 7
+    },
+    "racing::juan carlos arana": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3
+    },
+    "racing::yassir zabiri": {
+      "goals": 11,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13
+    },
+    "racing::pablo garcia": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "racing::iker luque": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 7
+    },
+    "racing::hugo perez sanudo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "racing::gabriel jimenez carpintero": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "racing::alejandro laso molino": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "athletic::unai simon": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 36,
+      "appearances": 13
+    },
+    "athletic::alex padilla": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "athletic::yuri berchiche": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "athletic::aymeric laporte": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "athletic::yeray": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 9
+    },
+    "athletic::dani vivian": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3
+    },
+    "athletic::jesus areso": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 7
+    },
+    "athletic::aitor paredes": {
+      "goals": 2,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 8
+    },
+    "athletic::johaneko louis jean": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "athletic::hugo rincon": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 8
+    },
+    "athletic::unai egiluz": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "athletic::iker monreal": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "athletic::inigo ruiz de galarreta": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 11
+    },
+    "athletic::robert navarro": {
+      "goals": 2,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "athletic::oihan sancet": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10
+    },
+    "athletic::benat prados": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 4
+    },
+    "athletic::mikel jauregizar": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 7
+    },
+    "athletic::benat gerenabarrena": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "athletic::peio canales": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "athletic::alejandro rego": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 4
+    },
+    "athletic::selton sanchez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "athletic::alex berenguer": {
+      "goals": 4,
+      "assists": 4,
+      "saves": 0,
+      "appearances": 13
+    },
+    "athletic::inaki williams": {
+      "goals": 3,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 13
+    },
+    "athletic::gorka guruzeta": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5
+    },
+    "athletic::nico williams": {
+      "goals": 2,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 11
+    },
+    "athletic::nico serrano": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 1
+    },
+    "athletic::alvaro djalo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 1
+    },
+    "athletic::maroan sannadi": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 7
+    },
+    "athletic::christian imga": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 1
+    },
+    "athletic::jesus vizcay hurtado": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 2
+    },
+    "athletic::aritz conde albiol": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "alaves::adrian rodriguez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "alaves::antonio sivera": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 36,
+      "appearances": 13
+    },
+    "alaves::gregoire swiderski": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "alaves::ruben montero": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "alaves::ville koski": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13
+    },
+    "alaves::jonny": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "alaves::facundo garces": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "alaves::nahuel tenaglia": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13
+    },
+    "alaves::nicolas valentini": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 8
+    },
+    "alaves::angel perez": {
+      "goals": 1,
+      "assists": 4,
+      "saves": 0,
+      "appearances": 12
+    },
+    "alaves::youssef lekhedim": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10
+    },
+    "alaves::xanet olaiz": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 2
+    },
+    "alaves::pablo ibanez": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13
+    },
+    "alaves::denis suarez": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "alaves::carles alena": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 8
+    },
+    "alaves::carlos protesoni": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 6
+    },
+    "alaves::ander guevara": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 8
+    },
+    "alaves::antonio blanco": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 12
+    },
+    "alaves::selu diallo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "alaves::mikel rodriguez": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3
+    },
+    "alaves::miguel rodriguez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3
+    },
+    "alaves::toni martinez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12
+    },
+    "alaves::mariano diaz": {
+      "goals": 4,
+      "assists": 4,
+      "saves": 0,
+      "appearances": 13
+    },
+    "alaves::lucas boye": {
+      "goals": 6,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 12
+    },
+    "alaves::hugo novoa": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 4
+    },
+    "alaves::abde rebbach": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13
+    },
+    "alaves::aitor manas": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "alaves::izei hernandez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "villarreal::peter gulacsi": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 28,
+      "appearances": 9
+    },
+    "villarreal::luiz junior": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 6,
+      "appearances": 4
+    },
+    "villarreal::ruben gomez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "villarreal::yakiv kinareykin": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "villarreal::juan foyth": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 6
+    },
+    "villarreal::alex freeman": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12
+    },
+    "villarreal::logan costa": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3
+    },
+    "villarreal::carlos romero": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "villarreal::sergi cardona": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 8
+    },
+    "villarreal::santiago mourino": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10
+    },
+    "villarreal::renato veiga": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 12
+    },
+    "villarreal::pau navarro": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 7
+    },
+    "villarreal::cesar bonafe ceita": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "villarreal::santi comesana": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12
+    },
+    "villarreal::pape gueye": {
+      "goals": 3,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12
+    },
+    "villarreal::alberto moleiro": {
+      "goals": 2,
+      "assists": 5,
+      "saves": 0,
+      "appearances": 13
+    },
+    "villarreal::nathan saliba": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 7
+    },
+    "villarreal::alassane diatta": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "villarreal::carlos macia": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "villarreal::cheikh ahmad tidiane thiam": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "villarreal::mauro roca martinez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "villarreal::sergio barrera martin": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "villarreal::gerard moreno": {
+      "goals": 2,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10
+    },
+    "villarreal::ayoze perez": {
+      "goals": 1,
+      "assists": 3,
+      "saves": 0,
+      "appearances": 13
+    },
+    "villarreal::nicolas pepe": {
+      "goals": 2,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 9
+    },
+    "villarreal::tajon buchanan": {
+      "goals": 2,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "villarreal::tani oluwaseyi": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 8
+    },
+    "villarreal::georges mikautadze": {
+      "goals": 3,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 13
+    },
+    "villarreal::ilias akhomach": {
+      "goals": 0,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 9
+    },
+    "villarreal::joselillo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "villarreal::nizar el jmili ben hamou": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 2
+    },
+    "espanyol::marko dmitrovic": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 22,
+      "appearances": 7
+    },
+    "espanyol::angel fortuno": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 30,
+      "appearances": 6
+    },
+    "espanyol::llorenc serred": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "espanyol::leandro cabrera": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10
+    },
+    "espanyol::andoni gorosabel": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "espanyol::unai nunez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 8
+    },
+    "espanyol::vanja drkusic": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 7
+    },
+    "espanyol::omar el hilali": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 12
+    },
+    "espanyol::clemens riedel": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "espanyol::quilindschy hartman": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 7
+    },
+    "espanyol::jose angel lopez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 2
+    },
+    "espanyol::roger hinojo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "espanyol::adama timera": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "espanyol::pere milla": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 8
+    },
+    "espanyol::edu exposito": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12
+    },
+    "espanyol::pol lozano": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "espanyol::urko gonzalez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "espanyol::cala": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "espanyol::gabriel moscardo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 8
+    },
+    "espanyol::javi hernandez": {
+      "goals": 0,
+      "assists": 6,
+      "saves": 0,
+      "appearances": 13
+    },
+    "espanyol::rafael bauza": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 6
+    },
+    "espanyol::enrique garcia": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "espanyol::javier puado": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 4
+    },
+    "espanyol::tyrhys dolan": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 10
+    },
+    "espanyol::jofre carreras": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3
+    },
+    "espanyol::bryan zaragoza": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 9
+    },
+    "espanyol::roberto fernandez": {
+      "goals": 7,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13
+    },
+    "espanyol::marcos fernandez": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 10
+    },
+    "espanyol::jan peries duran": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 1
+    },
+    "espanyol::alejandro santiago": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3
+    },
+    "espanyol::victor mullerat tomas": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "espanyol::makar kotovshchikov": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "deportivo::alvaro fernandez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "deportivo::german parreno": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "deportivo::leo roman": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 41,
+      "appearances": 13
+    },
+    "deportivo::ximo navarro": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10
+    },
+    "deportivo::jose maria gimenez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10
+    },
+    "deportivo::angelino": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 2
+    },
+    "deportivo::miguel loureiro": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "deportivo::giacomo quagliata": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13
+    },
+    "deportivo::arnau comas": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "deportivo::adria altimira": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "deportivo::lucas noubi": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 6
+    },
+    "deportivo::dani barcia": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "deportivo::bright ede": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 6
+    },
+    "deportivo::riki rodriguez": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 10
+    },
+    "deportivo::mario soriano carreno": {
+      "goals": 2,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 13
+    },
+    "deportivo::yayo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "deportivo::diego villares": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 7
+    },
+    "deportivo::marc casado": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5
+    },
+    "deportivo::lorenzo amatucci": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 11
+    },
+    "deportivo::ruben": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "deportivo::jonathan asp jensen": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "deportivo::noe carrillo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "deportivo::pierre emerick aubameyang": {
+      "goals": 5,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 10
+    },
+    "deportivo::adama traore": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10
+    },
+    "deportivo::zakaria eddahchouri": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 4
+    },
+    "deportivo::yeremay hernandez": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 12
+    },
+    "deportivo::luismi cruz": {
+      "goals": 1,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 13
+    },
+    "deportivo::kevin sanchez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 2
+    },
+    "deportivo::david mella": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 7
+    },
+    "deportivo::martin ochoa": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "deportivo::bil nsongo": {
+      "goals": 2,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13
+    },
+    "osasuna::aitor fernandez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 20,
+      "appearances": 6
+    },
+    "osasuna::sergio herrera": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 11,
+      "appearances": 7
+    },
+    "osasuna::rafa fernandez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "osasuna::mikel bermejo sola": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "osasuna::diego rico": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3
+    },
+    "osasuna::valentin rosier": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 6
+    },
+    "osasuna::alejandro catena": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 12
+    },
+    "osasuna::abel bretones": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12
+    },
+    "osasuna::jorge herrando": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3
+    },
+    "osasuna::enzo boyomo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 8
+    },
+    "osasuna::rockson yeboah": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3
+    },
+    "osasuna::inigo arguibide": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "osasuna::unai santos": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3
+    },
+    "osasuna::lucas torro": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10
+    },
+    "osasuna::ruben garcia": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 13
+    },
+    "osasuna::jon moncayola": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13
+    },
+    "osasuna::aimar oroz": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 4
+    },
+    "osasuna::iker munoz": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "osasuna::asier osambela": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "osasuna::mauro echegoyen": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 1
+    },
+    "osasuna::moi gomez": {
+      "goals": 0,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 10
+    },
+    "osasuna::ante budimir": {
+      "goals": 9,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13
+    },
+    "osasuna::enrique barja": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10
+    },
+    "osasuna::romain del castillo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 2
+    },
+    "osasuna::raul garcia": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 13
+    },
+    "osasuna::raul moro": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10
+    },
+    "osasuna::jonathan dubasin": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12
+    },
+    "osasuna::asier bonel aicua": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "celta::andrei radu": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 44,
+      "appearances": 13
+    },
+    "celta::ivan villar": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "celta::altay bayindir": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "celta::marcos gonzalez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "celta::abdoulaye faye": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 1
+    },
+    "celta::marcos alonso": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10
+    },
+    "celta::carl starfelt": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3
+    },
+    "celta::javi galan": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "celta::sebastian caceres": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5
+    },
+    "celta::sergio carreira": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13
+    },
+    "celta::javi rueda": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13
+    },
+    "celta::alvaro nunez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 4
+    },
+    "celta::javi rodriguez": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 9
+    },
+    "celta::yoel lago": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12
+    },
+    "celta::frank germain jonathan miller": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "celta::enrique ribes": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "celta::hugo alvarez": {
+      "goals": 0,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 11
+    },
+    "celta::aleix febas": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 7
+    },
+    "celta::ilaix moriba": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13
+    },
+    "celta::miguel roman": {
+      "goals": 1,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 7
+    },
+    "celta::andres antanon": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3
+    },
+    "celta::hugo burcio": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 7
+    },
+    "celta::iago aspas": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 11
+    },
+    "celta::pablo duran": {
+      "goals": 3,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10
+    },
+    "celta::borja iglesias": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3
+    },
+    "celta::ferran jutgla": {
+      "goals": 2,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12
+    },
+    "celta::couhaib driouech": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 8
+    },
+    "celta::williot swedberg": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 12
+    },
+    "celta::hugo gonzalez": {
+      "goals": 1,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 7
+    },
+    "celta::jones el abdellaoui": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3
+    },
+    "celta::vladimir silva": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "celta::angel arcos": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "levante::mathew ryan": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 45,
+      "appearances": 13
+    },
+    "levante::pablo cunat": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "levante::alejandro primo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "levante::ihor galdin": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "levante::aissa mandi": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "levante::jeremy toljan": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 12
+    },
+    "levante::victor garcia": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "levante::adrian de la fuente": {
+      "goals": 2,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12
+    },
+    "levante::manu sanchez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "levante::jorge cabello": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "levante::axel tape": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 1
+    },
+    "levante::ifeanyi ndukwe": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 8
+    },
+    "levante::nacho perez": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12
+    },
+    "levante::huseini nakoha": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "levante::alejandro moya grediaga": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "levante::marc santos gavilan": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 4
+    },
+    "levante::roger brugue": {
+      "goals": 5,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 12
+    },
+    "levante::orio rey": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12
+    },
+    "levante::jon ander olasagasti": {
+      "goals": 1,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 13
+    },
+    "levante::hugo sotelo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5
+    },
+    "levante::enzo bardeli": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 8
+    },
+    "levante::dani requena": {
+      "goals": 2,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 10
+    },
+    "levante::manel usedo domingo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "levante::alberto calatrava ragull": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "levante::ivan romero": {
+      "goals": 3,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13
+    },
+    "levante::thiago fernandez": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 11
+    },
+    "levante::petar ratkov": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 8
+    },
+    "levante::etta eyong": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 8
+    },
+    "levante::paco cortes": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 6
+    },
+    "levante::yanis kasonga musuayi": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 4
+    },
+    "levante::luis miguel perez garcia": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "rayo vallecano::daniel cardenas": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 8,
+      "appearances": 3
+    },
+    "rayo vallecano::augusto batalla": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 3,
+      "appearances": 2
+    },
+    "rayo vallecano::emil audero": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 24,
+      "appearances": 9
+    },
+    "rayo vallecano::adrian molina": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "rayo vallecano::florian lejeune": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13
+    },
+    "rayo vallecano::ivan balliu": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "rayo vallecano::luiz felipe": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "rayo vallecano::marash kumbulla": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "rayo vallecano::mujaid sadick": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "rayo vallecano::sergio lozano": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "rayo vallecano::adria pedrosa": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 11
+    },
+    "rayo vallecano::andrei ratiu": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 9
+    },
+    "rayo vallecano::jozhua vertrouwd": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5
+    },
+    "rayo vallecano::pelayo fernandez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 2
+    },
+    "rayo vallecano::marco de las sias": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "rayo vallecano::alvaro garcia": {
+      "goals": 3,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 12
+    },
+    "rayo vallecano::unai lopez": {
+      "goals": 1,
+      "assists": 3,
+      "saves": 0,
+      "appearances": 13
+    },
+    "rayo vallecano::pedro diaz": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12
+    },
+    "rayo vallecano::isi palazon": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 7
+    },
+    "rayo vallecano::oscar valentin": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "rayo vallecano::randy nteka": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5
+    },
+    "rayo vallecano::pathe ciss": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12
+    },
+    "rayo vallecano::samu becerra": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "rayo vallecano::marco roman": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "rayo vallecano::gnangoro bouare samake": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 9
+    },
+    "rayo vallecano::ivan alonso martin": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "rayo vallecano::raul de tomas": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "rayo vallecano::jorge de frutos": {
+      "goals": 2,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 11
+    },
+    "rayo vallecano::giorgi tsitaishvili": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "rayo vallecano::sergio camello": {
+      "goals": 7,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 13
+    },
+    "rayo vallecano::alexandre alemao": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "rayo vallecano::fran perez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 6
+    },
+    "rayo vallecano::rayane belaid": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 1
+    },
+    "valencia::cristian rivero": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "valencia::stole dimitrievski": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 49,
+      "appearances": 13
+    },
+    "valencia::kayne van oevelen": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "valencia::dimitri foulquier": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "valencia::jose gaya": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10
+    },
+    "valencia::jesus vazquez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10
+    },
+    "valencia::pablo maffeo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12
+    },
+    "valencia::mouctar diakhaby": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 7
+    },
+    "valencia::justin de haas": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 7
+    },
+    "valencia::copete": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 1
+    },
+    "valencia::arnau martinez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "valencia::cesar tarrega": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10
+    },
+    "valencia::marcos navarro": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "valencia::iker cordoba": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3
+    },
+    "valencia::alex panach": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "valencia::rodrigo gamon martin": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "valencia::javier guerra": {
+      "goals": 0,
+      "assists": 3,
+      "saves": 0,
+      "appearances": 13
+    },
+    "valencia::guido rodriguez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10
+    },
+    "valencia::pepelu": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13
+    },
+    "valencia::aliou dieng": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 7
+    },
+    "valencia::filip ugrinic": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13
+    },
+    "valencia::harvey elliott": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 6
+    },
+    "valencia::ryunosuke sato": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5
+    },
+    "valencia::aaron mayol": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5
+    },
+    "valencia::jaume dura i soler": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "valencia::umar sadiq": {
+      "goals": 2,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 6
+    },
+    "valencia::sergi canos": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "valencia::arnaut danjuma": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 12
+    },
+    "valencia::dani raba": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 6
+    },
+    "valencia::luis rioja": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "valencia::hugo duro": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 11
+    },
+    "valencia::diego lopez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "valencia::david otorbi": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "valencia::aimar blazquez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 2
+    },
+    "getafe::david soria": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 47,
+      "appearances": 13
+    },
+    "getafe::jiri letacek": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "getafe::diego ferrer": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "getafe::kiko femenia": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "getafe::dani carvajal": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 4
+    },
+    "getafe::johan mojica": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "getafe::djene": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12
+    },
+    "getafe::abdel abqar": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 4
+    },
+    "getafe::zaid romero": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 8
+    },
+    "getafe::saba sazonov": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 6
+    },
+    "getafe::andres garcia": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 12
+    },
+    "getafe::sebastian boselli": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "getafe::mohamed hamdoune": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "getafe::curro burgos": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "getafe::jean ives valou": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5
+    },
+    "getafe::davinchi": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 8
+    },
+    "getafe::vladyslav kysil": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "getafe::bafode gassama gassama": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "getafe::nemanja gudelj": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10
+    },
+    "getafe::orel mangala": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10
+    },
+    "getafe::francho serrano": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 11
+    },
+    "getafe::ramon terrats": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12
+    },
+    "getafe::mario martin": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "getafe::alberto risco": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 4
+    },
+    "getafe::jesus martinez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "getafe::christantus uche": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "getafe::oscar lopez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 2
+    },
+    "getafe::mady macalou soumano": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "getafe::juanmi": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "getafe::enes unal": {
+      "goals": 2,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 12
+    },
+    "getafe::borja mayoral": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5
+    },
+    "getafe::martin satriano": {
+      "goals": 3,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 13
+    },
+    "getafe::ivan azon": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 9
+    },
+    "getafe::joselu perez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 1
+    },
+    "getafe::sebastian salazar trujillo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "getafe::ibrahima danfakha keita": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "getafe::ibra drammeh": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "getafe::moha achraf": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "elche::matias dituro": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 38,
+      "appearances": 13
+    },
+    "elche::alejandro iturbe": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "elche::pedro bigas": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 6
+    },
+    "elche::victor chust": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 13
+    },
+    "elche::bambo diaby": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "elche::kevin lomonaco": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "elche::ruben sanchez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 7
+    },
+    "elche::roy revivo": {
+      "goals": 1,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 10
+    },
+    "elche::buba sangare": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "elche::matia barzic": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 2
+    },
+    "elche::thomas lemar": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "elche::josan": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 3
+    },
+    "elche::gonzalo villar": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 12
+    },
+    "elche::marc aguado": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 6
+    },
+    "elche::federico redondo": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10
+    },
+    "elche::facundo buonanotte": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 8
+    },
+    "elche::martim neto": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "elche::javier morcillo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "elche::ezequiel ponce": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3
+    },
+    "elche::grady diangana": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3
+    },
+    "elche::jose antonio morente": {
+      "goals": 0,
+      "assists": 3,
+      "saves": 0,
+      "appearances": 13
+    },
+    "elche::german valera": {
+      "goals": 2,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 13
+    },
+    "elche::fer nino": {
+      "goals": 6,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13
+    },
+    "elche::lucas cepeda": {
+      "goals": 0,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 13
+    },
+    "elche::yago alonso": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "elche::abiel osorio": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10
+    },
+    "elche::adam boayar": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "elche::ali houary": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 4
+    },
+    "elche::alvaro padilla escriba": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 1
+    },
+    "malaga::alfonso herrero": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 46,
+      "appearances": 13
+    },
+    "malaga::carlos lopez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "malaga::andres cespedes": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "malaga::jose salinas": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10
+    },
+    "malaga::einar galilea": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "malaga::fernando calero": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 4
+    },
+    "malaga::juan berrocal": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3
+    },
+    "malaga::alex pastor": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 2
+    },
+    "malaga::angel recio": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "malaga::carlos puga": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "malaga::diego murillo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 1
+    },
+    "malaga::oscar gonzalez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "malaga::rafa garrido": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 12
+    },
+    "malaga::adam aznou": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5
+    },
+    "malaga::juan cruz": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 8
+    },
+    "malaga::pablo martinez": {
+      "goals": 1,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 9
+    },
+    "malaga::jens cajuste": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3
+    },
+    "malaga::ramon enriquez": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 12
+    },
+    "malaga::carlos dotor": {
+      "goals": 2,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12
+    },
+    "malaga::daniel lorenzo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12
+    },
+    "malaga::rafa rodriguez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9
+    },
+    "malaga::izan merino": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 8
+    },
+    "malaga::aaron moloney": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "malaga::otu junior": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "malaga::joaquin munoz": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11
+    },
+    "malaga::eneko jauregui": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3
+    },
+    "malaga::david larrubia": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13
+    },
+    "malaga::julen lobete": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 1
+    },
+    "malaga::haitam abaida": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3
+    },
+    "malaga::adrian nino": {
+      "goals": 5,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 9
+    },
+    "malaga::chupete": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13
+    },
+    "malaga::juani": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 1
+    }
+  }
+}

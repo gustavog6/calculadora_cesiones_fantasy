@@ -1075,14 +1075,14 @@ tr.fuerte td { font-weight: 600; }
   min-height: 0;
 }
 
-/* Barra de filtros y ordenamiento */
+/* Barra de filtros y ordenamiento (1. Precio, 2. Fluctuación, 3. Equipo, 4. Posición + Buscador) */
 .filtros-bar {
   display: grid;
-  grid-template-columns: minmax(180px, 1.4fr) minmax(140px, 1fr) minmax(130px, 0.9fr) minmax(135px, 0.9fr) minmax(180px, 1.15fr) auto;
+  grid-template-columns: minmax(175px, 1.1fr) minmax(150px, 0.95fr) minmax(145px, 1fr) minmax(140px, 0.9fr) minmax(180px, 1.25fr) auto;
   gap: 8px;
   align-items: center;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1120px) {
   .filtros-bar { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 @media (max-width: 680px) {
@@ -1093,19 +1093,33 @@ tr.fuerte td { font-weight: 600; }
 }
 .exp-select {
   width: 100%;
-  padding: 9px 10px;
+  height: 41px;
+  padding: 0 32px 0 11px;
   font: inherit;
-  font-size: 14px;
+  font-size: 14.5px;
+  font-weight: 500;
   border: 1.5px solid var(--line);
   border-radius: 9px;
-  background: var(--surface);
+  background-color: var(--surface);
   color: var(--ink);
   cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%2355655D' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 11px center;
+  background-size: 9px 6px;
+  transition: border-color 0.15s, box-shadow 0.15s;
 }
+.exp-select:hover { border-color: var(--muted); }
 .exp-select:focus {
   outline: none;
   border-color: var(--pitch);
   box-shadow: 0 0 0 3px var(--pitch-soft);
+}
+.exp-select option {
+  background: var(--surface);
+  color: var(--ink);
 }
 
 /* Tabla paginada de jugadores */
@@ -1620,6 +1634,164 @@ tr.fuerte td { font-weight: 600; }
 }
 .cmp-empty h3 { font-size: 17px; font-weight: 700; }
 .cmp-empty p { font-size: 14px; color: var(--muted); max-width: 44ch; }
+
+/* Vista LaLiga (Clasificación + Rankings) */
+.laliga-workspace {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr);
+  min-height: 0;
+}
+.panel-laliga {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px 14px;
+  overflow: hidden;
+  min-height: 0;
+}
+.laliga-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.laliga-tabs, .split-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px;
+  background: var(--campo);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+}
+.ll-tab-btn, .split-btn {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 13px;
+  padding: 5px 11px;
+  border-radius: 7px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s;
+}
+.ll-tab-btn:hover, .split-btn:hover { color: var(--ink); }
+.ll-tab-btn[aria-selected="true"], .split-btn[aria-pressed="true"] {
+  background: var(--surface);
+  color: var(--pitch);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Badges de racha (Últimos 5 L/V) y próximos partidos (L/V) */
+.form-strip, .fixtures-strip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: nowrap;
+}
+.fixtures-strip.wrap { flex-wrap: wrap; }
+.form-pill {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 26px;
+  padding: 2px 4px;
+  border-radius: 6px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.05;
+}
+.form-pill .loc-sub {
+  font-size: 9px;
+  font-weight: 600;
+  opacity: 0.82;
+}
+.form-pill.v { background: var(--pitch-soft); color: var(--pitch); }
+.form-pill.e { background: var(--amber-soft); color: var(--amber); }
+.form-pill.d { background: var(--alert-soft); color: var(--alert); }
+
+.fix-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 2px 6px;
+  border-radius: 6px;
+  background: var(--campo);
+  border: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ink);
+  white-space: nowrap;
+}
+.fix-pill .loc-tag {
+  font-size: 9.5px;
+  font-weight: 700;
+  padding: 0 3px;
+  border-radius: 3px;
+}
+.fix-pill .loc-tag.l { background: var(--pitch-soft); color: var(--pitch); }
+.fix-pill .loc-tag.v { background: var(--info-soft); color: var(--muted); }
+
+.ll-pts {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--ink);
+}
+.ll-dg.pos { color: var(--pitch); font-weight: 600; }
+.ll-dg.neg { color: var(--alert); font-weight: 600; }
+.ll-team-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 145px;
+  font-weight: 600;
+}
+.ll-team-cell img { width: 20px; height: 20px; object-fit: contain; flex: none; }
+.ll-metric-val {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--pitch);
+}
+
+/* Bloques enriquecidos en Modal de detalle */
+.ficha-laliga-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 8px 11px;
+  border-radius: 9px;
+  background: var(--campo);
+  border: 1px solid var(--line);
+  font-size: 12.5px;
+}
+.ficha-stats-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+.ficha-stats-inline span b { color: var(--pitch); }
+.ficha-cal-box {
+  display: grid;
+  gap: 6px;
+}
+.ficha-cal-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
 </style>
 </head>
 <body>
@@ -1633,12 +1805,13 @@ tr.fuerte td { font-weight: 600; }
       </div>
     </div>
     <nav class="mode-switch" aria-label="Navegación principal">
-      <button type="button" class="mode-btn" id="nav-calc" aria-pressed="true">Calculadora</button>
-      <button type="button" class="mode-btn" id="nav-mercado" aria-pressed="false">Mercado</button>
+      <button type="button" class="mode-btn" id="nav-mercado" aria-pressed="true">Mercado</button>
       <button type="button" class="mode-btn" id="nav-comparador" aria-pressed="false">
         Comparador
         <span class="mode-badge" id="nav-compare-badge">0/5</span>
       </button>
+      <button type="button" class="mode-btn" id="nav-calc" aria-pressed="false">Calculadora</button>
+      <button type="button" class="mode-btn" id="nav-laliga" aria-pressed="false">LaLiga</button>
     </nav>
     <div class="topbar-actions">
       <button type="button" class="btn btn-ghost" id="b-guia">Guía rápida</button>
@@ -1646,7 +1819,7 @@ tr.fuerte td { font-weight: 600; }
     </div>
   </header>
 
-  <main class="workspace" id="vista-calculadora">
+  <main class="workspace" id="vista-calculadora" hidden>
     <!-- Columna izquierda: Selector + Datos -->
     <section class="panel panel-entradas" aria-labelledby="t-datos">
       <div class="section-head">
@@ -1909,8 +2082,8 @@ tr.fuerte td { font-weight: 600; }
     </section>
   </main>
 
-  <!-- Vista 2 y 3: Mercado (Listado paginado) y Comparador (máx. 5) -->
-  <section class="explorer-workspace" id="vista-explorador" aria-label="Mercado de jugadores y comparador" hidden>
+  <!-- Vista 1 y 2: Mercado (por defecto) y Comparador (máx. 5) -->
+  <section class="explorer-workspace" id="vista-explorador" aria-label="Mercado de jugadores y comparador">
     <!-- Subvista A: Listado paginado -->
     <section class="panel panel-listado" id="panel-listado" aria-labelledby="t-mercado">
       <div class="listado-head">
@@ -1924,13 +2097,25 @@ tr.fuerte td { font-weight: 600; }
         </div>
       </div>
       <div class="filtros-bar">
-        <div class="combo">
-          <div class="combo-control">
-            <input type="text" id="exp-buscar-jugador" placeholder="Buscar por nombre o equipo..." autocomplete="off" aria-label="Buscar jugador por nombre o equipo">
-            <button type="button" class="combo-clear" id="exp-clear-jugador" aria-label="Limpiar búsqueda" hidden>×</button>
-          </div>
-        </div>
+        <!-- 1. Precio -->
+        <select class="exp-select" id="exp-orden" aria-label="Ordenar por precio o fluctuación">
+          <option value="price_desc">Precio: mayor a menor</option>
+          <option value="price_asc">Precio: menor a mayor</option>
+          <option value="inc_desc">Mayor subida diaria</option>
+          <option value="inc_asc">Mayor bajada diaria</option>
+          <option value="pct_desc">Mayor % de subida</option>
+          <option value="name_asc">Nombre (A–Z)</option>
+        </select>
 
+        <!-- 2. Fluctuación -->
+        <select class="exp-select" id="exp-filtro-tendencia" aria-label="Filtrar por fluctuación de mercado">
+          <option value="">Fluctuación: todas</option>
+          <option value="up">Subiendo ▲</option>
+          <option value="down">Bajando ▼</option>
+          <option value="flat">Sin cambios</option>
+        </select>
+
+        <!-- 3. Equipo -->
         <div class="combo">
           <div class="combo-control">
             <input type="text" id="exp-filtro-equipo" placeholder="Equipo (todos)..." autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="exp-lista-equipos" aria-label="Filtrar por equipo">
@@ -1940,6 +2125,7 @@ tr.fuerte td { font-weight: 600; }
           <ul class="combo-list" id="exp-lista-equipos" role="listbox" hidden></ul>
         </div>
 
+        <!-- 4. Posición -->
         <div class="combo">
           <div class="combo-control">
             <input type="text" id="exp-filtro-posicion" placeholder="Posición (todas)..." autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="exp-lista-posiciones" aria-label="Filtrar por posición">
@@ -1949,21 +2135,13 @@ tr.fuerte td { font-weight: 600; }
           <ul class="combo-list" id="exp-lista-posiciones" role="listbox" hidden></ul>
         </div>
 
-        <select class="exp-select" id="exp-filtro-tendencia" aria-label="Filtrar por fluctuación de mercado">
-          <option value="">Fluctuación: todas</option>
-          <option value="up">Subiendo ▲</option>
-          <option value="down">Bajando ▼</option>
-          <option value="flat">Sin cambios</option>
-        </select>
-
-        <select class="exp-select" id="exp-orden" aria-label="Ordenar jugadores">
-          <option value="price_desc">Precio: mayor a menor</option>
-          <option value="price_asc">Precio: menor a mayor</option>
-          <option value="inc_desc">Mayor subida diaria</option>
-          <option value="inc_asc">Mayor bajada diaria</option>
-          <option value="pct_desc">Mayor % de subida</option>
-          <option value="name_asc">Nombre (A–Z)</option>
-        </select>
+        <!-- Búsqueda por nombre -->
+        <div class="combo">
+          <div class="combo-control">
+            <input type="text" id="exp-buscar-jugador" placeholder="Buscar jugador..." autocomplete="off" aria-label="Buscar jugador por nombre o equipo">
+            <button type="button" class="combo-clear" id="exp-clear-jugador" aria-label="Limpiar búsqueda" hidden>×</button>
+          </div>
+        </div>
 
         <button type="button" class="btn btn-sec" id="btn-exp-reset-filtros" hidden>Restablecer</button>
       </div>
@@ -2034,6 +2212,71 @@ tr.fuerte td { font-weight: 600; }
     </section>
   </section>
 
+  <!-- Vista 4: LaLiga Española (Clasificación General/Casa/Visitante + Rankings individuales) -->
+  <section class="laliga-workspace" id="vista-laliga" aria-label="Estadísticas y clasificación de LaLiga" hidden>
+    <section class="panel panel-laliga">
+      <div class="laliga-head">
+        <div class="listado-title-wrap">
+          <h2 id="t-laliga">LaLiga Española</h2>
+          <span class="section-badge" id="ll-season-badge">2026–27</span>
+        </div>
+
+        <div class="laliga-tabs" role="tablist" aria-label="Secciones de LaLiga">
+          <button type="button" class="ll-tab-btn" role="tab" id="ll-tab-tabla" aria-selected="true">Clasificación</button>
+          <button type="button" class="ll-tab-btn" role="tab" id="ll-tab-goleadores" aria-selected="false">Goleadores</button>
+          <button type="button" class="ll-tab-btn" role="tab" id="ll-tab-asistidores" aria-selected="false">Asistidores</button>
+          <button type="button" class="ll-tab-btn" role="tab" id="ll-tab-paradas" aria-selected="false">Paradas</button>
+        </div>
+
+        <div class="split-switch" id="ll-split-switch" role="group" aria-label="Desglose de clasificación">
+          <button type="button" class="split-btn" id="ll-split-general" aria-pressed="true">General</button>
+          <button type="button" class="split-btn" id="ll-split-home" aria-pressed="false">Casa</button>
+          <button type="button" class="split-btn" id="ll-split-away" aria-pressed="false">Visitante</button>
+        </div>
+      </div>
+
+      <!-- Subpanel: Tabla de Clasificación -->
+      <div class="listado-table-wrap" id="ll-panel-tabla">
+        <table class="listado-table">
+          <thead>
+            <tr>
+              <th class="col-rank">#</th>
+              <th>Equipo</th>
+              <th class="num">PJ</th>
+              <th class="num">PTS</th>
+              <th class="num">V</th>
+              <th class="num">E</th>
+              <th class="num">D</th>
+              <th class="num">GF</th>
+              <th class="num">GC</th>
+              <th class="num">DG</th>
+              <th>Últimos 5 (L/V)</th>
+              <th>Próximos 5 (L/V)</th>
+            </tr>
+          </thead>
+          <tbody id="ll-tabla-tbody"></tbody>
+        </table>
+      </div>
+
+      <!-- Subpanel: Rankings individuales (Goleadores / Asistidores / Paradas) -->
+      <div class="listado-table-wrap" id="ll-panel-leaders" hidden>
+        <table class="listado-table">
+          <thead>
+            <tr>
+              <th class="col-rank">#</th>
+              <th>Jugador</th>
+              <th>Equipo</th>
+              <th>Pos.</th>
+              <th class="num">PJ</th>
+              <th class="num" id="ll-leader-col">Goles</th>
+            </tr>
+          </thead>
+          <tbody id="ll-leaders-tbody"></tbody>
+        </table>
+      </div>
+    </section>
+  </section>
+
   <!-- Modal compacto de detalle del jugador -->
   <div class="player-modal-backdrop" id="player-modal" role="dialog" aria-modal="true" aria-labelledby="exp-nombre" hidden>
     <article class="player-modal-card">
@@ -2060,6 +2303,11 @@ tr.fuerte td { font-weight: 600; }
         <span class="delta-pill neutro" id="exp-delta">—</span>
       </div>
 
+      <div class="ficha-laliga-strip" id="exp-laliga-strip" hidden>
+        <span id="exp-team-standing">—</span>
+        <div class="ficha-stats-inline" id="exp-personal-stats"></div>
+      </div>
+
       <div class="ficha-metricas">
         <div class="ficha-kpi">
           <span class="ficha-kpi-et">Precio ayer</span>
@@ -2081,6 +2329,11 @@ tr.fuerte td { font-weight: 600; }
           <span class="ficha-kpi-val" id="exp-proy-7d">—</span>
           <span class="ficha-kpi-sub">Al ritmo diario actual</span>
         </div>
+      </div>
+
+      <div class="ficha-cal-box" id="exp-cal-box" hidden>
+        <span class="ficha-cal-label">Próximos partidos del equipo (L: Casa · V: Visitante)</span>
+        <div class="fixtures-strip wrap" id="exp-upcoming-strip"></div>
       </div>
 
       <div class="ficha-acciones">
@@ -2141,6 +2394,7 @@ const MSGS = {
 };
 
 const DATA_URL = './data/players.json';
+const LALIGA_DATA_URL = './data/laliga.json';
 const IMAGE_BASE_URL = 'https://fantasybrain-production.up.railway.app';
 const CACHE_KEY = 'playerMarketCache';
 const TIMESTAMP_KEY = 'playerMarketTimestamp';
@@ -3013,6 +3267,109 @@ const PlayerSelector = (function() {
   };
 })();
 
+/* ===== Servicio de datos de LaLiga (data/laliga.json) ===== */
+/**
+ * Carga y cruza clasificación, racha, próximos partidos y estadísticas individuales de LaLiga.
+ * @module LaLigaService
+ */
+const LaLigaService = (function() {
+  let cachedData = null;
+  let inFlight = null;
+  let teamByNorm = new Map();
+  let statsByTeam = new Map();
+
+  function normKey(s) {
+    return String(s || '')
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9\s]/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  function indexData(data) {
+    teamByNorm = new Map();
+    statsByTeam = new Map();
+    (data.standings || []).forEach(function(t) {
+      teamByNorm.set(normKey(t.team), t);
+    });
+    const ps = data.playerStats || {};
+    Object.keys(ps).forEach(function(k) {
+      const parts = k.split('::');
+      if (parts.length !== 2) return;
+      const tKey = parts[0];
+      const pName = parts[1];
+      if (!statsByTeam.has(tKey)) statsByTeam.set(tKey, []);
+      statsByTeam.get(tKey).push({ normName: pName, stats: ps[k] });
+    });
+  }
+
+  /**
+   * Obtiene `data/laliga.json` con deduplicación en memoria.
+   * @returns {Promise<Object|null>}
+   */
+  async function getData() {
+    if (cachedData) return cachedData;
+    if (!inFlight) {
+      inFlight = fetch(LALIGA_DATA_URL)
+        .then(function(res) { return res.ok ? res.json() : null; })
+        .then(function(json) {
+          if (json && Array.isArray(json.standings)) {
+            cachedData = json;
+            indexData(json);
+          }
+          return cachedData;
+        })
+        .catch(function() { return null; })
+        .finally(function() { inFlight = null; });
+    }
+    return inFlight;
+  }
+
+  /**
+   * Devuelve el objeto de clasificación y calendario del equipo indicado.
+   * @param {string} teamName
+   * @returns {Object|null}
+   */
+  function getTeamInfo(teamName) {
+    return teamByNorm.get(normKey(teamName)) || null;
+  }
+
+  /**
+   * Busca las estadísticas individuales (goles, asistencias, paradas) de un jugador.
+   * @param {{name: string, team: string}} player
+   * @returns {{goals: number, assists: number, saves: number, appearances: number}|null}
+   */
+  function getPlayerStats(player) {
+    if (!cachedData || !player || !player.name) return null;
+    const tKey = normKey(player.team);
+    const nKey = normKey(player.name);
+    const exact = cachedData.playerStats && cachedData.playerStats[tKey + '::' + nKey];
+    if (exact) return exact;
+
+    const candidates = statsByTeam.get(tKey) || [];
+    const tokens = nKey.split(' ').filter(function(w) { return w.length >= 3; });
+    for (let i = 0; i < candidates.length; i += 1) {
+      const c = candidates[i];
+      if (c.normName.includes(nKey) || nKey.includes(c.normName)) return c.stats;
+    }
+    if (tokens.length > 0) {
+      const last = tokens[tokens.length - 1];
+      const byLast = candidates.filter(function(c) { return c.normName.split(' ').includes(last); });
+      if (byLast.length === 1) return byLast[0].stats;
+    }
+    return null;
+  }
+
+  return {
+    getData: getData,
+    getTeamInfo: getTeamInfo,
+    getPlayerStats: getPlayerStats,
+    normKey: normKey
+  };
+})();
+
 /* ===== Mercado (Listado Paginado), Modal de Detalle y Comparador (máx. 5) ===== */
 /**
  * Módulo de listado paginado con filtros/ordenamiento fantasy, modal compacto de detalle
@@ -3359,6 +3716,43 @@ const PlayerExplorer = (function() {
       : 'Posición en mercado';
     $('exp-proy-7d').textContent = m.proj7d !== null ? Formato.euros(m.proj7d) : '—';
 
+    // Contexto de LaLiga: posición del equipo + estadísticas personales + próximos 5 partidos
+    const teamInfo = LaLigaService.getTeamInfo(player.team);
+    const pStats = LaLigaService.getPlayerStats(player);
+    const strip = $('exp-laliga-strip');
+    if (teamInfo || pStats) {
+      $('exp-team-standing').textContent = teamInfo
+        ? '#' + teamInfo.rank + ' en LaLiga · ' + teamInfo.general.pts + ' pts'
+        : (player.team || 'LaLiga');
+      const statsHtml = [];
+      if (pStats) {
+        statsHtml.push('<span><b>' + pStats.goals + '</b> G</span>');
+        statsHtml.push('<span><b>' + pStats.assists + '</b> A</span>');
+        if (player.position === 'POR' || pStats.saves > 0) {
+          statsHtml.push('<span><b>' + pStats.saves + '</b> Paradas</span>');
+        }
+      }
+      $('exp-personal-stats').innerHTML = statsHtml.join('');
+      strip.hidden = false;
+    } else {
+      strip.hidden = true;
+    }
+
+    const calBox = $('exp-cal-box');
+    const upStrip = $('exp-upcoming-strip');
+    if (teamInfo && Array.isArray(teamInfo.upcoming) && teamInfo.upcoming.length > 0) {
+      upStrip.innerHTML = teamInfo.upcoming.map(function(u) {
+        const locCls = u.loc === 'L' ? 'l' : 'v';
+        const tip = u.opp + ' (' + (u.loc === 'L' ? 'Casa' : 'Visitante') + ')';
+        return '<span class="fix-pill" title="' + escapeHTML(tip) + '">' +
+          escapeHTML(u.oppAbbr || u.opp) +
+          '<span class="loc-tag ' + locCls + '">' + escapeHTML(u.loc) + '</span></span>';
+      }).join('');
+      calBox.hidden = false;
+    } else {
+      calBox.hidden = true;
+    }
+
     updateModalAction();
     $('player-modal').hidden = false;
     $('btn-cerrar-modal').focus();
@@ -3512,6 +3906,44 @@ const PlayerExplorer = (function() {
         }
       },
       {
+        label: 'Goles / Asist.',
+        render: function(p) {
+          const st = LaLigaService.getPlayerStats(p);
+          if (!st) return '<span class="cmp-val">—</span>';
+          return '<span class="cmp-val">' + st.goals + ' G · ' + st.assists + ' A</span>';
+        }
+      },
+      {
+        label: 'Paradas',
+        render: function(p) {
+          const st = LaLigaService.getPlayerStats(p);
+          if (!st || (p.position !== 'POR' && st.saves === 0)) return '<span class="cmp-val">—</span>';
+          return '<span class="cmp-val">' + st.saves + '</span>';
+        }
+      },
+      {
+        label: 'Posición LaLiga',
+        render: function(p) {
+          const ti = LaLigaService.getTeamInfo(p.team);
+          if (!ti) return '<span class="cmp-val">—</span>';
+          return '<span class="cmp-val">#' + ti.rank + ' (' + ti.general.pts + ' pts)</span>';
+        }
+      },
+      {
+        label: 'Próximos 5 (L/V)',
+        render: function(p) {
+          const ti = LaLigaService.getTeamInfo(p.team);
+          if (!ti || !ti.upcoming || ti.upcoming.length === 0) return '<span class="cmp-val">—</span>';
+          return '<div class="fixtures-strip wrap">' + ti.upcoming.map(function(u) {
+            const locCls = u.loc === 'L' ? 'l' : 'v';
+            const tip = u.opp + ' (' + (u.loc === 'L' ? 'Casa' : 'Visitante') + ')';
+            return '<span class="fix-pill" title="' + escapeHTML(tip) + '">' +
+              escapeHTML(u.oppAbbr || u.opp) +
+              '<span class="loc-tag ' + locCls + '">' + escapeHTML(u.loc) + '</span></span>';
+          }).join('') + '</div>';
+        }
+      },
+      {
         label: 'Posición',
         render: function(p) {
           return '<span class="pos-pill">' + escapeHTML(p.position || '—') + '</span>';
@@ -3535,22 +3967,26 @@ const PlayerExplorer = (function() {
     }).join('');
   }
 
-  /* --- Navegación unificada y estable: Calculadora | Mercado | Comparador --- */
+  /* --- Navegación unificada y estable: Mercado | Comparador | Calculadora | LaLiga --- */
   function setView(view) {
-    const mode = view === 'mercado' || view === 'comparador' ? view : 'calculadora';
-    const isCalc = mode === 'calculadora';
+    const allowed = ['mercado', 'comparador', 'calculadora', 'laliga'];
+    const mode = allowed.indexOf(view) !== -1 ? view : 'mercado';
     const isMercado = mode === 'mercado';
     const isCmp = mode === 'comparador';
+    const isCalc = mode === 'calculadora';
+    const isLaLiga = mode === 'laliga';
 
     activeSubTab = isCmp ? 'comparador' : 'listado';
-    $('vista-calculadora').hidden = !isCalc;
-    $('vista-explorador').hidden = isCalc;
+    $('vista-explorador').hidden = !(isMercado || isCmp);
     $('panel-listado').hidden = !isMercado;
     $('panel-comparador').hidden = !isCmp;
+    $('vista-calculadora').hidden = !isCalc;
+    $('vista-laliga').hidden = !isLaLiga;
 
-    $('nav-calc').setAttribute('aria-pressed', isCalc ? 'true' : 'false');
     $('nav-mercado').setAttribute('aria-pressed', isMercado ? 'true' : 'false');
     $('nav-comparador').setAttribute('aria-pressed', isCmp ? 'true' : 'false');
+    $('nav-calc').setAttribute('aria-pressed', isCalc ? 'true' : 'false');
+    $('nav-laliga').setAttribute('aria-pressed', isLaLiga ? 'true' : 'false');
     updateBadges();
   }
 
@@ -3674,6 +4110,7 @@ const PlayerExplorer = (function() {
     $('nav-calc').addEventListener('click', function() { setView('calculadora'); });
     $('nav-mercado').addEventListener('click', function() { setView('mercado'); });
     $('nav-comparador').addEventListener('click', function() { setView('comparador'); });
+    $('nav-laliga').addEventListener('click', function() { setView('laliga'); });
     $('btn-ir-comparador').addEventListener('click', function() { setView('comparador'); });
     $('btn-volver-listado').addEventListener('click', function() { setView('mercado'); });
 
@@ -3867,6 +4304,27 @@ const PlayerExplorer = (function() {
     setSort: function(sort) { currentSort = sort; applyListFilters(true); },
     setTrend: function(trend) { selectedTrend = trend; applyListFilters(true); },
     goToPage: function(page) { currentPage = page; renderListPage(); },
+    findPlayer: function(team, name) {
+      const tKey = LaLigaService.normKey(team);
+      const nKey = LaLigaService.normKey(name);
+      const exact = allPlayers.find(function(p) {
+        return LaLigaService.normKey(p.team) === tKey && LaLigaService.normKey(p.name) === nKey;
+      });
+      if (exact) return exact;
+      const inTeam = allPlayers.filter(function(p) { return LaLigaService.normKey(p.team) === tKey; });
+      const partial = inTeam.find(function(p) {
+        const pn = LaLigaService.normKey(p.name);
+        return pn.includes(nKey) || nKey.includes(pn);
+      });
+      if (partial) return partial;
+      const tokens = nKey.split(' ').filter(function(w) { return w.length >= 3; });
+      if (tokens.length > 0) {
+        const last = tokens[tokens.length - 1];
+        const byLast = inTeam.filter(function(p) { return LaLigaService.normKey(p.name).split(' ').includes(last); });
+        if (byLast.length === 1) return byLast[0];
+      }
+      return null;
+    },
     getState: function() {
       return {
         page: currentPage,
@@ -3878,9 +4336,170 @@ const PlayerExplorer = (function() {
   };
 })();
 
+/* ===== Vista LaLiga: Clasificación (General/Casa/Visitante) y Rankings Individuales ===== */
+/**
+ * Renderiza la tabla de clasificación de LaLiga y los rankings de Goleadores, Asistidores y Paradas.
+ * @module LaLigaView
+ */
+const LaLigaView = (function() {
+  let data = null;
+  let activeTab = 'tabla';
+  let activeSplit = 'general';
+  let listenersBound = false;
+
+  const $ = function(id) { return document.getElementById(id); };
+  const esc = function(s) { return PlayerSelector.escapeHTML(s); };
+
+  function renderFormHtml(form) {
+    if (!Array.isArray(form) || form.length === 0) return '—';
+    return '<div class="form-strip">' + form.map(function(m) {
+      const cls = m.res === 'V' ? 'v' : (m.res === 'E' ? 'e' : 'd');
+      const tip = (m.loc === 'L' ? 'Casa vs ' : 'Fuera en ') + m.opp + ' (' + m.score + ')';
+      return '<span class="form-pill ' + cls + '" title="' + esc(tip) + '">' +
+        '<span>' + esc(m.res) + '</span>' +
+        '<span class="loc-sub">' + esc(m.loc) + '</span></span>';
+    }).join('') + '</div>';
+  }
+
+  function renderUpcomingHtml(upcoming) {
+    if (!Array.isArray(upcoming) || upcoming.length === 0) return '—';
+    return '<div class="fixtures-strip">' + upcoming.map(function(u) {
+      const locCls = u.loc === 'L' ? 'l' : 'v';
+      const dateStr = u.date ? u.date.slice(0, 10) : '';
+      const tip = u.opp + ' (' + (u.loc === 'L' ? 'Casa' : 'Visitante') + (dateStr ? ' · ' + dateStr : '') + ')';
+      return '<span class="fix-pill" title="' + esc(tip) + '">' +
+        esc(u.oppAbbr || u.opp) +
+        '<span class="loc-tag ' + locCls + '">' + esc(u.loc) + '</span></span>';
+    }).join('') + '</div>';
+  }
+
+  function renderStandings() {
+    const tbody = $('ll-tabla-tbody');
+    if (!tbody || !data) return;
+
+    const rows = (data.standings || []).slice().sort(function(a, b) {
+      const sa = a[activeSplit] || a.general;
+      const sb = b[activeSplit] || b.general;
+      if (activeSplit === 'general') return (a.rank || 99) - (b.rank || 99);
+      return sb.pts - sa.pts || sb.dg - sa.dg || sb.gf - sa.gf || (a.rank || 99) - (b.rank || 99);
+    });
+
+    tbody.innerHTML = rows.map(function(t, idx) {
+      const s = t[activeSplit] || t.general;
+      const dgCls = s.dg > 0 ? 'pos' : (s.dg < 0 ? 'neg' : '');
+      const dgTxt = (s.dg > 0 ? '+' : '') + s.dg;
+      const logoHtml = t.logo ? '<img src="' + esc(t.logo) + '" alt="" loading="lazy" onerror="this.hidden=true">' : '';
+      return '<tr>' +
+        '<td class="col-rank">' + (activeSplit === 'general' ? (t.rank || idx + 1) : (idx + 1)) + '</td>' +
+        '<td><div class="ll-team-cell">' + logoHtml + '<span>' + esc(t.team) + '</span></div></td>' +
+        '<td class="num">' + s.pj + '</td>' +
+        '<td class="num"><span class="ll-pts">' + s.pts + '</span></td>' +
+        '<td class="num">' + s.v + '</td>' +
+        '<td class="num">' + s.e + '</td>' +
+        '<td class="num">' + s.d + '</td>' +
+        '<td class="num">' + s.gf + '</td>' +
+        '<td class="num">' + s.gc + '</td>' +
+        '<td class="num"><span class="ll-dg ' + dgCls + '">' + esc(dgTxt) + '</span></td>' +
+        '<td>' + renderFormHtml(t.form) + '</td>' +
+        '<td>' + renderUpcomingHtml(t.upcoming) + '</td>' +
+        '</tr>';
+    }).join('');
+  }
+
+  function renderLeaders(category) {
+    const tbody = $('ll-leaders-tbody');
+    const colHead = $('ll-leader-col');
+    if (!tbody || !data || !data.leaders) return;
+
+    const map = {
+      goleadores: { list: data.leaders.scorers || [], key: 'goals', label: 'Goles' },
+      asistidores: { list: data.leaders.assists || [], key: 'assists', label: 'Asistencias' },
+      paradas: { list: data.leaders.saves || [], key: 'saves', label: 'Paradas' }
+    };
+    const cfg = map[category] || map.goleadores;
+    if (colHead) colHead.textContent = cfg.label;
+
+    if (cfg.list.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;padding:24px;color:var(--muted);">Sin datos disponibles.</td></tr>';
+      return;
+    }
+
+    tbody.innerHTML = cfg.list.map(function(p, idx) {
+      const logoHtml = p.teamLogo ? '<img src="' + esc(p.teamLogo) + '" alt="" loading="lazy" onerror="this.hidden=true">' : '';
+      return '<tr data-leader-team="' + esc(p.team) + '" data-leader-name="' + esc(p.name) + '">' +
+        '<td class="col-rank">' + (idx + 1) + '</td>' +
+        '<td><span class="row-nombre">' + esc(p.name) + '</span></td>' +
+        '<td><div class="ll-team-cell">' + logoHtml + '<span>' + esc(p.team) + '</span></div></td>' +
+        '<td><span class="pos-pill">' + esc(p.position || '—') + '</span></td>' +
+        '<td class="num">' + (p.appearances || 0) + '</td>' +
+        '<td class="num"><span class="ll-metric-val">' + (p[cfg.key] || 0) + '</span></td>' +
+        '</tr>';
+    }).join('');
+  }
+
+  function setTab(tab) {
+    activeTab = tab;
+    const isTabla = tab === 'tabla';
+    $('ll-panel-tabla').hidden = !isTabla;
+    $('ll-panel-leaders').hidden = isTabla;
+    $('ll-split-switch').hidden = !isTabla;
+
+    ['tabla', 'goleadores', 'asistidores', 'paradas'].forEach(function(k) {
+      const btn = $('ll-tab-' + k);
+      if (btn) btn.setAttribute('aria-selected', k === tab ? 'true' : 'false');
+    });
+
+    if (isTabla) renderStandings();
+    else renderLeaders(tab);
+  }
+
+  function setSplit(split) {
+    activeSplit = split;
+    ['general', 'home', 'away'].forEach(function(k) {
+      const btn = $('ll-split-' + k);
+      if (btn) btn.setAttribute('aria-pressed', k === split ? 'true' : 'false');
+    });
+    renderStandings();
+  }
+
+  function bindEvents() {
+    if (listenersBound) return;
+    listenersBound = true;
+
+    $('ll-tab-tabla').addEventListener('click', function() { setTab('tabla'); });
+    $('ll-tab-goleadores').addEventListener('click', function() { setTab('goleadores'); });
+    $('ll-tab-asistidores').addEventListener('click', function() { setTab('asistidores'); });
+    $('ll-tab-paradas').addEventListener('click', function() { setTab('paradas'); });
+
+    $('ll-split-general').addEventListener('click', function() { setSplit('general'); });
+    $('ll-split-home').addEventListener('click', function() { setSplit('home'); });
+    $('ll-split-away').addEventListener('click', function() { setSplit('away'); });
+
+    $('ll-leaders-tbody').addEventListener('click', function(e) {
+      const tr = e.target.closest('tr[data-leader-name]');
+      if (!tr) return;
+      const match = PlayerExplorer.findPlayer(tr.dataset.leaderTeam, tr.dataset.leaderName);
+      if (match) PlayerExplorer.openPlayerModal(match);
+    });
+  }
+
+  function init() {
+    bindEvents();
+    LaLigaService.getData().then(function(json) {
+      if (!json) return;
+      data = json;
+      if ($('ll-season-badge') && json.season) $('ll-season-badge').textContent = json.season;
+      renderStandings();
+    });
+  }
+
+  return { init: init, setTab: setTab, setSplit: setSplit };
+})();
+
 document.addEventListener('DOMContentLoaded', function() {
   PlayerSelector.init();
   PlayerExplorer.init();
+  LaLigaView.init();
 });
 </script>
 
@@ -4312,10 +4931,9 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   $('b-copiar').addEventListener('click', copiar);
 
-  // Inicio limpio sin datos iniciales
+  // Inicio limpio sin datos iniciales (la vista por defecto es Mercado; Guía rápida abre el wizard)
   render();
   pintarCasos();
-  Wizard.autoStart();
 })();
 </script>
 </body>

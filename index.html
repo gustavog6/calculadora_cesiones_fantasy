@@ -1075,10 +1075,10 @@ tr.fuerte td { font-weight: 600; }
   min-height: 0;
 }
 
-/* Barra de filtros y ordenamiento (1. Precio, 2. Fluctuación, 3. Equipo, 4. Posición + Buscador) */
+/* Barra de filtros y ordenamiento (Buscador, Precio, Fluctuación, Equipo, Posición) */
 .filtros-bar {
   display: grid;
-  grid-template-columns: minmax(175px, 1.1fr) minmax(150px, 0.95fr) minmax(145px, 1fr) minmax(140px, 0.9fr) minmax(180px, 1.25fr) auto;
+  grid-template-columns: minmax(185px, 1.3fr) minmax(175px, 1.1fr) minmax(150px, 0.95fr) minmax(145px, 1fr) minmax(140px, 0.9fr) auto;
   gap: 8px;
   align-items: center;
 }
@@ -1650,11 +1650,21 @@ tr.fuerte td { font-weight: 600; }
   min-height: 0;
 }
 .laliga-head {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
-  justify-content: space-between;
   gap: 10px;
-  flex-wrap: wrap;
+}
+.laliga-head .listado-title-wrap { justify-self: start; }
+.laliga-tabs { justify-self: start; }
+.split-switch { justify-self: start; }
+@media (min-width: 980px) {
+  .laliga-head {
+    grid-template-columns: 1fr auto 1fr;
+  }
+  .laliga-head .listado-title-wrap { grid-column: 1; justify-self: start; }
+  .laliga-head .split-switch { grid-column: 2; justify-self: center; }
+  .laliga-head .laliga-tabs { grid-column: 3; justify-self: end; }
 }
 .laliga-tabs, .split-switch {
   display: inline-flex;
@@ -2097,6 +2107,14 @@ tr.fuerte td { font-weight: 600; }
         </div>
       </div>
       <div class="filtros-bar">
+        <!-- Buscador por nombre (extremo izquierdo) -->
+        <div class="combo">
+          <div class="combo-control">
+            <input type="text" id="exp-buscar-jugador" placeholder="Buscar jugador..." autocomplete="off" aria-label="Buscar jugador por nombre o equipo">
+            <button type="button" class="combo-clear" id="exp-clear-jugador" aria-label="Limpiar búsqueda" hidden>×</button>
+          </div>
+        </div>
+
         <!-- 1. Precio -->
         <select class="exp-select" id="exp-orden" aria-label="Ordenar por precio o fluctuación">
           <option value="price_desc">Precio: mayor a menor</option>
@@ -2133,14 +2151,6 @@ tr.fuerte td { font-weight: 600; }
             <span class="combo-caret" aria-hidden="true">▾</span>
           </div>
           <ul class="combo-list" id="exp-lista-posiciones" role="listbox" hidden></ul>
-        </div>
-
-        <!-- Búsqueda por nombre -->
-        <div class="combo">
-          <div class="combo-control">
-            <input type="text" id="exp-buscar-jugador" placeholder="Buscar jugador..." autocomplete="off" aria-label="Buscar jugador por nombre o equipo">
-            <button type="button" class="combo-clear" id="exp-clear-jugador" aria-label="Limpiar búsqueda" hidden>×</button>
-          </div>
         </div>
 
         <button type="button" class="btn btn-sec" id="btn-exp-reset-filtros" hidden>Restablecer</button>
@@ -2221,17 +2231,17 @@ tr.fuerte td { font-weight: 600; }
           <span class="section-badge" id="ll-season-badge">2026–27</span>
         </div>
 
+        <div class="split-switch" id="ll-split-switch" role="group" aria-label="Desglose de clasificación">
+          <button type="button" class="split-btn" id="ll-split-general" aria-pressed="true">General</button>
+          <button type="button" class="split-btn" id="ll-split-home" aria-pressed="false">Casa</button>
+          <button type="button" class="split-btn" id="ll-split-away" aria-pressed="false">Visitante</button>
+        </div>
+
         <div class="laliga-tabs" role="tablist" aria-label="Secciones de LaLiga">
           <button type="button" class="ll-tab-btn" role="tab" id="ll-tab-tabla" aria-selected="true">Clasificación</button>
           <button type="button" class="ll-tab-btn" role="tab" id="ll-tab-goleadores" aria-selected="false">Goleadores</button>
           <button type="button" class="ll-tab-btn" role="tab" id="ll-tab-asistidores" aria-selected="false">Asistidores</button>
           <button type="button" class="ll-tab-btn" role="tab" id="ll-tab-paradas" aria-selected="false">Paradas</button>
-        </div>
-
-        <div class="split-switch" id="ll-split-switch" role="group" aria-label="Desglose de clasificación">
-          <button type="button" class="split-btn" id="ll-split-general" aria-pressed="true">General</button>
-          <button type="button" class="split-btn" id="ll-split-home" aria-pressed="false">Casa</button>
-          <button type="button" class="split-btn" id="ll-split-away" aria-pressed="false">Visitante</button>
         </div>
       </div>
 

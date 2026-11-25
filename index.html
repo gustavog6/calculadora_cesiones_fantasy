@@ -4,29 +4,30 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
-<title>Calculadora de cesiones LALIGA Fantasy DAZN | Recupera tu jugador</title>
-<meta name="description" content="Calcula cuánto debes pagar para recuperar un jugador que cediste en LALIGA Fantasy: compensación, precio final y desembolso total, con fórmulas paso a paso.">
+<title>Clausulamesta | Calculadora de cesiones y mercado LALIGA Fantasy</title>
+<meta name="description" content="Clausulamesta: calcula cuánto pagar por recuperar un jugador cedido en LALIGA Fantasy, explora precios del mercado y compara hasta 5 jugadores.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://gustavog6.github.io/calculadora_cesiones_fantasy/">
 <link rel="alternate" hreflang="es" href="https://gustavog6.github.io/calculadora_cesiones_fantasy/">
 <link rel="alternate" hreflang="x-default" href="https://gustavog6.github.io/calculadora_cesiones_fantasy/">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="logo.png">
 <meta name="theme-color" content="#0C3B28">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_ES">
-<meta property="og:site_name" content="Calculadora de cesiones">
-<meta property="og:title" content="Calculadora de cesiones LALIGA Fantasy DAZN | Recupera tu jugador">
-<meta property="og:description" content="Calcula cuánto debes pagar para recuperar un jugador que cediste en LALIGA Fantasy: compensación, precio final y desembolso total, con fórmulas paso a paso.">
+<meta property="og:site_name" content="Clausulamesta">
+<meta property="og:title" content="Clausulamesta | Calculadora de cesiones y mercado LALIGA Fantasy">
+<meta property="og:description" content="Clausulamesta: calcula cuánto pagar por recuperar un jugador cedido en LALIGA Fantasy, explora precios del mercado y compara hasta 5 jugadores.">
 <meta property="og:url" content="https://gustavog6.github.io/calculadora_cesiones_fantasy/">
 <meta property="og:image" content="https://gustavog6.github.io/calculadora_cesiones_fantasy/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Calculadora de cesiones para LALIGA Fantasy: desembolso total de 25.000.000 euros">
+<meta property="og:image:alt" content="Clausulamesta: calculadora de cesiones y mercado para LALIGA Fantasy">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Calculadora de cesiones LALIGA Fantasy DAZN | Recupera tu jugador">
-<meta name="twitter:description" content="Calcula cuánto debes pagar para recuperar un jugador que cediste en LALIGA Fantasy: compensación, precio final y desembolso total, con fórmulas paso a paso.">
+<meta name="twitter:title" content="Clausulamesta | Calculadora de cesiones y mercado LALIGA Fantasy">
+<meta name="twitter:description" content="Clausulamesta: calcula cuánto pagar por recuperar un jugador cedido en LALIGA Fantasy, explora precios del mercado y compara hasta 5 jugadores.">
 <meta name="twitter:image" content="https://gustavog6.github.io/calculadora_cesiones_fantasy/og-image.png">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Calculadora de cesiones", "url": "https://gustavog6.github.io/calculadora_cesiones_fantasy/", "description": "Calcula cuánto debes pagar para recuperar un jugador que cediste en LALIGA Fantasy: compensación, precio final y desembolso total, con fórmulas paso a paso.", "inLanguage": "es", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Cualquiera con navegador web", "browserRequirements": "Requiere JavaScript", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Clausulamesta", "url": "https://gustavog6.github.io/calculadora_cesiones_fantasy/", "description": "Clausulamesta: calcula cuánto pagar por recuperar un jugador cedido en LALIGA Fantasy, explora precios del mercado y compara hasta 5 jugadores.", "inLanguage": "es", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Cualquiera con navegador web", "browserRequirements": "Requiere JavaScript", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -87,6 +88,7 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 [hidden] { display: none !important; }
+html { scrollbar-gutter: stable; }
 html, body { height: 100%; margin: 0; }
 body {
   background: var(--bg);
@@ -119,44 +121,42 @@ button, input { font: inherit; }
   }
 }
 
-/* Top bar */
+/* Top bar estable (sin layout shift al cambiar de vista) */
 .topbar {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  flex-wrap: wrap;
+  gap: 10px;
   padding: 8px 14px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow-sm);
 }
+@media (min-width: 980px) {
+  .topbar {
+    grid-template-columns: 1fr auto 1fr;
+  }
+}
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 11px;
   min-width: 0;
+  justify-self: start;
 }
-.brand-mark {
-  width: 38px;
-  height: 38px;
+.brand-logo {
+  width: 40px;
+  height: 40px;
   border-radius: 10px;
-  background: var(--hero-bg);
-  color: var(--hero-pf);
-  display: grid;
-  place-items: center;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 17.5px;
-  letter-spacing: -0.04em;
+  object-fit: cover;
   flex: none;
-  box-shadow: inset 0 0 0 1px rgba(91, 224, 160, 0.25);
+  box-shadow: 0 2px 6px rgba(12, 59, 40, 0.25);
 }
 .brand-text { display: grid; gap: 1px; min-width: 0; }
 .eyebrow {
-  font-size: 11.5px;
-  letter-spacing: 0.09em;
+  font-size: 11px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--pitch);
   font-weight: 600;
@@ -165,13 +165,22 @@ button, input { font: inherit; }
   font-size: clamp(19px, 2.4vw, 23px);
   font-weight: 700;
   line-height: 1.1;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
 }
 .topbar-actions {
   display: flex;
   align-items: center;
   gap: 8px;
   flex-wrap: wrap;
+  justify-self: end;
+}
+@media (max-width: 979px) {
+  .topbar-actions { justify-self: start; }
+}
+.section-head-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 /* Botones */
@@ -925,41 +934,58 @@ tr.fuerte td { font-weight: 600; }
   .seg-pf, .seg-c, .entrada, .btn, .wizard-dot, .wizard-spotlight, .wizard-card { transition: none; }
 }
 
-/* Selector de vista en topbar */
+/* Selector de vista persistente y fijo en topbar */
 .mode-switch {
   display: inline-flex;
   align-items: center;
-  gap: 3px;
-  padding: 3px;
+  gap: 4px;
+  padding: 4px;
   background: var(--campo);
   border: 1px solid var(--line);
-  border-radius: 10px;
+  border-radius: 11px;
+  justify-self: center;
+  max-width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.mode-switch::-webkit-scrollbar { display: none; }
+@media (max-width: 979px) {
+  .mode-switch { justify-self: start; }
 }
 .mode-btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
   border: 0;
   background: transparent;
   color: var(--muted);
   font-weight: 600;
-  font-size: 13.5px;
-  padding: 6px 12px;
-  border-radius: 7px;
+  font-size: 14px;
+  padding: 7px 14px;
+  border-radius: 8px;
   cursor: pointer;
   white-space: nowrap;
+  flex: none;
   transition: background 0.15s, color 0.15s, box-shadow 0.15s;
 }
 .mode-btn:hover { color: var(--ink); }
 .mode-btn[aria-pressed="true"] {
-  background: var(--surface);
-  color: var(--pitch);
+  background: var(--hero-bg);
+  color: var(--hero-ink);
   box-shadow: var(--shadow-sm);
+}
+.mode-btn[aria-pressed="true"] .mode-badge {
+  background: rgba(91, 224, 160, 0.22);
+  color: var(--hero-pf);
 }
 .mode-badge {
   font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 700;
+  min-width: 34px;
+  text-align: center;
   padding: 1px 6px;
   border-radius: 999px;
   background: var(--pitch-soft);
@@ -969,13 +995,28 @@ tr.fuerte td { font-weight: 600; }
   background: var(--amber-soft);
   color: var(--amber);
 }
+.mode-btn[aria-pressed="true"] .mode-badge.lleno {
+  background: rgba(245, 176, 88, 0.24);
+  color: var(--hero-c);
+}
 
 /* Vista Mercado (Listado paginado) y Comparador */
 .explorer-workspace {
   display: grid;
-  grid-template-rows: auto minmax(0, 1fr);
-  gap: 10px;
+  grid-template-rows: minmax(0, 1fr);
   min-height: 0;
+}
+.listado-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.listado-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .exp-subbar {
   display: flex;
@@ -1585,23 +1626,22 @@ tr.fuerte td { font-weight: 600; }
 <div class="app-shell">
   <header class="topbar">
     <div class="brand">
-      <div class="brand-mark" aria-hidden="true">LF</div>
+      <img class="brand-logo" src="logo.png" alt="Logo de Clausulamesta" width="40" height="40">
       <div class="brand-text">
-        <p class="eyebrow">LALIGA Fantasy DAZN · Cesiones</p>
-        <h1>Calculadora de cesiones</h1>
+        <p class="eyebrow">LALIGA Fantasy · Cesiones y cláusulas</p>
+        <h1>Clausulamesta</h1>
       </div>
     </div>
-    <nav class="mode-switch" aria-label="Cambiar vista">
+    <nav class="mode-switch" aria-label="Navegación principal">
       <button type="button" class="mode-btn" id="nav-calc" aria-pressed="true">Calculadora</button>
-      <button type="button" class="mode-btn" id="nav-explorador" aria-pressed="false">
-        Mercado y comparador
+      <button type="button" class="mode-btn" id="nav-mercado" aria-pressed="false">Mercado</button>
+      <button type="button" class="mode-btn" id="nav-comparador" aria-pressed="false">
+        Comparador
         <span class="mode-badge" id="nav-compare-badge">0/5</span>
       </button>
     </nav>
     <div class="topbar-actions">
-      <button type="button" class="btn btn-sec calc-only" id="b-ejemplo">Cargar ejemplo</button>
-      <button type="button" class="btn btn-sec calc-only" id="b-limpiar">Limpiar</button>
-      <button type="button" class="btn btn-ghost calc-only" id="b-guia">Guía rápida</button>
+      <button type="button" class="btn btn-ghost" id="b-guia">Guía rápida</button>
       <a href="https://ko-fi.com/R5A62B8J2Y" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;"><img height="36" style="border:0px;height:36px;display:block;" src="https://storage.ko-fi.com/cdn/kofi6.png?v=6" alt="Buy Me a Coffee at ko-fi.com"></a>
     </div>
   </header>
@@ -1611,7 +1651,10 @@ tr.fuerte td { font-weight: 600; }
     <section class="panel panel-entradas" aria-labelledby="t-datos">
       <div class="section-head">
         <h2 id="t-datos">Datos de la cesión</h2>
-        <span class="section-badge">Cálculo instantáneo</span>
+        <div class="section-head-actions">
+          <button type="button" class="btn-mini" id="b-ejemplo">Cargar ejemplo</button>
+          <button type="button" class="btn-mini" id="b-limpiar">Limpiar</button>
+        </div>
       </div>
 
       <fieldset class="selector-jugador" id="bloque-selector">
@@ -1866,27 +1909,20 @@ tr.fuerte td { font-weight: 600; }
     </section>
   </main>
 
-  <!-- Vista 2: Listado paginado de jugadores + Comparador (máx. 5) -->
+  <!-- Vista 2 y 3: Mercado (Listado paginado) y Comparador (máx. 5) -->
   <section class="explorer-workspace" id="vista-explorador" aria-label="Mercado de jugadores y comparador" hidden>
-    <div class="exp-subbar">
-      <div class="exp-subtabs" role="tablist" aria-label="Secciones de mercado">
-        <button type="button" class="exp-subtab" role="tab" id="subtab-listado" aria-selected="true" aria-controls="panel-listado">
-          Listado de jugadores
-          <span class="section-badge" id="exp-total-badge">649</span>
-        </button>
-        <button type="button" class="exp-subtab" role="tab" id="subtab-comparador" aria-selected="false" aria-controls="panel-comparador">
-          Comparador
-          <span class="mode-badge" id="subtab-compare-badge">0/5</span>
-        </button>
-      </div>
-      <div class="exp-subbar-right">
-        <span class="exp-count-meta" id="exp-filtered-meta">Mostrando 649 jugadores</span>
-        <button type="button" class="btn btn-primario" id="btn-ir-comparador" hidden>Ver comparador →</button>
-      </div>
-    </div>
-
     <!-- Subvista A: Listado paginado -->
-    <section class="panel panel-listado" id="panel-listado" role="tabpanel" aria-labelledby="subtab-listado">
+    <section class="panel panel-listado" id="panel-listado" aria-labelledby="t-mercado">
+      <div class="listado-head">
+        <div class="listado-title-wrap">
+          <h2 id="t-mercado">Mercado de jugadores</h2>
+          <span class="section-badge" id="exp-total-badge">649</span>
+        </div>
+        <div class="exp-subbar-right">
+          <span class="exp-count-meta" id="exp-filtered-meta">649 resultados</span>
+          <button type="button" class="btn btn-primario" id="btn-ir-comparador" hidden>Ver comparador →</button>
+        </div>
+      </div>
       <div class="filtros-bar">
         <div class="combo">
           <div class="combo-control">
@@ -2055,7 +2091,7 @@ tr.fuerte td { font-weight: 600; }
   </div>
 
   <footer class="pie">
-    <span><b>Sin afiliación:</b> herramienta independiente, no vinculada a LALIGA ni a DAZN.</span>
+    <span><b>Clausulamesta:</b> herramienta independiente de LALIGA Fantasy, sin afiliación con LALIGA ni DAZN.</span>
     <span><b>Privacidad:</b> cálculo 100% en tu navegador, sin registro ni envío de datos.</span>
   </footer>
 </div>
@@ -3100,13 +3136,11 @@ const PlayerExplorer = (function() {
     const count = comparedPlayers.length;
     const full = count >= MAX_COMPARE;
 
-    ['nav-compare-badge', 'subtab-compare-badge'].forEach(function(id) {
-      const el = $(id);
-      if (el) {
-        el.textContent = count + '/' + MAX_COMPARE;
-        el.classList.toggle('lleno', full);
-      }
-    });
+    const navBadge = $('nav-compare-badge');
+    if (navBadge) {
+      navBadge.textContent = count + '/' + MAX_COMPARE;
+      navBadge.classList.toggle('lleno', full);
+    }
 
     const cmpCounter = $('cmp-counter');
     if (cmpCounter) {
@@ -3501,24 +3535,27 @@ const PlayerExplorer = (function() {
     }).join('');
   }
 
-  /* --- Navegación de vistas y subtabs --- */
+  /* --- Navegación unificada y estable: Calculadora | Mercado | Comparador --- */
   function setView(view) {
-    const isExplorer = view === 'explorador';
-    $('vista-calculadora').hidden = isExplorer;
-    $('vista-explorador').hidden = !isExplorer;
-    $('nav-calc').setAttribute('aria-pressed', isExplorer ? 'false' : 'true');
-    $('nav-explorador').setAttribute('aria-pressed', isExplorer ? 'true' : 'false');
-    document.querySelectorAll('.calc-only').forEach(function(el) { el.hidden = isExplorer; });
+    const mode = view === 'mercado' || view === 'comparador' ? view : 'calculadora';
+    const isCalc = mode === 'calculadora';
+    const isMercado = mode === 'mercado';
+    const isCmp = mode === 'comparador';
+
+    activeSubTab = isCmp ? 'comparador' : 'listado';
+    $('vista-calculadora').hidden = !isCalc;
+    $('vista-explorador').hidden = isCalc;
+    $('panel-listado').hidden = !isMercado;
+    $('panel-comparador').hidden = !isCmp;
+
+    $('nav-calc').setAttribute('aria-pressed', isCalc ? 'true' : 'false');
+    $('nav-mercado').setAttribute('aria-pressed', isMercado ? 'true' : 'false');
+    $('nav-comparador').setAttribute('aria-pressed', isCmp ? 'true' : 'false');
+    updateBadges();
   }
 
   function setSubTab(tab) {
-    activeSubTab = tab === 'comparador' ? 'comparador' : 'listado';
-    const isCmp = activeSubTab === 'comparador';
-    $('panel-listado').hidden = isCmp;
-    $('panel-comparador').hidden = !isCmp;
-    $('subtab-listado').setAttribute('aria-selected', isCmp ? 'false' : 'true');
-    $('subtab-comparador').setAttribute('aria-selected', isCmp ? 'true' : 'false');
-    updateBadges();
+    setView(tab === 'comparador' ? 'comparador' : 'mercado');
   }
 
   function useInCalculator(player) {
@@ -3635,11 +3672,10 @@ const PlayerExplorer = (function() {
     listenersBound = true;
 
     $('nav-calc').addEventListener('click', function() { setView('calculadora'); });
-    $('nav-explorador').addEventListener('click', function() { setView('explorador'); });
-    $('subtab-listado').addEventListener('click', function() { setSubTab('listado'); });
-    $('subtab-comparador').addEventListener('click', function() { setSubTab('comparador'); });
-    $('btn-ir-comparador').addEventListener('click', function() { setSubTab('comparador'); });
-    $('btn-volver-listado').addEventListener('click', function() { setSubTab('listado'); });
+    $('nav-mercado').addEventListener('click', function() { setView('mercado'); });
+    $('nav-comparador').addEventListener('click', function() { setView('comparador'); });
+    $('btn-ir-comparador').addEventListener('click', function() { setView('comparador'); });
+    $('btn-volver-listado').addEventListener('click', function() { setView('mercado'); });
 
     // Búsqueda de texto del listado (reinicia a página 1)
     const expSearch = $('exp-buscar-jugador');
@@ -3963,7 +3999,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function textoParaCopiar(e, r) {
     const l = [
-      'Calculadora de cesiones · LALIGA Fantasy DAZN',
+      'Clausulamesta · Calculadora de cesiones LALIGA Fantasy DAZN',
       '',
       'DATOS',
       'Precio inicial (Pi): ' + f(e.pi),
@@ -4240,7 +4276,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     window.addEventListener('resize', positionElements);
     window.addEventListener('scroll', positionElements, true);
-    $('b-guia').addEventListener('click', open);
+    $('b-guia').addEventListener('click', () => {
+      PlayerExplorer.setView('calculadora');
+      open();
+    });
 
     function autoStart() {
       try {

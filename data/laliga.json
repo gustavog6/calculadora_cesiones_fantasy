@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T09:40:47.837Z",
+  "updated_at": "2026-11-25T21:09:14.079Z",
   "season": "2026-27 LALIGA",
   "source": "ESPN Public API (esp.1)",
   "standings": [
@@ -880,6 +880,12 @@
           "oppAbbr": "RMA"
         },
         {
+          "date": "2026-12-09T19:00Z",
+          "loc": "V",
+          "opp": "Rayo Vallecano",
+          "oppAbbr": "RAY"
+        },
+        {
           "date": "2026-12-13T15:15Z",
           "loc": "V",
           "opp": "Deportivo",
@@ -890,12 +896,6 @@
           "loc": "L",
           "opp": "Betis",
           "oppAbbr": "BET"
-        },
-        {
-          "date": "2027-01-03T20:00Z",
-          "loc": "V",
-          "opp": "Racing",
-          "oppAbbr": "RAC"
         }
       ]
     },
@@ -1776,6 +1776,12 @@
           "oppAbbr": "LEV"
         },
         {
+          "date": "2026-12-09T19:00Z",
+          "loc": "L",
+          "opp": "Athletic",
+          "oppAbbr": "ATH"
+        },
+        {
           "date": "2026-12-12T15:15Z",
           "loc": "V",
           "opp": "Villarreal",
@@ -1786,12 +1792,6 @@
           "loc": "L",
           "opp": "Málaga",
           "oppAbbr": "MCF"
-        },
-        {
-          "date": "2027-01-03T20:00Z",
-          "loc": "L",
-          "opp": "Atlético",
-          "oppAbbr": "ATM"
         }
       ]
     },
@@ -3356,6 +3356,12 @@
       "assists": 0,
       "saves": 0,
       "appearances": 2
+    },
+    "barcelona::oscar gistau": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
     },
     "real madrid::javier navarro": {
       "goals": 0,

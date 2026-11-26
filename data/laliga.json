@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26T09:16:29.000Z",
+  "updated_at": "2026-11-26T20:59:14.471Z",
   "season": "2026-27 LALIGA",
   "source": "ESPN Public API (esp.1)",
   "standings": [
@@ -4131,6 +4131,12 @@
       "saves": 0,
       "appearances": 11
     },
+    "real sociedad::daniel diaz": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
     "real sociedad::alex marchal": {
       "goals": 0,
       "assists": 0,
@@ -6628,6 +6634,12 @@
       "appearances": 1
     },
     "getafe::sebastian salazar trujillo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "getafe::marcos pachon sanchez": {
       "goals": 0,
       "assists": 0,
       "saves": 0,

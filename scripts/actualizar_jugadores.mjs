@@ -57,6 +57,15 @@ function normalizePlayer(raw) {
     priceIncrement = price - history['1'];
   }
 
+  const cleanHistory = {};
+  if (history) {
+    for (const day of ['0', '1', '2', '3', '7', '14', '30']) {
+      if (typeof history[day] === 'number' && Number.isFinite(history[day])) {
+        cleanHistory[day] = history[day];
+      }
+    }
+  }
+
   return {
     id: raw.id !== undefined && raw.id !== null ? String(raw.id) : `${name}-${raw.team || ''}`,
     name,
@@ -64,6 +73,7 @@ function normalizePlayer(raw) {
     position: typeof raw.position === 'string' ? raw.position.trim().toUpperCase() : '',
     price,
     price_increment: priceIncrement,
+    price_history: Object.keys(cleanHistory).length > 0 ? cleanHistory : undefined,
     photo_url: typeof raw.photo_url === 'string' ? raw.photo_url : '',
     team_crest_url: typeof raw.team_crest_url === 'string' ? raw.team_crest_url : ''
   };

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gustavog6.github.io/calculadora_cesiones_fantasy/sitemap.xml
+Sitemap: https://gustavog6.github.io/clausulamesta/sitemap.xml

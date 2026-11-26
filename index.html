@@ -2616,7 +2616,7 @@ tr.fuerte td { font-weight: 600; }
       </span>
       <div class="tg-copy">
         <strong class="tg-title">Canal diario en Telegram · Gratis</strong>
-        <span class="tg-desc">Recibe cada madrugada el Top 5 Subidas, Top 5 Bajadas, Top 3 Chollos (&lt; 10M €) y enlace para comparar en 1 clic.</span>
+        <span class="tg-desc">Recibe cada día el Top 5 Subidas, Top 5 Bajadas, Top 3 Chollos (&lt; 10M €) enlaces para compartir y más.</span>
       </div>
     </div>
     <a class="tg-cta" href="https://t.me/clausulamesta" target="_blank" rel="noopener noreferrer">Unirme al canal</a>
@@ -4713,8 +4713,12 @@ const PlayerExplorer = (function() {
   function init() {
     bindEvents();
     updateBadges();
-    PlayerMarketService.getPlayers().then(function(result) {
-      if (result.status !== 'ready') return;
+    Promise.all([
+      PlayerMarketService.getPlayers(),
+      LaLigaService.getData()
+    ]).then(function(results) {
+      const result = results[0];
+      if (!result || result.status !== 'ready') return;
       allPlayers = result.players;
       computeRankings(allPlayers);
       const uniqueTeams = [];

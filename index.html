@@ -1876,16 +1876,16 @@ tr.fuerte td { font-weight: 600; }
 
 /* Botón fijo de tema Claro / Oscuro */
 .btn-tema {
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   padding: 0;
-  border-radius: 9px;
+  border-radius: 50%;
   border: 1px solid var(--line);
   background: var(--campo);
   color: var(--ink);
   display: inline-grid;
   place-items: center;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
   flex: none;
   transition: border-color 0.15s, background 0.15s;
@@ -1988,7 +1988,7 @@ tr.fuerte td { font-weight: 600; }
     <!-- Columna izquierda: Selector + Datos -->
     <section class="panel panel-entradas" aria-labelledby="t-datos">
       <div class="section-head">
-        <div class="split-switch" role="group" aria-label="Modo de calculadora">
+        <div class="split-switch" id="calc-mode-switch" role="group" aria-label="Modo de calculadora">
           <button type="button" class="split-btn" id="calc-mode-cesion" aria-pressed="true">Cesiones</button>
           <button type="button" class="split-btn" id="calc-mode-clausula" aria-pressed="false">Clausulazos</button>
         </div>
@@ -2594,7 +2594,7 @@ tr.fuerte td { font-weight: 600; }
     </article>
   </div>
 
-  <section class="tg-banner" aria-label="Canal de Telegram de Clausulamesta">
+  <section class="tg-banner" id="tg-banner" aria-label="Canal de Telegram de Clausulamesta">
     <div class="tg-info">
       <span class="tg-icon" aria-hidden="true">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -2610,16 +2610,18 @@ tr.fuerte td { font-weight: 600; }
   </section>
 </div>
 
-<!-- Wizard Spotlight de 3 pasos (ilumina el bloque real y coloca el popover a un lado) -->
+<!-- Wizard Spotlight de 5 pasos (ilumina el bloque real y coloca el popover a un lado) -->
 <div class="wizard-shield" id="wizard-shield" hidden></div>
 <div class="wizard-spotlight" id="wizard-spotlight" aria-hidden="true" hidden></div>
 <div class="wizard-card" id="wizard-card" role="dialog" aria-modal="true" aria-labelledby="wizard-titulo" hidden>
   <div class="wizard-head">
-    <span class="wizard-step-pill" id="wizard-paso-label">Paso 1 de 3</span>
+    <span class="wizard-step-pill" id="wizard-paso-label">Paso 1 de 5</span>
     <div class="wizard-dots" aria-hidden="true">
       <span class="wizard-dot activo" data-dot="0"></span>
       <span class="wizard-dot" data-dot="1"></span>
       <span class="wizard-dot" data-dot="2"></span>
+      <span class="wizard-dot" data-dot="3"></span>
+      <span class="wizard-dot" data-dot="4"></span>
     </div>
   </div>
   <div class="wizard-body">
@@ -2673,25 +2675,44 @@ const POSICIONES_LISTA = [
 
 const WIZARD_STEPS = [
   {
-    titulo: '1. Busca tu jugador (o escribe a mano)',
-    texto: 'Filtra por equipo, posición o nombre con autocompletado. Al elegir un jugador, rellenaremos su precio inicial y su subida diaria automáticamente.',
-    tip: 'Si prefieres, puedes ignorar el selector y escribir los importes directamente.',
-    target: 'bloque-selector',
+    titulo: '1. Explora el Mercado y detecta chollos',
+    texto: 'Consulta precios y subidas diarias de todos los jugadores. Usa los filtros rápidos (Top Subidas, Top Bajadas, Chollos < 10M € y Estrellas) o abre cualquier jugador para ver su ficha, evolución de precio y próximos rivales.',
+    tip: 'Desde cada ficha puedes copiar un enlace directo (?player=...) para compartirlo.',
+    target: 'exp-quick-presets',
+    view: 'mercado',
+    side: 'below'
+  },
+  {
+    titulo: '2. Compara hasta 5 jugadores en paralelo',
+    texto: 'Añade jugadores desde el Mercado o el buscador rápido para contrastar precio, subida diaria, goles, asistencias, paradas, posición en LaLiga y próximos 5 partidos.',
+    tip: 'Pulsa «Compartir enlace» para enviar tu comparativa completa (?compare=...) a tu liga.',
+    target: 'panel-comparador',
+    view: 'comparador',
+    side: 'below'
+  },
+  {
+    titulo: '3. Calcula Cesiones y Clausulazos',
+    texto: 'Alterna entre Cesiones (compensación y coste de recuperación) y Clausulazos (sobrecoste, días para amortizar y nueva cláusula tras blindar).',
+    tip: 'Elige un jugador para rellenar su precio y subida diaria automáticamente, o pulsa «Cargar ejemplo».',
+    target: 'calc-mode-switch',
+    view: 'calculadora',
     side: 'right'
   },
   {
-    titulo: '2. Completa los datos de la cesión',
-    texto: 'Introduce cuánto te pagó tu socio (Pv) y cuántos días durará la cesión. Si ya conoces el precio final de hoy, escríbelo en el campo opcional.',
-    tip: 'También tienes el botón «Cargar ejemplo» arriba si quieres ver un caso completo.',
-    target: 'bloque-campos',
-    side: 'right'
+    titulo: '4. Clasificación, rachas y rankings',
+    texto: 'Revisa la tabla de LaLiga (General, Casa y Visitante), racha de últimos 5, próximos 5 rivales y rankings de Goleadores, Asistidores y Paradas.',
+    tip: 'Pulsa cualquier jugador en los rankings para abrir su ficha completa al instante.',
+    target: 'vista-laliga',
+    view: 'laliga',
+    side: 'below'
   },
   {
-    titulo: '3. Consulta y copia el resultado',
-    texto: 'Aquí verás al instante el desembolso total, la compensación y las fórmulas paso a paso listas para copiar y enviar a tu socio.',
-    tip: 'Puedes reabrir esta guía cuando quieras desde el botón «Guía rápida».',
-    target: 'bloque-resultado',
-    side: 'left'
+    titulo: '5. Resumen diario gratis en Telegram',
+    texto: 'Únete al canal de Clausulamesta para recibir cada día el Top 5 Subidas, Top 5 Bajadas, Top 3 Chollos y enlace directo para comparar en 1 clic.',
+    tip: 'También puedes instalar la app en tu móvil (PWA) o cambiar de tema claro/oscuro arriba a la derecha.',
+    target: 'tg-banner',
+    view: 'mercado',
+    side: 'above'
   }
 ];
 
@@ -5376,6 +5397,12 @@ document.addEventListener('DOMContentLoaded', function() {
       } else if (step.side === 'left' && canPlaceLeft) {
         left = spotLeft - gap - cw;
         top = Math.min(Math.max(margin, spotTop), vh - ch - margin);
+      } else if (step.side === 'below' && canPlaceBelow) {
+        left = Math.min(Math.max(margin, spotLeft + (spotWidth - cw) / 2), vw - cw - margin);
+        top = spotTop + spotHeight + gap;
+      } else if (step.side === 'above' && canPlaceAbove) {
+        left = Math.min(Math.max(margin, spotLeft + (spotWidth - cw) / 2), vw - cw - margin);
+        top = spotTop - gap - ch;
       } else if (canPlaceRight) {
         left = spotLeft + spotWidth + gap;
         top = Math.min(Math.max(margin, spotTop), vh - ch - margin);
@@ -5399,6 +5426,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function renderStep() {
       const step = WIZARD_STEPS[stepIndex];
+      if (step.view) PlayerExplorer.setView(step.view);
       $('wizard-paso-label').textContent = 'Paso ' + (stepIndex + 1) + ' de ' + WIZARD_STEPS.length;
       $('wizard-titulo').textContent = step.titulo;
       $('wizard-texto').textContent = step.texto;
@@ -5449,7 +5477,6 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('resize', positionElements);
     window.addEventListener('scroll', positionElements, true);
     $('b-guia').addEventListener('click', () => {
-      PlayerExplorer.setView('calculadora');
       open();
     });
 

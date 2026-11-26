@@ -44,3 +44,10 @@ jobs:
           git add data/players.json data/laliga.json
           git commit -m "chore: actualizar precios y estadisticas de LaLiga"
           git push
+
+      - name: Publicar resumen diario en Telegram (si está configurado)
+        if: github.event.schedule == '0 1 * * *' || github.event_name == 'workflow_dispatch'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: node scripts/publicar_telegram.mjs

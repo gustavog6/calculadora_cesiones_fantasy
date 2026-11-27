@@ -17,7 +17,7 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PLAYERS_PATH = path.resolve(__dirname, '..', 'data', 'players.json');
-const SITE_URL = (process.env.SITE_URL || 'https://gustavog6.github.io/clausulamesta/').replace(/\/?$/, '/');
+const SITE_URL = (process.env.SITE_URL || 'https://clausulamesta.club/').replace(/\/?$/, '/');
 const DRY_RUN = process.argv.includes('--dry-run');
 
 function escHtml(s) {

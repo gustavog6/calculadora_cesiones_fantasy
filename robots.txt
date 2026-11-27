@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gustavog6.github.io/clausulamesta/sitemap.xml
+Sitemap: https://clausulamesta.club/sitemap.xml

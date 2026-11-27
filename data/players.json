@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-27T09:30:58.124Z",
+  "updated_at": "2026-11-27T20:44:35.329Z",
   "source": "https://fantasybrain-production.up.railway.app/players",
-  "count": 641,
+  "count": 635,
   "players": [
     {
       "id": "553",
@@ -591,6 +591,25 @@
       },
       "photo_url": "/static/ff_players/1743.png",
       "team_crest_url": "/static/ff_teams/10.png"
+    },
+    {
+      "id": "583",
+      "name": "Edu Expósito",
+      "team": "Espanyol",
+      "position": "MED",
+      "price": 45272871,
+      "price_increment": 116456,
+      "price_history": {
+        "0": 45272871,
+        "1": 45156415,
+        "2": 45968946,
+        "3": 47109242,
+        "7": 51040192,
+        "14": 47423150,
+        "30": 34661646
+      },
+      "photo_url": "/static/ff_players/3738.png",
+      "team_crest_url": "/static/ff_teams/7.png"
     },
     {
       "id": "956",
@@ -1961,25 +1980,6 @@
       "team_crest_url": "/static/ff_teams/6.png"
     },
     {
-      "id": "740",
-      "name": "Guido Rodríguez",
-      "team": "Valencia",
-      "position": "MED",
-      "price": 10569365,
-      "price_increment": 66564,
-      "price_history": {
-        "0": 10569365,
-        "1": 10502801,
-        "2": 10457533,
-        "3": 10411159,
-        "7": 10543027,
-        "14": 11314506,
-        "30": 12211837
-      },
-      "photo_url": "/static/ff_players/7676.png",
-      "team_crest_url": "/static/ff_teams/18.png"
-    },
-    {
       "id": "676",
       "name": "Javier Hernández",
       "team": "Espanyol",
@@ -2417,25 +2417,6 @@
       "team_crest_url": "/static/ff_teams/1.png"
     },
     {
-      "id": "659",
-      "name": "Sergio Carreira",
-      "team": "Celta",
-      "position": "DEF",
-      "price": 5211902,
-      "price_increment": -11351,
-      "price_history": {
-        "0": 5211902,
-        "1": 5223253,
-        "2": 5261365,
-        "3": 5301854,
-        "7": 5339031,
-        "14": 5093780,
-        "30": 5762642
-      },
-      "photo_url": "/static/ff_players/7199.png",
-      "team_crest_url": "/static/ff_teams/5.png"
-    },
-    {
       "id": "1179",
       "name": "Thiago Fernández",
       "team": "Levante",
@@ -2531,25 +2512,6 @@
       "team_crest_url": "/static/ff_teams/8.png"
     },
     {
-      "id": "583",
-      "name": "Edu Expósito",
-      "team": "Espanyol",
-      "position": "MED",
-      "price": 45272871,
-      "price_increment": 116456,
-      "price_history": {
-        "0": 45272871,
-        "1": 45156415,
-        "2": 45968946,
-        "3": 47109242,
-        "7": 51040192,
-        "14": 47423150,
-        "30": 34661646
-      },
-      "photo_url": "/static/ff_players/3738.png",
-      "team_crest_url": "/static/ff_teams/7.png"
-    },
-    {
       "id": "764",
       "name": "Quilindschy Hartman",
       "team": "Espanyol",
@@ -2624,25 +2586,6 @@
       },
       "photo_url": "/static/ff_players/867.png",
       "team_crest_url": "/static/ff_teams/14.png"
-    },
-    {
-      "id": "603",
-      "name": "Fran García",
-      "team": "Betis",
-      "position": "DEF",
-      "price": 20338672,
-      "price_increment": -74461,
-      "price_history": {
-        "0": 20338672,
-        "1": 20413133,
-        "2": 20554597,
-        "3": 20695886,
-        "7": 20637504,
-        "14": 19749926,
-        "30": 22784928
-      },
-      "photo_url": "/static/ff_players/6392.png",
-      "team_crest_url": "/static/ff_teams/4.png"
     },
     {
       "id": "704",
@@ -2776,6 +2719,25 @@
       },
       "photo_url": "/static/ff_players/775.png",
       "team_crest_url": "/static/ff_teams/6.png"
+    },
+    {
+      "id": "659",
+      "name": "Sergio Carreira",
+      "team": "Celta",
+      "position": "DEF",
+      "price": 5211902,
+      "price_increment": -11351,
+      "price_history": {
+        "0": 5211902,
+        "1": 5223253,
+        "2": 5261365,
+        "3": 5301854,
+        "7": 5339031,
+        "14": 5093780,
+        "30": 5762642
+      },
+      "photo_url": "/static/ff_players/7199.png",
+      "team_crest_url": "/static/ff_teams/5.png"
     },
     {
       "id": "577",
@@ -2949,6 +2911,25 @@
       "team_crest_url": "/static/ff_teams/5.png"
     },
     {
+      "id": "751",
+      "name": "Pedro Díaz",
+      "team": "Rayo Vallecano",
+      "position": "MED",
+      "price": 764059,
+      "price_increment": -2457,
+      "price_history": {
+        "0": 764059,
+        "1": 766516,
+        "2": 769174,
+        "3": 771862,
+        "7": 759461,
+        "14": 736809,
+        "30": 732735
+      },
+      "photo_url": "/static/ff_players/3623.png",
+      "team_crest_url": "/static/ff_teams/14.png"
+    },
+    {
       "id": "1145",
       "name": "Ramón Enríquez",
       "team": "Málaga",
@@ -3004,6 +2985,25 @@
       },
       "photo_url": "/static/ff_players/8780.png",
       "team_crest_url": "/static/ff_teams/11.png"
+    },
+    {
+      "id": "603",
+      "name": "Fran García",
+      "team": "Betis",
+      "position": "DEF",
+      "price": 20338672,
+      "price_increment": -74461,
+      "price_history": {
+        "0": 20338672,
+        "1": 20413133,
+        "2": 20554597,
+        "3": 20695886,
+        "7": 20637504,
+        "14": 19749926,
+        "30": 22784928
+      },
+      "photo_url": "/static/ff_players/6392.png",
+      "team_crest_url": "/static/ff_teams/4.png"
     },
     {
       "id": "712",
@@ -3101,6 +3101,25 @@
       "team_crest_url": "/static/ff_teams/14.png"
     },
     {
+      "id": "646",
+      "name": "Javi Rueda",
+      "team": "Celta",
+      "position": "DEF",
+      "price": 4047892,
+      "price_increment": -49180,
+      "price_history": {
+        "0": 4047892,
+        "1": 4097072,
+        "2": 4165241,
+        "3": 4231705,
+        "7": 4434691,
+        "14": 4744010,
+        "30": 5081673
+      },
+      "photo_url": "/static/ff_players/13035.png",
+      "team_crest_url": "/static/ff_teams/5.png"
+    },
+    {
       "id": "837",
       "name": "Mujaid Sadick",
       "team": "Rayo Vallecano",
@@ -3137,25 +3156,6 @@
       },
       "photo_url": "/static/ff_players/10473.png",
       "team_crest_url": "/static/ff_teams/6.png"
-    },
-    {
-      "id": "980",
-      "name": "Adrián de la Fuente",
-      "team": "Levante",
-      "position": "DEF",
-      "price": 9754760,
-      "price_increment": 81318,
-      "price_history": {
-        "0": 9754760,
-        "1": 9673442,
-        "2": 9643226,
-        "3": 9666320,
-        "7": 10247298,
-        "14": 11224028,
-        "30": 14326368
-      },
-      "photo_url": "/static/ff_players/6346.png",
-      "team_crest_url": "/static/ff_teams/10.png"
     },
     {
       "id": "822",
@@ -3215,42 +3215,23 @@
       "team_crest_url": "/static/ff_teams/21.png"
     },
     {
-      "id": "759",
-      "name": "Roger Hinojo",
-      "team": "Espanyol",
+      "id": "1065",
+      "name": "Ifeanyi Ndukwe",
+      "team": "Levante",
       "position": "DEF",
-      "price": 1198295,
-      "price_increment": 8527,
+      "price": 1192033,
+      "price_increment": -14856,
       "price_history": {
-        "0": 1198295,
-        "1": 1189768,
-        "2": 1192319,
-        "3": 1193986,
-        "7": 1236875,
-        "14": 1391100,
-        "30": 2025386
+        "0": 1192033,
+        "1": 1206889,
+        "2": 1225909,
+        "3": 1243545,
+        "7": 1263633,
+        "14": 1249138,
+        "30": 960556
       },
-      "photo_url": "/static/ff_players/15316.png",
-      "team_crest_url": "/static/ff_teams/7.png"
-    },
-    {
-      "id": "646",
-      "name": "Javi Rueda",
-      "team": "Celta",
-      "position": "DEF",
-      "price": 4047892,
-      "price_increment": -49180,
-      "price_history": {
-        "0": 4047892,
-        "1": 4097072,
-        "2": 4165241,
-        "3": 4231705,
-        "7": 4434691,
-        "14": 4744010,
-        "30": 5081673
-      },
-      "photo_url": "/static/ff_players/13035.png",
-      "team_crest_url": "/static/ff_teams/5.png"
+      "photo_url": "/static/ff_players/18406.png",
+      "team_crest_url": "/static/ff_teams/10.png"
     },
     {
       "id": "736",
@@ -3327,25 +3308,6 @@
       },
       "photo_url": "/static/ff_players/16286.png",
       "team_crest_url": "/static/ff_teams/11.png"
-    },
-    {
-      "id": "1065",
-      "name": "Ifeanyi Ndukwe",
-      "team": "Levante",
-      "position": "DEF",
-      "price": 1192033,
-      "price_increment": -14856,
-      "price_history": {
-        "0": 1192033,
-        "1": 1206889,
-        "2": 1225909,
-        "3": 1243545,
-        "7": 1263633,
-        "14": 1249138,
-        "30": 960556
-      },
-      "photo_url": "/static/ff_players/18406.png",
-      "team_crest_url": "/static/ff_teams/10.png"
     },
     {
       "id": "805",
@@ -3479,25 +3441,6 @@
       },
       "photo_url": "/static/ff_players/5549.png",
       "team_crest_url": "/static/ff_teams/22.png"
-    },
-    {
-      "id": "751",
-      "name": "Pedro Díaz",
-      "team": "Rayo Vallecano",
-      "position": "MED",
-      "price": 764059,
-      "price_increment": -2457,
-      "price_history": {
-        "0": 764059,
-        "1": 766516,
-        "2": 769174,
-        "3": 771862,
-        "7": 759461,
-        "14": 736809,
-        "30": 732735
-      },
-      "photo_url": "/static/ff_players/3623.png",
-      "team_crest_url": "/static/ff_teams/14.png"
     },
     {
       "id": "941",
@@ -3709,25 +3652,6 @@
       "team_crest_url": "/static/ff_teams/28.png"
     },
     {
-      "id": "945",
-      "name": "Pedro Felipe",
-      "team": "Racing",
-      "position": "DEF",
-      "price": 715316,
-      "price_increment": -426,
-      "price_history": {
-        "0": 715316,
-        "1": 715742,
-        "2": 716284,
-        "3": 716768,
-        "7": 703873,
-        "14": 681799,
-        "30": 697203
-      },
-      "photo_url": "/static/ff_players/16760.png",
-      "team_crest_url": "/static/ff_teams/42.png"
-    },
-    {
       "id": "746",
       "name": "Ayoze Pérez",
       "team": "Villarreal",
@@ -3861,6 +3785,44 @@
       "team_crest_url": "/static/ff_teams/6.png"
     },
     {
+      "id": "945",
+      "name": "Pedro Felipe",
+      "team": "Racing",
+      "position": "DEF",
+      "price": 715316,
+      "price_increment": -426,
+      "price_history": {
+        "0": 715316,
+        "1": 715742,
+        "2": 716284,
+        "3": 716768,
+        "7": 703873,
+        "14": 681799,
+        "30": 697203
+      },
+      "photo_url": "/static/ff_players/16760.png",
+      "team_crest_url": "/static/ff_teams/42.png"
+    },
+    {
+      "id": "740",
+      "name": "Guido Rodríguez",
+      "team": "Valencia",
+      "position": "MED",
+      "price": 10569365,
+      "price_increment": 66564,
+      "price_history": {
+        "0": 10569365,
+        "1": 10502801,
+        "2": 10457533,
+        "3": 10411159,
+        "7": 10543027,
+        "14": 11314506,
+        "30": 12211837
+      },
+      "photo_url": "/static/ff_players/7676.png",
+      "team_crest_url": "/static/ff_teams/18.png"
+    },
+    {
       "id": "995",
       "name": "Carlos Puga",
       "team": "Málaga",
@@ -3916,25 +3878,6 @@
       },
       "photo_url": "/static/ff_players/7842.png",
       "team_crest_url": "/static/ff_teams/5.png"
-    },
-    {
-      "id": "1120",
-      "name": "Marc Bernal",
-      "team": "Barcelona",
-      "position": "MED",
-      "price": 14342436,
-      "price_increment": 8952,
-      "price_history": {
-        "0": 14342436,
-        "1": 14333484,
-        "2": 14482396,
-        "3": 14669223,
-        "7": 14925093,
-        "14": 15575942,
-        "30": 17238504
-      },
-      "photo_url": "/static/ff_players/13864.png",
-      "team_crest_url": "/static/ff_teams/3.png"
     },
     {
       "id": "809",
@@ -4127,6 +4070,25 @@
       "team_crest_url": "/static/ff_teams/7.png"
     },
     {
+      "id": "753",
+      "name": "Karl Etta Eyong",
+      "team": "Levante",
+      "position": "DEL",
+      "price": 2642654,
+      "price_increment": -45635,
+      "price_history": {
+        "0": 2642654,
+        "1": 2688289,
+        "2": 2745804,
+        "3": 2804744,
+        "7": 2987264,
+        "14": 3300270,
+        "30": 4485350
+      },
+      "photo_url": "/static/ff_players/10326.png",
+      "team_crest_url": "/static/ff_teams/10.png"
+    },
+    {
       "id": "1118",
       "name": "Rubén Vargas",
       "team": "Sevilla",
@@ -4184,6 +4146,25 @@
       "team_crest_url": "/static/ff_teams/5.png"
     },
     {
+      "id": "812",
+      "name": "André Almeida",
+      "team": "Racing",
+      "position": "MED",
+      "price": 725471,
+      "price_increment": -849,
+      "price_history": {
+        "0": 725471,
+        "1": 726320,
+        "2": 727303,
+        "3": 728246,
+        "7": 717386,
+        "14": 699783,
+        "30": 731760
+      },
+      "photo_url": "/static/ff_players/10533.png",
+      "team_crest_url": "/static/ff_teams/42.png"
+    },
+    {
       "id": "743",
       "name": "Nemanja Gudelj",
       "team": "Getafe",
@@ -4201,6 +4182,44 @@
       },
       "photo_url": "/static/ff_players/7028.png",
       "team_crest_url": "/static/ff_teams/8.png"
+    },
+    {
+      "id": "759",
+      "name": "Roger Hinojo",
+      "team": "Espanyol",
+      "position": "DEF",
+      "price": 1198295,
+      "price_increment": 8527,
+      "price_history": {
+        "0": 1198295,
+        "1": 1189768,
+        "2": 1192319,
+        "3": 1193986,
+        "7": 1236875,
+        "14": 1391100,
+        "30": 2025386
+      },
+      "photo_url": "/static/ff_players/15316.png",
+      "team_crest_url": "/static/ff_teams/7.png"
+    },
+    {
+      "id": "980",
+      "name": "Adrián de la Fuente",
+      "team": "Levante",
+      "position": "DEF",
+      "price": 9754760,
+      "price_increment": 81318,
+      "price_history": {
+        "0": 9754760,
+        "1": 9673442,
+        "2": 9643226,
+        "3": 9666320,
+        "7": 10247298,
+        "14": 11224028,
+        "30": 14326368
+      },
+      "photo_url": "/static/ff_players/6346.png",
+      "team_crest_url": "/static/ff_teams/10.png"
     },
     {
       "id": "950",
@@ -4279,25 +4298,6 @@
       "team_crest_url": "/static/ff_teams/16.png"
     },
     {
-      "id": "1071",
-      "name": "Isi Palazón",
-      "team": "Rayo Vallecano",
-      "position": "MED",
-      "price": 4185502,
-      "price_increment": -43396,
-      "price_history": {
-        "0": 4185502,
-        "1": 4228898,
-        "2": 4289976,
-        "3": 4360909,
-        "7": 4641414,
-        "14": 5223214,
-        "30": 6705284
-      },
-      "photo_url": "/static/ff_players/6957.png",
-      "team_crest_url": "/static/ff_teams/14.png"
-    },
-    {
       "id": "718",
       "name": "Rodrigo Riquelme",
       "team": "Betis",
@@ -4372,6 +4372,25 @@
       },
       "photo_url": "/static/ff_players/7589.png",
       "team_crest_url": "/static/ff_teams/4.png"
+    },
+    {
+      "id": "1071",
+      "name": "Isi Palazón",
+      "team": "Rayo Vallecano",
+      "position": "MED",
+      "price": 4185502,
+      "price_increment": -43396,
+      "price_history": {
+        "0": 4185502,
+        "1": 4228898,
+        "2": 4289976,
+        "3": 4360909,
+        "7": 4641414,
+        "14": 5223214,
+        "30": 6705284
+      },
+      "photo_url": "/static/ff_players/6957.png",
+      "team_crest_url": "/static/ff_teams/14.png"
     },
     {
       "id": "897",
@@ -4467,25 +4486,6 @@
       },
       "photo_url": "/static/ff_players/9234.png",
       "team_crest_url": "/static/ff_teams/18.png"
-    },
-    {
-      "id": "753",
-      "name": "Karl Etta Eyong",
-      "team": "Levante",
-      "position": "DEL",
-      "price": 2642654,
-      "price_increment": -45635,
-      "price_history": {
-        "0": 2642654,
-        "1": 2688289,
-        "2": 2745804,
-        "3": 2804744,
-        "7": 2987264,
-        "14": 3300270,
-        "30": 4485350
-      },
-      "photo_url": "/static/ff_players/10326.png",
-      "team_crest_url": "/static/ff_teams/10.png"
     },
     {
       "id": "788",
@@ -4640,6 +4640,25 @@
       "team_crest_url": "/static/ff_teams/13.png"
     },
     {
+      "id": "1171",
+      "name": "Manu Sánchez",
+      "team": "Levante",
+      "position": "DEF",
+      "price": 1400059,
+      "price_increment": -28957,
+      "price_history": {
+        "0": 1400059,
+        "1": 1429016,
+        "2": 1459278,
+        "3": 1490720,
+        "7": 1600530,
+        "14": 1850362,
+        "30": 2694325
+      },
+      "photo_url": "/static/ff_players/6605.png",
+      "team_crest_url": "/static/ff_teams/10.png"
+    },
+    {
       "id": "1215",
       "name": "Txus Vizcay",
       "team": "Athletic",
@@ -4716,6 +4735,25 @@
       "team_crest_url": "/static/ff_teams/22.png"
     },
     {
+      "id": "1120",
+      "name": "Marc Bernal",
+      "team": "Barcelona",
+      "position": "MED",
+      "price": 14342436,
+      "price_increment": 8952,
+      "price_history": {
+        "0": 14342436,
+        "1": 14333484,
+        "2": 14482396,
+        "3": 14669223,
+        "7": 14925093,
+        "14": 15575942,
+        "30": 17238504
+      },
+      "photo_url": "/static/ff_players/13864.png",
+      "team_crest_url": "/static/ff_teams/3.png"
+    },
+    {
       "id": "900",
       "name": "Nizar El Jmili",
       "team": "Villarreal",
@@ -4754,47 +4792,47 @@
       "team_crest_url": "/static/ff_teams/16.png"
     },
     {
-      "id": "828",
-      "name": "Cheikh Thiam",
+      "id": "905",
+      "name": "Mahamoud Barry",
       "team": "Villarreal",
       "position": "MED",
-      "price": 687765,
-      "price_increment": 722,
+      "price": 602292,
+      "price_increment": 0,
       "price_history": {
-        "0": 687765,
-        "1": 687043,
-        "2": 686390,
-        "3": 685629,
-        "7": 667209,
-        "14": 633008,
-        "30": 603444
+        "0": 602292,
+        "1": 602292,
+        "2": 602292,
+        "3": 602292,
+        "7": 602292,
+        "14": 602292,
+        "30": 602292
       },
       "photo_url": "",
       "team_crest_url": "/static/ff_teams/22.png"
     },
     {
-      "id": "1025",
-      "name": "Pablo Meixús",
-      "team": "Celta",
-      "position": "DEF",
-      "price": 485372,
-      "price_increment": 0,
+      "id": "850",
+      "name": "Rafael Romero",
+      "team": "Sevilla",
+      "position": "POR",
+      "price": 691747,
+      "price_increment": 556,
       "price_history": {
-        "0": 485372,
-        "1": 485372,
-        "2": 485372,
-        "3": 485372,
-        "7": 485372,
-        "14": 485372,
-        "30": 485372
+        "0": 691747,
+        "1": 691191,
+        "2": 690710,
+        "3": 690129,
+        "7": 672507,
+        "14": 640059,
+        "30": 616994
       },
-      "photo_url": "/static/ff_players/16801.png",
-      "team_crest_url": "/static/ff_teams/5.png"
+      "photo_url": "/static/ff_players/8634.png",
+      "team_crest_url": "/static/ff_teams/17.png"
     },
     {
-      "id": "1220",
-      "name": "Aritz Conde",
-      "team": "Athletic",
+      "id": "1225",
+      "name": "Álex Laso",
+      "team": "Racing",
       "position": "DEL",
       "price": 900000,
       "price_increment": 0,
@@ -4808,235 +4846,45 @@
         "30": 0
       },
       "photo_url": "",
-      "team_crest_url": "/static/ff_teams/1.png"
+      "team_crest_url": "/static/ff_teams/42.png"
     },
     {
-      "id": "1209",
-      "name": "Iker Rodríguez",
-      "team": "Barcelona",
-      "position": "POR",
-      "price": 450000,
-      "price_increment": 0,
-      "price_history": {
-        "0": 450000,
-        "1": 450000,
-        "2": 450000,
-        "3": 450000,
-        "7": 450000,
-        "14": 450000,
-        "30": 450000
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/3.png"
-    },
-    {
-      "id": "859",
-      "name": "Ian Forns",
-      "team": "Betis",
-      "position": "DEF",
-      "price": 500000,
-      "price_increment": 0,
-      "price_history": {
-        "0": 500000,
-        "1": 0,
-        "2": 0,
-        "3": 0,
-        "7": 0,
-        "14": 0,
-        "30": 0
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/4.png"
-    },
-    {
-      "id": "844",
-      "name": "Joel Fontanet",
-      "team": "Valencia",
-      "position": "DEF",
-      "price": 581987,
-      "price_increment": 0,
-      "price_history": {
-        "0": 581987,
-        "1": 581987,
-        "2": 581987,
-        "3": 581987,
-        "7": 581987,
-        "14": 581987,
-        "30": 581987
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/18.png"
-    },
-    {
-      "id": "929",
-      "name": "Iker Muñoz",
-      "team": "Sevilla",
-      "position": "DEF",
-      "price": 681343,
-      "price_increment": 990,
-      "price_history": {
-        "0": 681343,
-        "1": 680353,
-        "2": 679421,
-        "3": 678369,
-        "7": 658663,
-        "14": 621635,
-        "30": 581591
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/17.png"
-    },
-    {
-      "id": "1156",
-      "name": "Moha Hamdoune",
-      "team": "Getafe",
-      "position": "MED",
-      "price": 800000,
-      "price_increment": 0,
-      "price_history": {
-        "0": 800000,
-        "1": 800000,
-        "2": 800000,
-        "3": 800000,
-        "7": 800000,
-        "14": 800000,
-        "30": 800000
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/8.png"
-    },
-    {
-      "id": "986",
-      "name": "Ferran Gómez",
-      "team": "Espanyol",
-      "position": "MED",
-      "price": 602248,
-      "price_increment": 0,
-      "price_history": {
-        "0": 602248,
-        "1": 602248,
-        "2": 602248,
-        "3": 602248,
-        "7": 602248,
-        "14": 602248,
-        "30": 602248
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/7.png"
-    },
-    {
-      "id": "1219",
-      "name": "Sergio Barrera",
+      "id": "650",
+      "name": "Álvaro García",
       "team": "Villarreal",
-      "position": "MED",
-      "price": 900000,
+      "position": "DEL",
+      "price": 1158184,
       "price_increment": 0,
       "price_history": {
-        "0": 900000,
-        "1": 900000,
-        "2": 900000,
-        "3": 900000,
-        "7": 900000,
-        "14": 900000,
-        "30": 0
+        "0": 1158184,
+        "1": 1158184,
+        "2": 1158184,
+        "3": 1158184,
+        "7": 1158184,
+        "14": 1158184,
+        "30": 1158184
       },
       "photo_url": "",
       "team_crest_url": "/static/ff_teams/22.png"
     },
     {
-      "id": "906",
-      "name": "Alex Lebarbier",
-      "team": "Real Sociedad",
-      "position": "MED",
-      "price": 602234,
-      "price_increment": 0,
+      "id": "831",
+      "name": "Alejandro Panach",
+      "team": "Valencia",
+      "position": "DEF",
+      "price": 682566,
+      "price_increment": 939,
       "price_history": {
-        "0": 602234,
-        "1": 602234,
-        "2": 602234,
-        "3": 602234,
-        "7": 602234,
-        "14": 602234,
-        "30": 602234
-      },
-      "photo_url": "/static/ff_players/11793.png",
-      "team_crest_url": "/static/ff_teams/16.png"
-    },
-    {
-      "id": "832",
-      "name": "Marco Román",
-      "team": "Rayo Vallecano",
-      "position": "MED",
-      "price": 684232,
-      "price_increment": 869,
-      "price_history": {
-        "0": 684232,
-        "1": 683363,
-        "2": 682556,
-        "3": 681635,
-        "7": 662507,
-        "14": 626752,
-        "30": 591424
+        "0": 682566,
+        "1": 681627,
+        "2": 680748,
+        "3": 679751,
+        "7": 660290,
+        "14": 623802,
+        "30": 585756
       },
       "photo_url": "",
-      "team_crest_url": "/static/ff_teams/14.png"
-    },
-    {
-      "id": "838",
-      "name": "Sergio José Lozano",
-      "team": "Rayo Vallecano",
-      "position": "DEF",
-      "price": 682502,
-      "price_increment": 941,
-      "price_history": {
-        "0": 682502,
-        "1": 681561,
-        "2": 680679,
-        "3": 679680,
-        "7": 660206,
-        "14": 623690,
-        "30": 585539
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/14.png"
-    },
-    {
-      "id": "1072",
-      "name": "Adama Timera",
-      "team": "Espanyol",
-      "position": "DEF",
-      "price": 682502,
-      "price_increment": 941,
-      "price_history": {
-        "0": 682502,
-        "1": 681561,
-        "2": 680679,
-        "3": 679680,
-        "7": 660206,
-        "14": 623690,
-        "30": 585539
-      },
-      "photo_url": "/static/ff_players/17445.png",
-      "team_crest_url": "/static/ff_teams/7.png"
-    },
-    {
-      "id": "1152",
-      "name": "Coke Carrillo",
-      "team": "Celta",
-      "position": "POR",
-      "price": 1567556,
-      "price_increment": 0,
-      "price_history": {
-        "0": 1567556,
-        "1": 0,
-        "2": 0,
-        "3": 0,
-        "7": 0,
-        "14": 0,
-        "30": 0
-      },
-      "photo_url": "/static/ff_players/9638.png",
-      "team_crest_url": "/static/ff_teams/5.png"
+      "team_crest_url": "/static/ff_teams/18.png"
     },
     {
       "id": "860",
@@ -5058,25 +4906,6 @@
       "team_crest_url": "/static/ff_teams/5.png"
     },
     {
-      "id": "902",
-      "name": "Jordi Pesquer",
-      "team": "Barcelona",
-      "position": "DEF",
-      "price": 600000,
-      "price_increment": 0,
-      "price_history": {
-        "0": 600000,
-        "1": 600000,
-        "2": 600000,
-        "3": 600000,
-        "7": 600000,
-        "14": 600000,
-        "30": 600000
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/3.png"
-    },
-    {
       "id": "1226",
       "name": "Ilya Voloshyn",
       "team": "Real Madrid",
@@ -5096,23 +4925,251 @@
       "team_crest_url": "/static/ff_teams/15.png"
     },
     {
-      "id": "896",
-      "name": "Damián Canedo",
-      "team": "Deportivo",
-      "position": "DEF",
-      "price": 602257,
+      "id": "848",
+      "name": "Adrián Riquelme",
+      "team": "Getafe",
+      "position": "MED",
+      "price": 602324,
       "price_increment": 0,
       "price_history": {
-        "0": 602257,
-        "1": 602257,
-        "2": 602257,
-        "3": 602257,
-        "7": 602257,
-        "14": 602257,
-        "30": 602257
+        "0": 602324,
+        "1": 602324,
+        "2": 602324,
+        "3": 602324,
+        "7": 602324,
+        "14": 602324,
+        "30": 602324
       },
       "photo_url": "",
-      "team_crest_url": "/static/ff_teams/6.png"
+      "team_crest_url": "/static/ff_teams/8.png"
+    },
+    {
+      "id": "832",
+      "name": "Marco Román",
+      "team": "Rayo Vallecano",
+      "position": "MED",
+      "price": 684232,
+      "price_increment": 869,
+      "price_history": {
+        "0": 684232,
+        "1": 683363,
+        "2": 682556,
+        "3": 681635,
+        "7": 662507,
+        "14": 626752,
+        "30": 591424
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/14.png"
+    },
+    {
+      "id": "939",
+      "name": "Alexis Ciria",
+      "team": "Real Madrid",
+      "position": "DEL",
+      "price": 688692,
+      "price_increment": 683,
+      "price_history": {
+        "0": 688692,
+        "1": 688009,
+        "2": 687396,
+        "3": 686677,
+        "7": 668444,
+        "14": 634653,
+        "30": 606605
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/15.png"
+    },
+    {
+      "id": "858",
+      "name": "Jon Balda",
+      "team": "Real Sociedad",
+      "position": "DEF",
+      "price": 1718912,
+      "price_increment": 0,
+      "price_history": {
+        "0": 1718912,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "7": 0,
+        "14": 0,
+        "30": 0
+      },
+      "photo_url": "/static/ff_players/13040.png",
+      "team_crest_url": "/static/ff_teams/16.png"
+    },
+    {
+      "id": "906",
+      "name": "Alex Lebarbier",
+      "team": "Real Sociedad",
+      "position": "MED",
+      "price": 602234,
+      "price_increment": 0,
+      "price_history": {
+        "0": 602234,
+        "1": 602234,
+        "2": 602234,
+        "3": 602234,
+        "7": 602234,
+        "14": 602234,
+        "30": 602234
+      },
+      "photo_url": "/static/ff_players/11793.png",
+      "team_crest_url": "/static/ff_teams/16.png"
+    },
+    {
+      "id": "986",
+      "name": "Ferran Gómez",
+      "team": "Espanyol",
+      "position": "MED",
+      "price": 602248,
+      "price_increment": 0,
+      "price_history": {
+        "0": 602248,
+        "1": 602248,
+        "2": 602248,
+        "3": 602248,
+        "7": 602248,
+        "14": 602248,
+        "30": 602248
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/7.png"
+    },
+    {
+      "id": "859",
+      "name": "Ian Forns",
+      "team": "Betis",
+      "position": "DEF",
+      "price": 500000,
+      "price_increment": 0,
+      "price_history": {
+        "0": 500000,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "7": 0,
+        "14": 0,
+        "30": 0
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/4.png"
+    },
+    {
+      "id": "829",
+      "name": "Alberto Calatrava",
+      "team": "Levante",
+      "position": "MED",
+      "price": 687692,
+      "price_increment": 725,
+      "price_history": {
+        "0": 687692,
+        "1": 686967,
+        "2": 686310,
+        "3": 685545,
+        "7": 667111,
+        "14": 632878,
+        "30": 603195
+      },
+      "photo_url": "/static/ff_players/18029.png",
+      "team_crest_url": "/static/ff_teams/10.png"
+    },
+    {
+      "id": "844",
+      "name": "Joel Fontanet",
+      "team": "Valencia",
+      "position": "DEF",
+      "price": 581987,
+      "price_increment": 0,
+      "price_history": {
+        "0": 581987,
+        "1": 581987,
+        "2": 581987,
+        "3": 581987,
+        "7": 581987,
+        "14": 581987,
+        "30": 581987
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/18.png"
+    },
+    {
+      "id": "866",
+      "name": "Antal Yaakobishvili",
+      "team": "Atlético",
+      "position": "DEF",
+      "price": 1722526,
+      "price_increment": 0,
+      "price_history": {
+        "0": 1722526,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "7": 0,
+        "14": 0,
+        "30": 0
+      },
+      "photo_url": "/static/ff_players/11701.png",
+      "team_crest_url": "/static/ff_teams/2.png"
+    },
+    {
+      "id": "852",
+      "name": "Arkaitz Mariezkurrena",
+      "team": "Real Sociedad",
+      "position": "DEL",
+      "price": 677966,
+      "price_increment": 0,
+      "price_history": {
+        "0": 677966,
+        "1": 677966,
+        "2": 677966,
+        "3": 677966,
+        "7": 677966,
+        "14": 677966,
+        "30": 677966
+      },
+      "photo_url": "/static/ff_players/14020.png",
+      "team_crest_url": "/static/ff_teams/16.png"
+    },
+    {
+      "id": "853",
+      "name": "Grégoire Swiderski",
+      "team": "Alavés",
+      "position": "POR",
+      "price": 681368,
+      "price_increment": 989,
+      "price_history": {
+        "0": 681368,
+        "1": 680379,
+        "2": 679448,
+        "3": 678397,
+        "7": 658695,
+        "14": 621679,
+        "30": 581676
+      },
+      "photo_url": "/static/ff_players/15133.png",
+      "team_crest_url": "/static/ff_teams/28.png"
+    },
+    {
+      "id": "838",
+      "name": "Sergio José Lozano",
+      "team": "Rayo Vallecano",
+      "position": "DEF",
+      "price": 682502,
+      "price_increment": 941,
+      "price_history": {
+        "0": 682502,
+        "1": 681561,
+        "2": 680679,
+        "3": 679680,
+        "7": 660206,
+        "14": 623690,
+        "30": 585539
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/14.png"
     },
     {
       "id": "827",
@@ -5153,498 +5210,42 @@
       "team_crest_url": "/static/ff_teams/28.png"
     },
     {
-      "id": "976",
-      "name": "Aitor Fraga",
+      "id": "1152",
+      "name": "Coke Carrillo",
+      "team": "Celta",
+      "position": "POR",
+      "price": 1567556,
+      "price_increment": 0,
+      "price_history": {
+        "0": 1567556,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "7": 0,
+        "14": 0,
+        "30": 0
+      },
+      "photo_url": "/static/ff_players/9638.png",
+      "team_crest_url": "/static/ff_teams/5.png"
+    },
+    {
+      "id": "907",
+      "name": "Theo Folgado",
       "team": "Real Sociedad",
       "position": "POR",
-      "price": 684565,
-      "price_increment": 855,
+      "price": 702606,
+      "price_increment": 0,
       "price_history": {
-        "0": 684565,
-        "1": 683710,
-        "2": 682918,
-        "3": 682012,
-        "7": 662952,
-        "14": 627343,
-        "30": 602234
+        "0": 702606,
+        "1": 702606,
+        "2": 702606,
+        "3": 702606,
+        "7": 702606,
+        "14": 702606,
+        "30": 702606
       },
-      "photo_url": "/static/ff_players/11816.png",
+      "photo_url": "/static/ff_players/16155.png",
       "team_crest_url": "/static/ff_teams/16.png"
-    },
-    {
-      "id": "1174",
-      "name": "Diego Aguado",
-      "team": "Real Madrid",
-      "position": "DEF",
-      "price": 774109,
-      "price_increment": 0,
-      "price_history": {
-        "0": 774109,
-        "1": 774109,
-        "2": 774109,
-        "3": 774109,
-        "7": 774109,
-        "14": 774109,
-        "30": 774109
-      },
-      "photo_url": "/static/ff_players/14886.png",
-      "team_crest_url": "/static/ff_teams/15.png"
-    },
-    {
-      "id": "1222",
-      "name": "Guillem Víctor",
-      "team": "Barcelona",
-      "position": "DEF",
-      "price": 1000000,
-      "price_increment": 0,
-      "price_history": {
-        "0": 1000000,
-        "1": 1000000,
-        "2": 1000000,
-        "3": 1000000,
-        "7": 1000000,
-        "14": 1000000,
-        "30": 0
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/3.png"
-    },
-    {
-      "id": "861",
-      "name": "Djordjije Medenica",
-      "team": "Getafe",
-      "position": "POR",
-      "price": 1560264,
-      "price_increment": 0,
-      "price_history": {
-        "0": 1560264,
-        "1": 0,
-        "2": 0,
-        "3": 0,
-        "7": 0,
-        "14": 0,
-        "30": 0
-      },
-      "photo_url": "/static/ff_players/12695.png",
-      "team_crest_url": "/static/ff_teams/8.png"
-    },
-    {
-      "id": "881",
-      "name": "Adrián Pérez",
-      "team": "Athletic",
-      "position": "DEL",
-      "price": 602257,
-      "price_increment": 0,
-      "price_history": {
-        "0": 602257,
-        "1": 602257,
-        "2": 602257,
-        "3": 602257,
-        "7": 602257,
-        "14": 602257,
-        "30": 602257
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/1.png"
-    },
-    {
-      "id": "890",
-      "name": "Sergio Mestre",
-      "team": "Real Madrid",
-      "position": "POR",
-      "price": 677860,
-      "price_increment": 0,
-      "price_history": {
-        "0": 677860,
-        "1": 677860,
-        "2": 677860,
-        "3": 677860,
-        "7": 677860,
-        "14": 677860,
-        "30": 677860
-      },
-      "photo_url": "/static/ff_players/10767.png",
-      "team_crest_url": "/static/ff_teams/15.png"
-    },
-    {
-      "id": "913",
-      "name": "Jesús Fortea",
-      "team": "Real Madrid",
-      "position": "DEF",
-      "price": 802099,
-      "price_increment": 0,
-      "price_history": {
-        "0": 802099,
-        "1": 802099,
-        "2": 802099,
-        "3": 802099,
-        "7": 802099,
-        "14": 802099,
-        "30": 802099
-      },
-      "photo_url": "/static/ff_players/15961.png",
-      "team_crest_url": "/static/ff_teams/15.png"
-    },
-    {
-      "id": "997",
-      "name": "Andrés Céspedes",
-      "team": "Málaga",
-      "position": "POR",
-      "price": 672531,
-      "price_increment": 1357,
-      "price_history": {
-        "0": 672531,
-        "1": 671174,
-        "2": 669859,
-        "3": 668409,
-        "7": 646936,
-        "14": 606031,
-        "30": 551606
-      },
-      "photo_url": "/static/ff_players/14177.png",
-      "team_crest_url": "/static/ff_teams/11.png"
-    },
-    {
-      "id": "1155",
-      "name": "Adrián Molina",
-      "team": "Rayo Vallecano",
-      "position": "POR",
-      "price": 683855,
-      "price_increment": 885,
-      "price_history": {
-        "0": 683855,
-        "1": 682970,
-        "2": 682147,
-        "3": 681209,
-        "7": 662005,
-        "14": 626084,
-        "30": 590141
-      },
-      "photo_url": "/static/ff_players/13813.png",
-      "team_crest_url": "/static/ff_teams/14.png"
-    },
-    {
-      "id": "1031",
-      "name": "Jorge Benito",
-      "team": "Getafe",
-      "position": "POR",
-      "price": 602319,
-      "price_increment": 0,
-      "price_history": {
-        "0": 602319,
-        "1": 602319,
-        "2": 602319,
-        "3": 602319,
-        "7": 602319,
-        "14": 602319,
-        "30": 602319
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/8.png"
-    },
-    {
-      "id": "848",
-      "name": "Adrián Riquelme",
-      "team": "Getafe",
-      "position": "MED",
-      "price": 602324,
-      "price_increment": 0,
-      "price_history": {
-        "0": 602324,
-        "1": 602324,
-        "2": 602324,
-        "3": 602324,
-        "7": 602324,
-        "14": 602324,
-        "30": 602324
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/8.png"
-    },
-    {
-      "id": "1110",
-      "name": "Aitor Crespo",
-      "team": "Racing",
-      "position": "DEF",
-      "price": 802979,
-      "price_increment": 0,
-      "price_history": {
-        "0": 802979,
-        "1": 802979,
-        "2": 802979,
-        "3": 802979,
-        "7": 802979,
-        "14": 802979,
-        "30": 802979
-      },
-      "photo_url": "/static/ff_players/14766.png",
-      "team_crest_url": "/static/ff_teams/42.png"
-    },
-    {
-      "id": "917",
-      "name": "Joseph Otu",
-      "team": "Málaga",
-      "position": "MED",
-      "price": 691053,
-      "price_increment": 585,
-      "price_history": {
-        "0": 691053,
-        "1": 690468,
-        "2": 689957,
-        "3": 689344,
-        "7": 671583,
-        "14": 638832,
-        "30": 614635
-      },
-      "photo_url": "/static/ff_players/18378.png",
-      "team_crest_url": "/static/ff_teams/11.png"
-    },
-    {
-      "id": "650",
-      "name": "Álvaro García",
-      "team": "Villarreal",
-      "position": "DEL",
-      "price": 1158184,
-      "price_increment": 0,
-      "price_history": {
-        "0": 1158184,
-        "1": 1158184,
-        "2": 1158184,
-        "3": 1158184,
-        "7": 1158184,
-        "14": 1158184,
-        "30": 1158184
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/22.png"
-    },
-    {
-      "id": "865",
-      "name": "Eneko Ortiz",
-      "team": "Villarreal",
-      "position": "DEF",
-      "price": 1718986,
-      "price_increment": 0,
-      "price_history": {
-        "0": 1718986,
-        "1": 0,
-        "2": 0,
-        "3": 0,
-        "7": 0,
-        "14": 0,
-        "30": 0
-      },
-      "photo_url": "/static/ff_players/8986.png",
-      "team_crest_url": "/static/ff_teams/22.png"
-    },
-    {
-      "id": "1087",
-      "name": "Lander Pinillos",
-      "team": "Alavés",
-      "position": "MED",
-      "price": 501929,
-      "price_increment": 0,
-      "price_history": {
-        "0": 501929,
-        "1": 501929,
-        "2": 501929,
-        "3": 501929,
-        "7": 501929,
-        "14": 501929,
-        "30": 501929
-      },
-      "photo_url": "/static/ff_players/15423.png",
-      "team_crest_url": "/static/ff_teams/28.png"
-    },
-    {
-      "id": "852",
-      "name": "Arkaitz Mariezkurrena",
-      "team": "Real Sociedad",
-      "position": "DEL",
-      "price": 677966,
-      "price_increment": 0,
-      "price_history": {
-        "0": 677966,
-        "1": 677966,
-        "2": 677966,
-        "3": 677966,
-        "7": 677966,
-        "14": 677966,
-        "30": 677966
-      },
-      "photo_url": "/static/ff_players/14020.png",
-      "team_crest_url": "/static/ff_teams/16.png"
-    },
-    {
-      "id": "998",
-      "name": "Marc Jurado",
-      "team": "Valencia",
-      "position": "DEF",
-      "price": 602292,
-      "price_increment": 0,
-      "price_history": {
-        "0": 602292,
-        "1": 602292,
-        "2": 602292,
-        "3": 602292,
-        "7": 602292,
-        "14": 602292,
-        "30": 602292
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/18.png"
-    },
-    {
-      "id": "922",
-      "name": "Lamini Fati",
-      "team": "Real Madrid",
-      "position": "DEF",
-      "price": 677955,
-      "price_increment": 0,
-      "price_history": {
-        "0": 677955,
-        "1": 677955,
-        "2": 677955,
-        "3": 677955,
-        "7": 677955,
-        "14": 677955,
-        "30": 677955
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/15.png"
-    },
-    {
-      "id": "1211",
-      "name": "Víctor Mullerat",
-      "team": "Espanyol",
-      "position": "DEL",
-      "price": 680050,
-      "price_increment": 1044,
-      "price_history": {
-        "0": 680050,
-        "1": 679006,
-        "2": 678018,
-        "3": 676908,
-        "7": 656943,
-        "14": 619346,
-        "30": 577192
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/7.png"
-    },
-    {
-      "id": "864",
-      "name": "Carlos Giménez",
-      "team": "Atlético",
-      "position": "DEF",
-      "price": 1718547,
-      "price_increment": 0,
-      "price_history": {
-        "0": 1718547,
-        "1": 0,
-        "2": 0,
-        "3": 0,
-        "7": 0,
-        "14": 0,
-        "30": 0
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/2.png"
-    },
-    {
-      "id": "869",
-      "name": "Miguel Ángel Santaella",
-      "team": "Málaga",
-      "position": "DEF",
-      "price": 401498,
-      "price_increment": 0,
-      "price_history": {
-        "0": 401498,
-        "1": 401498,
-        "2": 401498,
-        "3": 401498,
-        "7": 401498,
-        "14": 401498,
-        "30": 401498
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/11.png"
-    },
-    {
-      "id": "850",
-      "name": "Rafael Romero",
-      "team": "Sevilla",
-      "position": "POR",
-      "price": 691747,
-      "price_increment": 556,
-      "price_history": {
-        "0": 691747,
-        "1": 691191,
-        "2": 690710,
-        "3": 690129,
-        "7": 672507,
-        "14": 640059,
-        "30": 616994
-      },
-      "photo_url": "/static/ff_players/8634.png",
-      "team_crest_url": "/static/ff_teams/17.png"
-    },
-    {
-      "id": "1095",
-      "name": "Álvaro de Pablo",
-      "team": "Betis",
-      "position": "POR",
-      "price": 700000,
-      "price_increment": 0,
-      "price_history": {
-        "0": 700000,
-        "1": 700000,
-        "2": 700000,
-        "3": 700000,
-        "7": 700000,
-        "14": 700000,
-        "30": 700000
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/4.png"
-    },
-    {
-      "id": "1066",
-      "name": "Jaume Durá",
-      "team": "Valencia",
-      "position": "MED",
-      "price": 697622,
-      "price_increment": 311,
-      "price_history": {
-        "0": 697622,
-        "1": 697311,
-        "2": 697085,
-        "3": 696769,
-        "7": 680327,
-        "14": 650465,
-        "30": 636993
-      },
-      "photo_url": "/static/ff_players/18279.png",
-      "team_crest_url": "/static/ff_teams/18.png"
-    },
-    {
-      "id": "1212",
-      "name": "Mikel Bermejo",
-      "team": "Osasuna",
-      "position": "POR",
-      "price": 750000,
-      "price_increment": 0,
-      "price_history": {
-        "0": 750000,
-        "1": 750000,
-        "2": 750000,
-        "3": 750000,
-        "7": 750000,
-        "14": 750000,
-        "30": 750000
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/13.png"
     },
     {
       "id": "874",
@@ -5666,99 +5267,23 @@
       "team_crest_url": "/static/ff_teams/17.png"
     },
     {
-      "id": "857",
-      "name": "Hugo de Llanos",
-      "team": "Real Madrid",
-      "position": "MED",
-      "price": 1622168,
-      "price_increment": 0,
+      "id": "879",
+      "name": "Eder Aller",
+      "team": "Barcelona",
+      "position": "POR",
+      "price": 704771,
+      "price_increment": 14,
       "price_history": {
-        "0": 1622168,
-        "1": 0,
-        "2": 0,
-        "3": 0,
-        "7": 0,
-        "14": 0,
-        "30": 0
+        "0": 704771,
+        "1": 704757,
+        "2": 704842,
+        "3": 704849,
+        "7": 689839,
+        "14": 663122,
+        "30": 661311
       },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/15.png"
-    },
-    {
-      "id": "939",
-      "name": "Alexis Ciria",
-      "team": "Real Madrid",
-      "position": "DEL",
-      "price": 688692,
-      "price_increment": 683,
-      "price_history": {
-        "0": 688692,
-        "1": 688009,
-        "2": 687396,
-        "3": 686677,
-        "7": 668444,
-        "14": 634653,
-        "30": 606605
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/15.png"
-    },
-    {
-      "id": "829",
-      "name": "Alberto Calatrava",
-      "team": "Levante",
-      "position": "MED",
-      "price": 687692,
-      "price_increment": 725,
-      "price_history": {
-        "0": 687692,
-        "1": 686967,
-        "2": 686310,
-        "3": 685545,
-        "7": 667111,
-        "14": 632878,
-        "30": 603195
-      },
-      "photo_url": "/static/ff_players/18029.png",
-      "team_crest_url": "/static/ff_teams/10.png"
-    },
-    {
-      "id": "1127",
-      "name": "Curro Burgos",
-      "team": "Getafe",
-      "position": "DEF",
-      "price": 600000,
-      "price_increment": 0,
-      "price_history": {
-        "0": 600000,
-        "1": 600000,
-        "2": 600000,
-        "3": 600000,
-        "7": 600000,
-        "14": 600000,
-        "30": 600000
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/8.png"
-    },
-    {
-      "id": "858",
-      "name": "Jon Balda",
-      "team": "Real Sociedad",
-      "position": "DEF",
-      "price": 1718912,
-      "price_increment": 0,
-      "price_history": {
-        "0": 1718912,
-        "1": 0,
-        "2": 0,
-        "3": 0,
-        "7": 0,
-        "14": 0,
-        "30": 0
-      },
-      "photo_url": "/static/ff_players/13040.png",
-      "team_crest_url": "/static/ff_teams/16.png"
+      "photo_url": "/static/ff_players/16723.png",
+      "team_crest_url": "/static/ff_teams/3.png"
     },
     {
       "id": "839",
@@ -5780,42 +5305,460 @@
       "team_crest_url": "/static/ff_teams/15.png"
     },
     {
-      "id": "1198",
-      "name": "César Bonafé",
+      "id": "929",
+      "name": "Iker Muñoz",
+      "team": "Sevilla",
+      "position": "DEF",
+      "price": 681343,
+      "price_increment": 990,
+      "price_history": {
+        "0": 681343,
+        "1": 680353,
+        "2": 679421,
+        "3": 678369,
+        "7": 658663,
+        "14": 621635,
+        "30": 581591
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/17.png"
+    },
+    {
+      "id": "865",
+      "name": "Eneko Ortiz",
       "team": "Villarreal",
-      "position": "MED",
-      "price": 1057681,
+      "position": "DEF",
+      "price": 1718986,
       "price_increment": 0,
       "price_history": {
-        "0": 1057681,
-        "1": 1057681,
-        "2": 1057681,
-        "3": 1057681,
-        "7": 1057681,
-        "14": 1057681,
-        "30": 1057681
+        "0": 1718986,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "7": 0,
+        "14": 0,
+        "30": 0
+      },
+      "photo_url": "/static/ff_players/8986.png",
+      "team_crest_url": "/static/ff_teams/22.png"
+    },
+    {
+      "id": "983",
+      "name": "Pol Fortuny",
+      "team": "Real Madrid",
+      "position": "MED",
+      "price": 602234,
+      "price_increment": 0,
+      "price_history": {
+        "0": 602234,
+        "1": 602234,
+        "2": 602234,
+        "3": 602234,
+        "7": 602234,
+        "14": 602234,
+        "30": 602234
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/15.png"
+    },
+    {
+      "id": "1197",
+      "name": "Javier Gil",
+      "team": "Atlético",
+      "position": "DEF",
+      "price": 714544,
+      "price_increment": -394,
+      "price_history": {
+        "0": 714544,
+        "1": 714938,
+        "2": 715447,
+        "3": 715896,
+        "7": 702846,
+        "14": 680432,
+        "30": 694575
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/2.png"
+    },
+    {
+      "id": "1174",
+      "name": "Diego Aguado",
+      "team": "Real Madrid",
+      "position": "DEF",
+      "price": 774109,
+      "price_increment": 0,
+      "price_history": {
+        "0": 774109,
+        "1": 774109,
+        "2": 774109,
+        "3": 774109,
+        "7": 774109,
+        "14": 774109,
+        "30": 774109
+      },
+      "photo_url": "/static/ff_players/14886.png",
+      "team_crest_url": "/static/ff_teams/15.png"
+    },
+    {
+      "id": "1095",
+      "name": "Álvaro de Pablo",
+      "team": "Betis",
+      "position": "POR",
+      "price": 700000,
+      "price_increment": 0,
+      "price_history": {
+        "0": 700000,
+        "1": 700000,
+        "2": 700000,
+        "3": 700000,
+        "7": 700000,
+        "14": 700000,
+        "30": 700000
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/4.png"
+    },
+    {
+      "id": "919",
+      "name": "Jorge Castillo",
+      "team": "Atlético",
+      "position": "MED",
+      "price": 774929,
+      "price_increment": -2910,
+      "price_history": {
+        "0": 774929,
+        "1": 777839,
+        "2": 780969,
+        "3": 784148,
+        "7": 783203,
+        "14": 787367,
+        "30": 900060
+      },
+      "photo_url": "/static/ff_players/18214.png",
+      "team_crest_url": "/static/ff_teams/2.png"
+    },
+    {
+      "id": "932",
+      "name": "Marc Doménech",
+      "team": "Atlético",
+      "position": "DEL",
+      "price": 592242,
+      "price_increment": 0,
+      "price_history": {
+        "0": 592242,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "7": 0,
+        "14": 0,
+        "30": 0
+      },
+      "photo_url": "/static/ff_players/10328.png",
+      "team_crest_url": "/static/ff_teams/2.png"
+    },
+    {
+      "id": "828",
+      "name": "Cheikh Thiam",
+      "team": "Villarreal",
+      "position": "MED",
+      "price": 687765,
+      "price_increment": 722,
+      "price_history": {
+        "0": 687765,
+        "1": 687043,
+        "2": 686390,
+        "3": 685629,
+        "7": 667209,
+        "14": 633008,
+        "30": 603444
       },
       "photo_url": "",
       "team_crest_url": "/static/ff_teams/22.png"
     },
     {
-      "id": "1190",
-      "name": "Diego Ferrer",
-      "team": "Getafe",
-      "position": "POR",
-      "price": 682920,
-      "price_increment": 924,
+      "id": "1222",
+      "name": "Guillem Víctor",
+      "team": "Barcelona",
+      "position": "DEF",
+      "price": 1000000,
+      "price_increment": 0,
       "price_history": {
-        "0": 682920,
-        "1": 681996,
-        "2": 681132,
-        "3": 680151,
-        "7": 660759,
-        "14": 624426,
-        "30": 586955
+        "0": 1000000,
+        "1": 1000000,
+        "2": 1000000,
+        "3": 1000000,
+        "7": 1000000,
+        "14": 1000000,
+        "30": 0
       },
       "photo_url": "",
-      "team_crest_url": "/static/ff_teams/8.png"
+      "team_crest_url": "/static/ff_teams/3.png"
+    },
+    {
+      "id": "1209",
+      "name": "Iker Rodríguez",
+      "team": "Barcelona",
+      "position": "POR",
+      "price": 450000,
+      "price_increment": 0,
+      "price_history": {
+        "0": 450000,
+        "1": 450000,
+        "2": 450000,
+        "3": 450000,
+        "7": 450000,
+        "14": 450000,
+        "30": 450000
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/3.png"
+    },
+    {
+      "id": "976",
+      "name": "Aitor Fraga",
+      "team": "Real Sociedad",
+      "position": "POR",
+      "price": 684565,
+      "price_increment": 855,
+      "price_history": {
+        "0": 684565,
+        "1": 683710,
+        "2": 682918,
+        "3": 682012,
+        "7": 662952,
+        "14": 627343,
+        "30": 602234
+      },
+      "photo_url": "/static/ff_players/11816.png",
+      "team_crest_url": "/static/ff_teams/16.png"
+    },
+    {
+      "id": "922",
+      "name": "Lamini Fati",
+      "team": "Real Madrid",
+      "position": "DEF",
+      "price": 677955,
+      "price_increment": 0,
+      "price_history": {
+        "0": 677955,
+        "1": 677955,
+        "2": 677955,
+        "3": 677955,
+        "7": 677955,
+        "14": 677955,
+        "30": 677955
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/15.png"
+    },
+    {
+      "id": "921",
+      "name": "Rubén López",
+      "team": "Deportivo",
+      "position": "MED",
+      "price": 501880,
+      "price_increment": 0,
+      "price_history": {
+        "0": 501880,
+        "1": 501880,
+        "2": 501880,
+        "3": 501880,
+        "7": 501880,
+        "14": 501880,
+        "30": 501880
+      },
+      "photo_url": "/static/ff_players/13973.png",
+      "team_crest_url": "/static/ff_teams/6.png"
+    },
+    {
+      "id": "1066",
+      "name": "Jaume Durá",
+      "team": "Valencia",
+      "position": "MED",
+      "price": 697622,
+      "price_increment": 311,
+      "price_history": {
+        "0": 697622,
+        "1": 697311,
+        "2": 697085,
+        "3": 696769,
+        "7": 680327,
+        "14": 650465,
+        "30": 636993
+      },
+      "photo_url": "/static/ff_players/18279.png",
+      "team_crest_url": "/static/ff_teams/18.png"
+    },
+    {
+      "id": "998",
+      "name": "Marc Jurado",
+      "team": "Valencia",
+      "position": "DEF",
+      "price": 602292,
+      "price_increment": 0,
+      "price_history": {
+        "0": 602292,
+        "1": 602292,
+        "2": 602292,
+        "3": 602292,
+        "7": 602292,
+        "14": 602292,
+        "30": 602292
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/18.png"
+    },
+    {
+      "id": "890",
+      "name": "Sergio Mestre",
+      "team": "Real Madrid",
+      "position": "POR",
+      "price": 677860,
+      "price_increment": 0,
+      "price_history": {
+        "0": 677860,
+        "1": 677860,
+        "2": 677860,
+        "3": 677860,
+        "7": 677860,
+        "14": 677860,
+        "30": 677860
+      },
+      "photo_url": "/static/ff_players/10767.png",
+      "team_crest_url": "/static/ff_teams/15.png"
+    },
+    {
+      "id": "857",
+      "name": "Hugo de Llanos",
+      "team": "Real Madrid",
+      "position": "MED",
+      "price": 1622168,
+      "price_increment": 0,
+      "price_history": {
+        "0": 1622168,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "7": 0,
+        "14": 0,
+        "30": 0
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/15.png"
+    },
+    {
+      "id": "1072",
+      "name": "Adama Timera",
+      "team": "Espanyol",
+      "position": "DEF",
+      "price": 682502,
+      "price_increment": 941,
+      "price_history": {
+        "0": 682502,
+        "1": 681561,
+        "2": 680679,
+        "3": 679680,
+        "7": 660206,
+        "14": 623690,
+        "30": 585539
+      },
+      "photo_url": "/static/ff_players/17445.png",
+      "team_crest_url": "/static/ff_teams/7.png"
+    },
+    {
+      "id": "917",
+      "name": "Joseph Otu",
+      "team": "Málaga",
+      "position": "MED",
+      "price": 691053,
+      "price_increment": 585,
+      "price_history": {
+        "0": 691053,
+        "1": 690468,
+        "2": 689957,
+        "3": 689344,
+        "7": 671583,
+        "14": 638832,
+        "30": 614635
+      },
+      "photo_url": "/static/ff_players/18378.png",
+      "team_crest_url": "/static/ff_teams/11.png"
+    },
+    {
+      "id": "869",
+      "name": "Miguel Ángel Santaella",
+      "team": "Málaga",
+      "position": "DEF",
+      "price": 401498,
+      "price_increment": 0,
+      "price_history": {
+        "0": 401498,
+        "1": 401498,
+        "2": 401498,
+        "3": 401498,
+        "7": 401498,
+        "14": 401498,
+        "30": 401498
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/11.png"
+    },
+    {
+      "id": "912",
+      "name": "Óscar Marcos",
+      "team": "Celta",
+      "position": "DEL",
+      "price": 602257,
+      "price_increment": 0,
+      "price_history": {
+        "0": 602257,
+        "1": 602257,
+        "2": 602257,
+        "3": 602257,
+        "7": 602257,
+        "14": 602257,
+        "30": 602257
+      },
+      "photo_url": "/static/ff_players/16156.png",
+      "team_crest_url": "/static/ff_teams/5.png"
+    },
+    {
+      "id": "878",
+      "name": "Javi Navarro",
+      "team": "Real Madrid",
+      "position": "POR",
+      "price": 712564,
+      "price_increment": -311,
+      "price_history": {
+        "0": 712564,
+        "1": 712875,
+        "2": 713298,
+        "3": 713658,
+        "7": 700210,
+        "14": 676924,
+        "30": 687835
+      },
+      "photo_url": "/static/ff_players/16735.png",
+      "team_crest_url": "/static/ff_teams/15.png"
+    },
+    {
+      "id": "933",
+      "name": "Joselillo Gaitán",
+      "team": "Villarreal",
+      "position": "MED",
+      "price": 602292,
+      "price_increment": 0,
+      "price_history": {
+        "0": 602292,
+        "1": 602292,
+        "2": 602292,
+        "3": 602292,
+        "7": 602292,
+        "14": 602292,
+        "30": 602292
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/22.png"
     },
     {
       "id": "1108",
@@ -5856,14 +5799,33 @@
       "team_crest_url": "/static/ff_teams/2.png"
     },
     {
-      "id": "932",
-      "name": "Marc Doménech",
-      "team": "Atlético",
-      "position": "DEL",
-      "price": 592242,
+      "id": "847",
+      "name": "Dani Mesonero",
+      "team": "Real Madrid",
+      "position": "MED",
+      "price": 702606,
       "price_increment": 0,
       "price_history": {
-        "0": 592242,
+        "0": 702606,
+        "1": 702606,
+        "2": 702606,
+        "3": 702606,
+        "7": 702606,
+        "14": 702606,
+        "30": 702606
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/15.png"
+    },
+    {
+      "id": "864",
+      "name": "Carlos Giménez",
+      "team": "Atlético",
+      "position": "DEF",
+      "price": 1718547,
+      "price_increment": 0,
+      "price_history": {
+        "0": 1718547,
         "1": 0,
         "2": 0,
         "3": 0,
@@ -5871,128 +5833,52 @@
         "14": 0,
         "30": 0
       },
-      "photo_url": "/static/ff_players/10328.png",
+      "photo_url": "",
       "team_crest_url": "/static/ff_teams/2.png"
     },
     {
-      "id": "1131",
-      "name": "Huseini Nakoha",
-      "team": "Levante",
+      "id": "836",
+      "name": "Mario Rivas",
+      "team": "Real Madrid",
       "position": "DEF",
-      "price": 501874,
-      "price_increment": 0,
+      "price": 725484,
+      "price_increment": -850,
       "price_history": {
-        "0": 501874,
-        "1": 501874,
-        "2": 501874,
-        "3": 501874,
-        "7": 501874,
-        "14": 501874,
-        "30": 501874
+        "0": 725484,
+        "1": 726334,
+        "2": 727318,
+        "3": 728262,
+        "7": 717406,
+        "14": 699808,
+        "30": 731806
       },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/10.png"
+      "photo_url": "/static/ff_players/15227.png",
+      "team_crest_url": "/static/ff_teams/15.png"
     },
     {
-      "id": "905",
-      "name": "Mahamoud Barry",
-      "team": "Villarreal",
+      "id": "913",
+      "name": "Jesús Fortea",
+      "team": "Real Madrid",
+      "position": "DEF",
+      "price": 802099,
+      "price_increment": 0,
+      "price_history": {
+        "0": 802099,
+        "1": 802099,
+        "2": 802099,
+        "3": 802099,
+        "7": 802099,
+        "14": 802099,
+        "30": 802099
+      },
+      "photo_url": "/static/ff_players/15961.png",
+      "team_crest_url": "/static/ff_teams/15.png"
+    },
+    {
+      "id": "1156",
+      "name": "Moha Hamdoune",
+      "team": "Getafe",
       "position": "MED",
-      "price": 602292,
-      "price_increment": 0,
-      "price_history": {
-        "0": 602292,
-        "1": 602292,
-        "2": 602292,
-        "3": 602292,
-        "7": 602292,
-        "14": 602292,
-        "30": 602292
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/22.png"
-    },
-    {
-      "id": "866",
-      "name": "Antal Yaakobishvili",
-      "team": "Atlético",
-      "position": "DEF",
-      "price": 1722526,
-      "price_increment": 0,
-      "price_history": {
-        "0": 1722526,
-        "1": 0,
-        "2": 0,
-        "3": 0,
-        "7": 0,
-        "14": 0,
-        "30": 0
-      },
-      "photo_url": "/static/ff_players/11701.png",
-      "team_crest_url": "/static/ff_teams/2.png"
-    },
-    {
-      "id": "868",
-      "name": "Raúl Jiménez",
-      "team": "Valencia",
-      "position": "POR",
-      "price": 1561503,
-      "price_increment": 0,
-      "price_history": {
-        "0": 1561503,
-        "1": 0,
-        "2": 0,
-        "3": 0,
-        "7": 0,
-        "14": 0,
-        "30": 0
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/18.png"
-    },
-    {
-      "id": "1218",
-      "name": "Mauro Roca",
-      "team": "Villarreal",
-      "position": "MED",
-      "price": 850000,
-      "price_increment": 0,
-      "price_history": {
-        "0": 850000,
-        "1": 850000,
-        "2": 850000,
-        "3": 850000,
-        "7": 850000,
-        "14": 850000,
-        "30": 0
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/22.png"
-    },
-    {
-      "id": "1221",
-      "name": "Álex Campos",
-      "team": "Barcelona",
-      "position": "DEF",
-      "price": 850000,
-      "price_increment": 0,
-      "price_history": {
-        "0": 850000,
-        "1": 850000,
-        "2": 850000,
-        "3": 850000,
-        "7": 850000,
-        "14": 850000,
-        "30": 0
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/3.png"
-    },
-    {
-      "id": "1223",
-      "name": "Jesús Cruz",
-      "team": "Sevilla",
-      "position": "DEL",
       "price": 800000,
       "price_increment": 0,
       "price_history": {
@@ -6002,67 +5888,124 @@
         "3": 800000,
         "7": 800000,
         "14": 800000,
-        "30": 0
+        "30": 800000
       },
       "photo_url": "",
-      "team_crest_url": "/static/ff_teams/17.png"
+      "team_crest_url": "/static/ff_teams/8.png"
     },
     {
-      "id": "1162",
-      "name": "Jorge Castellanos",
-      "team": "Racing",
+      "id": "910",
+      "name": "Antonio Martínez Bastida",
+      "team": "Elche",
       "position": "MED",
-      "price": 682502,
-      "price_increment": 941,
+      "price": 602324,
+      "price_increment": 0,
       "price_history": {
-        "0": 682502,
-        "1": 681561,
-        "2": 680679,
-        "3": 679680,
-        "7": 660206,
-        "14": 623690,
-        "30": 585539
+        "0": 602324,
+        "1": 602324,
+        "2": 602324,
+        "3": 602324,
+        "7": 602324,
+        "14": 602324,
+        "30": 602324
       },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/42.png"
+      "photo_url": "/static/ff_players/16014.png",
+      "team_crest_url": "/static/ff_teams/21.png"
     },
     {
-      "id": "1163",
-      "name": "Hugo Pérez",
-      "team": "Racing",
-      "position": "MED",
-      "price": 695661,
-      "price_increment": 393,
+      "id": "1025",
+      "name": "Pablo Meixús",
+      "team": "Celta",
+      "position": "DEF",
+      "price": 485372,
+      "price_increment": 0,
       "price_history": {
-        "0": 695661,
-        "1": 695268,
-        "2": 694957,
-        "3": 694553,
-        "7": 677718,
-        "14": 646993,
-        "30": 630318
+        "0": 485372,
+        "1": 485372,
+        "2": 485372,
+        "3": 485372,
+        "7": 485372,
+        "14": 485372,
+        "30": 485372
       },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/42.png"
+      "photo_url": "/static/ff_players/16801.png",
+      "team_crest_url": "/static/ff_teams/5.png"
     },
     {
-      "id": "1217",
-      "name": "Orian Goren",
+      "id": "902",
+      "name": "Jordi Pesquer",
       "team": "Barcelona",
-      "position": "MED",
-      "price": 814164,
-      "price_increment": -4545,
+      "position": "DEF",
+      "price": 600000,
+      "price_increment": 0,
       "price_history": {
-        "0": 814164,
-        "1": 818709,
-        "2": 823542,
-        "3": 828495,
-        "7": 835417,
-        "14": 856854,
-        "30": 0
+        "0": 600000,
+        "1": 600000,
+        "2": 600000,
+        "3": 600000,
+        "7": 600000,
+        "14": 600000,
+        "30": 600000
       },
       "photo_url": "",
       "team_crest_url": "/static/ff_teams/3.png"
+    },
+    {
+      "id": "881",
+      "name": "Adrián Pérez",
+      "team": "Athletic",
+      "position": "DEL",
+      "price": 602257,
+      "price_increment": 0,
+      "price_history": {
+        "0": 602257,
+        "1": 602257,
+        "2": 602257,
+        "3": 602257,
+        "7": 602257,
+        "14": 602257,
+        "30": 602257
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/1.png"
+    },
+    {
+      "id": "835",
+      "name": "Albert Niculaesei",
+      "team": "Elche",
+      "position": "DEF",
+      "price": 803099,
+      "price_increment": 0,
+      "price_history": {
+        "0": 803099,
+        "1": 803099,
+        "2": 803099,
+        "3": 803099,
+        "7": 803099,
+        "14": 803099,
+        "30": 803099
+      },
+      "photo_url": "/static/ff_players/14832.png",
+      "team_crest_url": "/static/ff_teams/21.png"
+    },
+    {
+      "id": "896",
+      "name": "Damián Canedo",
+      "team": "Deportivo",
+      "position": "DEF",
+      "price": 602257,
+      "price_increment": 0,
+      "price_history": {
+        "0": 602257,
+        "1": 602257,
+        "2": 602257,
+        "3": 602257,
+        "7": 602257,
+        "14": 602257,
+        "30": 602257
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/6.png"
     },
     {
       "id": "1036",
@@ -6084,6 +6027,25 @@
       "team_crest_url": "/static/ff_teams/13.png"
     },
     {
+      "id": "627",
+      "name": "Pablo García",
+      "team": "Racing",
+      "position": "DEL",
+      "price": 3159918,
+      "price_increment": -48449,
+      "price_history": {
+        "0": 3159918,
+        "1": 3208367,
+        "2": 3265306,
+        "3": 3327948,
+        "7": 3553888,
+        "14": 4016030,
+        "30": 5434084
+      },
+      "photo_url": "/static/ff_players/13822.png",
+      "team_crest_url": "/static/ff_teams/42.png"
+    },
+    {
       "id": "1022",
       "name": "Óscar López",
       "team": "Getafe",
@@ -6101,6 +6063,25 @@
       },
       "photo_url": "",
       "team_crest_url": "/static/ff_teams/8.png"
+    },
+    {
+      "id": "841",
+      "name": "Petar Ratkov",
+      "team": "Levante",
+      "position": "DEL",
+      "price": 824450,
+      "price_increment": -4973,
+      "price_history": {
+        "0": 824450,
+        "1": 829423,
+        "2": 834702,
+        "3": 840120,
+        "7": 849105,
+        "14": 875069,
+        "30": 1068588
+      },
+      "photo_url": "/static/ff_players/11998.png",
+      "team_crest_url": "/static/ff_teams/10.png"
     },
     {
       "id": "754",
@@ -6274,25 +6255,6 @@
       "team_crest_url": "/static/ff_teams/7.png"
     },
     {
-      "id": "1137",
-      "name": "Marc Santos",
-      "team": "Levante",
-      "position": "DEF",
-      "price": 685962,
-      "price_increment": 797,
-      "price_history": {
-        "0": 685962,
-        "1": 685165,
-        "2": 684433,
-        "3": 683590,
-        "7": 664810,
-        "14": 629814,
-        "30": 597309
-      },
-      "photo_url": "/static/ff_players/18028.png",
-      "team_crest_url": "/static/ff_teams/10.png"
-    },
-    {
       "id": "639",
       "name": "Cucho Hernández",
       "team": "Betis",
@@ -6464,6 +6426,25 @@
       "team_crest_url": "/static/ff_teams/8.png"
     },
     {
+      "id": "911",
+      "name": "Marcos Navarro",
+      "team": "Valencia",
+      "position": "DEF",
+      "price": 501909,
+      "price_increment": 0,
+      "price_history": {
+        "0": 501909,
+        "1": 501909,
+        "2": 501909,
+        "3": 501909,
+        "7": 501909,
+        "14": 501909,
+        "30": 501909
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/18.png"
+    },
+    {
       "id": "1008",
       "name": "Igor Zubeldia",
       "team": "Real Sociedad",
@@ -6521,6 +6502,25 @@
       "team_crest_url": "/static/ff_teams/11.png"
     },
     {
+      "id": "727",
+      "name": "Filip Ugrinic",
+      "team": "Valencia",
+      "position": "MED",
+      "price": 1096982,
+      "price_increment": -16329,
+      "price_history": {
+        "0": 1096982,
+        "1": 1113311,
+        "2": 1130419,
+        "3": 1148159,
+        "7": 1211782,
+        "14": 1357708,
+        "30": 1849988
+      },
+      "photo_url": "/static/ff_players/12025.png",
+      "team_crest_url": "/static/ff_teams/18.png"
+    },
+    {
       "id": "737",
       "name": "Asier Osambela",
       "team": "Osasuna",
@@ -6559,23 +6559,23 @@
       "team_crest_url": "/static/ff_teams/21.png"
     },
     {
-      "id": "627",
-      "name": "Pablo García",
-      "team": "Racing",
-      "position": "DEL",
-      "price": 3159918,
-      "price_increment": -48449,
+      "id": "901",
+      "name": "Aaron Ndive Mayol",
+      "team": "Valencia",
+      "position": "MED",
+      "price": 776525,
+      "price_increment": -2976,
       "price_history": {
-        "0": 3159918,
-        "1": 3208367,
-        "2": 3265306,
-        "3": 3327948,
-        "7": 3553888,
-        "14": 4016030,
-        "30": 5434084
+        "0": 776525,
+        "1": 779501,
+        "2": 782700,
+        "3": 785952,
+        "7": 785329,
+        "14": 790198,
+        "30": 905214
       },
-      "photo_url": "/static/ff_players/13822.png",
-      "team_crest_url": "/static/ff_teams/42.png"
+      "photo_url": "/static/ff_players/17376.png",
+      "team_crest_url": "/static/ff_teams/18.png"
     },
     {
       "id": "720",
@@ -6692,25 +6692,6 @@
       "team_crest_url": "/static/ff_teams/21.png"
     },
     {
-      "id": "812",
-      "name": "André Almeida",
-      "team": "Racing",
-      "position": "MED",
-      "price": 725471,
-      "price_increment": -849,
-      "price_history": {
-        "0": 725471,
-        "1": 726320,
-        "2": 727303,
-        "3": 728246,
-        "7": 717386,
-        "14": 699783,
-        "30": 731760
-      },
-      "photo_url": "/static/ff_players/10533.png",
-      "team_crest_url": "/static/ff_teams/42.png"
-    },
-    {
       "id": "611",
       "name": "Mariano Díaz",
       "team": "Alavés",
@@ -6804,44 +6785,6 @@
       },
       "photo_url": "/static/ff_players/18018.png",
       "team_crest_url": "/static/ff_teams/18.png"
-    },
-    {
-      "id": "657",
-      "name": "Trent Alexander-Arnold",
-      "team": "Real Madrid",
-      "position": "DEF",
-      "price": 6567595,
-      "price_increment": -86863,
-      "price_history": {
-        "0": 6567595,
-        "1": 6654458,
-        "2": 6740653,
-        "3": 6831082,
-        "7": 7262793,
-        "14": 8274537,
-        "30": 10780649
-      },
-      "photo_url": "/static/ff_players/4480.png",
-      "team_crest_url": "/static/ff_teams/15.png"
-    },
-    {
-      "id": "1105",
-      "name": "Igor Galdin",
-      "team": "Levante",
-      "position": "POR",
-      "price": 682843,
-      "price_increment": 927,
-      "price_history": {
-        "0": 682843,
-        "1": 681916,
-        "2": 681049,
-        "3": 680065,
-        "7": 660659,
-        "14": 624291,
-        "30": 586695
-      },
-      "photo_url": "/static/ff_players/18027.png",
-      "team_crest_url": "/static/ff_teams/10.png"
     },
     {
       "id": "923",
@@ -6939,25 +6882,6 @@
       "team_crest_url": "/static/ff_teams/4.png"
     },
     {
-      "id": "901",
-      "name": "Aaron Ndive Mayol",
-      "team": "Valencia",
-      "position": "MED",
-      "price": 776525,
-      "price_increment": -2976,
-      "price_history": {
-        "0": 776525,
-        "1": 779501,
-        "2": 782700,
-        "3": 785952,
-        "7": 785329,
-        "14": 790198,
-        "30": 905214
-      },
-      "photo_url": "/static/ff_players/17376.png",
-      "team_crest_url": "/static/ff_teams/18.png"
-    },
-    {
       "id": "567",
       "name": "Vinicius Junior",
       "team": "Real Madrid",
@@ -7013,6 +6937,25 @@
       },
       "photo_url": "/static/ff_players/13975.png",
       "team_crest_url": "/static/ff_teams/6.png"
+    },
+    {
+      "id": "705",
+      "name": "Rodri Hernández",
+      "team": "Barcelona",
+      "position": "MED",
+      "price": 55655753,
+      "price_increment": -536732,
+      "price_history": {
+        "0": 55655753,
+        "1": 56192485,
+        "2": 57008171,
+        "3": 57996646,
+        "7": 62553992,
+        "14": 72774540,
+        "30": 95213798
+      },
+      "photo_url": "/static/ff_players/2733.png",
+      "team_crest_url": "/static/ff_teams/3.png"
     },
     {
       "id": "863",
@@ -7243,25 +7186,6 @@
       "team_crest_url": "/static/ff_teams/18.png"
     },
     {
-      "id": "911",
-      "name": "Marcos Navarro",
-      "team": "Valencia",
-      "position": "DEF",
-      "price": 501909,
-      "price_increment": 0,
-      "price_history": {
-        "0": 501909,
-        "1": 501909,
-        "2": 501909,
-        "3": 501909,
-        "7": 501909,
-        "14": 501909,
-        "30": 501909
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/18.png"
-    },
-    {
       "id": "882",
       "name": "Carles Aleñá",
       "team": "Alavés",
@@ -7297,25 +7221,6 @@
         "30": 21511078
       },
       "photo_url": "/static/ff_players/843.png",
-      "team_crest_url": "/static/ff_teams/22.png"
-    },
-    {
-      "id": "970",
-      "name": "Ilias Akhomach",
-      "team": "Villarreal",
-      "position": "DEL",
-      "price": 7797441,
-      "price_increment": -136424,
-      "price_history": {
-        "0": 7797441,
-        "1": 7933865,
-        "2": 8079696,
-        "3": 8226539,
-        "7": 8703036,
-        "14": 10198079,
-        "30": 14821747
-      },
-      "photo_url": "/static/ff_players/9763.png",
       "team_crest_url": "/static/ff_teams/22.png"
     },
     {
@@ -7395,25 +7300,6 @@
       "team_crest_url": "/static/ff_teams/3.png"
     },
     {
-      "id": "727",
-      "name": "Filip Ugrinic",
-      "team": "Valencia",
-      "position": "MED",
-      "price": 1096982,
-      "price_increment": -16329,
-      "price_history": {
-        "0": 1096982,
-        "1": 1113311,
-        "2": 1130419,
-        "3": 1148159,
-        "7": 1211782,
-        "14": 1357708,
-        "30": 1849988
-      },
-      "photo_url": "/static/ff_players/12025.png",
-      "team_crest_url": "/static/ff_teams/18.png"
-    },
-    {
       "id": "1160",
       "name": "Gabriel Jesus",
       "team": "Barcelona",
@@ -7433,25 +7319,6 @@
       "team_crest_url": "/static/ff_teams/3.png"
     },
     {
-      "id": "974",
-      "name": "Dani Ceballos",
-      "team": "Betis",
-      "position": "MED",
-      "price": 7204861,
-      "price_increment": -173841,
-      "price_history": {
-        "0": 7204861,
-        "1": 7378702,
-        "2": 7561654,
-        "3": 7744361,
-        "7": 8407563,
-        "14": 8338125,
-        "30": 8940602
-      },
-      "photo_url": "/static/ff_players/1062.png",
-      "team_crest_url": "/static/ff_teams/4.png"
-    },
-    {
       "id": "767",
       "name": "Gabriel Moscardo",
       "team": "Espanyol",
@@ -7469,25 +7336,6 @@
       },
       "photo_url": "/static/ff_players/15957.png",
       "team_crest_url": "/static/ff_teams/7.png"
-    },
-    {
-      "id": "705",
-      "name": "Rodri Hernández",
-      "team": "Barcelona",
-      "position": "MED",
-      "price": 55655753,
-      "price_increment": -536732,
-      "price_history": {
-        "0": 55655753,
-        "1": 56192485,
-        "2": 57008171,
-        "3": 57996646,
-        "7": 62553992,
-        "14": 72774540,
-        "30": 95213798
-      },
-      "photo_url": "/static/ff_players/2733.png",
-      "team_crest_url": "/static/ff_teams/3.png"
     },
     {
       "id": "600",
@@ -7965,23 +7813,42 @@
       "team_crest_url": "/static/ff_teams/15.png"
     },
     {
-      "id": "892",
-      "name": "Mario Solórzano",
+      "id": "804",
+      "name": "Aarón Martín",
       "team": "Racing",
-      "position": "MED",
-      "price": 602234,
-      "price_increment": 0,
+      "position": "DEF",
+      "price": 797495,
+      "price_increment": -3850,
       "price_history": {
-        "0": 602234,
-        "1": 602234,
-        "2": 602234,
-        "3": 602234,
-        "7": 602234,
-        "14": 602234,
-        "30": 602234
+        "0": 797495,
+        "1": 801345,
+        "2": 805454,
+        "3": 809654,
+        "7": 813233,
+        "14": 827333,
+        "30": 976860
       },
-      "photo_url": "",
+      "photo_url": "/static/ff_players/3246.png",
       "team_crest_url": "/static/ff_teams/42.png"
+    },
+    {
+      "id": "954",
+      "name": "Junior Firpo",
+      "team": "Betis",
+      "position": "DEF",
+      "price": 742740,
+      "price_increment": -1569,
+      "price_history": {
+        "0": 742740,
+        "1": 744309,
+        "2": 746042,
+        "3": 747766,
+        "7": 740369,
+        "14": 730367,
+        "30": 790531
+      },
+      "photo_url": "/static/ff_players/4620.png",
+      "team_crest_url": "/static/ff_teams/4.png"
     },
     {
       "id": "1159",
@@ -8003,42 +7870,23 @@
       "team_crest_url": "/static/ff_teams/14.png"
     },
     {
-      "id": "841",
-      "name": "Petar Ratkov",
-      "team": "Levante",
-      "position": "DEL",
-      "price": 824450,
-      "price_increment": -4973,
+      "id": "884",
+      "name": "Juan Hernández",
+      "team": "Barcelona",
+      "position": "MED",
+      "price": 581760,
+      "price_increment": 0,
       "price_history": {
-        "0": 824450,
-        "1": 829423,
-        "2": 834702,
-        "3": 840120,
-        "7": 849105,
-        "14": 875069,
-        "30": 1068588
+        "0": 581760,
+        "1": 581760,
+        "2": 581760,
+        "3": 581760,
+        "7": 581760,
+        "14": 581760,
+        "30": 581760
       },
-      "photo_url": "/static/ff_players/11998.png",
-      "team_crest_url": "/static/ff_teams/10.png"
-    },
-    {
-      "id": "1044",
-      "name": "Juan Foyth",
-      "team": "Villarreal",
-      "position": "DEF",
-      "price": 6303423,
-      "price_increment": -162989,
-      "price_history": {
-        "0": 6303423,
-        "1": 6466412,
-        "2": 6633853,
-        "3": 6803988,
-        "7": 7480296,
-        "14": 8862172,
-        "30": 11649171
-      },
-      "photo_url": "/static/ff_players/4705.png",
-      "team_crest_url": "/static/ff_teams/22.png"
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/3.png"
     },
     {
       "id": "969",
@@ -8079,6 +7927,25 @@
       "team_crest_url": "/static/ff_teams/21.png"
     },
     {
+      "id": "1137",
+      "name": "Marc Santos",
+      "team": "Levante",
+      "position": "DEF",
+      "price": 685962,
+      "price_increment": 797,
+      "price_history": {
+        "0": 685962,
+        "1": 685165,
+        "2": 684433,
+        "3": 683590,
+        "7": 664810,
+        "14": 629814,
+        "30": 597309
+      },
+      "photo_url": "/static/ff_players/18028.png",
+      "team_crest_url": "/static/ff_teams/10.png"
+    },
+    {
       "id": "1018",
       "name": "Mouctar Diakhaby",
       "team": "Valencia",
@@ -8096,25 +7963,6 @@
       },
       "photo_url": "/static/ff_players/3607.png",
       "team_crest_url": "/static/ff_teams/18.png"
-    },
-    {
-      "id": "872",
-      "name": "Andrés Vallecillo",
-      "team": "Racing",
-      "position": "MED",
-      "price": 682473,
-      "price_increment": 943,
-      "price_history": {
-        "0": 682473,
-        "1": 681530,
-        "2": 680647,
-        "3": 679646,
-        "7": 660166,
-        "14": 623635,
-        "30": 585431
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/42.png"
     },
     {
       "id": "803",
@@ -8155,6 +8003,25 @@
       "team_crest_url": "/static/ff_teams/1.png"
     },
     {
+      "id": "970",
+      "name": "Ilias Akhomach",
+      "team": "Villarreal",
+      "position": "DEL",
+      "price": 7797441,
+      "price_increment": -136424,
+      "price_history": {
+        "0": 7797441,
+        "1": 7933865,
+        "2": 8079696,
+        "3": 8226539,
+        "7": 8703036,
+        "14": 10198079,
+        "30": 14821747
+      },
+      "photo_url": "/static/ff_players/9763.png",
+      "team_crest_url": "/static/ff_teams/22.png"
+    },
+    {
       "id": "1115",
       "name": "Juan Cruz",
       "team": "Málaga",
@@ -8172,25 +8039,6 @@
       },
       "photo_url": "/static/ff_players/10823.png",
       "team_crest_url": "/static/ff_teams/11.png"
-    },
-    {
-      "id": "780",
-      "name": "Hugo Sotelo",
-      "team": "Levante",
-      "position": "MED",
-      "price": 701647,
-      "price_increment": 144,
-      "price_history": {
-        "0": 701647,
-        "1": 701503,
-        "2": 701452,
-        "3": 701318,
-        "7": 685681,
-        "14": 657589,
-        "30": 650678
-      },
-      "photo_url": "/static/ff_players/8988.png",
-      "team_crest_url": "/static/ff_teams/10.png"
     },
     {
       "id": "681",
@@ -8231,44 +8079,6 @@
       "team_crest_url": "/static/ff_teams/8.png"
     },
     {
-      "id": "1116",
-      "name": "Maroan Sannadi",
-      "team": "Athletic",
-      "position": "DEL",
-      "price": 679006,
-      "price_increment": 1087,
-      "price_history": {
-        "0": 679006,
-        "1": 677919,
-        "2": 676885,
-        "3": 675728,
-        "7": 655552,
-        "14": 617495,
-        "30": 573636
-      },
-      "photo_url": "/static/ff_players/13830.png",
-      "team_crest_url": "/static/ff_teams/1.png"
-    },
-    {
-      "id": "1074",
-      "name": "Enzo Bardelli",
-      "team": "Levante",
-      "position": "MED",
-      "price": 2487613,
-      "price_increment": -55296,
-      "price_history": {
-        "0": 2487613,
-        "1": 2542909,
-        "2": 2603607,
-        "3": 2666993,
-        "7": 2904056,
-        "14": 3380884,
-        "30": 5065008
-      },
-      "photo_url": "/static/ff_players/18006.png",
-      "team_crest_url": "/static/ff_teams/10.png"
-    },
-    {
       "id": "1088",
       "name": "Juani",
       "team": "Málaga",
@@ -8286,6 +8096,25 @@
       },
       "photo_url": "",
       "team_crest_url": "/static/ff_teams/11.png"
+    },
+    {
+      "id": "1044",
+      "name": "Juan Foyth",
+      "team": "Villarreal",
+      "position": "DEF",
+      "price": 6303423,
+      "price_increment": -162989,
+      "price_history": {
+        "0": 6303423,
+        "1": 6466412,
+        "2": 6633853,
+        "3": 6803988,
+        "7": 7480296,
+        "14": 8862172,
+        "30": 11649171
+      },
+      "photo_url": "/static/ff_players/4705.png",
+      "team_crest_url": "/static/ff_teams/22.png"
     },
     {
       "id": "1013",
@@ -8497,6 +8326,44 @@
       "team_crest_url": "/static/ff_teams/42.png"
     },
     {
+      "id": "1129",
+      "name": "Paco Cortés",
+      "team": "Levante",
+      "position": "DEL",
+      "price": 684556,
+      "price_increment": 856,
+      "price_history": {
+        "0": 684556,
+        "1": 683700,
+        "2": 682907,
+        "3": 682000,
+        "7": 662937,
+        "14": 627322,
+        "30": 592520
+      },
+      "photo_url": "/static/ff_players/13145.png",
+      "team_crest_url": "/static/ff_teams/10.png"
+    },
+    {
+      "id": "870",
+      "name": "Íñigo Sainz-Maza",
+      "team": "Racing",
+      "position": "MED",
+      "price": 683556,
+      "price_increment": 897,
+      "price_history": {
+        "0": 683556,
+        "1": 682659,
+        "2": 681823,
+        "3": 680871,
+        "7": 661608,
+        "14": 625556,
+        "30": 589127
+      },
+      "photo_url": "/static/ff_players/10338.png",
+      "team_crest_url": "/static/ff_teams/42.png"
+    },
+    {
       "id": "811",
       "name": "Denzel Dumfries",
       "team": "Real Madrid",
@@ -8514,63 +8381,6 @@
       },
       "photo_url": "/static/ff_players/6055.png",
       "team_crest_url": "/static/ff_teams/15.png"
-    },
-    {
-      "id": "804",
-      "name": "Aarón Martín",
-      "team": "Racing",
-      "position": "DEF",
-      "price": 797495,
-      "price_increment": -3850,
-      "price_history": {
-        "0": 797495,
-        "1": 801345,
-        "2": 805454,
-        "3": 809654,
-        "7": 813233,
-        "14": 827333,
-        "30": 976860
-      },
-      "photo_url": "/static/ff_players/3246.png",
-      "team_crest_url": "/static/ff_teams/42.png"
-    },
-    {
-      "id": "971",
-      "name": "Facundo González",
-      "team": "Racing",
-      "position": "DEF",
-      "price": 734102,
-      "price_increment": -1209,
-      "price_history": {
-        "0": 734102,
-        "1": 735311,
-        "2": 736669,
-        "3": 738003,
-        "7": 728874,
-        "14": 715070,
-        "30": 761133
-      },
-      "photo_url": "/static/ff_players/10209.png",
-      "team_crest_url": "/static/ff_teams/42.png"
-    },
-    {
-      "id": "954",
-      "name": "Junior Firpo",
-      "team": "Betis",
-      "position": "DEF",
-      "price": 742740,
-      "price_increment": -1569,
-      "price_history": {
-        "0": 742740,
-        "1": 744309,
-        "2": 746042,
-        "3": 747766,
-        "7": 740369,
-        "14": 730367,
-        "30": 790531
-      },
-      "photo_url": "/static/ff_players/4620.png",
-      "team_crest_url": "/static/ff_teams/4.png"
     },
     {
       "id": "814",
@@ -8744,82 +8554,6 @@
       "team_crest_url": "/static/ff_teams/1.png"
     },
     {
-      "id": "1076",
-      "name": "Bright Ede",
-      "team": "Deportivo",
-      "position": "DEF",
-      "price": 1071747,
-      "price_increment": -15277,
-      "price_history": {
-        "0": 1071747,
-        "1": 1087024,
-        "2": 1103036,
-        "3": 1119635,
-        "7": 1178198,
-        "14": 1313014,
-        "30": 1908034
-      },
-      "photo_url": "/static/ff_players/18030.png",
-      "team_crest_url": "/static/ff_teams/6.png"
-    },
-    {
-      "id": "1129",
-      "name": "Paco Cortés",
-      "team": "Levante",
-      "position": "DEL",
-      "price": 684556,
-      "price_increment": 856,
-      "price_history": {
-        "0": 684556,
-        "1": 683700,
-        "2": 682907,
-        "3": 682000,
-        "7": 662937,
-        "14": 627322,
-        "30": 592520
-      },
-      "photo_url": "/static/ff_players/13145.png",
-      "team_crest_url": "/static/ff_teams/10.png"
-    },
-    {
-      "id": "870",
-      "name": "Íñigo Sainz-Maza",
-      "team": "Racing",
-      "position": "MED",
-      "price": 683556,
-      "price_increment": 897,
-      "price_history": {
-        "0": 683556,
-        "1": 682659,
-        "2": 681823,
-        "3": 680871,
-        "7": 661608,
-        "14": 625556,
-        "30": 589127
-      },
-      "photo_url": "/static/ff_players/10338.png",
-      "team_crest_url": "/static/ff_teams/42.png"
-    },
-    {
-      "id": "1097",
-      "name": "Giovani Lo Celso",
-      "team": "Betis",
-      "position": "MED",
-      "price": 4091944,
-      "price_increment": -91828,
-      "price_history": {
-        "0": 4091944,
-        "1": 4183772,
-        "2": 4281461,
-        "3": 4378934,
-        "7": 4740002,
-        "14": 5478392,
-        "30": 7140421
-      },
-      "photo_url": "/static/ff_players/3717.png",
-      "team_crest_url": "/static/ff_teams/4.png"
-    },
-    {
       "id": "1016",
       "name": "Manu Bueno",
       "team": "Sevilla",
@@ -8856,6 +8590,25 @@
       },
       "photo_url": "/static/ff_players/14928.png",
       "team_crest_url": "/static/ff_teams/7.png"
+    },
+    {
+      "id": "780",
+      "name": "Hugo Sotelo",
+      "team": "Levante",
+      "position": "MED",
+      "price": 701647,
+      "price_increment": 144,
+      "price_history": {
+        "0": 701647,
+        "1": 701503,
+        "2": 701452,
+        "3": 701318,
+        "7": 685681,
+        "14": 657589,
+        "30": 650678
+      },
+      "photo_url": "/static/ff_players/8988.png",
+      "team_crest_url": "/static/ff_teams/10.png"
     },
     {
       "id": "953",
@@ -8913,6 +8666,25 @@
       },
       "photo_url": "/static/ff_players/9612.png",
       "team_crest_url": "/static/ff_teams/5.png"
+    },
+    {
+      "id": "971",
+      "name": "Facundo González",
+      "team": "Racing",
+      "position": "DEF",
+      "price": 734102,
+      "price_increment": -1209,
+      "price_history": {
+        "0": 734102,
+        "1": 735311,
+        "2": 736669,
+        "3": 738003,
+        "7": 728874,
+        "14": 715070,
+        "30": 761133
+      },
+      "photo_url": "/static/ff_players/10209.png",
+      "team_crest_url": "/static/ff_teams/42.png"
     },
     {
       "id": "876",
@@ -9067,23 +8839,23 @@
       "team_crest_url": "/static/ff_teams/18.png"
     },
     {
-      "id": "1069",
-      "name": "Jorge Cabello",
-      "team": "Levante",
-      "position": "DEF",
-      "price": 684588,
-      "price_increment": 854,
+      "id": "1029",
+      "name": "Dominik Livakovic",
+      "team": "Barcelona",
+      "position": "POR",
+      "price": 1143077,
+      "price_increment": -18249,
       "price_history": {
-        "0": 684588,
-        "1": 683734,
-        "2": 682943,
-        "3": 682038,
-        "7": 662982,
-        "14": 627383,
-        "30": 592636
+        "0": 1143077,
+        "1": 1161326,
+        "2": 1180434,
+        "3": 1200258,
+        "7": 1273122,
+        "14": 1439337,
+        "30": 2077876
       },
-      "photo_url": "/static/ff_players/12879.png",
-      "team_crest_url": "/static/ff_teams/10.png"
+      "photo_url": "/static/ff_players/3589.png",
+      "team_crest_url": "/static/ff_teams/3.png"
     },
     {
       "id": "952",
@@ -9105,25 +8877,6 @@
       "team_crest_url": "/static/ff_teams/16.png"
     },
     {
-      "id": "755",
-      "name": "Cristian Romero",
-      "team": "Atlético",
-      "position": "DEF",
-      "price": 33384782,
-      "price_increment": -662570,
-      "price_history": {
-        "0": 33384782,
-        "1": 34047352,
-        "2": 34826509,
-        "3": 35600053,
-        "7": 38664494,
-        "14": 45042806,
-        "30": 55753595
-      },
-      "photo_url": "/static/ff_players/6310.png",
-      "team_crest_url": "/static/ff_teams/2.png"
-    },
-    {
       "id": "1200",
       "name": "Jens Cajuste",
       "team": "Málaga",
@@ -9141,6 +8894,25 @@
       },
       "photo_url": "/static/ff_players/8536.png",
       "team_crest_url": "/static/ff_teams/11.png"
+    },
+    {
+      "id": "974",
+      "name": "Dani Ceballos",
+      "team": "Betis",
+      "position": "MED",
+      "price": 7204861,
+      "price_increment": -173841,
+      "price_history": {
+        "0": 7204861,
+        "1": 7378702,
+        "2": 7561654,
+        "3": 7744361,
+        "7": 8407563,
+        "14": 8338125,
+        "30": 8940602
+      },
+      "photo_url": "/static/ff_players/1062.png",
+      "team_crest_url": "/static/ff_teams/4.png"
     },
     {
       "id": "669",
@@ -9179,6 +8951,25 @@
       },
       "photo_url": "/static/ff_players/2417.png",
       "team_crest_url": "/static/ff_teams/3.png"
+    },
+    {
+      "id": "748",
+      "name": "Aliou Dieng",
+      "team": "Valencia",
+      "position": "MED",
+      "price": 777749,
+      "price_increment": -3027,
+      "price_history": {
+        "0": 777749,
+        "1": 780776,
+        "2": 784028,
+        "3": 787335,
+        "7": 786955,
+        "14": 792362,
+        "30": 909660
+      },
+      "photo_url": "/static/ff_players/15928.png",
+      "team_crest_url": "/static/ff_teams/18.png"
     },
     {
       "id": "1158",
@@ -9257,6 +9048,25 @@
       "team_crest_url": "/static/ff_teams/42.png"
     },
     {
+      "id": "1097",
+      "name": "Giovani Lo Celso",
+      "team": "Betis",
+      "position": "MED",
+      "price": 4091944,
+      "price_increment": -91828,
+      "price_history": {
+        "0": 4091944,
+        "1": 4183772,
+        "2": 4281461,
+        "3": 4378934,
+        "7": 4740002,
+        "14": 5478392,
+        "30": 7140421
+      },
+      "photo_url": "/static/ff_players/3717.png",
+      "team_crest_url": "/static/ff_teams/4.png"
+    },
+    {
       "id": "1122",
       "name": "Juan Berrocal",
       "team": "Málaga",
@@ -9274,25 +9084,6 @@
       },
       "photo_url": "/static/ff_players/5671.png",
       "team_crest_url": "/static/ff_teams/11.png"
-    },
-    {
-      "id": "826",
-      "name": "Manu Hernando",
-      "team": "Racing",
-      "position": "DEF",
-      "price": 794232,
-      "price_increment": -3714,
-      "price_history": {
-        "0": 794232,
-        "1": 797946,
-        "2": 801913,
-        "3": 805965,
-        "7": 808891,
-        "14": 821554,
-        "30": 965754
-      },
-      "photo_url": "/static/ff_players/3836.png",
-      "team_crest_url": "/static/ff_teams/42.png"
     },
     {
       "id": "686",
@@ -9447,6 +9238,25 @@
       "team_crest_url": "/static/ff_teams/16.png"
     },
     {
+      "id": "1020",
+      "name": "Axel Tape",
+      "team": "Levante",
+      "position": "DEF",
+      "price": 758730,
+      "price_increment": -2235,
+      "price_history": {
+        "0": 758730,
+        "1": 760965,
+        "2": 763392,
+        "3": 765839,
+        "7": 761648,
+        "14": 758685,
+        "30": 844945
+      },
+      "photo_url": "/static/ff_players/15089.png",
+      "team_crest_url": "/static/ff_teams/10.png"
+    },
+    {
       "id": "782",
       "name": "Romain Del Castillo",
       "team": "Osasuna",
@@ -9580,6 +9390,25 @@
       "team_crest_url": "/static/ff_teams/7.png"
     },
     {
+      "id": "872",
+      "name": "Andrés Vallecillo",
+      "team": "Racing",
+      "position": "MED",
+      "price": 682473,
+      "price_increment": 943,
+      "price_history": {
+        "0": 682473,
+        "1": 681530,
+        "2": 680647,
+        "3": 679646,
+        "7": 660166,
+        "14": 623635,
+        "30": 585431
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/42.png"
+    },
+    {
       "id": "987",
       "name": "Laro Gómez",
       "team": "Racing",
@@ -9616,6 +9445,25 @@
       },
       "photo_url": "/static/ff_players/12891.png",
       "team_crest_url": "/static/ff_teams/7.png"
+    },
+    {
+      "id": "840",
+      "name": "Manel Usedo",
+      "team": "Levante",
+      "position": "MED",
+      "price": 684232,
+      "price_increment": 869,
+      "price_history": {
+        "0": 684232,
+        "1": 683363,
+        "2": 682556,
+        "3": 681635,
+        "7": 662507,
+        "14": 626752,
+        "30": 591424
+      },
+      "photo_url": "/static/ff_players/18241.png",
+      "team_crest_url": "/static/ff_teams/10.png"
     },
     {
       "id": "1213",
@@ -9694,6 +9542,25 @@
       "team_crest_url": "/static/ff_teams/6.png"
     },
     {
+      "id": "771",
+      "name": "Jeremy Toljan",
+      "team": "Levante",
+      "position": "DEF",
+      "price": 793197,
+      "price_increment": -3671,
+      "price_history": {
+        "0": 793197,
+        "1": 796868,
+        "2": 800791,
+        "3": 804796,
+        "7": 807515,
+        "14": 819722,
+        "30": 962234
+      },
+      "photo_url": "/static/ff_players/4976.png",
+      "team_crest_url": "/static/ff_teams/10.png"
+    },
+    {
       "id": "802",
       "name": "Urko González de Zarate",
       "team": "Espanyol",
@@ -9711,6 +9578,25 @@
       },
       "photo_url": "/static/ff_players/8228.png",
       "team_crest_url": "/static/ff_teams/7.png"
+    },
+    {
+      "id": "1182",
+      "name": "Andrés Martín",
+      "team": "Racing",
+      "position": "DEL",
+      "price": 2951466,
+      "price_increment": -76111,
+      "price_history": {
+        "0": 2951466,
+        "1": 3027577,
+        "2": 3105922,
+        "3": 3186711,
+        "7": 3504076,
+        "14": 4150980,
+        "30": 5912771
+      },
+      "photo_url": "/static/ff_players/6890.png",
+      "team_crest_url": "/static/ff_teams/42.png"
     },
     {
       "id": "820",
@@ -9732,23 +9618,23 @@
       "team_crest_url": "/static/ff_teams/2.png"
     },
     {
-      "id": "748",
-      "name": "Aliou Dieng",
-      "team": "Valencia",
+      "id": "786",
+      "name": "Maguette Gueye",
+      "team": "Racing",
       "position": "MED",
-      "price": 777749,
-      "price_increment": -3027,
+      "price": 765640,
+      "price_increment": -2523,
       "price_history": {
-        "0": 777749,
-        "1": 780776,
-        "2": 784028,
-        "3": 787335,
-        "7": 786955,
-        "14": 792362,
-        "30": 909660
+        "0": 765640,
+        "1": 768163,
+        "2": 770890,
+        "3": 773649,
+        "7": 770842,
+        "14": 770919,
+        "30": 868452
       },
-      "photo_url": "/static/ff_players/15928.png",
-      "team_crest_url": "/static/ff_teams/18.png"
+      "photo_url": "/static/ff_players/14155.png",
+      "team_crest_url": "/static/ff_teams/42.png"
     },
     {
       "id": "1196",
@@ -9922,25 +9808,6 @@
       "team_crest_url": "/static/ff_teams/11.png"
     },
     {
-      "id": "1020",
-      "name": "Axel Tape",
-      "team": "Levante",
-      "position": "DEF",
-      "price": 758730,
-      "price_increment": -2235,
-      "price_history": {
-        "0": 758730,
-        "1": 760965,
-        "2": 763392,
-        "3": 765839,
-        "7": 761648,
-        "14": 758685,
-        "30": 844945
-      },
-      "photo_url": "/static/ff_players/15089.png",
-      "team_crest_url": "/static/ff_teams/10.png"
-    },
-    {
       "id": "1140",
       "name": "Abdoulaye Faye",
       "team": "Celta",
@@ -10017,6 +9884,158 @@
       "team_crest_url": "/static/ff_teams/6.png"
     },
     {
+      "id": "1147",
+      "name": "Mikel Rodriguez",
+      "team": "Alavés",
+      "position": "MED",
+      "price": 769663,
+      "price_increment": -2690,
+      "price_history": {
+        "0": 769663,
+        "1": 772353,
+        "2": 775254,
+        "3": 778195,
+        "7": 776195,
+        "14": 778043,
+        "30": 882141
+      },
+      "photo_url": "/static/ff_players/16186.png",
+      "team_crest_url": "/static/ff_teams/28.png"
+    },
+    {
+      "id": "1148",
+      "name": "Simon Eriksson",
+      "team": "Racing",
+      "position": "POR",
+      "price": 725034,
+      "price_increment": -831,
+      "price_history": {
+        "0": 725034,
+        "1": 725865,
+        "2": 726829,
+        "3": 727753,
+        "7": 716807,
+        "14": 699011,
+        "30": 730274
+      },
+      "photo_url": "/static/ff_players/15033.png",
+      "team_crest_url": "/static/ff_teams/42.png"
+    },
+    {
+      "id": "1180",
+      "name": "Iker Losada",
+      "team": "Betis",
+      "position": "DEL",
+      "price": 715493,
+      "price_increment": -433,
+      "price_history": {
+        "0": 715493,
+        "1": 715926,
+        "2": 716476,
+        "3": 716968,
+        "7": 704107,
+        "14": 682111,
+        "30": 697801
+      },
+      "photo_url": "/static/ff_players/7201.png",
+      "team_crest_url": "/static/ff_teams/4.png"
+    },
+    {
+      "id": "1165",
+      "name": "Hamza Abdelkarim",
+      "team": "Barcelona",
+      "position": "DEL",
+      "price": 850085,
+      "price_increment": -6041,
+      "price_history": {
+        "0": 850085,
+        "1": 856126,
+        "2": 862518,
+        "3": 869095,
+        "7": 883219,
+        "14": 920466,
+        "30": 1155820
+      },
+      "photo_url": "/static/ff_players/17663.png",
+      "team_crest_url": "/static/ff_teams/3.png"
+    },
+    {
+      "id": "638",
+      "name": "Alejandro Catena",
+      "team": "Osasuna",
+      "position": "DEF",
+      "price": 21703466,
+      "price_increment": -531880,
+      "price_history": {
+        "0": 21703466,
+        "1": 22235346,
+        "2": 22800004,
+        "3": 23378081,
+        "7": 23437226,
+        "14": 21328299,
+        "30": 23050563
+      },
+      "photo_url": "/static/ff_players/6493.png",
+      "team_crest_url": "/static/ff_teams/13.png"
+    },
+    {
+      "id": "1188",
+      "name": "Alex Padilla",
+      "team": "Athletic",
+      "position": "POR",
+      "price": 697051,
+      "price_increment": 335,
+      "price_history": {
+        "0": 697051,
+        "1": 696716,
+        "2": 696466,
+        "3": 696124,
+        "7": 679568,
+        "14": 649455,
+        "30": 635052
+      },
+      "photo_url": "/static/ff_players/10214.png",
+      "team_crest_url": "/static/ff_teams/1.png"
+    },
+    {
+      "id": "1187",
+      "name": "Jiri Letácek",
+      "team": "Getafe",
+      "position": "POR",
+      "price": 682755,
+      "price_increment": 931,
+      "price_history": {
+        "0": 682755,
+        "1": 681824,
+        "2": 680953,
+        "3": 679965,
+        "7": 660541,
+        "14": 624134,
+        "30": 586393
+      },
+      "photo_url": "/static/ff_players/13877.png",
+      "team_crest_url": "/static/ff_teams/8.png"
+    },
+    {
+      "id": "1107",
+      "name": "Altay Bayindir",
+      "team": "Celta",
+      "position": "POR",
+      "price": 717078,
+      "price_increment": -499,
+      "price_history": {
+        "0": 717078,
+        "1": 717577,
+        "2": 718196,
+        "3": 718760,
+        "7": 706218,
+        "14": 684922,
+        "30": 703202
+      },
+      "photo_url": "/static/ff_players/9012.png",
+      "team_crest_url": "/static/ff_teams/5.png"
+    },
+    {
       "id": "617",
       "name": "Miguel Sierra",
       "team": "Sevilla",
@@ -10034,6 +10053,329 @@
       },
       "photo_url": "/static/ff_players/16236.png",
       "team_crest_url": "/static/ff_teams/17.png"
+    },
+    {
+      "id": "1056",
+      "name": "Rubén Sánchez",
+      "team": "Elche",
+      "position": "DEF",
+      "price": 681875,
+      "price_increment": 967,
+      "price_history": {
+        "0": 681875,
+        "1": 680908,
+        "2": 679999,
+        "3": 678971,
+        "7": 659371,
+        "14": 622579,
+        "30": 583405
+      },
+      "photo_url": "/static/ff_players/9695.png",
+      "team_crest_url": "/static/ff_teams/21.png"
+    },
+    {
+      "id": "1168",
+      "name": "Alassane Diatta",
+      "team": "Villarreal",
+      "position": "MED",
+      "price": 680606,
+      "price_increment": 1020,
+      "price_history": {
+        "0": 680606,
+        "1": 679586,
+        "2": 678622,
+        "3": 677537,
+        "7": 657682,
+        "14": 620330,
+        "30": 579084
+      },
+      "photo_url": "/static/ff_players/14022.png",
+      "team_crest_url": "/static/ff_teams/22.png"
+    },
+    {
+      "id": "1063",
+      "name": "Álvaro Djaló",
+      "team": "Athletic",
+      "position": "DEL",
+      "price": 687918,
+      "price_increment": 716,
+      "price_history": {
+        "0": 687918,
+        "1": 687202,
+        "2": 686555,
+        "3": 685800,
+        "7": 667412,
+        "14": 633279,
+        "30": 603964
+      },
+      "photo_url": "/static/ff_players/11983.png",
+      "team_crest_url": "/static/ff_teams/1.png"
+    },
+    {
+      "id": "596",
+      "name": "Miguel Román",
+      "team": "Celta",
+      "position": "MED",
+      "price": 5931882,
+      "price_increment": -134477,
+      "price_history": {
+        "0": 5931882,
+        "1": 6066359,
+        "2": 6204617,
+        "3": 6345562,
+        "7": 6882743,
+        "14": 7945715,
+        "30": 11262269
+      },
+      "photo_url": "/static/ff_players/13808.png",
+      "team_crest_url": "/static/ff_teams/5.png"
+    },
+    {
+      "id": "833",
+      "name": "Samu Becerra",
+      "team": "Rayo Vallecano",
+      "position": "MED",
+      "price": 686298,
+      "price_increment": 783,
+      "price_history": {
+        "0": 686298,
+        "1": 685515,
+        "2": 684798,
+        "3": 683970,
+        "7": 665256,
+        "14": 630410,
+        "30": 598455
+      },
+      "photo_url": "/static/ff_players/16146.png",
+      "team_crest_url": "/static/ff_teams/14.png"
+    },
+    {
+      "id": "1176",
+      "name": "Dimitri Foulquier",
+      "team": "Valencia",
+      "position": "DEF",
+      "price": 707719,
+      "price_increment": -109,
+      "price_history": {
+        "0": 707719,
+        "1": 707828,
+        "2": 708041,
+        "3": 708182,
+        "7": 693764,
+        "14": 668346,
+        "30": 671352
+      },
+      "photo_url": "/static/ff_players/943.png",
+      "team_crest_url": "/static/ff_teams/18.png"
+    },
+    {
+      "id": "826",
+      "name": "Manu Hernando",
+      "team": "Racing",
+      "position": "DEF",
+      "price": 794232,
+      "price_increment": -3714,
+      "price_history": {
+        "0": 794232,
+        "1": 797946,
+        "2": 801913,
+        "3": 805965,
+        "7": 808891,
+        "14": 821554,
+        "30": 965754
+      },
+      "photo_url": "/static/ff_players/3836.png",
+      "team_crest_url": "/static/ff_teams/42.png"
+    },
+    {
+      "id": "834",
+      "name": "Dani Barcia",
+      "team": "Deportivo",
+      "position": "DEF",
+      "price": 692292,
+      "price_increment": 533,
+      "price_history": {
+        "0": 692292,
+        "1": 691759,
+        "2": 691302,
+        "3": 690745,
+        "7": 673233,
+        "14": 641023,
+        "30": 618847
+      },
+      "photo_url": "/static/ff_players/13970.png",
+      "team_crest_url": "/static/ff_teams/6.png"
+    },
+    {
+      "id": "883",
+      "name": "Manuel Ángel Castillo",
+      "team": "Sevilla",
+      "position": "MED",
+      "price": 900000,
+      "price_increment": 0,
+      "price_history": {
+        "0": 900000,
+        "1": 900000,
+        "2": 900000,
+        "3": 900000,
+        "7": 900000,
+        "14": 900000,
+        "30": 900000
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/17.png"
+    },
+    {
+      "id": "810",
+      "name": "Rockson Yeboah",
+      "team": "Osasuna",
+      "position": "DEF",
+      "price": 703019,
+      "price_increment": 86,
+      "price_history": {
+        "0": 703019,
+        "1": 702933,
+        "2": 702942,
+        "3": 702870,
+        "7": 687509,
+        "14": 660022,
+        "30": 655353
+      },
+      "photo_url": "/static/ff_players/18316.png",
+      "team_crest_url": "/static/ff_teams/13.png"
+    },
+    {
+      "id": "849",
+      "name": "Juanmi Jiménez",
+      "team": "Getafe",
+      "position": "DEL",
+      "price": 680922,
+      "price_increment": 1007,
+      "price_history": {
+        "0": 680922,
+        "1": 679915,
+        "2": 678964,
+        "3": 677893,
+        "7": 658101,
+        "14": 620887,
+        "30": 580154
+      },
+      "photo_url": "/static/ff_players/340.png",
+      "team_crest_url": "/static/ff_teams/8.png"
+    },
+    {
+      "id": "818",
+      "name": "Luken Beitia",
+      "team": "Real Sociedad",
+      "position": "DEF",
+      "price": 680404,
+      "price_increment": 1029,
+      "price_history": {
+        "0": 680404,
+        "1": 679375,
+        "2": 678402,
+        "3": 677308,
+        "7": 657414,
+        "14": 619973,
+        "30": 578400
+      },
+      "photo_url": "/static/ff_players/15273.png",
+      "team_crest_url": "/static/ff_teams/16.png"
+    },
+    {
+      "id": "854",
+      "name": "Rubén Gómez",
+      "team": "Villarreal",
+      "position": "POR",
+      "price": 680839,
+      "price_increment": 1011,
+      "price_history": {
+        "0": 680839,
+        "1": 679828,
+        "2": 678874,
+        "3": 677799,
+        "7": 657991,
+        "14": 620741,
+        "30": 579874
+      },
+      "photo_url": "/static/ff_players/14812.png",
+      "team_crest_url": "/static/ff_teams/22.png"
+    },
+    {
+      "id": "875",
+      "name": "Dani Vivian",
+      "team": "Athletic",
+      "position": "DEF",
+      "price": 6256086,
+      "price_increment": -150430,
+      "price_history": {
+        "0": 6256086,
+        "1": 6406516,
+        "2": 6561437,
+        "3": 6721970,
+        "7": 7335236,
+        "14": 6484171,
+        "30": 2866590
+      },
+      "photo_url": "/static/ff_players/5245.png",
+      "team_crest_url": "/static/ff_teams/1.png"
+    },
+    {
+      "id": "877",
+      "name": "Salvi Esquivel",
+      "team": "Atlético",
+      "position": "POR",
+      "price": 684371,
+      "price_increment": 864,
+      "price_history": {
+        "0": 684371,
+        "1": 683507,
+        "2": 682706,
+        "3": 681791,
+        "7": 662693,
+        "14": 626998,
+        "30": 591891
+      },
+      "photo_url": "/static/ff_players/15422.png",
+      "team_crest_url": "/static/ff_teams/2.png"
+    },
+    {
+      "id": "846",
+      "name": "Christantus Uche",
+      "team": "Getafe",
+      "position": "DEL",
+      "price": 1196747,
+      "price_increment": -20485,
+      "price_history": {
+        "0": 1196747,
+        "1": 1217232,
+        "2": 1238670,
+        "3": 1260920,
+        "7": 1344544,
+        "14": 1526251,
+        "30": 2301563
+      },
+      "photo_url": "/static/ff_players/13780.png",
+      "team_crest_url": "/static/ff_teams/8.png"
+    },
+    {
+      "id": "889",
+      "name": "Marco de la Sías",
+      "team": "Rayo Vallecano",
+      "position": "DEF",
+      "price": 681343,
+      "price_increment": 990,
+      "price_history": {
+        "0": 681343,
+        "1": 680353,
+        "2": 679421,
+        "3": 678369,
+        "7": 658663,
+        "14": 621635,
+        "30": 581591
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/14.png"
     },
     {
       "id": "845",
@@ -10055,6 +10397,25 @@
       "team_crest_url": "/static/ff_teams/28.png"
     },
     {
+      "id": "894",
+      "name": "Bambo Diaby",
+      "team": "Elche",
+      "position": "DEF",
+      "price": 688401,
+      "price_increment": 696,
+      "price_history": {
+        "0": 688401,
+        "1": 687705,
+        "2": 687079,
+        "3": 686346,
+        "7": 668053,
+        "14": 634131,
+        "30": 605604
+      },
+      "photo_url": "/static/ff_players/5022.png",
+      "team_crest_url": "/static/ff_teams/21.png"
+    },
+    {
       "id": "789",
       "name": "Ryunosuke Sato",
       "team": "Valencia",
@@ -10071,6 +10432,1089 @@
         "30": 2355103
       },
       "photo_url": "/static/ff_players/18031.png",
+      "team_crest_url": "/static/ff_teams/18.png"
+    },
+    {
+      "id": "888",
+      "name": "Carlos Ballestero",
+      "team": "Alavés",
+      "position": "DEF",
+      "price": 602316,
+      "price_increment": 0,
+      "price_history": {
+        "0": 602316,
+        "1": 602316,
+        "2": 602316,
+        "3": 602316,
+        "7": 602316,
+        "14": 602316,
+        "30": 602316
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/28.png"
+    },
+    {
+      "id": "898",
+      "name": "Pau Navarro",
+      "team": "Villarreal",
+      "position": "DEF",
+      "price": 1554332,
+      "price_increment": -35385,
+      "price_history": {
+        "0": 1554332,
+        "1": 1589717,
+        "2": 1626675,
+        "3": 1665092,
+        "7": 1809435,
+        "14": 2095900,
+        "30": 2653178
+      },
+      "photo_url": "/static/ff_players/12860.png",
+      "team_crest_url": "/static/ff_teams/22.png"
+    },
+    {
+      "id": "895",
+      "name": "Germán Parreño",
+      "team": "Deportivo",
+      "position": "POR",
+      "price": 681224,
+      "price_increment": 995,
+      "price_history": {
+        "0": 681224,
+        "1": 680229,
+        "2": 679292,
+        "3": 678235,
+        "7": 658504,
+        "14": 621424,
+        "30": 581186
+      },
+      "photo_url": "/static/ff_players/698.png",
+      "team_crest_url": "/static/ff_teams/6.png"
+    },
+    {
+      "id": "855",
+      "name": "Rayane Belaid",
+      "team": "Rayo Vallecano",
+      "position": "DEL",
+      "price": 688106,
+      "price_increment": 708,
+      "price_history": {
+        "0": 688106,
+        "1": 687398,
+        "2": 686759,
+        "3": 686013,
+        "7": 667661,
+        "14": 633609,
+        "30": 604596
+      },
+      "photo_url": "/static/ff_players/12608.png",
+      "team_crest_url": "/static/ff_teams/14.png"
+    },
+    {
+      "id": "904",
+      "name": "Aitor Fernández",
+      "team": "Osasuna",
+      "position": "POR",
+      "price": 982550,
+      "price_increment": -11561,
+      "price_history": {
+        "0": 982550,
+        "1": 994111,
+        "2": 1006252,
+        "3": 1018818,
+        "7": 1059499,
+        "14": 1155055,
+        "30": 1167104
+      },
+      "photo_url": "/static/ff_players/829.png",
+      "team_crest_url": "/static/ff_teams/13.png"
+    },
+    {
+      "id": "784",
+      "name": "José Ángel Carmona",
+      "team": "Sevilla",
+      "position": "DEF",
+      "price": 767390,
+      "price_increment": -2596,
+      "price_history": {
+        "0": 767390,
+        "1": 769986,
+        "2": 772788,
+        "3": 775627,
+        "7": 773171,
+        "14": 774018,
+        "30": 874407
+      },
+      "photo_url": "/static/ff_players/9317.png",
+      "team_crest_url": "/static/ff_teams/17.png"
+    },
+    {
+      "id": "931",
+      "name": "Ángel Arcos",
+      "team": "Celta",
+      "position": "MED",
+      "price": 602257,
+      "price_increment": 0,
+      "price_history": {
+        "0": 602257,
+        "1": 602257,
+        "2": 602257,
+        "3": 602257,
+        "7": 602257,
+        "14": 602257,
+        "30": 602257
+      },
+      "photo_url": "/static/ff_players/16873.png",
+      "team_crest_url": "/static/ff_teams/5.png"
+    },
+    {
+      "id": "776",
+      "name": "Álvaro Mantilla",
+      "team": "Racing",
+      "position": "DEF",
+      "price": 752291,
+      "price_increment": -1967,
+      "price_history": {
+        "0": 752291,
+        "1": 754258,
+        "2": 756405,
+        "3": 758561,
+        "7": 753078,
+        "14": 747280,
+        "30": 823029
+      },
+      "photo_url": "/static/ff_players/10336.png",
+      "team_crest_url": "/static/ff_teams/42.png"
+    },
+    {
+      "id": "914",
+      "name": "Marcão",
+      "team": "Sevilla",
+      "position": "DEF",
+      "price": 681753,
+      "price_increment": 973,
+      "price_history": {
+        "0": 681753,
+        "1": 680780,
+        "2": 679866,
+        "3": 678833,
+        "7": 659208,
+        "14": 622360,
+        "30": 582984
+      },
+      "photo_url": "/static/ff_players/4208.png",
+      "team_crest_url": "/static/ff_teams/17.png"
+    },
+    {
+      "id": "1006",
+      "name": "Thomas Lemar",
+      "team": "Elche",
+      "position": "MED",
+      "price": 5725208,
+      "price_increment": -142660,
+      "price_history": {
+        "0": 5725208,
+        "1": 5867868,
+        "2": 6016379,
+        "3": 6134545,
+        "7": 5913497,
+        "14": 6474821,
+        "30": 6356402
+      },
+      "photo_url": "/static/ff_players/3427.png",
+      "team_crest_url": "/static/ff_teams/21.png"
+    },
+    {
+      "id": "926",
+      "name": "Unai Egiluz",
+      "team": "Athletic",
+      "position": "DEF",
+      "price": 678541,
+      "price_increment": 1106,
+      "price_history": {
+        "0": 678541,
+        "1": 677435,
+        "2": 676381,
+        "3": 675203,
+        "7": 654935,
+        "14": 616674,
+        "30": 572058
+      },
+      "photo_url": "/static/ff_players/11676.png",
+      "team_crest_url": "/static/ff_teams/1.png"
+    },
+    {
+      "id": "892",
+      "name": "Mario Solórzano",
+      "team": "Racing",
+      "position": "MED",
+      "price": 602234,
+      "price_increment": 0,
+      "price_history": {
+        "0": 602234,
+        "1": 602234,
+        "2": 602234,
+        "3": 602234,
+        "7": 602234,
+        "14": 602234,
+        "30": 602234
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/42.png"
+    },
+    {
+      "id": "909",
+      "name": "Roony Bardghji",
+      "team": "Barcelona",
+      "position": "DEL",
+      "price": 717854,
+      "price_increment": -532,
+      "price_history": {
+        "0": 717854,
+        "1": 718386,
+        "2": 719038,
+        "3": 719637,
+        "7": 707250,
+        "14": 686293,
+        "30": 705835
+      },
+      "photo_url": "/static/ff_players/10658.png",
+      "team_crest_url": "/static/ff_teams/3.png"
+    },
+    {
+      "id": "920",
+      "name": "Selu Diallo",
+      "team": "Alavés",
+      "position": "MED",
+      "price": 687310,
+      "price_increment": 741,
+      "price_history": {
+        "0": 687310,
+        "1": 686569,
+        "2": 685896,
+        "3": 685114,
+        "7": 666604,
+        "14": 632201,
+        "30": 601896
+      },
+      "photo_url": "/static/ff_players/11719.png",
+      "team_crest_url": "/static/ff_teams/28.png"
+    },
+    {
+      "id": "885",
+      "name": "Aarón Ochoa",
+      "team": "Málaga",
+      "position": "MED",
+      "price": 3513040,
+      "price_increment": 0,
+      "price_history": {
+        "0": 3513040,
+        "1": 3513040,
+        "2": 3513040,
+        "3": 3513040,
+        "7": 3513040,
+        "14": 3513040,
+        "30": 3513040
+      },
+      "photo_url": "/static/ff_players/13984.png",
+      "team_crest_url": "/static/ff_teams/11.png"
+    },
+    {
+      "id": "624",
+      "name": "Yoel Lago",
+      "team": "Celta",
+      "position": "DEF",
+      "price": 23401941,
+      "price_increment": -561241,
+      "price_history": {
+        "0": 23401941,
+        "1": 23963182,
+        "2": 24549426,
+        "3": 25155284,
+        "7": 26594360,
+        "14": 28227251,
+        "30": 25178749
+      },
+      "photo_url": "/static/ff_players/13036.png",
+      "team_crest_url": "/static/ff_teams/5.png"
+    },
+    {
+      "id": "1154",
+      "name": "Luiz Felipe",
+      "team": "Rayo Vallecano",
+      "position": "DEF",
+      "price": 734122,
+      "price_increment": -1209,
+      "price_history": {
+        "0": 734122,
+        "1": 735331,
+        "2": 736689,
+        "3": 738023,
+        "7": 728898,
+        "14": 715101,
+        "30": 761190
+      },
+      "photo_url": "/static/ff_players/5705.png",
+      "team_crest_url": "/static/ff_teams/14.png"
+    },
+    {
+      "id": "934",
+      "name": "Asier Hierro",
+      "team": "Athletic",
+      "position": "DEL",
+      "price": 602257,
+      "price_increment": 0,
+      "price_history": {
+        "0": 602257,
+        "1": 602257,
+        "2": 602257,
+        "3": 602257,
+        "7": 602257,
+        "14": 602257,
+        "30": 602257
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/1.png"
+    },
+    {
+      "id": "935",
+      "name": "Izei Hernández",
+      "team": "Alavés",
+      "position": "MED",
+      "price": 689205,
+      "price_increment": 662,
+      "price_history": {
+        "0": 689205,
+        "1": 688543,
+        "2": 687952,
+        "3": 687256,
+        "7": 669126,
+        "14": 635560,
+        "30": 608349
+      },
+      "photo_url": "/static/ff_players/16920.png",
+      "team_crest_url": "/static/ff_teams/28.png"
+    },
+    {
+      "id": "936",
+      "name": "Pablo Rosón",
+      "team": "Levante",
+      "position": "MED",
+      "price": 602249,
+      "price_increment": 0,
+      "price_history": {
+        "0": 602249,
+        "1": 602249,
+        "2": 602249,
+        "3": 602249,
+        "7": 602249,
+        "14": 602249,
+        "30": 602249
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/10.png"
+    },
+    {
+      "id": "951",
+      "name": "Pelayo Fernández",
+      "team": "Rayo Vallecano",
+      "position": "DEF",
+      "price": 690239,
+      "price_increment": 619,
+      "price_history": {
+        "0": 690239,
+        "1": 689620,
+        "2": 689074,
+        "3": 688424,
+        "7": 670500,
+        "14": 637389,
+        "30": 611863
+      },
+      "photo_url": "/static/ff_players/13801.png",
+      "team_crest_url": "/static/ff_teams/14.png"
+    },
+    {
+      "id": "955",
+      "name": "Alfonso González",
+      "team": "Sevilla",
+      "position": "DEL",
+      "price": 782229,
+      "price_increment": -3214,
+      "price_history": {
+        "0": 782229,
+        "1": 785443,
+        "2": 788890,
+        "3": 792399,
+        "7": 792918,
+        "14": 800297,
+        "30": 924903
+      },
+      "photo_url": "/static/ff_players/8703.png",
+      "team_crest_url": "/static/ff_teams/17.png"
+    },
+    {
+      "id": "755",
+      "name": "Cristian Romero",
+      "team": "Atlético",
+      "position": "DEF",
+      "price": 33384782,
+      "price_increment": -662570,
+      "price_history": {
+        "0": 33384782,
+        "1": 34047352,
+        "2": 34826509,
+        "3": 35600053,
+        "7": 38664494,
+        "14": 45042806,
+        "30": 55753595
+      },
+      "photo_url": "/static/ff_players/6310.png",
+      "team_crest_url": "/static/ff_teams/2.png"
+    },
+    {
+      "id": "979",
+      "name": "Endrick",
+      "team": "Real Madrid",
+      "position": "DEL",
+      "price": 1543062,
+      "price_increment": -34915,
+      "price_history": {
+        "0": 1543062,
+        "1": 1577977,
+        "2": 1614446,
+        "3": 1652354,
+        "7": 1766762,
+        "14": 2011957,
+        "30": 2613315
+      },
+      "photo_url": "/static/ff_players/13564.png",
+      "team_crest_url": "/static/ff_teams/15.png"
+    },
+    {
+      "id": "960",
+      "name": "Juan Carlos Arana",
+      "team": "Racing",
+      "position": "DEL",
+      "price": 684089,
+      "price_increment": 875,
+      "price_history": {
+        "0": 684089,
+        "1": 683214,
+        "2": 682401,
+        "3": 681473,
+        "7": 662317,
+        "14": 626498,
+        "30": 590939
+      },
+      "photo_url": "/static/ff_players/9930.png",
+      "team_crest_url": "/static/ff_teams/42.png"
+    },
+    {
+      "id": "967",
+      "name": "Carlos Benavidez",
+      "team": "Alavés",
+      "position": "MED",
+      "price": 717260,
+      "price_increment": -507,
+      "price_history": {
+        "0": 717260,
+        "1": 717767,
+        "2": 718394,
+        "3": 718966,
+        "7": 706459,
+        "14": 685240,
+        "30": 703815
+      },
+      "photo_url": "/static/ff_players/10448.png",
+      "team_crest_url": "/static/ff_teams/28.png"
+    },
+    {
+      "id": "972",
+      "name": "Marash Kumbulla",
+      "team": "Rayo Vallecano",
+      "position": "DEF",
+      "price": 772123,
+      "price_increment": -2793,
+      "price_history": {
+        "0": 772123,
+        "1": 774916,
+        "2": 777924,
+        "3": 780977,
+        "7": 779471,
+        "14": 782401,
+        "30": 890516
+      },
+      "photo_url": "/static/ff_players/7100.png",
+      "team_crest_url": "/static/ff_teams/14.png"
+    },
+    {
+      "id": "973",
+      "name": "Raúl Asencio",
+      "team": "Real Madrid",
+      "position": "DEF",
+      "price": 775645,
+      "price_increment": -2940,
+      "price_history": {
+        "0": 775645,
+        "1": 778585,
+        "2": 781746,
+        "3": 784958,
+        "7": 784157,
+        "14": 788638,
+        "30": 902502
+      },
+      "photo_url": "/static/ff_players/12639.png",
+      "team_crest_url": "/static/ff_teams/15.png"
+    },
+    {
+      "id": "990",
+      "name": "Kayne van Oevelen",
+      "team": "Valencia",
+      "position": "POR",
+      "price": 714854,
+      "price_increment": -407,
+      "price_history": {
+        "0": 714854,
+        "1": 715261,
+        "2": 715783,
+        "3": 716246,
+        "7": 703257,
+        "14": 680979,
+        "30": 695627
+      },
+      "photo_url": "/static/ff_players/18283.png",
+      "team_crest_url": "/static/ff_teams/18.png"
+    },
+    {
+      "id": "977",
+      "name": "Diego Conde",
+      "team": "Betis",
+      "position": "POR",
+      "price": 726657,
+      "price_increment": -898,
+      "price_history": {
+        "0": 726657,
+        "1": 727555,
+        "2": 728590,
+        "3": 729587,
+        "7": 718965,
+        "14": 701884,
+        "30": 735799
+      },
+      "photo_url": "/static/ff_players/7554.png",
+      "team_crest_url": "/static/ff_teams/4.png"
+    },
+    {
+      "id": "991",
+      "name": "Fran González",
+      "team": "Sevilla",
+      "position": "POR",
+      "price": 682724,
+      "price_increment": 932,
+      "price_history": {
+        "0": 682724,
+        "1": 681792,
+        "2": 680920,
+        "3": 679931,
+        "7": 660501,
+        "14": 624083,
+        "30": 586293
+      },
+      "photo_url": "/static/ff_players/11554.png",
+      "team_crest_url": "/static/ff_teams/17.png"
+    },
+    {
+      "id": "985",
+      "name": "Adrián Rodríguez",
+      "team": "Alavés",
+      "position": "POR",
+      "price": 687809,
+      "price_increment": 720,
+      "price_history": {
+        "0": 687809,
+        "1": 687089,
+        "2": 686437,
+        "3": 685678,
+        "7": 667268,
+        "14": 633087,
+        "30": 603598
+      },
+      "photo_url": "/static/ff_players/9897.png",
+      "team_crest_url": "/static/ff_teams/28.png"
+    },
+    {
+      "id": "1193",
+      "name": "Jorge Domínguez",
+      "team": "Atlético",
+      "position": "DEF",
+      "price": 772950,
+      "price_increment": -2827,
+      "price_history": {
+        "0": 772950,
+        "1": 775777,
+        "2": 778821,
+        "3": 781911,
+        "7": 780570,
+        "14": 783865,
+        "30": 893334
+      },
+      "photo_url": "/static/ff_players/18213.png",
+      "team_crest_url": "/static/ff_teams/2.png"
+    },
+    {
+      "id": "1229",
+      "name": "Romeo Hueso",
+      "team": "Atlético",
+      "position": "MED",
+      "price": 1000000,
+      "price_increment": 0,
+      "price_history": {
+        "0": 1000000,
+        "1": 1000000,
+        "2": 1000000,
+        "3": 1000000,
+        "7": 1000000,
+        "14": 1000000,
+        "30": 0
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/2.png"
+    },
+    {
+      "id": "992",
+      "name": "Juan Musso",
+      "team": "Atlético",
+      "position": "POR",
+      "price": 777070,
+      "price_increment": -2999,
+      "price_history": {
+        "0": 777070,
+        "1": 780069,
+        "2": 783292,
+        "3": 786568,
+        "7": 786053,
+        "14": 791161,
+        "30": 907351
+      },
+      "photo_url": "/static/ff_players/5942.png",
+      "team_crest_url": "/static/ff_teams/2.png"
+    },
+    {
+      "id": "1012",
+      "name": "Rodrygo Goes",
+      "team": "Real Madrid",
+      "position": "DEL",
+      "price": 768121,
+      "price_increment": -2626,
+      "price_history": {
+        "0": 768121,
+        "1": 770747,
+        "2": 773581,
+        "3": 776453,
+        "7": 774144,
+        "14": 775314,
+        "30": 876900
+      },
+      "photo_url": "/static/ff_players/6631.png",
+      "team_crest_url": "/static/ff_teams/15.png"
+    },
+    {
+      "id": "996",
+      "name": "Zakaria Eddahchouri",
+      "team": "Deportivo",
+      "position": "DEL",
+      "price": 709478,
+      "price_increment": -183,
+      "price_history": {
+        "0": 709478,
+        "1": 709661,
+        "2": 709950,
+        "3": 710170,
+        "7": 696104,
+        "14": 671461,
+        "30": 677339
+      },
+      "photo_url": "/static/ff_players/15164.png",
+      "team_crest_url": "/static/ff_teams/6.png"
+    },
+    {
+      "id": "1000",
+      "name": "Kike García",
+      "team": "Espanyol",
+      "position": "DEL",
+      "price": 727989,
+      "price_increment": -954,
+      "price_history": {
+        "0": 727989,
+        "1": 728943,
+        "2": 730035,
+        "3": 731092,
+        "7": 720736,
+        "14": 704240,
+        "30": 740325
+      },
+      "photo_url": "/static/ff_players/2751.png",
+      "team_crest_url": "/static/ff_teams/7.png"
+    },
+    {
+      "id": "1183",
+      "name": "Álex Sánchez",
+      "team": "Elche",
+      "position": "MED",
+      "price": 602324,
+      "price_increment": 0,
+      "price_history": {
+        "0": 602324,
+        "1": 602324,
+        "2": 602324,
+        "3": 602324,
+        "7": 602324,
+        "14": 602324,
+        "30": 602324
+      },
+      "photo_url": "",
+      "team_crest_url": "/static/ff_teams/21.png"
+    },
+    {
+      "id": "1004",
+      "name": "Gorka Guruzeta",
+      "team": "Athletic",
+      "position": "DEL",
+      "price": 1339282,
+      "price_increment": -26424,
+      "price_history": {
+        "0": 1339282,
+        "1": 1365706,
+        "2": 1393330,
+        "3": 1422024,
+        "7": 1534224,
+        "14": 1786803,
+        "30": 2739473
+      },
+      "photo_url": "/static/ff_players/5859.png",
+      "team_crest_url": "/static/ff_teams/1.png"
+    },
+    {
+      "id": "728",
+      "name": "Julen Lobete",
+      "team": "Málaga",
+      "position": "DEL",
+      "price": 683923,
+      "price_increment": 882,
+      "price_history": {
+        "0": 683923,
+        "1": 683041,
+        "2": 682221,
+        "3": 681286,
+        "7": 662097,
+        "14": 626206,
+        "30": 590375
+      },
+      "photo_url": "/static/ff_players/7686.png",
+      "team_crest_url": "/static/ff_teams/11.png"
+    },
+    {
+      "id": "1051",
+      "name": "Pablo López",
+      "team": "Valencia",
+      "position": "DEL",
+      "price": 441041,
+      "price_increment": 0,
+      "price_history": {
+        "0": 441041,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "7": 0,
+        "14": 0,
+        "30": 0
+      },
+      "photo_url": "/static/ff_players/15000.png",
+      "team_crest_url": "/static/ff_teams/18.png"
+    },
+    {
+      "id": "1060",
+      "name": "Nico Serrano",
+      "team": "Athletic",
+      "position": "DEL",
+      "price": 685510,
+      "price_increment": 816,
+      "price_history": {
+        "0": 685510,
+        "1": 684694,
+        "2": 683943,
+        "3": 683080,
+        "7": 664209,
+        "14": 629016,
+        "30": 595774
+      },
+      "photo_url": "/static/ff_players/7920.png",
+      "team_crest_url": "/static/ff_teams/1.png"
+    },
+    {
+      "id": "1010",
+      "name": "Sergi Canós",
+      "team": "Valencia",
+      "position": "DEL",
+      "price": 679838,
+      "price_increment": 1052,
+      "price_history": {
+        "0": 679838,
+        "1": 678786,
+        "2": 677788,
+        "3": 676668,
+        "7": 656659,
+        "14": 618970,
+        "30": 576468
+      },
+      "photo_url": "/static/ff_players/9201.png",
+      "team_crest_url": "/static/ff_teams/18.png"
+    },
+    {
+      "id": "684",
+      "name": "Clemens Riedel",
+      "team": "Espanyol",
+      "position": "DEF",
+      "price": 2803768,
+      "price_increment": -62480,
+      "price_history": {
+        "0": 2803768,
+        "1": 2866248,
+        "2": 2930535,
+        "3": 2994133,
+        "7": 3003808,
+        "14": 3490856,
+        "30": 4995383
+      },
+      "photo_url": "/static/ff_players/16308.png",
+      "team_crest_url": "/static/ff_teams/7.png"
+    },
+    {
+      "id": "1170",
+      "name": "Augusto Batalla",
+      "team": "Rayo Vallecano",
+      "position": "POR",
+      "price": 2591402,
+      "price_increment": -61846,
+      "price_history": {
+        "0": 2591402,
+        "1": 2653248,
+        "2": 2721713,
+        "3": 2791416,
+        "7": 3063642,
+        "14": 3627210,
+        "30": 5505499
+      },
+      "photo_url": "/static/ff_players/12651.png",
+      "team_crest_url": "/static/ff_teams/14.png"
+    },
+    {
+      "id": "1089",
+      "name": "Wojciech Szczesny",
+      "team": "Barcelona",
+      "position": "POR",
+      "price": 740220,
+      "price_increment": -1464,
+      "price_history": {
+        "0": 740220,
+        "1": 741684,
+        "2": 743307,
+        "3": 744917,
+        "7": 737014,
+        "14": 725901,
+        "30": 781944
+      },
+      "photo_url": "/static/ff_players/2534.png",
+      "team_crest_url": "/static/ff_teams/3.png"
+    },
+    {
+      "id": "1157",
+      "name": "Yago Santiago",
+      "team": "Elche",
+      "position": "MED",
+      "price": 680405,
+      "price_increment": 1029,
+      "price_history": {
+        "0": 680405,
+        "1": 679376,
+        "2": 678403,
+        "3": 677309,
+        "7": 657415,
+        "14": 619975,
+        "30": 578403
+      },
+      "photo_url": "/static/ff_players/11562.png",
+      "team_crest_url": "/static/ff_teams/21.png"
+    },
+    {
+      "id": "1149",
+      "name": "Haitam Abaida",
+      "team": "Málaga",
+      "position": "DEL",
+      "price": 678615,
+      "price_increment": 1103,
+      "price_history": {
+        "0": 678615,
+        "1": 677512,
+        "2": 676461,
+        "3": 675286,
+        "7": 655031,
+        "14": 616803,
+        "30": 572306
+      },
+      "photo_url": "/static/ff_players/9321.png",
+      "team_crest_url": "/static/ff_teams/11.png"
+    },
+    {
+      "id": "1026",
+      "name": "Adam Boayar",
+      "team": "Elche",
+      "position": "MED",
+      "price": 720700,
+      "price_increment": -650,
+      "price_history": {
+        "0": 720700,
+        "1": 721350,
+        "2": 722126,
+        "3": 722854,
+        "7": 711037,
+        "14": 691334,
+        "30": 702711
+      },
+      "photo_url": "/static/ff_players/12922.png",
+      "team_crest_url": "/static/ff_teams/21.png"
+    },
+    {
+      "id": "1027",
+      "name": "Fábio Cardoso",
+      "team": "Sevilla",
+      "position": "DEF",
+      "price": 685211,
+      "price_increment": 828,
+      "price_history": {
+        "0": 685211,
+        "1": 684383,
+        "2": 683619,
+        "3": 682742,
+        "7": 663810,
+        "14": 628484,
+        "30": 594752
+      },
+      "photo_url": "/static/ff_players/9500.png",
+      "team_crest_url": "/static/ff_teams/17.png"
+    },
+    {
+      "id": "1074",
+      "name": "Enzo Bardelli",
+      "team": "Levante",
+      "position": "MED",
+      "price": 2487613,
+      "price_increment": -55296,
+      "price_history": {
+        "0": 2487613,
+        "1": 2542909,
+        "2": 2603607,
+        "3": 2666993,
+        "7": 2904056,
+        "14": 3380884,
+        "30": 5065008
+      },
+      "photo_url": "/static/ff_players/18006.png",
+      "team_crest_url": "/static/ff_teams/10.png"
+    },
+    {
+      "id": "770",
+      "name": "Iker Córdoba",
+      "team": "Valencia",
+      "position": "DEF",
+      "price": 711275,
+      "price_increment": -258,
+      "price_history": {
+        "0": 711275,
+        "1": 711533,
+        "2": 711900,
+        "3": 712201,
+        "7": 698496,
+        "14": 674644,
+        "30": 683452
+      },
+      "photo_url": "/static/ff_players/14034.png",
+      "team_crest_url": "/static/ff_teams/18.png"
+    },
+    {
+      "id": "1032",
+      "name": "Pablo Cuñat Campos",
+      "team": "Levante",
+      "position": "POR",
+      "price": 688595,
+      "price_increment": 688,
+      "price_history": {
+        "0": 688595,
+        "1": 687907,
+        "2": 687290,
+        "3": 686566,
+        "7": 668313,
+        "14": 634476,
+        "30": 606264
+      },
+      "photo_url": "/static/ff_players/11807.png",
+      "team_crest_url": "/static/ff_teams/10.png"
+    },
+    {
+      "id": "1021",
+      "name": "Kike Ribes",
+      "team": "",
+      "position": "DEF",
+      "price": 600000,
+      "price_increment": 0,
+      "price_history": {
+        "0": 600000,
+        "1": 600000,
+        "2": 600000,
+        "3": 600000,
+        "7": 600000,
+        "14": 600000,
+        "30": 600000
+      },
+      "photo_url": "/static/ff_players/18201.png",
+      "team_crest_url": "/static/ff_teams/823.png"
+    },
+    {
+      "id": "569",
+      "name": "Xavi Espart",
+      "team": "Barcelona",
+      "position": "DEF",
+      "price": 29001339,
+      "price_increment": -729177,
+      "price_history": {
+        "0": 29001339,
+        "1": 29730516,
+        "2": 30456228,
+        "3": 31218535,
+        "7": 34134090,
+        "14": 40271404,
+        "30": 61007298
+      },
+      "photo_url": "/static/ff_players/16765.png",
+      "team_crest_url": "/static/ff_teams/3.png"
+    },
+    {
+      "id": "1091",
+      "name": "Cristian Rivero",
+      "team": "Valencia",
+      "position": "POR",
+      "price": 679678,
+      "price_increment": 1059,
+      "price_history": {
+        "0": 679678,
+        "1": 678619,
+        "2": 677614,
+        "3": 676487,
+        "7": 656447,
+        "14": 618687,
+        "30": 575926
+      },
+      "photo_url": "/static/ff_players/5080.png",
       "team_crest_url": "/static/ff_teams/18.png"
     },
     {
@@ -10112,6 +11556,25 @@
       "team_crest_url": "/static/ff_teams/15.png"
     },
     {
+      "id": "1121",
+      "name": "Manu González",
+      "team": "Betis",
+      "position": "POR",
+      "price": 581691,
+      "price_increment": 0,
+      "price_history": {
+        "0": 581691,
+        "1": 581691,
+        "2": 581691,
+        "3": 581691,
+        "7": 581691,
+        "14": 581691,
+        "30": 581691
+      },
+      "photo_url": "/static/ff_players/14135.png",
+      "team_crest_url": "/static/ff_teams/4.png"
+    },
+    {
       "id": "1050",
       "name": "Carlos López",
       "team": "Málaga",
@@ -10150,44 +11613,6 @@
       "team_crest_url": "/static/ff_teams/5.png"
     },
     {
-      "id": "1004",
-      "name": "Gorka Guruzeta",
-      "team": "Athletic",
-      "position": "DEL",
-      "price": 1339282,
-      "price_increment": -26424,
-      "price_history": {
-        "0": 1339282,
-        "1": 1365706,
-        "2": 1393330,
-        "3": 1422024,
-        "7": 1534224,
-        "14": 1786803,
-        "30": 2739473
-      },
-      "photo_url": "/static/ff_players/5859.png",
-      "team_crest_url": "/static/ff_teams/1.png"
-    },
-    {
-      "id": "1056",
-      "name": "Rubén Sánchez",
-      "team": "Elche",
-      "position": "DEF",
-      "price": 681875,
-      "price_increment": 967,
-      "price_history": {
-        "0": 681875,
-        "1": 680908,
-        "2": 679999,
-        "3": 678971,
-        "7": 659371,
-        "14": 622579,
-        "30": 583405
-      },
-      "photo_url": "/static/ff_players/9695.png",
-      "team_crest_url": "/static/ff_teams/21.png"
-    },
-    {
       "id": "1058",
       "name": "Raúl De Tomás",
       "team": "Rayo Vallecano",
@@ -10204,956 +11629,6 @@
         "30": 694575
       },
       "photo_url": "/static/ff_players/1123.png",
-      "team_crest_url": "/static/ff_teams/14.png"
-    },
-    {
-      "id": "1060",
-      "name": "Nico Serrano",
-      "team": "Athletic",
-      "position": "DEL",
-      "price": 685510,
-      "price_increment": 816,
-      "price_history": {
-        "0": 685510,
-        "1": 684694,
-        "2": 683943,
-        "3": 683080,
-        "7": 664209,
-        "14": 629016,
-        "30": 595774
-      },
-      "photo_url": "/static/ff_players/7920.png",
-      "team_crest_url": "/static/ff_teams/1.png"
-    },
-    {
-      "id": "840",
-      "name": "Manel Usedo",
-      "team": "Levante",
-      "position": "MED",
-      "price": 684232,
-      "price_increment": 869,
-      "price_history": {
-        "0": 684232,
-        "1": 683363,
-        "2": 682556,
-        "3": 681635,
-        "7": 662507,
-        "14": 626752,
-        "30": 591424
-      },
-      "photo_url": "/static/ff_players/18241.png",
-      "team_crest_url": "/static/ff_teams/10.png"
-    },
-    {
-      "id": "883",
-      "name": "Manuel Ángel Castillo",
-      "team": "Sevilla",
-      "position": "MED",
-      "price": 900000,
-      "price_increment": 0,
-      "price_history": {
-        "0": 900000,
-        "1": 900000,
-        "2": 900000,
-        "3": 900000,
-        "7": 900000,
-        "14": 900000,
-        "30": 900000
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/17.png"
-    },
-    {
-      "id": "884",
-      "name": "Juan Hernández",
-      "team": "Barcelona",
-      "position": "MED",
-      "price": 581760,
-      "price_increment": 0,
-      "price_history": {
-        "0": 581760,
-        "1": 581760,
-        "2": 581760,
-        "3": 581760,
-        "7": 581760,
-        "14": 581760,
-        "30": 581760
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/3.png"
-    },
-    {
-      "id": "1063",
-      "name": "Álvaro Djaló",
-      "team": "Athletic",
-      "position": "DEL",
-      "price": 687918,
-      "price_increment": 716,
-      "price_history": {
-        "0": 687918,
-        "1": 687202,
-        "2": 686555,
-        "3": 685800,
-        "7": 667412,
-        "14": 633279,
-        "30": 603964
-      },
-      "photo_url": "/static/ff_players/11983.png",
-      "team_crest_url": "/static/ff_teams/1.png"
-    },
-    {
-      "id": "834",
-      "name": "Dani Barcia",
-      "team": "Deportivo",
-      "position": "DEF",
-      "price": 692292,
-      "price_increment": 533,
-      "price_history": {
-        "0": 692292,
-        "1": 691759,
-        "2": 691302,
-        "3": 690745,
-        "7": 673233,
-        "14": 641023,
-        "30": 618847
-      },
-      "photo_url": "/static/ff_players/13970.png",
-      "team_crest_url": "/static/ff_teams/6.png"
-    },
-    {
-      "id": "624",
-      "name": "Yoel Lago",
-      "team": "Celta",
-      "position": "DEF",
-      "price": 23401941,
-      "price_increment": -561241,
-      "price_history": {
-        "0": 23401941,
-        "1": 23963182,
-        "2": 24549426,
-        "3": 25155284,
-        "7": 26594360,
-        "14": 28227251,
-        "30": 25178749
-      },
-      "photo_url": "/static/ff_players/13036.png",
-      "team_crest_url": "/static/ff_teams/5.png"
-    },
-    {
-      "id": "855",
-      "name": "Rayane Belaid",
-      "team": "Rayo Vallecano",
-      "position": "DEL",
-      "price": 688106,
-      "price_increment": 708,
-      "price_history": {
-        "0": 688106,
-        "1": 687398,
-        "2": 686759,
-        "3": 686013,
-        "7": 667661,
-        "14": 633609,
-        "30": 604596
-      },
-      "photo_url": "/static/ff_players/12608.png",
-      "team_crest_url": "/static/ff_teams/14.png"
-    },
-    {
-      "id": "696",
-      "name": "Nathan-Dylan Saliba",
-      "team": "Villarreal",
-      "position": "MED",
-      "price": 2422393,
-      "price_increment": -63272,
-      "price_history": {
-        "0": 2422393,
-        "1": 2485665,
-        "2": 2548180,
-        "3": 2611545,
-        "7": 2835992,
-        "14": 3287683,
-        "30": 4649062
-      },
-      "photo_url": "/static/ff_players/17695.png",
-      "team_crest_url": "/static/ff_teams/22.png"
-    },
-    {
-      "id": "1000",
-      "name": "Kike García",
-      "team": "Espanyol",
-      "position": "DEL",
-      "price": 727989,
-      "price_increment": -954,
-      "price_history": {
-        "0": 727989,
-        "1": 728943,
-        "2": 730035,
-        "3": 731092,
-        "7": 720736,
-        "14": 704240,
-        "30": 740325
-      },
-      "photo_url": "/static/ff_players/2751.png",
-      "team_crest_url": "/static/ff_teams/7.png"
-    },
-    {
-      "id": "1121",
-      "name": "Manu González",
-      "team": "Betis",
-      "position": "POR",
-      "price": 581691,
-      "price_increment": 0,
-      "price_history": {
-        "0": 581691,
-        "1": 581691,
-        "2": 581691,
-        "3": 581691,
-        "7": 581691,
-        "14": 581691,
-        "30": 581691
-      },
-      "photo_url": "/static/ff_players/14135.png",
-      "team_crest_url": "/static/ff_teams/4.png"
-    },
-    {
-      "id": "996",
-      "name": "Zakaria Eddahchouri",
-      "team": "Deportivo",
-      "position": "DEL",
-      "price": 709478,
-      "price_increment": -183,
-      "price_history": {
-        "0": 709478,
-        "1": 709661,
-        "2": 709950,
-        "3": 710170,
-        "7": 696104,
-        "14": 671461,
-        "30": 677339
-      },
-      "photo_url": "/static/ff_players/15164.png",
-      "team_crest_url": "/static/ff_teams/6.png"
-    },
-    {
-      "id": "955",
-      "name": "Alfonso González",
-      "team": "Sevilla",
-      "position": "DEL",
-      "price": 782229,
-      "price_increment": -3214,
-      "price_history": {
-        "0": 782229,
-        "1": 785443,
-        "2": 788890,
-        "3": 792399,
-        "7": 792918,
-        "14": 800297,
-        "30": 924903
-      },
-      "photo_url": "/static/ff_players/8703.png",
-      "team_crest_url": "/static/ff_teams/17.png"
-    },
-    {
-      "id": "1128",
-      "name": "Alejandro Primo",
-      "team": "Levante",
-      "position": "POR",
-      "price": 1104126,
-      "price_increment": 0,
-      "price_history": {
-        "0": 1104126,
-        "1": 1104126,
-        "2": 1104126,
-        "3": 1104126,
-        "7": 1104126,
-        "14": 1104126,
-        "30": 1104126
-      },
-      "photo_url": "/static/ff_players/10191.png",
-      "team_crest_url": "/static/ff_teams/10.png"
-    },
-    {
-      "id": "728",
-      "name": "Julen Lobete",
-      "team": "Málaga",
-      "position": "DEL",
-      "price": 683923,
-      "price_increment": 882,
-      "price_history": {
-        "0": 683923,
-        "1": 683041,
-        "2": 682221,
-        "3": 681286,
-        "7": 662097,
-        "14": 626206,
-        "30": 590375
-      },
-      "photo_url": "/static/ff_players/7686.png",
-      "team_crest_url": "/static/ff_teams/11.png"
-    },
-    {
-      "id": "846",
-      "name": "Christantus Uche",
-      "team": "Getafe",
-      "position": "DEL",
-      "price": 1196747,
-      "price_increment": -20485,
-      "price_history": {
-        "0": 1196747,
-        "1": 1217232,
-        "2": 1238670,
-        "3": 1260920,
-        "7": 1344544,
-        "14": 1526251,
-        "30": 2301563
-      },
-      "photo_url": "/static/ff_players/13780.png",
-      "team_crest_url": "/static/ff_teams/8.png"
-    },
-    {
-      "id": "992",
-      "name": "Juan Musso",
-      "team": "Atlético",
-      "position": "POR",
-      "price": 777070,
-      "price_increment": -2999,
-      "price_history": {
-        "0": 777070,
-        "1": 780069,
-        "2": 783292,
-        "3": 786568,
-        "7": 786053,
-        "14": 791161,
-        "30": 907351
-      },
-      "photo_url": "/static/ff_players/5942.png",
-      "team_crest_url": "/static/ff_teams/2.png"
-    },
-    {
-      "id": "1229",
-      "name": "Romeo Hueso",
-      "team": "Atlético",
-      "position": "MED",
-      "price": 1000000,
-      "price_increment": 0,
-      "price_history": {
-        "0": 1000000,
-        "1": 1000000,
-        "2": 1000000,
-        "3": 1000000,
-        "7": 1000000,
-        "14": 1000000,
-        "30": 0
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/2.png"
-    },
-    {
-      "id": "833",
-      "name": "Samu Becerra",
-      "team": "Rayo Vallecano",
-      "position": "MED",
-      "price": 686298,
-      "price_increment": 783,
-      "price_history": {
-        "0": 686298,
-        "1": 685515,
-        "2": 684798,
-        "3": 683970,
-        "7": 665256,
-        "14": 630410,
-        "30": 598455
-      },
-      "photo_url": "/static/ff_players/16146.png",
-      "team_crest_url": "/static/ff_teams/14.png"
-    },
-    {
-      "id": "990",
-      "name": "Kayne van Oevelen",
-      "team": "Valencia",
-      "position": "POR",
-      "price": 714854,
-      "price_increment": -407,
-      "price_history": {
-        "0": 714854,
-        "1": 715261,
-        "2": 715783,
-        "3": 716246,
-        "7": 703257,
-        "14": 680979,
-        "30": 695627
-      },
-      "photo_url": "/static/ff_players/18283.png",
-      "team_crest_url": "/static/ff_teams/18.png"
-    },
-    {
-      "id": "569",
-      "name": "Xavi Espart",
-      "team": "Barcelona",
-      "position": "DEF",
-      "price": 29001339,
-      "price_increment": -729177,
-      "price_history": {
-        "0": 29001339,
-        "1": 29730516,
-        "2": 30456228,
-        "3": 31218535,
-        "7": 34134090,
-        "14": 40271404,
-        "30": 61007298
-      },
-      "photo_url": "/static/ff_players/16765.png",
-      "team_crest_url": "/static/ff_teams/3.png"
-    },
-    {
-      "id": "596",
-      "name": "Miguel Román",
-      "team": "Celta",
-      "position": "MED",
-      "price": 5931882,
-      "price_increment": -134477,
-      "price_history": {
-        "0": 5931882,
-        "1": 6066359,
-        "2": 6204617,
-        "3": 6345562,
-        "7": 6882743,
-        "14": 7945715,
-        "30": 11262269
-      },
-      "photo_url": "/static/ff_players/13808.png",
-      "team_crest_url": "/static/ff_teams/5.png"
-    },
-    {
-      "id": "1157",
-      "name": "Yago Santiago",
-      "team": "Elche",
-      "position": "MED",
-      "price": 680405,
-      "price_increment": 1029,
-      "price_history": {
-        "0": 680405,
-        "1": 679376,
-        "2": 678403,
-        "3": 677309,
-        "7": 657415,
-        "14": 619975,
-        "30": 578403
-      },
-      "photo_url": "/static/ff_players/11562.png",
-      "team_crest_url": "/static/ff_teams/21.png"
-    },
-    {
-      "id": "1161",
-      "name": "Rodrigo Gamón",
-      "team": "Valencia",
-      "position": "DEF",
-      "price": 800000,
-      "price_increment": 0,
-      "price_history": {
-        "0": 800000,
-        "1": 800000,
-        "2": 800000,
-        "3": 800000,
-        "7": 800000,
-        "14": 800000,
-        "30": 800000
-      },
-      "photo_url": "/static/ff_players/18228.png",
-      "team_crest_url": "/static/ff_teams/18.png"
-    },
-    {
-      "id": "985",
-      "name": "Adrián Rodríguez",
-      "team": "Alavés",
-      "position": "POR",
-      "price": 687809,
-      "price_increment": 720,
-      "price_history": {
-        "0": 687809,
-        "1": 687089,
-        "2": 686437,
-        "3": 685678,
-        "7": 667268,
-        "14": 633087,
-        "30": 603598
-      },
-      "photo_url": "/static/ff_players/9897.png",
-      "team_crest_url": "/static/ff_teams/28.png"
-    },
-    {
-      "id": "674",
-      "name": "Pablo García",
-      "team": "Deportivo",
-      "position": "DEF",
-      "price": 468964,
-      "price_increment": 0,
-      "price_history": {
-        "0": 468964,
-        "1": 468964,
-        "2": 468964,
-        "3": 468964,
-        "7": 468964,
-        "14": 468964,
-        "30": 468964
-      },
-      "photo_url": "/static/ff_players/14097.png",
-      "team_crest_url": "/static/ff_teams/6.png"
-    },
-    {
-      "id": "770",
-      "name": "Iker Córdoba",
-      "team": "Valencia",
-      "position": "DEF",
-      "price": 711275,
-      "price_increment": -258,
-      "price_history": {
-        "0": 711275,
-        "1": 711533,
-        "2": 711900,
-        "3": 712201,
-        "7": 698496,
-        "14": 674644,
-        "30": 683452
-      },
-      "photo_url": "/static/ff_players/14034.png",
-      "team_crest_url": "/static/ff_teams/18.png"
-    },
-    {
-      "id": "1091",
-      "name": "Cristian Rivero",
-      "team": "Valencia",
-      "position": "POR",
-      "price": 679678,
-      "price_increment": 1059,
-      "price_history": {
-        "0": 679678,
-        "1": 678619,
-        "2": 677614,
-        "3": 676487,
-        "7": 656447,
-        "14": 618687,
-        "30": 575926
-      },
-      "photo_url": "/static/ff_players/5080.png",
-      "team_crest_url": "/static/ff_teams/18.png"
-    },
-    {
-      "id": "771",
-      "name": "Jeremy Toljan",
-      "team": "Levante",
-      "position": "DEF",
-      "price": 793197,
-      "price_increment": -3671,
-      "price_history": {
-        "0": 793197,
-        "1": 796868,
-        "2": 800791,
-        "3": 804796,
-        "7": 807515,
-        "14": 819722,
-        "30": 962234
-      },
-      "photo_url": "/static/ff_players/4976.png",
-      "team_crest_url": "/static/ff_teams/10.png"
-    },
-    {
-      "id": "977",
-      "name": "Diego Conde",
-      "team": "Betis",
-      "position": "POR",
-      "price": 726657,
-      "price_increment": -898,
-      "price_history": {
-        "0": 726657,
-        "1": 727555,
-        "2": 728590,
-        "3": 729587,
-        "7": 718965,
-        "14": 701884,
-        "30": 735799
-      },
-      "photo_url": "/static/ff_players/7554.png",
-      "team_crest_url": "/static/ff_teams/4.png"
-    },
-    {
-      "id": "973",
-      "name": "Raúl Asencio",
-      "team": "Real Madrid",
-      "position": "DEF",
-      "price": 775645,
-      "price_increment": -2940,
-      "price_history": {
-        "0": 775645,
-        "1": 778585,
-        "2": 781746,
-        "3": 784958,
-        "7": 784157,
-        "14": 788638,
-        "30": 902502
-      },
-      "photo_url": "/static/ff_players/12639.png",
-      "team_crest_url": "/static/ff_teams/15.png"
-    },
-    {
-      "id": "972",
-      "name": "Marash Kumbulla",
-      "team": "Rayo Vallecano",
-      "position": "DEF",
-      "price": 772123,
-      "price_increment": -2793,
-      "price_history": {
-        "0": 772123,
-        "1": 774916,
-        "2": 777924,
-        "3": 780977,
-        "7": 779471,
-        "14": 782401,
-        "30": 890516
-      },
-      "photo_url": "/static/ff_players/7100.png",
-      "team_crest_url": "/static/ff_teams/14.png"
-    },
-    {
-      "id": "967",
-      "name": "Carlos Benavidez",
-      "team": "Alavés",
-      "position": "MED",
-      "price": 717260,
-      "price_increment": -507,
-      "price_history": {
-        "0": 717260,
-        "1": 717767,
-        "2": 718394,
-        "3": 718966,
-        "7": 706459,
-        "14": 685240,
-        "30": 703815
-      },
-      "photo_url": "/static/ff_players/10448.png",
-      "team_crest_url": "/static/ff_teams/28.png"
-    },
-    {
-      "id": "979",
-      "name": "Endrick",
-      "team": "Real Madrid",
-      "position": "DEL",
-      "price": 1543062,
-      "price_increment": -34915,
-      "price_history": {
-        "0": 1543062,
-        "1": 1577977,
-        "2": 1614446,
-        "3": 1652354,
-        "7": 1766762,
-        "14": 2011957,
-        "30": 2613315
-      },
-      "photo_url": "/static/ff_players/13564.png",
-      "team_crest_url": "/static/ff_teams/15.png"
-    },
-    {
-      "id": "889",
-      "name": "Marco de la Sías",
-      "team": "Rayo Vallecano",
-      "position": "DEF",
-      "price": 681343,
-      "price_increment": 990,
-      "price_history": {
-        "0": 681343,
-        "1": 680353,
-        "2": 679421,
-        "3": 678369,
-        "7": 658663,
-        "14": 621635,
-        "30": 581591
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/14.png"
-    },
-    {
-      "id": "1006",
-      "name": "Thomas Lemar",
-      "team": "Elche",
-      "position": "MED",
-      "price": 5725208,
-      "price_increment": -142660,
-      "price_history": {
-        "0": 5725208,
-        "1": 5867868,
-        "2": 6016379,
-        "3": 6134545,
-        "7": 5913497,
-        "14": 6474821,
-        "30": 6356402
-      },
-      "photo_url": "/static/ff_players/3427.png",
-      "team_crest_url": "/static/ff_teams/21.png"
-    },
-    {
-      "id": "1170",
-      "name": "Augusto Batalla",
-      "team": "Rayo Vallecano",
-      "position": "POR",
-      "price": 2591402,
-      "price_increment": -61846,
-      "price_history": {
-        "0": 2591402,
-        "1": 2653248,
-        "2": 2721713,
-        "3": 2791416,
-        "7": 3063642,
-        "14": 3627210,
-        "30": 5505499
-      },
-      "photo_url": "/static/ff_players/12651.png",
-      "team_crest_url": "/static/ff_teams/14.png"
-    },
-    {
-      "id": "960",
-      "name": "Juan Carlos Arana",
-      "team": "Racing",
-      "position": "DEL",
-      "price": 684089,
-      "price_increment": 875,
-      "price_history": {
-        "0": 684089,
-        "1": 683214,
-        "2": 682401,
-        "3": 681473,
-        "7": 662317,
-        "14": 626498,
-        "30": 590939
-      },
-      "photo_url": "/static/ff_players/9930.png",
-      "team_crest_url": "/static/ff_teams/42.png"
-    },
-    {
-      "id": "1106",
-      "name": "Nico Guillén",
-      "team": "Sevilla",
-      "position": "MED",
-      "price": 768121,
-      "price_increment": -2626,
-      "price_history": {
-        "0": 768121,
-        "1": 770747,
-        "2": 773581,
-        "3": 776453,
-        "7": 774144,
-        "14": 775314,
-        "30": 876898
-      },
-      "photo_url": "/static/ff_players/13865.png",
-      "team_crest_url": "/static/ff_teams/17.png"
-    },
-    {
-      "id": "1107",
-      "name": "Altay Bayindir",
-      "team": "Celta",
-      "position": "POR",
-      "price": 717078,
-      "price_increment": -499,
-      "price_history": {
-        "0": 717078,
-        "1": 717577,
-        "2": 718196,
-        "3": 718760,
-        "7": 706218,
-        "14": 684922,
-        "30": 703202
-      },
-      "photo_url": "/static/ff_players/9012.png",
-      "team_crest_url": "/static/ff_teams/5.png"
-    },
-    {
-      "id": "776",
-      "name": "Álvaro Mantilla",
-      "team": "Racing",
-      "position": "DEF",
-      "price": 752291,
-      "price_increment": -1967,
-      "price_history": {
-        "0": 752291,
-        "1": 754258,
-        "2": 756405,
-        "3": 758561,
-        "7": 753078,
-        "14": 747280,
-        "30": 823029
-      },
-      "photo_url": "/static/ff_players/10336.png",
-      "team_crest_url": "/static/ff_teams/42.png"
-    },
-    {
-      "id": "638",
-      "name": "Alejandro Catena",
-      "team": "Osasuna",
-      "position": "DEF",
-      "price": 21703466,
-      "price_increment": -531880,
-      "price_history": {
-        "0": 21703466,
-        "1": 22235346,
-        "2": 22800004,
-        "3": 23378081,
-        "7": 23437226,
-        "14": 21328299,
-        "30": 23050563
-      },
-      "photo_url": "/static/ff_players/6493.png",
-      "team_crest_url": "/static/ff_teams/13.png"
-    },
-    {
-      "id": "894",
-      "name": "Bambo Diaby",
-      "team": "Elche",
-      "position": "DEF",
-      "price": 688401,
-      "price_increment": 696,
-      "price_history": {
-        "0": 688401,
-        "1": 687705,
-        "2": 687079,
-        "3": 686346,
-        "7": 668053,
-        "14": 634131,
-        "30": 605604
-      },
-      "photo_url": "/static/ff_players/5022.png",
-      "team_crest_url": "/static/ff_teams/21.png"
-    },
-    {
-      "id": "888",
-      "name": "Carlos Ballestero",
-      "team": "Alavés",
-      "position": "DEF",
-      "price": 602316,
-      "price_increment": 0,
-      "price_history": {
-        "0": 602316,
-        "1": 602316,
-        "2": 602316,
-        "3": 602316,
-        "7": 602316,
-        "14": 602316,
-        "30": 602316
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/28.png"
-    },
-    {
-      "id": "1177",
-      "name": "Diego López",
-      "team": "Valencia",
-      "position": "DEL",
-      "price": 703764,
-      "price_increment": 55,
-      "price_history": {
-        "0": 703764,
-        "1": 703709,
-        "2": 703750,
-        "3": 703712,
-        "7": 688501,
-        "14": 661343,
-        "30": 657892
-      },
-      "photo_url": "/static/ff_players/9304.png",
-      "team_crest_url": "/static/ff_teams/18.png"
-    },
-    {
-      "id": "660",
-      "name": "Dakonam Djené",
-      "team": "Getafe",
-      "position": "DEF",
-      "price": 11077411,
-      "price_increment": -288903,
-      "price_history": {
-        "0": 11077411,
-        "1": 11366314,
-        "2": 11666228,
-        "3": 11973880,
-        "7": 12819224,
-        "14": 14427679,
-        "30": 19189382
-      },
-      "photo_url": "/static/ff_players/3881.png",
-      "team_crest_url": "/static/ff_teams/8.png"
-    },
-    {
-      "id": "1119",
-      "name": "Facundo Garcés",
-      "team": "Alavés",
-      "position": "DEF",
-      "price": 681440,
-      "price_increment": 986,
-      "price_history": {
-        "0": 681440,
-        "1": 680454,
-        "2": 679526,
-        "3": 678479,
-        "7": 658793,
-        "14": 621808,
-        "30": 581923
-      },
-      "photo_url": "/static/ff_players/14045.png",
-      "team_crest_url": "/static/ff_teams/28.png"
-    },
-    {
-      "id": "1010",
-      "name": "Sergi Canós",
-      "team": "Valencia",
-      "position": "DEL",
-      "price": 679838,
-      "price_increment": 1052,
-      "price_history": {
-        "0": 679838,
-        "1": 678786,
-        "2": 677788,
-        "3": 676668,
-        "7": 656659,
-        "14": 618970,
-        "30": 576468
-      },
-      "photo_url": "/static/ff_players/9201.png",
-      "team_crest_url": "/static/ff_teams/18.png"
-    },
-    {
-      "id": "1124",
-      "name": "Iván Villar",
-      "team": "Celta",
-      "position": "POR",
-      "price": 686947,
-      "price_increment": 756,
-      "price_history": {
-        "0": 686947,
-        "1": 686191,
-        "2": 685502,
-        "3": 684704,
-        "7": 666121,
-        "14": 631562,
-        "30": 600668
-      },
-      "photo_url": "/static/ff_players/3255.png",
-      "team_crest_url": "/static/ff_teams/5.png"
-    },
-    {
-      "id": "951",
-      "name": "Pelayo Fernández",
-      "team": "Rayo Vallecano",
-      "position": "DEF",
-      "price": 690239,
-      "price_increment": 619,
-      "price_history": {
-        "0": 690239,
-        "1": 689620,
-        "2": 689074,
-        "3": 688424,
-        "7": 670500,
-        "14": 637389,
-        "30": 611863
-      },
-      "photo_url": "/static/ff_players/13801.png",
       "team_crest_url": "/static/ff_teams/14.png"
     },
     {
@@ -11176,288 +11651,117 @@
       "team_crest_url": "/static/ff_teams/16.png"
     },
     {
-      "id": "1132",
-      "name": "Arnau Comas",
+      "id": "674",
+      "name": "Pablo García",
       "team": "Deportivo",
       "position": "DEF",
-      "price": 682926,
-      "price_increment": 924,
-      "price_history": {
-        "0": 682926,
-        "1": 682002,
-        "2": 681138,
-        "3": 680158,
-        "7": 660770,
-        "14": 624439,
-        "30": 586981
-      },
-      "photo_url": "/static/ff_players/9854.png",
-      "team_crest_url": "/static/ff_teams/6.png"
-    },
-    {
-      "id": "1133",
-      "name": "Noé Carrillo",
-      "team": "Deportivo",
-      "position": "MED",
-      "price": 707511,
-      "price_increment": -101,
-      "price_history": {
-        "0": 707511,
-        "1": 707612,
-        "2": 707816,
-        "3": 707947,
-        "7": 693486,
-        "14": 667976,
-        "30": 670637
-      },
-      "photo_url": "/static/ff_players/16976.png",
-      "team_crest_url": "/static/ff_teams/6.png"
-    },
-    {
-      "id": "898",
-      "name": "Pau Navarro",
-      "team": "Villarreal",
-      "position": "DEF",
-      "price": 1554332,
-      "price_increment": -35385,
-      "price_history": {
-        "0": 1554332,
-        "1": 1589717,
-        "2": 1626675,
-        "3": 1665092,
-        "7": 1809435,
-        "14": 2095900,
-        "30": 2653178
-      },
-      "photo_url": "/static/ff_players/12860.png",
-      "team_crest_url": "/static/ff_teams/22.png"
-    },
-    {
-      "id": "810",
-      "name": "Rockson Yeboah",
-      "team": "Osasuna",
-      "position": "DEF",
-      "price": 703019,
-      "price_increment": 86,
-      "price_history": {
-        "0": 703019,
-        "1": 702933,
-        "2": 702942,
-        "3": 702870,
-        "7": 687509,
-        "14": 660022,
-        "30": 655353
-      },
-      "photo_url": "/static/ff_players/18316.png",
-      "team_crest_url": "/static/ff_teams/13.png"
-    },
-    {
-      "id": "1154",
-      "name": "Luiz Felipe",
-      "team": "Rayo Vallecano",
-      "position": "DEF",
-      "price": 734122,
-      "price_increment": -1209,
-      "price_history": {
-        "0": 734122,
-        "1": 735331,
-        "2": 736689,
-        "3": 738023,
-        "7": 728898,
-        "14": 715101,
-        "30": 761190
-      },
-      "photo_url": "/static/ff_players/5705.png",
-      "team_crest_url": "/static/ff_teams/14.png"
-    },
-    {
-      "id": "684",
-      "name": "Clemens Riedel",
-      "team": "Espanyol",
-      "position": "DEF",
-      "price": 2803768,
-      "price_increment": -62480,
-      "price_history": {
-        "0": 2803768,
-        "1": 2866248,
-        "2": 2930535,
-        "3": 2994133,
-        "7": 3003808,
-        "14": 3490856,
-        "30": 4995383
-      },
-      "photo_url": "/static/ff_players/16308.png",
-      "team_crest_url": "/static/ff_teams/7.png"
-    },
-    {
-      "id": "685",
-      "name": "Álex Calatrava",
-      "team": "Espanyol",
-      "position": "DEL",
-      "price": 1324522,
-      "price_increment": -25809,
-      "price_history": {
-        "0": 1324522,
-        "1": 1350331,
-        "2": 1377314,
-        "3": 1405341,
-        "7": 1514581,
-        "14": 1734846,
-        "30": 2492948
-      },
-      "photo_url": "/static/ff_players/11863.png",
-      "team_crest_url": "/static/ff_teams/7.png"
-    },
-    {
-      "id": "1147",
-      "name": "Mikel Rodriguez",
-      "team": "Alavés",
-      "position": "MED",
-      "price": 769663,
-      "price_increment": -2690,
-      "price_history": {
-        "0": 769663,
-        "1": 772353,
-        "2": 775254,
-        "3": 778195,
-        "7": 776195,
-        "14": 778043,
-        "30": 882141
-      },
-      "photo_url": "/static/ff_players/16186.png",
-      "team_crest_url": "/static/ff_teams/28.png"
-    },
-    {
-      "id": "1148",
-      "name": "Simon Eriksson",
-      "team": "Racing",
-      "position": "POR",
-      "price": 725034,
-      "price_increment": -831,
-      "price_history": {
-        "0": 725034,
-        "1": 725865,
-        "2": 726829,
-        "3": 727753,
-        "7": 716807,
-        "14": 699011,
-        "30": 730274
-      },
-      "photo_url": "/static/ff_players/15033.png",
-      "team_crest_url": "/static/ff_teams/42.png"
-    },
-    {
-      "id": "1149",
-      "name": "Haitam Abaida",
-      "team": "Málaga",
-      "position": "DEL",
-      "price": 678615,
-      "price_increment": 1103,
-      "price_history": {
-        "0": 678615,
-        "1": 677512,
-        "2": 676461,
-        "3": 675286,
-        "7": 655031,
-        "14": 616803,
-        "30": 572306
-      },
-      "photo_url": "/static/ff_players/9321.png",
-      "team_crest_url": "/static/ff_teams/11.png"
-    },
-    {
-      "id": "1183",
-      "name": "Álex Sánchez",
-      "team": "Elche",
-      "position": "MED",
-      "price": 602324,
+      "price": 468964,
       "price_increment": 0,
       "price_history": {
-        "0": 602324,
-        "1": 602324,
-        "2": 602324,
-        "3": 602324,
-        "7": 602324,
-        "14": 602324,
-        "30": 602324
+        "0": 468964,
+        "1": 468964,
+        "2": 468964,
+        "3": 468964,
+        "7": 468964,
+        "14": 468964,
+        "30": 468964
       },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/21.png"
+      "photo_url": "/static/ff_players/14097.png",
+      "team_crest_url": "/static/ff_teams/6.png"
     },
     {
-      "id": "1180",
-      "name": "Iker Losada",
-      "team": "Betis",
-      "position": "DEL",
-      "price": 715493,
-      "price_increment": -433,
-      "price_history": {
-        "0": 715493,
-        "1": 715926,
-        "2": 716476,
-        "3": 716968,
-        "7": 704107,
-        "14": 682111,
-        "30": 697801
-      },
-      "photo_url": "/static/ff_players/7201.png",
-      "team_crest_url": "/static/ff_teams/4.png"
-    },
-    {
-      "id": "784",
-      "name": "José Ángel Carmona",
-      "team": "Sevilla",
+      "id": "660",
+      "name": "Dakonam Djené",
+      "team": "Getafe",
       "position": "DEF",
-      "price": 767390,
-      "price_increment": -2596,
+      "price": 11077411,
+      "price_increment": -288903,
       "price_history": {
-        "0": 767390,
-        "1": 769986,
-        "2": 772788,
-        "3": 775627,
-        "7": 773171,
-        "14": 774018,
-        "30": 874407
+        "0": 11077411,
+        "1": 11366314,
+        "2": 11666228,
+        "3": 11973880,
+        "7": 12819224,
+        "14": 14427679,
+        "30": 19189382
       },
-      "photo_url": "/static/ff_players/9317.png",
-      "team_crest_url": "/static/ff_teams/17.png"
+      "photo_url": "/static/ff_players/3881.png",
+      "team_crest_url": "/static/ff_teams/8.png"
     },
     {
-      "id": "688",
-      "name": "Sergio Martínez",
-      "team": "Real Madrid",
+      "id": "1039",
+      "name": "Obed Vargas",
+      "team": "Atlético",
       "position": "MED",
-      "price": 734437,
-      "price_increment": -1223,
+      "price": 684836,
+      "price_increment": 844,
       "price_history": {
-        "0": 734437,
-        "1": 735660,
-        "2": 737032,
-        "3": 738381,
-        "7": 729319,
-        "14": 715662,
-        "30": 762272
+        "0": 684836,
+        "1": 683992,
+        "2": 683211,
+        "3": 682317,
+        "7": 663309,
+        "14": 627818,
+        "30": 593473
       },
-      "photo_url": "/static/ff_players/16262.png",
-      "team_crest_url": "/static/ff_teams/15.png"
+      "photo_url": "/static/ff_players/15572.png",
+      "team_crest_url": "/static/ff_teams/2.png"
     },
     {
-      "id": "895",
-      "name": "Germán Parreño",
-      "team": "Deportivo",
-      "position": "POR",
-      "price": 681224,
-      "price_increment": 995,
+      "id": "1069",
+      "name": "Jorge Cabello",
+      "team": "Levante",
+      "position": "DEF",
+      "price": 684588,
+      "price_increment": 854,
       "price_history": {
-        "0": 681224,
-        "1": 680229,
-        "2": 679292,
-        "3": 678235,
-        "7": 658504,
-        "14": 621424,
-        "30": 581186
+        "0": 684588,
+        "1": 683734,
+        "2": 682943,
+        "3": 682038,
+        "7": 662982,
+        "14": 627383,
+        "30": 592636
       },
-      "photo_url": "/static/ff_players/698.png",
+      "photo_url": "/static/ff_players/12879.png",
+      "team_crest_url": "/static/ff_teams/10.png"
+    },
+    {
+      "id": "701",
+      "name": "Ademola Lookman",
+      "team": "Atlético",
+      "position": "DEL",
+      "price": 12770441,
+      "price_increment": -333023,
+      "price_history": {
+        "0": 12770441,
+        "1": 13103464,
+        "2": 13442290,
+        "3": 13786624,
+        "7": 15139658,
+        "14": 17705662,
+        "30": 24453581
+      },
+      "photo_url": "/static/ff_players/4434.png",
+      "team_crest_url": "/static/ff_teams/2.png"
+    },
+    {
+      "id": "1076",
+      "name": "Bright Ede",
+      "team": "Deportivo",
+      "position": "DEF",
+      "price": 1071747,
+      "price_increment": -15277,
+      "price_history": {
+        "0": 1071747,
+        "1": 1087024,
+        "2": 1103036,
+        "3": 1119635,
+        "7": 1178198,
+        "14": 1313014,
+        "30": 1908034
+      },
+      "photo_url": "/static/ff_players/18030.png",
       "team_crest_url": "/static/ff_teams/6.png"
     },
     {
@@ -11480,384 +11784,118 @@
       "team_crest_url": "/static/ff_teams/16.png"
     },
     {
-      "id": "1165",
-      "name": "Hamza Abdelkarim",
-      "team": "Barcelona",
-      "position": "DEL",
-      "price": 850085,
-      "price_increment": -6041,
-      "price_history": {
-        "0": 850085,
-        "1": 856126,
-        "2": 862518,
-        "3": 869095,
-        "7": 883219,
-        "14": 920466,
-        "30": 1155820
-      },
-      "photo_url": "/static/ff_players/17663.png",
-      "team_crest_url": "/static/ff_teams/3.png"
-    },
-    {
-      "id": "551",
-      "name": "Fermín López",
-      "team": "Barcelona",
-      "position": "MED",
-      "price": 128739316,
-      "price_increment": -3106927,
-      "price_history": {
-        "0": 128739316,
-        "1": 131846243,
-        "2": 135046159,
-        "3": 138272403,
-        "7": 140878693,
-        "14": 126541853,
-        "30": 96467651
-      },
-      "photo_url": "/static/ff_players/11709.png",
-      "team_crest_url": "/static/ff_teams/3.png"
-    },
-    {
-      "id": "1168",
-      "name": "Alassane Diatta",
-      "team": "Villarreal",
-      "position": "MED",
-      "price": 680606,
-      "price_increment": 1020,
-      "price_history": {
-        "0": 680606,
-        "1": 679586,
-        "2": 678622,
-        "3": 677537,
-        "7": 657682,
-        "14": 620330,
-        "30": 579084
-      },
-      "photo_url": "/static/ff_players/14022.png",
-      "team_crest_url": "/static/ff_teams/22.png"
-    },
-    {
-      "id": "818",
-      "name": "Luken Beitia",
-      "team": "Real Sociedad",
-      "position": "DEF",
-      "price": 680404,
-      "price_increment": 1029,
-      "price_history": {
-        "0": 680404,
-        "1": 679375,
-        "2": 678402,
-        "3": 677308,
-        "7": 657414,
-        "14": 619973,
-        "30": 578400
-      },
-      "photo_url": "/static/ff_players/15273.png",
-      "team_crest_url": "/static/ff_teams/16.png"
-    },
-    {
-      "id": "701",
-      "name": "Ademola Lookman",
-      "team": "Atlético",
-      "position": "DEL",
-      "price": 12770441,
-      "price_increment": -333023,
-      "price_history": {
-        "0": 12770441,
-        "1": 13103464,
-        "2": 13442290,
-        "3": 13786624,
-        "7": 15139658,
-        "14": 17705662,
-        "30": 24453581
-      },
-      "photo_url": "/static/ff_players/4434.png",
-      "team_crest_url": "/static/ff_teams/2.png"
-    },
-    {
-      "id": "786",
-      "name": "Maguette Gueye",
-      "team": "Racing",
-      "position": "MED",
-      "price": 765640,
-      "price_increment": -2523,
-      "price_history": {
-        "0": 765640,
-        "1": 768163,
-        "2": 770890,
-        "3": 773649,
-        "7": 770842,
-        "14": 770919,
-        "30": 868452
-      },
-      "photo_url": "/static/ff_players/14155.png",
-      "team_crest_url": "/static/ff_teams/42.png"
-    },
-    {
-      "id": "1171",
-      "name": "Manu Sánchez",
-      "team": "Levante",
-      "position": "DEF",
-      "price": 1400059,
-      "price_increment": -28957,
-      "price_history": {
-        "0": 1400059,
-        "1": 1429016,
-        "2": 1459278,
-        "3": 1490720,
-        "7": 1600530,
-        "14": 1850362,
-        "30": 2694325
-      },
-      "photo_url": "/static/ff_players/6605.png",
-      "team_crest_url": "/static/ff_teams/10.png"
-    },
-    {
-      "id": "1021",
-      "name": "Kike Ribes",
-      "team": "",
-      "position": "DEF",
-      "price": 600000,
-      "price_increment": 0,
-      "price_history": {
-        "0": 600000,
-        "1": 600000,
-        "2": 600000,
-        "3": 600000,
-        "7": 600000,
-        "14": 600000,
-        "30": 600000
-      },
-      "photo_url": "/static/ff_players/18201.png",
-      "team_crest_url": "/static/ff_teams/823.png"
-    },
-    {
-      "id": "934",
-      "name": "Asier Hierro",
-      "team": "Athletic",
-      "position": "DEL",
-      "price": 602257,
-      "price_increment": 0,
-      "price_history": {
-        "0": 602257,
-        "1": 602257,
-        "2": 602257,
-        "3": 602257,
-        "7": 602257,
-        "14": 602257,
-        "30": 602257
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/1.png"
-    },
-    {
-      "id": "1176",
-      "name": "Dimitri Foulquier",
+      "id": "1177",
+      "name": "Diego López",
       "team": "Valencia",
-      "position": "DEF",
-      "price": 707719,
-      "price_increment": -109,
+      "position": "DEL",
+      "price": 703764,
+      "price_increment": 55,
       "price_history": {
-        "0": 707719,
-        "1": 707828,
-        "2": 708041,
-        "3": 708182,
-        "7": 693764,
-        "14": 668346,
-        "30": 671352
+        "0": 703764,
+        "1": 703709,
+        "2": 703750,
+        "3": 703712,
+        "7": 688501,
+        "14": 661343,
+        "30": 657892
       },
-      "photo_url": "/static/ff_players/943.png",
+      "photo_url": "/static/ff_players/9304.png",
       "team_crest_url": "/static/ff_teams/18.png"
     },
     {
-      "id": "904",
-      "name": "Aitor Fernández",
-      "team": "Osasuna",
-      "position": "POR",
-      "price": 982550,
-      "price_increment": -11561,
-      "price_history": {
-        "0": 982550,
-        "1": 994111,
-        "2": 1006252,
-        "3": 1018818,
-        "7": 1059499,
-        "14": 1155055,
-        "30": 1167104
-      },
-      "photo_url": "/static/ff_players/829.png",
-      "team_crest_url": "/static/ff_teams/13.png"
-    },
-    {
-      "id": "1182",
-      "name": "Andrés Martín",
-      "team": "Racing",
-      "position": "DEL",
-      "price": 2951466,
-      "price_increment": -76111,
-      "price_history": {
-        "0": 2951466,
-        "1": 3027577,
-        "2": 3105922,
-        "3": 3186711,
-        "7": 3504076,
-        "14": 4150980,
-        "30": 5912771
-      },
-      "photo_url": "/static/ff_players/6890.png",
-      "team_crest_url": "/static/ff_teams/42.png"
-    },
-    {
-      "id": "909",
-      "name": "Roony Bardghji",
-      "team": "Barcelona",
-      "position": "DEL",
-      "price": 717854,
-      "price_increment": -532,
-      "price_history": {
-        "0": 717854,
-        "1": 718386,
-        "2": 719038,
-        "3": 719637,
-        "7": 707250,
-        "14": 686293,
-        "30": 705835
-      },
-      "photo_url": "/static/ff_players/10658.png",
-      "team_crest_url": "/static/ff_teams/3.png"
-    },
-    {
-      "id": "926",
-      "name": "Unai Egiluz",
-      "team": "Athletic",
-      "position": "DEF",
-      "price": 678541,
-      "price_increment": 1106,
-      "price_history": {
-        "0": 678541,
-        "1": 677435,
-        "2": 676381,
-        "3": 675203,
-        "7": 654935,
-        "14": 616674,
-        "30": 572058
-      },
-      "photo_url": "/static/ff_players/11676.png",
-      "team_crest_url": "/static/ff_teams/1.png"
-    },
-    {
-      "id": "1187",
-      "name": "Jiri Letácek",
-      "team": "Getafe",
-      "position": "POR",
-      "price": 682755,
-      "price_increment": 931,
-      "price_history": {
-        "0": 682755,
-        "1": 681824,
-        "2": 680953,
-        "3": 679965,
-        "7": 660541,
-        "14": 624134,
-        "30": 586393
-      },
-      "photo_url": "/static/ff_players/13877.png",
-      "team_crest_url": "/static/ff_teams/8.png"
-    },
-    {
-      "id": "1188",
-      "name": "Alex Padilla",
-      "team": "Athletic",
-      "position": "POR",
-      "price": 697051,
-      "price_increment": 335,
-      "price_history": {
-        "0": 697051,
-        "1": 696716,
-        "2": 696466,
-        "3": 696124,
-        "7": 679568,
-        "14": 649455,
-        "30": 635052
-      },
-      "photo_url": "/static/ff_players/10214.png",
-      "team_crest_url": "/static/ff_teams/1.png"
-    },
-    {
-      "id": "931",
-      "name": "Ángel Arcos",
-      "team": "Celta",
+      "id": "696",
+      "name": "Nathan-Dylan Saliba",
+      "team": "Villarreal",
       "position": "MED",
-      "price": 602257,
+      "price": 2422393,
+      "price_increment": -63272,
+      "price_history": {
+        "0": 2422393,
+        "1": 2485665,
+        "2": 2548180,
+        "3": 2611545,
+        "7": 2835992,
+        "14": 3287683,
+        "30": 4649062
+      },
+      "photo_url": "/static/ff_players/17695.png",
+      "team_crest_url": "/static/ff_teams/22.png"
+    },
+    {
+      "id": "688",
+      "name": "Sergio Martínez",
+      "team": "Real Madrid",
+      "position": "MED",
+      "price": 734437,
+      "price_increment": -1223,
+      "price_history": {
+        "0": 734437,
+        "1": 735660,
+        "2": 737032,
+        "3": 738381,
+        "7": 729319,
+        "14": 715662,
+        "30": 762272
+      },
+      "photo_url": "/static/ff_players/16262.png",
+      "team_crest_url": "/static/ff_teams/15.png"
+    },
+    {
+      "id": "1132",
+      "name": "Arnau Comas",
+      "team": "Deportivo",
+      "position": "DEF",
+      "price": 682926,
+      "price_increment": 924,
+      "price_history": {
+        "0": 682926,
+        "1": 682002,
+        "2": 681138,
+        "3": 680158,
+        "7": 660770,
+        "14": 624439,
+        "30": 586981
+      },
+      "photo_url": "/static/ff_players/9854.png",
+      "team_crest_url": "/static/ff_teams/6.png"
+    },
+    {
+      "id": "1128",
+      "name": "Alejandro Primo",
+      "team": "Levante",
+      "position": "POR",
+      "price": 1104126,
       "price_increment": 0,
       "price_history": {
-        "0": 602257,
-        "1": 602257,
-        "2": 602257,
-        "3": 602257,
-        "7": 602257,
-        "14": 602257,
-        "30": 602257
+        "0": 1104126,
+        "1": 1104126,
+        "2": 1104126,
+        "3": 1104126,
+        "7": 1104126,
+        "14": 1104126,
+        "30": 1104126
       },
-      "photo_url": "/static/ff_players/16873.png",
-      "team_crest_url": "/static/ff_teams/5.png"
+      "photo_url": "/static/ff_players/10191.png",
+      "team_crest_url": "/static/ff_teams/10.png"
     },
     {
-      "id": "885",
-      "name": "Aarón Ochoa",
-      "team": "Málaga",
-      "position": "MED",
-      "price": 3513040,
-      "price_increment": 0,
+      "id": "685",
+      "name": "Álex Calatrava",
+      "team": "Espanyol",
+      "position": "DEL",
+      "price": 1324522,
+      "price_increment": -25809,
       "price_history": {
-        "0": 3513040,
-        "1": 3513040,
-        "2": 3513040,
-        "3": 3513040,
-        "7": 3513040,
-        "14": 3513040,
-        "30": 3513040
+        "0": 1324522,
+        "1": 1350331,
+        "2": 1377314,
+        "3": 1405341,
+        "7": 1514581,
+        "14": 1734846,
+        "30": 2492948
       },
-      "photo_url": "/static/ff_players/13984.png",
-      "team_crest_url": "/static/ff_teams/11.png"
-    },
-    {
-      "id": "1193",
-      "name": "Jorge Domínguez",
-      "team": "Atlético",
-      "position": "DEF",
-      "price": 772950,
-      "price_increment": -2827,
-      "price_history": {
-        "0": 772950,
-        "1": 775777,
-        "2": 778821,
-        "3": 781911,
-        "7": 780570,
-        "14": 783865,
-        "30": 893334
-      },
-      "photo_url": "/static/ff_players/18213.png",
-      "team_crest_url": "/static/ff_teams/2.png"
-    },
-    {
-      "id": "914",
-      "name": "Marcão",
-      "team": "Sevilla",
-      "position": "DEF",
-      "price": 681753,
-      "price_increment": 973,
-      "price_history": {
-        "0": 681753,
-        "1": 680780,
-        "2": 679866,
-        "3": 678833,
-        "7": 659208,
-        "14": 622360,
-        "30": 582984
-      },
-      "photo_url": "/static/ff_players/4208.png",
-      "team_crest_url": "/static/ff_teams/17.png"
+      "photo_url": "/static/ff_players/11863.png",
+      "team_crest_url": "/static/ff_teams/7.png"
     },
     {
       "id": "1042",
@@ -11879,295 +11917,29 @@
       "team_crest_url": "/static/ff_teams/11.png"
     },
     {
-      "id": "920",
-      "name": "Selu Diallo",
-      "team": "Alavés",
-      "position": "MED",
-      "price": 687310,
-      "price_increment": 741,
-      "price_history": {
-        "0": 687310,
-        "1": 686569,
-        "2": 685896,
-        "3": 685114,
-        "7": 666604,
-        "14": 632201,
-        "30": 601896
-      },
-      "photo_url": "/static/ff_players/11719.png",
-      "team_crest_url": "/static/ff_teams/28.png"
-    },
-    {
-      "id": "1051",
-      "name": "Pablo López",
+      "id": "1161",
+      "name": "Rodrigo Gamón",
       "team": "Valencia",
-      "position": "DEL",
-      "price": 441041,
+      "position": "DEF",
+      "price": 800000,
       "price_increment": 0,
       "price_history": {
-        "0": 441041,
-        "1": 0,
-        "2": 0,
-        "3": 0,
-        "7": 0,
-        "14": 0,
-        "30": 0
+        "0": 800000,
+        "1": 800000,
+        "2": 800000,
+        "3": 800000,
+        "7": 800000,
+        "14": 800000,
+        "30": 800000
       },
-      "photo_url": "/static/ff_players/15000.png",
+      "photo_url": "/static/ff_players/18228.png",
       "team_crest_url": "/static/ff_teams/18.png"
     },
     {
-      "id": "1039",
-      "name": "Obed Vargas",
-      "team": "Atlético",
-      "position": "MED",
-      "price": 684836,
-      "price_increment": 844,
-      "price_history": {
-        "0": 684836,
-        "1": 683992,
-        "2": 683211,
-        "3": 682317,
-        "7": 663309,
-        "14": 627818,
-        "30": 593473
-      },
-      "photo_url": "/static/ff_players/15572.png",
-      "team_crest_url": "/static/ff_teams/2.png"
-    },
-    {
-      "id": "1026",
-      "name": "Adam Boayar",
-      "team": "Elche",
-      "position": "MED",
-      "price": 720700,
-      "price_increment": -650,
-      "price_history": {
-        "0": 720700,
-        "1": 721350,
-        "2": 722126,
-        "3": 722854,
-        "7": 711037,
-        "14": 691334,
-        "30": 702711
-      },
-      "photo_url": "/static/ff_players/12922.png",
-      "team_crest_url": "/static/ff_teams/21.png"
-    },
-    {
-      "id": "1027",
-      "name": "Fábio Cardoso",
+      "id": "1106",
+      "name": "Nico Guillén",
       "team": "Sevilla",
-      "position": "DEF",
-      "price": 685211,
-      "price_increment": 828,
-      "price_history": {
-        "0": 685211,
-        "1": 684383,
-        "2": 683619,
-        "3": 682742,
-        "7": 663810,
-        "14": 628484,
-        "30": 594752
-      },
-      "photo_url": "/static/ff_players/9500.png",
-      "team_crest_url": "/static/ff_teams/17.png"
-    },
-    {
-      "id": "854",
-      "name": "Rubén Gómez",
-      "team": "Villarreal",
-      "position": "POR",
-      "price": 680839,
-      "price_increment": 1011,
-      "price_history": {
-        "0": 680839,
-        "1": 679828,
-        "2": 678874,
-        "3": 677799,
-        "7": 657991,
-        "14": 620741,
-        "30": 579874
-      },
-      "photo_url": "/static/ff_players/14812.png",
-      "team_crest_url": "/static/ff_teams/22.png"
-    },
-    {
-      "id": "1029",
-      "name": "Dominik Livakovic",
-      "team": "Barcelona",
-      "position": "POR",
-      "price": 1143077,
-      "price_increment": -18249,
-      "price_history": {
-        "0": 1143077,
-        "1": 1161326,
-        "2": 1180434,
-        "3": 1200258,
-        "7": 1273122,
-        "14": 1439337,
-        "30": 2077876
-      },
-      "photo_url": "/static/ff_players/3589.png",
-      "team_crest_url": "/static/ff_teams/3.png"
-    },
-    {
-      "id": "875",
-      "name": "Dani Vivian",
-      "team": "Athletic",
-      "position": "DEF",
-      "price": 6256086,
-      "price_increment": -150430,
-      "price_history": {
-        "0": 6256086,
-        "1": 6406516,
-        "2": 6561437,
-        "3": 6721970,
-        "7": 7335236,
-        "14": 6484171,
-        "30": 2866590
-      },
-      "photo_url": "/static/ff_players/5245.png",
-      "team_crest_url": "/static/ff_teams/1.png"
-    },
-    {
-      "id": "1032",
-      "name": "Pablo Cuñat Campos",
-      "team": "Levante",
-      "position": "POR",
-      "price": 688595,
-      "price_increment": 688,
-      "price_history": {
-        "0": 688595,
-        "1": 687907,
-        "2": 687290,
-        "3": 686566,
-        "7": 668313,
-        "14": 634476,
-        "30": 606264
-      },
-      "photo_url": "/static/ff_players/11807.png",
-      "team_crest_url": "/static/ff_teams/10.png"
-    },
-    {
-      "id": "1089",
-      "name": "Wojciech Szczesny",
-      "team": "Barcelona",
-      "position": "POR",
-      "price": 740220,
-      "price_increment": -1464,
-      "price_history": {
-        "0": 740220,
-        "1": 741684,
-        "2": 743307,
-        "3": 744917,
-        "7": 737014,
-        "14": 725901,
-        "30": 781944
-      },
-      "photo_url": "/static/ff_players/2534.png",
-      "team_crest_url": "/static/ff_teams/3.png"
-    },
-    {
-      "id": "936",
-      "name": "Pablo Rosón",
-      "team": "Levante",
       "position": "MED",
-      "price": 602249,
-      "price_increment": 0,
-      "price_history": {
-        "0": 602249,
-        "1": 602249,
-        "2": 602249,
-        "3": 602249,
-        "7": 602249,
-        "14": 602249,
-        "30": 602249
-      },
-      "photo_url": "",
-      "team_crest_url": "/static/ff_teams/10.png"
-    },
-    {
-      "id": "991",
-      "name": "Fran González",
-      "team": "Sevilla",
-      "position": "POR",
-      "price": 682724,
-      "price_increment": 932,
-      "price_history": {
-        "0": 682724,
-        "1": 681792,
-        "2": 680920,
-        "3": 679931,
-        "7": 660501,
-        "14": 624083,
-        "30": 586293
-      },
-      "photo_url": "/static/ff_players/11554.png",
-      "team_crest_url": "/static/ff_teams/17.png"
-    },
-    {
-      "id": "935",
-      "name": "Izei Hernández",
-      "team": "Alavés",
-      "position": "MED",
-      "price": 689205,
-      "price_increment": 662,
-      "price_history": {
-        "0": 689205,
-        "1": 688543,
-        "2": 687952,
-        "3": 687256,
-        "7": 669126,
-        "14": 635560,
-        "30": 608349
-      },
-      "photo_url": "/static/ff_players/16920.png",
-      "team_crest_url": "/static/ff_teams/28.png"
-    },
-    {
-      "id": "877",
-      "name": "Salvi Esquivel",
-      "team": "Atlético",
-      "position": "POR",
-      "price": 684371,
-      "price_increment": 864,
-      "price_history": {
-        "0": 684371,
-        "1": 683507,
-        "2": 682706,
-        "3": 681791,
-        "7": 662693,
-        "14": 626998,
-        "30": 591891
-      },
-      "photo_url": "/static/ff_players/15422.png",
-      "team_crest_url": "/static/ff_teams/2.png"
-    },
-    {
-      "id": "849",
-      "name": "Juanmi Jiménez",
-      "team": "Getafe",
-      "position": "DEL",
-      "price": 680922,
-      "price_increment": 1007,
-      "price_history": {
-        "0": 680922,
-        "1": 679915,
-        "2": 678964,
-        "3": 677893,
-        "7": 658101,
-        "14": 620887,
-        "30": 580154
-      },
-      "photo_url": "/static/ff_players/340.png",
-      "team_crest_url": "/static/ff_teams/8.png"
-    },
-    {
-      "id": "1012",
-      "name": "Rodrygo Goes",
-      "team": "Real Madrid",
-      "position": "DEL",
       "price": 768121,
       "price_increment": -2626,
       "price_history": {
@@ -12177,10 +11949,124 @@
         "3": 776453,
         "7": 774144,
         "14": 775314,
-        "30": 876900
+        "30": 876898
       },
-      "photo_url": "/static/ff_players/6631.png",
+      "photo_url": "/static/ff_players/13865.png",
+      "team_crest_url": "/static/ff_teams/17.png"
+    },
+    {
+      "id": "1116",
+      "name": "Maroan Sannadi",
+      "team": "Athletic",
+      "position": "DEL",
+      "price": 679006,
+      "price_increment": 1087,
+      "price_history": {
+        "0": 679006,
+        "1": 677919,
+        "2": 676885,
+        "3": 675728,
+        "7": 655552,
+        "14": 617495,
+        "30": 573636
+      },
+      "photo_url": "/static/ff_players/13830.png",
+      "team_crest_url": "/static/ff_teams/1.png"
+    },
+    {
+      "id": "1119",
+      "name": "Facundo Garcés",
+      "team": "Alavés",
+      "position": "DEF",
+      "price": 681440,
+      "price_increment": 986,
+      "price_history": {
+        "0": 681440,
+        "1": 680454,
+        "2": 679526,
+        "3": 678479,
+        "7": 658793,
+        "14": 621808,
+        "30": 581923
+      },
+      "photo_url": "/static/ff_players/14045.png",
+      "team_crest_url": "/static/ff_teams/28.png"
+    },
+    {
+      "id": "551",
+      "name": "Fermín López",
+      "team": "Barcelona",
+      "position": "MED",
+      "price": 128739316,
+      "price_increment": -3106927,
+      "price_history": {
+        "0": 128739316,
+        "1": 131846243,
+        "2": 135046159,
+        "3": 138272403,
+        "7": 140878693,
+        "14": 126541853,
+        "30": 96467651
+      },
+      "photo_url": "/static/ff_players/11709.png",
+      "team_crest_url": "/static/ff_teams/3.png"
+    },
+    {
+      "id": "1124",
+      "name": "Iván Villar",
+      "team": "Celta",
+      "position": "POR",
+      "price": 686947,
+      "price_increment": 756,
+      "price_history": {
+        "0": 686947,
+        "1": 686191,
+        "2": 685502,
+        "3": 684704,
+        "7": 666121,
+        "14": 631562,
+        "30": 600668
+      },
+      "photo_url": "/static/ff_players/3255.png",
+      "team_crest_url": "/static/ff_teams/5.png"
+    },
+    {
+      "id": "657",
+      "name": "Trent Alexander-Arnold",
+      "team": "Real Madrid",
+      "position": "DEF",
+      "price": 6567595,
+      "price_increment": -86863,
+      "price_history": {
+        "0": 6567595,
+        "1": 6654458,
+        "2": 6740653,
+        "3": 6831082,
+        "7": 7262793,
+        "14": 8274537,
+        "30": 10780649
+      },
+      "photo_url": "/static/ff_players/4480.png",
       "team_crest_url": "/static/ff_teams/15.png"
+    },
+    {
+      "id": "1133",
+      "name": "Noé Carrillo",
+      "team": "Deportivo",
+      "position": "MED",
+      "price": 707511,
+      "price_increment": -101,
+      "price_history": {
+        "0": 707511,
+        "1": 707612,
+        "2": 707816,
+        "3": 707947,
+        "7": 693486,
+        "14": 667976,
+        "30": 670637
+      },
+      "photo_url": "/static/ff_players/16976.png",
+      "team_crest_url": "/static/ff_teams/6.png"
     }
   ]
 }

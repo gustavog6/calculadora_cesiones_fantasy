@@ -1918,6 +1918,69 @@ tr.fuerte td { font-weight: 600; }
   border-color: transparent;
 }
 
+/* Bloque rendimiento LALIGA Fantasy DAZN en ficha */
+.ficha-fantasy-box {
+  display: grid;
+  gap: 7px;
+  padding: 9px 11px;
+  border-radius: 9px;
+  background: var(--campo);
+  border: 1px solid var(--line);
+}
+.ficha-fantasy-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+.ficha-fantasy-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+}
+.ficha-fantasy-cell {
+  display: grid;
+  gap: 2px;
+  padding: 6px 8px;
+  border-radius: 7px;
+  background: var(--papel);
+  border: 1px solid var(--line);
+}
+.ficha-fantasy-lbl {
+  font-size: 10.5px;
+  color: var(--muted);
+}
+.ficha-fantasy-val {
+  font-family: var(--font-mono);
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.ficha-fantasy-val.hi { color: var(--pitch); }
+.ficha-fitness-strip {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.fit-pill {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 5px;
+  background: var(--papel);
+  border: 1px solid var(--line);
+  color: var(--ink);
+}
+.fit-pill.high { border-color: var(--pitch); color: var(--pitch); }
+.fit-pill.low { border-color: var(--alert); color: var(--alert); }
+@media (max-width: 560px) {
+  .ficha-fantasy-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
 /* Sparkline SVG historial de precio */
 .sparkline-box {
   display: grid;
@@ -2336,9 +2399,10 @@ tr.fuerte td { font-weight: 600; }
         </div>
 
         <!-- 1. Precio -->
-        <select class="exp-select" id="exp-orden" aria-label="Ordenar por precio o fluctuación">
+        <select class="exp-select" id="exp-orden" aria-label="Ordenar por precio, puntos o fluctuación">
           <option value="price_desc">Precio: mayor a menor</option>
           <option value="price_asc">Precio: menor a mayor</option>
+          <option value="pts_desc">Puntos Fantasy: mayor a menor</option>
           <option value="inc_desc">Mayor subida diaria</option>
           <option value="inc_asc">Mayor bajada diaria</option>
           <option value="pct_desc">Mayor % de subida</option>
@@ -2547,6 +2611,31 @@ tr.fuerte td { font-weight: 600; }
       <div class="ficha-laliga-strip" id="exp-laliga-strip" hidden>
         <span id="exp-team-standing">—</span>
         <div class="ficha-stats-inline" id="exp-personal-stats"></div>
+      </div>
+
+      <div class="ficha-fantasy-box" id="exp-fantasy-box" hidden>
+        <div class="ficha-fantasy-head">
+          <span>Rendimiento LALIGA Fantasy DAZN</span>
+          <div class="ficha-fitness-strip" id="exp-fitness-strip"></div>
+        </div>
+        <div class="ficha-fantasy-grid">
+          <div class="ficha-fantasy-cell">
+            <span class="ficha-fantasy-lbl">Puntos totales</span>
+            <span class="ficha-fantasy-val hi" id="exp-pts-total">—</span>
+          </div>
+          <div class="ficha-fantasy-cell">
+            <span class="ficha-fantasy-lbl">Media / PJ</span>
+            <span class="ficha-fantasy-val" id="exp-pts-media">—</span>
+          </div>
+          <div class="ficha-fantasy-cell">
+            <span class="ficha-fantasy-lbl">Última jornada</span>
+            <span class="ficha-fantasy-val" id="exp-pts-ultima">—</span>
+          </div>
+          <div class="ficha-fantasy-cell">
+            <span class="ficha-fantasy-lbl">Minutos jugados</span>
+            <span class="ficha-fantasy-val" id="exp-minutos">—</span>
+          </div>
+        </div>
       </div>
 
       <div class="ficha-metricas">
@@ -3894,6 +3983,11 @@ const PlayerExplorer = (function() {
 
       if (currentSort === 'price_desc') return pb - pa;
       if (currentSort === 'price_asc') return pa - pb;
+      if (currentSort === 'pts_desc') {
+        const pta = typeof a.points === 'number' ? a.points : -Infinity;
+        const ptb = typeof b.points === 'number' ? b.points : -Infinity;
+        return ptb - pta || pb - pa;
+      }
       if (currentSort === 'inc_desc') return ib - ia || pb - pa;
       if (currentSort === 'inc_asc') return ia - ib || pb - pa;
       if (currentSort === 'pct_desc') {
@@ -4059,11 +4153,45 @@ const PlayerExplorer = (function() {
         if (player.position === 'POR' || pStats.saves > 0) {
           statsHtml.push('<span><b>' + pStats.saves + '</b> Paradas</span>');
         }
+        if (typeof pStats.minutes === 'number' && pStats.minutes > 0) {
+          statsHtml.push('<span><b>' + Formato.numero(pStats.minutes) + '\'</b> Min</span>');
+        }
       }
       $('exp-personal-stats').innerHTML = statsHtml.join('');
       strip.hidden = false;
     } else {
       strip.hidden = true;
+    }
+
+    // Bloque LALIGA Fantasy DAZN (puntos totales, media, última jornada y minutos)
+    const fanBox = $('exp-fantasy-box');
+    if (fanBox) {
+      const hasPts = typeof player.points === 'number' && Number.isFinite(player.points);
+      const hasAvg = typeof player.avg_points === 'number' && Number.isFinite(player.avg_points);
+      const hasLast = typeof player.last_points === 'number' && Number.isFinite(player.last_points);
+      const hasMins = pStats && typeof pStats.minutes === 'number' && pStats.minutes > 0;
+      if (hasPts || hasAvg || hasLast || hasMins) {
+        $('exp-pts-total').textContent = hasPts ? Formato.numero(player.points) + ' pts' : '—';
+        $('exp-pts-media').textContent = hasAvg ? String(player.avg_points).replace('.', ',') + ' pts' : '—';
+        $('exp-pts-ultima').textContent = hasLast ? player.last_points + ' pts' : '—';
+        $('exp-minutos').textContent = hasMins
+          ? Formato.numero(pStats.minutes) + '\'' + (typeof pStats.starts === 'number' ? ' (' + pStats.starts + ' tit.)' : '')
+          : '—';
+        const fitEl = $('exp-fitness-strip');
+        if (fitEl) {
+          const fit = Array.isArray(player.fitness) ? player.fitness : [];
+          fitEl.innerHTML = fit.length > 0
+            ? '<span style="font-size:10.5px;color:var(--muted);margin-right:2px;">Últ. ' + fit.length + ':</span>' +
+              fit.map(function(v) {
+                const cls = v >= 10 ? ' high' : (v <= 2 ? ' low' : '');
+                return '<span class="fit-pill' + cls + '">' + escapeHTML(String(v)) + '</span>';
+              }).join('')
+            : '';
+        }
+        fanBox.hidden = false;
+      } else {
+        fanBox.hidden = true;
+      }
     }
 
     // Sparkline SVG de historial de precio (solo si price_history real existe)
@@ -4276,6 +4404,31 @@ const PlayerExplorer = (function() {
         label: 'Proyección 7 días',
         render: function(p, m) {
           return '<span class="cmp-val">' + escapeHTML(m.proj7d !== null ? Formato.euros(m.proj7d) : '—') + '</span>';
+        }
+      },
+      {
+        label: 'Puntos Fantasy',
+        render: function(p) {
+          if (typeof p.points !== 'number') return '<span class="cmp-val">—</span>';
+          const avg = typeof p.avg_points === 'number' ? ' · ' + String(p.avg_points).replace('.', ',') + '/PJ' : '';
+          return '<span class="cmp-val"><b>' + escapeHTML(Formato.numero(p.points)) + ' pts</b>' + escapeHTML(avg) + '</span>';
+        }
+      },
+      {
+        label: 'Última jornada',
+        render: function(p) {
+          if (typeof p.last_points !== 'number') return '<span class="cmp-val">—</span>';
+          const fit = Array.isArray(p.fitness) && p.fitness.length > 1 ? ' (' + p.fitness.join('·') + ')' : '';
+          return '<span class="cmp-val">' + escapeHTML(p.last_points + ' pts' + fit) + '</span>';
+        }
+      },
+      {
+        label: 'Minutos jugados',
+        render: function(p) {
+          const st = LaLigaService.getPlayerStats(p);
+          if (!st || typeof st.minutes !== 'number' || st.minutes <= 0) return '<span class="cmp-val">—</span>';
+          const startsTxt = typeof st.starts === 'number' ? ' · ' + st.starts + ' tit.' : '';
+          return '<span class="cmp-val">' + escapeHTML(Formato.numero(st.minutes) + '\'' + startsTxt) + '</span>';
         }
       },
       {

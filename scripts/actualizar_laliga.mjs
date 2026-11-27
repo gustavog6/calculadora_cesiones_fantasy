@@ -156,6 +156,71 @@ function extractStat(athlete, statName) {
   return 0;
 }
 
+function parseClockMinute(displayValue) {
+  const m = String(displayValue || '').match(/(\d+)/);
+  if (!m) return null;
+  const n = Number(m[1]);
+  return Number.isFinite(n) ? Math.max(1, Math.min(90, n)) : null;
+}
+
+function calcPlayerMatchMinutes(entry) {
+  const starter = Boolean(entry?.starter);
+  const subbedIn = Boolean(entry?.subbedIn);
+  const subbedOut = Boolean(entry?.subbedOut);
+  if (!starter && !subbedIn) return 0;
+
+  const plays = Array.isArray(entry?.plays) ? entry.plays : [];
+  const subMins = plays
+    .filter((p) => p && p.substitution)
+    .map((p) => parseClockMinute(p.clock?.displayValue))
+    .filter((n) => n !== null);
+  const redMin = plays
+    .filter((p) => p && p.redCard)
+    .map((p) => parseClockMinute(p.clock?.displayValue))
+    .find((n) => n !== null) || null;
+
+  if (starter) {
+    if (subbedOut && subMins.length > 0) return subMins[0];
+    if (redMin !== null) return redMin;
+    return 90;
+  }
+
+  // Entró desde el banquillo
+  const inMin = subMins.length > 0 ? subMins[0] : null;
+  if (inMin === null) return 0;
+  if (subbedOut && subMins.length > 1) return Math.max(1, subMins[1] - inMin);
+  if (redMin !== null && redMin >= inMin) return Math.max(1, redMin - inMin);
+  return Math.max(1, 90 - inMin);
+}
+
+async function fetchMatchMinutesByPlayer(eventIds) {
+  const minutesMap = new Map();
+  const summaries = await mapConcurrent(eventIds, 8, (evId) =>
+    fetchJson(`${BASE_SITE}/summary?event=${encodeURIComponent(evId)}`).catch(() => null)
+  );
+
+  for (const sum of summaries) {
+    if (!sum || !Array.isArray(sum.rosters)) continue;
+    for (const teamRoster of sum.rosters) {
+      const teamName = toFantasyTeamName(teamRoster?.team?.displayName || teamRoster?.team?.name || '');
+      if (!teamName) continue;
+      for (const entry of teamRoster.roster || []) {
+        const athName = entry?.athlete?.displayName || entry?.athlete?.fullName || '';
+        if (!athName) continue;
+        const mins = calcPlayerMatchMinutes(entry);
+        const isStarter = Boolean(entry?.starter);
+        if (mins <= 0 && !isStarter) continue;
+        const key = `${norm(teamName)}::${norm(athName)}`;
+        const prev = minutesMap.get(key) || { minutes: 0, starts: 0 };
+        prev.minutes += mins;
+        if (isStarter) prev.starts += 1;
+        minutesMap.set(key, prev);
+      }
+    }
+  }
+  return minutesMap;
+}
+
 async function mapConcurrent(items, limit, fn) {
   const results = new Array(items.length);
   let idx = 0;
@@ -192,10 +257,12 @@ async function processTeam(entry) {
   const home = emptySplit();
   const away = emptySplit();
   const completedMatches = [];
+  const completedEventIds = [];
 
   for (const ev of schedRes.events || []) {
     const comp = ev.competitions?.[0];
     if (!comp?.status?.type?.completed) continue;
+    if (ev.id) completedEventIds.push(String(ev.id));
     const comps = comp.competitors || [];
     const me = comps.find((c) => String(c.team?.id) === teamId);
     const opp = comps.find((c) => String(c.team?.id) !== teamId);
@@ -287,7 +354,8 @@ async function processTeam(entry) {
       form,
       upcoming
     },
-    rosterPlayers
+    rosterPlayers,
+    completedEventIds
   };
 }
 
@@ -301,6 +369,9 @@ async function main() {
   const processed = await mapConcurrent(entries, CONCURRENCY, processTeam);
   const standings = processed.map((x) => x.standing).sort((a, b) => (a.rank || 99) - (b.rank || 99));
   standings.forEach((t, i) => { if (!t.rank) t.rank = i + 1; });
+
+  const uniqueEventIds = Array.from(new Set(processed.flatMap((x) => x.completedEventIds || [])));
+  const minutesByPlayer = await fetchMatchMinutesByPlayer(uniqueEventIds);
 
   const allRoster = processed.flatMap((x) => x.rosterPlayers);
 
@@ -322,12 +393,27 @@ async function main() {
   const playerStats = {};
   for (const p of allRoster) {
     const key = `${norm(p.team)}::${norm(p.name)}`;
+    const minInfo = minutesByPlayer.get(key);
     playerStats[key] = {
       goals: p.goals,
       assists: p.assists,
       saves: p.saves,
-      appearances: p.appearances
+      appearances: p.appearances,
+      minutes: minInfo ? minInfo.minutes : undefined,
+      starts: minInfo ? minInfo.starts : undefined
     };
+  }
+  for (const [key, minInfo] of minutesByPlayer.entries()) {
+    if (!playerStats[key]) {
+      playerStats[key] = {
+        goals: 0,
+        assists: 0,
+        saves: 0,
+        appearances: minInfo.starts,
+        minutes: minInfo.minutes,
+        starts: minInfo.starts
+      };
+    }
   }
 
   const output = {

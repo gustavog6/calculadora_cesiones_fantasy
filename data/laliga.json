@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T20:44:36.345Z",
+  "updated_at": "2026-11-27T22:13:15.856Z",
   "season": "2026-27 LALIGA",
   "source": "ESPN Public API (esp.1)",
   "standings": [
@@ -564,8 +564,120 @@
       ]
     },
     {
-      "id": "243",
+      "id": "87",
       "rank": 6,
+      "team": "Racing",
+      "espnName": "Racing Santander",
+      "abbr": "RAC",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png",
+      "general": {
+        "pj": 14,
+        "pts": 20,
+        "v": 6,
+        "e": 2,
+        "d": 6,
+        "gf": 23,
+        "gc": 33,
+        "dg": -10
+      },
+      "home": {
+        "pj": 7,
+        "pts": 14,
+        "v": 4,
+        "e": 2,
+        "d": 1,
+        "gf": 14,
+        "gc": 13,
+        "dg": 1
+      },
+      "away": {
+        "pj": 7,
+        "pts": 6,
+        "v": 2,
+        "e": 0,
+        "d": 5,
+        "gf": 9,
+        "gc": 20,
+        "dg": -11
+      },
+      "form": [
+        {
+          "date": "2026-10-24T14:15Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Espanyol",
+          "oppAbbr": "ESP",
+          "score": "2-1"
+        },
+        {
+          "date": "2026-11-01T15:15Z",
+          "res": "D",
+          "loc": "L",
+          "opp": "Real Madrid",
+          "oppAbbr": "RMA",
+          "score": "0-3"
+        },
+        {
+          "date": "2026-11-07T13:00Z",
+          "res": "V",
+          "loc": "V",
+          "opp": "Málaga",
+          "oppAbbr": "MCF",
+          "score": "2-1"
+        },
+        {
+          "date": "2026-11-22T15:15Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Real Sociedad",
+          "oppAbbr": "RSO",
+          "score": "3-2"
+        },
+        {
+          "date": "2026-11-27T20:00Z",
+          "res": "V",
+          "loc": "V",
+          "opp": "Levante",
+          "oppAbbr": "LEV",
+          "score": "3-1"
+        }
+      ],
+      "upcoming": [
+        {
+          "date": "2026-12-05T13:00Z",
+          "loc": "L",
+          "opp": "Deportivo",
+          "oppAbbr": "DEP"
+        },
+        {
+          "date": "2026-12-12T20:00Z",
+          "loc": "V",
+          "opp": "Betis",
+          "oppAbbr": "BET"
+        },
+        {
+          "date": "2026-12-20T20:00Z",
+          "loc": "V",
+          "opp": "Sevilla",
+          "oppAbbr": "SEV"
+        },
+        {
+          "date": "2027-01-03T20:00Z",
+          "loc": "L",
+          "opp": "Athletic",
+          "oppAbbr": "ATH"
+        },
+        {
+          "date": "2027-01-10T20:00Z",
+          "loc": "V",
+          "opp": "Atlético",
+          "oppAbbr": "ATM"
+        }
+      ]
+    },
+    {
+      "id": "243",
+      "rank": 7,
       "team": "Sevilla",
       "espnName": "Sevilla",
       "abbr": "SEV",
@@ -672,118 +784,6 @@
           "loc": "V",
           "opp": "Villarreal",
           "oppAbbr": "VIL"
-        }
-      ]
-    },
-    {
-      "id": "87",
-      "rank": 7,
-      "team": "Racing",
-      "espnName": "Racing Santander",
-      "abbr": "RAC",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png",
-      "general": {
-        "pj": 13,
-        "pts": 17,
-        "v": 5,
-        "e": 2,
-        "d": 6,
-        "gf": 20,
-        "gc": 32,
-        "dg": -12
-      },
-      "home": {
-        "pj": 7,
-        "pts": 14,
-        "v": 4,
-        "e": 2,
-        "d": 1,
-        "gf": 14,
-        "gc": 13,
-        "dg": 1
-      },
-      "away": {
-        "pj": 6,
-        "pts": 3,
-        "v": 1,
-        "e": 0,
-        "d": 5,
-        "gf": 6,
-        "gc": 19,
-        "dg": -13
-      },
-      "form": [
-        {
-          "date": "2026-10-18T12:00Z",
-          "res": "D",
-          "loc": "V",
-          "opp": "Osasuna",
-          "oppAbbr": "OSA",
-          "score": "0-2"
-        },
-        {
-          "date": "2026-10-24T14:15Z",
-          "res": "V",
-          "loc": "L",
-          "opp": "Espanyol",
-          "oppAbbr": "ESP",
-          "score": "2-1"
-        },
-        {
-          "date": "2026-11-01T15:15Z",
-          "res": "D",
-          "loc": "L",
-          "opp": "Real Madrid",
-          "oppAbbr": "RMA",
-          "score": "0-3"
-        },
-        {
-          "date": "2026-11-07T13:00Z",
-          "res": "V",
-          "loc": "V",
-          "opp": "Málaga",
-          "oppAbbr": "MCF",
-          "score": "2-1"
-        },
-        {
-          "date": "2026-11-22T15:15Z",
-          "res": "V",
-          "loc": "L",
-          "opp": "Real Sociedad",
-          "oppAbbr": "RSO",
-          "score": "3-2"
-        }
-      ],
-      "upcoming": [
-        {
-          "date": "2026-11-27T20:00Z",
-          "loc": "V",
-          "opp": "Levante",
-          "oppAbbr": "LEV"
-        },
-        {
-          "date": "2026-12-05T13:00Z",
-          "loc": "L",
-          "opp": "Deportivo",
-          "oppAbbr": "DEP"
-        },
-        {
-          "date": "2026-12-12T20:00Z",
-          "loc": "V",
-          "opp": "Betis",
-          "oppAbbr": "BET"
-        },
-        {
-          "date": "2026-12-20T20:00Z",
-          "loc": "V",
-          "opp": "Sevilla",
-          "oppAbbr": "SEV"
-        },
-        {
-          "date": "2027-01-03T20:00Z",
-          "loc": "L",
-          "opp": "Athletic",
-          "oppAbbr": "ATH"
         }
       ]
     },
@@ -1579,24 +1579,24 @@
       "abbr": "LEV",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png",
       "general": {
-        "pj": 13,
+        "pj": 14,
         "pts": 12,
         "v": 2,
         "e": 6,
-        "d": 5,
-        "gf": 17,
-        "gc": 22,
-        "dg": -5
+        "d": 6,
+        "gf": 18,
+        "gc": 25,
+        "dg": -7
       },
       "home": {
-        "pj": 6,
+        "pj": 7,
         "pts": 8,
         "v": 2,
         "e": 2,
-        "d": 2,
-        "gf": 14,
-        "gc": 13,
-        "dg": 1
+        "d": 3,
+        "gf": 15,
+        "gc": 16,
+        "dg": -1
       },
       "away": {
         "pj": 7,
@@ -1609,14 +1609,6 @@
         "dg": -6
       },
       "form": [
-        {
-          "date": "2026-10-21T18:00Z",
-          "res": "V",
-          "loc": "L",
-          "opp": "Athletic",
-          "oppAbbr": "ATH",
-          "score": "3-1"
-        },
         {
           "date": "2026-10-25T17:30Z",
           "res": "D",
@@ -1648,15 +1640,17 @@
           "opp": "Elche",
           "oppAbbr": "ELC",
           "score": "1-1"
+        },
+        {
+          "date": "2026-11-27T20:00Z",
+          "res": "D",
+          "loc": "L",
+          "opp": "Racing",
+          "oppAbbr": "RAC",
+          "score": "1-3"
         }
       ],
       "upcoming": [
-        {
-          "date": "2026-11-27T20:00Z",
-          "loc": "L",
-          "opp": "Racing",
-          "oppAbbr": "RAC"
-        },
         {
           "date": "2026-12-05T15:15Z",
           "loc": "V",
@@ -1680,6 +1674,12 @@
           "loc": "L",
           "opp": "Valencia",
           "oppAbbr": "VAL"
+        },
+        {
+          "date": "2027-01-10T20:00Z",
+          "loc": "V",
+          "opp": "Real Madrid",
+          "oppAbbr": "RMA"
         }
       ]
     },
@@ -3157,19 +3157,25 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 1
+      "appearances": 1,
+      "minutes": 45,
+      "starts": 0
     },
     "barcelona::dominik livakovic": {
       "goals": 0,
       "assists": 0,
       "saves": 2,
-      "appearances": 1
+      "appearances": 1,
+      "minutes": 90,
+      "starts": 1
     },
     "barcelona::joan garcia": {
       "goals": 0,
       "assists": 0,
       "saves": 23,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 1035,
+      "starts": 12
     },
     "barcelona::iker rodriguez": {
       "goals": 0,
@@ -3193,49 +3199,65 @@
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 704,
+      "starts": 8
     },
     "barcelona::joao cancelo": {
       "goals": 1,
       "assists": 1,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 508,
+      "starts": 6
     },
     "barcelona::andreas christensen": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 432,
+      "starts": 4
     },
     "barcelona::jules kounde": {
       "goals": 1,
       "assists": 1,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 357,
+      "starts": 3
     },
     "barcelona::gerard martin": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 849,
+      "starts": 10
     },
     "barcelona::alejandro balde": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 100,
+      "starts": 0
     },
     "barcelona::pau cubarsi": {
       "goals": 0,
       "assists": 2,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 782,
+      "starts": 9
     },
     "barcelona::xavi espart": {
       "goals": 1,
       "assists": 2,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 650,
+      "starts": 8
     },
     "barcelona::guillem victor": {
       "goals": 0,
@@ -3253,49 +3275,65 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 4
+      "appearances": 4,
+      "minutes": 233,
+      "starts": 2
     },
     "barcelona::dani olmo": {
       "goals": 1,
       "assists": 3,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 370,
+      "starts": 3
     },
     "barcelona::rodri": {
       "goals": 1,
       "assists": 1,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 697,
+      "starts": 8
     },
     "barcelona::pedri": {
       "goals": 1,
       "assists": 3,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 935,
+      "starts": 11
     },
     "barcelona::gavi": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 6
+      "appearances": 6,
+      "minutes": 163,
+      "starts": 2
     },
     "barcelona::fermin lopez": {
       "goals": 8,
       "assists": 5,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 844,
+      "starts": 10
     },
     "barcelona::marc bernal": {
       "goals": 0,
       "assists": 2,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 520,
+      "starts": 5
     },
     "barcelona::brian farinas": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 2
+      "appearances": 2,
+      "minutes": 135,
+      "starts": 2
     },
     "barcelona::orian goren": {
       "goals": 0,
@@ -3313,25 +3351,33 @@
       "goals": 3,
       "assists": 1,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 227,
+      "starts": 2
     },
     "barcelona::raphinha": {
       "goals": 15,
       "assists": 3,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 903,
+      "starts": 11
     },
     "barcelona::anthony gordon": {
       "goals": 2,
       "assists": 4,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 705,
+      "starts": 8
     },
     "barcelona::karim adeyemi": {
       "goals": 2,
       "assists": 2,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 490,
+      "starts": 5
     },
     "barcelona::roony bardghji": {
       "goals": 0,
@@ -3343,7 +3389,9 @@
       "goals": 10,
       "assists": 9,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1085,
+      "starts": 13
     },
     "barcelona::jesse bisiwu": {
       "goals": 0,
@@ -3355,7 +3403,9 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 2
+      "appearances": 2,
+      "minutes": 12,
+      "starts": 0
     },
     "barcelona::oscar gistau": {
       "goals": 0,
@@ -3373,13 +3423,17 @@
       "goals": 0,
       "assists": 0,
       "saves": 35,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 1080,
+      "starts": 12
     },
     "real madrid::andriy lunin": {
       "goals": 0,
       "assists": 0,
       "saves": 5,
-      "appearances": 1
+      "appearances": 1,
+      "minutes": 90,
+      "starts": 1
     },
     "real madrid::sergio mestre": {
       "goals": 0,
@@ -3397,13 +3451,17 @@
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 4
+      "appearances": 4,
+      "minutes": 306,
+      "starts": 3
     },
     "real madrid::denzel dumfries": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 447,
+      "starts": 5
     },
     "real madrid::ferland mendy": {
       "goals": 0,
@@ -3415,31 +3473,41 @@
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 413,
+      "starts": 5
     },
     "real madrid::eder militao": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 1
+      "appearances": 1,
+      "minutes": 5,
+      "starts": 0
     },
     "real madrid::ibrahima konate": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 1080,
+      "starts": 12
     },
     "real madrid::marc cucurella": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 868,
+      "starts": 8
     },
     "real madrid::alvaro carreras": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 6
+      "appearances": 6,
+      "minutes": 303,
+      "starts": 5
     },
     "real madrid::mario rivas": {
       "goals": 0,
@@ -3451,7 +3519,9 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 952,
+      "starts": 11
     },
     "real madrid::raul asencio": {
       "goals": 0,
@@ -3475,49 +3545,65 @@
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 600,
+      "starts": 7
     },
     "real madrid::federico valverde": {
       "goals": 1,
       "assists": 2,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 924,
+      "starts": 11
     },
     "real madrid::brahim diaz": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 6
+      "appearances": 6,
+      "minutes": 149,
+      "starts": 1
     },
     "real madrid::aurelien tchouameni": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 628,
+      "starts": 7
     },
     "real madrid::eduardo camavinga": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 373,
+      "starts": 3
     },
     "real madrid::jude bellingham": {
       "goals": 5,
       "assists": 3,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1049,
+      "starts": 12
     },
     "real madrid::arda guler": {
       "goals": 3,
       "assists": 4,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 835,
+      "starts": 11
     },
     "real madrid::thiago pitarch": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 1
+      "appearances": 1,
+      "minutes": 1,
+      "starts": 0
     },
     "real madrid::sergio martinez": {
       "goals": 0,
@@ -3541,13 +3627,17 @@
       "goals": 13,
       "assists": 3,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1165,
+      "starts": 13
     },
     "real madrid::vinicius junior": {
       "goals": 1,
       "assists": 3,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 618,
+      "starts": 7
     },
     "real madrid::rodrygo": {
       "goals": 0,
@@ -3559,7 +3649,9 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 5
+      "appearances": 5,
+      "minutes": 103,
+      "starts": 1
     },
     "real madrid::daniel yanez": {
       "goals": 0,
@@ -3571,19 +3663,25 @@
       "goals": 3,
       "assists": 0,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 43,
+      "starts": 0
     },
     "real madrid::yan diomande": {
       "goals": 3,
       "assists": 2,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 787,
+      "starts": 8
     },
     "atletico::jan oblak": {
       "goals": 0,
       "assists": 0,
       "saves": 33,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1170,
+      "starts": 13
     },
     "atletico::juan musso": {
       "goals": 0,
@@ -3601,31 +3699,41 @@
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 6
+      "appearances": 6,
+      "minutes": 435,
+      "starts": 5
     },
     "atletico::alejandro grimaldo": {
       "goals": 5,
       "assists": 2,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 1030,
+      "starts": 11
     },
     "atletico::robin le normand": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 468,
+      "starts": 5
     },
     "atletico::david hancko": {
       "goals": 0,
       "assists": 2,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1023,
+      "starts": 11
     },
     "atletico::marc pubill": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 763,
+      "starts": 9
     },
     "atletico::arnau sola": {
       "goals": 0,
@@ -3637,13 +3745,17 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 1
+      "appearances": 1,
+      "minutes": 45,
+      "starts": 1
     },
     "atletico::daniel martinez": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 2
+      "appearances": 2,
+      "minutes": 135,
+      "starts": 2
     },
     "atletico::javier gil": {
       "goals": 0,
@@ -3661,13 +3773,17 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 6
+      "appearances": 6,
+      "minutes": 163,
+      "starts": 2
     },
     "atletico::koke": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 610,
+      "starts": 6
     },
     "atletico::jorge castillo": {
       "goals": 0,
@@ -3679,31 +3795,41 @@
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 950,
+      "starts": 10
     },
     "atletico::lee kang in": {
       "goals": 2,
       "assists": 1,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 803,
+      "starts": 10
     },
     "atletico::morten hjulmand": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 620,
+      "starts": 7
     },
     "atletico::johnny cardoso": {
       "goals": 1,
       "assists": 1,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 378,
+      "starts": 4
     },
     "atletico::alex baena": {
       "goals": 6,
       "assists": 3,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 833,
+      "starts": 9
     },
     "atletico::obed vargas": {
       "goals": 0,
@@ -3715,43 +3841,57 @@
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 695,
+      "starts": 9
     },
     "atletico::alexander s rloth": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 5
+      "appearances": 5,
+      "minutes": 108,
+      "starts": 0
     },
     "atletico::ademola lookman": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 609,
+      "starts": 9
     },
     "atletico::jonathan david": {
       "goals": 3,
       "assists": 2,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 330,
+      "starts": 4
     },
     "atletico::julian alvarez": {
       "goals": 1,
       "assists": 4,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 495,
+      "starts": 4
     },
     "atletico::giuliano simeone": {
       "goals": 4,
       "assists": 2,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 952,
+      "starts": 10
     },
     "atletico::arnau ortiz": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 5
+      "appearances": 5,
+      "minutes": 149,
+      "starts": 1
     },
     "atletico::miguel cubo": {
       "goals": 0,
@@ -3769,7 +3909,9 @@
       "goals": 0,
       "assists": 0,
       "saves": 52,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1170,
+      "starts": 13
     },
     "betis::manu gonzalez": {
       "goals": 0,
@@ -3799,103 +3941,137 @@
       "goals": 3,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 625,
+      "starts": 7
     },
     "betis::hector bellerin": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 937,
+      "starts": 10
     },
     "betis::diego llorente": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 5
+      "appearances": 5,
+      "minutes": 377,
+      "starts": 5
     },
     "betis::fran garcia": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 931,
+      "starts": 10
     },
     "betis::junior firpo": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 2
+      "appearances": 2,
+      "minutes": 149,
+      "starts": 2
     },
     "betis::natan": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 990,
+      "starts": 11
     },
     "betis::valentin gomez": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 5
+      "appearances": 5,
+      "minutes": 438,
+      "starts": 4
     },
     "betis::angel ortiz": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 5
+      "appearances": 5,
+      "minutes": 233,
+      "starts": 3
     },
     "betis::rodrigo riquelme": {
       "goals": 3,
       "assists": 0,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 490,
+      "starts": 6
     },
     "betis::isco": {
       "goals": 2,
       "assists": 2,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 704,
+      "starts": 9
     },
     "betis::dani ceballos": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 258,
+      "starts": 2
     },
     "betis::giovani lo celso": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 92,
+      "starts": 1
     },
     "betis::pablo fornals": {
       "goals": 1,
       "assists": 1,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 878,
+      "starts": 10
     },
     "betis::marc roca": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 866,
+      "starts": 10
     },
     "betis::alvaro fidalgo": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 4
+      "appearances": 4,
+      "minutes": 66,
+      "starts": 0
     },
     "betis::nelson deossa": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 466,
+      "starts": 4
     },
     "betis::facundo bernal": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 468,
+      "starts": 6
     },
     "betis::ivan corralejo": {
       "goals": 0,
@@ -3913,19 +4089,25 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 98,
+      "starts": 1
     },
     "betis::troy parrott": {
       "goals": 1,
       "assists": 1,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 415,
+      "starts": 4
     },
     "betis::antony": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 779,
+      "starts": 9
     },
     "betis::iker losada": {
       "goals": 0,
@@ -3937,19 +4119,25 @@
       "goals": 3,
       "assists": 0,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 753,
+      "starts": 9
     },
     "betis::cucho hernandez": {
       "goals": 2,
       "assists": 2,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 589,
+      "starts": 7
     },
     "betis::jose morante": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 2
+      "appearances": 2,
+      "minutes": 13,
+      "starts": 0
     },
     "betis::rodrigo marina": {
       "goals": 0,
@@ -3967,13 +4155,17 @@
       "goals": 0,
       "assists": 0,
       "saves": 41,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 1080,
+      "starts": 12
     },
     "real sociedad::unai marrero": {
       "goals": 0,
       "assists": 0,
       "saves": 8,
-      "appearances": 1
+      "appearances": 1,
+      "minutes": 90,
+      "starts": 1
     },
     "real sociedad::aitor fraga": {
       "goals": 0,
@@ -3985,7 +4177,9 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 623,
+      "starts": 6
     },
     "real sociedad::alvaro odriozola": {
       "goals": 0,
@@ -3997,37 +4191,49 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 5
+      "appearances": 5,
+      "minutes": 198,
+      "starts": 2
     },
     "real sociedad::jon pacheco": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 1
+      "appearances": 1,
+      "minutes": 20,
+      "starts": 0
     },
     "real sociedad::jon aramburu": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 797,
+      "starts": 9
     },
     "real sociedad::mamadou sarr": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 598,
+      "starts": 7
     },
     "real sociedad::hector fort": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 232,
+      "starts": 3
     },
     "real sociedad::jon martin": {
       "goals": 1,
       "assists": 1,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 906,
+      "starts": 10
     },
     "real sociedad::inaki ruperez": {
       "goals": 0,
@@ -4039,43 +4245,57 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 270,
+      "starts": 3
     },
     "real sociedad::carlos soler": {
       "goals": 1,
       "assists": 3,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 871,
+      "starts": 10
     },
     "real sociedad::yangel herrera": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 512,
+      "starts": 6
     },
     "real sociedad::benat turrientes": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 420,
+      "starts": 5
     },
     "real sociedad::luka sucic": {
       "goals": 4,
       "assists": 0,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 958,
+      "starts": 11
     },
     "real sociedad::arsen zakharyan": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 6
+      "appearances": 6,
+      "minutes": 84,
+      "starts": 1
     },
     "real sociedad::pablo marin": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 1
+      "appearances": 1,
+      "minutes": 66,
+      "starts": 1
     },
     "real sociedad::alex lebarbier": {
       "goals": 0,
@@ -4087,7 +4307,9 @@
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 490,
+      "starts": 5
     },
     "real sociedad::ibai aguirre": {
       "goals": 0,
@@ -4099,37 +4321,49 @@
       "goals": 3,
       "assists": 1,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 644,
+      "starts": 7
     },
     "real sociedad::mikel oyarzabal": {
       "goals": 3,
       "assists": 2,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 873,
+      "starts": 10
     },
     "real sociedad::takefusa kubo": {
       "goals": 1,
       "assists": 1,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 393,
+      "starts": 5
     },
     "real sociedad::sergio gomez": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 972,
+      "starts": 11
     },
     "real sociedad::ander barrenetxea": {
       "goals": 2,
       "assists": 2,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 626,
+      "starts": 8
     },
     "real sociedad::orri oskarsson": {
       "goals": 4,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 673,
+      "starts": 7
     },
     "real sociedad::daniel diaz": {
       "goals": 0,
@@ -4141,219 +4375,19 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 5
+      "appearances": 5,
+      "minutes": 112,
+      "starts": 0
     },
     "real sociedad::job ochieng": {
       "goals": 1,
       "assists": 3,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 313,
+      "starts": 3
     },
     "real sociedad::gorka carrera": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "sevilla::rafael romero": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "sevilla::odisseas vlachodimos": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 36,
-      "appearances": 13
-    },
-    "sevilla::fran gonzalez": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "sevilla::marcao": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "sevilla::fabio cardoso": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "sevilla::gabriel suazo": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 13
-    },
-    "sevilla::jose angel carmona": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 5
-    },
-    "sevilla::juan iglesias": {
-      "goals": 1,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 13
-    },
-    "sevilla::arouna sangante": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 5
-    },
-    "sevilla::andres castrin": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 12
-    },
-    "sevilla::enrique salas": {
-      "goals": 2,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 11
-    },
-    "sevilla::julio diaz": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 6
-    },
-    "sevilla::iker ortin": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "sevilla::tamiou miguel kpebane": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "sevilla::jon guridi": {
-      "goals": 1,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 9
-    },
-    "sevilla::giorgi kochorashvili": {
-      "goals": 0,
-      "assists": 1,
-      "saves": 0,
-      "appearances": 8
-    },
-    "sevilla::ruben vargas": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 6
-    },
-    "sevilla::youssouf fofana": {
-      "goals": 1,
-      "assists": 3,
-      "saves": 0,
-      "appearances": 10
-    },
-    "sevilla::lucien agoume": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 13
-    },
-    "sevilla::manu bueno": {
-      "goals": 1,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 5
-    },
-    "sevilla::edu altozano": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "sevilla::nico guillen": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 2
-    },
-    "sevilla::jesus cruz morales": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "sevilla::chidera ejuke": {
-      "goals": 1,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 11
-    },
-    "sevilla::alfonso gonzalez": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 5
-    },
-    "sevilla::felix correia": {
-      "goals": 2,
-      "assists": 2,
-      "saves": 0,
-      "appearances": 9
-    },
-    "sevilla::robbie ure": {
-      "goals": 1,
-      "assists": 2,
-      "saves": 0,
-      "appearances": 13
-    },
-    "sevilla::lucas stassin": {
-      "goals": 1,
-      "assists": 1,
-      "saves": 0,
-      "appearances": 8
-    },
-    "sevilla::peque": {
-      "goals": 1,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 5
-    },
-    "sevilla::isaac romero": {
-      "goals": 3,
-      "assists": 2,
-      "saves": 0,
-      "appearances": 11
-    },
-    "sevilla::ibrahima sow": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "sevilla::miguel sierra": {
-      "goals": 2,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 8
-    },
-    "sevilla::manuel angel castillo rodriguez": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "sevilla::marc scuri marti": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
@@ -4363,7 +4397,9 @@
       "goals": 0,
       "assists": 0,
       "saves": 52,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1260,
+      "starts": 14
     },
     "racing::laro gomez": {
       "goals": 0,
@@ -4387,49 +4423,65 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 1077,
+      "starts": 12
     },
     "racing::aaron martin": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 246,
+      "starts": 2
     },
     "racing::manu": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 5
+      "appearances": 5,
+      "minutes": 397,
+      "starts": 4
     },
     "racing::pablo ramon": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 937,
+      "starts": 11
     },
     "racing::alvaro mantilla": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 812,
+      "starts": 10
     },
     "racing::jeanuel belocian": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 845,
+      "starts": 9
     },
     "racing::pedro felipe": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 386,
+      "starts": 5
     },
     "racing::facundo gonzalez": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 6
+      "appearances": 6,
+      "minutes": 247,
+      "starts": 3
     },
     "racing::alvaro fernandez fernandez": {
       "goals": 0,
@@ -4441,37 +4493,49 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 834,
+      "starts": 10
     },
     "racing::sergio canales": {
       "goals": 2,
       "assists": 1,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1033,
+      "starts": 13
     },
     "racing::inigo sainz": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 4
+      "appearances": 4,
+      "minutes": 122,
+      "starts": 1
     },
     "racing::andre almeida": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 294,
+      "starts": 3
     },
     "racing::ivan martin": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 969,
+      "starts": 11
     },
     "racing::maguette gueye": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 154,
+      "starts": 1
     },
     "racing::junior bita": {
       "goals": 0,
@@ -4489,7 +4553,9 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 0
+      "appearances": 0,
+      "minutes": 1,
+      "starts": 0
     },
     "racing::jorge castellanos del olmo": {
       "goals": 0,
@@ -4501,55 +4567,73 @@
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 6
+      "appearances": 6,
+      "minutes": 380,
+      "starts": 4
     },
     "racing::asier villalibre": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 268,
+      "starts": 3
     },
     "racing::inigo vicente": {
       "goals": 0,
       "assists": 3,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1146,
+      "starts": 13
     },
     "racing::giorgi guliashvili": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 90,
+      "starts": 0
     },
     "racing::juan carlos arana": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 62,
+      "starts": 1
     },
     "racing::yassir zabiri": {
       "goals": 11,
       "assists": 0,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 980,
+      "starts": 11
     },
     "racing::pablo garcia": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 394,
+      "starts": 3
     },
     "racing::iker luque": {
       "goals": 1,
       "assists": 1,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 507,
+      "starts": 5
     },
     "racing::hugo perez sanudo": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 0
+      "appearances": 0,
+      "minutes": 29,
+      "starts": 0
     },
     "racing::gabriel jimenez carpintero": {
       "goals": 0,
@@ -4563,11 +4647,263 @@
       "saves": 0,
       "appearances": 0
     },
+    "sevilla::rafael romero": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "sevilla::odisseas vlachodimos": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 36,
+      "appearances": 13,
+      "minutes": 1170,
+      "starts": 13
+    },
+    "sevilla::fran gonzalez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "sevilla::marcao": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "sevilla::fabio cardoso": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "sevilla::gabriel suazo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13,
+      "minutes": 1167,
+      "starts": 13
+    },
+    "sevilla::jose angel carmona": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5,
+      "minutes": 85,
+      "starts": 0
+    },
+    "sevilla::juan iglesias": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13,
+      "minutes": 1152,
+      "starts": 13
+    },
+    "sevilla::arouna sangante": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5,
+      "minutes": 356,
+      "starts": 5
+    },
+    "sevilla::andres castrin": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12,
+      "minutes": 946,
+      "starts": 10
+    },
+    "sevilla::enrique salas": {
+      "goals": 2,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11,
+      "minutes": 988,
+      "starts": 11
+    },
+    "sevilla::julio diaz": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 6,
+      "minutes": 104,
+      "starts": 1
+    },
+    "sevilla::iker ortin": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "sevilla::tamiou miguel kpebane": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "sevilla::jon guridi": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9,
+      "minutes": 414,
+      "starts": 6
+    },
+    "sevilla::giorgi kochorashvili": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 8,
+      "minutes": 307,
+      "starts": 3
+    },
+    "sevilla::ruben vargas": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 6,
+      "minutes": 241,
+      "starts": 3
+    },
+    "sevilla::youssouf fofana": {
+      "goals": 1,
+      "assists": 3,
+      "saves": 0,
+      "appearances": 10,
+      "minutes": 798,
+      "starts": 9
+    },
+    "sevilla::lucien agoume": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13,
+      "minutes": 1146,
+      "starts": 13
+    },
+    "sevilla::manu bueno": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5,
+      "minutes": 143,
+      "starts": 0
+    },
+    "sevilla::edu altozano": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "sevilla::nico guillen": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 2,
+      "minutes": 90,
+      "starts": 1
+    },
+    "sevilla::jesus cruz morales": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "sevilla::chidera ejuke": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11,
+      "minutes": 478,
+      "starts": 3
+    },
+    "sevilla::alfonso gonzalez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5,
+      "minutes": 65,
+      "starts": 0
+    },
+    "sevilla::felix correia": {
+      "goals": 2,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 9,
+      "minutes": 670,
+      "starts": 9
+    },
+    "sevilla::robbie ure": {
+      "goals": 1,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 13,
+      "minutes": 603,
+      "starts": 6
+    },
+    "sevilla::lucas stassin": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 8,
+      "minutes": 541,
+      "starts": 6
+    },
+    "sevilla::peque": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5,
+      "minutes": 224,
+      "starts": 3
+    },
+    "sevilla::isaac romero": {
+      "goals": 3,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 11,
+      "minutes": 426,
+      "starts": 5
+    },
+    "sevilla::ibrahima sow": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "sevilla::miguel sierra": {
+      "goals": 2,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 8,
+      "minutes": 565,
+      "starts": 8
+    },
+    "sevilla::manuel angel castillo rodriguez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "sevilla::marc scuri marti": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
     "athletic::unai simon": {
       "goals": 0,
       "assists": 0,
       "saves": 36,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1080,
+      "starts": 12
     },
     "athletic::alex padilla": {
       "goals": 0,
@@ -4579,49 +4915,65 @@
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 816,
+      "starts": 10
     },
     "athletic::aymeric laporte": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 910,
+      "starts": 10
     },
     "athletic::yeray": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 497,
+      "starts": 6
     },
     "athletic::dani vivian": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 270,
+      "starts": 3
     },
     "athletic::jesus areso": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 371,
+      "starts": 4
     },
     "athletic::aitor paredes": {
       "goals": 2,
       "assists": 0,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 488,
+      "starts": 5
     },
     "athletic::johaneko louis jean": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 281,
+      "starts": 4
     },
     "athletic::hugo rincon": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 616,
+      "starts": 7
     },
     "athletic::unai egiluz": {
       "goals": 0,
@@ -4639,49 +4991,65 @@
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 503,
+      "starts": 7
     },
     "athletic::robert navarro": {
       "goals": 2,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 657,
+      "starts": 7
     },
     "athletic::oihan sancet": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 626,
+      "starts": 7
     },
     "athletic::benat prados": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 4
+      "appearances": 4,
+      "minutes": 92,
+      "starts": 1
     },
     "athletic::mikel jauregizar": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 302,
+      "starts": 3
     },
     "athletic::benat gerenabarrena": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 666,
+      "starts": 7
     },
     "athletic::peio canales": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 663,
+      "starts": 7
     },
     "athletic::alejandro rego": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 4
+      "appearances": 4,
+      "minutes": 63,
+      "starts": 0
     },
     "athletic::selton sanchez": {
       "goals": 0,
@@ -4693,55 +5061,73 @@
       "goals": 4,
       "assists": 4,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 820,
+      "starts": 8
     },
     "athletic::inaki williams": {
       "goals": 3,
       "assists": 2,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 855,
+      "starts": 11
     },
     "athletic::gorka guruzeta": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 5
+      "appearances": 5,
+      "minutes": 183,
+      "starts": 2
     },
     "athletic::nico williams": {
       "goals": 2,
       "assists": 1,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 706,
+      "starts": 8
     },
     "athletic::nico serrano": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 1
+      "appearances": 1,
+      "minutes": 4,
+      "starts": 0
     },
     "athletic::alvaro djalo": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 1
+      "appearances": 1,
+      "minutes": 9,
+      "starts": 0
     },
     "athletic::maroan sannadi": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 255,
+      "starts": 3
     },
     "athletic::christian imga": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 1
+      "appearances": 1,
+      "minutes": 22,
+      "starts": 0
     },
     "athletic::jesus vizcay hurtado": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 2
+      "appearances": 2,
+      "minutes": 10,
+      "starts": 0
     },
     "athletic::aritz conde albiol": {
       "goals": 0,
@@ -4759,7 +5145,9 @@
       "goals": 0,
       "assists": 1,
       "saves": 36,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1170,
+      "starts": 13
     },
     "alaves::gregoire swiderski": {
       "goals": 0,
@@ -4777,13 +5165,17 @@
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1089,
+      "starts": 12
     },
     "alaves::jonny": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 847,
+      "starts": 10
     },
     "alaves::facundo garces": {
       "goals": 0,
@@ -4795,67 +5187,89 @@
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1125,
+      "starts": 13
     },
     "alaves::nicolas valentini": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 541,
+      "starts": 6
     },
     "alaves::angel perez": {
       "goals": 1,
       "assists": 4,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 845,
+      "starts": 11
     },
     "alaves::youssef lekhedim": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 380,
+      "starts": 2
     },
     "alaves::xanet olaiz": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 2
+      "appearances": 2,
+      "minutes": 20,
+      "starts": 0
     },
     "alaves::pablo ibanez": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1051,
+      "starts": 12
     },
     "alaves::denis suarez": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 567,
+      "starts": 6
     },
     "alaves::carles alena": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 222,
+      "starts": 3
     },
     "alaves::carlos protesoni": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 6
+      "appearances": 6,
+      "minutes": 240,
+      "starts": 2
     },
     "alaves::ander guevara": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 288,
+      "starts": 3
     },
     "alaves::antonio blanco": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 934,
+      "starts": 11
     },
     "alaves::selu diallo": {
       "goals": 0,
@@ -4867,49 +5281,65 @@
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 149,
+      "starts": 2
     },
     "alaves::miguel rodriguez": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 11,
+      "starts": 0
     },
     "alaves::toni martinez": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 694,
+      "starts": 8
     },
     "alaves::mariano diaz": {
       "goals": 4,
       "assists": 4,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 489,
+      "starts": 4
     },
     "alaves::lucas boye": {
       "goals": 6,
       "assists": 1,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 977,
+      "starts": 12
     },
     "alaves::hugo novoa": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 4
+      "appearances": 4,
+      "minutes": 101,
+      "starts": 0
     },
     "alaves::abde rebbach": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 948,
+      "starts": 12
     },
     "alaves::aitor manas": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 156,
+      "starts": 1
     },
     "alaves::izei hernandez": {
       "goals": 0,
@@ -4921,13 +5351,17 @@
       "goals": 0,
       "assists": 0,
       "saves": 28,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 810,
+      "starts": 9
     },
     "villarreal::luiz junior": {
       "goals": 0,
       "assists": 0,
       "saves": 6,
-      "appearances": 4
+      "appearances": 4,
+      "minutes": 360,
+      "starts": 4
     },
     "villarreal::ruben gomez": {
       "goals": 0,
@@ -4945,49 +5379,65 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 6
+      "appearances": 6,
+      "minutes": 481,
+      "starts": 6
     },
     "villarreal::alex freeman": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 710,
+      "starts": 7
     },
     "villarreal::logan costa": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 263,
+      "starts": 3
     },
     "villarreal::carlos romero": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 607,
+      "starts": 6
     },
     "villarreal::sergi cardona": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 536,
+      "starts": 6
     },
     "villarreal::santiago mourino": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 585,
+      "starts": 7
     },
     "villarreal::renato veiga": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 1080,
+      "starts": 12
     },
     "villarreal::pau navarro": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 522,
+      "starts": 6
     },
     "villarreal::cesar bonafe ceita": {
       "goals": 0,
@@ -4999,25 +5449,33 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 680,
+      "starts": 9
     },
     "villarreal::pape gueye": {
       "goals": 3,
       "assists": 0,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 899,
+      "starts": 10
     },
     "villarreal::alberto moleiro": {
       "goals": 2,
       "assists": 5,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 799,
+      "starts": 10
     },
     "villarreal::nathan saliba": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 360,
+      "starts": 3
     },
     "villarreal::alassane diatta": {
       "goals": 0,
@@ -5029,7 +5487,9 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 393,
+      "starts": 4
     },
     "villarreal::cheikh ahmad tidiane thiam": {
       "goals": 0,
@@ -5053,43 +5513,57 @@
       "goals": 2,
       "assists": 0,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 433,
+      "starts": 5
     },
     "villarreal::ayoze perez": {
       "goals": 1,
       "assists": 3,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 663,
+      "starts": 8
     },
     "villarreal::nicolas pepe": {
       "goals": 2,
       "assists": 1,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 523,
+      "starts": 5
     },
     "villarreal::tajon buchanan": {
       "goals": 2,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 711,
+      "starts": 8
     },
     "villarreal::tani oluwaseyi": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 296,
+      "starts": 3
     },
     "villarreal::georges mikautadze": {
       "goals": 3,
       "assists": 1,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 750,
+      "starts": 7
     },
     "villarreal::ilias akhomach": {
       "goals": 0,
       "assists": 2,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 388,
+      "starts": 5
     },
     "villarreal::joselillo": {
       "goals": 0,
@@ -5101,19 +5575,25 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 2
+      "appearances": 2,
+      "minutes": 10,
+      "starts": 0
     },
     "espanyol::marko dmitrovic": {
       "goals": 0,
       "assists": 0,
       "saves": 22,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 630,
+      "starts": 7
     },
     "espanyol::angel fortuno": {
       "goals": 0,
       "assists": 0,
       "saves": 30,
-      "appearances": 6
+      "appearances": 6,
+      "minutes": 540,
+      "starts": 6
     },
     "espanyol::llorenc serred": {
       "goals": 0,
@@ -5125,7 +5605,9 @@
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 900,
+      "starts": 10
     },
     "espanyol::andoni gorosabel": {
       "goals": 0,
@@ -5137,43 +5619,57 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 455,
+      "starts": 5
     },
     "espanyol::vanja drkusic": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 362,
+      "starts": 4
     },
     "espanyol::omar el hilali": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 1065,
+      "starts": 12
     },
     "espanyol::clemens riedel": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 633,
+      "starts": 7
     },
     "espanyol::quilindschy hartman": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 494,
+      "starts": 5
     },
     "espanyol::jose angel lopez": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 2
+      "appearances": 2,
+      "minutes": 119,
+      "starts": 1
     },
     "espanyol::roger hinojo": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 760,
+      "starts": 10
     },
     "espanyol::adama timera": {
       "goals": 0,
@@ -5185,49 +5681,65 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 212,
+      "starts": 2
     },
     "espanyol::edu exposito": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 971,
+      "starts": 11
     },
     "espanyol::pol lozano": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 513,
+      "starts": 5
     },
     "espanyol::urko gonzalez": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 480,
+      "starts": 6
     },
     "espanyol::cala": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 570,
+      "starts": 7
     },
     "espanyol::gabriel moscardo": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 229,
+      "starts": 2
     },
     "espanyol::javi hernandez": {
       "goals": 0,
       "assists": 6,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 907,
+      "starts": 11
     },
     "espanyol::rafael bauza": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 6
+      "appearances": 6,
+      "minutes": 233,
+      "starts": 3
     },
     "espanyol::enrique garcia": {
       "goals": 0,
@@ -5239,49 +5751,65 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 4
+      "appearances": 4,
+      "minutes": 40,
+      "starts": 0
     },
     "espanyol::tyrhys dolan": {
       "goals": 1,
       "assists": 1,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 640,
+      "starts": 7
     },
     "espanyol::jofre carreras": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 18,
+      "starts": 0
     },
     "espanyol::bryan zaragoza": {
       "goals": 1,
       "assists": 1,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 457,
+      "starts": 5
     },
     "espanyol::roberto fernandez": {
       "goals": 7,
       "assists": 0,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1137,
+      "starts": 13
     },
     "espanyol::marcos fernandez": {
       "goals": 1,
       "assists": 1,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 244,
+      "starts": 1
     },
     "espanyol::jan peries duran": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 1
+      "appearances": 1,
+      "minutes": 13,
+      "starts": 0
     },
     "espanyol::alejandro santiago": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 249,
+      "starts": 3
     },
     "espanyol::victor mullerat tomas": {
       "goals": 0,
@@ -5311,37 +5839,49 @@
       "goals": 0,
       "assists": 0,
       "saves": 41,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1170,
+      "starts": 13
     },
     "deportivo::ximo navarro": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 698,
+      "starts": 9
     },
     "deportivo::jose maria gimenez": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 824,
+      "starts": 9
     },
     "deportivo::angelino": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 2
+      "appearances": 2,
+      "minutes": 69,
+      "starts": 1
     },
     "deportivo::miguel loureiro": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 560,
+      "starts": 6
     },
     "deportivo::giacomo quagliata": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1054,
+      "starts": 12
     },
     "deportivo::arnau comas": {
       "goals": 0,
@@ -5353,13 +5893,17 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 571,
+      "starts": 6
     },
     "deportivo::lucas noubi": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 6
+      "appearances": 6,
+      "minutes": 540,
+      "starts": 6
     },
     "deportivo::dani barcia": {
       "goals": 0,
@@ -5371,19 +5915,25 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 6
+      "appearances": 6,
+      "minutes": 461,
+      "starts": 5
     },
     "deportivo::riki rodriguez": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 418,
+      "starts": 6
     },
     "deportivo::mario soriano carreno": {
       "goals": 2,
       "assists": 2,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1000,
+      "starts": 12
     },
     "deportivo::yayo": {
       "goals": 0,
@@ -5395,19 +5945,25 @@
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 364,
+      "starts": 3
     },
     "deportivo::marc casado": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 5
+      "appearances": 5,
+      "minutes": 228,
+      "starts": 3
     },
     "deportivo::lorenzo amatucci": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 866,
+      "starts": 9
     },
     "deportivo::ruben": {
       "goals": 0,
@@ -5419,7 +5975,9 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 282,
+      "starts": 3
     },
     "deportivo::noe carrillo": {
       "goals": 0,
@@ -5431,43 +5989,57 @@
       "goals": 5,
       "assists": 2,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 716,
+      "starts": 7
     },
     "deportivo::adama traore": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 313,
+      "starts": 0
     },
     "deportivo::zakaria eddahchouri": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 4
+      "appearances": 4,
+      "minutes": 69,
+      "starts": 0
     },
     "deportivo::yeremay hernandez": {
       "goals": 1,
       "assists": 1,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 622,
+      "starts": 7
     },
     "deportivo::luismi cruz": {
       "goals": 1,
       "assists": 2,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 730,
+      "starts": 10
     },
     "deportivo::kevin sanchez": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 2
+      "appearances": 2,
+      "minutes": 15,
+      "starts": 0
     },
     "deportivo::david mella": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 376,
+      "starts": 5
     },
     "deportivo::martin ochoa": {
       "goals": 0,
@@ -5479,19 +6051,25 @@
       "goals": 2,
       "assists": 0,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 869,
+      "starts": 11
     },
     "osasuna::aitor fernandez": {
       "goals": 0,
       "assists": 0,
       "saves": 20,
-      "appearances": 6
+      "appearances": 6,
+      "minutes": 540,
+      "starts": 6
     },
     "osasuna::sergio herrera": {
       "goals": 0,
       "assists": 0,
       "saves": 11,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 630,
+      "starts": 7
     },
     "osasuna::rafa fernandez": {
       "goals": 0,
@@ -5509,139 +6087,185 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 191,
+      "starts": 3
     },
     "osasuna::valentin rosier": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 6
+      "appearances": 6,
+      "minutes": 451,
+      "starts": 5
     },
     "osasuna::alejandro catena": {
       "goals": 1,
       "assists": 1,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 1080,
+      "starts": 12
     },
     "osasuna::abel bretones": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 979,
+      "starts": 10
     },
     "osasuna::jorge herrando": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 187,
+      "starts": 3
     },
     "osasuna::enzo boyomo": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 651,
+      "starts": 7
     },
     "osasuna::rockson yeboah": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 210,
+      "starts": 2
     },
     "osasuna::inigo arguibide": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 666,
+      "starts": 8
     },
     "osasuna::unai santos": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 208,
+      "starts": 3
     },
     "osasuna::lucas torro": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 525,
+      "starts": 5
     },
     "osasuna::ruben garcia": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 773,
+      "starts": 10
     },
     "osasuna::jon moncayola": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 972,
+      "starts": 12
     },
     "osasuna::aimar oroz": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 4
+      "appearances": 4,
+      "minutes": 216,
+      "starts": 3
     },
     "osasuna::iker munoz": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 674,
+      "starts": 7
     },
     "osasuna::asier osambela": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 437,
+      "starts": 3
     },
     "osasuna::mauro echegoyen": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 1
+      "appearances": 1,
+      "minutes": 27,
+      "starts": 0
     },
     "osasuna::moi gomez": {
       "goals": 0,
       "assists": 2,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 716,
+      "starts": 9
     },
     "osasuna::ante budimir": {
       "goals": 9,
       "assists": 0,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1016,
+      "starts": 11
     },
     "osasuna::enrique barja": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 324,
+      "starts": 4
     },
     "osasuna::romain del castillo": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 2
+      "appearances": 2,
+      "minutes": 35,
+      "starts": 0
     },
     "osasuna::raul garcia": {
       "goals": 1,
       "assists": 1,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 490,
+      "starts": 5
     },
     "osasuna::raul moro": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 374,
+      "starts": 3
     },
     "osasuna::jonathan dubasin": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 499,
+      "starts": 5
     },
     "osasuna::asier bonel aicua": {
       "goals": 0,
@@ -5653,7 +6277,9 @@
       "goals": 0,
       "assists": 0,
       "saves": 44,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1170,
+      "starts": 13
     },
     "celta::ivan villar": {
       "goals": 0,
@@ -5677,61 +6303,81 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 1
+      "appearances": 1,
+      "minutes": 45,
+      "starts": 1
     },
     "celta::marcos alonso": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 784,
+      "starts": 9
     },
     "celta::carl starfelt": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 218,
+      "starts": 2
     },
     "celta::javi galan": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 574,
+      "starts": 7
     },
     "celta::sebastian caceres": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 5
+      "appearances": 5,
+      "minutes": 408,
+      "starts": 5
     },
     "celta::sergio carreira": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 796,
+      "starts": 7
     },
     "celta::javi rueda": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 727,
+      "starts": 8
     },
     "celta::alvaro nunez": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 4
+      "appearances": 4,
+      "minutes": 354,
+      "starts": 4
     },
     "celta::javi rodriguez": {
       "goals": 1,
       "assists": 1,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 636,
+      "starts": 8
     },
     "celta::yoel lago": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 1035,
+      "starts": 11
     },
     "celta::frank germain jonathan miller": {
       "goals": 0,
@@ -5749,85 +6395,113 @@
       "goals": 0,
       "assists": 2,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 662,
+      "starts": 8
     },
     "celta::aleix febas": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 489,
+      "starts": 5
     },
     "celta::ilaix moriba": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 987,
+      "starts": 12
     },
     "celta::miguel roman": {
       "goals": 1,
       "assists": 2,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 579,
+      "starts": 6
     },
     "celta::andres antanon": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 147,
+      "starts": 2
     },
     "celta::hugo burcio": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 201,
+      "starts": 2
     },
     "celta::iago aspas": {
       "goals": 1,
       "assists": 1,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 381,
+      "starts": 3
     },
     "celta::pablo duran": {
       "goals": 3,
       "assists": 0,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 587,
+      "starts": 6
     },
     "celta::borja iglesias": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 78,
+      "starts": 0
     },
     "celta::ferran jutgla": {
       "goals": 2,
       "assists": 0,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 688,
+      "starts": 8
     },
     "celta::couhaib driouech": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 266,
+      "starts": 2
     },
     "celta::williot swedberg": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 516,
+      "starts": 6
     },
     "celta::hugo gonzalez": {
       "goals": 1,
       "assists": 2,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 350,
+      "starts": 6
     },
     "celta::jones el abdellaoui": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 153,
+      "starts": 2
     },
     "celta::vladimir silva": {
       "goals": 0,
@@ -5845,7 +6519,9 @@
       "goals": 0,
       "assists": 0,
       "saves": 45,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1260,
+      "starts": 14
     },
     "levante::pablo cunat": {
       "goals": 0,
@@ -5869,31 +6545,41 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 1053,
+      "starts": 12
     },
     "levante::jeremy toljan": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 634,
+      "starts": 7
     },
     "levante::victor garcia": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 471,
+      "starts": 4
     },
     "levante::adrian de la fuente": {
       "goals": 2,
       "assists": 0,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 945,
+      "starts": 10
     },
     "levante::manu sanchez": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 937,
+      "starts": 11
     },
     "levante::jorge cabello": {
       "goals": 0,
@@ -5905,19 +6591,25 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 1
+      "appearances": 1,
+      "minutes": 28,
+      "starts": 0
     },
     "levante::ifeanyi ndukwe": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 541,
+      "starts": 6
     },
     "levante::nacho perez": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 785,
+      "starts": 9
     },
     "levante::huseini nakoha": {
       "goals": 0,
@@ -5935,43 +6627,57 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 4
+      "appearances": 4,
+      "minutes": 172,
+      "starts": 1
     },
     "levante::roger brugue": {
       "goals": 5,
       "assists": 1,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 1026,
+      "starts": 12
     },
     "levante::orio rey": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 821,
+      "starts": 9
     },
     "levante::jon ander olasagasti": {
       "goals": 1,
       "assists": 2,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1156,
+      "starts": 13
     },
     "levante::hugo sotelo": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 5
+      "appearances": 5,
+      "minutes": 144,
+      "starts": 2
     },
     "levante::enzo bardeli": {
       "goals": 1,
       "assists": 1,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 489,
+      "starts": 5
     },
     "levante::dani requena": {
       "goals": 2,
       "assists": 1,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 733,
+      "starts": 8
     },
     "levante::manel usedo domingo": {
       "goals": 0,
@@ -5989,37 +6695,49 @@
       "goals": 3,
       "assists": 0,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 981,
+      "starts": 12
     },
     "levante::thiago fernandez": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 886,
+      "starts": 11
     },
     "levante::petar ratkov": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 286,
+      "starts": 3
     },
     "levante::etta eyong": {
       "goals": 1,
       "assists": 1,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 253,
+      "starts": 2
     },
     "levante::paco cortes": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 6
+      "appearances": 6,
+      "minutes": 80,
+      "starts": 1
     },
     "levante::yanis kasonga musuayi": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 4
+      "appearances": 4,
+      "minutes": 125,
+      "starts": 1
     },
     "levante::luis miguel perez garcia": {
       "goals": 0,
@@ -6031,19 +6749,25 @@
       "goals": 0,
       "assists": 0,
       "saves": 8,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 210,
+      "starts": 2
     },
     "rayo vallecano::augusto batalla": {
       "goals": 0,
       "assists": 0,
       "saves": 3,
-      "appearances": 2
+      "appearances": 2,
+      "minutes": 150,
+      "starts": 2
     },
     "rayo vallecano::emil audero": {
       "goals": 0,
       "assists": 0,
       "saves": 24,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 720,
+      "starts": 8
     },
     "rayo vallecano::adrian molina": {
       "goals": 0,
@@ -6055,13 +6779,17 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1080,
+      "starts": 12
     },
     "rayo vallecano::ivan balliu": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 343,
+      "starts": 4
     },
     "rayo vallecano::luiz felipe": {
       "goals": 0,
@@ -6079,7 +6807,9 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 585,
+      "starts": 7
     },
     "rayo vallecano::sergio lozano": {
       "goals": 0,
@@ -6091,25 +6821,33 @@
       "goals": 1,
       "assists": 1,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 718,
+      "starts": 8
     },
     "rayo vallecano::andrei ratiu": {
       "goals": 1,
       "assists": 1,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 810,
+      "starts": 9
     },
     "rayo vallecano::jozhua vertrouwd": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 5
+      "appearances": 5,
+      "minutes": 191,
+      "starts": 2
     },
     "rayo vallecano::pelayo fernandez": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 2
+      "appearances": 2,
+      "minutes": 67,
+      "starts": 1
     },
     "rayo vallecano::marco de las sias": {
       "goals": 0,
@@ -6121,43 +6859,57 @@
       "goals": 3,
       "assists": 2,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 765,
+      "starts": 9
     },
     "rayo vallecano::unai lopez": {
       "goals": 1,
       "assists": 3,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 964,
+      "starts": 12
     },
     "rayo vallecano::pedro diaz": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 621,
+      "starts": 6
     },
     "rayo vallecano::isi palazon": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 280,
+      "starts": 4
     },
     "rayo vallecano::oscar valentin": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 467,
+      "starts": 5
     },
     "rayo vallecano::randy nteka": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 5
+      "appearances": 5,
+      "minutes": 225,
+      "starts": 2
     },
     "rayo vallecano::pathe ciss": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 990,
+      "starts": 11
     },
     "rayo vallecano::samu becerra": {
       "goals": 0,
@@ -6175,7 +6927,9 @@
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 250,
+      "starts": 2
     },
     "rayo vallecano::ivan alonso martin": {
       "goals": 0,
@@ -6193,37 +6947,49 @@
       "goals": 2,
       "assists": 2,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 753,
+      "starts": 10
     },
     "rayo vallecano::giorgi tsitaishvili": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 467,
+      "starts": 4
     },
     "rayo vallecano::sergio camello": {
       "goals": 7,
       "assists": 2,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 836,
+      "starts": 11
     },
     "rayo vallecano::alexandre alemao": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 208,
+      "starts": 0
     },
     "rayo vallecano::fran perez": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 6
+      "appearances": 6,
+      "minutes": 152,
+      "starts": 1
     },
     "rayo vallecano::rayane belaid": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 1
+      "appearances": 1,
+      "minutes": 23,
+      "starts": 0
     },
     "valencia::cristian rivero": {
       "goals": 0,
@@ -6235,7 +7001,9 @@
       "goals": 0,
       "assists": 0,
       "saves": 49,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1170,
+      "starts": 13
     },
     "valencia::kayne van oevelen": {
       "goals": 0,
@@ -6253,49 +7021,65 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 794,
+      "starts": 9
     },
     "valencia::jesus vazquez": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 362,
+      "starts": 4
     },
     "valencia::pablo maffeo": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 797,
+      "starts": 10
     },
     "valencia::mouctar diakhaby": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 351,
+      "starts": 4
     },
     "valencia::justin de haas": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 503,
+      "starts": 7
     },
     "valencia::copete": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 1
+      "appearances": 1,
+      "minutes": 73,
+      "starts": 1
     },
     "valencia::arnau martinez": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 473,
+      "starts": 5
     },
     "valencia::cesar tarrega": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 780,
+      "starts": 9
     },
     "valencia::marcos navarro": {
       "goals": 0,
@@ -6307,7 +7091,9 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 102,
+      "starts": 0
     },
     "valencia::alex panach": {
       "goals": 0,
@@ -6325,49 +7111,65 @@
       "goals": 0,
       "assists": 3,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1063,
+      "starts": 13
     },
     "valencia::guido rodriguez": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 819,
+      "starts": 10
     },
     "valencia::pepelu": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1108,
+      "starts": 13
     },
     "valencia::aliou dieng": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 239,
+      "starts": 2
     },
     "valencia::filip ugrinic": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 644,
+      "starts": 7
     },
     "valencia::harvey elliott": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 6
+      "appearances": 6,
+      "minutes": 152,
+      "starts": 0
     },
     "valencia::ryunosuke sato": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 5
+      "appearances": 5,
+      "minutes": 297,
+      "starts": 4
     },
     "valencia::aaron mayol": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 5
+      "appearances": 5,
+      "minutes": 355,
+      "starts": 4
     },
     "valencia::jaume dura i soler": {
       "goals": 0,
@@ -6379,7 +7181,9 @@
       "goals": 2,
       "assists": 0,
       "saves": 0,
-      "appearances": 6
+      "appearances": 6,
+      "minutes": 329,
+      "starts": 3
     },
     "valencia::sergi canos": {
       "goals": 0,
@@ -6391,25 +7195,33 @@
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 929,
+      "starts": 10
     },
     "valencia::dani raba": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 6
+      "appearances": 6,
+      "minutes": 257,
+      "starts": 3
     },
     "valencia::luis rioja": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 455,
+      "starts": 4
     },
     "valencia::hugo duro": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 422,
+      "starts": 5
     },
     "valencia::diego lopez": {
       "goals": 0,
@@ -6421,19 +7233,25 @@
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 345,
+      "starts": 3
     },
     "valencia::aimar blazquez": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 2
+      "appearances": 2,
+      "minutes": 39,
+      "starts": 0
     },
     "getafe::david soria": {
       "goals": 0,
       "assists": 0,
       "saves": 47,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1170,
+      "starts": 13
     },
     "getafe::jiri letacek": {
       "goals": 0,
@@ -6451,55 +7269,73 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 377,
+      "starts": 6
     },
     "getafe::dani carvajal": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 4
+      "appearances": 4,
+      "minutes": 350,
+      "starts": 4
     },
     "getafe::johan mojica": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 901,
+      "starts": 10
     },
     "getafe::djene": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 984,
+      "starts": 12
     },
     "getafe::abdel abqar": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 4
+      "appearances": 4,
+      "minutes": 202,
+      "starts": 1
     },
     "getafe::zaid romero": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 644,
+      "starts": 8
     },
     "getafe::saba sazonov": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 6
+      "appearances": 6,
+      "minutes": 156,
+      "starts": 1
     },
     "getafe::andres garcia": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 883,
+      "starts": 9
     },
     "getafe::sebastian boselli": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 335,
+      "starts": 3
     },
     "getafe::mohamed hamdoune": {
       "goals": 0,
@@ -6517,13 +7353,17 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 5
+      "appearances": 5,
+      "minutes": 287,
+      "starts": 4
     },
     "getafe::davinchi": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 186,
+      "starts": 2
     },
     "getafe::vladyslav kysil": {
       "goals": 0,
@@ -6541,37 +7381,49 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 824,
+      "starts": 9
     },
     "getafe::orel mangala": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 772,
+      "starts": 8
     },
     "getafe::francho serrano": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 652,
+      "starts": 8
     },
     "getafe::ramon terrats": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 899,
+      "starts": 11
     },
     "getafe::mario martin": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 622,
+      "starts": 8
     },
     "getafe::alberto risco": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 4
+      "appearances": 4,
+      "minutes": 59,
+      "starts": 0
     },
     "getafe::jesus martinez": {
       "goals": 0,
@@ -6589,7 +7441,9 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 2
+      "appearances": 2,
+      "minutes": 10,
+      "starts": 0
     },
     "getafe::mady macalou soumano": {
       "goals": 0,
@@ -6607,31 +7461,41 @@
       "goals": 2,
       "assists": 1,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 899,
+      "starts": 9
     },
     "getafe::borja mayoral": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 5
+      "appearances": 5,
+      "minutes": 50,
+      "starts": 0
     },
     "getafe::martin satriano": {
       "goals": 3,
       "assists": 2,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 976,
+      "starts": 11
     },
     "getafe::ivan azon": {
       "goals": 1,
       "assists": 1,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 492,
+      "starts": 6
     },
     "getafe::joselu perez": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 1
+      "appearances": 1,
+      "minutes": 6,
+      "starts": 0
     },
     "getafe::sebastian salazar trujillo": {
       "goals": 0,
@@ -6667,7 +7531,9 @@
       "goals": 0,
       "assists": 0,
       "saves": 38,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1170,
+      "starts": 13
     },
     "elche::alejandro iturbe": {
       "goals": 0,
@@ -6679,13 +7545,17 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 6
+      "appearances": 6,
+      "minutes": 211,
+      "starts": 2
     },
     "elche::victor chust": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1170,
+      "starts": 13
     },
     "elche::bambo diaby": {
       "goals": 0,
@@ -6703,109 +7573,145 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 7
+      "appearances": 7,
+      "minutes": 298,
+      "starts": 2
     },
     "elche::roy revivo": {
       "goals": 1,
       "assists": 2,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 784,
+      "starts": 9
     },
     "elche::buba sangare": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 871,
+      "starts": 11
     },
     "elche::matia barzic": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 2
+      "appearances": 2,
+      "minutes": 22,
+      "starts": 0
     },
     "elche::thomas lemar": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 458,
+      "starts": 5
     },
     "elche::josan": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 25,
+      "starts": 0
     },
     "elche::gonzalo villar": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 935,
+      "starts": 12
     },
     "elche::marc aguado": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 6
+      "appearances": 6,
+      "minutes": 375,
+      "starts": 6
     },
     "elche::federico redondo": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 742,
+      "starts": 9
     },
     "elche::facundo buonanotte": {
       "goals": 1,
       "assists": 1,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 353,
+      "starts": 3
     },
     "elche::martim neto": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 337,
+      "starts": 3
     },
     "elche::javier morcillo": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 835,
+      "starts": 9
     },
     "elche::ezequiel ponce": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 121,
+      "starts": 1
     },
     "elche::grady diangana": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 58,
+      "starts": 0
     },
     "elche::jose antonio morente": {
       "goals": 0,
       "assists": 3,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 552,
+      "starts": 5
     },
     "elche::german valera": {
       "goals": 2,
       "assists": 1,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1069,
+      "starts": 13
     },
     "elche::fer nino": {
       "goals": 6,
       "assists": 0,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 876,
+      "starts": 11
     },
     "elche::lucas cepeda": {
       "goals": 0,
       "assists": 2,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 602,
+      "starts": 6
     },
     "elche::yago alonso": {
       "goals": 0,
@@ -6817,7 +7723,9 @@
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 388,
+      "starts": 3
     },
     "elche::adam boayar": {
       "goals": 0,
@@ -6829,19 +7737,25 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 4
+      "appearances": 4,
+      "minutes": 235,
+      "starts": 4
     },
     "elche::alvaro padilla escriba": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 1
+      "appearances": 1,
+      "minutes": 9,
+      "starts": 0
     },
     "malaga::alfonso herrero": {
       "goals": 0,
       "assists": 0,
       "saves": 46,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1170,
+      "starts": 13
     },
     "malaga::carlos lopez": {
       "goals": 0,
@@ -6859,49 +7773,65 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 10
+      "appearances": 10,
+      "minutes": 535,
+      "starts": 6
     },
     "malaga::einar galilea": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 721,
+      "starts": 9
     },
     "malaga::fernando calero": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 4
+      "appearances": 4,
+      "minutes": 333,
+      "starts": 4
     },
     "malaga::juan berrocal": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 105,
+      "starts": 1
     },
     "malaga::alex pastor": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 2
+      "appearances": 2,
+      "minutes": 135,
+      "starts": 2
     },
     "malaga::angel recio": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 990,
+      "starts": 11
     },
     "malaga::carlos puga": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 625,
+      "starts": 7
     },
     "malaga::diego murillo": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 1
+      "appearances": 1,
+      "minutes": 90,
+      "starts": 1
     },
     "malaga::oscar gonzalez": {
       "goals": 0,
@@ -6913,61 +7843,81 @@
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 946,
+      "starts": 11
     },
     "malaga::adam aznou": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 5
+      "appearances": 5,
+      "minutes": 295,
+      "starts": 3
     },
     "malaga::juan cruz": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 249,
+      "starts": 3
     },
     "malaga::pablo martinez": {
       "goals": 1,
       "assists": 2,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 563,
+      "starts": 6
     },
     "malaga::jens cajuste": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 17,
+      "starts": 0
     },
     "malaga::ramon enriquez": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 408,
+      "starts": 3
     },
     "malaga::carlos dotor": {
       "goals": 2,
       "assists": 0,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 898,
+      "starts": 11
     },
     "malaga::daniel lorenzo": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 12
+      "appearances": 12,
+      "minutes": 819,
+      "starts": 9
     },
     "malaga::rafa rodriguez": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 335,
+      "starts": 4
     },
     "malaga::izan merino": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 8
+      "appearances": 8,
+      "minutes": 482,
+      "starts": 6
     },
     "malaga::aaron moloney": {
       "goals": 0,
@@ -6985,49 +7935,169 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 11
+      "appearances": 11,
+      "minutes": 541,
+      "starts": 7
     },
     "malaga::eneko jauregui": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 59,
+      "starts": 1
     },
     "malaga::david larrubia": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 1031,
+      "starts": 11
     },
     "malaga::julen lobete": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 1
+      "appearances": 1,
+      "minutes": 5,
+      "starts": 0
     },
     "malaga::haitam abaida": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 3
+      "appearances": 3,
+      "minutes": 41,
+      "starts": 0
     },
     "malaga::adrian nino": {
       "goals": 5,
       "assists": 1,
       "saves": 0,
-      "appearances": 9
+      "appearances": 9,
+      "minutes": 550,
+      "starts": 5
     },
     "malaga::chupete": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 13
+      "appearances": 13,
+      "minutes": 890,
+      "starts": 9
     },
     "malaga::juani": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 1
+      "appearances": 1,
+      "minutes": 11,
+      "starts": 0
+    },
+    "athletic::adama boiro": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0,
+      "minutes": 20,
+      "starts": 0
+    },
+    "elche::david affengruber": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3,
+      "minutes": 270,
+      "starts": 3
+    },
+    "atletico::jose maria gimenez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0,
+      "minutes": 35,
+      "starts": 0
+    },
+    "atletico::carlos martin": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 1,
+      "minutes": 57,
+      "starts": 1
+    },
+    "betis::pablo garcia": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0,
+      "minutes": 51,
+      "starts": 0
+    },
+    "racing::gustavo puerta": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3,
+      "minutes": 268,
+      "starts": 3
+    },
+    "racing::sergio martinez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 2,
+      "minutes": 114,
+      "starts": 2
+    },
+    "racing::diego diaz": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0,
+      "minutes": 13,
+      "starts": 0
+    },
+    "sevilla::oso": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 2,
+      "minutes": 156,
+      "starts": 2
+    },
+    "levante::carlos alvarez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 1,
+      "minutes": 45,
+      "starts": 1
+    },
+    "levante::kareem tunde": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0,
+      "minutes": 14,
+      "starts": 0
+    },
+    "deportivo::teun gijselhart": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0,
+      "minutes": 26,
+      "starts": 0
+    },
+    "elche::umaru": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0,
+      "minutes": 21,
+      "starts": 0
     }
   }
 }

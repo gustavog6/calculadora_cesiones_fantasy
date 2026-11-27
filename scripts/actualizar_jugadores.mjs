@@ -66,6 +66,19 @@ function normalizePlayer(raw) {
     }
   }
 
+  const points = typeof raw.points === 'number' && Number.isFinite(raw.points) ? Math.round(raw.points) : null;
+  const gamesPlayed = typeof raw.games_played === 'number' && Number.isFinite(raw.games_played) ? Math.round(raw.games_played) : null;
+  const pointsLastSeason = typeof raw.points_last_season === 'number' && Number.isFinite(raw.points_last_season)
+    ? Math.round(raw.points_last_season)
+    : null;
+  const fitness = Array.isArray(raw.fitness)
+    ? raw.fitness.filter((v) => typeof v === 'number' && Number.isFinite(v)).map((v) => Math.round(v))
+    : [];
+  const lastPoints = fitness.length > 0 ? fitness[fitness.length - 1] : null;
+  const avgPoints = points !== null && gamesPlayed !== null && gamesPlayed > 0
+    ? Math.round((points / gamesPlayed) * 10) / 10
+    : null;
+
   return {
     id: raw.id !== undefined && raw.id !== null ? String(raw.id) : `${name}-${raw.team || ''}`,
     name,
@@ -74,6 +87,12 @@ function normalizePlayer(raw) {
     price,
     price_increment: priceIncrement,
     price_history: Object.keys(cleanHistory).length > 0 ? cleanHistory : undefined,
+    points: points !== null ? points : undefined,
+    avg_points: avgPoints !== null ? avgPoints : undefined,
+    last_points: lastPoints !== null ? lastPoints : undefined,
+    games_played: gamesPlayed !== null ? gamesPlayed : undefined,
+    points_last_season: pointsLastSeason !== null ? pointsLastSeason : undefined,
+    fitness: fitness.length > 0 ? fitness.slice(-5) : undefined,
     photo_url: typeof raw.photo_url === 'string' ? raw.photo_url : '',
     team_crest_url: typeof raw.team_crest_url === 'string' ? raw.team_crest_url : ''
   };

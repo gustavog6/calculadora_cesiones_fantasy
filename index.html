@@ -1918,6 +1918,282 @@ tr.fuerte td { font-weight: 600; }
   border-color: transparent;
 }
 
+/* Vista Jornada en vivo y modal de alineaciones confirmadas */
+.ll-jornada-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.ll-jornada-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.ll-live-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  background: rgba(217, 68, 68, 0.14);
+  color: #D94444;
+  border: 1px solid rgba(217, 68, 68, 0.35);
+}
+.ll-live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #D94444;
+  display: inline-block;
+  animation: llPulse 1.3s ease-in-out infinite;
+}
+@keyframes llPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.8); }
+}
+.ll-match-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+.ll-match-card {
+  display: grid;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 11px;
+  background: var(--campo);
+  border: 1px solid var(--line);
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  color: var(--ink);
+  transition: border-color 140ms ease, transform 140ms ease;
+}
+.ll-match-card:hover {
+  border-color: var(--pitch);
+  transform: translateY(-1px);
+}
+.ll-match-card.live {
+  border-color: rgba(217, 68, 68, 0.55);
+}
+.ll-match-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+.ll-match-status {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: var(--papel);
+  border: 1px solid var(--line);
+  color: var(--muted);
+}
+.ll-match-status.in {
+  background: rgba(217, 68, 68, 0.14);
+  border-color: rgba(217, 68, 68, 0.4);
+  color: #D94444;
+}
+.ll-match-status.post {
+  color: var(--ink);
+}
+.ll-match-body {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 10px;
+}
+.ll-match-team {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  font-size: 13.5px;
+  font-weight: 600;
+}
+.ll-match-team.away {
+  justify-content: flex-end;
+  text-align: right;
+}
+.ll-match-team img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  flex: none;
+}
+.ll-match-team span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ll-match-score {
+  font-family: var(--font-mono);
+  font-size: 17px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 8px;
+  background: var(--papel);
+  border: 1px solid var(--line);
+  min-width: 64px;
+  text-align: center;
+  color: var(--ink);
+}
+.ll-match-score.pre {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--muted);
+}
+.ll-match-foot {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 11.5px;
+  color: var(--pitch);
+  font-weight: 600;
+}
+.player-modal-card.match-modal-card {
+  max-width: 680px;
+}
+.ll-modal-score {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: var(--campo);
+  border: 1px solid var(--line);
+}
+.ll-events-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 11.5px;
+}
+.ll-event-chip {
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: var(--campo);
+  border: 1px solid var(--line);
+  color: var(--ink);
+}
+.ll-lineups-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.ll-lineup-col {
+  display: grid;
+  gap: 8px;
+  align-content: start;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--campo);
+  border: 1px solid var(--line);
+}
+.ll-lineup-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.ll-lineup-head-team {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+.ll-lineup-head-team img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+.ll-formation-pill {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 5px;
+  background: var(--papel);
+  border: 1px solid var(--line);
+  color: var(--muted);
+}
+.ll-lineup-section-lbl {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin-top: 2px;
+}
+.ll-lineup-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 4px;
+}
+.ll-lineup-player {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 5px 7px;
+  border-radius: 7px;
+  background: var(--papel);
+  border: 1px solid transparent;
+  font-size: 12.5px;
+  cursor: pointer;
+  transition: border-color 120ms ease;
+}
+.ll-lineup-player:hover {
+  border-color: var(--pitch);
+}
+.ll-lineup-player-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+.ll-jersey {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted);
+  min-width: 20px;
+  text-align: right;
+}
+.ll-pname {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 500;
+}
+.ll-lineup-empty {
+  text-align: center;
+  padding: 20px 14px;
+  border-radius: 10px;
+  background: var(--campo);
+  border: 1px dashed var(--line);
+  font-size: 13px;
+  color: var(--muted);
+}
+@media (max-width: 760px) {
+  .ll-match-grid, .ll-lineups-grid { grid-template-columns: 1fr; }
+}
+
 /* Bloque rendimiento LALIGA Fantasy DAZN en ficha */
 .ficha-fantasy-box {
   display: grid;
@@ -2534,6 +2810,7 @@ tr.fuerte td { font-weight: 600; }
 
         <div class="laliga-tabs" role="tablist" aria-label="Secciones de LaLiga">
           <button type="button" class="ll-tab-btn" role="tab" id="ll-tab-tabla" aria-selected="true">Clasificación</button>
+          <button type="button" class="ll-tab-btn" role="tab" id="ll-tab-jornada" aria-selected="false">Jornada</button>
           <button type="button" class="ll-tab-btn" role="tab" id="ll-tab-goleadores" aria-selected="false">Goleadores</button>
           <button type="button" class="ll-tab-btn" role="tab" id="ll-tab-asistidores" aria-selected="false">Asistidores</button>
           <button type="button" class="ll-tab-btn" role="tab" id="ll-tab-paradas" aria-selected="false">Paradas</button>
@@ -2561,6 +2838,18 @@ tr.fuerte td { font-weight: 600; }
           </thead>
           <tbody id="ll-tabla-tbody"></tbody>
         </table>
+      </div>
+
+      <!-- Subpanel: Partidos de la jornada (resultados reales + en vivo + alineaciones) -->
+      <div id="ll-panel-jornada" hidden>
+        <div class="ll-jornada-bar">
+          <div class="ll-jornada-meta">
+            <span class="ll-live-pill" id="ll-live-pill" hidden><span class="ll-live-dot" aria-hidden="true"></span>En vivo</span>
+            <span id="ll-jornada-status">Partidos de la jornada · Haz clic en un partido para ver alineaciones confirmadas</span>
+          </div>
+          <button type="button" class="btn-mini" id="btn-ll-refresh-jornada">Actualizar marcador</button>
+        </div>
+        <div class="ll-match-grid" id="ll-match-grid"></div>
       </div>
 
       <!-- Subpanel: Rankings individuales (Goleadores / Asistidores / Paradas) -->
@@ -2680,6 +2969,23 @@ tr.fuerte td { font-weight: 600; }
         <button type="button" class="btn btn-sec" id="btn-exp-calculadora">Usar en calculadora</button>
         <button type="button" class="btn btn-sec" id="btn-exp-compartir">Compartir ficha</button>
       </div>
+    </article>
+  </div>
+
+  <!-- Modal de Partido y Alineaciones Confirmadas -->
+  <div class="player-modal-backdrop" id="ll-match-modal" role="dialog" aria-modal="true" aria-labelledby="ll-match-title" hidden>
+    <article class="player-modal-card match-modal-card">
+      <div class="player-modal-head">
+        <div>
+          <h3 id="ll-match-title">Detalle del partido</h3>
+          <span class="ficha-sub" id="ll-match-sub">Alineaciones confirmadas</span>
+        </div>
+        <button type="button" class="modal-close" id="btn-cerrar-match-modal" aria-label="Cerrar detalle del partido">×</button>
+      </div>
+
+      <div class="ll-modal-score" id="ll-modal-score"></div>
+      <div class="ll-events-strip" id="ll-modal-events" hidden></div>
+      <div id="ll-modal-lineups"></div>
     </article>
   </div>
 
@@ -4940,13 +5246,317 @@ const PlayerExplorer = (function() {
  * @module LaLigaView
  */
 const LaLigaView = (function() {
+  const ESPN_SITE_BASE = 'https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1';
   let data = null;
+  let liveMatches = null;
+  let liveTimer = null;
+  let lastLiveFetch = 0;
+  let summaryCache = new Map();
   let activeTab = 'tabla';
   let activeSplit = 'general';
   let listenersBound = false;
 
   const $ = function(id) { return document.getElementById(id); };
   const esc = function(s) { return PlayerSelector.escapeHTML(s); };
+
+  function mapEspnTeamName(espnName) {
+    const n = LaLigaService.normKey(espnName);
+    const rules = [
+      ['alaves', 'Alavés'], ['athletic', 'Athletic'], ['atletico', 'Atlético'],
+      ['barcelona', 'Barcelona'], ['betis', 'Betis'], ['celta', 'Celta'],
+      ['deportivo', 'Deportivo'], ['coruna', 'Deportivo'], ['elche', 'Elche'],
+      ['espanyol', 'Espanyol'], ['getafe', 'Getafe'], ['girona', 'Girona'],
+      ['las palmas', 'Las Palmas'], ['leganes', 'Leganés'], ['levante', 'Levante'],
+      ['malaga', 'Málaga'], ['mallorca', 'Mallorca'], ['osasuna', 'Osasuna'],
+      ['racing', 'Racing'], ['rayo', 'Rayo Vallecano'], ['real madrid', 'Real Madrid'],
+      ['real sociedad', 'Real Sociedad'], ['sevilla', 'Sevilla'], ['valencia', 'Valencia'],
+      ['valladolid', 'Valladolid'], ['villarreal', 'Villarreal']
+    ];
+    for (let i = 0; i < rules.length; i += 1) {
+      if (n.indexOf(rules[i][0]) !== -1) return rules[i][1];
+    }
+    return espnName || '';
+  }
+
+  function formatMatchDateTime(iso) {
+    if (!iso) return 'Por confirmar';
+    const d = new Date(iso);
+    if (Number.isNaN(d.getTime())) return iso.slice(0, 16);
+    try {
+      return d.toLocaleString('es-ES', {
+        weekday: 'short',
+        day: '2-digit',
+        month: 'short',
+        hour: '2-digit',
+        minute: '2-digit'
+      });
+    } catch (e) {
+      return iso.slice(0, 16);
+    }
+  }
+
+  function getMatchStatusLabel(m) {
+    if (m.state === 'in') {
+      if (m.statusDetail === 'HT') return 'Descanso';
+      return m.clock ? ('En vivo · ' + m.clock) : 'En vivo';
+    }
+    if (m.state === 'post') return 'Final';
+    return 'Programado';
+  }
+
+  function getCurrentMatches() {
+    if (Array.isArray(liveMatches) && liveMatches.length > 0) return liveMatches;
+    return (data && data.matchday && Array.isArray(data.matchday.matches)) ? data.matchday.matches : [];
+  }
+
+  function renderMatchday() {
+    const grid = $('ll-match-grid');
+    if (!grid) return;
+    const matches = getCurrentMatches();
+    const hasLive = matches.some(function(m) { return m.state === 'in'; });
+    if ($('ll-live-pill')) $('ll-live-pill').hidden = !hasLive;
+
+    if (matches.length === 0) {
+      grid.innerHTML = '<div class="ll-lineup-empty" style="grid-column:1/-1;">No hay partidos de jornada disponibles todavía.</div>';
+      return;
+    }
+
+    grid.innerHTML = matches.map(function(m) {
+      const isLive = m.state === 'in';
+      const isPre = m.state === 'pre';
+      const statusTxt = getMatchStatusLabel(m);
+      const scoreHtml = isPre
+        ? '<span class="ll-match-score pre">vs</span>'
+        : '<span class="ll-match-score">' + esc(String(m.home.score !== null ? m.home.score : 0)) + ' - ' + esc(String(m.away.score !== null ? m.away.score : 0)) + '</span>';
+      const hLogo = m.home.logo ? '<img src="' + esc(m.home.logo) + '" alt="" loading="lazy" onerror="this.hidden=true">' : '';
+      const aLogo = m.away.logo ? '<img src="' + esc(m.away.logo) + '" alt="" loading="lazy" onerror="this.hidden=true">' : '';
+      return '<button type="button" class="ll-match-card' + (isLive ? ' live' : '') + '" data-match-id="' + esc(m.id) + '">' +
+        '<div class="ll-match-top">' +
+          '<span>' + esc(formatMatchDateTime(m.date)) + '</span>' +
+          '<span class="ll-match-status ' + esc(m.state) + '">' + esc(statusTxt) + '</span>' +
+        '</div>' +
+        '<div class="ll-match-body">' +
+          '<div class="ll-match-team">' + hLogo + '<span>' + esc(m.home.team) + '</span></div>' +
+          scoreHtml +
+          '<div class="ll-match-team away"><span>' + esc(m.away.team) + '</span>' + aLogo + '</div>' +
+        '</div>' +
+        '<div class="ll-match-foot">Ver alineaciones confirmadas →</div>' +
+      '</button>';
+    }).join('');
+  }
+
+  function refreshLiveMatchday(force) {
+    const md = data && data.matchday;
+    if (!md || !md.datesParam) return;
+    const now = Date.now();
+    if (!force && now - lastLiveFetch < 30000) return;
+    lastLiveFetch = now;
+
+    const btn = $('btn-ll-refresh-jornada');
+    if (btn) btn.disabled = true;
+
+    fetch(ESPN_SITE_BASE + '/scoreboard?dates=' + encodeURIComponent(md.datesParam))
+      .then(function(res) { return res.ok ? res.json() : null; })
+      .then(function(json) {
+        if (!json || !Array.isArray(json.events) || json.events.length === 0) return;
+        const baseIds = new Set((md.matches || []).map(function(m) { return String(m.id); }));
+        const updated = json.events
+          .filter(function(ev) { return baseIds.size === 0 || baseIds.has(String(ev.id)); })
+          .map(function(ev) {
+            const comp = ev.competitions && ev.competitions[0];
+            if (!comp) return null;
+            const comps = comp.competitors || [];
+            const hc = comps.find(function(c) { return c.homeAway === 'home'; });
+            const ac = comps.find(function(c) { return c.homeAway === 'away'; });
+            if (!hc || !ac) return null;
+            const st = (comp.status && comp.status.type && comp.status.type.state) || 'pre';
+            const hs = st === 'pre' ? null : Number(hc.score);
+            const as = st === 'pre' ? null : Number(ac.score);
+            return {
+              id: String(ev.id || ''),
+              date: ev.date || '',
+              state: st,
+              statusDetail: (comp.status && comp.status.type && comp.status.type.shortDetail) || '',
+              clock: (comp.status && comp.status.displayClock) || '',
+              home: {
+                id: String((hc.team && hc.team.id) || ''),
+                team: mapEspnTeamName((hc.team && (hc.team.displayName || hc.team.shortDisplayName)) || ''),
+                abbr: (hc.team && hc.team.abbreviation) || '',
+                logo: (hc.team && (hc.team.logo || (hc.team.logos && hc.team.logos[0] && hc.team.logos[0].href))) || '',
+                score: Number.isFinite(hs) ? hs : null
+              },
+              away: {
+                id: String((ac.team && ac.team.id) || ''),
+                team: mapEspnTeamName((ac.team && (ac.team.displayName || ac.team.shortDisplayName)) || ''),
+                abbr: (ac.team && ac.team.abbreviation) || '',
+                logo: (ac.team && (ac.team.logo || (ac.team.logos && ac.team.logos[0] && ac.team.logos[0].href))) || '',
+                score: Number.isFinite(as) ? as : null
+              }
+            };
+          })
+          .filter(Boolean)
+          .sort(function(a, b) { return a.date.localeCompare(b.date); });
+
+        if (updated.length > 0) {
+          liveMatches = updated;
+          renderMatchday();
+          const hhmm = new Date().toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
+          if ($('ll-jornada-status')) {
+            $('ll-jornada-status').textContent = 'Marcadores actualizados a las ' + hhmm + ' · Haz clic en un partido para ver alineaciones';
+          }
+        }
+      })
+      .catch(function() { /* conservar datos cacheados */ })
+      .finally(function() {
+        if (btn) btn.disabled = false;
+      });
+  }
+
+  function syncLivePolling() {
+    if (liveTimer) {
+      clearInterval(liveTimer);
+      liveTimer = null;
+    }
+    if (activeTab !== 'jornada') return;
+    liveTimer = setInterval(function() {
+      if (document.visibilityState !== 'visible') return;
+      if ($('vista-laliga') && $('vista-laliga').hidden) return;
+      const matches = getCurrentMatches();
+      const now = Date.now();
+      const shouldPoll = matches.some(function(m) {
+        if (m.state === 'in') return true;
+        if (m.state === 'pre' && m.date) {
+          const diff = Date.parse(m.date) - now;
+          return diff <= 60 * 60 * 1000 && diff >= -150 * 60 * 1000;
+        }
+        return false;
+      });
+      if (shouldPoll) refreshLiveMatchday(true);
+    }, 45000);
+  }
+
+  function closeMatchModal() {
+    const modal = $('ll-match-modal');
+    if (modal) modal.hidden = true;
+  }
+
+  function renderLineupColumn(teamRoster) {
+    const teamName = mapEspnTeamName((teamRoster.team && (teamRoster.team.displayName || teamRoster.team.name)) || '');
+    const logo = (teamRoster.team && (teamRoster.team.logo || (teamRoster.team.logos && teamRoster.team.logos[0] && teamRoster.team.logos[0].href))) || '';
+    const formation = teamRoster.formation || '';
+    const entries = Array.isArray(teamRoster.roster) ? teamRoster.roster : [];
+    const starters = entries.filter(function(e) { return e.starter; });
+    const subs = entries.filter(function(e) { return !e.starter; });
+
+    function renderPlayerItem(entry) {
+      const ath = entry.athlete || {};
+      const pName = ath.displayName || ath.fullName || '';
+      const jersey = entry.jersey ? String(entry.jersey) : '—';
+      const pos = (entry.position && entry.position.abbreviation) || (ath.position && ath.position.abbreviation) || '';
+      const plays = Array.isArray(entry.plays) ? entry.plays : [];
+      let badges = '';
+      plays.forEach(function(pl) {
+        if (pl.scoringPlay) badges += ' ⚽';
+        else if (pl.redCard) badges += ' 🟥';
+        else if (pl.yellowCard) badges += ' 🟨';
+      });
+      if (entry.subbedOut) badges += ' ↓';
+      else if (entry.subbedIn) badges += ' ↑';
+      return '<li class="ll-lineup-player" data-lu-team="' + esc(teamName) + '" data-lu-name="' + esc(pName) + '">' +
+        '<div class="ll-lineup-player-left">' +
+          '<span class="ll-jersey">' + esc(jersey) + '</span>' +
+          '<span class="ll-pname">' + esc(pName) + esc(badges) + '</span>' +
+        '</div>' +
+        (pos ? '<span class="pos-pill">' + esc(pos) + '</span>' : '') +
+      '</li>';
+    }
+
+    return '<div class="ll-lineup-col">' +
+      '<div class="ll-lineup-head">' +
+        '<div class="ll-lineup-head-team">' +
+          (logo ? '<img src="' + esc(logo) + '" alt="" onerror="this.hidden=true">' : '') +
+          '<span>' + esc(teamName) + '</span>' +
+        '</div>' +
+        (formation ? '<span class="ll-formation-pill">' + esc(formation) + '</span>' : '') +
+      '</div>' +
+      '<div class="ll-lineup-section-lbl">11 Titular (' + starters.length + ')</div>' +
+      '<ul class="ll-lineup-list">' + starters.map(renderPlayerItem).join('') + '</ul>' +
+      (subs.length > 0
+        ? '<div class="ll-lineup-section-lbl">Banquillo (' + subs.length + ')</div><ul class="ll-lineup-list">' + subs.map(renderPlayerItem).join('') + '</ul>'
+        : '') +
+    '</div>';
+  }
+
+  function renderMatchSummaryContent(match, sum) {
+    const eventsEl = $('ll-modal-events');
+    const lineupsEl = $('ll-modal-lineups');
+    if (!lineupsEl) return;
+
+    const keyEvents = (sum && Array.isArray(sum.keyEvents)) ? sum.keyEvents : [];
+    const notable = keyEvents.filter(function(ev) {
+      const t = (ev.type && ev.type.text || '').toLowerCase();
+      return t.indexOf('goal') !== -1 || t.indexOf('gol') !== -1 || t.indexOf('red') !== -1 || ev.scoringPlay;
+    });
+    if (eventsEl && notable.length > 0) {
+      eventsEl.innerHTML = notable.map(function(ev) {
+        const clk = (ev.clock && ev.clock.displayValue) || '';
+        const pName = (ev.participants && ev.participants[0] && ev.participants[0].athlete && ev.participants[0].athlete.displayName) || (ev.shortText || ev.text || '');
+        const icon = ev.scoringPlay ? '⚽' : '🟥';
+        return '<span class="ll-event-chip">' + icon + ' ' + esc(clk) + ' ' + esc(pName) + '</span>';
+      }).join('');
+      eventsEl.hidden = false;
+    } else if (eventsEl) {
+      eventsEl.hidden = true;
+    }
+
+    const rosters = (sum && Array.isArray(sum.rosters)) ? sum.rosters.filter(function(r) { return Array.isArray(r.roster) && r.roster.length > 0; }) : [];
+    if (rosters.length === 0) {
+      lineupsEl.innerHTML = '<div class="ll-lineup-empty">Alineaciones confirmadas aún no publicadas.<br>Suelen estar disponibles aproximadamente 1 hora antes del inicio del partido.</div>';
+      return;
+    }
+    lineupsEl.innerHTML = '<div class="ll-lineups-grid">' + rosters.map(renderLineupColumn).join('') + '</div>';
+  }
+
+  function openMatchModal(matchId) {
+    const matches = getCurrentMatches();
+    const match = matches.find(function(m) { return String(m.id) === String(matchId); });
+    if (!match) return;
+
+    const modal = $('ll-match-modal');
+    if (!modal) return;
+    $('ll-match-title').textContent = match.home.team + ' vs ' + match.away.team;
+    $('ll-match-sub').textContent = formatMatchDateTime(match.date) + ' · ' + getMatchStatusLabel(match);
+
+    const hLogo = match.home.logo ? '<img src="' + esc(match.home.logo) + '" alt="" onerror="this.hidden=true">' : '';
+    const aLogo = match.away.logo ? '<img src="' + esc(match.away.logo) + '" alt="" onerror="this.hidden=true">' : '';
+    const scoreHtml = match.state === 'pre'
+      ? '<span class="ll-match-score pre">vs</span>'
+      : '<span class="ll-match-score">' + esc(String(match.home.score !== null ? match.home.score : 0)) + ' - ' + esc(String(match.away.score !== null ? match.away.score : 0)) + '</span>';
+
+    $('ll-modal-score').innerHTML =
+      '<div class="ll-match-team">' + hLogo + '<span>' + esc(match.home.team) + '</span></div>' +
+      scoreHtml +
+      '<div class="ll-match-team away"><span>' + esc(match.away.team) + '</span>' + aLogo + '</div>';
+    $('ll-modal-events').hidden = true;
+    $('ll-modal-lineups').innerHTML = '<div class="ll-lineup-empty">Cargando alineaciones confirmadas...</div>';
+    modal.hidden = false;
+
+    const cached = summaryCache.get(String(match.id));
+    if (cached && (Date.now() - cached.ts) < 60000) {
+      renderMatchSummaryContent(match, cached.data);
+      return;
+    }
+
+    fetch(ESPN_SITE_BASE + '/summary?event=' + encodeURIComponent(match.id))
+      .then(function(res) { return res.ok ? res.json() : null; })
+      .then(function(sum) {
+        if (sum) summaryCache.set(String(match.id), { ts: Date.now(), data: sum });
+        renderMatchSummaryContent(match, sum);
+      })
+      .catch(function() {
+        $('ll-modal-lineups').innerHTML = '<div class="ll-lineup-empty">No se pudieron cargar las alineaciones en este momento. Inténtalo de nuevo en unos segundos.</div>';
+      });
+  }
 
   function renderFormHtml(form) {
     if (!Array.isArray(form) || form.length === 0) return '—';
@@ -5038,17 +5648,26 @@ const LaLigaView = (function() {
   function setTab(tab) {
     activeTab = tab;
     const isTabla = tab === 'tabla';
+    const isJornada = tab === 'jornada';
     $('ll-panel-tabla').hidden = !isTabla;
-    $('ll-panel-leaders').hidden = isTabla;
+    if ($('ll-panel-jornada')) $('ll-panel-jornada').hidden = !isJornada;
+    $('ll-panel-leaders').hidden = isTabla || isJornada;
     $('ll-split-switch').hidden = !isTabla;
 
-    ['tabla', 'goleadores', 'asistidores', 'paradas'].forEach(function(k) {
+    ['tabla', 'jornada', 'goleadores', 'asistidores', 'paradas'].forEach(function(k) {
       const btn = $('ll-tab-' + k);
       if (btn) btn.setAttribute('aria-selected', k === tab ? 'true' : 'false');
     });
 
-    if (isTabla) renderStandings();
-    else renderLeaders(tab);
+    if (isTabla) {
+      renderStandings();
+    } else if (isJornada) {
+      renderMatchday();
+      refreshLiveMatchday(false);
+    } else {
+      renderLeaders(tab);
+    }
+    syncLivePolling();
   }
 
   function setSplit(split) {
@@ -5065,6 +5684,7 @@ const LaLigaView = (function() {
     listenersBound = true;
 
     $('ll-tab-tabla').addEventListener('click', function() { setTab('tabla'); });
+    if ($('ll-tab-jornada')) $('ll-tab-jornada').addEventListener('click', function() { setTab('jornada'); });
     $('ll-tab-goleadores').addEventListener('click', function() { setTab('goleadores'); });
     $('ll-tab-asistidores').addEventListener('click', function() { setTab('asistidores'); });
     $('ll-tab-paradas').addEventListener('click', function() { setTab('paradas'); });
@@ -5072,6 +5692,40 @@ const LaLigaView = (function() {
     $('ll-split-general').addEventListener('click', function() { setSplit('general'); });
     $('ll-split-home').addEventListener('click', function() { setSplit('home'); });
     $('ll-split-away').addEventListener('click', function() { setSplit('away'); });
+
+    if ($('btn-ll-refresh-jornada')) {
+      $('btn-ll-refresh-jornada').addEventListener('click', function() { refreshLiveMatchday(true); });
+    }
+    if ($('ll-match-grid')) {
+      $('ll-match-grid').addEventListener('click', function(e) {
+        const card = e.target.closest('[data-match-id]');
+        if (card) openMatchModal(card.dataset.matchId);
+      });
+    }
+    if ($('btn-cerrar-match-modal')) {
+      $('btn-cerrar-match-modal').addEventListener('click', closeMatchModal);
+    }
+    if ($('ll-match-modal')) {
+      $('ll-match-modal').addEventListener('click', function(e) {
+        if (e.target === $('ll-match-modal')) closeMatchModal();
+      });
+    }
+    if ($('ll-modal-lineups')) {
+      $('ll-modal-lineups').addEventListener('click', function(e) {
+        const item = e.target.closest('[data-lu-name]');
+        if (!item) return;
+        const found = PlayerExplorer.findPlayer(item.dataset.luTeam, item.dataset.luName);
+        if (found) {
+          closeMatchModal();
+          PlayerExplorer.openPlayerModal(found);
+        }
+      });
+    }
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && $('ll-match-modal') && !$('ll-match-modal').hidden) {
+        closeMatchModal();
+      }
+    });
 
     $('ll-leaders-tbody').addEventListener('click', function(e) {
       const tr = e.target.closest('tr[data-leader-name]');
@@ -5088,6 +5742,7 @@ const LaLigaView = (function() {
       data = json;
       if ($('ll-season-badge') && json.season) $('ll-season-badge').textContent = json.season;
       renderStandings();
+      renderMatchday();
     });
   }
 

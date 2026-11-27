@@ -355,7 +355,111 @@ async function processTeam(entry) {
       upcoming
     },
     rosterPlayers,
-    completedEventIds
+    completedEventIds,
+    allEvents: [...(schedRes.events || []), ...(fixRes.events || [])]
+  };
+}
+
+function formatEspnDate(d) {
+  const y = d.getUTCFullYear();
+  const m = String(d.getUTCMonth() + 1).padStart(2, '0');
+  const day = String(d.getUTCDate()).padStart(2, '0');
+  return `${y}${m}${day}`;
+}
+
+function normalizeScoreboardEvent(ev) {
+  const comp = ev?.competitions?.[0];
+  if (!comp) return null;
+  const comps = comp.competitors || [];
+  const homeComp = comps.find((c) => c.homeAway === 'home');
+  const awayComp = comps.find((c) => c.homeAway === 'away');
+  if (!homeComp || !awayComp) return null;
+
+  const stType = comp.status?.type || {};
+  const state = stType.state || 'pre'; // 'pre' | 'in' | 'post'
+  return {
+    id: String(ev.id || ''),
+    date: ev.date || '',
+    state,
+    statusDetail: stType.shortDetail || stType.description || '',
+    clock: comp.status?.displayClock || '',
+    home: {
+      id: String(homeComp.team?.id || ''),
+      team: toFantasyTeamName(homeComp.team?.displayName || homeComp.team?.shortDisplayName || ''),
+      abbr: homeComp.team?.abbreviation || '',
+      logo: homeComp.team?.logo || homeComp.team?.logos?.[0]?.href || '',
+      score: state === 'pre' ? null : parseScore(homeComp)
+    },
+    away: {
+      id: String(awayComp.team?.id || ''),
+      team: toFantasyTeamName(awayComp.team?.displayName || awayComp.team?.shortDisplayName || ''),
+      abbr: awayComp.team?.abbreviation || '',
+      logo: awayComp.team?.logo || awayComp.team?.logos?.[0]?.href || '',
+      score: state === 'pre' ? null : parseScore(awayComp)
+    }
+  };
+}
+
+function buildCurrentMatchday(rawEvents) {
+  const byId = new Map();
+  for (const ev of rawEvents) {
+    const normEv = normalizeScoreboardEvent(ev);
+    if (normEv && normEv.id && !byId.has(normEv.id)) {
+      byId.set(normEv.id, normEv);
+    }
+  }
+  const nowMs = Date.now();
+  const minMs = nowMs - 4 * 86400000;
+  const maxMs = nowMs + 14 * 86400000;
+  const events = Array.from(byId.values())
+    .filter((ev) => {
+      const t = Date.parse(ev.date);
+      return Number.isFinite(t) && t >= minMs && t <= maxMs;
+    })
+    .sort((a, b) => a.date.localeCompare(b.date));
+  if (events.length === 0) return null;
+
+  // Agrupar partidos en jornadas: brecha > 48h O un equipo repetido inicia una jornada nueva
+  const clusters = [];
+  let seenTeams = new Set();
+  for (const ev of events) {
+    const t = Date.parse(ev.date);
+    const hTeam = ev.home.team;
+    const aTeam = ev.away.team;
+    if (clusters.length === 0) {
+      clusters.push([ev]);
+      seenTeams = new Set([hTeam, aTeam]);
+      continue;
+    }
+    const lastCluster = clusters[clusters.length - 1];
+    const prevT = Date.parse(lastCluster[lastCluster.length - 1].date);
+    const gapExceeded = Number.isFinite(t) && Number.isFinite(prevT) && (t - prevT) > 48 * 3600 * 1000;
+    const teamRepeated = seenTeams.has(hTeam) || seenTeams.has(aTeam);
+    if (gapExceeded || teamRepeated) {
+      clusters.push([ev]);
+      seenTeams = new Set([hTeam, aTeam]);
+    } else {
+      lastCluster.push(ev);
+      seenTeams.add(hTeam);
+      seenTeams.add(aTeam);
+    }
+  }
+
+  // Elegir la jornada activa (con partidos en vivo o pendientes) o la más reciente
+  const selected = clusters.find((c) => c.some((m) => m.state === 'in' || m.state === 'pre'))
+    || clusters[clusters.length - 1];
+
+  const firstDate = new Date(selected[0].date);
+  const lastDate = new Date(selected[selected.length - 1].date);
+  const datesParam = Number.isFinite(firstDate.getTime()) && Number.isFinite(lastDate.getTime())
+    ? `${formatEspnDate(firstDate)}-${formatEspnDate(lastDate)}`
+    : '';
+
+  return {
+    firstKickoffUtc: selected[0].date || '',
+    datesParam,
+    updatedAt: new Date().toISOString(),
+    matches: selected
   };
 }
 
@@ -372,6 +476,7 @@ async function main() {
 
   const uniqueEventIds = Array.from(new Set(processed.flatMap((x) => x.completedEventIds || [])));
   const minutesByPlayer = await fetchMatchMinutesByPlayer(uniqueEventIds);
+  const matchday = buildCurrentMatchday(processed.flatMap((x) => x.allEvents || []));
 
   const allRoster = processed.flatMap((x) => x.rosterPlayers);
 
@@ -421,6 +526,7 @@ async function main() {
     season: stJson?.children?.[0]?.name || 'LALIGA',
     source: 'ESPN Public API (esp.1)',
     standings,
+    matchday,
     leaders: { scorers, assists, saves },
     playerStats
   };

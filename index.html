@@ -5163,6 +5163,11 @@ const PlayerExplorer = (function() {
       }
       if (viewParam) {
         setView(viewParam);
+        const tabParam = params.get('tab');
+        if (viewParam === 'laliga' && tabParam && typeof LaLigaView !== 'undefined' && LaLigaView.setTab) {
+          const validTabs = ['tabla', 'jornada', 'goleadores', 'asistidores', 'paradas'];
+          if (validTabs.indexOf(tabParam) !== -1) LaLigaView.setTab(tabParam);
+        }
       }
     } catch (e) {
       // Ignorar URL malformada

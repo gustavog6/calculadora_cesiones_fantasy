@@ -1,0 +1,50 @@
+name: Alerta inicio de jornada en Telegram
+
+on:
+  schedule:
+    # Comprueba cada 10 minutos en franja horaria de partidos de LaLiga (11:00 a 22:50 UTC)
+    - cron: '*/10 11-22 * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Forzar envío inmediato de prueba (true/false)'
+        required: false
+        default: 'false'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: alerta-jornada-telegram
+  cancel-in-progress: false
+
+jobs:
+  alerta-jornada:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Verificar y enviar alerta 15 min antes de jornada
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          FORCE_SEND: ${{ inputs.force || 'false' }}
+        run: node scripts/alerta_jornada_telegram.mjs
+
+      - name: Guardar estado de alerta enviada (si cambió)
+        run: |
+          if [ ! -f data/estado_alertas.json ] || git diff --quiet data/estado_alertas.json; then
+            echo "Sin cambios en estado de alertas."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/estado_alertas.json
+          git commit -m "chore: registrar alerta de inicio de jornada enviada"
+          git push

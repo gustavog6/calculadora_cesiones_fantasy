@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-28T08:45:20.701Z",
+  "updated_at": "2026-11-28T19:37:13.944Z",
   "season": "2026-27 LALIGA",
   "source": "ESPN Public API (esp.1)",
   "standings": [
@@ -116,8 +116,120 @@
       ]
     },
     {
-      "id": "86",
+      "id": "1068",
       "rank": 2,
+      "team": "Atlético",
+      "espnName": "Atlético Madrid",
+      "abbr": "ATM",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
+      "general": {
+        "pj": 14,
+        "pts": 34,
+        "v": 11,
+        "e": 1,
+        "d": 2,
+        "gf": 29,
+        "gc": 12,
+        "dg": 17
+      },
+      "home": {
+        "pj": 6,
+        "pts": 13,
+        "v": 4,
+        "e": 1,
+        "d": 1,
+        "gf": 12,
+        "gc": 5,
+        "dg": 7
+      },
+      "away": {
+        "pj": 8,
+        "pts": 21,
+        "v": 7,
+        "e": 0,
+        "d": 1,
+        "gf": 17,
+        "gc": 7,
+        "dg": 10
+      },
+      "form": [
+        {
+          "date": "2026-10-24T19:00Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Deportivo",
+          "oppAbbr": "DEP",
+          "score": "1-0"
+        },
+        {
+          "date": "2026-10-31T13:00Z",
+          "res": "V",
+          "loc": "V",
+          "opp": "Levante",
+          "oppAbbr": "LEV",
+          "score": "2-0"
+        },
+        {
+          "date": "2026-11-08T20:00Z",
+          "res": "D",
+          "loc": "L",
+          "opp": "Barcelona",
+          "oppAbbr": "BAR",
+          "score": "1-2"
+        },
+        {
+          "date": "2026-11-22T20:00Z",
+          "res": "V",
+          "loc": "V",
+          "opp": "Getafe",
+          "oppAbbr": "GET",
+          "score": "3-0"
+        },
+        {
+          "date": "2026-11-28T17:30Z",
+          "res": "V",
+          "loc": "V",
+          "opp": "Elche",
+          "oppAbbr": "ELC",
+          "score": "3-2"
+        }
+      ],
+      "upcoming": [
+        {
+          "date": "2026-12-02T20:30Z",
+          "loc": "V",
+          "opp": "Barcelona",
+          "oppAbbr": "BAR"
+        },
+        {
+          "date": "2026-12-06T20:00Z",
+          "loc": "L",
+          "opp": "Betis",
+          "oppAbbr": "BET"
+        },
+        {
+          "date": "2026-12-13T13:00Z",
+          "loc": "L",
+          "opp": "Valencia",
+          "oppAbbr": "VAL"
+        },
+        {
+          "date": "2026-12-20T20:00Z",
+          "loc": "V",
+          "opp": "Celta",
+          "oppAbbr": "CEL"
+        },
+        {
+          "date": "2027-01-03T20:00Z",
+          "loc": "V",
+          "opp": "Rayo Vallecano",
+          "oppAbbr": "RAY"
+        }
+      ]
+    },
+    {
+      "id": "86",
+      "rank": 3,
       "team": "Real Madrid",
       "espnName": "Real Madrid",
       "abbr": "RMA",
@@ -228,118 +340,6 @@
       ]
     },
     {
-      "id": "1068",
-      "rank": 3,
-      "team": "Atlético",
-      "espnName": "Atlético Madrid",
-      "abbr": "ATM",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
-      "general": {
-        "pj": 13,
-        "pts": 31,
-        "v": 10,
-        "e": 1,
-        "d": 2,
-        "gf": 26,
-        "gc": 10,
-        "dg": 16
-      },
-      "home": {
-        "pj": 6,
-        "pts": 13,
-        "v": 4,
-        "e": 1,
-        "d": 1,
-        "gf": 12,
-        "gc": 5,
-        "dg": 7
-      },
-      "away": {
-        "pj": 7,
-        "pts": 18,
-        "v": 6,
-        "e": 0,
-        "d": 1,
-        "gf": 14,
-        "gc": 5,
-        "dg": 9
-      },
-      "form": [
-        {
-          "date": "2026-10-17T12:00Z",
-          "res": "V",
-          "loc": "V",
-          "opp": "Espanyol",
-          "oppAbbr": "ESP",
-          "score": "1-0"
-        },
-        {
-          "date": "2026-10-24T19:00Z",
-          "res": "V",
-          "loc": "L",
-          "opp": "Deportivo",
-          "oppAbbr": "DEP",
-          "score": "1-0"
-        },
-        {
-          "date": "2026-10-31T13:00Z",
-          "res": "V",
-          "loc": "V",
-          "opp": "Levante",
-          "oppAbbr": "LEV",
-          "score": "2-0"
-        },
-        {
-          "date": "2026-11-08T20:00Z",
-          "res": "D",
-          "loc": "L",
-          "opp": "Barcelona",
-          "oppAbbr": "BAR",
-          "score": "1-2"
-        },
-        {
-          "date": "2026-11-22T20:00Z",
-          "res": "V",
-          "loc": "V",
-          "opp": "Getafe",
-          "oppAbbr": "GET",
-          "score": "3-0"
-        }
-      ],
-      "upcoming": [
-        {
-          "date": "2026-11-28T17:30Z",
-          "loc": "V",
-          "opp": "Elche",
-          "oppAbbr": "ELC"
-        },
-        {
-          "date": "2026-12-02T20:30Z",
-          "loc": "V",
-          "opp": "Barcelona",
-          "oppAbbr": "BAR"
-        },
-        {
-          "date": "2026-12-06T20:00Z",
-          "loc": "L",
-          "opp": "Betis",
-          "oppAbbr": "BET"
-        },
-        {
-          "date": "2026-12-13T13:00Z",
-          "loc": "L",
-          "opp": "Valencia",
-          "oppAbbr": "VAL"
-        },
-        {
-          "date": "2026-12-20T20:00Z",
-          "loc": "V",
-          "opp": "Celta",
-          "oppAbbr": "CEL"
-        }
-      ]
-    },
-    {
       "id": "244",
       "rank": 4,
       "team": "Betis",
@@ -347,24 +347,24 @@
       "abbr": "BET",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png",
       "general": {
-        "pj": 13,
+        "pj": 14,
         "pts": 27,
         "v": 8,
         "e": 3,
-        "d": 2,
+        "d": 3,
         "gf": 21,
-        "gc": 16,
-        "dg": 5
+        "gc": 17,
+        "dg": 4
       },
       "home": {
-        "pj": 6,
+        "pj": 7,
         "pts": 15,
         "v": 5,
         "e": 0,
-        "d": 1,
+        "d": 2,
         "gf": 12,
-        "gc": 8,
-        "dg": 4
+        "gc": 9,
+        "dg": 3
       },
       "away": {
         "pj": 7,
@@ -377,14 +377,6 @@
         "dg": 1
       },
       "form": [
-        {
-          "date": "2026-10-17T16:30Z",
-          "res": "D",
-          "loc": "L",
-          "opp": "Barcelona",
-          "oppAbbr": "BAR",
-          "score": "2-5"
-        },
         {
           "date": "2026-10-25T15:15Z",
           "res": "E",
@@ -416,15 +408,17 @@
           "opp": "Sevilla",
           "oppAbbr": "SEV",
           "score": "1-1"
+        },
+        {
+          "date": "2026-11-28T13:00Z",
+          "res": "D",
+          "loc": "L",
+          "opp": "Rayo Vallecano",
+          "oppAbbr": "RAY",
+          "score": "0-1"
         }
       ],
       "upcoming": [
-        {
-          "date": "2026-11-28T13:00Z",
-          "loc": "L",
-          "opp": "Rayo Vallecano",
-          "oppAbbr": "RAY"
-        },
         {
           "date": "2026-12-06T20:00Z",
           "loc": "V",
@@ -448,6 +442,12 @@
           "loc": "L",
           "opp": "Alavés",
           "oppAbbr": "ALA"
+        },
+        {
+          "date": "2027-01-10T20:00Z",
+          "loc": "V",
+          "opp": "Espanyol",
+          "oppAbbr": "ESP"
         }
       ]
     },
@@ -676,8 +676,120 @@
       ]
     },
     {
-      "id": "243",
+      "id": "93",
       "rank": 7,
+      "team": "Athletic",
+      "espnName": "Athletic Club",
+      "abbr": "ATH",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png",
+      "general": {
+        "pj": 13,
+        "pts": 19,
+        "v": 5,
+        "e": 4,
+        "d": 4,
+        "gf": 19,
+        "gc": 15,
+        "dg": 4
+      },
+      "home": {
+        "pj": 7,
+        "pts": 11,
+        "v": 3,
+        "e": 2,
+        "d": 2,
+        "gf": 11,
+        "gc": 6,
+        "dg": 5
+      },
+      "away": {
+        "pj": 6,
+        "pts": 8,
+        "v": 2,
+        "e": 2,
+        "d": 2,
+        "gf": 8,
+        "gc": 9,
+        "dg": -1
+      },
+      "form": [
+        {
+          "date": "2026-10-25T13:00Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Getafe",
+          "oppAbbr": "GET",
+          "score": "4-0"
+        },
+        {
+          "date": "2026-11-01T20:00Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Real Sociedad",
+          "oppAbbr": "RSO",
+          "score": "2-1"
+        },
+        {
+          "date": "2026-11-07T17:30Z",
+          "res": "E",
+          "loc": "V",
+          "opp": "Osasuna",
+          "oppAbbr": "OSA",
+          "score": "1-1"
+        },
+        {
+          "date": "2026-11-20T20:00Z",
+          "res": "D",
+          "loc": "L",
+          "opp": "Espanyol",
+          "oppAbbr": "ESP",
+          "score": "0-1"
+        },
+        {
+          "date": "2026-11-28T15:15Z",
+          "res": "V",
+          "loc": "V",
+          "opp": "Málaga",
+          "oppAbbr": "MCF",
+          "score": "4-3"
+        }
+      ],
+      "upcoming": [
+        {
+          "date": "2026-12-06T15:15Z",
+          "loc": "L",
+          "opp": "Real Madrid",
+          "oppAbbr": "RMA"
+        },
+        {
+          "date": "2026-12-09T19:00Z",
+          "loc": "V",
+          "opp": "Rayo Vallecano",
+          "oppAbbr": "RAY"
+        },
+        {
+          "date": "2026-12-13T15:15Z",
+          "loc": "V",
+          "opp": "Deportivo",
+          "oppAbbr": "DEP"
+        },
+        {
+          "date": "2026-12-20T20:00Z",
+          "loc": "L",
+          "opp": "Betis",
+          "oppAbbr": "BET"
+        },
+        {
+          "date": "2027-01-03T20:00Z",
+          "loc": "V",
+          "opp": "Racing",
+          "oppAbbr": "RAC"
+        }
+      ]
+    },
+    {
+      "id": "243",
+      "rank": 8,
       "team": "Sevilla",
       "espnName": "Sevilla",
       "abbr": "SEV",
@@ -784,118 +896,6 @@
           "loc": "V",
           "opp": "Villarreal",
           "oppAbbr": "VIL"
-        }
-      ]
-    },
-    {
-      "id": "93",
-      "rank": 8,
-      "team": "Athletic",
-      "espnName": "Athletic Club",
-      "abbr": "ATH",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png",
-      "general": {
-        "pj": 12,
-        "pts": 16,
-        "v": 4,
-        "e": 4,
-        "d": 4,
-        "gf": 15,
-        "gc": 12,
-        "dg": 3
-      },
-      "home": {
-        "pj": 7,
-        "pts": 11,
-        "v": 3,
-        "e": 2,
-        "d": 2,
-        "gf": 11,
-        "gc": 6,
-        "dg": 5
-      },
-      "away": {
-        "pj": 5,
-        "pts": 5,
-        "v": 1,
-        "e": 2,
-        "d": 2,
-        "gf": 4,
-        "gc": 6,
-        "dg": -2
-      },
-      "form": [
-        {
-          "date": "2026-10-21T18:00Z",
-          "res": "D",
-          "loc": "V",
-          "opp": "Levante",
-          "oppAbbr": "LEV",
-          "score": "1-3"
-        },
-        {
-          "date": "2026-10-25T13:00Z",
-          "res": "V",
-          "loc": "L",
-          "opp": "Getafe",
-          "oppAbbr": "GET",
-          "score": "4-0"
-        },
-        {
-          "date": "2026-11-01T20:00Z",
-          "res": "V",
-          "loc": "L",
-          "opp": "Real Sociedad",
-          "oppAbbr": "RSO",
-          "score": "2-1"
-        },
-        {
-          "date": "2026-11-07T17:30Z",
-          "res": "E",
-          "loc": "V",
-          "opp": "Osasuna",
-          "oppAbbr": "OSA",
-          "score": "1-1"
-        },
-        {
-          "date": "2026-11-20T20:00Z",
-          "res": "D",
-          "loc": "L",
-          "opp": "Espanyol",
-          "oppAbbr": "ESP",
-          "score": "0-1"
-        }
-      ],
-      "upcoming": [
-        {
-          "date": "2026-11-28T15:15Z",
-          "loc": "V",
-          "opp": "Málaga",
-          "oppAbbr": "MCF"
-        },
-        {
-          "date": "2026-12-06T15:15Z",
-          "loc": "L",
-          "opp": "Real Madrid",
-          "oppAbbr": "RMA"
-        },
-        {
-          "date": "2026-12-09T19:00Z",
-          "loc": "V",
-          "opp": "Rayo Vallecano",
-          "oppAbbr": "RAY"
-        },
-        {
-          "date": "2026-12-13T15:15Z",
-          "loc": "V",
-          "opp": "Deportivo",
-          "oppAbbr": "DEP"
-        },
-        {
-          "date": "2026-12-20T20:00Z",
-          "loc": "L",
-          "opp": "Betis",
-          "oppAbbr": "BET"
         }
       ]
     },
@@ -1348,8 +1348,120 @@
       ]
     },
     {
-      "id": "97",
+      "id": "101",
       "rank": 13,
+      "team": "Rayo Vallecano",
+      "espnName": "Rayo Vallecano",
+      "abbr": "RAY",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png",
+      "general": {
+        "pj": 13,
+        "pts": 15,
+        "v": 4,
+        "e": 3,
+        "d": 6,
+        "gf": 16,
+        "gc": 22,
+        "dg": -6
+      },
+      "home": {
+        "pj": 6,
+        "pts": 10,
+        "v": 3,
+        "e": 1,
+        "d": 2,
+        "gf": 9,
+        "gc": 8,
+        "dg": 1
+      },
+      "away": {
+        "pj": 7,
+        "pts": 5,
+        "v": 1,
+        "e": 2,
+        "d": 4,
+        "gf": 7,
+        "gc": 14,
+        "dg": -7
+      },
+      "form": [
+        {
+          "date": "2026-10-24T12:00Z",
+          "res": "D",
+          "loc": "L",
+          "opp": "Elche",
+          "oppAbbr": "ELC",
+          "score": "0-3"
+        },
+        {
+          "date": "2026-10-31T15:15Z",
+          "res": "V",
+          "loc": "L",
+          "opp": "Celta",
+          "oppAbbr": "CEL",
+          "score": "3-0"
+        },
+        {
+          "date": "2026-11-08T15:15Z",
+          "res": "D",
+          "loc": "V",
+          "opp": "Real Sociedad",
+          "oppAbbr": "RSO",
+          "score": "0-1"
+        },
+        {
+          "date": "2026-11-21T15:15Z",
+          "res": "D",
+          "loc": "L",
+          "opp": "Valencia",
+          "oppAbbr": "VAL",
+          "score": "0-1"
+        },
+        {
+          "date": "2026-11-28T13:00Z",
+          "res": "V",
+          "loc": "V",
+          "opp": "Betis",
+          "oppAbbr": "BET",
+          "score": "1-0"
+        }
+      ],
+      "upcoming": [
+        {
+          "date": "2026-12-05T15:15Z",
+          "loc": "L",
+          "opp": "Levante",
+          "oppAbbr": "LEV"
+        },
+        {
+          "date": "2026-12-09T19:00Z",
+          "loc": "L",
+          "opp": "Athletic",
+          "oppAbbr": "ATH"
+        },
+        {
+          "date": "2026-12-12T15:15Z",
+          "loc": "V",
+          "opp": "Villarreal",
+          "oppAbbr": "VIL"
+        },
+        {
+          "date": "2026-12-20T20:00Z",
+          "loc": "L",
+          "opp": "Málaga",
+          "oppAbbr": "MCF"
+        },
+        {
+          "date": "2027-01-03T20:00Z",
+          "loc": "L",
+          "opp": "Atlético",
+          "oppAbbr": "ATM"
+        }
+      ]
+    },
+    {
+      "id": "97",
+      "rank": 14,
       "team": "Osasuna",
       "espnName": "Osasuna",
       "abbr": "OSA",
@@ -1461,7 +1573,7 @@
     },
     {
       "id": "85",
-      "rank": 14,
+      "rank": 15,
       "team": "Celta",
       "espnName": "Celta Vigo",
       "abbr": "CEL",
@@ -1573,7 +1685,7 @@
     },
     {
       "id": "1538",
-      "rank": 15,
+      "rank": 16,
       "team": "Levante",
       "espnName": "Levante",
       "abbr": "LEV",
@@ -1680,118 +1792,6 @@
           "loc": "V",
           "opp": "Real Madrid",
           "oppAbbr": "RMA"
-        }
-      ]
-    },
-    {
-      "id": "101",
-      "rank": 16,
-      "team": "Rayo Vallecano",
-      "espnName": "Rayo Vallecano",
-      "abbr": "RAY",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png",
-      "general": {
-        "pj": 12,
-        "pts": 12,
-        "v": 3,
-        "e": 3,
-        "d": 6,
-        "gf": 15,
-        "gc": 22,
-        "dg": -7
-      },
-      "home": {
-        "pj": 6,
-        "pts": 10,
-        "v": 3,
-        "e": 1,
-        "d": 2,
-        "gf": 9,
-        "gc": 8,
-        "dg": 1
-      },
-      "away": {
-        "pj": 6,
-        "pts": 2,
-        "v": 0,
-        "e": 2,
-        "d": 4,
-        "gf": 6,
-        "gc": 14,
-        "dg": -8
-      },
-      "form": [
-        {
-          "date": "2026-10-19T19:00Z",
-          "res": "E",
-          "loc": "V",
-          "opp": "Getafe",
-          "oppAbbr": "GET",
-          "score": "1-1"
-        },
-        {
-          "date": "2026-10-24T12:00Z",
-          "res": "D",
-          "loc": "L",
-          "opp": "Elche",
-          "oppAbbr": "ELC",
-          "score": "0-3"
-        },
-        {
-          "date": "2026-10-31T15:15Z",
-          "res": "V",
-          "loc": "L",
-          "opp": "Celta",
-          "oppAbbr": "CEL",
-          "score": "3-0"
-        },
-        {
-          "date": "2026-11-08T15:15Z",
-          "res": "D",
-          "loc": "V",
-          "opp": "Real Sociedad",
-          "oppAbbr": "RSO",
-          "score": "0-1"
-        },
-        {
-          "date": "2026-11-21T15:15Z",
-          "res": "D",
-          "loc": "L",
-          "opp": "Valencia",
-          "oppAbbr": "VAL",
-          "score": "0-1"
-        }
-      ],
-      "upcoming": [
-        {
-          "date": "2026-11-28T13:00Z",
-          "loc": "V",
-          "opp": "Betis",
-          "oppAbbr": "BET"
-        },
-        {
-          "date": "2026-12-05T15:15Z",
-          "loc": "L",
-          "opp": "Levante",
-          "oppAbbr": "LEV"
-        },
-        {
-          "date": "2026-12-09T19:00Z",
-          "loc": "L",
-          "opp": "Athletic",
-          "oppAbbr": "ATH"
-        },
-        {
-          "date": "2026-12-12T15:15Z",
-          "loc": "V",
-          "opp": "Villarreal",
-          "oppAbbr": "VIL"
-        },
-        {
-          "date": "2026-12-20T20:00Z",
-          "loc": "L",
-          "opp": "Málaga",
-          "oppAbbr": "MCF"
         }
       ]
     },
@@ -2027,24 +2027,24 @@
       "abbr": "ELC",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png",
       "general": {
-        "pj": 13,
+        "pj": 14,
         "pts": 11,
         "v": 2,
         "e": 5,
-        "d": 6,
-        "gf": 15,
-        "gc": 21,
-        "dg": -6
+        "d": 7,
+        "gf": 17,
+        "gc": 24,
+        "dg": -7
       },
       "home": {
-        "pj": 6,
+        "pj": 7,
         "pts": 1,
         "v": 0,
         "e": 1,
-        "d": 5,
-        "gf": 4,
-        "gc": 14,
-        "dg": -10
+        "d": 6,
+        "gf": 6,
+        "gc": 17,
+        "dg": -11
       },
       "away": {
         "pj": 7,
@@ -2057,14 +2057,6 @@
         "dg": 4
       },
       "form": [
-        {
-          "date": "2026-10-17T14:15Z",
-          "res": "E",
-          "loc": "V",
-          "opp": "Villarreal",
-          "oppAbbr": "VIL",
-          "score": "0-0"
-        },
         {
           "date": "2026-10-24T12:00Z",
           "res": "V",
@@ -2096,15 +2088,17 @@
           "opp": "Levante",
           "oppAbbr": "LEV",
           "score": "1-1"
+        },
+        {
+          "date": "2026-11-28T17:30Z",
+          "res": "D",
+          "loc": "L",
+          "opp": "Atlético",
+          "oppAbbr": "ATM",
+          "score": "2-3"
         }
       ],
       "upcoming": [
-        {
-          "date": "2026-11-28T17:30Z",
-          "loc": "L",
-          "opp": "Atlético",
-          "oppAbbr": "ATM"
-        },
         {
           "date": "2026-12-06T13:00Z",
           "loc": "V",
@@ -2128,6 +2122,12 @@
           "loc": "V",
           "opp": "Málaga",
           "oppAbbr": "MCF"
+        },
+        {
+          "date": "2027-01-10T20:00Z",
+          "loc": "L",
+          "opp": "Getafe",
+          "oppAbbr": "GET"
         }
       ]
     },
@@ -2139,24 +2139,24 @@
       "abbr": "MCF",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png",
       "general": {
-        "pj": 13,
+        "pj": 14,
         "pts": 5,
         "v": 0,
         "e": 5,
-        "d": 8,
-        "gf": 9,
-        "gc": 24,
-        "dg": -15
+        "d": 9,
+        "gf": 12,
+        "gc": 28,
+        "dg": -16
       },
       "home": {
-        "pj": 6,
+        "pj": 7,
         "pts": 3,
         "v": 0,
         "e": 3,
-        "d": 3,
-        "gf": 6,
-        "gc": 12,
-        "dg": -6
+        "d": 4,
+        "gf": 9,
+        "gc": 16,
+        "dg": -7
       },
       "away": {
         "pj": 7,
@@ -2169,14 +2169,6 @@
         "dg": -9
       },
       "form": [
-        {
-          "date": "2026-10-18T16:30Z",
-          "res": "D",
-          "loc": "L",
-          "opp": "Real Sociedad",
-          "oppAbbr": "RSO",
-          "score": "2-5"
-        },
         {
           "date": "2026-10-23T19:00Z",
           "res": "E",
@@ -2208,15 +2200,17 @@
           "opp": "Osasuna",
           "oppAbbr": "OSA",
           "score": "0-1"
+        },
+        {
+          "date": "2026-11-28T15:15Z",
+          "res": "D",
+          "loc": "L",
+          "opp": "Athletic",
+          "oppAbbr": "ATH",
+          "score": "3-4"
         }
       ],
       "upcoming": [
-        {
-          "date": "2026-11-28T15:15Z",
-          "loc": "L",
-          "opp": "Athletic",
-          "oppAbbr": "ATH"
-        },
         {
           "date": "2026-12-07T20:00Z",
           "loc": "V",
@@ -2240,6 +2234,12 @@
           "loc": "L",
           "opp": "Elche",
           "oppAbbr": "ELC"
+        },
+        {
+          "date": "2027-01-10T20:00Z",
+          "loc": "V",
+          "opp": "Valencia",
+          "oppAbbr": "VAL"
         }
       ]
     }
@@ -2247,7 +2247,7 @@
   "matchday": {
     "firstKickoffUtc": "2026-11-27T20:00Z",
     "datesParam": "20261127-20261130",
-    "updatedAt": "2026-11-28T08:45:20.698Z",
+    "updatedAt": "2026-11-28T19:37:13.942Z",
     "matches": [
       {
         "id": "401882791",
@@ -2273,64 +2273,64 @@
       {
         "id": "401882796",
         "date": "2026-11-28T13:00Z",
-        "state": "pre",
-        "statusDetail": "11/28 - 8:00 AM EST",
-        "clock": "0'",
+        "state": "post",
+        "statusDetail": "FT",
+        "clock": "90'+6'",
         "home": {
           "id": "244",
           "team": "Betis",
           "abbr": "BET",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png",
-          "score": null
+          "score": 0
         },
         "away": {
           "id": "101",
           "team": "Rayo Vallecano",
           "abbr": "RAY",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png",
-          "score": null
+          "score": 1
         }
       },
       {
         "id": "401882790",
         "date": "2026-11-28T15:15Z",
-        "state": "pre",
-        "statusDetail": "11/28 - 10:15 AM EST",
-        "clock": "0'",
+        "state": "post",
+        "statusDetail": "FT",
+        "clock": "90'+6'",
         "home": {
           "id": "99",
           "team": "Málaga",
           "abbr": "MCF",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png",
-          "score": null
+          "score": 3
         },
         "away": {
           "id": "93",
           "team": "Athletic",
           "abbr": "ATH",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png",
-          "score": null
+          "score": 4
         }
       },
       {
         "id": "401882793",
         "date": "2026-11-28T17:30Z",
-        "state": "pre",
-        "statusDetail": "11/28 - 12:30 PM EST",
-        "clock": "0'",
+        "state": "post",
+        "statusDetail": "FT",
+        "clock": "90'+4'",
         "home": {
           "id": "3751",
           "team": "Elche",
           "abbr": "ELC",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png",
-          "score": null
+          "score": 2
         },
         "away": {
           "id": "1068",
           "team": "Atlético",
           "abbr": "ATM",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
-          "score": null
+          "score": 3
         }
       },
       {
@@ -3188,11 +3188,11 @@
         "appearances": 13
       },
       {
-        "espnId": "159135",
-        "name": "Odisseas Vlachodimos",
-        "team": "Sevilla",
-        "teamAbbr": "SEV",
-        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png",
+        "espnId": "222375",
+        "name": "Unai Simón",
+        "team": "Athletic",
+        "teamAbbr": "ATH",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png",
         "position": "POR",
         "goals": 0,
         "assists": 0,
@@ -3200,11 +3200,11 @@
         "appearances": 13
       },
       {
-        "espnId": "222375",
-        "name": "Unai Simón",
-        "team": "Athletic",
-        "teamAbbr": "ATH",
-        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png",
+        "espnId": "159135",
+        "name": "Odisseas Vlachodimos",
+        "team": "Sevilla",
+        "teamAbbr": "SEV",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png",
         "position": "POR",
         "goals": 0,
         "assists": 0,
@@ -3630,6 +3630,230 @@
       "saves": 0,
       "appearances": 0
     },
+    "atletico::jan oblak": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 33,
+      "appearances": 13,
+      "minutes": 1260,
+      "starts": 14
+    },
+    "atletico::juan musso": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "atletico::salvi esquivel": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "atletico::cristian romero": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 6,
+      "minutes": 435,
+      "starts": 5
+    },
+    "atletico::alejandro grimaldo": {
+      "goals": 5,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 12,
+      "minutes": 1120,
+      "starts": 12
+    },
+    "atletico::robin le normand": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 8,
+      "minutes": 473,
+      "starts": 5
+    },
+    "atletico::david hancko": {
+      "goals": 0,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 13,
+      "minutes": 1113,
+      "starts": 12
+    },
+    "atletico::marc pubill": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10,
+      "minutes": 853,
+      "starts": 10
+    },
+    "atletico::arnau sola": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "atletico::jorge dominguez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 1,
+      "minutes": 45,
+      "starts": 1
+    },
+    "atletico::daniel martinez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 2,
+      "minutes": 135,
+      "starts": 2
+    },
+    "atletico::javier gil": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "atletico::romeo hueso moya": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "atletico::rodrigo mendoza": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 6,
+      "minutes": 183,
+      "starts": 2
+    },
+    "atletico::koke": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10,
+      "minutes": 644,
+      "starts": 6
+    },
+    "atletico::jorge castillo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "atletico::marcos llorente": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 13,
+      "minutes": 1040,
+      "starts": 11
+    },
+    "atletico::lee kang in": {
+      "goals": 2,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 13,
+      "minutes": 873,
+      "starts": 11
+    },
+    "atletico::morten hjulmand": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11,
+      "minutes": 676,
+      "starts": 8
+    },
+    "atletico::johnny cardoso": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 8,
+      "minutes": 398,
+      "starts": 4
+    },
+    "atletico::alex baena": {
+      "goals": 6,
+      "assists": 3,
+      "saves": 0,
+      "appearances": 13,
+      "minutes": 889,
+      "starts": 10
+    },
+    "atletico::obed vargas": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "atletico::pablo barrios": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 10,
+      "minutes": 765,
+      "starts": 10
+    },
+    "atletico::alexander s rloth": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5,
+      "minutes": 108,
+      "starts": 0
+    },
+    "atletico::ademola lookman": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11,
+      "minutes": 609,
+      "starts": 9
+    },
+    "atletico::jonathan david": {
+      "goals": 3,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 7,
+      "minutes": 364,
+      "starts": 4
+    },
+    "atletico::julian alvarez": {
+      "goals": 1,
+      "assists": 4,
+      "saves": 0,
+      "appearances": 9,
+      "minutes": 585,
+      "starts": 5
+    },
+    "atletico::giuliano simeone": {
+      "goals": 4,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 13,
+      "minutes": 1037,
+      "starts": 11
+    },
+    "atletico::arnau ortiz": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5,
+      "minutes": 149,
+      "starts": 1
+    },
+    "atletico::miguel cubo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
     "real madrid::javier navarro": {
       "goals": 0,
       "assists": 0,
@@ -3892,230 +4116,6 @@
       "minutes": 787,
       "starts": 8
     },
-    "atletico::jan oblak": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 33,
-      "appearances": 13,
-      "minutes": 1170,
-      "starts": 13
-    },
-    "atletico::juan musso": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "atletico::salvi esquivel": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "atletico::cristian romero": {
-      "goals": 1,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 6,
-      "minutes": 435,
-      "starts": 5
-    },
-    "atletico::alejandro grimaldo": {
-      "goals": 5,
-      "assists": 2,
-      "saves": 0,
-      "appearances": 12,
-      "minutes": 1030,
-      "starts": 11
-    },
-    "atletico::robin le normand": {
-      "goals": 1,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 8,
-      "minutes": 468,
-      "starts": 5
-    },
-    "atletico::david hancko": {
-      "goals": 0,
-      "assists": 2,
-      "saves": 0,
-      "appearances": 13,
-      "minutes": 1023,
-      "starts": 11
-    },
-    "atletico::marc pubill": {
-      "goals": 1,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 10,
-      "minutes": 763,
-      "starts": 9
-    },
-    "atletico::arnau sola": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "atletico::jorge dominguez": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 1,
-      "minutes": 45,
-      "starts": 1
-    },
-    "atletico::daniel martinez": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 2,
-      "minutes": 135,
-      "starts": 2
-    },
-    "atletico::javier gil": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "atletico::romeo hueso moya": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "atletico::rodrigo mendoza": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 6,
-      "minutes": 163,
-      "starts": 2
-    },
-    "atletico::koke": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 10,
-      "minutes": 610,
-      "starts": 6
-    },
-    "atletico::jorge castillo": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "atletico::marcos llorente": {
-      "goals": 0,
-      "assists": 1,
-      "saves": 0,
-      "appearances": 13,
-      "minutes": 950,
-      "starts": 10
-    },
-    "atletico::lee kang in": {
-      "goals": 2,
-      "assists": 1,
-      "saves": 0,
-      "appearances": 13,
-      "minutes": 803,
-      "starts": 10
-    },
-    "atletico::morten hjulmand": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 11,
-      "minutes": 620,
-      "starts": 7
-    },
-    "atletico::johnny cardoso": {
-      "goals": 1,
-      "assists": 1,
-      "saves": 0,
-      "appearances": 8,
-      "minutes": 378,
-      "starts": 4
-    },
-    "atletico::alex baena": {
-      "goals": 6,
-      "assists": 3,
-      "saves": 0,
-      "appearances": 13,
-      "minutes": 833,
-      "starts": 9
-    },
-    "atletico::obed vargas": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "atletico::pablo barrios": {
-      "goals": 0,
-      "assists": 1,
-      "saves": 0,
-      "appearances": 10,
-      "minutes": 695,
-      "starts": 9
-    },
-    "atletico::alexander s rloth": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 5,
-      "minutes": 108,
-      "starts": 0
-    },
-    "atletico::ademola lookman": {
-      "goals": 1,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 11,
-      "minutes": 609,
-      "starts": 9
-    },
-    "atletico::jonathan david": {
-      "goals": 3,
-      "assists": 2,
-      "saves": 0,
-      "appearances": 7,
-      "minutes": 330,
-      "starts": 4
-    },
-    "atletico::julian alvarez": {
-      "goals": 1,
-      "assists": 4,
-      "saves": 0,
-      "appearances": 9,
-      "minutes": 495,
-      "starts": 4
-    },
-    "atletico::giuliano simeone": {
-      "goals": 4,
-      "assists": 2,
-      "saves": 0,
-      "appearances": 13,
-      "minutes": 952,
-      "starts": 10
-    },
-    "atletico::arnau ortiz": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 5,
-      "minutes": 149,
-      "starts": 1
-    },
-    "atletico::miguel cubo": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
     "betis::diego conde": {
       "goals": 0,
       "assists": 0,
@@ -4127,8 +4127,8 @@
       "assists": 0,
       "saves": 52,
       "appearances": 13,
-      "minutes": 1170,
-      "starts": 13
+      "minutes": 1260,
+      "starts": 14
     },
     "betis::manu gonzalez": {
       "goals": 0,
@@ -4159,16 +4159,16 @@
       "assists": 0,
       "saves": 0,
       "appearances": 9,
-      "minutes": 625,
-      "starts": 7
+      "minutes": 715,
+      "starts": 8
     },
     "betis::hector bellerin": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
       "appearances": 12,
-      "minutes": 937,
-      "starts": 10
+      "minutes": 1000,
+      "starts": 11
     },
     "betis::diego llorente": {
       "goals": 0,
@@ -4183,7 +4183,7 @@
       "assists": 1,
       "saves": 0,
       "appearances": 11,
-      "minutes": 931,
+      "minutes": 976,
       "starts": 10
     },
     "betis::junior firpo": {
@@ -4191,16 +4191,16 @@
       "assists": 0,
       "saves": 0,
       "appearances": 2,
-      "minutes": 149,
-      "starts": 2
+      "minutes": 194,
+      "starts": 3
     },
     "betis::natan": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
       "appearances": 11,
-      "minutes": 990,
-      "starts": 11
+      "minutes": 1080,
+      "starts": 12
     },
     "betis::valentin gomez": {
       "goals": 1,
@@ -4231,8 +4231,8 @@
       "assists": 2,
       "saves": 0,
       "appearances": 12,
-      "minutes": 704,
-      "starts": 9
+      "minutes": 794,
+      "starts": 10
     },
     "betis::dani ceballos": {
       "goals": 0,
@@ -4255,16 +4255,16 @@
       "assists": 1,
       "saves": 0,
       "appearances": 12,
-      "minutes": 878,
-      "starts": 10
+      "minutes": 957,
+      "starts": 11
     },
     "betis::marc roca": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
       "appearances": 10,
-      "minutes": 866,
-      "starts": 10
+      "minutes": 956,
+      "starts": 11
     },
     "betis::alvaro fidalgo": {
       "goals": 0,
@@ -4279,7 +4279,7 @@
       "assists": 1,
       "saves": 0,
       "appearances": 13,
-      "minutes": 466,
+      "minutes": 477,
       "starts": 4
     },
     "betis::facundo bernal": {
@@ -4307,7 +4307,7 @@
       "assists": 0,
       "saves": 0,
       "appearances": 3,
-      "minutes": 98,
+      "minutes": 125,
       "starts": 1
     },
     "betis::troy parrott": {
@@ -4315,7 +4315,7 @@
       "assists": 1,
       "saves": 0,
       "appearances": 10,
-      "minutes": 415,
+      "minutes": 442,
       "starts": 4
     },
     "betis::antony": {
@@ -4323,8 +4323,8 @@
       "assists": 0,
       "saves": 0,
       "appearances": 12,
-      "minutes": 779,
-      "starts": 9
+      "minutes": 842,
+      "starts": 10
     },
     "betis::iker losada": {
       "goals": 0,
@@ -4337,23 +4337,23 @@
       "assists": 0,
       "saves": 0,
       "appearances": 10,
-      "minutes": 753,
-      "starts": 9
+      "minutes": 843,
+      "starts": 10
     },
     "betis::cucho hernandez": {
       "goals": 2,
       "assists": 2,
       "saves": 0,
       "appearances": 9,
-      "minutes": 589,
-      "starts": 7
+      "minutes": 652,
+      "starts": 8
     },
     "betis::jose morante": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
       "appearances": 2,
-      "minutes": 13,
+      "minutes": 40,
       "starts": 0
     },
     "betis::rodrigo marina": {
@@ -4864,6 +4864,244 @@
       "saves": 0,
       "appearances": 0
     },
+    "athletic::unai simon": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 36,
+      "appearances": 13,
+      "minutes": 1170,
+      "starts": 13
+    },
+    "athletic::alex padilla": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "athletic::yuri berchiche": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11,
+      "minutes": 903,
+      "starts": 11
+    },
+    "athletic::aymeric laporte": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11,
+      "minutes": 1000,
+      "starts": 11
+    },
+    "athletic::yeray": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 9,
+      "minutes": 497,
+      "starts": 6
+    },
+    "athletic::dani vivian": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 3,
+      "minutes": 270,
+      "starts": 3
+    },
+    "athletic::jesus areso": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 7,
+      "minutes": 371,
+      "starts": 4
+    },
+    "athletic::aitor paredes": {
+      "goals": 2,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 8,
+      "minutes": 578,
+      "starts": 6
+    },
+    "athletic::johaneko louis jean": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9,
+      "minutes": 284,
+      "starts": 4
+    },
+    "athletic::hugo rincon": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 8,
+      "minutes": 706,
+      "starts": 8
+    },
+    "athletic::unai egiluz": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "athletic::iker monreal": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "athletic::inigo ruiz de galarreta": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 11,
+      "minutes": 548,
+      "starts": 8
+    },
+    "athletic::robert navarro": {
+      "goals": 2,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11,
+      "minutes": 685,
+      "starts": 7
+    },
+    "athletic::oihan sancet": {
+      "goals": 1,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 10,
+      "minutes": 688,
+      "starts": 8
+    },
+    "athletic::benat prados": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 4,
+      "minutes": 110,
+      "starts": 1
+    },
+    "athletic::mikel jauregizar": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 7,
+      "minutes": 302,
+      "starts": 3
+    },
+    "athletic::benat gerenabarrena": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11,
+      "minutes": 738,
+      "starts": 8
+    },
+    "athletic::peio canales": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11,
+      "minutes": 708,
+      "starts": 7
+    },
+    "athletic::alejandro rego": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 4,
+      "minutes": 81,
+      "starts": 0
+    },
+    "athletic::selton sanchez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "athletic::alex berenguer": {
+      "goals": 4,
+      "assists": 4,
+      "saves": 0,
+      "appearances": 13,
+      "minutes": 892,
+      "starts": 9
+    },
+    "athletic::inaki williams": {
+      "goals": 3,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 13,
+      "minutes": 945,
+      "starts": 12
+    },
+    "athletic::gorka guruzeta": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5,
+      "minutes": 183,
+      "starts": 2
+    },
+    "athletic::nico williams": {
+      "goals": 2,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 11,
+      "minutes": 796,
+      "starts": 9
+    },
+    "athletic::nico serrano": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 1,
+      "minutes": 4,
+      "starts": 0
+    },
+    "athletic::alvaro djalo": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 1,
+      "minutes": 9,
+      "starts": 0
+    },
+    "athletic::maroan sannadi": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 7,
+      "minutes": 255,
+      "starts": 3
+    },
+    "athletic::christian imga": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 1,
+      "minutes": 22,
+      "starts": 0
+    },
+    "athletic::jesus vizcay hurtado": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 2,
+      "minutes": 10,
+      "starts": 0
+    },
+    "athletic::aritz conde albiol": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
     "sevilla::rafael romero": {
       "goals": 0,
       "assists": 0,
@@ -5109,244 +5347,6 @@
       "appearances": 0
     },
     "sevilla::marc scuri marti": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "athletic::unai simon": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 36,
-      "appearances": 13,
-      "minutes": 1080,
-      "starts": 12
-    },
-    "athletic::alex padilla": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "athletic::yuri berchiche": {
-      "goals": 1,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 11,
-      "minutes": 816,
-      "starts": 10
-    },
-    "athletic::aymeric laporte": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 11,
-      "minutes": 910,
-      "starts": 10
-    },
-    "athletic::yeray": {
-      "goals": 0,
-      "assists": 1,
-      "saves": 0,
-      "appearances": 9,
-      "minutes": 497,
-      "starts": 6
-    },
-    "athletic::dani vivian": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 3,
-      "minutes": 270,
-      "starts": 3
-    },
-    "athletic::jesus areso": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 7,
-      "minutes": 371,
-      "starts": 4
-    },
-    "athletic::aitor paredes": {
-      "goals": 2,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 8,
-      "minutes": 488,
-      "starts": 5
-    },
-    "athletic::johaneko louis jean": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 9,
-      "minutes": 281,
-      "starts": 4
-    },
-    "athletic::hugo rincon": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 8,
-      "minutes": 616,
-      "starts": 7
-    },
-    "athletic::unai egiluz": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "athletic::iker monreal": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "athletic::inigo ruiz de galarreta": {
-      "goals": 0,
-      "assists": 1,
-      "saves": 0,
-      "appearances": 11,
-      "minutes": 503,
-      "starts": 7
-    },
-    "athletic::robert navarro": {
-      "goals": 2,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 11,
-      "minutes": 657,
-      "starts": 7
-    },
-    "athletic::oihan sancet": {
-      "goals": 1,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 10,
-      "minutes": 626,
-      "starts": 7
-    },
-    "athletic::benat prados": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 4,
-      "minutes": 92,
-      "starts": 1
-    },
-    "athletic::mikel jauregizar": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 7,
-      "minutes": 302,
-      "starts": 3
-    },
-    "athletic::benat gerenabarrena": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 11,
-      "minutes": 666,
-      "starts": 7
-    },
-    "athletic::peio canales": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 11,
-      "minutes": 663,
-      "starts": 7
-    },
-    "athletic::alejandro rego": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 4,
-      "minutes": 63,
-      "starts": 0
-    },
-    "athletic::selton sanchez": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "athletic::alex berenguer": {
-      "goals": 4,
-      "assists": 4,
-      "saves": 0,
-      "appearances": 13,
-      "minutes": 820,
-      "starts": 8
-    },
-    "athletic::inaki williams": {
-      "goals": 3,
-      "assists": 2,
-      "saves": 0,
-      "appearances": 13,
-      "minutes": 855,
-      "starts": 11
-    },
-    "athletic::gorka guruzeta": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 5,
-      "minutes": 183,
-      "starts": 2
-    },
-    "athletic::nico williams": {
-      "goals": 2,
-      "assists": 1,
-      "saves": 0,
-      "appearances": 11,
-      "minutes": 706,
-      "starts": 8
-    },
-    "athletic::nico serrano": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 1,
-      "minutes": 4,
-      "starts": 0
-    },
-    "athletic::alvaro djalo": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 1,
-      "minutes": 9,
-      "starts": 0
-    },
-    "athletic::maroan sannadi": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 7,
-      "minutes": 255,
-      "starts": 3
-    },
-    "athletic::christian imga": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 1,
-      "minutes": 22,
-      "starts": 0
-    },
-    "athletic::jesus vizcay hurtado": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 2,
-      "minutes": 10,
-      "starts": 0
-    },
-    "athletic::aritz conde albiol": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
@@ -6272,6 +6272,252 @@
       "minutes": 869,
       "starts": 11
     },
+    "rayo vallecano::daniel cardenas": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 8,
+      "appearances": 3,
+      "minutes": 210,
+      "starts": 2
+    },
+    "rayo vallecano::augusto batalla": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 3,
+      "appearances": 2,
+      "minutes": 150,
+      "starts": 2
+    },
+    "rayo vallecano::emil audero": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 24,
+      "appearances": 9,
+      "minutes": 810,
+      "starts": 9
+    },
+    "rayo vallecano::adrian molina": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "rayo vallecano::florian lejeune": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 13,
+      "minutes": 1170,
+      "starts": 13
+    },
+    "rayo vallecano::ivan balliu": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9,
+      "minutes": 343,
+      "starts": 4
+    },
+    "rayo vallecano::luiz felipe": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "rayo vallecano::marash kumbulla": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "rayo vallecano::mujaid sadick": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9,
+      "minutes": 585,
+      "starts": 7
+    },
+    "rayo vallecano::sergio lozano": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "rayo vallecano::adria pedrosa": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 11,
+      "minutes": 808,
+      "starts": 9
+    },
+    "rayo vallecano::andrei ratiu": {
+      "goals": 1,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 9,
+      "minutes": 900,
+      "starts": 10
+    },
+    "rayo vallecano::jozhua vertrouwd": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5,
+      "minutes": 191,
+      "starts": 2
+    },
+    "rayo vallecano::pelayo fernandez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 2,
+      "minutes": 67,
+      "starts": 1
+    },
+    "rayo vallecano::marco de las sias": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "rayo vallecano::alvaro garcia": {
+      "goals": 3,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 12,
+      "minutes": 830,
+      "starts": 10
+    },
+    "rayo vallecano::unai lopez": {
+      "goals": 1,
+      "assists": 3,
+      "saves": 0,
+      "appearances": 13,
+      "minutes": 1054,
+      "starts": 13
+    },
+    "rayo vallecano::pedro diaz": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12,
+      "minutes": 638,
+      "starts": 6
+    },
+    "rayo vallecano::isi palazon": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 7,
+      "minutes": 353,
+      "starts": 5
+    },
+    "rayo vallecano::oscar valentin": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9,
+      "minutes": 471,
+      "starts": 5
+    },
+    "rayo vallecano::randy nteka": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 5,
+      "minutes": 242,
+      "starts": 2
+    },
+    "rayo vallecano::pathe ciss": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 12,
+      "minutes": 1080,
+      "starts": 12
+    },
+    "rayo vallecano::samu becerra": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "rayo vallecano::marco roman": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "rayo vallecano::gnangoro bouare samake": {
+      "goals": 0,
+      "assists": 1,
+      "saves": 0,
+      "appearances": 9,
+      "minutes": 336,
+      "starts": 3
+    },
+    "rayo vallecano::ivan alonso martin": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "rayo vallecano::raul de tomas": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 0
+    },
+    "rayo vallecano::jorge de frutos": {
+      "goals": 2,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 11,
+      "minutes": 843,
+      "starts": 11
+    },
+    "rayo vallecano::giorgi tsitaishvili": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 9,
+      "minutes": 492,
+      "starts": 4
+    },
+    "rayo vallecano::sergio camello": {
+      "goals": 7,
+      "assists": 2,
+      "saves": 0,
+      "appearances": 13,
+      "minutes": 909,
+      "starts": 12
+    },
+    "rayo vallecano::alexandre alemao": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 11,
+      "minutes": 208,
+      "starts": 0
+    },
+    "rayo vallecano::fran perez": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 6,
+      "minutes": 152,
+      "starts": 1
+    },
+    "rayo vallecano::rayane belaid": {
+      "goals": 0,
+      "assists": 0,
+      "saves": 0,
+      "appearances": 1,
+      "minutes": 23,
+      "starts": 0
+    },
     "osasuna::aitor fernandez": {
       "goals": 0,
       "assists": 0,
@@ -6962,252 +7208,6 @@
       "saves": 0,
       "appearances": 0
     },
-    "rayo vallecano::daniel cardenas": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 8,
-      "appearances": 3,
-      "minutes": 210,
-      "starts": 2
-    },
-    "rayo vallecano::augusto batalla": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 3,
-      "appearances": 2,
-      "minutes": 150,
-      "starts": 2
-    },
-    "rayo vallecano::emil audero": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 24,
-      "appearances": 9,
-      "minutes": 720,
-      "starts": 8
-    },
-    "rayo vallecano::adrian molina": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "rayo vallecano::florian lejeune": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 13,
-      "minutes": 1080,
-      "starts": 12
-    },
-    "rayo vallecano::ivan balliu": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 9,
-      "minutes": 343,
-      "starts": 4
-    },
-    "rayo vallecano::luiz felipe": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "rayo vallecano::marash kumbulla": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "rayo vallecano::mujaid sadick": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 9,
-      "minutes": 585,
-      "starts": 7
-    },
-    "rayo vallecano::sergio lozano": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "rayo vallecano::adria pedrosa": {
-      "goals": 1,
-      "assists": 1,
-      "saves": 0,
-      "appearances": 11,
-      "minutes": 718,
-      "starts": 8
-    },
-    "rayo vallecano::andrei ratiu": {
-      "goals": 1,
-      "assists": 1,
-      "saves": 0,
-      "appearances": 9,
-      "minutes": 810,
-      "starts": 9
-    },
-    "rayo vallecano::jozhua vertrouwd": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 5,
-      "minutes": 191,
-      "starts": 2
-    },
-    "rayo vallecano::pelayo fernandez": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 2,
-      "minutes": 67,
-      "starts": 1
-    },
-    "rayo vallecano::marco de las sias": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "rayo vallecano::alvaro garcia": {
-      "goals": 3,
-      "assists": 2,
-      "saves": 0,
-      "appearances": 12,
-      "minutes": 765,
-      "starts": 9
-    },
-    "rayo vallecano::unai lopez": {
-      "goals": 1,
-      "assists": 3,
-      "saves": 0,
-      "appearances": 13,
-      "minutes": 964,
-      "starts": 12
-    },
-    "rayo vallecano::pedro diaz": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 12,
-      "minutes": 621,
-      "starts": 6
-    },
-    "rayo vallecano::isi palazon": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 7,
-      "minutes": 280,
-      "starts": 4
-    },
-    "rayo vallecano::oscar valentin": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 9,
-      "minutes": 467,
-      "starts": 5
-    },
-    "rayo vallecano::randy nteka": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 5,
-      "minutes": 225,
-      "starts": 2
-    },
-    "rayo vallecano::pathe ciss": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 12,
-      "minutes": 990,
-      "starts": 11
-    },
-    "rayo vallecano::samu becerra": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "rayo vallecano::marco roman": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "rayo vallecano::gnangoro bouare samake": {
-      "goals": 0,
-      "assists": 1,
-      "saves": 0,
-      "appearances": 9,
-      "minutes": 250,
-      "starts": 2
-    },
-    "rayo vallecano::ivan alonso martin": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "rayo vallecano::raul de tomas": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 0
-    },
-    "rayo vallecano::jorge de frutos": {
-      "goals": 2,
-      "assists": 2,
-      "saves": 0,
-      "appearances": 11,
-      "minutes": 753,
-      "starts": 10
-    },
-    "rayo vallecano::giorgi tsitaishvili": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 9,
-      "minutes": 467,
-      "starts": 4
-    },
-    "rayo vallecano::sergio camello": {
-      "goals": 7,
-      "assists": 2,
-      "saves": 0,
-      "appearances": 13,
-      "minutes": 836,
-      "starts": 11
-    },
-    "rayo vallecano::alexandre alemao": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 11,
-      "minutes": 208,
-      "starts": 0
-    },
-    "rayo vallecano::fran perez": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 6,
-      "minutes": 152,
-      "starts": 1
-    },
-    "rayo vallecano::rayane belaid": {
-      "goals": 0,
-      "assists": 0,
-      "saves": 0,
-      "appearances": 1,
-      "minutes": 23,
-      "starts": 0
-    },
     "valencia::cristian rivero": {
       "goals": 0,
       "assists": 0,
@@ -7749,8 +7749,8 @@
       "assists": 0,
       "saves": 38,
       "appearances": 13,
-      "minutes": 1170,
-      "starts": 13
+      "minutes": 1260,
+      "starts": 14
     },
     "elche::alejandro iturbe": {
       "goals": 0,
@@ -7771,8 +7771,8 @@
       "assists": 1,
       "saves": 0,
       "appearances": 13,
-      "minutes": 1170,
-      "starts": 13
+      "minutes": 1260,
+      "starts": 14
     },
     "elche::bambo diaby": {
       "goals": 0,
@@ -7799,16 +7799,16 @@
       "assists": 2,
       "saves": 0,
       "appearances": 10,
-      "minutes": 784,
-      "starts": 9
+      "minutes": 869,
+      "starts": 10
     },
     "elche::buba sangare": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
       "appearances": 11,
-      "minutes": 871,
-      "starts": 11
+      "minutes": 961,
+      "starts": 12
     },
     "elche::matia barzic": {
       "goals": 0,
@@ -7831,7 +7831,7 @@
       "assists": 1,
       "saves": 0,
       "appearances": 3,
-      "minutes": 25,
+      "minutes": 39,
       "starts": 0
     },
     "elche::gonzalo villar": {
@@ -7839,8 +7839,8 @@
       "assists": 1,
       "saves": 0,
       "appearances": 12,
-      "minutes": 935,
-      "starts": 12
+      "minutes": 1011,
+      "starts": 13
     },
     "elche::marc aguado": {
       "goals": 1,
@@ -7855,8 +7855,8 @@
       "assists": 0,
       "saves": 0,
       "appearances": 10,
-      "minutes": 742,
-      "starts": 9
+      "minutes": 832,
+      "starts": 10
     },
     "elche::facundo buonanotte": {
       "goals": 1,
@@ -7871,23 +7871,23 @@
       "assists": 0,
       "saves": 0,
       "appearances": 9,
-      "minutes": 337,
-      "starts": 3
+      "minutes": 399,
+      "starts": 4
     },
     "elche::javier morcillo": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
       "appearances": 11,
-      "minutes": 835,
-      "starts": 9
+      "minutes": 925,
+      "starts": 10
     },
     "elche::ezequiel ponce": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
       "appearances": 3,
-      "minutes": 121,
+      "minutes": 126,
       "starts": 1
     },
     "elche::grady diangana": {
@@ -7895,7 +7895,7 @@
       "assists": 0,
       "saves": 0,
       "appearances": 3,
-      "minutes": 58,
+      "minutes": 86,
       "starts": 0
     },
     "elche::jose antonio morente": {
@@ -7911,24 +7911,24 @@
       "assists": 1,
       "saves": 0,
       "appearances": 13,
-      "minutes": 1069,
-      "starts": 13
+      "minutes": 1159,
+      "starts": 14
     },
     "elche::fer nino": {
       "goals": 6,
       "assists": 0,
       "saves": 0,
       "appearances": 13,
-      "minutes": 876,
-      "starts": 11
+      "minutes": 961,
+      "starts": 12
     },
     "elche::lucas cepeda": {
       "goals": 0,
       "assists": 2,
       "saves": 0,
       "appearances": 13,
-      "minutes": 602,
-      "starts": 6
+      "minutes": 678,
+      "starts": 7
     },
     "elche::yago alonso": {
       "goals": 0,
@@ -7941,7 +7941,7 @@
       "assists": 0,
       "saves": 0,
       "appearances": 10,
-      "minutes": 388,
+      "minutes": 393,
       "starts": 3
     },
     "elche::adam boayar": {
@@ -7955,7 +7955,7 @@
       "assists": 0,
       "saves": 0,
       "appearances": 4,
-      "minutes": 235,
+      "minutes": 249,
       "starts": 4
     },
     "elche::alvaro padilla escriba": {
@@ -7971,8 +7971,8 @@
       "assists": 0,
       "saves": 46,
       "appearances": 13,
-      "minutes": 1170,
-      "starts": 13
+      "minutes": 1260,
+      "starts": 14
     },
     "malaga::carlos lopez": {
       "goals": 0,
@@ -7991,8 +7991,8 @@
       "assists": 0,
       "saves": 0,
       "appearances": 10,
-      "minutes": 535,
-      "starts": 6
+      "minutes": 580,
+      "starts": 7
     },
     "malaga::einar galilea": {
       "goals": 0,
@@ -8031,24 +8031,24 @@
       "assists": 0,
       "saves": 0,
       "appearances": 11,
-      "minutes": 990,
-      "starts": 11
+      "minutes": 1080,
+      "starts": 12
     },
     "malaga::carlos puga": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
       "appearances": 11,
-      "minutes": 625,
-      "starts": 7
+      "minutes": 715,
+      "starts": 8
     },
     "malaga::diego murillo": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
       "appearances": 1,
-      "minutes": 90,
-      "starts": 1
+      "minutes": 180,
+      "starts": 2
     },
     "malaga::oscar gonzalez": {
       "goals": 0,
@@ -8077,7 +8077,7 @@
       "assists": 1,
       "saves": 0,
       "appearances": 8,
-      "minutes": 249,
+      "minutes": 263,
       "starts": 3
     },
     "malaga::pablo martinez": {
@@ -8085,7 +8085,7 @@
       "assists": 2,
       "saves": 0,
       "appearances": 9,
-      "minutes": 563,
+      "minutes": 608,
       "starts": 6
     },
     "malaga::jens cajuste": {
@@ -8093,15 +8093,15 @@
       "assists": 0,
       "saves": 0,
       "appearances": 3,
-      "minutes": 17,
-      "starts": 0
+      "minutes": 89,
+      "starts": 1
     },
     "malaga::ramon enriquez": {
       "goals": 0,
       "assists": 1,
       "saves": 0,
       "appearances": 12,
-      "minutes": 408,
+      "minutes": 432,
       "starts": 3
     },
     "malaga::carlos dotor": {
@@ -8117,15 +8117,15 @@
       "assists": 0,
       "saves": 0,
       "appearances": 12,
-      "minutes": 819,
-      "starts": 9
+      "minutes": 864,
+      "starts": 10
     },
     "malaga::rafa rodriguez": {
       "goals": 0,
       "assists": 0,
       "saves": 0,
       "appearances": 9,
-      "minutes": 335,
+      "minutes": 353,
       "starts": 4
     },
     "malaga::izan merino": {
@@ -8133,8 +8133,8 @@
       "assists": 0,
       "saves": 0,
       "appearances": 8,
-      "minutes": 482,
-      "starts": 6
+      "minutes": 548,
+      "starts": 7
     },
     "malaga::aaron moloney": {
       "goals": 0,
@@ -8153,8 +8153,8 @@
       "assists": 0,
       "saves": 0,
       "appearances": 11,
-      "minutes": 541,
-      "starts": 7
+      "minutes": 617,
+      "starts": 8
     },
     "malaga::eneko jauregui": {
       "goals": 0,
@@ -8169,8 +8169,8 @@
       "assists": 0,
       "saves": 0,
       "appearances": 13,
-      "minutes": 1031,
-      "starts": 11
+      "minutes": 1121,
+      "starts": 12
     },
     "malaga::julen lobete": {
       "goals": 0,
@@ -8193,15 +8193,15 @@
       "assists": 1,
       "saves": 0,
       "appearances": 9,
-      "minutes": 550,
-      "starts": 5
+      "minutes": 640,
+      "starts": 6
     },
     "malaga::chupete": {
       "goals": 1,
       "assists": 0,
       "saves": 0,
       "appearances": 13,
-      "minutes": 890,
+      "minutes": 935,
       "starts": 9
     },
     "malaga::juani": {

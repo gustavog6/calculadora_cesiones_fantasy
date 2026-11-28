@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T22:51:06.917Z",
+  "updated_at": "2026-11-28T08:45:20.701Z",
   "season": "2026-27 LALIGA",
   "source": "ESPN Public API (esp.1)",
   "standings": [
@@ -2247,7 +2247,7 @@
   "matchday": {
     "firstKickoffUtc": "2026-11-27T20:00Z",
     "datesParam": "20261127-20261130",
-    "updatedAt": "2026-11-27T22:51:06.909Z",
+    "updatedAt": "2026-11-28T08:45:20.698Z",
     "matches": [
       {
         "id": "401882791",
@@ -2494,10 +2494,10 @@
         "teamAbbr": "RAC",
         "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png",
         "position": "DEL",
-        "goals": 11,
+        "goals": 12,
         "assists": 0,
         "saves": 0,
-        "appearances": 13
+        "appearances": 14
       },
       {
         "espnId": "362150",
@@ -2653,7 +2653,7 @@
         "goals": 5,
         "assists": 1,
         "saves": 0,
-        "appearances": 12
+        "appearances": 13
       },
       {
         "espnId": "209579",
@@ -2716,6 +2716,18 @@
         "appearances": 12
       },
       {
+        "espnId": "311054",
+        "name": "Iván Romero",
+        "team": "Levante",
+        "teamAbbr": "LEV",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png",
+        "position": "DEL",
+        "goals": 4,
+        "assists": 0,
+        "saves": 0,
+        "appearances": 14
+      },
+      {
         "espnId": "310452",
         "name": "Arda Güler",
         "team": "Real Madrid",
@@ -2750,18 +2762,6 @@
         "assists": 2,
         "saves": 0,
         "appearances": 11
-      },
-      {
-        "espnId": "229018",
-        "name": "Mikel Oyarzabal",
-        "team": "Real Sociedad",
-        "teamAbbr": "RSO",
-        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png",
-        "position": "DEL",
-        "goals": 3,
-        "assists": 2,
-        "saves": 0,
-        "appearances": 12
       }
     ],
     "assists": [
@@ -2884,6 +2884,18 @@
         "assists": 4,
         "saves": 0,
         "appearances": 12
+      },
+      {
+        "espnId": "284699",
+        "name": "Iñigo Vicente",
+        "team": "Racing",
+        "teamAbbr": "RAC",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png",
+        "position": "DEL",
+        "goals": 0,
+        "assists": 4,
+        "saves": 0,
+        "appearances": 14
       },
       {
         "espnId": "231050",
@@ -3030,18 +3042,6 @@
         "appearances": 13
       },
       {
-        "espnId": "284699",
-        "name": "Iñigo Vicente",
-        "team": "Racing",
-        "teamAbbr": "RAC",
-        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png",
-        "position": "DEL",
-        "goals": 0,
-        "assists": 3,
-        "saves": 0,
-        "appearances": 13
-      },
-      {
         "espnId": "16340",
         "name": "Javier Guerra",
         "team": "Valencia",
@@ -3068,6 +3068,18 @@
     ],
     "saves": [
       {
+        "espnId": "323970",
+        "name": "Julen Agirrezabala",
+        "team": "Racing",
+        "teamAbbr": "RAC",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png",
+        "position": "POR",
+        "goals": 0,
+        "assists": 0,
+        "saves": 54,
+        "appearances": 14
+      },
+      {
         "espnId": "283892",
         "name": "Álvaro Valles",
         "team": "Betis",
@@ -3080,16 +3092,16 @@
         "appearances": 13
       },
       {
-        "espnId": "323970",
-        "name": "Julen Agirrezabala",
-        "team": "Racing",
-        "teamAbbr": "RAC",
-        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png",
+        "espnId": "141438",
+        "name": "Mathew Ryan",
+        "team": "Levante",
+        "teamAbbr": "LEV",
+        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png",
         "position": "POR",
         "goals": 0,
         "assists": 0,
-        "saves": 52,
-        "appearances": 13
+        "saves": 50,
+        "appearances": 14
       },
       {
         "espnId": "165334",
@@ -3125,18 +3137,6 @@
         "goals": 0,
         "assists": 0,
         "saves": 46,
-        "appearances": 13
-      },
-      {
-        "espnId": "141438",
-        "name": "Mathew Ryan",
-        "team": "Levante",
-        "teamAbbr": "LEV",
-        "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png",
-        "position": "POR",
-        "goals": 0,
-        "assists": 0,
-        "saves": 45,
         "appearances": 13
       },
       {
@@ -4613,8 +4613,8 @@
     "racing::julen agirrezabala": {
       "goals": 0,
       "assists": 0,
-      "saves": 52,
-      "appearances": 13,
+      "saves": 54,
+      "appearances": 14,
       "minutes": 1260,
       "starts": 14
     },
@@ -4638,9 +4638,9 @@
     },
     "racing::jorge salinas": {
       "goals": 0,
-      "assists": 0,
+      "assists": 1,
       "saves": 0,
-      "appearances": 12,
+      "appearances": 13,
       "minutes": 1077,
       "starts": 12
     },
@@ -4664,7 +4664,7 @@
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 11,
+      "appearances": 12,
       "minutes": 937,
       "starts": 11
     },
@@ -4680,7 +4680,7 @@
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 9,
+      "appearances": 10,
       "minutes": 845,
       "starts": 9
     },
@@ -4688,7 +4688,7 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 7,
+      "appearances": 8,
       "minutes": 386,
       "starts": 5
     },
@@ -4710,7 +4710,7 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 10,
+      "appearances": 11,
       "minutes": 834,
       "starts": 10
     },
@@ -4718,7 +4718,7 @@
       "goals": 2,
       "assists": 1,
       "saves": 0,
-      "appearances": 13,
+      "appearances": 14,
       "minutes": 1033,
       "starts": 13
     },
@@ -4732,9 +4732,9 @@
     },
     "racing::andre almeida": {
       "goals": 0,
-      "assists": 0,
+      "assists": 1,
       "saves": 0,
-      "appearances": 9,
+      "appearances": 10,
       "minutes": 294,
       "starts": 3
     },
@@ -4742,7 +4742,7 @@
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 11,
+      "appearances": 12,
       "minutes": 969,
       "starts": 11
     },
@@ -4770,7 +4770,7 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 0,
+      "appearances": 1,
       "minutes": 1,
       "starts": 0
     },
@@ -4792,15 +4792,15 @@
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 8,
+      "appearances": 9,
       "minutes": 268,
       "starts": 3
     },
     "racing::inigo vicente": {
       "goals": 0,
-      "assists": 3,
+      "assists": 4,
       "saves": 0,
-      "appearances": 13,
+      "appearances": 14,
       "minutes": 1146,
       "starts": 13
     },
@@ -4821,18 +4821,18 @@
       "starts": 1
     },
     "racing::yassir zabiri": {
-      "goals": 11,
+      "goals": 12,
       "assists": 0,
       "saves": 0,
-      "appearances": 13,
+      "appearances": 14,
       "minutes": 980,
       "starts": 11
     },
     "racing::pablo garcia": {
-      "goals": 1,
+      "goals": 3,
       "assists": 0,
       "saves": 0,
-      "appearances": 9,
+      "appearances": 10,
       "minutes": 394,
       "starts": 3
     },
@@ -4840,7 +4840,7 @@
       "goals": 1,
       "assists": 1,
       "saves": 0,
-      "appearances": 7,
+      "appearances": 8,
       "minutes": 507,
       "starts": 5
     },
@@ -4848,7 +4848,7 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 0,
+      "appearances": 1,
       "minutes": 29,
       "starts": 0
     },
@@ -6735,8 +6735,8 @@
     "levante::mathew ryan": {
       "goals": 0,
       "assists": 0,
-      "saves": 45,
-      "appearances": 13,
+      "saves": 50,
+      "appearances": 14,
       "minutes": 1260,
       "starts": 14
     },
@@ -6762,7 +6762,7 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 11,
+      "appearances": 12,
       "minutes": 1053,
       "starts": 12
     },
@@ -6778,7 +6778,7 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 11,
+      "appearances": 12,
       "minutes": 471,
       "starts": 4
     },
@@ -6786,7 +6786,7 @@
       "goals": 2,
       "assists": 0,
       "saves": 0,
-      "appearances": 12,
+      "appearances": 13,
       "minutes": 945,
       "starts": 10
     },
@@ -6824,7 +6824,7 @@
       "goals": 1,
       "assists": 0,
       "saves": 0,
-      "appearances": 12,
+      "appearances": 13,
       "minutes": 785,
       "starts": 9
     },
@@ -6844,7 +6844,7 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 4,
+      "appearances": 5,
       "minutes": 172,
       "starts": 1
     },
@@ -6852,15 +6852,15 @@
       "goals": 5,
       "assists": 1,
       "saves": 0,
-      "appearances": 12,
+      "appearances": 13,
       "minutes": 1026,
       "starts": 12
     },
     "levante::orio rey": {
       "goals": 0,
-      "assists": 0,
+      "assists": 1,
       "saves": 0,
-      "appearances": 12,
+      "appearances": 13,
       "minutes": 821,
       "starts": 9
     },
@@ -6868,7 +6868,7 @@
       "goals": 1,
       "assists": 2,
       "saves": 0,
-      "appearances": 13,
+      "appearances": 14,
       "minutes": 1156,
       "starts": 13
     },
@@ -6884,7 +6884,7 @@
       "goals": 1,
       "assists": 1,
       "saves": 0,
-      "appearances": 8,
+      "appearances": 9,
       "minutes": 489,
       "starts": 5
     },
@@ -6892,7 +6892,7 @@
       "goals": 2,
       "assists": 1,
       "saves": 0,
-      "appearances": 10,
+      "appearances": 11,
       "minutes": 733,
       "starts": 8
     },
@@ -6909,10 +6909,10 @@
       "appearances": 0
     },
     "levante::ivan romero": {
-      "goals": 3,
+      "goals": 4,
       "assists": 0,
       "saves": 0,
-      "appearances": 13,
+      "appearances": 14,
       "minutes": 981,
       "starts": 12
     },
@@ -6920,7 +6920,7 @@
       "goals": 0,
       "assists": 1,
       "saves": 0,
-      "appearances": 11,
+      "appearances": 12,
       "minutes": 886,
       "starts": 11
     },
@@ -6936,7 +6936,7 @@
       "goals": 1,
       "assists": 1,
       "saves": 0,
-      "appearances": 8,
+      "appearances": 9,
       "minutes": 253,
       "starts": 2
     },
@@ -6952,7 +6952,7 @@
       "goals": 0,
       "assists": 0,
       "saves": 0,
-      "appearances": 4,
+      "appearances": 5,
       "minutes": 125,
       "starts": 1
     },

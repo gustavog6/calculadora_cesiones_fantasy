@@ -5352,7 +5352,7 @@ const LaLigaView = (function() {
 
   function refreshLiveMatchday(force) {
     const md = data && data.matchday;
-    if (!md || !md.datesParam) return;
+    if (!md) return;
     const now = Date.now();
     if (!force && now - lastLiveFetch < 30000) return;
     lastLiveFetch = now;
@@ -5360,54 +5360,55 @@ const LaLigaView = (function() {
     const btn = $('btn-ll-refresh-jornada');
     if (btn) btn.disabled = true;
 
-    fetch(ESPN_SITE_BASE + '/scoreboard?dates=' + encodeURIComponent(md.datesParam))
+    fetch(ESPN_SITE_BASE + '/scoreboard')
       .then(function(res) { return res.ok ? res.json() : null; })
       .then(function(json) {
         if (!json || !Array.isArray(json.events) || json.events.length === 0) return;
-        const baseIds = new Set((md.matches || []).map(function(m) { return String(m.id); }));
-        const updated = json.events
-          .filter(function(ev) { return baseIds.size === 0 || baseIds.has(String(ev.id)); })
-          .map(function(ev) {
-            const comp = ev.competitions && ev.competitions[0];
-            if (!comp) return null;
-            const comps = comp.competitors || [];
-            const hc = comps.find(function(c) { return c.homeAway === 'home'; });
-            const ac = comps.find(function(c) { return c.homeAway === 'away'; });
-            if (!hc || !ac) return null;
-            const st = (comp.status && comp.status.type && comp.status.type.state) || 'pre';
-            const hs = st === 'pre' ? null : Number(hc.score);
-            const as = st === 'pre' ? null : Number(ac.score);
-            return {
-              id: String(ev.id || ''),
-              date: ev.date || '',
-              state: st,
-              statusDetail: (comp.status && comp.status.type && comp.status.type.shortDetail) || '',
-              clock: (comp.status && comp.status.displayClock) || '',
-              home: {
-                id: String((hc.team && hc.team.id) || ''),
-                team: mapEspnTeamName((hc.team && (hc.team.displayName || hc.team.shortDisplayName)) || ''),
-                abbr: (hc.team && hc.team.abbreviation) || '',
-                logo: (hc.team && (hc.team.logo || (hc.team.logos && hc.team.logos[0] && hc.team.logos[0].href))) || '',
-                score: Number.isFinite(hs) ? hs : null
-              },
-              away: {
-                id: String((ac.team && ac.team.id) || ''),
-                team: mapEspnTeamName((ac.team && (ac.team.displayName || ac.team.shortDisplayName)) || ''),
-                abbr: (ac.team && ac.team.abbreviation) || '',
-                logo: (ac.team && (ac.team.logo || (ac.team.logos && ac.team.logos[0] && ac.team.logos[0].href))) || '',
-                score: Number.isFinite(as) ? as : null
-              }
-            };
-          })
-          .filter(Boolean)
-          .sort(function(a, b) { return a.date.localeCompare(b.date); });
+        const liveById = new Map();
+        json.events.forEach(function(ev) {
+          const comp = ev.competitions && ev.competitions[0];
+          if (!comp) return;
+          const comps = comp.competitors || [];
+          const hc = comps.find(function(c) { return c.homeAway === 'home'; });
+          const ac = comps.find(function(c) { return c.homeAway === 'away'; });
+          if (!hc || !ac) return;
+          const st = (comp.status && comp.status.type && comp.status.type.state) || 'pre';
+          const hs = st === 'pre' ? null : Number(hc.score);
+          const as = st === 'pre' ? null : Number(ac.score);
+          liveById.set(String(ev.id || ''), {
+            id: String(ev.id || ''),
+            date: ev.date || '',
+            state: st,
+            statusDetail: (comp.status && comp.status.type && comp.status.type.shortDetail) || '',
+            clock: (comp.status && comp.status.displayClock) || '',
+            home: {
+              id: String((hc.team && hc.team.id) || ''),
+              team: mapEspnTeamName((hc.team && (hc.team.displayName || hc.team.shortDisplayName)) || ''),
+              abbr: (hc.team && hc.team.abbreviation) || '',
+              logo: (hc.team && (hc.team.logo || (hc.team.logos && hc.team.logos[0] && hc.team.logos[0].href))) || '',
+              score: Number.isFinite(hs) ? hs : null
+            },
+            away: {
+              id: String((ac.team && ac.team.id) || ''),
+              team: mapEspnTeamName((ac.team && (ac.team.displayName || ac.team.shortDisplayName)) || ''),
+              abbr: (ac.team && ac.team.abbreviation) || '',
+              logo: (ac.team && (ac.team.logo || (ac.team.logos && ac.team.logos[0] && ac.team.logos[0].href))) || '',
+              score: Number.isFinite(as) ? as : null
+            }
+          });
+        });
 
-        if (updated.length > 0) {
-          liveMatches = updated;
+        const base = getCurrentMatches();
+        const merged = base.length > 0
+          ? base.map(function(m) { return liveById.get(String(m.id)) || m; })
+          : Array.from(liveById.values()).sort(function(a, b) { return a.date.localeCompare(b.date); });
+
+        if (merged.length > 0) {
+          liveMatches = merged;
           renderMatchday();
           const hhmm = new Date().toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
           if ($('ll-jornada-status')) {
-            $('ll-jornada-status').textContent = 'Marcadores actualizados a las ' + hhmm + ' · Haz clic en un partido para ver alineaciones';
+            $('ll-jornada-status').textContent = 'Marcadores en vivo actualizados a las ' + hhmm + ' · Haz clic en un partido para ver alineaciones';
           }
         }
       })

@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 /**
- * Publica una alerta automática en el canal de Telegram cuando faltan ~15 minutos
- * para que comience el primer partido de la jornada de LaLiga (`data/laliga.json`).
+ * Publica alertas automáticas en el canal de Telegram ~15 minutos antes de iniciar:
+ *   1. El primer partido de la jornada (aviso de cierre de LALIGA Fantasy).
+ *   2. El primer partido de cada día siguiente de la jornada (sábado, domingo, lunes).
  *
  * Variables de entorno requeridas para enviar:
  *   TELEGRAM_BOT_TOKEN  Token del bot creado con @BotFather
@@ -34,6 +35,12 @@ function escHtml(s) {
     .replace(/>/g, '&gt;');
 }
 
+function getMadridDayKey(iso) {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return '';
+  return d.toLocaleDateString('sv-SE', { timeZone: 'Europe/Madrid' }); // YYYY-MM-DD
+}
+
 function formatMadridTime(iso) {
   const d = new Date(iso);
   if (Number.isNaN(d.getTime())) return '';
@@ -44,16 +51,47 @@ function formatMadridTime(iso) {
   });
 }
 
-function buildAlertMessage(matchday, minsLeft) {
-  const matches = Array.isArray(matchday.matches) ? matchday.matches : [];
-  const first = matches[0];
-  const kickoffStr = formatMadridTime(matchday.firstKickoffUtc);
+function formatMadridWeekday(iso) {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return '';
+  return d.toLocaleDateString('es-ES', {
+    weekday: 'long',
+    day: '2-digit',
+    month: 'short',
+    timeZone: 'Europe/Madrid'
+  });
+}
+
+function groupMatchesByDay(matches) {
+  const byDay = new Map();
+  const sorted = (matches || []).slice().sort((a, b) => String(a.date || '').localeCompare(String(b.date || '')));
+  for (const m of sorted) {
+    const dayKey = getMadridDayKey(m.date);
+    if (!dayKey) continue;
+    if (!byDay.has(dayKey)) byDay.set(dayKey, []);
+    byDay.get(dayKey).push(m);
+  }
+  return Array.from(byDay.entries()).map(([dayKey, dayMatches], index) => ({
+    dayKey,
+    isJornadaStart: index === 0,
+    firstKickoffUtc: dayMatches[0].date,
+    matches: dayMatches
+  }));
+}
+
+function buildAlertMessage(dayGroup, minsLeft) {
+  const first = dayGroup.matches[0];
+  const kickoffStr = formatMadridTime(dayGroup.firstKickoffUtc);
+  const dayLabel = formatMadridWeekday(dayGroup.firstKickoffUtc);
   const minsLabel = minsLeft > 0 && minsLeft <= 30 ? `${Math.round(minsLeft)} min` : '15 min';
 
-  const lines = [
-    `⏰ <b>¡Faltan ${escHtml(minsLabel)} para iniciar la jornada de LaLiga!</b>`,
-    ''
-  ];
+  const lines = [];
+
+  if (dayGroup.isJornadaStart) {
+    lines.push(`⏰ <b>¡Faltan ${escHtml(minsLabel)} para iniciar la jornada de LaLiga!</b>`, '');
+  } else {
+    lines.push(`⚽ <b>¡En ${escHtml(minsLabel)} arrancan los partidos de hoy (${escHtml(dayLabel)})!</b>`, '');
+  }
 
   if (first && first.home && first.away) {
     lines.push(
@@ -62,25 +100,33 @@ function buildAlertMessage(matchday, minsLeft) {
     );
   }
 
-  // Mostrar también los partidos del mismo día si hay varios
-  const firstDay = String(matchday.firstKickoffUtc || '').slice(0, 10);
-  const sameDay = matches.slice(1).filter((m) => String(m.date || '').slice(0, 10) === firstDay);
-  if (sameDay.length > 0) {
-    lines.push('', '📅 <b>Más partidos hoy:</b>');
-    sameDay.forEach((m) => {
+  const rest = dayGroup.matches.slice(1);
+  if (rest.length > 0) {
+    lines.push('', '📅 <b>Resto de partidos hoy:</b>');
+    rest.forEach((m) => {
       const t = formatMadridTime(m.date);
       lines.push(`• ${escHtml(m.home.team)} vs ${escHtml(m.away.team)}${t ? ` (${escHtml(t)} h)` : ''}`);
     });
   }
 
+  if (dayGroup.isJornadaStart) {
+    lines.push(
+      '',
+      '✅ <b>Checklist rápido antes del cierre:</b>',
+      '• Revisa tu 11 titular, capitán y banquillo',
+      '• Comprueba que tu saldo esté en positivo',
+      '• Revisa alineaciones confirmadas y últimos clausulazos'
+    );
+  } else {
+    lines.push(
+      '',
+      '📋 Ya puedes consultar las <b>alineaciones confirmadas</b> y seguir los <b>marcadores en vivo</b> en Clausulamesta.'
+    );
+  }
+
   lines.push(
     '',
-    '✅ <b>Checklist rápido antes del cierre:</b>',
-    '• Revisa tu 11 titular, capitán y banquillo',
-    '• Comprueba que tu saldo esté en positivo',
-    '• Revisa alineaciones confirmadas y últimos clausulazos',
-    '',
-    `📋 <a href="${SITE_URL}?view=laliga&amp;tab=jornada">Ver jornada y alineaciones confirmadas</a> · <a href="${SITE_URL}">Abrir Clausulamesta</a>`
+    `🔴 <a href="${SITE_URL}?view=laliga&amp;tab=jornada">Ver jornada en vivo y alineaciones</a> · <a href="${SITE_URL}">Abrir Clausulamesta</a>`
   );
 
   return lines.join('\n');
@@ -104,33 +150,55 @@ async function main() {
   const raw = await fs.readFile(LALIGA_PATH, 'utf8');
   const data = JSON.parse(raw);
   const matchday = data && data.matchday;
-  if (!matchday || !matchday.firstKickoffUtc) {
-    process.stdout.write('No hay datos de jornada (matchday.firstKickoffUtc) en data/laliga.json.\n');
+  if (!matchday || !Array.isArray(matchday.matches) || matchday.matches.length === 0) {
+    process.stdout.write('No hay partidos de jornada (matchday.matches) en data/laliga.json.\n');
     return;
   }
 
-  const kickoffMs = Date.parse(matchday.firstKickoffUtc);
-  if (!Number.isFinite(kickoffMs)) {
-    process.stdout.write('Fecha de inicio de jornada inválida.\n');
-    return;
-  }
-
-  const minsLeft = (kickoffMs - Date.now()) / 60000;
+  const dayGroups = groupMatchesByDay(matchday.matches);
+  const nowMs = Date.now();
   const state = await readState();
-  const alreadySent = state.last_kickoff_notified === matchday.firstKickoffUtc;
+  const notifiedDays = (state && typeof state.notified_days === 'object' && state.notified_days) ? { ...state.notified_days } : {};
 
-  if (!DRY_RUN && !FORCE) {
-    if (alreadySent) {
-      process.stdout.write(`Jornada ${matchday.firstKickoffUtc} ya fue notificada previamente.\n`);
-      return;
-    }
-    if (minsLeft < MIN_LEAD_MIN || minsLeft > MAX_LEAD_MIN) {
-      process.stdout.write(`Fuera de ventana de aviso (faltan ${minsLeft.toFixed(1)} min para ${matchday.firstKickoffUtc}).\n`);
-      return;
+  // Buscar el día de jornada cuya hora de inicio esté dentro de la ventana de 1..24 min
+  let targetGroup = null;
+  let targetMinsLeft = null;
+
+  for (const g of dayGroups) {
+    const kMs = Date.parse(g.firstKickoffUtc);
+    if (!Number.isFinite(kMs)) continue;
+    const minsLeft = (kMs - nowMs) / 60000;
+    if (minsLeft >= MIN_LEAD_MIN && minsLeft <= MAX_LEAD_MIN) {
+      targetGroup = g;
+      targetMinsLeft = minsLeft;
+      break;
     }
   }
 
-  const text = buildAlertMessage(matchday, minsLeft);
+  // En modo --dry-run o --force, elegir el próximo día pendiente (o el primero si ya pasaron todos)
+  if (!targetGroup && (DRY_RUN || FORCE)) {
+    const upcoming = dayGroups.find((g) => Date.parse(g.firstKickoffUtc) > nowMs) || dayGroups[0];
+    targetGroup = upcoming;
+    targetMinsLeft = (Date.parse(upcoming.firstKickoffUtc) - nowMs) / 60000;
+  }
+
+  if (!targetGroup) {
+    const nextUpcoming = dayGroups.find((g) => Date.parse(g.firstKickoffUtc) > nowMs);
+    if (nextUpcoming) {
+      const mins = ((Date.parse(nextUpcoming.firstKickoffUtc) - nowMs) / 60000).toFixed(1);
+      process.stdout.write(`Fuera de ventana de aviso (próximo inicio: ${nextUpcoming.dayKey} ${nextUpcoming.firstKickoffUtc}, faltan ${mins} min).\n`);
+    } else {
+      process.stdout.write('No quedan días de jornada por iniciar en data/laliga.json.\n');
+    }
+    return;
+  }
+
+  if (!DRY_RUN && !FORCE && notifiedDays[targetGroup.dayKey]) {
+    process.stdout.write(`El aviso del día ${targetGroup.dayKey} ya fue enviado previamente.\n`);
+    return;
+  }
+
+  const text = buildAlertMessage(targetGroup, targetMinsLeft);
 
   if (DRY_RUN) {
     process.stdout.write(text + '\n');
@@ -160,13 +228,19 @@ async function main() {
     throw new Error(`Error enviando alerta de jornada a Telegram (${res.status}): ${payload.description || 'desconocido'}`);
   }
 
+  notifiedDays[targetGroup.dayKey] = new Date().toISOString();
+  // Conservar únicamente los últimos 20 días registrados
+  const trimmedKeys = Object.keys(notifiedDays).sort().slice(-20);
+  const cleanNotifiedDays = {};
+  for (const k of trimmedKeys) cleanNotifiedDays[k] = notifiedDays[k];
+
   await writeState({
-    ...state,
-    last_kickoff_notified: matchday.firstKickoffUtc,
-    notified_at: new Date().toISOString()
+    last_kickoff_notified: targetGroup.firstKickoffUtc,
+    notified_at: new Date().toISOString(),
+    notified_days: cleanNotifiedDays
   });
 
-  process.stdout.write(`Alerta de inicio de jornada enviada correctamente a ${chatId}.\n`);
+  process.stdout.write(`Alerta enviada correctamente a ${chatId} (${targetGroup.dayKey}, inicio jornada=${targetGroup.isJornadaStart}).\n`);
 }
 
 main().catch((err) => {
